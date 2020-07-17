@@ -1,0 +1,41 @@
+.Menu {
+    height: 0;
+    overflow-y: hidden;
+    text-align: center;
+    width: 100%;
+    transition: 0.4s ease all;
+    background: black;
+}
+.expanded {
+    height: 100vh;
+    transition: 0.4s ease all;
+    color: white;
+    background: rgba(0,0,0,0.7);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+.Menu ul {
+    list-style: none;
+    height: 100vh;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+.Menu ul li:nth-of-type(1) {
+    border-top: none;
+}
+.Menu ul li {
+    width: 100%;
+    height: 75px;
+    margin: 0 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: solid 1px rgba(250,250,250,0.1);
+}
+.Menu ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}

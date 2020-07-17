@@ -1,0 +1,54 @@
+.Hamburger {
+    width: 60px;
+    height: 50px;
+    margin: 0 32px 0 4px;
+    padding: 5px 5px 0 5px;
+    transition: 0.4s ease all;
+}
+.Hamburger:hover {
+    cursor: pointer;
+}
+.hamburger-menu-flip {
+    transform: rotate(-180deg) translateY(3px) translateX(-3px);
+}
+.burger1 {
+    width: 90%;
+    height: 5px;
+    border-radius: 10px;
+    background: white;
+    margin: 7px;
+    transition: 0.4s ease all;
+}
+.burger1flip {
+    width: 80%;
+    transform: translateY(10px) rotate(135deg);
+    background: #f2d1c9;
+    height: 6px;
+}
+.burger2 {
+    width: 75%;
+    height: 5px;
+    border-radius: 10px;
+    background: #f2d1c9;
+    margin: 7px;
+    transition: 0.4s ease all;
+}
+.burger2flip {
+    width: 0;
+    opacity: 0;
+    transform: translateX(5px);
+}
+.burger3 {
+    width: 100%;
+    height: 5px;
+    border-radius: 10px;
+    background: #f05f7e;
+    margin: 7px;
+    transition: 0.4s ease all;
+}
+.burger3flip {
+    width: 80%;
+    transform: translateY(-14px) rotate(45deg);
+    background: #f2d1c9;
+    height: 6px;
+}

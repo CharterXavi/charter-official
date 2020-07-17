@@ -1,8 +1,35 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Charter Healthcare Group`,
+    description: `Official website for Charter Healthcare Group.`,
+    author: `Branon Eusebio`,
+    image: `src/images/charter-logo-rework-3-white.png`,
+    menuLinks: [
+      {
+        name: 'Home',
+        path: '/'
+      },
+      {
+        name: 'About',
+        path: '/about'
+      },
+      {
+        name: 'Services',
+        path: '/services'
+      },
+      {
+        name: 'Our Team',
+        path: '/our-team'
+      },
+      {
+        name: 'Careers',
+        path: '/careers'
+      },
+      {
+        name: 'Contact',
+        path: '/contact'
+      }
+    ]
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -27,6 +54,18 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-prefetch-google-fonts`,
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Quicksand`,
+            variants: [`400`, `700`]
+          }
+        ],
+      },
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
