@@ -1,0 +1,26 @@
+.Hero {
+    height: 90vh;
+    width: 100%;
+    position: relative;
+    top: 0;
+    background-image: url(https://images.unsplash.com/photo-1581022295432-7fabcc628434?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+}
+.Hero .hero-wave-one {
+    width: auto;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.Hero .hero-wave-two {
+    width: 85%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+}

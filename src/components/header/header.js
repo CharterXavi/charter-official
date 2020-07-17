@@ -21,19 +21,21 @@ const Header = () => {
 
   return (
     <header className='Header'>
-      <div className={`main-bar ${isMenuExpanded ? 'background-blur' : ''}`}>
-        <Link to="/">
-          <img src={Logo} alt='Charter Logo' /> {/* data about Logo from webpack used as src for image */}
-        </Link>
-        {/* pass handleClick function to child so that when it's invoked it will change state in parent */}
-        {/* that way we can pass info about whether or not the button's been clicked to expand the menu here accordingly */}
-        <div className='header-right'>
-          <Phone />
-          <small style={{color: 'white'}}>MENU</small>
-          <Hamburger onClick={handleHamburgerClick} />
+      <div className='header-boundary'>
+        <div className={`main-bar ${isMenuExpanded ? 'background-blur' : ''}`}>
+          <Link to="/">
+            <img src={Logo} alt='Charter Logo' /> {/* data about Logo from webpack used as src for image */}
+          </Link>
+          {/* pass handleClick function to child so that when it's invoked it will change state in parent */}
+          {/* that way we can pass info about whether or not the button's been clicked to expand the menu here accordingly */}
+          <div className='header-right'>
+            <Phone />
+            <small style={{color: 'white'}}>MENU</small>
+            <Hamburger onClick={handleHamburgerClick} />
+          </div>
         </div>
-      </div>
-      <Menu isExpanded={isMenuExpanded} />
+    </div>
+        <Menu isExpanded={isMenuExpanded} />
     </header>
   )
 }

@@ -67,3 +67,7 @@ a {
   color: var(--primary-accent);
   cursor: pointer;
 }
+/* give each body component this class if you want it content-width */
+.content-width {
+  max-width: 1440px;
+}
