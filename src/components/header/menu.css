@@ -39,3 +39,6 @@
     width: 100%;
     height: 100%;
 }
+.Menu ul li a:hover {
+    background: linear-gradient(90deg, #F493AA 0%, #F2D1C9 100%);
+}
