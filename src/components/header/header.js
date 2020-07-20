@@ -3,8 +3,9 @@ import React, {useState} from 'react'
 import './header.css'
 import Logo from '../../images/charter-logo-rework-3-white.png'; //uses webpack to store data about the image in an import
 import Hamburger from './hamburger'
-import Phone from './phone'
+import ButtonPrimary from '../buttons/button-primary'
 import Menu from './menu'
+import phoneIcon from '../../images/phone-outline.png'; //uses webpack to store data about the image in an import
 
 const Header = () => {
   //initial states: menu is not expanded and the button hasn't been clicked
@@ -29,7 +30,7 @@ const Header = () => {
           {/* pass handleClick function to child so that when it's invoked it will change state in parent */}
           {/* that way we can pass info about whether or not the button's been clicked to expand the menu here accordingly */}
           <div className='header-right'>
-            <Phone />
+            <ButtonPrimary icon={phoneIcon} link='tel:+11234567890' content='123-456-7890' />
             <small style={{color: 'white'}}>MENU</small>
             <Hamburger onClick={handleHamburgerClick} />
           </div>

@@ -9,6 +9,10 @@
     overflow-x: hidden;
     font-family: 'Quicksand', sans-serif;
 }
+.Hero .homeIcon {
+    width: 60px;
+    height: 60px;
+}
 .white-block {
     background: white;
     height: 100%;
@@ -21,7 +25,7 @@
     width: auto;
     height: 100vh;
     position: absolute;
-    top: 0;
+    top: -5%;
     left: 12%;
     z-index: 2;
 }
@@ -29,7 +33,7 @@
     width: 75%;
     height: auto;
     position: absolute;
-    top: 0;
+    top: -5%;
     right: 0;
     z-index: 1;
 }

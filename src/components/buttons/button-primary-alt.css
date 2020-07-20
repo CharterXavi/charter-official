@@ -1,17 +1,18 @@
-.Phone {
+.ButtonPrimaryAlt {
     width: auto;
     height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.btn-primary {
+.btn-primary-alt {
     outline: none;
     border: none;
-    color: white;
-    /* Rose */
-    background: linear-gradient(180deg, #F493AA 0%, #F05F7E 100%);
-    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.22);
+    background: #FFFFFF;
+    /* Brink Pink */    
+    border: 2px solid #F05F7E;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     width: 150px;
     height: 50px;
@@ -23,8 +24,9 @@
     font-weight: 400;
     font-family: 'Quicksand', sans-serif;
 }
-.btn-primary:hover {
-    background: linear-gradient(37.36deg, #FFCE94 3.73%, #F05F7E 100%);
+.btn-primary-alt:hover {
+    border: 2px solid #F493AA;
+    color: #F493AA;
     box-shadow: none;
     transform: translateY(1px);
     transition: 0.3s ease all;
