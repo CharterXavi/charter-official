@@ -1,4 +1,5 @@
 import React from 'react'
+import HeroImg from '../../images/hero-image.jpeg'
 import './hero.css'
 
 
@@ -6,7 +7,7 @@ const HeroStrip = () => {
 
     return (
         <div className='Hero'>
-            <div className='side-content'>
+            <div className='side-content content-width'>
                 <h1>
                     We're here for you.
                     <br></br>
@@ -14,6 +15,7 @@ const HeroStrip = () => {
                 </h1>
                 <h3>Throughout the many stages of post-accute care, we put YOU first.</h3>
             </div>
+            <div className='white-block'></div>
             <svg className='hero-wave-one' xmlns="http://www.w3.org/2000/svg" width="453" height="960" viewBox="0 0 453 960" fill="none">
                 <path d="M0 0H374C374 0 452.5 70 452.5 280.5C452.5 491 396.5 548 383 725.5C369.5 903 428.5 960 428.5 960H0V0Z" fill="white"/>
             </svg>
@@ -26,6 +28,7 @@ const HeroStrip = () => {
                 </linearGradient>
                 </defs>
             </svg>
+            <img src={HeroImg} />
         </div>
     );
 };

@@ -7,7 +7,6 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <HeroStrip />
-    <p className='introduction-text'>Throughout the many stages of post-accute care, we put you first.</p>
   </Layout>
 )
 
