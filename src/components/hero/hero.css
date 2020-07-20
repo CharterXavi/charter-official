@@ -16,7 +16,7 @@
 .white-block {
     background: white;
     height: 100%;
-    width: 12%;
+    width: 8%;
     position: absolute;
     left: 0;
     z-index: 1;
@@ -26,7 +26,7 @@
     height: 100vh;
     position: absolute;
     top: -5%;
-    left: 12%;
+    left: 8%;
     z-index: 2;
 }
 .Hero .hero-wave-two {
