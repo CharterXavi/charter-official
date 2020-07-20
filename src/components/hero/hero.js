@@ -35,10 +35,46 @@ const HeroStrip = () => {
                     <br></br>
                     We're there for you.  
                 </h1>
-                <h3>Throughout the many stages of post-accute care, we put YOU first.</h3>
+                <p className='introduction-text'>Throughout the many stages of post-accute care, we put YOU first.</p>
                 <ButtonPrimaryAlt link='/about' content='Learn More' />
             </div>
             <div className='white-block'></div>
+            <svg className='hero-wave-mobile-one' xmlns="http://www.w3.org/2000/svg" width="375" height="458" viewBox="0 0 375 458" fill="none">
+                <g filter="url(#filter3_d)">
+                <path d="M0 0H375V383.864C375 383.864 325 436.256 195.5 404.013C66 371.769 0 443 0 443V0Z" fill="white"/>
+                </g>
+                <defs>
+                <filter id="filter3_d" x="-15" y="-25" width="415" height="483" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                <feOffset dx="5" dy="-5"/>
+                <feGaussianBlur stdDeviation="10"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                </filter>
+                </defs>
+            </svg>
+            <svg className='hero-wave-mobile-two' xmlns="http://www.w3.org/2000/svg" width="375" height="525" viewBox="0 0 375 525" fill="none">
+                <g filter="url(#filter4_d)">
+                <path d="M0 0H375V452.93C375 452.93 340 488.728 199.5 458.637C59 428.545 0 510 0 510V0Z" fill="url(#paint4_linear)"/>
+                </g>
+                <defs>
+                <filter id="filter4_d" x="-15" y="-25" width="415" height="550" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                <feOffset dx="5" dy="-5"/>
+                <feGaussianBlur stdDeviation="10"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                </filter>
+                <linearGradient id="paint4_linear" x1="0" y1="510" x2="375" y2="510" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#F493AA"/>
+                <stop offset="1" stop-color="#F2D1C9"/>
+                </linearGradient>
+                </defs>
+            </svg>
             <svg className='hero-wave-one' xmlns="http://www.w3.org/2000/svg" width="478" height="1000" viewBox="0 0 478 1000" fill="none">
                 <g filter="url(#filter0_d)">
                 <path d="M0 25H374C374 25 452.5 95 452.5 305.5C452.5 516 396.5 573 383 750.5C369.5 928 428.5 985 428.5 985H0V25Z" fill="white"/>

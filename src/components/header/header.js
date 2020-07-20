@@ -32,7 +32,7 @@ const Header = () => {
           <div className='header-right'>
             <ButtonPrimary icon={phoneIcon} link='tel:+11234567890' content='123-456-7890' />
             {isMenuExpanded ? 
-              <small style={{color: 'white'}}>CLOSE</small>
+              <small style={{color: 'white', margin: '0 0 0 26.5px'}}>CLOSE</small> /* margin included since 'close' is longer word than 'menu', causing neighboring elements to move around */
               :
               <small style={{color: 'white'}}>MENU</small>
             }

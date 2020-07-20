@@ -12,6 +12,7 @@
 .Hero .homeIcon {
     width: 60px;
     height: 60px;
+    margin: 8px 0 8px 0;
 }
 .white-block {
     background: white;
@@ -37,6 +38,9 @@
     right: 0;
     z-index: 1;
 }
+.Hero .hero-wave-mobile-one, .Hero .hero-wave-mobile-two {
+    display: none;
+}
 .Hero img {
     width: 1500px;
     height: 100%;
@@ -57,7 +61,7 @@
     align-items: flex-start;
     justify-content: flex-start;
 }
-.side-content h3 {
+.side-content p {
     width: 350px;
 }
 
@@ -89,17 +93,59 @@
     .Hero img {
         height: auto;
     }
-    .Hero h1, .Hero h3 {
+    .Hero h1, .Hero p {
         width: 60%;
     }
 }
 @media only screen and (max-width: 500px) {
-    .Hero h1, .Hero h3 {
-        width: 70%;
+    .Hero h1, .Hero p {
+        width: 75%;
     }
 }
 @media only screen and (max-width: 450px) {
-    .Hero h1, .Hero h3 {
-        width: 75%;
+    .Hero h1, .Hero p {
+        width: 100%;
+    }
+    .Hero .hero-wave-one, .Hero .hero-wave-two {
+        display: none;
+    }
+    .Hero .hero-wave-mobile-one {
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: auto;
+        z-index: 3;
+    }
+    .Hero .hero-wave-mobile-two {
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: auto;
+        z-index: 2;
+    }
+    .side-content {
+        margin: 16px 0 0 0;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .Hero h1 {
+        font-size: 1.8rem;
+    }
+    .Hero p {
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 330px) {
+    .Hero h1 {
+        font-size: 1.5rem;
+    }
+    .Hero p {
+        font-size: 0.9rem;
+    }
+    .Hero .homeIcon {
+        width: 40px;
+        height: 40px;
     }
 }
