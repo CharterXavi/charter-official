@@ -59,3 +59,20 @@ small {
     margin: 0 0 0 32px;
     font-weight: lighter;
 }
+
+@media only screen and (max-width: 600px) {
+    .Header {
+        height: 60px;
+    }
+    .Header .header-boundary {
+        height: 60px;
+    }
+    .Header img {
+        height: 50px;
+        width: auto;
+        margin: 0 0 0 16px;
+    }
+    .Header .ButtonPrimary {
+        display: none;
+    }
+}

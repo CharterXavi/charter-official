@@ -72,3 +72,34 @@
         width: 100%;
     }
 }
+@media only screen and (max-width: 600px) {
+    .Hero {
+        height: 100vh;
+        overflow-y: hidden;
+    }
+    .white-block {
+        width: 0;
+    }
+    .Hero .hero-wave-one {
+        left: -20%;
+    }
+    .Hero .hero-wave-two {
+        display: none;
+    }
+    .Hero img {
+        height: auto;
+    }
+    .Hero h1, .Hero h3 {
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .Hero h1, .Hero h3 {
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .Hero h1, .Hero h3 {
+        width: 75%;
+    }
+}

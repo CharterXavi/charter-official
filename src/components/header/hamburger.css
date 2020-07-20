@@ -52,3 +52,10 @@
     background: #f2d1c9;
     height: 6px;
 }
+
+@media only screen and (max-width: 600px) {
+    .Hamburger {
+        width: 50px;
+        margin: 0 16px 0 0;
+    }
+}

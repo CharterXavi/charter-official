@@ -31,7 +31,11 @@ const Header = () => {
           {/* that way we can pass info about whether or not the button's been clicked to expand the menu here accordingly */}
           <div className='header-right'>
             <ButtonPrimary icon={phoneIcon} link='tel:+11234567890' content='123-456-7890' />
-            <small style={{color: 'white'}}>MENU</small>
+            {isMenuExpanded ? 
+              <small style={{color: 'white'}}>CLOSE</small>
+              :
+              <small style={{color: 'white'}}>MENU</small>
+            }
             <Hamburger onClick={handleHamburgerClick} />
           </div>
         </div>

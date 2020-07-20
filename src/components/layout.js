@@ -22,9 +22,7 @@ const Layout = ({ children }) => {
         }}
       > */}
       {/* Use a div to push the rest of the content down to line up after the navbar, since it's fixed */}
-      <div style={{
-        height: '75px'
-      }}></div>
+      <div className='spacer'></div>
         <main>{children}</main>
         <footer>
           © {new Date().getFullYear()}, Built with

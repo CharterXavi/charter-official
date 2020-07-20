@@ -75,3 +75,12 @@ a {
 .content-width {
   max-width: 1440px;
 }
+.spacer {
+  height: 75px;
+}
+
+@media only screen and (max-width: 600px) {
+  .spacer {
+    height: 60px;
+  }
+}
