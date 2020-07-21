@@ -58,7 +58,12 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: `Quicksand`
+            family: `Nunito`,
+            variants: ['400', '700']
+          },
+          {
+            family: `Quicksand`,
+            variants: ['400', '700']
           }
         ],
       }
