@@ -7,7 +7,7 @@
 html {
   margin: 0;
   padding: 0;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Nunito', sans-serif;
   scroll-behavior: smooth;
 }
 body {
@@ -17,7 +17,7 @@ body {
   font-size: 16px;
 }
 h1, h2, h3 {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: bold 700;
 }
 h2, h3 {
@@ -25,7 +25,7 @@ h2, h3 {
   width: 100%;
 }
 h4, h5, h6 {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Nunito', sans-serif;
   text-align: left;
   width: 100%;
 }
@@ -57,14 +57,12 @@ h5 {
   margin: 0 0;
 }
 p {
-  font-family: 'Quicksand', sans-serif;
   font-size: 1em;
   width: 100%;
   padding: 8px 0;
   margin: 0 0;
 }
 a {
-  font-family: 'Quicksand', sans-serif;
   font-size: 15px;
   font-weight: bold;
   text-decoration: none;
@@ -72,11 +70,15 @@ a {
   cursor: pointer;
 }
 .introduction-text {
+    font-family: 'Nunito', sans-serif;
   font-size: 18px;
 }
 /* give each body component this class if you want it content-width */
 .content-width {
   max-width: 1440px;
+}
+.content-width-small {
+  max-width: 720px;
 }
 .spacer {
   height: 75px;
