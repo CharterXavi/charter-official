@@ -1,6 +1,6 @@
 import React from 'react'
 import HeroImg from '../../images/hero-image.jpeg'
-import ButtonPrimaryAlt from '../buttons/button-primary-alt'
+import ButtonPrimary from '../buttons/button-primary'
 import './hero.css'
 
 
@@ -36,7 +36,7 @@ const HeroStrip = () => {
                     We're there for you.  
                 </h1>
                 <p className='introduction-text'>Throughout the many stages of post-accute care, we put YOU first.</p>
-                <ButtonPrimaryAlt link='/about' content='Learn More' />
+                <ButtonPrimary link='/about' content='Learn More' />
             </div>
             <div className='white-block'></div>
             <svg className='hero-wave-mobile-one' xmlns="http://www.w3.org/2000/svg" width="375" height="458" viewBox="0 0 375 458" fill="none">

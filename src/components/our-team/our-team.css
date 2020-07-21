@@ -1,0 +1,151 @@
+.OurTeamStrip {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.OurTeamStrip h2 {
+    text-align: center;
+    color: #363f55;
+}
+.OurTeamStrip .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    position: relative;
+    top: 0;
+    z-index: 2;
+    background: rgba(250,250,250, 0.9);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+    width: 80%;
+    height: 70%;
+}
+.OurTeamStrip .card-container .card {
+    width: 45%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    color: #363f55;
+    padding: 8px;
+}
+.OurTeamStrip .card-container .card p {
+    color: #F05F7E;
+}
+.OurTeamStrip .card-container .card .card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    width: 40%;
+}
+.OurTeamStrip .card-container .card img {
+    margin: 8px;
+    overflow: hidden;
+    transition: 0.25s ease all;
+}
+.OurTeamStrip .card-container .card img:hover {
+    cursor: pointer;
+    filter: blur(2px);
+    transform: scale(1.02);
+}
+.OurTeamStrip .btn-primary-alt {
+    position: relative;
+    bottom: 0;
+    z-index: 3;
+    margin: 32px 0 0 0;
+}
+.team-wave-one {
+    width: 100vw;
+    height: auto;
+    position: absolute;
+    bottom: -50px;
+    z-index: 0;
+}
+.team-wave-mobile-one {
+    display: none;
+}
+.team-wave-mobile-two {
+    display: none;
+}
+
+@media only screen and (max-width: 900px) {
+    .OurTeamStrip {
+        height: auto;
+    }
+    .OurTeamStrip .card-container {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .OurTeamStrip .card-container .card {
+        width: 100%;
+    }
+    .OurTeamStrip .card-container .card img {
+        margin: 0 32px 0 0;
+    }
+    .OurTeamStrip .card-container .card .card-info {
+        width: 40%;
+    }
+    .team-wave-mobile-one {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+    }
+    .team-wave-one {
+        display: none;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .OurTeamStrip {
+        height: auto;
+    }
+    .OurTeamStrip .card-container {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .OurTeamStrip .card-container .card {
+        width: 90%;
+        height: 150px;
+    }
+    .OurTeamStrip .card-container .card img {
+        width: 100px;
+    }
+    .OurTeamStrip .card-container .card .card-info {
+        width: 50%;
+    }
+    .OurTeamStrip .card-container {
+        width: 90%;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+    .team-wave-mobile-one {
+        display: none;
+    }
+    .team-wave-one {
+        display: none;
+    }
+    .team-wave-mobile-two {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .OurTeamStrip .card-container .card .card-info p, .OurTeamStrip .card-container .card .card-info h4 {
+        padding: 4px 0 4px 0;
+    }
+}
