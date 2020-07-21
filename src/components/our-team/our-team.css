@@ -46,7 +46,7 @@
     width: 40%;
 }
 .OurTeamStrip .card-container .card img {
-    margin: 8px;
+    margin: 8px 32px 8px 8px;
     overflow: hidden;
     transition: 0.25s ease all;
 }
@@ -74,7 +74,14 @@
 .team-wave-mobile-two {
     display: none;
 }
-
+@media only screen and (max-width: 1100px) {
+    .OurTeamStrip .card-container .card img {
+        margin: 0 16px 0 0;
+    }
+    .OurTeamStrip .card-container .card .card-info {
+        width: 30%;
+    }
+}
 @media only screen and (max-width: 900px) {
     .OurTeamStrip {
         height: auto;
