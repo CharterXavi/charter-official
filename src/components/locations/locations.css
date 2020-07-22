@@ -1,0 +1,130 @@
+.LocationsStrip {
+    height: auto;
+    width: 100vw;
+    position: relative;
+    top: 0;
+    z-index: 0;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.LocationsStrip .left {
+    width: 28%;
+    height: 625px;
+    border-radius: 10px;
+    background: rgba(250,250,250,0.95);
+    padding: 16px 32px;
+    position: relative;
+    top: 0;
+    z-index: 4;
+    margin: 16px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
+    color: #363f55;
+}
+.LocationsStrip .left h2 {
+    padding: 0 0 16px 0;
+    color: #363f55;
+}
+.LocationsStrip .left h5 {
+    padding: 8px 0 4px 0;
+}
+.LocationsStrip .left img{
+    width: 50px;
+    margin: 0 0 0 0;
+    padding: 16px 0 0 0;
+}
+.LocationsStrip .left p {
+    padding: 0 0;
+}
+.LocationsStrip .right {
+    width: 28%;
+    height: 625px;
+    border-radius: 10px;
+    background: rgba(100,100,100,0.95);
+    padding: 16px 32px;
+    position: relative;
+    top: 0;
+    z-index: 4;
+    margin: 16px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
+}
+.locations-wave-one {
+    position: absolute;
+    top: -50px;
+    z-index: -2;
+    width: 100%;
+    height: auto;
+}
+.locations-wave-mobile {
+    display: none;
+}
+
+
+@media only screen and (max-width: 1230px) {
+    .LocationsStrip {
+        flex-direction: column;
+    }
+    .LocationsStrip .left {
+        width: 80%;
+        height: auto;
+        padding: 16px 32px 32px 32px;
+        margin: 32px 0 16px 0;
+    }
+    .LocationsStrip .right {
+        width: 80%;
+        height: 300px;
+    }
+    .LocationsStrip .card-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .LocationsStrip .left .card {
+        width: 45%;
+        margin: 8px;
+    }
+}
+@media only screen and (max-width: 665px) {
+    .LocationsStrip {
+        flex-direction: column;
+    }
+    .LocationsStrip .left {
+        width: 80%;
+        height: auto;
+        padding: 16px 32px 32px 32px;
+    }
+    .LocationsStrip .right {
+        width: 80%;
+        height: 300px;
+    }
+    .LocationsStrip .card-container {
+        display: block;
+    }
+    .LocationsStrip .left .card {
+        width: 95%;
+        margin: 8px 0;
+    }
+    .locations-wave-one {
+        display: none;
+    }
+    .locations-wave-mobile {
+        display: block;
+        position: absolute;
+        top: -50px;
+        z-index: -2;
+        width: 100%;
+        height: auto;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .LocationsStrip .left {
+        width: 82.5%;
+        padding: 16px;
+        margin: 32px 0 8px 0;
+    }
+    .LocationsStrip .right {
+        width: 82.5%;
+        padding: 16px;
+        margin: 8px 0;
+    }
+}
