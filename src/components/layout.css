@@ -16,7 +16,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  font-size: 16px;
+  font-size: 15px;
 }
 h1, h2, h3 {
   font-family: 'Nunito', sans-serif;
@@ -87,6 +87,9 @@ a {
 }
 
 @media only screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
   .spacer {
     height: 60px;
   }
