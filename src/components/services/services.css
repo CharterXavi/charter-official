@@ -46,3 +46,9 @@
     margin: 32px 0 8px 0;
     transition: 0.3s ease all;
 }
+.ServicesStrip .houseIcon {
+    width: auto;
+    height: 80px;
+    margin: 32px 0 8px 0;
+    transition: 0.3s ease all;
+}

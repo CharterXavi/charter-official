@@ -16,7 +16,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  font-size: 15px;
+  font-size: 14px;
 }
 h1, h2, h3 {
   font-family: 'Nunito', sans-serif;
@@ -72,7 +72,7 @@ a {
   cursor: pointer;
 }
 .introduction-text {
-    font-family: 'Nunito', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 18px;
 }
 /* give each body component this class if you want it content-width */
@@ -87,9 +87,6 @@ a {
 }
 
 @media only screen and (max-width: 600px) {
-  body {
-    font-size: 14px;
-  }
   .spacer {
     height: 60px;
   }

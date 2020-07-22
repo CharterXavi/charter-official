@@ -16,7 +16,7 @@ const ServicesStrip = () => {
             <div className='card'>
                 <img src={heartIcon} alt="Heart symbol" class='icon' />
                 <h3>Hospice</h3>
-                <p className='introduction-text'>This is a description about a service.</p>
+                <p>This is a description about a service.</p>
                 <Link to='/services/hospice'>
                     <ButtonPrimaryAlt content='Read more' alt='Go to Hospice Page' />
                 </Link>
@@ -24,7 +24,7 @@ const ServicesStrip = () => {
             <div className='card'>
                 <img src={stethoscopeIcon} alt="Stehoscope symbol" class='icon' />
                 <h3>H.A.R.P.</h3>
-                <p className='introduction-text'>This is a description about a service.</p>
+                <p>This is a description about a service.</p>
                 <Link to='/services/harp'>
                     <ButtonPrimaryAlt content='Read more' alt='Go to HARP Page' />
                 </Link>
@@ -32,15 +32,15 @@ const ServicesStrip = () => {
             <div className='card'>
                 <img src={healthIcon} alt="Healthcare cross symbol" class='icon' />
                 <h3>Palliative Care</h3>
-                <p className='introduction-text'>This is a description about a service.</p>
+                <p>This is a description about a service.</p>
                 <Link to='/services/palliative-care'>
                     <ButtonPrimaryAlt content='Read more' alt='Go to Palliative Care Page' />
                 </Link>
             </div>
             <div className='card'>
-                <img src={houseIcon} alt="House symbol" class='icon' />
+                <img src={houseIcon} alt="House symbol" class='houseIcon icon' />
                 <h3>Home Health</h3>
-                <p className='introduction-text'>This is a description about a service.</p>
+                <p>This is a description about a service.</p>
                 <Link to='/services/home-health'>
                     <ButtonPrimaryAlt content='Read more' alt='Go to Home Health Page' />
                 </Link>

@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Header from "./header/header"
+import Footer from "./footer/footer"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -24,11 +25,7 @@ const Layout = ({ children }) => {
       {/* Use a div to push the rest of the content down to line up after the navbar, since it's fixed */}
       <div className='spacer'></div>
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+      <Footer />
       {/* </div> */}
     </>
   )
