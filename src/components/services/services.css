@@ -23,11 +23,9 @@
     width: 300px;
     height: 350px;
     border-radius: 10px;
-    background: white;
     padding: 8px;
     margin: 8px;
     text-align: center;
-    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.1);
     transition: 0.3s ease all;
 }
 .ServicesStrip .card:hover .btn-primary-alt {
@@ -43,6 +41,12 @@
 .ServicesStrip .icon {
     width: 80px;
     height: auto;
+    margin: 32px 0 8px 0;
+    transition: 0.3s ease all;
+}
+.ServicesStrip .houseIcon {
+    width: auto;
+    height: 80px;
     margin: 32px 0 8px 0;
     transition: 0.3s ease all;
 }

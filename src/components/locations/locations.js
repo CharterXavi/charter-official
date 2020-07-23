@@ -3,7 +3,7 @@ import './locations.css'
 import homeIcon from '../../images/home-icon.png'
 
 
-//TODO - MAKE CARDS EXPANDABLE ON MOBILE
+//TODO - MAKE CARDS EXPANDABLE ON MOBILE AND DESKTOP
 
 const LocationsStrip = () => {
   return (
