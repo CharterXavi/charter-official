@@ -39,7 +39,7 @@ export default class MyForm extends React.Component {
             </div>
             <div class="phone">
                 <label for="phone"></label>
-                <input type="number" name='phone' placeholder='Phone' required />
+                <input type="number" name='phone' placeholder='Phone Number' required />
             </div>
         </div>
         <div class="message">

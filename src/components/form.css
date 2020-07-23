@@ -1,6 +1,5 @@
 form {
-    width: 95%;
-    padding: 16px;
+    width: 100%;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -10,21 +9,33 @@ form {
 .headings h2 {
     color: #f05f73;
     text-align: left;
-    padding: 16px 0 4px 0;
+    padding: 8px 0 4px 0;
 }
 .headings p {
-    text-align: center;
     font-size: 18px;
     color: var(--heading-color);
     padding: 4px 0 8px 0;
 }
-.name, .info, .message, .submit {
+.name, .info, .submit {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
+}
+.message {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+.name .first, .name .last {
+    width: 48%;
+}
+.info .email, .info .phone {
+    width: 48%;
 }
 input, textarea {
-    margin: 8px 8px 8px 0;
+    margin: 8px 0 8px 0;
     border-radius: 10px;
     border: none;
     outline: none;
@@ -32,11 +43,15 @@ input, textarea {
     color: var(--heading-color);
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
+    padding: 0 0 0 0;
 }
 input {
-    width: 250px;
+    width: 100%;
     height: 50px;
-    padding: 4px 4px 4px 16px;
+    padding: 16px;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;  
 }
 input::placeholder, textarea::placeholder {
     font-family: 'Nunito', sans-serif;
@@ -48,9 +63,12 @@ input:focus, textarea:focus {
     box-shadow: 0 0 2px #363f55;
 }
 textarea {
-    width: 528px;
+    width: 100%;
     height: 100px;
-    padding: 16px 4px 4px 16px;
+    padding: 16px;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;  
 }
 .btn-primary {
     outline: none;
@@ -71,4 +89,18 @@ textarea {
     transform: translateY(1px);
     transition: 0.3s ease all;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+    form .name, form .info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .name .first, .name .last, .info .email, .info .phone {
+        width: 100%;
+    }
+    .name input, .info input {
+        margin: 8px 0;
+    }
+
 }
