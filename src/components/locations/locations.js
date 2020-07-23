@@ -1,11 +1,62 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './locations.css'
 import homeIcon from '../../images/home-icon.png'
-
-
-//TODO - MAKE CARDS EXPANDABLE ON MOBILE AND DESKTOP
+import Card from './card'
 
 const LocationsStrip = () => {
+    const [locationsList, setLocationsList] = useState(
+        [
+            {
+                name: 'Inland Empire',
+                isClicked: false,
+                isExpanded: false
+            },
+            {
+                name: 'High Desert',
+                isClicked: false,
+                isExpanded: false
+            },
+            {
+                name: 'San Gabriel Valley',
+                isClicked: false,
+                isExpanded: false
+            },
+            {
+                name: 'Low Desert',
+                isClicked: false,
+                isExpanded: false
+            },
+            {
+                name: 'Simi Valley',
+                isClicked: false,
+                isExpanded: false
+            }
+        ]
+    )
+
+    //Method that will be passed down as a prop to handle state management and expand cards / animate clickers
+    //ID passed down as a prop to child button - which invokes this function and passes its ID when clicked
+    const expandCard = (id) => {
+        //create a new list from old list, but update whichever child was clicked on
+        const newList = locationsList.map((location) => {
+            if(location.name === id) {
+                const newLocation = {
+                    //state is updated, component rerenders, and new props are passed down to children
+                    ...location,
+                    isClicked: !location.isClicked,
+                    isExpanded: !location.isExpanded
+                }
+                //must return so .map can enter it into new array list
+                return newLocation;
+            };
+            //must return so .map can enter it into new array list
+            return location;
+        });
+        //use setState method to update state
+        setLocationsList(newList);
+    }
+
+
   return (
     <div className='LocationsStrip'>
         <svg className='locations-wave-one' xmlns="http://www.w3.org/2000/svg" width="1440" height="522" viewBox="0 0 1440 522" fill="none">
@@ -52,36 +103,10 @@ const LocationsStrip = () => {
         <img src={homeIcon} alt='Home Icon'/>
             <h2>Our Locations</h2>
             <div className='card-container'>
-                <div className='card'>
-                    <h5>Inland Empire</h5>
-                    <p>1012 East Cooley Drive, Suite G, Colton CA 92324</p>
-                    <p>P: 909-825-2969</p>
-                    <p>F: 909-825-8751</p>
-                </div>
-                <div className='card'>
-                    <h5>Inland Empire</h5>
-                    <p>1012 East Cooley Drive, Suite G, Colton CA 92324</p>
-                    <p>P: 909-825-2969</p>
-                    <p>F: 909-825-8751</p>
-                </div>
-                <div className='card'>
-                    <h5>Inland Empire</h5>
-                    <p>1012 East Cooley Drive, Suite G, Colton CA 92324</p>
-                    <p>P: 909-825-2969</p>
-                    <p>F: 909-825-8751</p>
-                </div>
-                <div className='card'>
-                    <h5>Inland Empire</h5>
-                    <p>1012 East Cooley Drive, Suite G, Colton CA 92324</p>
-                    <p>P: 909-825-2969</p>
-                    <p>F: 909-825-8751</p>
-                </div>
-                <div className='card'>
-                    <h5>Inland Empire</h5>
-                    <p>1012 East Cooley Drive, Suite G, Colton CA 92324</p>
-                    <p>P: 909-825-2969</p>
-                    <p>F: 909-825-8751</p>
-                </div>
+                {/* Map through each location, create a card component and pass state values and methods in as props */}
+                {locationsList.map((location) => {
+                    return <Card name={location.name} id={location.name} isClicked={location.isClicked} isExpanded={location.isExpanded} expandCard={expandCard} />
+                })}
             </div>
         </div>
         <div className='right'>
