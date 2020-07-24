@@ -75,6 +75,12 @@ a {
   font-family: 'Nunito', sans-serif;
   font-size: 18px;
 }
+.quote-text {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
 /* give each body component this class if you want it content-width */
 .content-width {
   max-width: 1440px;
