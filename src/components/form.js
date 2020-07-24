@@ -18,35 +18,35 @@ export default class MyForm extends React.Component {
         action="https://formspree.io/mbjzqojd"
         method="POST"
       >
-        <div class="headings">
+        <div className="headings">
             <h2>Contact Us</h2>
             <p>We would love to hear from you!</p>
         </div>
-        <div class="name">
-            <div class="first">
-                <label for="first-name"></label>
+        <div className="name">
+            <div className="first">
+                <label htmlFor="first-name"></label>
                 <input type="text" name='first-name' placeholder='First Name' required />
             </div>
-            <div class="last">
-                <label for="last-name"></label>
+            <div className="last">
+                <label htmlFor="last-name"></label>
                 <input type="text" name='last-name' placeholder='Last Name' required />
             </div>
         </div>
-        <div class='info'>
-            <div class="email">
-                <label for="email"></label>
+        <div className='info'>
+            <div className="email">
+                <label htmlFor="email"></label>
                 <input type="email" name='email' placeholder='Email Address' required />
             </div>
-            <div class="phone">
-                <label for="phone"></label>
+            <div className="phone">
+                <label htmlFor="phone"></label>
                 <input type="number" name='phone' placeholder='Phone Number' required />
             </div>
         </div>
-        <div class="message">
-            <label for="message"></label>
+        <div className="message">
+            <label htmlFor="message"></label>
             <textarea name="message" placeholder='Leave us a message' required></textarea>
         </div>
-        <div class="submit">
+        <div className="submit">
             {status === "SUCCESS" ? <p style={{backgroundColor: '#7E9772', color: 'white', fontSize: '18px', width: 'auto', padding: '8px', borderRadius: '10px'}}>Thanks for reaching out! We'll contact you as soon as possible.</p> : <button className='btn-primary' type='submit'>Submit</button>}
             {status === "ERROR" && <p style={{backgroundColor: '#D45E60', color: 'white', fontSize: '18px', width: 'auto', padding: '8px', borderRadius: '10px'}}>Ooops! There was an error.</p>}
         </div>

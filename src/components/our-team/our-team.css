@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    background: #F6F7FB;
 }
 .OurTeamStrip h2 {
     text-align: center;
