@@ -1,5 +1,5 @@
 .AboutStrip {
-    height: 300px;
+    height: auto;
     position: relative;
     top: -75px;
     z-index: 4;
@@ -8,7 +8,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 32px;
+    padding: 32px 32px 0 32px;
 }
 .AboutStrip h2 {
     color: #363f55;
