@@ -52,7 +52,11 @@
 .TestimonialsStrip .carousel-control {
     margin: 8px;
 }
-
+@media only screen and (max-width: 1200px) {
+    .TestimonialsStrip .right {
+        width: 550px;
+    }
+}
 @media only screen and (max-width: 1100px) {
     .TestimonialsStrip .right .quote-container {
         width: 400px;
@@ -65,6 +69,7 @@
     }
     .TestimonialsStrip .right {
         align-items: flex-start;
+        width: 650px;
     }
     .TestimonialsStrip .right .quote-container {
         width: 100%;
