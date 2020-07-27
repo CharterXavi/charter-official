@@ -17,7 +17,12 @@ const Card = (props) => {
                 <h5>{props.name}</h5>
                 <Clicker onClick={handleClick} />
             </div>
-            <Expander isExpanded={props.isExpanded} />
+            <Expander 
+                isExpanded={props.isExpanded}
+                address={props.address}
+                phone={props.phone}
+                fax={props.fax} 
+            />
         </div>
     );
 };

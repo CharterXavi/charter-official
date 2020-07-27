@@ -8,26 +8,41 @@ const LocationsStrip = () => {
         [
             {
                 name: 'Inland Empire',
+                address: '1012 East Cooley Drive, Suite G, Colton CA 92324',
+                phone: 'P: 909-825-2969',
+                fax: 'F: 909-825-8751',
                 isClicked: false,
                 isExpanded: false
             },
             {
                 name: 'High Desert',
+                address: '19015 Towen Center Drive, Suite 104, Apple Valley CA 92308',
+                phone: 'P: 760-247-1161',
+                fax: 'F: 760-247-5502',
                 isClicked: false,
                 isExpanded: false
             },
             {
                 name: 'San Gabriel Valley',
+                address: '970 S. Village Oaks Drive, Suite 106, Covina CA 91724',
+                phone: 'P: 626-331-8001',
+                fax: 'F: 855-647-6360',
                 isClicked: false,
                 isExpanded: false
             },
             {
                 name: 'Low Desert',
+                address: '72855 Fred Waring Drive, Suite A5, Palm Desert CA 92260',
+                phone: 'P: 760-568-2002',
+                fax: 'F: 760-568-2040',
                 isClicked: false,
                 isExpanded: false
             },
             {
                 name: 'Simi Valley',
+                address: '5775 E Los Angeles Avenue, Suite 226, Simi Valley CA 93003',
+                phone: 'P: 805-582-0033',
+                fax: 'F: 805-583-9455',
                 isClicked: false,
                 isExpanded: false
             }
@@ -105,7 +120,16 @@ const LocationsStrip = () => {
             <div className='card-container'>
                 {/* Map through each location, create a card component and pass state values and methods in as props */}
                 {locationsList.map((location) => {
-                    return <Card name={location.name} id={location.name} isClicked={location.isClicked} isExpanded={location.isExpanded} expandCard={expandCard} />
+                    return <Card 
+                        name={location.name} 
+                        id={location.name}
+                        address={location.address}
+                        phone={location.phone}
+                        fax={location.fax} 
+                        isClicked={location.isClicked} 
+                        isExpanded={location.isExpanded} 
+                        expandCard={expandCard} 
+                    />
                 })}
             </div>
         </div>
