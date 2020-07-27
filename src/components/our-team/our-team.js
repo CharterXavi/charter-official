@@ -6,7 +6,7 @@ import team3 from '../../images/team/team3.png'
 import team4 from '../../images/team/team4.png'
 import team5 from '../../images/team/team5.png'
 import team6 from '../../images/team/team6.png'
-import ButtonPrimaryAlt from '../buttons/button-primary-alt'
+import ButtonSecondary from '../buttons/button-secondary'
 
 const OurTeamStrip = () => {
   return (
@@ -56,7 +56,7 @@ const OurTeamStrip = () => {
                 </div>
             </div>
         </div>
-        <ButtonPrimaryAlt content='See Our Team' link='/our-team' />
+        <ButtonSecondary content='See Our Team' link='/our-team' />
         <svg className='team-wave-one' xmlns="http://www.w3.org/2000/svg" width="1440" height="770" viewBox="0 0 1440 770" fill="none">
             <g filter="url(#filter5_d)">
             <path d="M0 583C0 583 336.5 388 797 373.5C1257.5 359 1440 25 1440 25C1440 215.966 1440 564.034 1440 755H0V583Z" fill="url(#paint5_linear)"/>

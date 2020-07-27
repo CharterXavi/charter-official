@@ -1,4 +1,4 @@
-.ButtonPrimaryAlt {
+.ButtonSecondary {
     width: auto;
     height: 60px;
     display: flex;
@@ -6,12 +6,13 @@
     align-items: center;
     margin: 8px 0 8px 0;
 }
-.btn-primary-alt {
+.btn-secondary {
     outline: none;
     border: none;
     background: #FFFFFF;
     /* Brink Pink */    
-    border: 2px solid #F05F7E;
+    border: 2px solid #0FBDBD;
+    color: #0FBDBD;
     box-sizing: border-box;
     box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
@@ -25,9 +26,9 @@
     font-weight: 400;
     font-family: 'Nunito', sans-serif;
 }
-.btn-primary-alt:hover {
-    border: 2px solid #F493AA;
-    color: #F493AA;
+.btn-secondary:hover {
+    border: 2px solid #363f55;
+    color: #363f55;
     box-shadow: none;
     transform: translateY(1px);
     transition: 0.3s ease all;
