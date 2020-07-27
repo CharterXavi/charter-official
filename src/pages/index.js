@@ -8,6 +8,7 @@ import VideoStrip from '../components/video/video'
 import TestimonialsStrip from '../components/testimonials/testimonials'
 import OurTeamStrip from '../components/our-team/our-team'
 import LocationsStrip from '../components/locations/locations'
+import DataStrip from '../components/data/data'
 
 const IndexPage = () => (
   <Layout>
@@ -17,6 +18,7 @@ const IndexPage = () => (
     <ServicesStrip />
     <VideoStrip />
     <TestimonialsStrip />
+    <DataStrip />
     <OurTeamStrip />
     <LocationsStrip />
   </Layout>
