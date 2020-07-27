@@ -16,7 +16,7 @@ const LocationsStrip = () => {
             },
             {
                 name: 'High Desert',
-                address: '19015 Towen Center Drive, Suite 104, Apple Valley CA 92308',
+                address: '19015 Town Center Drive, Suite 104, Apple Valley CA 92308',
                 phone: 'P: 760-247-1161',
                 fax: 'F: 760-247-5502',
                 isClicked: false,
