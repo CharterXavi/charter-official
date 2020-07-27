@@ -9,7 +9,8 @@
 }
 .ServicesStrip h2 {
     text-align: center;
-    padding: 32px 0 0 16px;
+    padding: 32px 0 0 0;
+    width: 85%;
 }
 .ServicesStrip .card-container {
     width: 100%;
