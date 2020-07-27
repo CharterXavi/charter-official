@@ -37,6 +37,9 @@
     height: 75px;
     margin: 0 0 0 32px;
 }
+.Header .btn-primary {
+    margin: 0 0 0 0;
+}
 
 
 /* ----- NAVBAR ------ */
@@ -60,6 +63,7 @@ small {
     box-sizing: border-box;
     margin: 0 0 0 32px;
     font-weight: lighter;
+    color: white;
 }
 
 @media only screen and (max-width: 600px) {
