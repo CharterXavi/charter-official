@@ -1,0 +1,112 @@
+.NewsStrip {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 32px;
+    background: #F6F7FB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.NewsStrip h2 {
+    width: auto;
+}
+.NewsStrip .card-container {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.NewsStrip .card-container .card {
+    box-sizing: border-box;
+    max-width: 350px;
+    min-width: 275px;
+    width: 25%;
+    height: 350px;
+    color: #363f55;
+    background: white;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
+}
+.NewsStrip .card-container .card img {
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
+}
+.NewsStrip .card-container .card img:hover {
+    transform: scale(1.10);
+    cursor: pointer;
+    filter: blur(2px);
+}
+.NewsStrip .card-container .card .image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+.NewsStrip .card-container .card .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 8px;
+    box-sizing: border-box;
+    height: 150px;
+}
+.NewsStrip .card-container .card .metadata {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.NewsStrip .card-container .card .metadata p {
+    width: auto;
+}
+.NewsStrip .card-container .card .info a {
+    text-decoration: underline;
+    transition: 0.4s ease all;
+}
+.NewsStrip .card-container .card .info a:hover {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1425px) {
+    .NewsStrip .card-container .card:nth-of-type(4) {
+        display: none;
+    }
+    .NewsStrip .card-container .card {
+        width: 30%;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .NewsStrip .card-container {
+        flex-wrap: wrap;
+    }
+    .NewsStrip .card-container .card:nth-of-type(4) {
+        display: block;
+    }
+    .NewsStrip .card-container .card {
+        width: 325px;
+    }
+}
+@media only screen and (max-width: 920px) {
+    .NewsStrip .card-container {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 745px) {
+    .NewsStrip .card-container .card:nth-of-type(4) {
+        display: none;
+    }
+}
+@media only screen and (max-width: 440px) {
+    .NewsStrip { 
+        padding: 16px;
+    }
+    .NewsStrip .card-container .card {
+        width: 100%;
+        margin: 8px 0 8px 0;
+    }
+}

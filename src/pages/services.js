@@ -1,12 +1,17 @@
-import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import React from "react";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import HeaderStrip from '../components/header-strip/header-strip';
+import servicesImage from '../images/services-header.png';
 
 const ServicesPage = () => (
   <Layout>
     <SEO title="Services" />
-    <h1>What We Do</h1>
-    <p className='introduction-text'>We provide premium care at every stage of your post-accute care journey.</p>
+    <HeaderStrip 
+      image={servicesImage}
+      title='Our Services'
+      headline='Exceptional Care & Life Enhancing Services'
+    />
   </Layout>
 )
 

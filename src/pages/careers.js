@@ -1,12 +1,17 @@
-import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import React from "react";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import HeaderStrip from '../components/header-strip/header-strip';
+import careersImage from '../images/careers-header.png';
 
 const CareersPage = () => (
   <Layout>
     <SEO title="Careers" />
-    <h1>Careers at Charter Healthcare Group</h1>
-    <p className='introduction-text'>Come work for passionate, people-driven company.</p>
+    <HeaderStrip
+      image={careersImage}
+      title='Careers'
+      headline='Come work for a passionate, people-driven company'
+    />
   </Layout>
 )
 
