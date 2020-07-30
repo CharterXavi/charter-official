@@ -8,6 +8,7 @@
     margin: 8px 0 8px 0;
 }
 .Card .card-title {
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;

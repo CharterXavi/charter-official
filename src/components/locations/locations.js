@@ -11,6 +11,7 @@ const LocationsStrip = () => {
                 address: '1012 East Cooley Drive, Suite G, Colton CA 92324',
                 phone: 'P: 909-825-2969',
                 fax: 'F: 909-825-8751',
+                animationTime: '800',
                 isClicked: false,
                 isExpanded: false
             },
@@ -19,6 +20,7 @@ const LocationsStrip = () => {
                 address: '19015 Town Center Drive, Suite 104, Apple Valley CA 92308',
                 phone: 'P: 760-247-1161',
                 fax: 'F: 760-247-5502',
+                animationTime: '1000',
                 isClicked: false,
                 isExpanded: false
             },
@@ -27,6 +29,7 @@ const LocationsStrip = () => {
                 address: '970 S. Village Oaks Drive, Suite 106, Covina CA 91724',
                 phone: 'P: 626-331-8001',
                 fax: 'F: 855-647-6360',
+                animationTime: '1300',
                 isClicked: false,
                 isExpanded: false
             },
@@ -35,6 +38,7 @@ const LocationsStrip = () => {
                 address: '72855 Fred Waring Drive, Suite A5, Palm Desert CA 92260',
                 phone: 'P: 760-568-2002',
                 fax: 'F: 760-568-2040',
+                animationTime: '1600',
                 isClicked: false,
                 isExpanded: false
             },
@@ -43,6 +47,7 @@ const LocationsStrip = () => {
                 address: '5775 E Los Angeles Avenue, Suite 226, Simi Valley CA 93003',
                 phone: 'P: 805-582-0033',
                 fax: 'F: 805-583-9455',
+                animationTime: '2000',
                 isClicked: false,
                 isExpanded: false
             }
@@ -129,6 +134,7 @@ const LocationsStrip = () => {
                         isClicked={location.isClicked} 
                         isExpanded={location.isExpanded} 
                         expandCard={expandCard} 
+                        animationTime={location.animationTime}
                     />
                 })}
             </div>

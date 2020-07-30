@@ -10,21 +10,25 @@ const TestimonialsStrip = () => {
             {
                 name: 'Johnny Appleseed',
                 quote: 'Charter was there for me when I needed it most - they rock!',
+                animationTime: '800',
                 isActive: false
             },
             {
                 name: 'Jane Doe',
                 quote: 'Charter is the BEST!!',
+                animationTime: '1100',
                 isActive: false
             },
             {
                 name: 'Jack Sparrow',
                 quote: "Yooo hoooo yooo hooo, a pirate's life for me...",
+                animationTime: '1500',
                 isActive: true
             },
             {
                 name: 'Granny Smith',
                 quote: "I'm doing better than ever and it's all thanks to Charter.",
+                animationTime: '2000',
                 isActive: false
             },
         ]
@@ -66,7 +70,7 @@ const TestimonialsStrip = () => {
         <div className='left'> 
             <h2>Patient Testimonials</h2>
             <p className='introduction-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus diam vitae ut et tincidunt quis sem est, ligula. Aliquam venenatis ut dapibus neque leo. Purus aliquet suscipit turpis volutpat nisl porta elit diam. Et nunc nunc neque aliquet ultricies risus.</p>
-            <ButtonPrimaryAlt content='Read more' />
+            <ButtonPrimaryAlt content='Read more' animation='fade-up' animationTime='1000' />
         </div>
         <div className='right'>
             <div className='quote-container'>
@@ -79,7 +83,11 @@ const TestimonialsStrip = () => {
             </div>
             <div className='carousel-control'>
                 {testimonials.map((quote) => {
-                    return <Dot id={quote.name} isActive={quote.isActive} showQuote={showQuote} />
+                    return (
+                        <div data-aos='fade-left' data-aos-delay='500' data-aos-duration={quote.animationTime}>
+                            <Dot id={quote.name} isActive={quote.isActive} showQuote={showQuote} />
+                        </div>
+                    )
                 })}
             </div>
         </div> 

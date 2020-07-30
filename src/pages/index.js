@@ -14,7 +14,11 @@ import NewsStrip from '../components/news/news'
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <HeroStrip />
+    <HeroStrip   
+      data-sal="slide-up"
+      data-sal-delay="300"
+      data-sal-easing="ease"
+    />
     <AboutStrip />
     <ServicesStrip />
     <VideoStrip />
