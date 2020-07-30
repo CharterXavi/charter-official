@@ -10,7 +10,7 @@ const Dot = (props) => {
     }
 
     return (
-        <div className={`Dot ${props.isActive ? 'current' : ''}`} onClick={props.isActive ? null : handleClick}></div>
+        <div className={`Dot ${props.isActive ? 'current' : ''}`} onClick={props.isActive ? null : handleClick} ></div>
     );
 };
 

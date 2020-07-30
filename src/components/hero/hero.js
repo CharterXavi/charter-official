@@ -1,15 +1,19 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import HeroImg from '../../images/hero-image.jpeg'
 import ButtonPrimary from '../buttons/button-primary'
 import './hero.css'
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const HeroStrip = () => {
-
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    });
     return (
         <div className='Hero'>
             <div className='side-content content-width'>
-                <svg class='homeIcon' xmlns="http://www.w3.org/2000/svg" width="48" height="54" viewBox="0 0 48 54" fill="none">
+                <svg class='homeIcon' xmlns="http://www.w3.org/2000/svg" width="48" height="54" viewBox="0 0 48 54" fill="none" data-aos='fade-up' data-aos-duration='600'>
                     <g filter="url(#filter1_d)">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M25.0403 0.621793C24.2519 -0.207265 22.93 -0.207264 22.1416 0.621793L2.55465 21.2195C1.34344 22.4932 2.24631 24.5977 4.00398 24.5977H5.3064V49.1676H42.3064V24.5977H43.1779C44.9355 24.5977 45.8384 22.4932 44.6272 21.2195L25.0403 0.621793Z" fill="url(#paint0_linear)"/>
                     </g>
@@ -30,13 +34,13 @@ const HeroStrip = () => {
                     </linearGradient>
                     </defs>
                 </svg>
-                <h1>
+                <h1 data-aos='fade-up' data-aos-duration='900'>
                     We're here for you.
                     <br></br>
                     We're there for you.  
                 </h1>
-                <p className='introduction-text'>Throughout the many stages of post-accute care, we put YOU first.</p>
-                <ButtonPrimary link='/about' content='Learn More' />
+                <p className='introduction-text' data-aos='fade-up' data-aos-duration='1000'>Throughout the many stages of post-accute care, we put YOU first.</p>
+                <ButtonPrimary link='/about' content='Learn More' animation='fade-up' animationTime='1200' />
             </div>
             <div className='white-block'></div>
             <svg className='hero-wave-mobile-one' xmlns="http://www.w3.org/2000/svg" width="375" height="458" viewBox="0 0 375 458" fill="none">

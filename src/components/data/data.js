@@ -1,10 +1,16 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './data.css'
 import ButtonPrimaryAlt from '../buttons/button-primary-alt'
 import Chart from './chart'
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const DataStrip = () => {
-
+  
+      useEffect(() => {
+          AOS.init();
+          AOS.refresh();
+      }); 
     // //Method that will be passed down as a prop to handle state management and expand cards / animate clickers
     // //ID passed down as a prop to child button - which invokes this function and passes its ID when clicked
     // const showQuote = (id) => {
@@ -44,7 +50,7 @@ const DataStrip = () => {
         <div className='right'> 
             <h2>We're making a real impact.</h2>
             <p className='introduction-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus diam vitae ut et tincidunt quis sem est, ligula. Aliquam venenatis ut dapibus neque leo. Purus aliquet suscipit turpis volutpat nisl porta elit diam. Et nunc nunc neque aliquet ultricies risus.</p>
-            <ButtonPrimaryAlt content='Read more' />
+            <ButtonPrimaryAlt content='Read more' animation='fade-up' animationTime='1000' />
         </div>
     </div>
   )

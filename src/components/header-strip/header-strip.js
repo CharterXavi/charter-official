@@ -1,8 +1,16 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './header-strip.css';
 import featherImage from '../../images/feather.png';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const HeaderStrip = (props) => {
+
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  });
+
   return (
     <div className='HeaderStrip'>
         <svg className='wave' xmlns="http://www.w3.org/2000/svg" width="363" height="490" viewBox="0 0 363 490" fill="none">
@@ -25,10 +33,10 @@ const HeaderStrip = (props) => {
             </linearGradient>
             </defs>
         </svg>
-        <img src={featherImage} alt="Feather Logo" className='feather' />
+        <img src={featherImage} alt="Feather Logo" className='feather' data-aos='fade-right' data-aos-duration='1500'/>
         <img src={props.image} alt="Group of Nurses" className='image' />
-        <h1>{props.title}</h1>
-        <h2>{props.headline}</h2>
+        <h1 data-aos='fade-right' data-aos-duration='800'>{props.title}</h1>
+        <h2 data-aos='fade-right' data-aos-duration='1000'>{props.headline}</h2>
     </div>
   );
 }
