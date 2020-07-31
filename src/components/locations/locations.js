@@ -1,7 +1,8 @@
-import React, {useState} from 'react'
-import './locations.css'
-import homeIcon from '../../images/home-icon.png'
-import Card from './card'
+import React, {useState} from 'react';
+import './locations.css';
+import homeIcon from '../../images/home-icon.png';
+import Card from './card';
+import Map from './map';
 
 const LocationsStrip = () => {
     const [locationsList, setLocationsList] = useState(
@@ -141,7 +142,7 @@ const LocationsStrip = () => {
             </div>
         </div>
         <div className='right'>
-            <h3>MAP</h3>
+            <Map />
         </div> 
     </div>
   )
