@@ -4,6 +4,10 @@
     justify-content: center;
     padding: 64px;
     height: auto;
+    position: relative;
+    top: 0;
+    z-index: 1;
+    box-sizing: border-box;
 }
 .TestimonialsStrip h2 {
     color: #f05f7e;

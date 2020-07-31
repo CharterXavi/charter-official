@@ -122,6 +122,7 @@ const LocationsStrip = () => {
         <div className='left'> 
         <img src={homeIcon} alt='Home Icon'/>
             <h2>Our Locations</h2>
+            <p className='introduction-text'>See our locations across southern California, and be on the lookout for new locations!</p>
             <div className='card-container'>
                 {/* Map through each location, create a card component and pass state values and methods in as props */}
                 {locationsList.map((location) => {
