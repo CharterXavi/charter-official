@@ -20,7 +20,8 @@
     "react": "^16.12.0",
     "react-chartjs-2": "^2.9.0",
     "react-dom": "^16.12.0",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "react-vertical-timeline-component": "^3.0.2"
   },
   "devDependencies": {
     "prettier": "2.0.5"
