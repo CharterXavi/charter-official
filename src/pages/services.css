@@ -17,6 +17,19 @@
     text-align: center;
     color: var(--primary-accent);
 }
+.vertical-timeline::before {
+    background: var(--light-clinic-blue);
+}
+.timeline {
+    height: auto;
+    padding: 16px;
+}
+.timeline h2 {
+    text-align: center;
+}
+.vertical-timeline-element h3 {
+    color: var(--primary-accent);
+}
 
 @media only screen and (max-width: 975px) {
     .Services .content-wrapper h2 {
