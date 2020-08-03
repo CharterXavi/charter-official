@@ -18,7 +18,7 @@ const Card = (props) => {
     }
 
     return (
-        <div className='Card' data-aos='fade-up' data-aos-duration={props.animationTime}>
+        <div className='Card' data-aos='fade-up' data-aos-duration={props.animationTime} data-aos-once="true">
             <div className='card-title'>
                 <h5>{props.name}</h5>
                 <Clicker onClick={handleClick} />

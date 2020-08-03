@@ -1,0 +1,87 @@
+.AboutHeader {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    position: relative;
+    top: 0;
+    overflow: hidden;
+}
+.AboutHeader .wave {
+    position: absolute;
+    left: -15px;
+    top: -25px;
+    z-index: 2;
+}
+.AboutHeader .feather {
+    position: absolute;
+    height: 450px;
+    left: 255px;
+    z-index: 1;
+}
+.AboutHeader .image {
+    width: 87%;
+    height: 450px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.AboutHeader h1 {
+    font-size: 72px;
+    position: absolute;
+    left: 10%;
+    top: 30%;
+    z-index: 3;
+    color: white;
+}
+.AboutHeader h2 {
+    position: absolute;
+    left: 10%;
+    bottom: 35%;
+    z-index: 3;
+    color: white;
+}
+@media only screen and (max-width: 1675px) {
+    .AboutHeader .image {
+        width: 1500px;
+    }
+}
+@media only screen and (max-width: 1500px) {
+    .AboutHeader .image {
+        left: 100px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .AboutHeader .wave g path {
+        height: 450px;
+    }
+    .AboutHeader .feather {
+        top: 0;
+    }
+    .AboutHeader .image {
+        left: 100px;
+    }
+    .AboutHeader {
+        box-sizing: border-box;
+        padding: 16px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .AboutHeader h1 {
+        padding: 16px 0 4px 0;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        font-size: 2.3rem;
+    }
+    .AboutHeader h2 {
+        font-size: 1.5rem;
+        padding: 4px 0 16px 0;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+}
