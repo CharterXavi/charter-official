@@ -17,6 +17,7 @@ const TeamGrid = () => {
                 image: team1,
                 quote: '"This is an inspirational, introductory quote from this team member."',
                 isClicked: false,
+                animationTime: 700
             },
             {
                 name: 'Jane Appleseed',
@@ -24,6 +25,7 @@ const TeamGrid = () => {
                 image: team2,
                 quote: '"This is an inspirational, introductory quote from this team member."',
                 isClicked: false,
+                animationTime: 900
             },
             {
                 name: 'John Smith',
@@ -31,6 +33,7 @@ const TeamGrid = () => {
                 image: team3,
                 quote: '"This is an inspirational, introductory quote from this team member."',
                 isClicked: false,
+                animationTime: 1100
             },
             {
                 name: 'Jill Jackson',
@@ -38,6 +41,7 @@ const TeamGrid = () => {
                 image: team4,
                 quote: '"This is an inspirational, introductory quote from this team member."',
                 isClicked: false,
+                animationTime: 1300
             },
             {
                 name: 'Jimmy John',
@@ -45,6 +49,7 @@ const TeamGrid = () => {
                 image: team5,
                 quote: '"This is an inspirational, introductory quote from this team member."',
                 isClicked: false,
+                animationTime: 1500
             },
             {
                 name: 'Jessica Smith',
@@ -52,6 +57,7 @@ const TeamGrid = () => {
                 image: team6,
                 quote: '"This is an inspirational, introductory quote from this team member."',
                 isClicked: false,
+                animationTime: 1700
             }
         ]
     )
@@ -90,6 +96,7 @@ const TeamGrid = () => {
                         title={teamMember.title} 
                         quote={teamMember.quote} 
                         isClicked={teamMember.isClicked} 
+                        animationTime={teamMember.animationTime} 
                         expandBio={expandBio} 
                     />   
                 })}
