@@ -1,0 +1,32 @@
+.TeamGrid {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--light-clinic-blue);
+}
+.TeamGrid h2 {
+    width: auto;
+    color: var(--heading-color);
+}
+.TeamGrid .grid-container {
+    padding: 75px 0 32px 0;
+    max-width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.TeamGrid .grid-container .card-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+@media only screen and (max-width: 1200px) {
+    .TeamGrid .grid-container {
+        max-width: 100%;
+    }
+}

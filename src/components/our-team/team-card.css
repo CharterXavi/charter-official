@@ -1,0 +1,108 @@
+.TeamCard {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 32px 8px 98px 8px;
+    width: 400px;
+    min-height: 300px;
+    position: relative;
+    top: 0;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
+    transition: 0.4s ease all;
+    color: var(--heading-color);
+}
+.TeamCard img {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top: -65px;
+    transition: 0.4s ease all;
+}
+.TeamCard .enlarge-image {
+    transform: scale(1.35);
+    top: -90px;
+}
+.TeamCard .card-header {
+    position: relative;
+    top: -60px;
+    padding: 8px;
+}
+.TeamCard .card-header h4 {
+    text-align: center;
+}
+.TeamCard .card-header .introduction-text  {
+    text-align: center;
+    color: var(--primary-accent);
+    padding: 0 0 0 0;
+}
+
+
+
+
+
+.TeamCard .card-content {
+    height: auto;
+    box-sizing: border-box;
+    position: relative;
+    top: -60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 64px 16px 64px;
+}
+.TeamCard .quote {
+    box-sizing: border-box;
+    position: relative;
+    top: 16px;
+    width: 100%;
+    color: var(--heading-color);
+}
+.TeamCard .biography {
+    position: relative;
+    box-sizing: border-box;
+    top: 50px;
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    transition: 0.4s ease all;
+    color: var(--light-clinic-blue);
+}
+.TeamCard .expanded-bio {
+    height: 250px;
+    color: var(--heading-color);
+}
+
+
+
+
+.TeamCard .card-expander {
+    width: 100%;
+    height: 50px;
+    background: var(--primary-accent);
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 8px;
+    position: relative;
+    top: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.TeamCard .card-expander:hover {
+    cursor: pointer;
+}
+.TeamCard .card-expander p {
+    width: auto;
+}
+.TeamCard .hide {
+    background: linear-gradient(67.08deg, #FFCE94 3.73%, #F05F7E 100%);
+    transition: 0.4s ease all;
+}
