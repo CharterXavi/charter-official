@@ -9,9 +9,6 @@ import ButtonPrimaryAlt from '../buttons/button-primary-alt'
 // Data AOS for react imports
 import AOS from "aos";
 import "aos/dist/aos.css";
-//timeline library imports
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
 
 const ServicesStrip = () => {
     
