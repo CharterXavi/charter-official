@@ -70,6 +70,14 @@
     align-items: center;
     justify-content: center;
 }
+.Footer .helpful-links ul li a {
+    color: var(--heading-color);
+    font-weight: normal;
+    transition: 0.2s ease all;
+}
+.Footer .helpful-links ul li a:hover {
+    color: var(--primary-accent);
+}
 
 .Footer .bottom {
     width: 100%;
