@@ -1,6 +1,7 @@
-import React, {useState} from 'react'
-import './news.css'
-import heroImage from '../../images/hero-image.jpeg'
+import React, {useState} from 'react';
+import './news.css';
+import heroImage from '../../images/hero-image.jpeg';
+import ButtonPrimaryAlt from '../../components/buttons/button-primary-alt';
 
 const NewsStrip = () => {
     const [postList, setPostlist] = useState(
@@ -50,6 +51,7 @@ const NewsStrip = () => {
                     );
                 })}
             </div>
+            <ButtonPrimaryAlt content='Visit our news page' link='/news' animation='fade-up' animationTime='900' />
         </div>
     );
 };

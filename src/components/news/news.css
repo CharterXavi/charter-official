@@ -14,6 +14,9 @@
     width: auto;
     color: var(--heading-color);
 }
+.NewsStrip .btn-primary-alt {
+    width: auto;
+}
 .NewsStrip .card-container {
     width: 80%;
     display: flex;
