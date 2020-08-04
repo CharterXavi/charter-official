@@ -1,6 +1,7 @@
-import React from 'react'
-import './footer.css'
-import ContactForm from '../../components/form'
+import React from 'react';
+import './footer.css';
+import ContactForm from '../../components/form';
+import {Link} from 'gatsby';
 
 
 //TODO - MAKE CARDS EXPANDABLE ON MOBILE AND DESKTOP
@@ -17,10 +18,10 @@ const Footer = () => {
                 <div className='helpful-links'>
                     <h4>Helpful Links</h4>
                     <ul>
-                        <li>About Charter</li>
-                        <li>Careers</li>
-                        <li>Terms & Conditions</li>
-                        <li>Privacy Policy</li>
+                        <li><Link to='/about'>About Charter</Link></li>
+                        <li><Link to='/careers'>Careers</Link></li>
+                        <li><Link to='/terms-and-conditions'>Terms & Conditions</Link></li>
+                        <li><Link to='/privacy-policy'>Privacy Policy</Link></li>
                     </ul>
                 </div>
                 <div className='headquarters'>
