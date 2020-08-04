@@ -1,12 +1,13 @@
-import React from 'react'
-import './our-team.css'
-import team1 from '../../images/team/team1.png'
-import team2 from '../../images/team/team2.png'
-import team3 from '../../images/team/team3.png'
-import team4 from '../../images/team/team4.png'
-import team5 from '../../images/team/team5.png'
-import team6 from '../../images/team/team6.png'
-import ButtonSecondary from '../buttons/button-secondary'
+import React from 'react';
+import './our-team.css';
+import team1 from '../../images/team/team1.png';
+import team2 from '../../images/team/team2.png';
+import team3 from '../../images/team/team3.png';
+import team4 from '../../images/team/team4.png';
+import team5 from '../../images/team/team5.png';
+import team6 from '../../images/team/team6.png';
+import ButtonSecondary from '../buttons/button-secondary';
+import {Link} from 'gatsby';
 
 const OurTeamStrip = () => {
   return (
@@ -14,42 +15,54 @@ const OurTeamStrip = () => {
         <h2>Meet Our Team</h2>
         <div className='card-container'>
             <div className='card'>
-                <img src={team1} alt="Team Member" />
+                <Link to='/our-team'>
+                    <img src={team1} alt="Team Member" />
+                </Link>
                 <div className='card-info'>
                     <h4>Johnny Appleseed</h4>
                     <p className='introduction-text'>Company Title</p>
                 </div>
             </div>
             <div className='card'>
-                <img src={team2} alt="Team Member" />
+                <Link to='/our-team'>
+                    <img src={team2} alt="Team Member" />
+                </Link>
                 <div className='card-info'>
                     <h4>Johnny Appleseed</h4>
                     <p className='introduction-text'>Company Title</p>
                 </div>
             </div>
             <div className='card'>
-                <img src={team3} alt="Team Member" />
+                <Link to='/our-team'>
+                    <img src={team3} alt="Team Member" />
+                </Link>
                 <div className='card-info'>
                     <h4>Johnny Appleseed</h4>
                     <p className='introduction-text'>Company Title</p>
                 </div>
             </div>
             <div className='card'>
-                <img src={team4} alt="Team Member" />
+                <Link to='/our-team'>
+                    <img src={team4} alt="Team Member" />
+                </Link>
                 <div className='card-info'>
                     <h4>Johnny Appleseed</h4>
                     <p className='introduction-text'>Company Title</p>
                 </div>
             </div>
             <div className='card'>
-                <img src={team5} alt="Team Member" />
+                <Link to='/our-team'>
+                    <img src={team5} alt="Team Member" />
+                </Link>
                 <div className='card-info'>
                     <h4>Johnny Appleseed</h4>
                     <p className='introduction-text'>Company Title</p>
                 </div>
             </div>
             <div className='card'>
-                <img src={team6} alt="Team Member" />
+                <Link to='/our-team'>
+                    <img src={team6} alt="Team Member" />
+                </Link>
                 <div className='card-info'>
                     <h4>Johnny Appleseed</h4>
                     <p className='introduction-text'>Company Title</p>

@@ -9,7 +9,7 @@
     min-height: 300px;
     position: relative;
     top: 0;
-    background: white;
+    background: var(--light-clinic-blue);
     border-radius: 10px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
     transition: 0.4s ease all;
@@ -83,7 +83,7 @@
 .TeamCard .card-expander {
     width: 100%;
     height: 50px;
-    background: var(--primary-accent);
+    background: var(--pink-sherbet);
     color: white;
     font-weight: bold;
     display: flex;
@@ -98,13 +98,17 @@
 }
 .TeamCard .card-expander:hover {
     cursor: pointer;
+    background: var(--primary-accent);
 }
 .TeamCard .card-expander p {
     width: auto;
 }
 .TeamCard .hide {
     background: linear-gradient(67.08deg, #FFCE94 3.73%, #F05F7E 100%);
-    transition: 0.4s ease all;
+}
+.TeamCard .hide:hover {
+    cursor: pointer;
+    background: var(--primary-accent);
 }
 
 

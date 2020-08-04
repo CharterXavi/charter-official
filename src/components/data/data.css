@@ -5,6 +5,7 @@
     padding: 64px;
     height: auto;
     background: #F6F7FB;
+    color: var(--heading-color);
 }
 .DataStrip h2 {
     color: #f05f7e;
