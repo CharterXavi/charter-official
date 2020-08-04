@@ -6,11 +6,13 @@
     width: 100%;
     height: auto;
     background-color: #F6F7FB; 
+    color: var(--heading-color);
 }
 .ServicesStrip h2 {
     text-align: center;
     padding: 32px 0 0 0;
     width: 85%;
+    color: var(--heading-color);
 }
 .ServicesStrip .card-container {
     width: 100%;

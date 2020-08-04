@@ -23,7 +23,7 @@ const Card = (props) => {
                 <h5>{props.name}</h5>
                 <Clicker onClick={handleClick} />
             </div>
-            <Expander 
+            <Expander
                 isExpanded={props.isExpanded}
                 address={props.address}
                 phone={props.phone}

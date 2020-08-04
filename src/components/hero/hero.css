@@ -8,6 +8,7 @@
     justify-content: center;
     overflow: hidden;
     font-family: 'Quicksand', sans-serif;
+    color: var(--heading-color);
 }
 .Hero .homeIcon {
     width: 60px;
