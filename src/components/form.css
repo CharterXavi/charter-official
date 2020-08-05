@@ -39,7 +39,7 @@ input, textarea {
     border-radius: 10px;
     border: none;
     outline: none;
-    background: #f4f4f4;
+    background: var(--light-clinic-blue);
     color: var(--heading-color);
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
@@ -60,7 +60,7 @@ input::placeholder, textarea::placeholder {
     font-weight: normal;
 }
 input:focus, textarea:focus {
-    box-shadow: 0 0 2px #363f55;
+    box-shadow: 0 0 2px var(--heading-color);
 }
 textarea {
     width: 100%;

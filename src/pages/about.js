@@ -4,6 +4,7 @@ import SEO from "../components/seo";
 import './about.css';
 import HeaderStrip from '../components/header-strip/header-strip';
 import aboutImage from '../images/about-header.png';
+import NewsStrip from '../components/news/news';
 import OurTeamStrip from '../components/our-team/our-team'
 import LocationsStrip from '../components/locations/locations';
 import AOS from "aos";
@@ -133,6 +134,7 @@ const AboutPage = () => {
           <p>But that's not all. We're committed as well to training and education, creating an environment of learning, and fostering healthy working relationships. </p>
         </div>
       </div>
+      <NewsStrip />
       <OurTeamStrip />
       <LocationsStrip />
     </Layout>

@@ -1,6 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from '../components/layout';
+import './blogTemplate.css';
+
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
@@ -16,6 +18,24 @@ export default function Template({
             className="blog-post-content"
             dangerouslySetInnerHTML={{ __html: html }}
           />
+        </div>
+        <div className='sidebar'>
+          <div className='recent'>
+            <h3>Recent Posts</h3>
+            <ul>
+              <li>Post 1</li>
+              <li>Post 2</li>
+              <li>Post 3</li>
+            </ul>
+          </div>
+          <div className='related'>
+            <h3>Related Posts</h3>
+            <ul>
+              <li>Post 1</li>
+              <li>Post 2</li>
+              <li>Post 3</li>
+            </ul>
+          </div>
         </div>
       </div>
     </Layout>
