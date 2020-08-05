@@ -1,7 +1,7 @@
 .PostLink {
     width: 100%;
     height: 100%;
-    background: var(--light-clinic-blue);
+    background: linear-gradient(360deg, rgba(54, 63, 85, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
     border-radius: 10px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
     position: relative;
@@ -14,10 +14,40 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 0;
+    z-index: -1;
     object-fit: cover;
     transition: 0.25s ease all;
 }
+.PostLink .overlay {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.25) 0%, rgba(255, 255, 255, 0) 30%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: 0.4s ease all;
+}
+.PostLink .categories{
+    transition: 0.4s ease all;
+    font-size: 0.8rem;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    z-index: 5;
+    color: white;
+    background: linear-gradient(66.41deg, #FFCE94 3.73%, #F05F7E 100%);
+    border-radius: 5px;
+    padding: 4px;
+}
+.PostLink .categories:hover {
+    transform: scale(1.2);
+}
 .PostLink .content {
     transition: 0.4s ease all;
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    z-index: 3;
+    color: white;
 }

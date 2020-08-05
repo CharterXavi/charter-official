@@ -36,13 +36,6 @@
     filter: blur(2px);
     transform: scale(1.05);
 }
-.NewsArchive .recent .grid a .PostLink .content {
-    position: absolute;
-    bottom: 16px;
-    left: 16px;
-    z-index: 1;
-    color: white;
-}
 .NewsArchive .recent .grid a:hover .PostLink .content {
     transform: scale(1.05) translateX(8px);
 }

@@ -36,9 +36,10 @@ const NewsPage = ({
 
 export default NewsPage;
 
+//Query our post frontmatter to get relative paths for the images they may be referencing
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+    allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}) {
       edges {
         node {
           id
@@ -47,6 +48,15 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             slug
             title
+            categories
+            featuredImage {
+              relativePath
+              childImageSharp {
+                fluid {
+                  src
+                }
+              }
+            }
           }
         }
       }
