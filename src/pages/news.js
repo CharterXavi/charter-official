@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import PostLink from "../components/news/post-link";
 import Layout from '../components/layout';
 import HeaderStrip from '../components/header-strip/header-strip';
@@ -24,7 +24,10 @@ const NewsPage = ({
         />
         <div className='NewsArchive'>
             <div className='recent'>
-                <h2>Recent Articles</h2>
+                <div className='grid-header'>
+                  <h2>Recent Articles</h2>
+                  <Link to='/news/recent'>See Recent Articles</Link>
+                </div>
                 <div className='grid'>
                     {recentPosts}
                 </div>
@@ -39,7 +42,7 @@ export default NewsPage;
 //Query our post frontmatter to get relative paths for the images they may be referencing
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}) {
+    allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {}, limit: 5) {
       edges {
         node {
           id
@@ -50,7 +53,6 @@ export const pageQuery = graphql`
             title
             categories
             featuredImage {
-              relativePath
               childImageSharp {
                 fluid {
                   src

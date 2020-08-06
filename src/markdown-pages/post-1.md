@@ -1,5 +1,5 @@
 ---
-slug: "/blog/my-first-post"
+slug: "/news/my-first-post"
 date: "2019-05-04"
 title: "My FIRST blog post"
 featuredImage: ../images/blog-content/smiling.jpeg
