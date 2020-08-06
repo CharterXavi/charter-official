@@ -1,6 +1,6 @@
 ---
 slug: "/news/my-ninth-post"
-date: "2019-05-07"
+date: "2019-05-12"
 title: "My NINTH blog post"
 featuredImage: ../images/blog-content/stethoscope.jpeg
 excerpt: 'The ninth post on this site, ever!'

@@ -1,0 +1,39 @@
+.ShowMoreButton {
+    width: auto;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.show-more-btn {
+    outline: none;
+    border: none;
+    color: white;
+    /* Rose */
+    background: linear-gradient(180deg, #F493AA 0%, #F05F7E 100%);
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.22);
+    border-radius: 10px;
+    min-width: 200px;
+    box-sizing: border-box;
+    padding: 8px 16px 8px 16px;
+    height: 50px;
+    transition: 0.4s ease all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Nunito', sans-serif;
+}
+.show-more-btn:hover {
+    background: linear-gradient(37.36deg, #FFCE94 3.73%, #F05F7E 100%);
+    box-shadow: none;
+    transform: translateY(1px);
+    transition: 0.3s ease all;
+    cursor: pointer;
+}
+.show-more-btn img {
+    width: 30px;
+    height: auto;
+    margin: 0 0 0 0;
+}

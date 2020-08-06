@@ -31,8 +31,8 @@ const RecentPage = ({
     //write a function that will update state to show 6 more posts
     const showMorePosts = (clickCount, isFinished) => {
         const newClickCount = clickCount++;
-        //take clickCount as an input, and loop over 6 times for each click
-        //reset state to reflect new results
+        
+        //if isFinished = true, reset everything to show first 6 posts once again
         if(isFinished) {
             for (let i = 0; i < 6; i++) {
                 newPostList.push(allRecentPosts[i]);
@@ -42,7 +42,10 @@ const RecentPage = ({
             setIsFinished(false);
             console.log('POSTS: ', newPostList);
             console.log('CLICKS: ', clickCount);
+        //Otherwise, show 6 more posts by replacing what's on the page with itself + another 6
         } else {
+            //take clickCount as an input, and loop over 6 times for each click
+            //reset state to reflect new results
             for (let i = 0; i < clickCount * 6; i++) {
                 if (allRecentPosts[i]) {
                     newPostList.push(allRecentPosts[i]);
@@ -75,7 +78,7 @@ const RecentPage = ({
                     {posts.map(edge => <PostLink key={edge.node.id} post={edge.node} />)}
                 
                 </div>
-                <ShowMoreButton content='Show 5 more' clickCount={clickCount} isFinished={isFinished} showMorePosts={showMorePosts} />
+                <ShowMoreButton content='Show more' clickCount={clickCount} isFinished={isFinished} showMorePosts={showMorePosts} />
             </div>
         </div>
       </Layout>

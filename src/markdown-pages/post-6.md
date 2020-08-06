@@ -1,6 +1,6 @@
 ---
 slug: "/news/my-sixth-post"
-date: "2019-05-04"
+date: "2019-05-09"
 title: "My SIXTH blog post"
 featuredImage: ../images/blog-content/smiling.jpeg
 excerpt: 'The SIXTH post on this site, ever!'

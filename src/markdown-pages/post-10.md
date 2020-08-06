@@ -1,6 +1,6 @@
 ---
 slug: "/news/my-tenth-post"
-date: "2019-05-08"
+date: "2019-05-13"
 title: "My TENTH blog post"
 featuredImage: ../images/blog-content/artist.jpeg
 excerpt: 'The tenth post on this site, ever!'

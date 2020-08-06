@@ -26,7 +26,7 @@ const NewsPage = ({
             <div className='recent'>
                 <div className='grid-header'>
                   <h2>Recent Articles</h2>
-                  <Link to='/news/recent'>See Recent Articles</Link>
+                  <Link to='/news/recent'>See All Recent Articles</Link>
                 </div>
                 <div className='grid'>
                     {recentPosts}
