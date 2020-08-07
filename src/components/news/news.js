@@ -1,55 +1,20 @@
-import React, {useState} from 'react'
-import './news.css'
-import heroImage from '../../images/hero-image.jpeg'
+import React from 'react';
+import './news.css';
+import heroImage from '../../images/hero-image.jpeg';
+import ButtonPrimaryAlt from '../../components/buttons/button-primary-alt';
+import NewsCard from '../../components/news/news-card';
 
 const NewsStrip = () => {
-    const [postList, setPostlist] = useState(
-        [
-            {
-                title: 'The Latest News',
-                category: 'Healthcare',
-                date: 'July 20, 2020'
-            },
-            {
-                title: 'The Latest News',
-                category: 'Healthcare',
-                date: 'July 20, 2020'
-            },
-            {
-                title: 'The Latest News',
-                category: 'Healthcare',
-                date: 'July 20, 2020'
-            },
-            {
-                title: 'The Latest News',
-                category: 'Healthcare',
-                date: 'July 20, 2020'
-            }
-        ]
-    );
-
     return (
         <div className='NewsStrip'>
             <h2>Recent News</h2>
             <div className='card-container'>
-                {postList.map(post => {
-                    return (
-                        <div className='card'>
-                            <div className='image'>
-                                <img src={heroImage} alt="Hero Image" />
-                            </div>
-                            <div className='info'>
-                                <h4>{post.title}</h4>
-                                <div className='metadata'>
-                                    <p>Category: {post.category}</p>
-                                    <p>{post.date}</p>
-                                </div>
-                                <a href="#">Read more</a>
-                            </div>
-                        </div>
-                    );
-                })}
+                <NewsCard link='/news' title='News Article' date='8/1/2020' />
+                <NewsCard link='/news' title='News Article' date='8/1/2020' />
+                <NewsCard link='/news' title='News Article' date='8/1/2020' />
+                <NewsCard link='/news' title='News Article' date='8/1/2020' />
             </div>
+            <ButtonPrimaryAlt content='Visit our news page' link='/news' animation='fade-up' animationTime='900' />
         </div>
     );
 };

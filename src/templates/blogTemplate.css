@@ -1,0 +1,58 @@
+.blog-post-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 64px;
+    max-width: 1440px;
+    height: auto;
+    margin: auto; 
+}
+.blog-post-container .blog-post {
+    box-sizing: border-box;
+    width: 75%;
+    padding: 0 32px 32px 32px;
+    color: var(--heading-color);
+}
+.blog-post-container .blog-post img {
+    width: 95%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
+}
+.blog-post-container .blog-post h2,
+.blog-post-container .blog-post h3,
+.blog-post-container .blog-post h4,
+.blog-post-container .blog-post h5,
+.blog-post-container .blog-post h6 {
+    color: var(--heading-color);
+}
+.blog-post-container .sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    width: 25%;
+    height: 50vh;
+    padding: 32px;
+    background: var(--light-clinic-blue);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+    position: sticky;
+    top: 190px;
+}
+.blog-post-content {
+    padding: 0 0 32px 0;
+}
+.blog-post-container .sidebar .recent {
+    width: 100%;
+}
+.blog-post-container .sidebar .related {
+    width: 100%;
+}
+.blog-post-container .btn-primary {
+    width: auto;
+}
+.blog-post-container .ButtonPrimary  {
+    justify-content: flex-start;
+}

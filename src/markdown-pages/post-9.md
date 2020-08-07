@@ -1,12 +1,12 @@
 ---
-slug: "/news/my-first-post"
-date: "2019-05-04"
-title: "My FIRST blog post"
-featuredImage: ../images/blog-content/smiling.jpeg
-excerpt: 'The first post on this site, ever!'
-categories: ['research']
+slug: "/news/my-ninth-post"
+date: "2019-05-12"
+title: "My NINTH blog post"
+featuredImage: ../images/blog-content/stethoscope.jpeg
+excerpt: 'The ninth post on this site, ever!'
+categories: ['health']
 ---
-### The first blog post!
+### The NINTH blog post!
 Isn't it a great one. 
 
 #### Heading

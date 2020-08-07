@@ -1,13 +1,13 @@
 ---
-slug: "/news/my-first-post"
-date: "2019-05-04"
-title: "My FIRST blog post"
-featuredImage: ../images/blog-content/smiling.jpeg
-excerpt: 'The first post on this site, ever!'
+slug: "/news/my-second-post"
+date: "2019-05-05"
+title: "My SECOND blog post"
+featuredImage: ../images/blog-content/covid.jpeg
+excerpt: 'The second post on this site, ever!'
 categories: ['research']
 ---
-### The first blog post!
-Isn't it a great one. 
+### The SECOND blog post!
+Isn't it a great one.  
 
 #### Heading
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
