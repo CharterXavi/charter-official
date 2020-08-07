@@ -4,7 +4,7 @@ date: "2019-05-11"
 title: "My EIGHTH blog post"
 featuredImage: ../images/blog-content/hands.jpeg
 excerpt: 'The eighth post on this site, ever!'
-categories: ['Health']
+categories: ['health']
 ---
 ### The EIGHTH blog post!
 Isn't it a great one. 

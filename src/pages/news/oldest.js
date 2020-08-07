@@ -7,28 +7,23 @@ import ShowMoreButton from '../../components/buttons/show-more';
 import newsImage from '../../images/news.png';
 import './recent.css';
 
-const RecentPage = ({
+const OldestPage = ({
   data: {
     allMarkdownRemark: { edges },
   }
 }) => {
-    const allRecentPosts = edges
+    const allOldestPosts = edges
     .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
     
     const [posts, setPosts] = useState([]); //posts state begin as an empty array
     const [clickCount, setClickCount] = useState(1); //click count state begins as a 1
     const [isFinished, setIsFinished] = useState(false); //when posts are all shown, change state to setFinished:true
-    const [hideShowMore, setHideShowMore] = useState(false); //when not enough posts, hide showMore button
     const newPostList = [];
 
     //push first 6 posts to state upon mounting
     useEffect(() => {
         for (let i = 0; i < 6; i++) {
-          if(allRecentPosts[i]) {
-              newPostList.push(allRecentPosts[i]);
-          } else {
-              setHideShowMore(true);
-          }
+            newPostList.push(allOldestPosts[i]);
         }
         setPosts(newPostList);
       }, []);
@@ -40,9 +35,7 @@ const RecentPage = ({
         //if isFinished = true, reset everything to show first 6 posts once again
         if(isFinished) {
             for (let i = 0; i < 6; i++) {
-              if(allRecentPosts[i]) {
-                newPostList.push(allRecentPosts[i]);
-              }
+                newPostList.push(allOldestPosts[i]);
             }
             setPosts(newPostList);
             setClickCount(1);
@@ -54,8 +47,8 @@ const RecentPage = ({
             //take clickCount as an input, and loop over 6 times for each click
             //reset state to reflect new results
             for (let i = 0; i < clickCount * 6; i++) {
-                if (allRecentPosts[i]) {
-                    newPostList.push(allRecentPosts[i]);
+                if (allOldestPosts[i]) {
+                    newPostList.push(allOldestPosts[i]);
                 } else {
                     setIsFinished(true);
                 }      
@@ -70,14 +63,14 @@ const RecentPage = ({
   return (
       <Layout>
         <HeaderStrip 
-            title='Recent Articles'
-            headline='Stay up to date in our company and industry!'
+            title='Oldest Articles'
+            headline='See all of the older posts in our archive'
             image={newsImage}
         />
         <div className='AllPosts'>
             <div className='grid-wrapper'>
                 <div className='grid-header'>
-                  <h2>All Recent Articles</h2>
+                  <h2>All Oldest Articles</h2>
                 </div>
                 <div className='grid'>
                     
@@ -85,19 +78,19 @@ const RecentPage = ({
                     {posts.map(edge => <PostLink key={edge.node.id} post={edge.node} />)}
                 
                 </div>
-                {hideShowMore ? '' : <ShowMoreButton content='Show more' clickCount={clickCount} isFinished={isFinished} showMorePosts={showMorePosts} />}
+                <ShowMoreButton content='Show more' clickCount={clickCount} isFinished={isFinished} showMorePosts={showMorePosts} />
             </div>
         </div>
       </Layout>
   )
 };
 
-export default RecentPage;
+export default OldestPage;
 
 //Query our post frontmatter to get relative paths for the images they may be referencing
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {}) {
+    allMarkdownRemark(sort: {order: ASC, fields: [frontmatter___date]}, filter: {}) {
       edges {
         node {
           id

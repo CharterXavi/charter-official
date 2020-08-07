@@ -4,7 +4,7 @@ date: "2019-05-04"
 title: "My FIRST blog post"
 featuredImage: ../images/blog-content/smiling.jpeg
 excerpt: 'The first post on this site, ever!'
-categories: ['Research']
+categories: ['research']
 ---
 ### The first blog post!
 Isn't it a great one. 

@@ -4,7 +4,7 @@ date: "2019-05-13"
 title: "My TENTH blog post"
 featuredImage: ../images/blog-content/artist.jpeg
 excerpt: 'The tenth post on this site, ever!'
-categories: ['Health']
+categories: ['health']
 ---
 ### The TENTH blog post!
 Isn't it a great one.  

@@ -1,4 +1,4 @@
-.oldest {
+.PostStrip {
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -7,28 +7,28 @@
     min-height: 200px;
     margin: 32px 0 32px 0;
 }
-.oldest .grid {
+.PostStrip .grid {
     display: flex;
     justify-content: flex-start;
     width: 100%;
-    height: 400px;
+    height: auto;
     box-sizing: border-box;
 }
-.oldest .grid-header {
+.PostStrip .grid-header {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
 }
-.oldest .grid-header a {
+.PostStrip .grid-header a {
     padding: 12px 0 20px 0;
     width: 180px;
     height: auto;
     text-align: right;
     text-decoration: underline;
 }
-.oldest .grid a {
+.PostStrip .grid a {
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
@@ -36,69 +36,73 @@
     height: 200px;
     margin: 8px;
 }
-.oldest .grid a:hover .PostLink img {
+.PostStrip .grid a:hover .PostLink img {
     filter: blur(2px);
     transform: scale(1.05);
 }
-.oldest .grid a:hover .PostLink .content {
+.PostStrip .grid a:hover .PostLink .content {
     transform: scale(1.05) translateX(8px);
 }
 
 @media only screen and (max-width: 1400px) {
-    .oldest .grid a:nth-of-type(5) {
+    .PostStrip .grid a:nth-of-type(5) {
         display: none; 
     }
 }
 @media only screen and (max-width: 1150px) {
-    .oldest .grid a:nth-of-type(4) {
+    .PostStrip .grid a:nth-of-type(4) {
         display: none; 
     }
 }
 @media only screen and (max-width: 950px) {
-    .oldest {
+    .PostStrip {
         width: 85%;
     }
 }
 @media only screen and (max-width: 700px) {
-    .oldest .grid {
+    .PostStrip .grid {
         flex-wrap: wrap;
         justify-content: center;
         height: auto;
     }
-    .oldest .grid a {
+    .PostStrip .grid a {
         width: 46%;
         height: 100px;
     }
-    .oldest .grid a:nth-of-type(4) {
+    .PostStrip .grid a:nth-of-type(4) {
         display: inherit;
     }
 }
-@media only screen and (max-width: 550px) {
-    .oldest .grid {
+@media only screen and (max-width: 600px) {
+    .PostStrip {
+        width: 100%;
+    }
+    .PostStrip .grid {
         width: 100%;
         height: auto;
         flex-direction: column;
     }
-    .oldest .grid a {
+    .PostStrip .grid a {
         width: 100%;
+        height: 150px;
         margin: 8px 0 8px 0;
     }
-    .oldest a .PostLink .content {
+    .PostStrip a .PostLink .content {
         bottom: 5%;
     }
 }
 @media only screen and (max-width: 400px) {
-    .oldest .grid-header a {
+    .PostStrip .grid-header a {
         font-size: 0.8rem;
         width: 150px;
         text-align: left;
         padding: 0 0 16px 0;
     }
-    .oldest .grid-header {
+    .PostStrip .grid-header {
         flex-direction: column;
         align-items: flex-start;
     }
-    .oldest .grid-header h2 {
+    .PostStrip .grid-header h2 {
         padding: 16px 0 4px 0;
     }
 }

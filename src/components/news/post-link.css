@@ -28,7 +28,7 @@
     z-index: 0;
     transition: 0.4s ease all;
 }
-.PostLink .categories{
+.PostLink .categories {
     transition: 0.4s ease all;
     font-size: 0.8rem;
     position: absolute;
@@ -39,6 +39,13 @@
     background: linear-gradient(66.41deg, #FFCE94 3.73%, #F05F7E 100%);
     border-radius: 5px;
     padding: 4px;
+}
+.PostLink .categories .category {
+    color: white;
+    background: none;
+    box-shadow: none;
+    border: none;
+    margin: 0 0 0 0;
 }
 .PostLink .categories:hover {
     transform: scale(1.2);

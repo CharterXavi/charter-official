@@ -7,14 +7,9 @@ import ShowMoreButton from '../../components/buttons/show-more';
 import newsImage from '../../images/news.png';
 import './recent.css';
 
-const RecentPage = ({
-  data: {
-    allMarkdownRemark: { edges },
-  }
-}) => {
-    const allRecentPosts = edges
-    .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
-    
+const HealthPage = ({data}) => {
+    const allHealthPosts = data.health.edges.filter(edge => !!edge.node.frontmatter.date); // You can filter your posts based on some criteria
+
     const [posts, setPosts] = useState([]); //posts state begin as an empty array
     const [clickCount, setClickCount] = useState(1); //click count state begins as a 1
     const [isFinished, setIsFinished] = useState(false); //when posts are all shown, change state to setFinished:true
@@ -24,14 +19,16 @@ const RecentPage = ({
     //push first 6 posts to state upon mounting
     useEffect(() => {
         for (let i = 0; i < 6; i++) {
-          if(allRecentPosts[i]) {
-              newPostList.push(allRecentPosts[i]);
-          } else {
-              setHideShowMore(true);
-          }
+            //if this post exists, push it to the new list - helps avoid pushing 'undefined' nodes to list
+            if(allHealthPosts[i]) {
+                newPostList.push(allHealthPosts[i]);
+            } else {
+                //if there aren't enough posts, hide show more button
+                setHideShowMore(true);
+            }
         }
         setPosts(newPostList);
-      }, []);
+    }, []); 
 
     //write a function that will update state to show 6 more posts
     const showMorePosts = (clickCount, isFinished) => {
@@ -40,9 +37,10 @@ const RecentPage = ({
         //if isFinished = true, reset everything to show first 6 posts once again
         if(isFinished) {
             for (let i = 0; i < 6; i++) {
-              if(allRecentPosts[i]) {
-                newPostList.push(allRecentPosts[i]);
-              }
+                //if this post exists, push it to the new list - helps avoid pushing 'undefined' nodes to list
+                if(allHealthPosts[i]) {
+                    newPostList.push(allHealthPosts[i]);
+                }
             }
             setPosts(newPostList);
             setClickCount(1);
@@ -54,8 +52,9 @@ const RecentPage = ({
             //take clickCount as an input, and loop over 6 times for each click
             //reset state to reflect new results
             for (let i = 0; i < clickCount * 6; i++) {
-                if (allRecentPosts[i]) {
-                    newPostList.push(allRecentPosts[i]);
+                //if this post exists, push it to the new list - helps avoid pushing 'undefined' nodes to list
+                if (allHealthPosts[i]) {
+                    newPostList.push(allHealthPosts[i]);
                 } else {
                     setIsFinished(true);
                 }      
@@ -70,14 +69,14 @@ const RecentPage = ({
   return (
       <Layout>
         <HeaderStrip 
-            title='Recent Articles'
-            headline='Stay up to date in our company and industry!'
+            title='Health Articles'
+            headline='See all of the health-related posts in our archive'
             image={newsImage}
         />
         <div className='AllPosts'>
             <div className='grid-wrapper'>
                 <div className='grid-header'>
-                  <h2>All Recent Articles</h2>
+                  <h2>All Health Articles</h2>
                 </div>
                 <div className='grid'>
                     
@@ -92,12 +91,12 @@ const RecentPage = ({
   )
 };
 
-export default RecentPage;
+export default HealthPage;
 
 //Query our post frontmatter to get relative paths for the images they may be referencing
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {}) {
+    health: allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {categories: {eq: "health"}}}, limit: 5) {
       edges {
         node {
           id
@@ -108,6 +107,7 @@ export const pageQuery = graphql`
             title
             categories
             featuredImage {
+              relativePath
               childImageSharp {
                 fluid {
                   src

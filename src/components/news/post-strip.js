@@ -1,15 +1,15 @@
 import React from "react";
 import { Link } from "gatsby";
-import PostLink from "../../components/news/post-link";
-import './oldest-grid.css';
+import PostLink from "./post-link";
+import './post-strip.css';
 
-const OldestGrid = (props) => {
+const PostStrip = (props) => {
 
   return (
-    <div className='oldest'>
+    <div className='PostStrip'>
         <div className='grid-header'>
-        <h2>Oldest Articles</h2>
-        <Link to='/news/oldest'>See All Oldest Articles</Link>
+        <h2>{props.title}</h2>
+        <Link to={props.link}>See All {props.title}</Link>
         </div>
         <div className='grid'>
         
@@ -27,4 +27,4 @@ const OldestGrid = (props) => {
   )
 };
 
-export default OldestGrid;
+export default PostStrip;

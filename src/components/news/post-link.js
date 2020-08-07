@@ -11,7 +11,9 @@ const PostLink = ({ post }) => {
         <Link to={post.frontmatter.slug}>
             <div className='PostLink'>
                 <div className='categories'>
-                    {post.frontmatter.categories}
+                    {post.frontmatter.categories.map(category => {
+                        return <Link to={`/news/${category}`} className='category'>{category}</Link>
+                    })}
                 </div>
                 <div className='content'>
                     {post.frontmatter.title}

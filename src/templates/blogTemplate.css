@@ -6,7 +6,7 @@
     padding: 64px;
     max-width: 1440px;
     height: auto;
-    margin: auto;
+    margin: auto; 
 }
 .blog-post-container .blog-post {
     box-sizing: border-box;

@@ -4,7 +4,7 @@ date: "2019-05-08"
 title: "My FIFTH blog post"
 featuredImage: ../images/blog-content/artist.jpeg
 excerpt: 'The fifth post on this site, ever!'
-categories: ['Research']
+categories: ['research']
 ---
 ### The FIFTH blog post!
 Isn't it a great one.  
