@@ -4,16 +4,15 @@ import PostLink from "../components/news/post-link";
 import Layout from '../components/layout';
 import HeaderStrip from '../components/header-strip/header-strip';
 import newsImage from '../images/news.png';
+import RecentGrid from '../components/news/recent-grid';
+import OldestGrid from '../components/news/oldest-grid';
 import './news.css';
 
-const NewsPage = ({
-  data: {
-    allMarkdownRemark: { edges },
-  },
-}) => {
-  const recentPosts = edges
-    .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
-    .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
+const NewsPage = ({data}) => {
+
+  const recentPosts = data.recent.edges;
+
+  const oldestPosts = data.oldest.edges;
 
   return (
       <Layout>
@@ -23,15 +22,11 @@ const NewsPage = ({
             image={newsImage}
         />
         <div className='NewsArchive'>
-            <div className='recent'>
-                <div className='grid-header'>
-                  <h2>Recent Articles</h2>
-                  <Link to='/news/recent'>See All Recent Articles</Link>
-                </div>
-                <div className='grid'>
-                    {recentPosts}
-                </div>
-            </div>
+
+            <RecentGrid posts={recentPosts} />
+
+            <OldestGrid posts={oldestPosts} />
+
         </div>
       </Layout>
   )
@@ -42,7 +37,7 @@ export default NewsPage;
 //Query our post frontmatter to get relative paths for the images they may be referencing
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {}, limit: 5) {
+    recent: allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {}, limit: 5) {
       edges {
         node {
           id
@@ -53,6 +48,29 @@ export const pageQuery = graphql`
             title
             categories
             featuredImage {
+              relativePath
+              childImageSharp {
+                fluid {
+                  src
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    oldest: allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {}, limit: 5) {
+      edges {
+        node {
+          id
+          excerpt(pruneLength: 250)
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            slug
+            title
+            categories
+            featuredImage {
+              relativePath
               childImageSharp {
                 fluid {
                   src

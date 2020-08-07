@@ -41,6 +41,13 @@
     width: 45%;
     height: 250px;
 }
+.AllRecentPosts .grid-wrapper .grid a:hover .PostLink img {
+    filter: blur(2px);
+    transform: scale(1.05);
+}
+.AllRecentPosts .grid-wrapper .grid a:hover .PostLink .content {
+    transform: scale(1.05) translateX(8px);
+}
 
 @media only screen and (max-width: 1300px) {
     .AllRecentPosts .grid {
