@@ -16,7 +16,7 @@ const HealthPage = ({data}) => {
     const [hideShowMore, setHideShowMore] = useState(false); //when not enough posts, hide showMore button
     const newPostList = [];
 
-    //push first 6 posts to state upon mounting
+    //push first 6 posts to state upon mounting so the user gets the first posts upon loading the page
     useEffect(() => {
         for (let i = 0; i < 6; i++) {
             //if this post exists, push it to the new list - helps avoid pushing 'undefined' nodes to list
@@ -42,6 +42,7 @@ const HealthPage = ({data}) => {
                     newPostList.push(allHealthPosts[i]);
                 }
             }
+            //reset state properties
             setPosts(newPostList);
             setClickCount(1);
             setIsFinished(false);
@@ -59,6 +60,7 @@ const HealthPage = ({data}) => {
                     setIsFinished(true);
                 }      
             }
+            //update state properties
             setPosts(newPostList);
             setClickCount(newClickCount);
             console.log('POSTS: ', newPostList);

@@ -32,14 +32,17 @@
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
-    width: 25%;
-    height: 50vh;
+    width: 300px;
+    height: auto;
     padding: 32px;
     background: var(--light-clinic-blue);
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
     border-radius: 10px;
     position: sticky;
     top: 190px;
+}
+.blog-post-container .sidebar h5 {
+    width: auto;
 }
 .blog-post-content {
     padding: 0 0 32px 0;
@@ -50,9 +53,72 @@
 .blog-post-container .sidebar .related {
     width: 100%;
 }
+.blog-post-container .sidebar .share {
+    width: 100%;
+}
+.blog-post-container .sidebar .share ul {
+    list-style: none;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
 .blog-post-container .btn-primary {
     width: auto;
 }
 .blog-post-container .ButtonPrimary  {
     justify-content: flex-start;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .blog-post-container .sidebar {
+        width: 250px;
+    }
+}
+@media only screen and (max-width: 1100px) {
+    .blog-post-container .sidebar {
+        width: 200px;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .blog-post-container {
+        flex-direction: column;
+    }
+    .blog-post-container .sidebar {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        margin: 32px 0 0 0;
+        width: 100%;
+    }
+    .blog-post-container .sidebar .recent,
+    .blog-post-container .sidebar .related,
+    .blog-post-container .sidebar .share {
+        display: flex;
+        flex-direction: column;
+        justify-items: flex-start;
+        align-items: center;
+    }
+    .blog-post-container .blog-post {
+        width: 100%;
+    }
+    .blog-post-container .blog-post img {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .blog-post-container {
+        padding: 16px 16px 16px 16px;
+    }
+    .blog-post-container .sidebar {
+        flex-direction: column;
+    }
+    .blog-post-container .blog-post {
+        padding: 0 0 0 0;
+    }
+    .blog-post-container .blog-post .blog-post-content {
+        padding: 8px 0 8px 0;
+    }
 }

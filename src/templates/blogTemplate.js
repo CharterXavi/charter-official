@@ -4,6 +4,9 @@ import Layout from '../components/layout';
 import HeaderStrip from '../components/header-strip/header-strip';
 import './blogTemplate.css';
 import newsImage from '../images/news.png';
+import linkedinIcon from '../images/linkedin.png';
+import twitterIcon from '../images/twitter.png';
+import facebookIcon from '../images/facebook.png';
 import ButtonPrimary from "../components/buttons/button-primary";
 
 export default function Template({
@@ -39,7 +42,7 @@ export default function Template({
         </div>
         <div className='sidebar'>
           <div className='recent'>
-            <h3>Recent Posts</h3>
+            <h5>Recent Posts</h5>
             <ul>
               <li>Post 1</li>
               <li>Post 2</li>
@@ -47,11 +50,19 @@ export default function Template({
             </ul>
           </div>
           <div className='related'>
-            <h3>Related Posts</h3>
+            <h5>Related Posts</h5>
             <ul>
               <li>Post 1</li>
               <li>Post 2</li>
               <li>Post 3</li>
+            </ul>
+          </div>
+          <div className='share'>
+            <h5>Share this post:</h5>
+            <ul>
+              <li><img src={linkedinIcon} alt="LinkedIn Logo" /></li>
+              <li><img src={twitterIcon} alt="Twitter Logo" /></li>
+              <li><img src={facebookIcon} alt="Facebook Logo" /></li>
             </ul>
           </div>
         </div>
