@@ -21,9 +21,10 @@ const RecentPage = ({
     const [hideShowMore, setHideShowMore] = useState(false); //when not enough posts, hide showMore button
     const newPostList = [];
 
-    //push first 6 posts to state upon mounting
+    //push first 6 posts to state upon mounting so the user gets the first posts upon loading the page
     useEffect(() => {
         for (let i = 0; i < 6; i++) {
+          //if this post exists, push it to the new list - helps avoid pushing 'undefined' nodes to list
           if(allRecentPosts[i]) {
               newPostList.push(allRecentPosts[i]);
           } else {
@@ -40,10 +41,12 @@ const RecentPage = ({
         //if isFinished = true, reset everything to show first 6 posts once again
         if(isFinished) {
             for (let i = 0; i < 6; i++) {
+              //if this post exists, push it to the new list - helps avoid pushing 'undefined' nodes to list
               if(allRecentPosts[i]) {
                 newPostList.push(allRecentPosts[i]);
               }
             }
+            //reset state properties
             setPosts(newPostList);
             setClickCount(1);
             setIsFinished(false);
@@ -52,14 +55,16 @@ const RecentPage = ({
         //Otherwise, show 6 more posts by replacing what's on the page with itself + another 6
         } else {
             //take clickCount as an input, and loop over 6 times for each click
-            //reset state to reflect new results
+            //update state to reflect new results
             for (let i = 0; i < clickCount * 6; i++) {
+              //if this post exists, push it to the new list - helps avoid pushing 'undefined' nodes to list
                 if (allRecentPosts[i]) {
                     newPostList.push(allRecentPosts[i]);
                 } else {
                     setIsFinished(true);
                 }      
             }
+            //update state properties
             setPosts(newPostList);
             setClickCount(newClickCount);
             console.log('POSTS: ', newPostList);

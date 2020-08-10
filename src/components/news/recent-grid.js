@@ -6,7 +6,7 @@ import './recent-grid.css';
 const RecentGrid = (props) => {
 
   return (
-    <div className='recent'>
+    <div className='RecentGrid'>
         <div className='grid-header'>
         <h2>Recent Articles</h2>
         <Link to='/news/recent'>See All Recent Articles</Link>
