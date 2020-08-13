@@ -23,15 +23,15 @@
     align-items: center;
     justify-content: center;
 }
-
-@media only screen and (max-width: 850px) {
-    .demographics {
-        height: 1000px;
-        justify-content: flex-start;
-    }
+.picture-grid {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 850px) {
     .demographics {
         height: 1000px;
         justify-content: flex-start;
