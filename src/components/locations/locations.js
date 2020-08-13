@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './locations.css';
-import homeIcon from '../../images/home-icon.png';
+import homeIcon from '../../images/iconography/home-icon.png';
 import Card from './card';
 import Map from './map';
 
@@ -123,7 +123,7 @@ const LocationsStrip = () => {
         <div className='left'> 
         <img src={homeIcon} alt='Home Icon'/>
             <h2>Our Locations</h2>
-            <p className='introduction-text'>See our locations across southern California, and be on the lookout for new locations!</p>
+            <p>See our locations across southern California, and be on the lookout for new locations!</p>
             <div className='card-container'>
                 {/* Map through each location, create a card component and pass state values and methods in as props */}
                 {locationsList.map((location) => {

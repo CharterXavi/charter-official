@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react'
 import './data.css'
 import ButtonPrimaryAlt from '../buttons/button-primary-alt'
-import Chart from './chart'
+import HomeChart from './home-chart'
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -45,7 +45,7 @@ const DataStrip = () => {
   return (
     <div className='DataStrip'>
         <div className='left'>
-            <Chart />
+            <HomeChart />
         </div>
         <div className='right'> 
             <h2>We're making a real impact.</h2>

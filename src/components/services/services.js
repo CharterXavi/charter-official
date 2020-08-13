@@ -1,10 +1,10 @@
 import React, {useEffect} from 'react'
 import './services.css'
 import {Link} from 'gatsby'
-import heartIcon from '../../images/heart-icon.png'
-import houseIcon from '../../images/house-icon.png'
-import stethoscopeIcon from '../../images/stethoscope-icon.png'
-import healthIcon from '../../images/health-icon.png'
+import heartIcon from '../../images/iconography/heart-icon.png'
+import houseIcon from '../../images/iconography/house-icon.png'
+import stethoscopeIcon from '../../images/iconography/stethoscope-icon.png'
+import healthIcon from '../../images/iconography/health-icon.png'
 import ButtonPrimaryAlt from '../buttons/button-primary-alt'
 // Data AOS for react imports
 import AOS from "aos";

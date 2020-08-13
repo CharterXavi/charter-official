@@ -1,60 +1,60 @@
 import React, {useState} from 'react'
 import './team-grid.css'
-import team1 from '../../images/team/team1.png'
-import team2 from '../../images/team/team2.png'
-import team3 from '../../images/team/team3.png'
-import team4 from '../../images/team/team4.png'
-import team5 from '../../images/team/team5.png'
-import team6 from '../../images/team/team6.png'
+import steve from '../../images/team/steve.png'
+import sabina from '../../images/team/sabina.png'
+import daniel from '../../images/team/daniel.png'
+import jeanclaude from '../../images/team/jeanclaude.png'
+import jerome from '../../images/team/jerome.png'
+import vince from '../../images/team/vince.png'
 import TeamCard from './team-card';
 
 const TeamGrid = () => {
     const [teamList, setTeamList] = useState(
         [
             {
-                name: 'Johnny Appleseed',
-                title: 'Job Title',
-                image: team1,
+                name: 'Steve Larkin',
+                title: 'Chief Executive Officer',
+                image: steve,
                 quote: '"This is an inspirational, introductory quote from this team member."',
                 isClicked: false,
                 animationTime: 700
             },
             {
-                name: 'Jane Appleseed',
-                title: 'Job Title',
-                image: team2,
+                name: 'Sabina Del Rosario',
+                title: 'Chief Operating Officer',
+                image: sabina,
                 quote: '"This is an inspirational, introductory quote from this team member."',
                 isClicked: false,
                 animationTime: 900
             },
             {
-                name: 'John Smith',
-                title: 'Job Title',
-                image: team3,
+                name: 'Vincent Castaldo',
+                title: 'Chief Financial Officer',
+                image: vince,
                 quote: '"This is an inspirational, introductory quote from this team member."',
                 isClicked: false,
                 animationTime: 1100
             },
             {
-                name: 'Jill Jackson',
-                title: 'Job Title',
-                image: team4,
+                name: 'Dr. Jean-Claude Hage',
+                title: 'Chief Medical Officer',
+                image: jeanclaude,
                 quote: '"This is an inspirational, introductory quote from this team member."',
                 isClicked: false,
                 animationTime: 1300
             },
             {
-                name: 'Jimmy John',
-                title: 'Job Title',
-                image: team5,
+                name: 'Daniel Hodous',
+                title: 'Director of Information Technology',
+                image: daniel,
                 quote: '"This is an inspirational, introductory quote from this team member."',
                 isClicked: false,
                 animationTime: 1500
             },
             {
-                name: 'Jessica Smith',
-                title: 'Job Title',
-                image: team6,
+                name: 'Jerome De Jesus',
+                title: 'Director of Business Development',
+                image: jerome,
                 quote: '"This is an inspirational, introductory quote from this team member."',
                 isClicked: false,
                 animationTime: 1700

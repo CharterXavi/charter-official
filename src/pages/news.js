@@ -62,7 +62,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    oldest: allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {}, limit: 5) {
+    oldest: allMarkdownRemark(sort: {order: ASC, fields: [frontmatter___date]}, filter: {}, limit: 5) {
       edges {
         node {
           id
