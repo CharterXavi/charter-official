@@ -6,7 +6,7 @@ import daniel from '../../images/team/daniel.png'
 import jeanclaude from '../../images/team/jeanclaude.png'
 import jerome from '../../images/team/jerome.png'
 import vince from '../../images/team/vince.png'
-import ButtonSecondary from '../buttons/button-secondary';
+import ButtonPrimaryAlt from '../buttons/button-primary-alt';
 import {Link} from 'gatsby';
 
 const OurTeamStrip = () => {
@@ -69,7 +69,7 @@ const OurTeamStrip = () => {
                 </div>
             </div>
         </div>
-        <ButtonSecondary content='See Our Team' link='/our-team' />
+        <ButtonPrimaryAlt content='See Our Team' link='/our-team' />
         <svg className='team-wave-one' xmlns="http://www.w3.org/2000/svg" width="1440" height="770" viewBox="0 0 1440 770" fill="none">
             <g filter="url(#filter5_d)">
             <path d="M0 583C0 583 336.5 388 797 373.5C1257.5 359 1440 25 1440 25C1440 215.966 1440 564.034 1440 755H0V583Z" fill="url(#paint5_linear)"/>
