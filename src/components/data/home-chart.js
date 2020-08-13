@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
-import './chart.css'
+import './home-chart.css'
 import { Line } from 'react-chartjs-2';
 
-const Chart = () => {
+const HomeChart = () => {
 
 const data = {
     labels: ['January', 'February', 'March',
@@ -30,10 +30,10 @@ const data = {
 }
 
   return (
-    <div className='Chart'>
+    <div className='HomeChart'>
         <Line data={data} options={{ maintainAspectRatio: false }}/>
     </div>
   )
 }
 
-export default Chart;
+export default HomeChart;

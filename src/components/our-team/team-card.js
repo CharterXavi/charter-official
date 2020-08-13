@@ -2,6 +2,9 @@ import React, {useEffect} from 'react'
 import './team-card.css'
 import AOS from "aos";
 import "aos/dist/aos.css";
+import facebookIcon from '../../images/iconography/facebook.png';
+import twitterIcon from '../../images/iconography/twitter.png';
+import linkedinIcon from '../../images/iconography/linkedin.png';
 
 const TeamCard = (props) => {
 
@@ -26,6 +29,13 @@ const TeamCard = (props) => {
             <div className={`biography ${props.isClicked ? 'expanded-bio' : ''}`}>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo sagittis, quis eget morbi leo sodales mattis lobortis hac. Sit adipiscing nulla vitae consequat egestas ultricies ultrices interdum.</p>
                 <p>Egestas nisi, pretium mi ultricies lacus habitant cras. Aliquet nunc ultricies risus pretium suspendisse nibh diam. Egestas viverra et vitae ultrices odio non vitae iaculis. Lectus diam nisi, tellus, tortor fames.</p>
+            </div>
+            <div className='social'>
+                <ul>
+                    <li><img src={facebookIcon} alt="Facebook Logo" /></li>
+                    <li><img src={twitterIcon} alt="Twitter Logo" /></li>
+                    <li><img src={linkedinIcon} alt="LinkedIn Logo" /></li>
+                </ul>
             </div>
         </div>
         <div className={`card-expander ${props.isClicked ? 'hide' : ''}`} onClick={handleClick} >

@@ -1,11 +1,11 @@
 import React from 'react';
 import './our-team.css';
-import team1 from '../../images/team/team1.png';
-import team2 from '../../images/team/team2.png';
-import team3 from '../../images/team/team3.png';
-import team4 from '../../images/team/team4.png';
-import team5 from '../../images/team/team5.png';
-import team6 from '../../images/team/team6.png';
+import steve from '../../images/team/steve.png'
+import sabina from '../../images/team/sabina.png'
+import daniel from '../../images/team/daniel.png'
+import jeanclaude from '../../images/team/jeanclaude.png'
+import jerome from '../../images/team/jerome.png'
+import vince from '../../images/team/vince.png'
 import ButtonSecondary from '../buttons/button-secondary';
 import {Link} from 'gatsby';
 
@@ -16,56 +16,56 @@ const OurTeamStrip = () => {
         <div className='card-container'>
             <div className='card'>
                 <Link to='/our-team'>
-                    <img src={team1} alt="Team Member" />
+                    <img src={steve} alt="Team Member" />
                 </Link>
                 <div className='card-info'>
-                    <h4>Johnny Appleseed</h4>
-                    <p className='introduction-text'>Company Title</p>
+                    <h4>Steve Larkin</h4>
+                    <p className='introduction-text'>Chief Executive Officer</p>
                 </div>
             </div>
             <div className='card'>
                 <Link to='/our-team'>
-                    <img src={team2} alt="Team Member" />
+                    <img src={sabina} alt="Team Member" />
                 </Link>
                 <div className='card-info'>
-                    <h4>Johnny Appleseed</h4>
-                    <p className='introduction-text'>Company Title</p>
+                    <h4>Sabina Del Rosario</h4>
+                    <p className='introduction-text'>Chief Operating Officer</p>
                 </div>
             </div>
             <div className='card'>
                 <Link to='/our-team'>
-                    <img src={team3} alt="Team Member" />
+                    <img src={vince} alt="Team Member" />
                 </Link>
                 <div className='card-info'>
-                    <h4>Johnny Appleseed</h4>
-                    <p className='introduction-text'>Company Title</p>
+                    <h4>Vincent Castaldo</h4>
+                    <p className='introduction-text'>Chief Financial Officer</p>
                 </div>
             </div>
             <div className='card'>
                 <Link to='/our-team'>
-                    <img src={team4} alt="Team Member" />
+                    <img src={jeanclaude} alt="Team Member" />
                 </Link>
                 <div className='card-info'>
-                    <h4>Johnny Appleseed</h4>
-                    <p className='introduction-text'>Company Title</p>
+                    <h4>Dr. Jean-Claude Hage</h4>
+                    <p className='introduction-text'>Chief Medical Officer</p>
                 </div>
             </div>
             <div className='card'>
                 <Link to='/our-team'>
-                    <img src={team5} alt="Team Member" />
+                    <img src={daniel} alt="Team Member" />
                 </Link>
                 <div className='card-info'>
-                    <h4>Johnny Appleseed</h4>
-                    <p className='introduction-text'>Company Title</p>
+                    <h4>Daniel Hodous</h4>
+                    <p className='introduction-text'>Director of Information Technology</p>
                 </div>
             </div>
             <div className='card'>
                 <Link to='/our-team'>
-                    <img src={team6} alt="Team Member" />
+                    <img src={jerome} alt="Team Member" />
                 </Link>
                 <div className='card-info'>
-                    <h4>Johnny Appleseed</h4>
-                    <p className='introduction-text'>Company Title</p>
+                    <h4>Jerome De Jesus</h4>
+                    <p className='introduction-text'>Director of Business Development</p>
                 </div>
             </div>
         </div>

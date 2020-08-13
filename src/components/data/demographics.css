@@ -1,0 +1,30 @@
+.DemographicsChart {
+    width: 600px;
+    height: 100%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    position: relative;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+@media only screen and (max-width: 1150px) {
+    .DemographicsChart {
+        width: 400px;
+    }
+}
+@media only screen and (max-width: 850px) {
+    .DemographicsChart {
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+}
+@media only screen and (max-width: 420px) {
+    .DemographicsChart {
+        width: 280px;
+    }
+}

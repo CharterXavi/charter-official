@@ -4,9 +4,9 @@ import Layout from '../components/layout';
 import HeaderStrip from '../components/header-strip/header-strip';
 import './blogTemplate.css';
 import newsImage from '../images/news.png';
-import linkedinIcon from '../images/linkedin.png';
-import twitterIcon from '../images/twitter.png';
-import facebookIcon from '../images/facebook.png';
+import linkedinIcon from '../images/iconography/linkedin.png';
+import twitterIcon from '../images/iconography/twitter.png';
+import facebookIcon from '../images/iconography/facebook.png';
 import ButtonPrimary from "../components/buttons/button-primary";
 
 export default function Template({

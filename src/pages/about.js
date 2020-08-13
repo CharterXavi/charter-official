@@ -9,12 +9,20 @@ import OurTeamStrip from '../components/our-team/our-team'
 import LocationsStrip from '../components/locations/locations';
 import AOS from "aos";
 import "aos/dist/aos.css";
+import {graphql} from 'gatsby';
 
-const AboutPage = () => {
+const AboutPage = ({data}) => {
   useEffect(() => {
     AOS.init();
     AOS.refresh();
   });
+
+  const recentPosts = [];
+  for (let i = 0; i < 4; i++) {
+    if (data.recent.edges[i]) {
+      recentPosts.push(data.recent.edges[i]);
+    };
+  };
 
   return (
     <Layout>
@@ -134,7 +142,7 @@ const AboutPage = () => {
           <p>But that's not all. We're committed as well to training and education, creating an environment of learning, and fostering healthy working relationships. </p>
         </div>
       </div>
-      <NewsStrip />
+      <NewsStrip posts={recentPosts} />
       <OurTeamStrip />
       <LocationsStrip />
     </Layout>
@@ -142,3 +150,30 @@ const AboutPage = () => {
   }
 
 export default AboutPage;
+
+export const recentPostsQuery = graphql`
+query {
+  recent: allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {}, limit: 5) {
+    edges {
+      node {
+        id
+        excerpt(pruneLength: 250)
+        frontmatter {
+          date(formatString: "MMMM DD, YYYY")
+          slug
+          title
+          categories
+          featuredImage {
+            relativePath
+            childImageSharp {
+              fluid {
+                src
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+`
