@@ -1,7 +1,6 @@
 import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import HeroStrip from '../components/hero/hero';
 import AboutStrip from '../components/about/about';
 import ServicesStrip from '../components/services/services';
 import VideoStrip from '../components/video/video';
@@ -11,6 +10,7 @@ import LocationsStrip from '../components/locations/locations';
 import DataStrip from '../components/data/data';
 import NewsStrip from '../components/news/news';
 import {graphql} from 'gatsby';
+import HeroStrip2 from "../components/hero/hero-2";
 
 const IndexPage = ({ data }) => {
 
@@ -24,7 +24,7 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Home" />
-      <HeroStrip />
+      <HeroStrip2 />
       <AboutStrip />
       <ServicesStrip />
       <VideoStrip />

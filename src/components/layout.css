@@ -95,6 +95,13 @@ a {
   height: 75px;
 }
 
+
+
+@media only screen and (max-width: 768px) {
+  .introduction-text {
+    font-size: 16px;
+  }
+}
 @media only screen and (max-width: 600px) {
   .spacer {
     height: 60px;

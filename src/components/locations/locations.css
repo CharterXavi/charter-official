@@ -1,4 +1,5 @@
 .LocationsStrip {
+    box-sizing: border-box;
     height: auto;
     width: 100vw;
     position: relative;
@@ -8,6 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    padding: 32px 0 32px 0;
 }
 .LocationsStrip .left {
     width: 28%;
