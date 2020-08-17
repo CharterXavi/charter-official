@@ -1,0 +1,99 @@
+.Hero2 {
+    height: 650px;
+    width: 100%;
+    position: relative;
+    top: 0;
+    background: var(--light-clinic-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font-family: 'Quicksand', sans-serif;
+    color: var(--heading-color);
+}
+.Hero2 .hero-wave-left {
+    position: absolute;
+    left: 0;
+    z-index: 0;
+}
+.Hero2 .hero-wave-right {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+.Hero2 .icon-blast {
+    position: absolute;
+    left: 20px;
+    z-index: 0;
+}
+.Hero2 .doctor-graphic {
+    position: absolute;
+    right: 20px;
+    bottom: -10px;
+    z-index: 2;
+}
+.Hero2 .hero-content {
+    box-sizing: border-box;
+    padding: 8px;
+    width: 320px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+    z-index: 3;
+}
+.Hero2 .hero-content .homeIcon {
+    width: 60px;
+    height: 60px;
+    margin: 8px 0 8px 0;
+}
+
+@media only screen and (max-width: 800px) {
+    .Hero2 .hero-wave-left {
+        display: none;
+    }
+    .Hero2 .icon-blast {
+        width: 65%;
+        opacity: 0.1;
+    }
+    .Hero2 .doctor-graphic {
+        width: 325px;
+    }
+    .Hero2 {
+        background: white;
+        justify-content: flex-start;
+    }
+    .Hero2 .hero-content {
+        width: 340px;
+        padding: 16px;
+        text-align: left;
+        align-items: flex-start;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .Hero2 .icon-blast {
+        width: 60%;
+        opacity: 0.1;
+        top: 0;
+        left: 200px;
+        z-index: 0;
+    }
+    .Hero2 .hero-content h1 {
+        color: var(--heading-color);
+    }
+    .Hero2 .hero-wave-right {
+        display: none;
+    }
+    .Hero2 .hero-wave-left {
+        display: block;
+        z-index: 1;
+    }
+    .Hero2 .doctor-graphic {
+        width: 200px;
+    }
+}

@@ -11,7 +11,7 @@ const TestimonialsStrip = () => {
                 name: 'Johnny Appleseed',
                 quote: 'Charter was there for me when I needed it most - they rock!',
                 animationTime: '800',
-                isActive: false
+                isActive: true
             },
             {
                 name: 'Jane Doe',
@@ -23,7 +23,7 @@ const TestimonialsStrip = () => {
                 name: 'Jack Sparrow',
                 quote: "Yooo hoooo yooo hooo, a pirate's life for me...",
                 animationTime: '1500',
-                isActive: true
+                isActive: false
             },
             {
                 name: 'Granny Smith',
