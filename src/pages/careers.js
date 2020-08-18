@@ -37,7 +37,7 @@ const CareersPage = () => (
     <div className='picture-grid'>
       <TeamPics />
     </div>
-    <div className='intro'>
+    <div className='intro join-us'>
       <h2>Join us!</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi commodo pharetra, morbi pellentesque. Duis semper tellus velit, aliquam non. Blandit proin nulla erat lorem blandit mauris molestie pellentesque gravida. Interdum eget leo sem sed massa etiam congue.</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod ipsum, semper erat eget phasellus fermentum a egestas. Arcu tincidunt neque in ac.</p>

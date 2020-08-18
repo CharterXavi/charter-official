@@ -30,7 +30,11 @@
     align-items: center;
     justify-content: center;
 }
-
+.join-us {
+    position: relative;
+    top: 0;
+    z-index: -5;
+}
 @media only screen and (max-width: 850px) {
     .demographics {
         height: 1000px;
