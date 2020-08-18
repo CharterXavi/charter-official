@@ -74,7 +74,7 @@ module.exports = {
             variants: ['400', '700']
           },
           {
-            family: `Quicksand`,
+            family: `Comfortaa`,
             variants: ['400', '700']
           }
         ],

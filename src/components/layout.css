@@ -19,6 +19,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
+  font-family: 'Nunito', sans-serif;
   font-size: 14px;
 }
 h1, h2, h3 {
