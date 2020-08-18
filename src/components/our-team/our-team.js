@@ -70,21 +70,21 @@ const OurTeamStrip = () => {
             </div>
         </div>
         <ButtonPrimaryAlt content='See Our Team' link='/our-team' />
-        <svg className='team-wave-one' xmlns="http://www.w3.org/2000/svg" width="1440" height="770" viewBox="0 0 1440 770" fill="none">
+        <svg className='team-wave-one' xmlns="http://www.w3.org/2000/svg" width="1440" height="750" viewBox="0 0 1440 750" fill="none">
             <g filter="url(#filter5_d)">
-            <path d="M0 583C0 583 336.5 388 797 373.5C1257.5 359 1440 25 1440 25C1440 215.966 1440 564.034 1440 755H0V583Z" fill="url(#paint5_linear)"/>
+            <path d="M0 573C0 573 336.5 378 797 363.5C1257.5 349 1440 15 1440 15C1440 205.966 1440 554.034 1440 745H0V573Z" fill="url(#paint5_linear)"/>
             </g>
             <defs>
-            <filter id="filter5_d" x="-15" y="0" width="1480" height="770" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <filter id="filter5_d" x="-5" y="0" width="1460" height="750" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
             <feFlood flood-opacity="0" result="BackgroundImageFix"/>
             <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
             <feOffset dx="5" dy="-5"/>
-            <feGaussianBlur stdDeviation="10"/>
-            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+            <feGaussianBlur stdDeviation="5"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
             <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
             <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
             </filter>
-            <linearGradient id="paint5_linear" x1="0" y1="755" x2="1440" y2="755" gradientUnits="userSpaceOnUse">
+            <linearGradient id="paint5_linear" x1="0" y1="745" x2="1440" y2="745" gradientUnits="userSpaceOnUse">
             <stop stop-color="#F493AA"/>
             <stop offset="1" stop-color="#F2D1C9"/>
             </linearGradient>

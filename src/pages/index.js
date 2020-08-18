@@ -10,7 +10,7 @@ import LocationsStrip from '../components/locations/locations';
 import DataStrip from '../components/data/data';
 import NewsStrip from '../components/news/news';
 import {graphql} from 'gatsby';
-import HeroStrip2 from "../components/hero/hero-2";
+import HeroStrip3 from "../components/hero/hero-3";
 
 const IndexPage = ({ data }) => {
 
@@ -24,7 +24,7 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Home" />
-      <HeroStrip2 />
+      <HeroStrip3 />
       <AboutStrip />
       <ServicesStrip />
       <VideoStrip />

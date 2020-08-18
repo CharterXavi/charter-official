@@ -1,11 +1,12 @@
 .OurTeamStrip {
-    min-height: 800px;
+    min-height: 600px;
     width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
+    top: 0;
     background: #F6F7FB;
 }
 .OurTeamStrip h2 {
@@ -56,18 +57,18 @@
     filter: blur(2px);
     transform: scale(1.02);
 }
-.OurTeamStrip .btn-primary-alt {
+.OurTeamStrip .ButtonPrimaryAlt {
     position: relative;
     bottom: 0;
     z-index: 3;
-    margin: 32px 0 0 0;
+    margin: 32px 0 32px 0;
 }
 .team-wave-one {
     width: 100vw;
     height: auto;
     position: absolute;
-    bottom: -50px;
-    z-index: 0;
+    bottom: -5px;
+    z-index: 1;
 }
 .team-wave-mobile-one {
     display: none;
@@ -105,7 +106,7 @@
     .team-wave-mobile-one {
         display: block;
         position: absolute;
-        bottom: 0;
+        bottom: -40px;
         width: 100%;
         height: auto;
     }
