@@ -1,8 +1,10 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import './testimonials.css'
 import Quote from '../testimonials/quote'
 import Dot from '../testimonials/dot'
 import ButtonPrimaryAlt from '../buttons/button-primary-alt'
+import ArrowLeft from './arrow-left';
+import ArrowRight from './arrow-right'
 
 const TestimonialsStrip = () => {
     const [testimonials, setTestimonials] = useState(
@@ -11,29 +13,33 @@ const TestimonialsStrip = () => {
                 name: 'Johnny Appleseed',
                 quote: 'Charter was there for me when I needed it most - they rock!',
                 animationTime: '800',
-                isActive: true
+                isActive: true,
+                count: 0
             },
             {
                 name: 'Jane Doe',
                 quote: 'Charter is the BEST!!',
                 animationTime: '1100',
-                isActive: false
+                isActive: false,
+                count: 1
             },
             {
                 name: 'Jack Sparrow',
                 quote: "Yooo hoooo yooo hooo, a pirate's life for me...",
                 animationTime: '1500',
-                isActive: false
+                isActive: false,
+                count: 2
             },
             {
                 name: 'Granny Smith',
                 quote: "I'm doing better than ever and it's all thanks to Charter.",
                 animationTime: '2000',
-                isActive: false
+                isActive: false,
+                count: 3
             },
         ]
     )
-
+    
     //Method that will be passed down as a prop to handle state management and expand cards / animate clickers
     //ID passed down as a prop to child button - which invokes this function and passes its ID when clicked
     const showQuote = (id) => {
@@ -64,6 +70,39 @@ const TestimonialsStrip = () => {
         setTestimonials(newList);
     }
 
+    const [activeIndex, setActiveIndex] = useState(0);
+
+    const goToPrev = () => {
+        let index = activeIndex;
+        let length = testimonials.length;
+        if(index < 1) {
+            index = length - 1;
+        } else {
+            index--;
+        };
+        setActiveIndex(index);
+        testimonials.map(quote => {
+            if(quote.count === index && !quote.isActive) {
+                showQuote(quote.name);
+            };
+        });
+    }
+    const goToNext = () => {
+        let index = activeIndex;
+        let length = testimonials.length;
+        if(index === length - 1) {
+            index = 0;
+        }
+        else {
+            index++;
+        };
+        setActiveIndex(index);
+        testimonials.map(quote => {
+            if(quote.count === index && !quote.isActive) {
+                showQuote(quote.name);
+            };
+        });
+    }
 
   return (
     <div className='TestimonialsStrip'>
@@ -82,6 +121,7 @@ const TestimonialsStrip = () => {
                 })}
             </div>
             <div className='carousel-control'>
+                <ArrowLeft goToPrev={goToPrev} />
                 {testimonials.map((quote) => {
                     return (
                         <div data-aos='fade-left' data-aos-delay='500' data-aos-duration={quote.animationTime}>
@@ -89,10 +129,11 @@ const TestimonialsStrip = () => {
                         </div>
                     )
                 })}
+                <ArrowRight goToNext={goToNext} />
             </div>
         </div> 
     </div>
   )
 }
 
-export default TestimonialsStrip
+export default TestimonialsStrip;

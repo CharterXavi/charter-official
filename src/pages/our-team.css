@@ -55,7 +55,7 @@
 }
 .hiring-strip .hiring-wave {
     position: absolute;
-    bottom: 0;
+    bottom: -20px;
     width: 100vw;
     height: auto;
     z-index: 0;
@@ -78,6 +78,11 @@
     }
     .hiring-strip .left h2 {
         text-align: center;
+    }
+}
+@media only screen and (max-width: 665px) {
+    .hiring-strip .hiring-wave {
+        bottom: 0;
     }
 }
 @media only screen and (max-width: 600px) {

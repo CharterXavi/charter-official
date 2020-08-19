@@ -5,12 +5,8 @@ const Dot = (props) => {
 
     const [current, setCurrent] = useState(props.isActive)
 
-    const handleClick = () => {
-        props.showQuote(props.id)
-    }
-
     return (
-        <div className={`Dot ${props.isActive ? 'current' : ''}`} onClick={props.isActive ? null : handleClick} ></div>
+        <div className={`Dot ${props.isActive ? 'current' : ''}`} ></div>
     );
 };
 
