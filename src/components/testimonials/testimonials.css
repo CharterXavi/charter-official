@@ -57,6 +57,21 @@
 .TestimonialsStrip .carousel-control {
     margin: 8px;
 }
+.TestimonialsStrip .carousel-control img {
+    width: auto;
+    height: 20px;
+    transform: rotate(90deg) translateY(-10px) translateX(2px);
+    transition: 0.3s ease all;
+}
+.TestimonialsStrip .carousel-control img:hover {
+    transform: rotate(90deg) translateY(-10px) translateX(2px) scale(1.5);
+    cursor: pointer;
+}
+
+
+
+
+
 @media only screen and (max-width: 1200px) {
     .TestimonialsStrip .right {
         width: 550px;
@@ -89,6 +104,14 @@
     .TestimonialsStrip .carousel-control .Dot {
         width: 22px;
         height: 22px;
+    }
+    .TestimonialsStrip .carousel-control img {
+        transform: rotate(0deg) translateY(9px) translateX(0px);
+        margin: 0 8px 0 8px;
+    }
+    .TestimonialsStrip .carousel-control img:hover {
+        transform: rotate(0deg) translateY(9px) translateX(0px) scale(1.5);
+        margin: 0 8px 0 8px;
     }
 }
 @media only screen and (max-width: 660px) {
