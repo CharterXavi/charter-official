@@ -2,18 +2,22 @@
     width: 100%;
     height: auto;
     box-sizing: border-box;
-    padding: 32px;
-    background: #F6F7FB;
+    padding: 32px 32px 64px 32px;
+    background: var(--light-clinic-blue);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
+    top: 0;
+    z-index: 1;
 }
 .NewsStrip h2 {
     width: auto;
 }
 .NewsStrip .card-container {
-    width: 80%;
+    width: 100%;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;

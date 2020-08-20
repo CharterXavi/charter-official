@@ -18,7 +18,7 @@ const AboutPage = ({data}) => {
   });
 
   const recentPosts = [];
-  for (let i = 0; i < 4; i++) {
+  for (let i = 0; i < 5; i++) {
     if (data.recent.edges[i]) {
       recentPosts.push(data.recent.edges[i]);
     };

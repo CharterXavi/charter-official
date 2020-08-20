@@ -7,7 +7,6 @@
     position: relative;
     top: 0;
     z-index: 1;
-    overflow: hidden;
 }
 .TeamPics img {
     margin: 8px;

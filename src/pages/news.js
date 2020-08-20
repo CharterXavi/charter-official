@@ -23,12 +23,15 @@ const NewsPage = ({data}) => {
             image={newsImage}
         />
         <div className='NewsArchive'>
-
-            <RecentGrid posts={recentPosts} />
-
-            <PostStrip posts={oldestPosts} title='Oldest Posts' link='/news/oldest' />
-            <PostStrip posts={healthPosts} title='Health Posts' link='/news/health' />
-            <PostStrip posts={researchPosts} title='Research Posts' link='/news/research' />
+            <div className='top-block'>
+              <RecentGrid posts={recentPosts} />
+            </div>
+            
+            <div className='bottom-block'>  
+              <PostStrip posts={oldestPosts} title='Oldest Posts' link='/news/oldest' />
+              <PostStrip posts={healthPosts} title='Health Posts' link='/news/health' />
+              <PostStrip posts={researchPosts} title='Research Posts' link='/news/research' />
+            </div>
 
         </div>
       </Layout>
