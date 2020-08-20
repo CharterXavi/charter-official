@@ -11,6 +11,7 @@
     color: var(--heading-color);
 }
 .TestimonialsStrip h2 {
+    width: auto;
     color: #f05f7e;
 }
 .TestimonialsStrip .left {
@@ -91,8 +92,14 @@
         flex-direction: column;
     }
     .TestimonialsStrip .right {
-        align-items: flex-start;
+        align-items: center;
         width: 650px;
+    }
+    .TestimonialsStrip .left {
+        text-align: center;
+        align-items: center;
+        width: 650px;
+        padding: 0 32px 0 32px;
     }
     .TestimonialsStrip .right .quote-container {
         width: 100%;

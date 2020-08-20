@@ -124,7 +124,7 @@ const TestimonialsStrip = () => {
                 <ArrowLeft goToPrev={goToPrev} />
                 {testimonials.map((quote) => {
                     return (
-                        <div data-aos='fade-left' data-aos-delay='500' data-aos-duration={quote.animationTime}>
+                        <div data-aos='fade-left' data-aos-duration={quote.animationTime}>
                             <Dot id={quote.name} isActive={quote.isActive} showQuote={showQuote} />
                         </div>
                     )

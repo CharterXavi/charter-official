@@ -9,5 +9,11 @@
     top: 0;
     box-sizing: border-box;
     padding: 16px;
-    color: #363f55;
+    color: var(--heading-color);
 }
+.Quote .quote-text {
+    background: -webkit-linear-gradient(0deg, #F493AA 0%, #F2D1C9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+

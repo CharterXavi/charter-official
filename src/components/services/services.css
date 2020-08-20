@@ -53,3 +53,14 @@
     margin: 32px 0 8px 0;
     transition: 0.3s ease all;
 }
+
+@media only screen and (max-width: 665px) {
+    .ServicesStrip .card-container .card {
+        height: 300px;
+        width: 300px;
+    }
+    .ServicesStrip .card-container .card img {
+        height: 50px;
+        width: 50px;
+    }
+}

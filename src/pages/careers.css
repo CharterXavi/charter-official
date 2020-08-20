@@ -25,6 +25,8 @@
 }
 .picture-grid {
     width: 100%;
+    box-sizing: border-box;
+    padding: 16px;
     height: auto;
     display: flex;
     align-items: center;

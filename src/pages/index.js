@@ -8,14 +8,15 @@ import TestimonialsStrip from '../components/testimonials/testimonials';
 import OurTeamStrip from '../components/our-team/our-team';
 import LocationsStrip from '../components/locations/locations';
 import DataStrip from '../components/data/data';
-import NewsStrip from '../components/news/news';
 import {graphql} from 'gatsby';
 import HeroStrip3 from "../components/hero/hero-3";
+import PostStrip from "../components/news/post-strip";
+import './index.css';
 
 const IndexPage = ({ data }) => {
 
   const recentPosts = [];
-  for (let i = 0; i < 4; i++) {
+  for (let i = 0; i < 5; i++) {
     if (data.recent.edges[i]) {
       recentPosts.push(data.recent.edges[i]);
     };
@@ -30,7 +31,9 @@ const IndexPage = ({ data }) => {
       <VideoStrip />
       <TestimonialsStrip />
       <DataStrip />
-      <NewsStrip posts={recentPosts} />
+      <div className='news'>
+        <PostStrip posts={recentPosts} title='Recent Posts' link='/news'/>
+      </div>
       <OurTeamStrip />
       <LocationsStrip />
     </Layout>
