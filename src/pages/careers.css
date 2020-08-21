@@ -37,9 +37,84 @@
     top: 0;
     z-index: -5;
 }
+.benefits-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 16px;
+}
+.benefits-wrapper .benefits-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 300px;
+    min-height: 300px;
+    background: var(--light-clinic-blue);
+    box-sizing: border-box;
+    padding: 32px;
+    border-radius: 10px;
+    margin: 16px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
+    color: var(--heading-color);
+}
+.benefits-wrapper .benefits-card:hover img {
+    transform: translatey(-8px);
+}
+.benefits-wrapper .benefits-card:hover ul {
+    transform: translatey(8px);
+}
+.benefits-wrapper .benefits-card img{
+    width: 50px;
+    height: auto;
+    transition: 0.4s ease all;
+}
+.benefits-wrapper .benefits-card ul {
+    transition: 0.4s ease all;
+}
+.benefits-wrapper .benefits-card h4{
+    width: auto;
+    color: var(--heading-color);
+}
+.benefits-wrapper .benefits-card p{
+    width: auto;
+    color: var(--heading-color);
+}
+@media only screen and (max-width: 1000px) {
+    .benefits-wrapper {
+        align-items: center;
+        flex-direction: column;
+        padding: 16px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .benefits-wrapper .benefits-card {
+        width: 55%;
+        min-width: 400px;
+        box-sizing: border-box;
+        min-height: 300px;
+        margin: 16px 0;
+    }
+}
 @media only screen and (max-width: 850px) {
     .demographics {
         height: 1000px;
         justify-content: flex-start;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .benefits-wrapper {
+        flex-direction: column;
+        padding: 0;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .benefits-wrapper .benefits-card {
+        width: 100%;
+        box-sizing: border-box;
+        min-height: 0;
+        min-width: 0;
+        margin: 16px 0;
     }
 }
