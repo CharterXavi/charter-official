@@ -60,7 +60,7 @@ const HeroStrip3 = () => {
                 </div>
                 <img className='doctor-graphic' src={doctorGraphic} alt="Doctor at a desk" />
                 <div className='hero-content'>
-                    <img src={charterFeather} alt="Feather logo" />
+                    <img src={charterFeather} alt="Feather logo" data-aos='fade-right' data-aos-duration='1500'/>
                     <h1>Charter Healthcare Group</h1>
                     <h2 data-aos='fade-up' data-aos-duration='900'>
                         We're here for you.
