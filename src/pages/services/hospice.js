@@ -5,6 +5,10 @@ import HeaderStrip from "../../components/header-strip/header-strip";
 import './hospice.css';
 import hospiceImage from '../../images/hospice.png';
 import HospiceServices from "../../components/hospice/hospice-services";
+import TestimonialsStrip from "../../components/testimonials/testimonials";
+import HospiceTeam from '../../components/hospice/hospice-team';
+import LocationsStrip from "../../components/locations/locations";
+import LevelsOfCare from "../../components/hospice/levels-of-care";
 
 const HospicePage = () => {
   
@@ -23,6 +27,12 @@ const HospicePage = () => {
           </div>
         </div>
         <HospiceServices />
+        <div className='intro'>
+          <HospiceTeam />
+        </div>
+        <LevelsOfCare />
+        <TestimonialsStrip svg={true} />
+        <LocationsStrip />
       </div>
     </Layout>
   )

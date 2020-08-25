@@ -2,7 +2,12 @@
 .Hospice .intro h4 {
     width: auto;
 }
-
+.Hospice .TestimonialsStrip .left .introduction-text {
+    font-size: 1em;
+    width: 100%;
+    padding: 8px 0;
+    margin: 0 0;
+}
 .Hospice .intro .mission-statement {
     width: 650px;
     box-sizing: border-box;

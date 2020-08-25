@@ -1,0 +1,21 @@
+.HospiceTeam {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 0;
+    box-sizing: border-box;
+    padding: 16px;
+}
+.HospiceTeam .bottom h2 {
+    color: var(--heading-accent);
+    text-align: center;
+}
+.HospiceTeam img {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
+    margin: 8px;
+    border-radius: 10px;
+}

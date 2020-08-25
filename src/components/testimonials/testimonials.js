@@ -6,7 +6,7 @@ import ButtonPrimaryAlt from '../buttons/button-primary-alt'
 import ArrowLeft from './arrow-left';
 import ArrowRight from './arrow-right'
 
-const TestimonialsStrip = () => {
+const TestimonialsStrip = (props) => {
     const [testimonials, setTestimonials] = useState(
         [
             {
@@ -131,7 +131,31 @@ const TestimonialsStrip = () => {
                 })}
                 <ArrowRight goToNext={goToNext} />
             </div>
-        </div> 
+        </div>
+        {
+            props.svg ? <svg className='quote-wave-one' xmlns="http://www.w3.org/2000/svg" width="1440" height="428" viewBox="0 0 1440 428" fill="none">
+            <g filter="url(#filter12_d)">
+            <path d="M-2 395C-2 395 257 134.5 729.5 241C1202 347.5 1438 15 1438 15C1438 99.2057 1438 338.294 1438 422.5H688.5H-2V395Z" fill="url(#paint12_linear)"/>
+            </g>
+            <defs>
+            <filter id="filter12_d" x="-7" y="0" width="1460" height="427.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+            <feOffset dx="5" dy="-5"/>
+            <feGaussianBlur stdDeviation="5"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+            </filter>
+            <linearGradient id="paint12_linear" x1="-2" y1="422.5" x2="1438" y2="422.5" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#F493AA"/>
+            <stop offset="1" stop-color="#F2D1C9"/>
+            </linearGradient>
+            </defs>
+            </svg> 
+            :
+            ''
+        } 
     </div>
   )
 }

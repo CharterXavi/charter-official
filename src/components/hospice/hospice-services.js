@@ -25,52 +25,62 @@ const HospiceServices = () => {
       {
         icon: healthIcon,
         title: 'Nursing Services',
-        alt: 'Health Cross Symbol'
+        alt: 'Health Cross Symbol',
+        animationTime: '800'
       },
       {
         icon: groupIcon,
         title: 'Social Services',
-        alt: 'Group of three people'
+        alt: 'Group of three people',
+        animationTime: '1000'
       },
       {
         icon: homeIcon,
         title: 'Home Health Aide',
-        alt: 'House'
+        alt: 'House',
+        animationTime: '1200'
       },
       {
         icon: crossIcon,
         title: 'Spiritual Support',
-        alt: 'Religious cross'
+        alt: 'Religious cross',
+        animationTime: '1400'
       },
       {
         icon: pillIcon,
         title: 'Medications',
-        alt: 'Pill'
+        alt: 'Pill',
+        animationTime: '1600'
       },
       {
         icon: medicationsIcon,
         title: 'Medical Supplies',
-        alt: 'Pill Bottle'
+        alt: 'Pill Bottle',
+        animationTime: '1800'
       },
       {
         icon: stethoscopeIcon,
         title: 'Medical Equipment',
-        alt: 'Stethoscope'
+        alt: 'Stethoscope',
+        animationTime: '2000'
       },
       {
         icon: flowerIcon,
         title: 'Bereavement Services',
-        alt: 'Flower'
+        alt: 'Flower',
+        animationTime: '2200'
       },
       {
         icon: heartIcon,
         title: 'Therapy',
-        alt: 'Heart'
+        alt: 'Heart',
+        animationTime: '2300'
       },
       {
         icon: phoneIcon,
         title: '24 Hr. Health Line',
-        alt: 'Phone'
+        alt: 'Phone',
+        animationTime: '2400'
       }
   ]
 
@@ -83,7 +93,7 @@ const HospiceServices = () => {
         <div className='hospice-card-wrapper'>
             {
                 hospiceServicesList.map(service => {
-                    return <HospiceCard icon={service.icon} title={service.title} alt={service.alt} />
+                    return <HospiceCard icon={service.icon} title={service.title} alt={service.alt} animationTime={service.animationTime}/>
                 })
             }
         </div>
