@@ -32,17 +32,15 @@ const AboutPage = ({data}) => {
         title='About Charter'
         headline='Healthcare with YOU in mind at every stage'
       />
-      <div className='AboutUs'>
-        <div className='content-wrapper'>
-          <h2>Our Mission</h2>
-          <p>Charter is committed to delivering high quality services that enhance the post acute care continuum in its communities by providing compassionate, innovative, and accessible healthcare solutions for patients and their families.</p>
-          <p>We strive to improve patient outcomes and quality of care while reducing ​the total cost of care by: ​</p>
-          <ul>
-            <li>Decreasing acute hospitalizations​</li>
-            <li>Managing transitions of care in the Skilled Nursing Facility (SNF) continuum</li>
-            <li>Aiming to serve chronic, frail, and terminally ill populations at the end-of-life</li>
-          </ul>
-        </div>
+      <div className='intro'>
+        <h2>Our Mission</h2>
+        <p>Charter is committed to delivering high quality services that enhance the post acute care continuum in its communities by providing compassionate, innovative, and accessible healthcare solutions for patients and their families.</p>
+        <p>We strive to improve patient outcomes and quality of care while reducing ​the total cost of care by: ​</p>
+        <ul>
+          <li>Decreasing acute hospitalizations​</li>
+          <li>Managing transitions of care in the Skilled Nursing Facility (SNF) continuum</li>
+          <li>Aiming to serve chronic, frail, and terminally ill populations at the end-of-life</li>
+        </ul>
       </div>
       <div className='our-story'>
         <div className='left' data-aos='fade-up' data-aos-duration='900'>

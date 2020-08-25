@@ -99,10 +99,40 @@ a {
 }
 
 
+.intro {
+  box-sizing: border-box;
+  height: auto;
+  width: 100%;
+  padding: 32px 32px 64px 32px;
+  position: relative;
+  top: 0;
+  z-index: 1;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--heading-color);
+}
+.intro h2 {
+  text-align: left;
+  width: auto;
+  color: var(--primary-accent);
+}
+.intro p {
+  max-width: 650px;
+}
+
 
 @media only screen and (max-width: 768px) {
   .introduction-text {
     font-size: 14px;
+  }
+  .intro {
+    padding: 32px 16px;
+  }
+  .intro h2 {
+    text-align: left;
   }
 }
 @media only screen and (max-width: 600px) {
