@@ -1,10 +1,7 @@
-
-
 import React, {useEffect} from 'react';
 import './levels-card.css';
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { checkPropTypes } from 'prop-types';
 import stethoscopeImage from '../../images/stethoscope-levels.png';
 
 const LevelsCard = (props) => {

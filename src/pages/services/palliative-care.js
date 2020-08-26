@@ -4,6 +4,9 @@ import SEO from "../../components/seo"
 import HeaderStrip from '../../components/header-strip/header-strip';
 import palliativeImage from '../../images/palliative.png';
 import './palliative-care.css';
+import CareApproach from '../../components/palliative/care-approach';
+import TestimonialsStrip from '../../components/testimonials/testimonials';
+import LocationsStrip from '../../components/locations/locations';
 
 const PalliativeCarePage = () => (
   <Layout>
@@ -31,6 +34,9 @@ const PalliativeCarePage = () => (
           </ul>
         </div>
       </div>
+      <CareApproach />
+      <TestimonialsStrip svg={true} />
+      <LocationsStrip />
     </div>
   </Layout>
 )
