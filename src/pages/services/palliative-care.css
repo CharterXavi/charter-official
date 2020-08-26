@@ -1,0 +1,16 @@
+.PalliativeCare .intro .list-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 650px;
+    box-sizing: border-box;
+}
+.PalliativeCare .intro .list-wrapper ul {
+    width: 300px;
+
+}
+
+@media only screen and (max-width: 786px) {
+    .PalliativeCare .intro .list-wrapper {
+        width: 100%;
+    }
+}

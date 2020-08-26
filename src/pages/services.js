@@ -33,7 +33,7 @@ const ServicesPage = () => {
       </div>
       <ServicesStrip />
       <PatientPath />
-      <TestimonialsStrip />
+      <TestimonialsStrip svg={true} />
       <LocationsStrip hasBackgroundWave={false} />
     </Layout>
   )

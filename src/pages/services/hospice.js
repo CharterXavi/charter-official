@@ -9,6 +9,7 @@ import TestimonialsStrip from "../../components/testimonials/testimonials";
 import HospiceTeam from '../../components/hospice/hospice-team';
 import LocationsStrip from "../../components/locations/locations";
 import LevelsOfCare from "../../components/hospice/levels-of-care";
+import HospiceEligibility from '../../components/hospice/hospice-eligibility';
 
 const HospicePage = () => {
   
@@ -29,6 +30,9 @@ const HospicePage = () => {
         <HospiceServices />
         <div className='intro'>
           <HospiceTeam />
+        </div>
+        <div className='intro'>
+          <HospiceEligibility />
         </div>
         <LevelsOfCare />
         <TestimonialsStrip svg={true} />

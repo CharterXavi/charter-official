@@ -14,12 +14,17 @@
     justify-content: flex-start;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
 }
-.LevelsCard:hover img {
+.LevelsCard:hover .number {
     transform: translatey(-8px) scale(1.1);
 }
-.LevelsCard img {
+.LevelsCard .number {
     position: absolute;
     top: -25px;
+    transition: 0.4s ease all;
+}
+.LevelsCard .stethoscope {
+    position: absolute;
+    top: -5px;
     transition: 0.4s ease all;
 }
 .LevelsCard h4 {

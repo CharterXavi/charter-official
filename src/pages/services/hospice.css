@@ -1,4 +1,6 @@
-
+.Hospice .intro {
+    padding: 32px;
+}
 .Hospice .intro h4 {
     width: auto;
 }
@@ -27,5 +29,8 @@
 @media only screen and (max-width: 768px) {
     .Hospice .intro .mission-statement{
         width: 100%;
+    }
+    .Hospice .intro {
+        padding: 32px 16px;
     }
 }

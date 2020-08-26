@@ -14,12 +14,13 @@ const HospiceTeam = (props) => {
 
   return (
     <div className='HospiceTeam'>
-        <div className='image-wrapper'>
+        <div className='left'>
           <img src={hospiceTeam1} alt="Group of health care professionals" />
-          <img src={hospiceTeam2} alt="Group of health care professionals" />
         </div>
-        <h2>Your Hospice Team</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus diam vitae ut et tincidunt quis sem est, ligula. Aliquam venenatis ut dapibus neque leo. Purus aliquet suscipit turpis volutpat nisl porta elit diam. Et nunc nunc neque aliquet ultricies risus.</p>
+        <div className='right'>
+          <h2>Your Hospice Team</h2>
+          <p>Each hospice team consists of health care workers from all disciplines: nurses, social workers, home health aides, spiritual counselors, and volunteers, all under the direction of a medical director. By tying all of these disciplines together, we can deliver nothing short of the most high-quality, all-encompassing hospice care available.</p>
+        </div>
     </div>
   );
 }
