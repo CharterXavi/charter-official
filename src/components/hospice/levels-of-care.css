@@ -1,0 +1,20 @@
+.LevelsOfCare {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 64px 32px;
+    height: auto;
+    background: var(--light-clinic-blue);
+}
+.LevelsOfCare h2 {
+    width: auto;
+    padding: 0 0 32px 0;
+    color: var(--primary-accent);
+}
+.LevelsOfCare .levels-card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+}

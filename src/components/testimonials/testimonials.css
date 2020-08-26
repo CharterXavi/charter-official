@@ -49,11 +49,10 @@
 }
 .TestimonialsStrip .quote-wave-one {
     position: absolute;
-    bottom: 0;
-    left: -10px;
-    z-index: 0;
-    width: 110%;
+    bottom: -20px;
+    width: 100vw;
     height: auto;
+    z-index: -1;
 }
 .TestimonialsStrip .carousel-control {
     margin: 8px;
@@ -120,6 +119,9 @@
         transform: rotate(0deg) translateY(9px) translateX(0px) scale(1.5);
         margin: 0 8px 0 8px;
     }
+    .TestimonialsStrip .quote-wave-one {
+        bottom: 0;
+    }
 }
 @media only screen and (max-width: 660px) {
     .TestimonialsStrip {
@@ -132,6 +134,9 @@
     .TestimonialsStrip .left {
         width: 100%;
         padding: 16px;
+    }
+    .TestimonialsStrip .quote-wave-one {
+        bottom: 5px;
     }
 }
 @media only screen and (max-width: 450px) {
