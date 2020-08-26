@@ -1,0 +1,23 @@
+.CareApproach {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 64px 32px;
+    height: auto;
+    background: var(--light-clinic-blue);
+}
+.CareApproach h2 {
+    width: auto;
+    padding: 0 0 64px 0;
+    color: var(--primary-accent);
+}
+.CareApproach .care-card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    top: 0;
+    z-index: 1;
+}
