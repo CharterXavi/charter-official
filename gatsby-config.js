@@ -7,31 +7,85 @@ module.exports = {
     menuLinks: [
       {
         name: 'Home',
-        path: '/'
+        path: '/',
+        subMenu: [
+          {
+            name: '',
+            path: ''
+          }
+        ]
       },
       {
         name: 'About',
-        path: '/about'
+        path: '/about',
+        subMenu: [
+          {
+            name: '',
+            path: ''
+          }
+        ]
       },
       {
         name: 'Services',
-        path: '/services'
+        path: '/services',
+        subMenu: [
+          {
+            name:'Hospice',
+            path:'/services/hospice',
+          },
+          {
+            name:'H.A.R.P.',
+            path:'/services/harp',
+          },
+          {
+            name:'Palliative Care',
+            path:'/services/palliative-care',
+          },
+          {
+            name:'Home Health',
+            path:'/services/home-health',
+          }
+        ]
       },
       {
         name: 'Our Team',
-        path: '/our-team'
+        path: '/our-team',
+        subMenu: [
+          {
+            name: '',
+            path: ''
+          }
+        ]
       },
       {
         name: 'News',
-        path: '/news'
+        path: '/news',
+        subMenu: [
+          {
+            name: '',
+            path: ''
+          }
+        ]
       },
       {
         name: 'Careers',
-        path: '/careers'
+        path: '/careers',
+        subMenu: [
+          {
+            name: '',
+            path: ''
+          }
+        ]
       },
       {
         name: 'Contact',
-        path: '/contact'
+        path: '/contact',
+        subMenu: [
+          {
+            name: '',
+            path: ''
+          }
+        ]
       }
     ]
   },

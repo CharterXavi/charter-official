@@ -15,12 +15,6 @@ return (
         <img src={props.img} alt="Letter" className='letter'/>
         <h4>{props.title}</h4>
         <p>{props.content}</p>
-        <div className='explosion'>
-            <img src={props.img} alt="Letter"/>
-            <img src={props.img} alt="Letter"/>
-            <img src={props.img} alt="Letter"/>
-            <img src={props.img} alt="Letter"/>
-        </div>
     </div>
   );
 }
