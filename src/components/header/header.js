@@ -11,19 +11,21 @@ const Header = () => {
   //initial states: menu is not expanded and the button hasn't been clicked
   const [isHamburgerClicked, setHamburgerClicked] = useState(false);
   const [isMenuExpanded, setMenuExpanded] = useState(false);
+  const [isSubMenuExpanded, setSubMenuExpanded] = useState(false);
 
   //onClick function that will update this components state
   const handleHamburgerClick = () => {
     setHamburgerClicked(!isHamburgerClicked);
     setMenuExpanded(!isMenuExpanded);
-    console.log('Hamburger clicked: ', isHamburgerClicked);
-    console.log('Menu is expanded: ', isMenuExpanded);
+  }
+  const expandSubMenu = () => {
+    setSubMenuExpanded(!isSubMenuExpanded);
   }
 
   return (
     <header className='Header'>
       <div className='header-boundary'>
-        <div className={`main-bar ${isMenuExpanded ? 'background-blur' : ''}`}>
+        <div className='main-bar'>
           <Link to="/">
             <img src={Logo} alt='Charter Logo' /> {/* data about Logo from webpack used as src for image */}
           </Link>
@@ -40,7 +42,7 @@ const Header = () => {
           </div>
         </div>
     </div>
-        <Menu isExpanded={isMenuExpanded} />
+        <Menu isExpanded={isMenuExpanded} isSubMenuExpanded={isSubMenuExpanded} expandSubMenu={expandSubMenu} />
     </header>
   )
 }
