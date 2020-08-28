@@ -3,7 +3,7 @@ import Layout from "../../components/layout";
 import SEO from "../../components/seo";
 import HeaderStrip from "../../components/header-strip/header-strip";
 import './hospice.css';
-import hospiceImage from '../../images/hospice.png';
+import hospiceImage from '../../images/headers/hospice.png';
 import HospiceServices from "../../components/hospice/hospice-services";
 import TestimonialsStrip from "../../components/testimonials/testimonials";
 import HospiceTeam from '../../components/hospice/hospice-team';

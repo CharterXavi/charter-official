@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import './header-strip.css';
-import featherImage from '../../images/feather.png';
+import featherImage from '../../images/headers/feather.png';
 import AOS from "aos";
 import "aos/dist/aos.css";
 

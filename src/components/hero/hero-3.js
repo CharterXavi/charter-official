@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import iconBlast from '../../images/icon-blast.png';
+import iconBlast from '../../images/iconography/icon-blast.png';
 import doctorGraphic from '../../images/doctor-graphic.png';
 import ButtonPrimary from '../buttons/button-primary';
 import charterFeather from '../../images/charter-feather.png';

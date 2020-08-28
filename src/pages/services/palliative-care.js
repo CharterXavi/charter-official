@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import HeaderStrip from '../../components/header-strip/header-strip';
-import palliativeImage from '../../images/palliative.png';
+import palliativeImage from '../../images/headers/palliative.png';
 import './palliative-care.css';
 import CareApproach from '../../components/palliative/care-approach';
 import TestimonialsStrip from '../../components/testimonials/testimonials';

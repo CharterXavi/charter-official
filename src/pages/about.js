@@ -3,7 +3,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import './about.css';
 import HeaderStrip from '../components/header-strip/header-strip';
-import aboutImage from '../images/about-header.png';
+import aboutImage from '../images/headers/about-header.png';
 import NewsStrip from '../components/news/news';
 import OurTeamStrip from '../components/our-team/our-team'
 import LocationsStrip from '../components/locations/locations';

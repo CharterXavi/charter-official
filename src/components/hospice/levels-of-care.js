@@ -2,10 +2,10 @@ import React, {useEffect} from 'react';
 import './levels-of-care.css';
 import AOS from "aos";
 import "aos/dist/aos.css";
-import oneIcon from '../../images/one.png';
-import twoIcon from '../../images/two.png';
-import threeIcon from '../../images/three.png';
-import fourIcon from '../../images/four.png';
+import oneIcon from '../../images/iconography/one.png';
+import twoIcon from '../../images/iconography/two.png';
+import threeIcon from '../../images/iconography/three.png';
+import fourIcon from '../../images/iconography/four.png';
 import LevelsCard from './levels-card';
 
 const LevelsOfCare = (props) => {

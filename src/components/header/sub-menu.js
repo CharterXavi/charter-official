@@ -1,6 +1,6 @@
-import React from 'react'
-import {Link} from 'gatsby'
-import './sub-menu.css'
+import React from 'react';
+import {Link} from 'gatsby';
+import './sub-menu.css';
 
 
 const SubMenu = (props) => {

@@ -1,6 +1,5 @@
 import React from 'react';
 import './news.css';
-import ButtonPrimaryAlt from '../../components/buttons/button-primary-alt';
 import PostStrip from './post-strip'
 
 const NewsStrip = (props) => {
