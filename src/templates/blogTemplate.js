@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import Layout from '../components/layout';
 import HeaderStrip from '../components/header-strip/header-strip';
 import './blogTemplate.css';
-import newsImage from '../images/news.png';
+import newsImage from '../images/headers/news.png';
 import linkedinIcon from '../images/iconography/linkedin.png';
 import twitterIcon from '../images/iconography/twitter.png';
 import facebookIcon from '../images/iconography/facebook.png';

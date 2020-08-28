@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import HeaderStrip from '../components/header-strip/header-strip';
-import contact from '../images/contact.png';
+import contact from '../images/headers/contact.png';
 import './contact.css';
 import LocationsStrip from '../components/locations/locations';
 

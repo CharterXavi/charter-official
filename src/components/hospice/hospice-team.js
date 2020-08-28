@@ -3,7 +3,6 @@ import './hospice-team.css';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import hospiceTeam1 from '../../images/hospice-team1.png';
-import hospiceTeam2 from '../../images/hospice-team2.png';
 
 const HospiceTeam = (props) => {
 

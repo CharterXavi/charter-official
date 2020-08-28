@@ -22,11 +22,6 @@
     top: -25px;
     transition: 0.4s ease all;
 }
-.LevelsCard .stethoscope {
-    position: absolute;
-    top: -5px;
-    transition: 0.4s ease all;
-}
 .LevelsCard h4 {
     margin: 8px 0;
     text-align: center;

@@ -1,5 +1,5 @@
-import React, {useState} from 'react'
-import {graphql, useStaticQuery, Link} from 'gatsby'
+import React from 'react'
+import {Link} from 'gatsby'
 import './menu.css'
 import SubMenu from './sub-menu';
 import MenuClicker from './menu-clicker';

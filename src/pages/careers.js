@@ -4,7 +4,7 @@ import SEO from "../components/seo";
 import HeaderStrip from '../components/header-strip/header-strip';
 import OurTeamStrip from '../components/our-team/our-team';
 import LocationsStrip from '../components/locations/locations';
-import careersImage from '../images/careers-header.png';
+import careersImage from '../images/headers/careers-header.png';
 import DemographicsChart from '../components/data/demographics';
 import TeamPics from '../components/our-team/team-pics';
 import ButtonPrimaryAlt from '../components/buttons/button-primary-alt';

@@ -4,7 +4,7 @@ import PostLink from "../../components/news/post-link";
 import Layout from '../../components/layout';
 import HeaderStrip from '../../components/header-strip/header-strip';
 import ShowMoreButton from '../../components/buttons/show-more';
-import newsImage from '../../images/news.png';
+import newsImage from '../../images/headers/news.png';
 import './recent.css';
 
 const RecentPage = ({

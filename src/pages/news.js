@@ -1,9 +1,8 @@
 import React from "react";
 import { graphql, Link } from "gatsby";
-import PostLink from "../components/news/post-link";
 import Layout from '../components/layout';
 import HeaderStrip from '../components/header-strip/header-strip';
-import newsImage from '../images/news.png';
+import newsImage from '../images/headers/news.png';
 import RecentGrid from '../components/news/recent-grid';
 import PostStrip from '../components/news/post-strip';
 import './news.css';
