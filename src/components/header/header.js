@@ -11,15 +11,127 @@ const Header = () => {
   //initial states: menu is not expanded and the button hasn't been clicked
   const [isHamburgerClicked, setHamburgerClicked] = useState(false);
   const [isMenuExpanded, setMenuExpanded] = useState(false);
-  const [isSubMenuExpanded, setSubMenuExpanded] = useState(false);
-
+  const [menuLinks, setMenuLinks] = useState(
+    [
+      {
+        name: 'Home',
+        path: '/',
+        isSubMenuExpanded: false,
+        subMenu: [
+          {
+            name: '',
+            path: ''
+          }
+        ]
+      },
+      {
+        name: 'About',
+        path: '/about',
+        isSubMenuExpanded: false,
+        subMenu: [
+          {
+            name: '',
+            path: ''
+          }
+        ]
+      },
+      {
+        name: 'Services',
+        path: '/services',
+        isSubMenuExpanded: false,
+        subMenu: [
+          {
+            name:'Hospice',
+            path:'/services/hospice',
+          },
+          {
+            name:'H.A.R.P.',
+            path:'/services/harp',
+          },
+          {
+            name:'Palliative Care',
+            path:'/services/palliative-care',
+          },
+          {
+            name:'Home Health',
+            path:'/services/home-health',
+          }
+        ]
+      },
+      {
+        name: 'Our Team',
+        path: '/our-team',
+        isSubMenuExpanded: false,
+        subMenu: [
+          {
+            name: '',
+            path: ''
+          }
+        ]
+      },
+      {
+        name: 'News',
+        path: '/news',
+        isSubMenuExpanded: false,
+        subMenu: [
+          {
+            name: 'Recent',
+            path: '/news/recent'
+          },
+          {
+            name: 'Health',
+            path: '/news/health'
+          }
+        ]
+      },
+      {
+        name: 'Careers',
+        path: '/careers',
+        isSubMenuExpanded: false,
+        subMenu: [
+          {
+            name: '',
+            path: ''
+          }
+        ]
+      },
+      {
+        name: 'Contact',
+        path: '/contact',
+        isSubMenuExpanded: false,
+        subMenu: [
+          {
+            name: '',
+            path: ''
+          }
+        ]
+      }
+    ]
+)
   //onClick function that will update this components state
   const handleHamburgerClick = () => {
     setHamburgerClicked(!isHamburgerClicked);
     setMenuExpanded(!isMenuExpanded);
   }
-  const expandSubMenu = () => {
-    setSubMenuExpanded(!isSubMenuExpanded);
+
+  const expandSubMenu = (id) => {
+    console.log('SubMenu expanded: ', id);
+    //create a new list from old list, but update whichever child was clicked on
+    const newList = menuLinks.map((mainLink) => {
+        if(mainLink.name === id) {
+            const newLink = {
+                //state is updated, component rerenders, and new props are passed down to children
+                ...mainLink,
+                isSubMenuExpanded: !mainLink.isSubMenuExpanded
+            }
+            //must return so .map can enter it into new array list
+            return newLink;
+        };
+        //must return so .map can enter it into new array list
+        return mainLink;
+    });
+    //use setState method to update state
+    setMenuLinks(newList);
   }
 
   return (
@@ -42,7 +154,7 @@ const Header = () => {
           </div>
         </div>
     </div>
-        <Menu isExpanded={isMenuExpanded} isSubMenuExpanded={isSubMenuExpanded} expandSubMenu={expandSubMenu} />
+        <Menu isExpanded={isMenuExpanded} menuLinks={menuLinks} expandSubMenu={expandSubMenu} />
     </header>
   )
 }

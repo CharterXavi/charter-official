@@ -7,7 +7,6 @@
 
 
 .SubMenu {
-    height: 0;
     overflow-y: hidden;
     text-align: center;
     width: 100%;
@@ -17,7 +16,6 @@
     backdrop-filter: blur(10px);
 }
 .sub-expanded {
-    height: 300px;
     transition: 0.4s ease all;
     color: white;
     background: rgba(255, 255, 255, 0.1);
