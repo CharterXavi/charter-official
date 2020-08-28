@@ -4,10 +4,11 @@ import './sub-menu.css'
 
 
 const SubMenu = (props) => {
-
+    const heightFactor = (props.subMenu.length * 75).toString();
+    const heightStr = heightFactor.concat('px');
   //render a menu that displays a link for each page in the config file
     return (
-        <div className={`SubMenu ${props.isExpanded ? 'sub-expanded' : ''}`} >
+        <div className={`SubMenu ${props.isSubMenuExpanded ? 'sub-expanded' : ''}`} style={{height: `${props.isSubMenuExpanded ? heightStr : '0px'}`}}>
             <ul>
             {props.subMenu.map(subLink => {
                 return <li>

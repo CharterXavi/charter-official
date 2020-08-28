@@ -62,8 +62,12 @@ module.exports = {
         path: '/news',
         subMenu: [
           {
-            name: '',
-            path: ''
+            name: 'Recent',
+            path: '/news/recent'
+          },
+          {
+            name: 'Health',
+            path: '/news/health'
           }
         ]
       },
