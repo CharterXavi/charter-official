@@ -24,6 +24,7 @@
     position: absolute;
     top: 0;
     right: 0;
+    z-index: -1;
 }
 .HeaderStrip h1 {
     font-size: 72px;

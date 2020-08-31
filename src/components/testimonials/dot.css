@@ -2,9 +2,11 @@
     width: 16px;
     height: 16px;
     margin: 8px;
-    background: #CED3DC;
     border-radius: 100%;
 }
 .current {
     background: linear-gradient(66.41deg, #FFCE94 3.73%, #F05F7E 100%);
+}
+.not-current {
+    background: var(--heading-color);
 }

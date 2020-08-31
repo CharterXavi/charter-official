@@ -1,0 +1,94 @@
+.TCM {
+    display: flex;
+    justify-content: center;
+    min-height: 600px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px;
+    background: var(--light-clinic-blue);
+    position: relative;
+    color: var(--heading-color);
+}
+.TCM .right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    position: relative;
+    top: 0;
+    z-index: 3;
+}
+.TCM .right p {
+    max-width: 70%;
+}
+.TCM .right ul {
+    max-width: 650px;
+    padding: 0 0 0 20px;
+}
+.TCM .right h2 {
+    color: var(--primary-accent);
+    width: auto;
+}
+.TCM .left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+}
+.TCM .left .checkboxes {
+    position: absolute;
+    bottom: 60%;  
+    left: 45%;
+    z-index: 1;
+    width: 30%;
+}
+.TCM .left .house {
+    position: relative;
+    top: 0;
+    z-index: 2;
+    width: 60%;
+}
+
+@media only screen and (max-width: 1000px) {
+    .TCM {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    .TCM .right  {
+        width: 100%;
+        align-items: center;
+    }
+    .TCM .right p, .TCM .right ul {
+       max-width: 650px;
+    }
+    .TCM .right h2 {
+       text-align: center;
+       width: 100%;
+    }
+    .TCM .left {
+        width: 100%;
+        padding: 16px 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .TCM .left .checkboxes {
+        position: absolute;
+        bottom: 50%;  
+        left: 30%;
+        z-index: 1;
+        width: 70%;
+    }
+    .TCM .left .house {
+        position: relative;
+        top: 0;
+        z-index: 2;
+        width: 90%;
+    }
+}

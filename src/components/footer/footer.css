@@ -6,6 +6,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: white;
 }
 .Footer hr {
     width: 70%;

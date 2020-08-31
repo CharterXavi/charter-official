@@ -7,6 +7,7 @@
     position: relative;
     overflow: hidden;
     transition: 0.4s ease all;
+    z-index: 1;
 }
 .PostLink img {
     width: 100%;

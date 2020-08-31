@@ -9,6 +9,7 @@
     z-index: 1;
     box-sizing: border-box;
     color: var(--heading-color);
+    background: white;
 }
 .TestimonialsStrip h2 {
     width: auto;

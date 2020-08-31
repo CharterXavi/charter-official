@@ -6,6 +6,7 @@
     width: 85%;
     min-height: 200px;
     margin: 32px 0 32px 0;
+    z-index: 1;
 }
 .PostStrip .grid {
     display: flex;
