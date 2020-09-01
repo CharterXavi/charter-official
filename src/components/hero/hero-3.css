@@ -124,10 +124,9 @@
     }
     .Hero3 .hero-wave-left {
         position: absolute;
-        left: 0;
+        left: -30px;
         display: block;
         z-index: 1;
-        opacity: 0.5;
     }
     .Hero3 .doctor-graphic {
         width: 200px;
