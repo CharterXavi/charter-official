@@ -5,6 +5,9 @@ import homeHealth from '../../images/headers/home-health.png';
 import HeaderStrip from '../../components/header-strip/header-strip';
 import HomeServices from '../../components/home-health/home-services';
 import './home-health.css';
+import TestimonialsStrip from '../../components/testimonials/testimonials';
+import LocationsStrip from '../../components/locations/locations';
+import Advantages from '../../components/home-health/advantages';
 
 const HomeHealthPage = () => (
   <Layout>
@@ -17,6 +20,9 @@ const HomeHealthPage = () => (
         <p>Our innovation and dedication to continuity of care makes us a top choice among area physicians, hospitals, and nursing facilities. We understand each individual has unique needs, and believe every patient deserves to have the best health care available. All the services we offer are designed to help enhance our patients' quality of life, and are conveniently covered by Medicare and most private insurances.</p>
       </div>
       <HomeServices />
+      <Advantages />
+      <TestimonialsStrip svg={true} />
+      <LocationsStrip />
     </div>
   </Layout>
 )

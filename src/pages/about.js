@@ -3,6 +3,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import './about.css';
 import HeaderStrip from '../components/header-strip/header-strip';
+import Video from '../components/video/video';
 import aboutImage from '../images/headers/about-header.png';
 import NewsStrip from '../components/news/news';
 import OurTeamStrip from '../components/our-team/our-team'
@@ -140,6 +141,7 @@ const AboutPage = ({data}) => {
           <p>But that's not all. We're committed as well to training and education, creating an environment of learning, and fostering healthy working relationships. </p>
         </div>
       </div>
+      <Video />
       <NewsStrip posts={recentPosts} />
       <OurTeamStrip />
       <LocationsStrip />
