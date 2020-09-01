@@ -6,6 +6,7 @@
     padding: 16px;
     position: relative;
     top: 0;
+    background: white;
 }
 .timeline h2 {
     text-align: center;

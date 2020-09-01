@@ -31,11 +31,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background: white;
 }
 .join-us {
     position: relative;
     top: 0;
-    z-index: -5;
+    z-index: 1;
+    background: white;
 }
 .benefits-wrapper {
     display: flex;

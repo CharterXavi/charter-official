@@ -1,12 +1,10 @@
-import React, {useState} from 'react'
+import React from 'react'
 import './dot.css'
 
 const Dot = (props) => {
 
-    const [current, setCurrent] = useState(props.isActive)
-
     return (
-        <div className={`Dot ${props.isActive ? 'current' : ''}`} ></div>
+        <div className={`Dot ${props.isCurrentQuote ? 'current' : 'not-current'}`} key={props.key} ></div>
     );
 };
 

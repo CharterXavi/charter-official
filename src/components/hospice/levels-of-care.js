@@ -19,22 +19,26 @@ const LevelsOfCare = (props) => {
       {
         img: oneIcon,  
         title: 'Routine Home Health',
-        content: 'Delivered primarily where the patient resides and provided by a team of hospice professionals. Care may involve skilled nursing care, certified home health aides, emotional and spiritual care, social services and/or volunteer services.'
+        content: 'Delivered primarily where the patient resides and provided by a team of hospice professionals. Care may involve skilled nursing care, certified home health aides, emotional and spiritual care, social services and/or volunteer services.',
+        animationTime: '800'
       },
       {
         img: twoIcon,  
         title: 'Respite Care',
-        content: 'Delivered primarily where the patient resides and provided by a team of hospice professionals. Care may involve skilled nursing care, certified home health aides, emotional and spiritual care, social services and/or volunteer services.'
+        content: 'Delivered primarily where the patient resides and provided by a team of hospice professionals. Care may involve skilled nursing care, certified home health aides, emotional and spiritual care, social services and/or volunteer services.',
+        animationTime: '1100'
       },
       {
         img: threeIcon,  
         title: 'General Inpatient Care',
-        content: 'Delivered primarily where the patient resides and provided by a team of hospice professionals. Care may involve skilled nursing care, certified home health aides, emotional and spiritual care, social services and/or volunteer services.'
+        content: 'Delivered primarily where the patient resides and provided by a team of hospice professionals. Care may involve skilled nursing care, certified home health aides, emotional and spiritual care, social services and/or volunteer services.',
+        animationTime: '1500'
       },
       {
         img: fourIcon,  
         title: 'Continuous Care',
-        content: 'Delivered primarily where the patient resides and provided by a team of hospice professionals. Care may involve skilled nursing care, certified home health aides, emotional and spiritual care, social services and/or volunteer services.'
+        content: 'Delivered primarily where the patient resides and provided by a team of hospice professionals. Care may involve skilled nursing care, certified home health aides, emotional and spiritual care, social services and/or volunteer services.',
+        animationTime: '1900'
       }
   ]
 
@@ -44,7 +48,7 @@ const LevelsOfCare = (props) => {
         <div className='levels-card-wrapper'>
             {
                 levelsList.map(level => {
-                    return <LevelsCard img={level.img} title={level.title} content={level.content} />
+                    return <LevelsCard img={level.img} title={level.title} content={level.content} animationTime={level.animationTime} />
                 })
             }
         </div>

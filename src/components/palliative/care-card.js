@@ -11,7 +11,7 @@ const CareCard = (props) => {
   });
 
 return (
-    <div className='CareCard'>
+    <div className='CareCard' data-aos='fade-up' data-aos-duration={props.animationTime} >
         <img src={props.img} alt="Letter" className='letter'/>
         <h4>{props.title}</h4>
         <p>{props.content}</p>

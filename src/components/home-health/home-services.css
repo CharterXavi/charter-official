@@ -1,0 +1,109 @@
+.HomeServices {
+    display: flex;
+    justify-content: center;
+    min-height: 600px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px;
+    background: var(--light-clinic-blue);
+    position: relative;
+    color: var(--heading-color);
+}
+.HomeServices .right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    position: relative;
+    top: 0;
+    z-index: 3;
+}
+.HomeServices .right ul {
+    width: 50%;
+    padding: 0 0 0 20px;
+}
+.HomeServices .right ul li {
+    margin: 8px 0;
+}
+.HomeServices .right h2 {
+    color: var(--primary-accent);
+    width: auto;
+}
+.HomeServices .right .lists {
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+}
+.HomeServices .left {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+    top: 0;
+}
+.HomeServices .left .stethoscope {
+    position: relative;
+    top: 0;
+    z-index: 2;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.12);
+    margin: 64px;
+}
+@media only screen and (max-width: 1200px) {
+    .HomeServices .left .stethoscope, .HomeServices .right .lists {
+        width: 85%;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .HomeServices .right .lists {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .HomeServices {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .HomeServices .left {
+        width: 100%;
+        padding: 32px;
+        justify-content: center;
+    }
+    .HomeServices .right {
+        width: 100%;
+        padding: 32px;
+    }
+    .HomeServices .left .stethoscope {
+        width: 80%;
+        margin: 0 0 32px 0;
+    }
+    .HomeServices .right .lists {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .HomeServices .left, .HomeServices .right {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .HomeServices .left .stethoscope {
+        width: 100%
+    }
+    .HomeServices .right .lists {
+        flex-direction: column;
+    }
+    .HomeServices .right .lists ul {
+        margin: 0;
+    }
+    .HomeServices .right .lists li {
+        margin: 0;
+    }
+}

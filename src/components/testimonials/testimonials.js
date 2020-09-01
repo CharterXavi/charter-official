@@ -1,108 +1,70 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import './testimonials.css'
-import Quote from '../testimonials/quote'
+import Quotes from './quotes'
 import Dot from '../testimonials/dot'
 import ButtonPrimaryAlt from '../buttons/button-primary-alt'
 import ArrowLeft from './arrow-left';
 import ArrowRight from './arrow-right'
 
 const TestimonialsStrip = (props) => {
-    const [testimonials, setTestimonials] = useState(
-        [
-            {
-                name: 'Johnny Appleseed',
-                quote: 'Charter was there for me when I needed it most - they rock!',
-                animationTime: '800',
-                isActive: true,
-                count: 0
-            },
-            {
-                name: 'Jane Doe',
-                quote: 'Charter is the BEST!!',
-                animationTime: '1100',
-                isActive: false,
-                count: 1
-            },
-            {
-                name: 'Jack Sparrow',
-                quote: "Yooo hoooo yooo hooo, a pirate's life for me...",
-                animationTime: '1500',
-                isActive: false,
-                count: 2
-            },
-            {
-                name: 'Granny Smith',
-                quote: "I'm doing better than ever and it's all thanks to Charter.",
-                animationTime: '2000',
-                isActive: false,
-                count: 3
-            },
-        ]
-    )
-    
-    //Method that will be passed down as a prop to handle state management and expand cards / animate clickers
-    //ID passed down as a prop to child button - which invokes this function and passes its ID when clicked
-    const showQuote = (id) => {
-        //create a new list from old list, but update whichever child was clicked on
-        const newList = testimonials.map((quote) => {
-            if(quote.name === id) {
-                const activeTestimonial = {
-                    //state is updated, component rerenders, and new props are passed down to children
-                    ...quote,
-                    isActive: !quote.isActive
-                }
-                //must return so .map can enter it into new array list
-                return activeTestimonial;
-            };
-            if (quote.name !== id) {
-                const inactiveTestimonial = {
-                    //state is updated, component rerenders, and new props are passed down to children
-                    ...quote,
-                    isActive: false
-                }
-                //must return so .map can enter it into new array list
-                return inactiveTestimonial;
-            }
-            //must return so .map can enter it into new array list
-            return quote;
-        });
-        //use setState method to update state
-        setTestimonials(newList);
-    }
+    const testimonialList = [
+        {
+            name: 'Johnny Appleseed',
+            quote: 'Charter was there for me when I needed it most - they rock!',
+            animationTime: '800',
+        },
+        {
+            name: 'Jane Doe',
+            quote: 'Charter is the BEST!!',
+            animationTime: '1100',
+        },
+        {
+            name: 'Jack Sparrow',
+            quote: "Yooo hoooo yooo hooo, a pirate's life for me...",
+            animationTime: '1500',
+        },
+        {
+            name: 'Granny Smith',
+            quote: "I'm doing better than ever and it's all thanks to Charter.",
+            animationTime: '2000',
+        }
+    ]
 
     const [activeIndex, setActiveIndex] = useState(0);
+    const [listLength, setListLength] = useState(testimonialList.length);
 
     const goToPrev = () => {
+        resetAutoRotate(); //clear the current quote cycling interval loop before initiating rerender of component
         let index = activeIndex;
-        let length = testimonials.length;
+        let length = listLength;
         if(index < 1) {
             index = length - 1;
         } else {
             index--;
         };
-        setActiveIndex(index);
-        testimonials.map(quote => {
-            if(quote.count === index && !quote.isActive) {
-                showQuote(quote.name);
-            };
-        });
+        setActiveIndex(index); //initiate state change and rerender of component
     }
+
     const goToNext = () => {
+        resetAutoRotate(); //clear the current quote cycling interval loop before initiating rerender of component
         let index = activeIndex;
-        let length = testimonials.length;
+        let length = listLength;
         if(index === length - 1) {
             index = 0;
         }
         else {
             index++;
         };
-        setActiveIndex(index);
-        testimonials.map(quote => {
-            if(quote.count === index && !quote.isActive) {
-                showQuote(quote.name);
-            };
-        });
+        setActiveIndex(index); //initiate state change and rerender of component
     }
+
+    //set an interval function to cycle to the next quote every 4.5 sec, this runs each rerender
+    let rotate = setInterval(goToNext, 4500);
+    //create a function that will clear the interval
+    const resetAutoRotate = () => {
+        clearInterval(rotate);
+    }
+
 
   return (
     <div className='TestimonialsStrip'>
@@ -114,18 +76,22 @@ const TestimonialsStrip = (props) => {
         <div className='right'>
             <div className='quote-container'>
                 {/* Map through each location, create a card component and pass state values and methods in as props */}
-                {testimonials.map((quote) => {
-                    if(quote.isActive) {
-                        return <Quote name={quote.name} id={quote.name} isActive={quote.isActive} quote={quote.quote} />
+                {/* {testimonials.map((quote, index) => {
+                    if(index === activeIndex) {
+                        return <Quote name={quote.name} id={quote.name} isActive={true} quote={quote.quote} />
                     }
-                })}
+                })} */}
+                <Quotes activeIndex={activeIndex} data={testimonialList} />
             </div>
             <div className='carousel-control'>
                 <ArrowLeft goToPrev={goToPrev} />
-                {testimonials.map((quote) => {
+                {testimonialList.map((quote, index) => {
                     return (
                         <div data-aos='fade-left' data-aos-duration={quote.animationTime}>
-                            <Dot id={quote.name} isActive={quote.isActive} showQuote={showQuote} />
+                            <Dot 
+                                key={quote.name} 
+                                isCurrentQuote={index === activeIndex ? true : false} 
+                            />
                         </div>
                     )
                 })}
