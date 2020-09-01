@@ -6,7 +6,7 @@ import videoImage from '../../images/video.png'
 const VideoStrip = () => {
   return (
     <div className='VideoStrip'>
-        <img src={videoImage} alt="Charter Introduction Video" />
+        <iframe className='video' src="https://player.vimeo.com/video/312555365" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
     </div>
   )
 }

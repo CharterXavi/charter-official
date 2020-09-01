@@ -14,7 +14,7 @@ const Quotes = (props) => {
                 <h4>{quote.name}</h4>
                 <p className='quote-text'>"{quote.quote}"</p>
             </div>
-            ) }
+            )}
         </div>
     );
 };

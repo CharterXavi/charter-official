@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import './testimonials.css'
 import Quotes from './quotes'
 import Dot from '../testimonials/dot'
@@ -29,41 +29,12 @@ const TestimonialsStrip = (props) => {
             animationTime: '2000',
         }
     ]
-    
-    // //Method that will be passed down as a prop to handle state management and expand cards / animate clickers
-    // //ID passed down as a prop to child button - which invokes this function and passes its ID when clicked
-    // const showQuote = (id) => {
-    //     //create a new list from old list, but update whichever child was clicked on
-    //     const newList = testimonials.map((quote) => {
-    //         if(quote.name === id) {
-    //             const activeTestimonial = {
-    //                 //state is updated, component rerenders, and new props are passed down to children
-    //                 ...quote,
-    //                 isActive: !quote.isActive
-    //             }
-    //             //must return so .map can enter it into new array list
-    //             return activeTestimonial;
-    //         };
-    //         if (quote.name !== id) {
-    //             const inactiveTestimonial = {
-    //                 //state is updated, component rerenders, and new props are passed down to children
-    //                 ...quote,
-    //                 isActive: false
-    //             }
-    //             //must return so .map can enter it into new array list
-    //             return inactiveTestimonial;
-    //         }
-    //         //must return so .map can enter it into new array list
-    //         return quote;
-    //     });
-    //     //use setState method to update state
-    //     setTestimonials(newList);
-    // }
 
     const [activeIndex, setActiveIndex] = useState(0);
     const [listLength, setListLength] = useState(testimonialList.length);
 
     const goToPrev = () => {
+        resetAutoRotate(); //clear the current quote cycling interval loop before initiating rerender of component
         let index = activeIndex;
         let length = listLength;
         if(index < 1) {
@@ -71,10 +42,11 @@ const TestimonialsStrip = (props) => {
         } else {
             index--;
         };
-        setActiveIndex(index);
+        setActiveIndex(index); //initiate state change and rerender of component
     }
 
     const goToNext = () => {
+        resetAutoRotate(); //clear the current quote cycling interval loop before initiating rerender of component
         let index = activeIndex;
         let length = listLength;
         if(index === length - 1) {
@@ -83,13 +55,15 @@ const TestimonialsStrip = (props) => {
         else {
             index++;
         };
-        setActiveIndex(index);
+        setActiveIndex(index); //initiate state change and rerender of component
     }
 
-    // let rotate = setInterval(goToNext, 3500);
-    // const resetAutoRotate = () => {
-    //     clearInterval(rotate);
-    // }
+    //set an interval function to cycle to the next quote every 4.5 sec, this runs each rerender
+    let rotate = setInterval(goToNext, 4500);
+    //create a function that will clear the interval
+    const resetAutoRotate = () => {
+        clearInterval(rotate);
+    }
 
 
   return (
