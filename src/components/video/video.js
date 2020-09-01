@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useState, useEffect} from 'react';
 import {Link} from 'gatsby';
 import './video.css';
 import playButton from '../../images/iconography/play-btn.png';
@@ -6,6 +6,7 @@ import videoBlast1 from '../../images/iconography/video-blast1.png';
 import videoBlast2 from '../../images/iconography/video-blast2.png';
 import AOS from "aos";
 import "aos/dist/aos.css";
+import ButtonPrimaryAlt from '../../components/buttons/button-primary-alt';
 
 const VideoStrip = () => {
 
@@ -13,6 +14,14 @@ const VideoStrip = () => {
     AOS.init();
     AOS.refresh();
   });
+
+  const [videoState, setVideoState] = useState(false);
+  const [buttonState, setButtonState] = useState(false);
+
+  const showVideo = () => {
+    setVideoState(!videoState);
+    setButtonState(!buttonState);
+  }
 
   return (
     <div className='VideoStrip'>
@@ -27,21 +36,25 @@ const VideoStrip = () => {
       </svg>
       <img src={videoBlast1} alt="group of healthcare symbols" className='video-blast1' data-aos='fade-right' data-aos-duration='1500' />
 
-      <iframe className='video' src="https://player.vimeo.com/video/312555365" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
       <div className='title'>
         <h2>See the</h2>
         <h2>Charter Difference</h2>
         <h2>for yourself</h2>
       </div>
 
-      <p className='introduction-text headline'>
-        Learn more about what makes us who we are: from our services to our teams and everything in between.
+      <p className={`${videoState ? 'hide' : 'headline'}`} >
+        Learn more about what makes us who we are, from our services to our teams and everything in between.
       </p>
 
-      <Link className='play-btn-wrapper'>
-        <img src={playButton} alt="Play Button" className='play-btn' data-aos='fade-in' data-aos-duration='1100'/>
-        <p>Watch Video</p>
-      </Link>
+      <iframe 
+        className={`video ${videoState ? 'active' : ''}`} 
+        src="https://player.vimeo.com/video/312555365" 
+        width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen
+      ></iframe>
+
+      <div className='play-btn-wrapper' onClick={showVideo}>
+        {videoState ? <ButtonPrimaryAlt content='Hide Video' /> : <ButtonPrimaryAlt content='Watch Video' />}
+      </div>
 
       <svg xmlns="http://www.w3.org/2000/svg" width="446" height="236" viewBox="0 0 446 236" fill="none" className='video-wave-two' >
         <path d="M147.841 168.571C191.22 117.427 201.454 66.4466 314.678 77.2619C427.901 88.0772 446 0 446 0V236H0C0 236 104.462 219.716 147.841 168.571Z" fill="url(#paint26_linear)"/>

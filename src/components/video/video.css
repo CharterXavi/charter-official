@@ -30,18 +30,42 @@
     color: white;
     margin: 16px;
     text-align: center;
+    position: relative;
+    top: 0;
+    z-index: 5;
 }
-.VideoStrip .play-btn {
-    width: 100px;
+.VideoStrip .hide {
+    color: white;
+    width: 300px;
+    text-align: center;
+    height: 0px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    transition: 0.4s ease all;
+    overflow: hidden;
+    opacity: 0;
+}
+.VideoStrip .active {
+    height: 350px;
 }
 .VideoStrip iframe {
-    width: 0;
+    max-width: 800px;
     height: 0;
+    transition: 0.4s ease all;
+    border-radius: 10px;
+    position: relative;
+    z-index: 5;
 }
 .VideoStrip .headline {
     color: white;
     width: 300px;
     text-align: center;
+    height: 60px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    transition: 0.4s ease all;
+    overflow: hidden;
+    opacity: 1;
 }
 .VideoStrip .video-wave-one {
     position: absolute;
@@ -70,6 +94,9 @@
 
 
 @media only screen and (max-width: 1000px) {
+    .VideoStrip .active {
+        height: 300px;
+    }
     .VideoStrip .video-blast1, .VideoStrip .video-blast2 {
         width: 280px;
         height:auto;
@@ -84,11 +111,11 @@
     }
     .VideoStrip .video-blast1 {
         left: 50px;
-        top: 50px;
+        top: 20px;
     }
     .VideoStrip .video-blast2 {
         right: 50px;
-        bottom: 50px;
+        bottom: 20px;
     }
 }
 @media only screen and (max-width: 650px) {
@@ -100,6 +127,14 @@
     } */
     .VideoStrip .video-blast1, .VideoStrip .video-blast2 {
         width: 250px;
-        height:auto;
+        height: auto;
+    }
+    .VideoStrip iframe {
+        max-width: 300px;
+        height: 0;
+        transition: 0.4s ease all;
+    }
+    .VideoStrip .active {
+        height: 200px;
     }
 }
