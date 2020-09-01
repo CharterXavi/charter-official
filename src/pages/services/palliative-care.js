@@ -14,7 +14,7 @@ const PalliativeCarePage = () => (
       <SEO title="Palliative" />
       <HeaderStrip image={palliativeImage} title='Palliative Care' headline='Equipping people to cope with serious illnesses' />
       <div className='intro'>
-        <h1>Palliative Care</h1>
+        <h2>Empowering Patients</h2>
         <p>Serious illnesses and their treatments can cause exhaustion, anxiety and depression. Our Palliative  team can assist you and your loved ones cope with the difficult experience. Palliative care is a comprehensive care program especially designed for individuals experiencing physical symptoms and emotional distress related to illnesses such as cancer, heart disease, lung disease, kidney failure, cystic fibrosis, renal disease, and respiratory disease, among others.</p>
         <div className='list-wrapper'>
           <ul>

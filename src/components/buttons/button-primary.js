@@ -11,12 +11,26 @@ const ButtonPrimary = (props) => {
 
     return (
         <div className='ButtonPrimary' data-aos={props.animation} data-aos-duration={props.animationTime}>
-            <a href={props.link} className='btn-primary'>
+            {props.download ?
+            <a 
+                href={props.link}
+                download
+                className='btn-primary'>
                 {/* if an icon prop is passed, display it */}
                 {props.icon && <img src={props.icon} alt='Button Icon' />}
                 {/* display the content passed as a prop i.e. - what goes inside the button? */}
                 {props.content}
             </a>
+            : 
+            <a 
+                href={props.link}
+                className='btn-primary'>
+                {/* if an icon prop is passed, display it */}
+                {props.icon && <img src={props.icon} alt='Button Icon' />}
+                {/* display the content passed as a prop i.e. - what goes inside the button? */}
+                {props.content}
+            </a>
+            }
         </div>
     );
 };
