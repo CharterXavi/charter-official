@@ -64,7 +64,6 @@
     font-family: 'Nunito', sans-serif;
     font-size: 18px;
     transition: 0.4s ease all;
-    overflow: hidden;
     opacity: 1;
 }
 .VideoStrip .video-wave-one {
@@ -136,5 +135,26 @@
     }
     .VideoStrip .active {
         height: 200px;
+    }
+    .VideoStrip .video-wave-one {
+        left: -30px;
+        top: -50px;
+    }
+    .VideoStrip .video-wave-two {
+        right: -30px;
+        bottom: -50px;
+    }
+}
+@media only screen and (max-width: 330px) {
+    .VideoStrip .video-wave-one {
+        left: -30px;
+        top: -50px;
+    }
+    .VideoStrip .video-wave-two {
+        right: -30px;
+        bottom: -50px;
+    }
+    .VideoStrip .active {
+        height: 175px;
     }
 }

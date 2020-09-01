@@ -6,7 +6,7 @@ import videoBlast1 from '../../images/iconography/video-blast1.png';
 import videoBlast2 from '../../images/iconography/video-blast2.png';
 import AOS from "aos";
 import "aos/dist/aos.css";
-import ButtonPrimaryAlt from '../../components/buttons/button-primary-alt';
+import ButtonPrimary from '../../components/buttons/button-primary';
 
 const VideoStrip = () => {
 
@@ -53,7 +53,7 @@ const VideoStrip = () => {
       ></iframe>
 
       <div className='play-btn-wrapper' onClick={showVideo}>
-        {videoState ? <ButtonPrimaryAlt content='Hide Video' /> : <ButtonPrimaryAlt content='Watch Video' />}
+        {videoState ? <ButtonPrimary content='Hide Video' /> : <ButtonPrimary content='Watch Video' />}
       </div>
 
       <svg xmlns="http://www.w3.org/2000/svg" width="446" height="236" viewBox="0 0 446 236" fill="none" className='video-wave-two' >
