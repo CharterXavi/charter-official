@@ -5,6 +5,7 @@ title: "My TENTH blog post"
 featuredImage: ../images/blog-content/artist.jpeg
 excerpt: 'The tenth post on this site, ever!'
 categories: ['health']
+tags: ['hospice']
 ---
 ### The TENTH blog post!
 Isn't it a great one.  

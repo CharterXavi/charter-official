@@ -5,6 +5,7 @@ title: "My THIRD blog post"
 featuredImage: ../images/blog-content/hands.jpeg
 excerpt: 'The third post on this site, ever!'
 categories: ['research']
+tags: ['home health', 'health']
 ---
 ### The THIRD blog post!
 Isn't it a great one. 

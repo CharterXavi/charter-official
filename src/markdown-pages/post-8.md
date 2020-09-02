@@ -5,6 +5,7 @@ title: "My EIGHTH blog post"
 featuredImage: ../images/blog-content/hands.jpeg
 excerpt: 'The eighth post on this site, ever!'
 categories: ['health']
+tags: ['home health', 'research', 'health']
 ---
 ### The EIGHTH blog post!
 Isn't it a great one. 

@@ -5,6 +5,7 @@ title: "My NINTH blog post"
 featuredImage: ../images/blog-content/stethoscope.jpeg
 excerpt: 'The ninth post on this site, ever!'
 categories: ['health']
+tags: ['hospice', 'research', 'health']
 ---
 ### The NINTH blog post!
 Isn't it a great one. 

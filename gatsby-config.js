@@ -4,6 +4,8 @@ module.exports = {
     description: `Official website for Charter Healthcare Group.`,
     author: `Branon Eusebio`,
     image: `src/images/charter-logo-rework-3-white.png`,
+    twitterHandle: '@CharterHCG',
+		url: 'https://swas.io',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

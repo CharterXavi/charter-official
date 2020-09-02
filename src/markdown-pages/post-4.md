@@ -5,6 +5,7 @@ title: "My FOURTH blog post"
 featuredImage: ../images/blog-content/stethoscope.jpeg
 excerpt: 'The fourth post on this site, ever!'
 categories: ['research']
+tags: ['health', 'HARP']
 ---
 ### The FOURTH blog post!
 Isn't it a great one. 

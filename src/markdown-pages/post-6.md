@@ -5,6 +5,7 @@ title: "My SIXTH blog post"
 featuredImage: ../images/blog-content/smiling.jpeg
 excerpt: 'The SIXTH post on this site, ever!'
 categories: ['health']
+tags: ['seniors', 'health']
 ---
 ### The SIXTH blog post!
 Isn't it a great one. 

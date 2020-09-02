@@ -81,6 +81,10 @@ const Header = () => {
           {
             name: 'Health',
             path: '/news/health'
+          },
+          {
+            name: 'Tags',
+            path: '/news/tags'
           }
         ]
       },

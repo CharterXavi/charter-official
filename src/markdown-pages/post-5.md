@@ -5,6 +5,7 @@ title: "My FIFTH blog post"
 featuredImage: ../images/blog-content/artist.jpeg
 excerpt: 'The fifth post on this site, ever!'
 categories: ['research']
+tags: ['palliative care', 'research']
 ---
 ### The FIFTH blog post!
 Isn't it a great one.  
