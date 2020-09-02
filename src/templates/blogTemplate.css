@@ -70,7 +70,19 @@
 .blog-post-container .ButtonPrimary  {
     justify-content: flex-start;
 }
-
+.blog-post-container .blog-post .tag {
+    margin: 0 0 0 0;
+    color: white;
+    background: linear-gradient(66.41deg, #FFCE94 3.73%, #F05F7E 100%);
+    border-radius: 5px;
+    padding: 4px 8px;
+    margin: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
+    transition: 0.4s ease all;
+}
+.blog-post-container .blog-post .tag:hover {
+    transform: scale(1.2);
+}
 
 @media only screen and (max-width: 1200px) {
     .blog-post-container .sidebar {
