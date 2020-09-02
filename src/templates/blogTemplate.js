@@ -1,9 +1,9 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Layout from '../components/layout';
 import HeaderStrip from '../components/header-strip/header-strip';
 import './blogTemplate.css';
-import newsImage from '../images/headers/news.png';
+import archiveHeader from '../images/headers/archive.png';
 import linkedinIcon from '../images/iconography/linkedin.png';
 import twitterIcon from '../images/iconography/twitter.png';
 import facebookIcon from '../images/iconography/facebook.png';
@@ -15,6 +15,7 @@ export default function Template({
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
   const imageSrc = data.markdownRemark.frontmatter.featuredImage.childImageSharp.fluid.src; 
+  const postTags = data.markdownRemark.frontmatter.tags;
   //get frontmatter image for headerstrip design 
   //eventually, program this to pull a certain header depending on the category, for now hard-code
 
@@ -27,7 +28,7 @@ export default function Template({
     <Layout>
       <HeaderStrip 
         title={frontmatter.title} 
-        image={newsImage}
+        image={archiveHeader}
       />
       <div className="blog-post-container">
         <div className="blog-post">
@@ -39,6 +40,13 @@ export default function Template({
             dangerouslySetInnerHTML={{ __html: html }}
           />
           <ButtonPrimary content='Return to News page' link='/news' />
+          <p>Categories: </p>
+          <p>Tags: 
+            {postTags.map(tag => {
+              return <Link to={`/tags/${tag}`}>{tag}</Link> 
+              {/* TODO: create TagLink component and import here instead of the Link component */}
+            })}
+          </p>
         </div>
         <div className='sidebar'>
           <div className='recent'>
@@ -77,6 +85,7 @@ export const pageQuery = graphql`
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         slug
+        tags
         title
         featuredImage {
           relativePath

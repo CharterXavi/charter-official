@@ -6,6 +6,9 @@ import kebabCase from "lodash/kebabCase"
 import { Helmet } from "react-helmet"
 import { Link, graphql } from "gatsby"
 import './tags.css';
+import Layout from "../../components/layout"
+import HeaderStrip from "../../components/header-strip/header-strip"
+import archiveHeader from '../../images/headers/archive.png';
 
 
 const TagsPage = ({
@@ -16,22 +19,26 @@ const TagsPage = ({
     },
   },
 }) => (
-  <div>
-    <Helmet title={title} />
-    <div>
-      <h1>Tags</h1>
-      <ul>
-        {group.map(tag => (
-          <li key={tag.fieldValue}>
-            <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
-              {tag.fieldValue} ({tag.totalCount})
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </div>
-  </div>
+    <Layout>
+        <Helmet title={title} />
+        <div className='TagsPage'>
+            <HeaderStrip image={archiveHeader} title='All Tags' headline='See our all of our news articles by tags' />
+            <div>
+            <h1>Tags</h1>
+            <ul>
+                {group.map(tag => (
+                <li key={tag.fieldValue}>
+                    <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
+                    {tag.fieldValue} ({tag.totalCount})
+                    </Link>
+                </li>
+                ))}
+            </ul>
+            </div>
+        </div>
+    </Layout>
 )
+
 TagsPage.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
@@ -49,7 +56,10 @@ TagsPage.propTypes = {
     }),
   }),
 }
+
 export default TagsPage
+
+
 export const pageQuery = graphql`
   query {
     site {

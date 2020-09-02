@@ -3,6 +3,9 @@ import React from "react";
 import PropTypes from "prop-types";
 // Components
 import { Link, graphql } from "gatsby";
+import Layout from '../components/layout';
+import HeaderStrip from '../components/header-strip/header-strip';
+import archiveHeader from '../images/headers/archive.png';
 
 
 const Tags = ({ pageContext, data }) => {
@@ -11,25 +14,32 @@ const Tags = ({ pageContext, data }) => {
   const tagHeader = `${totalCount} post${
     totalCount === 1 ? "" : "s"
   } tagged with "${tag}"`
+
   return (
-    <div>
-      <h1>{tagHeader}</h1>
-      <ul>
-        {edges.map(({ node }) => {
-          const { title, slug } = node.frontmatter
-          return (
-            <li key={slug}>
-              <Link to={slug}>{title}</Link>
-            </li>
-          )
-        })}
-      </ul>
-      {/*
-              This links to a page that does not yet exist.
-              You'll come back to it!
-            */}
-      <Link to="/tags">All tags</Link>
-    </div>
+    <Layout>
+      <HeaderStrip 
+        title={`Tag: ${tag}`} 
+        image={archiveHeader}
+      />
+      <div>
+        <h2>{tagHeader}</h2>
+        <ul>
+          {edges.map(({ node }) => {
+            const { title, slug } = node.frontmatter
+            return (
+              <li key={slug}>
+                <Link to={slug}>{title}</Link>
+              </li>
+            )
+          })}
+        </ul>
+        {/*
+                This links to a page that does not yet exist.
+                You'll come back to it!
+              */}
+        <Link to="/news/tags">All tags</Link>
+      </div>
+    </Layout>
   )
 }
 Tags.propTypes = {

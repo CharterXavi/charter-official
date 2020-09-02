@@ -2,7 +2,7 @@ import React from "react";
 import { graphql, Link } from "gatsby";
 import Layout from '../components/layout';
 import HeaderStrip from '../components/header-strip/header-strip';
-import newsImage from '../images/headers/news.png';
+import archiveHeader from '../images/headers/archive.png';
 import RecentGrid from '../components/news/recent-grid';
 import PostStrip from '../components/news/post-strip';
 import './news.css';
@@ -19,7 +19,7 @@ const NewsPage = ({data}) => {
         <HeaderStrip 
             title='News'
             headline='Stay up to date in our company and industry!'
-            image={newsImage}
+            image={archiveHeader}
         />
         <div className='NewsArchive'>
             <div className='top-block'>

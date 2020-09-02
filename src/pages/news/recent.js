@@ -4,7 +4,7 @@ import PostLink from "../../components/news/post-link";
 import Layout from '../../components/layout';
 import HeaderStrip from '../../components/header-strip/header-strip';
 import ShowMoreButton from '../../components/buttons/show-more';
-import newsImage from '../../images/headers/news.png';
+import archiveHeader from '../../images/headers/archive.png';
 import './recent.css';
 
 const RecentPage = ({
@@ -77,7 +77,7 @@ const RecentPage = ({
         <HeaderStrip 
             title='Recent Articles'
             headline='Stay up to date in our company and industry!'
-            image={newsImage}
+            image={archiveHeader}
         />
         <div className='AllPosts'>
             <div className='grid-wrapper'>

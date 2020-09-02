@@ -4,7 +4,7 @@ import PostLink from "../../components/news/post-link";
 import Layout from '../../components/layout';
 import HeaderStrip from '../../components/header-strip/header-strip';
 import ShowMoreButton from '../../components/buttons/show-more';
-import newsImage from '../../images/headers/news.png';
+import archiveHeader from '../../images/headers/archive.png';
 import './recent.css';
 
 const HealthPage = ({data}) => {
@@ -73,7 +73,7 @@ const HealthPage = ({data}) => {
         <HeaderStrip 
             title='Health Articles'
             headline='See all of the health-related posts in our archive'
-            image={newsImage}
+            image={archiveHeader}
         />
         <div className='AllPosts'>
             <div className='grid-wrapper'>
