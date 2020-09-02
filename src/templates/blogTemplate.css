@@ -47,11 +47,13 @@
 .blog-post-content {
     padding: 0 0 32px 0;
 }
-.blog-post-container .sidebar .recent {
+.blog-post-container .sidebar .recent, .blog-post-container .sidebar .related  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     width: 100%;
-}
-.blog-post-container .sidebar .related {
-    width: 100%;
+    margin: 8px 0;
 }
 .blog-post-container .sidebar .share {
     width: 100%;

@@ -11,25 +11,32 @@ import ButtonPrimary from "../components/buttons/button-primary";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-export default function Template({
-  data, // this prop will be injected by the GraphQL query below.
-}) {
-  const { markdownRemark } = data // data.markdownRemark holds your post data
-  const { frontmatter, html } = markdownRemark
-  const imageSrc = data.markdownRemark.frontmatter.featuredImage.childImageSharp.fluid.src; 
-  const postTitle = data.markdownRemark.frontmatter.title;
-  const postTags = data.markdownRemark.frontmatter.tags;
-  const allPosts = data.allMarkdownRemark.edges;
+const Template = ({ data }) => {
+
+  const postContent = data.markdownRemark.html;
+  const imageSrc = data.markdownRemark.frontmatter.featuredImage.childImageSharp.fluid.src; //capture this post's featured image
+  const postTitle = data.markdownRemark.frontmatter.title; //capture the title of this post
+  const postDate = data.markdownRemark.frontmatter.date; //capture the title of this post
+  const postTags = data.markdownRemark.frontmatter.tags; //capture the tags of this post
+  const allPosts = data.allMarkdownRemark.edges; //capture all posts in the site
   const recentPosts = [];
   const relatedPosts = [];
 
-  //create an array of posts with similar tags (related posts)
+  console.log(allPosts)
+
   allPosts.map(post => {
-    if(post.node.frontmatter.title === postTitle) {
-      return;
-    } else if (post.node.frontmatter.tags[0] === postTags[0]) {
-      relatedPosts.push(post);
+    // create an array of posts with recent posts (related posts)
+    if (recentPosts.length < 3) {
+      recentPosts.push(post);
     }
+
+    // create an array of posts with similar tags (related posts)
+    if (post.node.frontmatter.title === postTitle) {
+      return post;
+    } else if (post.node.frontmatter.tags[0] === postTags[0]) {
+      return relatedPosts.push(post);
+    }
+
   });
   console.log(relatedPosts);
 
@@ -46,41 +53,37 @@ export default function Template({
   return (
     <Layout>
       <HeaderStrip 
-        title={frontmatter.title} 
+        title={postTitle} 
         image={archiveHeader}
       />
       <div className="blog-post-container">
         <div className="blog-post">
-          <img src={imageSrc} alt="Post Featured Image" class='featured-img' />
-          <h1>{frontmatter.title}</h1>
-          <h2>{frontmatter.date}</h2>
+          <img src={imageSrc} alt={postTitle} class='featured-img' />
+          <h1>{postTitle}</h1>
+          <h2>{postDate}</h2>
           <div
             className="blog-post-content"
-            dangerouslySetInnerHTML={{ __html: html }}
+            dangerouslySetInnerHTML={{ __html: postContent }}
           />
           <ButtonPrimary content='Return to News page' link='/news' animation='fade-right' animationTime='1000' />
           <p>Categories: </p>
           <p>Tags: 
             {postTags.map(tag => {
               return <Link to={`/tags/${tag}`} className='tag' >{tag}</Link> 
-              {/* TODO: create TagLink component and import here instead of the Link component */}
             })}
           </p>
         </div>
         <div className='sidebar'>
           <div className='recent'>
             <h5>Recent Posts</h5>
-            <ul>
-              <li>Post 1</li>
-              <li>Post 2</li>
-              <li>Post 3</li>
-            </ul>
+              {recentPosts.map(post => {
+                return <Link to={post.node.frontmatter.slug}>{post.node.frontmatter.title}</Link>
+              })}
           </div>
           <div className='related'>
             <h5>Related Posts</h5>
               {relatedPosts.map(post => {
                 return <Link to={post.node.frontmatter.slug}>{post.node.frontmatter.title}</Link>
-                {/* TODO: create TagLink component and import here instead of the Link component */}
               })}
           </div>
           <div className='share'>
@@ -96,6 +99,9 @@ export default function Template({
     </Layout>
   )
 }
+
+export default Template;
+
 export const pageQuery = graphql`
   query($slug: String!) {
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
@@ -115,7 +121,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    allMarkdownRemark {
+    allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}) {
       edges {
         node {
           frontmatter {
