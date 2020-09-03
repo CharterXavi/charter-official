@@ -18,7 +18,7 @@ const RecentGrid = (props) => {
         props.posts
             .filter(post => !!post.node.frontmatter.date)
             .map(post => 
-                <PostLink key={post.node.id} post={post.node} />
+                <PostLink key={post.node.id} post={post} />
             )
         }
         

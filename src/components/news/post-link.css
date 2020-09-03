@@ -39,17 +39,13 @@
     color: white;
     background: linear-gradient(66.41deg, #FFCE94 3.73%, #F05F7E 100%);
     border-radius: 5px;
-    padding: 4px;
+    padding: 4px 8px;
+    margin: 0 0 0 0;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
+    transition: 0.4s ease all;
 }
 .PostLink .categories .category {
-    color: white;
-    background: none;
-    box-shadow: none;
-    border: none;
-    margin: 0 0 0 0;
-}
-.PostLink .categories:hover {
-    transform: scale(1.2);
+    padding: 0 0 0 0;
 }
 .PostLink .content {
     transition: 0.4s ease all;

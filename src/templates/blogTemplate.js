@@ -74,7 +74,7 @@ const BlogTemplate = ({ data }) => {
           </p>
           <p className='tag-wrapper'>Tags: 
             {postTags.map(tag => {
-              return <Link to={`/tags/${tag}`} className='tag' >{tag}</Link> 
+              return <Link to={`/tags/${tag.split(' ').join('-')}`} className='tag' >{tag}</Link> 
             })}
           </p>
         </div>
