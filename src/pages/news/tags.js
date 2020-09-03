@@ -23,12 +23,12 @@ const TagsPage = ({
         <Helmet title={title} />
         <div className='TagsPage'>
             <HeaderStrip image={archiveHeader} title='All Tags' headline='See our all of our news articles by tags' />
-            <div>
-            <h1>Tags</h1>
+            <div className='intro'>
+            <h2>All Tags</h2>
             <ul>
                 {group.map(tag => (
                 <li key={tag.fieldValue}>
-                    <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
+                    <Link to={`/tags/${kebabCase(tag.fieldValue)}/`} className='tag'>
                     {tag.fieldValue} ({tag.totalCount})
                     </Link>
                 </li>

@@ -17,10 +17,14 @@ const NewsPage = ({data}) => {
   return (
       <Layout>
         <HeaderStrip 
-            title='News'
-            headline='Stay up to date in our company and industry!'
+            title='News Archive'
+            headline='Stay up to date with our company and industry!'
             image={archiveHeader}
         />
+        <div className='intro'>
+          <h2>Welcome to our News Archive at Charter!</h2>
+          <p className='introduction-text'>From the latest developments in our healthcare services to the industry as a whole, you've come to the right place to stay up to date. Enjoy our articles, and if you'd like to submit a story to us for publication contact us by completing the form at the bottom of the page.</p>
+        </div>
         <div className='NewsArchive'>
             <div className='top-block'>
               <RecentGrid posts={recentPosts} />
@@ -51,7 +55,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             slug
             title
-            categories
+            category
             featuredImage {
               relativePath
               childImageSharp {
@@ -73,7 +77,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             slug
             title
-            categories
+            category
             featuredImage {
               relativePath
               childImageSharp {
@@ -86,7 +90,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    health: allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {categories: {eq: "health"}}}, limit: 5) {
+    health: allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {category: {eq: "health"}}}, limit: 5) {
       edges {
         node {
           id
@@ -95,7 +99,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             slug
             title
-            categories
+            category
             featuredImage {
               relativePath
               childImageSharp {
@@ -108,7 +112,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    research: allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {categories: {eq: "research"}}}, limit: 5) {
+    research: allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {category: {eq: "research"}}}, limit: 5) {
       edges {
         node {
           id
@@ -117,7 +121,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             slug
             title
-            categories
+            category
             featuredImage {
               relativePath
               childImageSharp {

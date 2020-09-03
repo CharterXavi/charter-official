@@ -6,6 +6,8 @@ import { Link, graphql } from "gatsby";
 import Layout from '../components/layout';
 import HeaderStrip from '../components/header-strip/header-strip';
 import archiveHeader from '../images/headers/archive.png';
+import ButtonPrimaryAlt from '../components/buttons/button-primary-alt';
+import ButtonSecondary from '../components/buttons/button-secondary';
 
 
 const Tags = ({ pageContext, data }) => {
@@ -21,7 +23,7 @@ const Tags = ({ pageContext, data }) => {
         title={`Tag: ${tag}`} 
         image={archiveHeader}
       />
-      <div>
+      <div className='intro'>
         <h2>{tagHeader}</h2>
         <ul>
           {edges.map(({ node }) => {
@@ -37,7 +39,8 @@ const Tags = ({ pageContext, data }) => {
                 This links to a page that does not yet exist.
                 You'll come back to it!
               */}
-        <Link to="/news/tags">All tags</Link>
+        <ButtonPrimaryAlt link="/news/tags" content='View all tags' />
+        <ButtonSecondary link='/news' content ='Back to News Page' />
       </div>
     </Layout>
   )

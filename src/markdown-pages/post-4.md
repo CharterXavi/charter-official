@@ -4,7 +4,7 @@ date: "2019-05-07"
 title: "My FOURTH blog post"
 featuredImage: ../images/blog-content/stethoscope.jpeg
 excerpt: 'The fourth post on this site, ever!'
-categories: ['research']
+category: 'research'
 tags: ['health', 'HARP']
 ---
 ### The FOURTH blog post!

@@ -4,7 +4,7 @@ date: "2019-05-12"
 title: "My NINTH blog post"
 featuredImage: ../images/blog-content/stethoscope.jpeg
 excerpt: 'The ninth post on this site, ever!'
-categories: ['health']
+category: 'health'
 tags: ['hospice', 'research', 'health']
 ---
 ### The NINTH blog post!

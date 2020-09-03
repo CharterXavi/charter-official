@@ -53,7 +53,7 @@ query {
           date(formatString: "MMMM DD, YYYY")
           slug
           title
-          categories
+          category
           featuredImage {
             relativePath
             childImageSharp {
