@@ -5,13 +5,16 @@
     align-items: center;
 }
 .category-container .btn-container {
-    width: 100%;
+    width: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.category-container .btn-container .ButtonPrimaryAlt {
-    margin: 0 8px 0 0;
+.category-container .btn-container .ShowMoreButton,
+.category-container .btn-container .ButtonPrimaryAlt,
+.category-container .btn-container .ButtonSecondary
+{
+    margin: 0 8px;
 }
 .category-container .post-wrapper {
     width: 70%;

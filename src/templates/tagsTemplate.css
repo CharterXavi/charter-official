@@ -5,13 +5,16 @@
     align-items: center;
 }
 .tags-container .btn-container {
-    width: 100%;
+    width: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.tags-container .btn-container .ButtonPrimaryAlt {
-    margin: 0 8px 0 0;
+.tags-container .btn-container .ShowMoreButton,
+.tags-container .btn-container .ButtonPrimaryAlt,
+.tags-container .btn-container .ButtonSecondary
+{
+    margin: 0 8px;
 }
 .tags-container .post-wrapper {
     width: 70%;

@@ -1,5 +1,5 @@
 import './categoryTemplate.css';
-import React from "react";
+import React, {useEffect, useState} from "react";
 import PropTypes from "prop-types";
 // Components
 import { graphql } from "gatsby";
@@ -9,34 +9,97 @@ import archiveHeader from '../images/headers/archive.png';
 import ButtonPrimaryAlt from '../components/buttons/button-primary-alt';
 import ButtonSecondary from '../components/buttons/button-secondary';
 import PostLink from '../components/news/post-link';
+import ShowMoreButton from '../components/buttons/show-more';
 
 
 const Category = ({ pageContext, data }) => {
   const { category } = pageContext
-  const { edges, totalCount } = data.allMarkdownRemark
+  const { totalCount } = data.allMarkdownRemark
   const catHeader = `${totalCount} post${
     totalCount === 1 ? "" : "s"
-  } tagged with "${category}"`
+  } in the "${category}" category`
+
+  const [posts, setPosts] = useState([]); //posts state begin as an empty array
+  const [clickCount, setClickCount] = useState(1); //click count state begins as a 1
+  const [isFinished, setIsFinished] = useState(false); //when posts are all shown, change state to setFinished:true
+  const [hideShowMore, setHideShowMore] = useState(false); //when not enough posts, hide showMore button
+  const allPosts = data.allMarkdownRemark.edges; //capture all posts from GraphQL query for showMore program
+  const newPostList = [];
+
+  //push first 6 posts to state upon mounting so the user gets the first posts upon loading the page
+  useEffect(() => {
+      for (let i = 0; i < 6; i++) {
+          //if this post exists, push it to the new list - helps avoid pushing 'undefined' nodes to list
+          if(allPosts[i]) {
+              newPostList.push(allPosts[i]);
+          }
+          if(!allPosts[6]) {
+            //if there aren't enough posts, hide show more button
+            setHideShowMore(true);
+        }
+      }
+      setPosts(newPostList);
+  }, []); 
+
+  //write a function that will update state to show 6 more posts
+  const showMorePosts = (clickCount, isFinished) => {
+      const newClickCount = clickCount++;
+      
+      //if isFinished = true, reset everything to show first 6 posts once again
+      if(isFinished) {
+          for (let i = 0; i < 6; i++) {
+              //if this post exists, push it to the new list - helps avoid pushing 'undefined' nodes to list
+              if(allPosts[i]) {
+                  newPostList.push(allPosts[i]);
+              }
+          }
+          //reset state properties
+          setPosts(newPostList);
+          setClickCount(1);
+          setIsFinished(false);
+          console.log('POSTS: ', newPostList);
+          console.log('CLICKS: ', clickCount);
+      //Otherwise, show 6 more posts by replacing what's on the page with itself + another 6
+      } else {
+          //take clickCount as an input, and loop over 6 times for each click
+          //reset state to reflect new results
+          for (let i = 0; i < clickCount * 6; i++) {
+              //if this post exists, push it to the new list - helps avoid pushing 'undefined' nodes to list
+              if (allPosts[i]) {
+                  newPostList.push(allPosts[i]);
+              } else {
+                  setIsFinished(true);
+              }      
+          }
+          //update state properties
+          setPosts(newPostList);
+          setClickCount(newClickCount);
+          console.log('POSTS: ', newPostList);
+          console.log('CLICKS: ', clickCount);
+      }
+  }
+
 
   return (
     <Layout>
       <div className='category-container'>
         <HeaderStrip 
-          title={`News Articles by Category: ${category}`} 
+          title={`Category: ${category}`} 
           image={archiveHeader}
         />
         <div className='intro'>
           <h2>{catHeader}</h2>
           <div className='post-wrapper'>
-            {edges.map(post => {
+            {posts.map(post => {
               return (
                 <PostLink to={post.node.frontmatter.slug} key={post.node.frontmatter.id} post={post} />
               )
             })}
           </div>
           <div className='btn-container'>
-            <ButtonPrimaryAlt link="/news/categories" content='View all categories' />
-            <ButtonSecondary link='/news' content ='Back to News Page' />
+            <ButtonSecondary link='/news' content ='← News Page' />
+            {hideShowMore ? '' : <ShowMoreButton content='Show more' clickCount={clickCount} isFinished={isFinished} showMorePosts={showMorePosts} />}
+            <ButtonPrimaryAlt link="/news/categories" content='All Categories →' />
           </div>
         </div>
       </div>
