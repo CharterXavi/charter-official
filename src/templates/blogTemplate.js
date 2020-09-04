@@ -11,6 +11,7 @@ import clockIcon from '../images/iconography/clock.png';
 import groupIcon from '../images/iconography/group.png';
 import heartIcon from '../images/iconography/heart-icon.png';
 import ButtonPrimary from "../components/buttons/button-primary";
+import _ from 'lodash';
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -47,7 +48,7 @@ const BlogTemplate = ({ data }) => {
     AOS.init();
     AOS.refresh();
   });
-
+  console.log(_.kebabCase(postCategory.toLowerCase()));
   //TO DO: add conditional logic that will look at post's frontmatter and based on the column-layout property, will render
   //all of the content wrapped in that layout
   //It's currently all wrapped in the same Layout Tag as always, but making a 2-col layout gives us another option
@@ -70,11 +71,11 @@ const BlogTemplate = ({ data }) => {
           />
           <ButtonPrimary content='Return to News page' link='/news' animation='fade-right' animationTime='1000' />
           <p className='category-wrapper'>Category: 
-            <Link to={`/categories/${postCategory}`} className='category' >{postCategory}</Link> 
+            <Link to={`/categories/${_.kebabCase(postCategory)}`} className='category' >{postCategory}</Link> 
           </p>
           <p className='tag-wrapper'>Tags: 
             {postTags.map(tag => {
-              return <Link to={`/tags/${tag.split(' ').join('-')}`} className='tag' >{tag}</Link> 
+              return <Link to={`/tags/${_.kebabCase(tag)}`} className='tag' >{tag}</Link> 
             })}
           </p>
         </div>

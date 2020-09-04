@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { graphql, Link } from "gatsby";
 import Layout from '../components/layout';
 import HeaderStrip from '../components/header-strip/header-strip';
@@ -6,6 +6,8 @@ import archiveHeader from '../images/headers/archive.png';
 import RecentGrid from '../components/news/recent-grid';
 import PostStrip from '../components/news/post-strip';
 import './news.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const NewsPage = ({data}) => {
 
@@ -14,28 +16,35 @@ const NewsPage = ({data}) => {
   const healthPosts = data.health.edges;
   const researchPosts = data.research.edges;
 
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  });
+
   return (
       <Layout>
-        <HeaderStrip 
-            title='News Archive'
-            headline='Stay up to date with our company and industry!'
-            image={archiveHeader}
-        />
-        <div className='intro'>
-          <h2>Welcome to our News Archive at Charter!</h2>
-          <p>From the latest developments in our healthcare services to the industry as a whole, you've come to the right place to stay up to date. Enjoy our articles, and if you'd like to submit a story to us for publication contact us by completing the form at the bottom of the page.</p>
-        </div>
-        <div className='NewsArchive'>
-            <div className='top-block'>
-              <RecentGrid posts={recentPosts} />
-            </div>
-            
-            <div className='bottom-block'>  
-              <PostStrip posts={oldestPosts} title='Oldest Posts' link='/news/oldest' />
-              <PostStrip posts={healthPosts} title='Health Posts' link='/news/health' />
-              <PostStrip posts={researchPosts} title='Research Posts' link='/news/research' />
-            </div>
+        <div className='NewsPage'>
+          <HeaderStrip 
+              title='News Archive'
+              headline='Stay up to date with our company and industry!'
+              image={archiveHeader}
+          />
+          <div className='intro'>
+            <h2>Welcome to our News Archive at Charter!</h2>
+            <p>From the latest developments in our healthcare services to the industry as a whole, you've come to the right place to stay up to date. Enjoy our articles, and if you'd like to submit a story to us for publication contact us by completing the form at the bottom of the page.</p>
+          </div>
+          <div className='NewsArchive'>
+              <div className='top-block'>
+                <RecentGrid posts={recentPosts} />
+              </div>
+              
+              <div className='bottom-block'>  
+                <PostStrip posts={healthPosts} title='Health Posts' link='/news/health' />
+                <PostStrip posts={researchPosts} title='Research Posts' link='/news/research' />
+                <PostStrip posts={oldestPosts} title='Oldest Posts' link='/news/oldest' />
+              </div>
 
+          </div>
         </div>
       </Layout>
   )

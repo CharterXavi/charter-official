@@ -23,6 +23,11 @@
     justify-content: space-between;
     align-items: flex-end;
 }
+.RecentGrid hr {
+    width: 100%;
+    margin: 0 0 16px 0;
+    border: 1px solid #f0f0f0;
+}
 .RecentGrid .grid-header a {
     padding: 12px 0 20px 0;
     width: 180px;
