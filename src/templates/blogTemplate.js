@@ -70,7 +70,7 @@ const BlogTemplate = ({ data }) => {
           />
           <ButtonPrimary content='Return to News page' link='/news' animation='fade-right' animationTime='1000' />
           <p className='category-wrapper'>Category: 
-            <Link to={`/${postCategory}`} className='category' >{postCategory}</Link> 
+            <Link to={`/categories/${postCategory}`} className='category' >{postCategory}</Link> 
           </p>
           <p className='tag-wrapper'>Tags: 
             {postTags.map(tag => {
