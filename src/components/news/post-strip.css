@@ -3,10 +3,15 @@
     flex-direction: column;
     justify-items: center;
     align-items: center;
-    width: 85%;
+    width: 75%;
     min-height: 200px;
     margin: 32px 0 32px 0;
     z-index: 1;
+}
+.PostStrip hr {
+    width: 100%;
+    margin: 0 0 16px 0;
+    border: 1px solid #f0f0f0;
 }
 .PostStrip .grid {
     display: flex;
@@ -24,7 +29,7 @@
 }
 .PostStrip .grid-header a {
     padding: 12px 0 20px 0;
-    width: 180px;
+    min-width: 180px;
     height: auto;
     text-align: right;
     text-decoration: underline;
@@ -33,9 +38,11 @@
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
-    width: 300px;
-    height: 200px;
-    margin: 4px;
+    width: 500px;
+    height: 300px;
+}
+.PostStrip .grid a:nth-of-type(2) {
+    margin: 0 16px;
 }
 .PostStrip .grid a:hover .PostLink img {
     filter: blur(2px);
@@ -46,35 +53,27 @@
 }
 
 @media only screen and (max-width: 1400px) {
-    .PostStrip .grid a:nth-of-type(5) {
+    .PostStrip .grid a:nth-of-type(3) {
         display: none; 
+    }
+    .PostStrip .grid a:nth-of-type(2) {
+        margin: 0 0 0 0;
+    }
+    .PostStrip .grid a:nth-of-type(1) {
+        margin: 0 16px 0 0;
     }
 }
 @media only screen and (max-width: 1150px) {
-    .PostStrip .grid a:nth-of-type(4) {
-        display: none; 
-    }
     .PostStrip {
         width: 90%;
+    }
+    .PostStrip .grid a {
+        height: 200px;
     }
 }
 @media only screen and (max-width: 950px) {
     .PostStrip {
-        width: 95%;
-    }
-}
-@media only screen and (max-width: 700px) {
-    .PostStrip .grid {
-        flex-wrap: wrap;
-        justify-content: center;
-        height: auto;
-    }
-    .PostStrip .grid a {
-        width: 46%;
-        height: 100px;
-    }
-    .PostStrip .grid a:nth-of-type(4) {
-        display: inherit;
+        width: 100%;
     }
 }
 @media only screen and (max-width: 600px) {
@@ -86,9 +85,11 @@
         height: auto;
         flex-direction: column;
     }
+    .PostStrip .grid a:nth-of-type(1) {
+        margin: 0 0 16px 0;
+    }
     .PostStrip .grid a {
         width: 100%;
-        margin: 8px 0 8px 0;
     }
     .PostStrip a .PostLink .content {
         bottom: 5%;
@@ -109,3 +110,5 @@
         padding: 16px 0 4px 0;
     }
 }
+
+

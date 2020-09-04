@@ -1,0 +1,39 @@
+.TagsPage .intro {
+    width: 100%;
+}
+
+.TagsPage ul {
+    width: 70%;
+    min-height: 200px;
+    list-style: none;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: var(--light-clinic-blue);
+    padding: 0 0 0 0;
+    box-sizing: border-box;
+    padding: 16px;
+}
+.TagsPage ul li {
+    height: auto;
+    margin: 16px 0;
+}
+.TagsPage .tag {
+    margin: 0 0 0 0;
+    color: white;
+    background: linear-gradient(270deg, #0FBDBD -7.32%, #363F55 100%);
+    border-radius: 5px;
+    padding: 4px 8px;
+    margin: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
+    transition: 0.4s ease all;
+}
+
+@media only screen and (max-width: 500px) {
+    .TagsPage ul {
+        width: 100%;
+    }
+}

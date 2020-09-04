@@ -15,12 +15,7 @@ import './index.css';
 
 const IndexPage = ({ data }) => {
 
-  const recentPosts = [];
-  for (let i = 0; i < 5; i++) {
-    if (data.recent.edges[i]) {
-      recentPosts.push(data.recent.edges[i]);
-    };
-  };
+  const recentPosts = data.recent.edges;
   
   return (
     <Layout>
@@ -44,7 +39,7 @@ export default IndexPage
 
 export const recentPostsQuery = graphql`
 query {
-  recent: allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {}, limit: 5) {
+  recent: allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {}, limit: 3) {
     edges {
       node {
         id
@@ -53,7 +48,7 @@ query {
           date(formatString: "MMMM DD, YYYY")
           slug
           title
-          categories
+          category
           featuredImage {
             relativePath
             childImageSharp {

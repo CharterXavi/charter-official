@@ -4,7 +4,8 @@ date: "2019-05-10"
 title: "My SEVENTH blog post"
 featuredImage: ../images/blog-content/covid.jpeg
 excerpt: 'The seventh post on this site, ever!'
-categories: ['health']
+category: 'health'
+tags: ['flu season']
 ---
 ### The SEVENTH blog post!
 Isn't it a great one.  

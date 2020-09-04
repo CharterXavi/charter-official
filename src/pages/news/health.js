@@ -4,7 +4,7 @@ import PostLink from "../../components/news/post-link";
 import Layout from '../../components/layout';
 import HeaderStrip from '../../components/header-strip/header-strip';
 import ShowMoreButton from '../../components/buttons/show-more';
-import newsImage from '../../images/headers/news.png';
+import archiveHeader from '../../images/headers/archive.png';
 import './recent.css';
 
 const HealthPage = ({data}) => {
@@ -73,7 +73,7 @@ const HealthPage = ({data}) => {
         <HeaderStrip 
             title='Health Articles'
             headline='See all of the health-related posts in our archive'
-            image={newsImage}
+            image={archiveHeader}
         />
         <div className='AllPosts'>
             <div className='grid-wrapper'>
@@ -83,7 +83,7 @@ const HealthPage = ({data}) => {
                 <div className='grid'>
                     
                     {/* Loop over posts in state and show PostLinks for each */}
-                    {posts.map(edge => <PostLink key={edge.node.id} post={edge.node} />)}
+                    {posts.map(edge => <PostLink key={edge.node.id} post={edge} />)}
                 
                 </div>
                 {hideShowMore ? '' : <ShowMoreButton content='Show more' clickCount={clickCount} isFinished={isFinished} showMorePosts={showMorePosts} />}
@@ -98,7 +98,7 @@ export default HealthPage;
 //Query our post frontmatter to get relative paths for the images they may be referencing
 export const pageQuery = graphql`
   query {
-    health: allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {categories: {eq: "health"}}}, limit: 5) {
+    health: allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {category: {eq: "health"}}}, limit: 5) {
       edges {
         node {
           id
@@ -107,7 +107,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             slug
             title
-            categories
+            category
             featuredImage {
               relativePath
               childImageSharp {

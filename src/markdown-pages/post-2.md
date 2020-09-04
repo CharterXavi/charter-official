@@ -4,7 +4,8 @@ date: "2019-05-05"
 title: "My SECOND blog post"
 featuredImage: ../images/blog-content/covid.jpeg
 excerpt: 'The second post on this site, ever!'
-categories: ['research']
+category: 'Charter News'
+tags: ['home health', 'research', 'health']
 ---
 ### The SECOND blog post!
 Isn't it a great one.  

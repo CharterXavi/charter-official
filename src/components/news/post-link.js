@@ -2,26 +2,23 @@ import React from "react";
 import { Link } from "gatsby";
 import './post-link.css';
 
-const PostLink = ({ post }) => {
+const PostLink = (props) => {
     
-    let imageSrc = post.frontmatter.featuredImage.childImageSharp.fluid.src;
-    console.log(imageSrc);
+    let imageSrc = props.post.node.frontmatter.featuredImage.childImageSharp.fluid.src;
     
     return (
-        <Link to={post.frontmatter.slug}>
+        <Link to={props.post.node.frontmatter.slug}>
             <div className='PostLink'>
                 <div className='categories'>
-                    {post.frontmatter.categories.map(category => {
-                        return <Link to={`/news/${category}`} className='category'>{category}</Link>
-                    })}
+                    <p className='category'>{props.post.node.frontmatter.category}</p>
                 </div>
                 <div className='content'>
-                    {post.frontmatter.title}
+                    {props.post.node.frontmatter.title}
                     <br />
-                    {post.frontmatter.date}
+                    {props.post.node.frontmatter.date}
                 </div>
                 <div className='overlay'></div>
-                <img src={imageSrc} alt="Flowers on a pink background" />
+                <img src={imageSrc} alt="Blog Post" />
             </div>
         </Link>
     )

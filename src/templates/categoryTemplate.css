@@ -1,0 +1,71 @@
+.category-container .intro {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.category-container .btn-container {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.category-container .btn-container .ShowMoreButton,
+.category-container .btn-container .ButtonPrimaryAlt,
+.category-container .btn-container .ButtonSecondary
+{
+    margin: 0 8px;
+}
+.category-container .post-wrapper {
+    width: 70%;
+    height: auto; 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.category-container .post-wrapper a {
+    width: 300px;
+    height: 200px;
+    margin: 4px;
+}
+
+.category-container .intro {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    min-height: 200px;
+    transition: 0.4s ease all;
+}
+.category-container .post-wrapper {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    box-sizing: border-box;
+    transition: 0.4s ease all;
+    margin: 0 0 32px 0;
+}
+.category-container .intro .post-wrapper a {
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
+    margin: 8px;
+    width: 45%;
+    height: 250px;
+}
+
+.category-container .post-wrapper a:hover .PostLink img {
+    filter: blur(2px);
+    transform: scale(1.05);
+}
+.category-container .post-wrapper a:hover .PostLink .content {
+    transform: scale(1.05) translateX(8px);
+}

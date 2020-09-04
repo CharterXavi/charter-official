@@ -1,0 +1,21 @@
+.CategoryNav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.CategoryNav h5 {
+    width: auto;
+    margin: 0 8px;
+}
+.CategoryNav .category-link {
+    padding: 16px;
+    background: var(--light-clinic-blue);
+    color: var(--heading-color);
+    border-left: 4px solid white;
+}
+.CategoryNav .category-link:hover {
+    padding: 16px;
+    background: linear-gradient(66.41deg, #FFCE94 3.73%, #F05F7E 100%);
+    color: white;
+}

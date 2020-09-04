@@ -9,19 +9,18 @@ const PostStrip = (props) => {
     <div className='PostStrip'>
         <div className='grid-header'>
         <h2>{props.title}</h2>
-        <Link to={props.link}>See All {props.title}</Link>
+        <Link to={props.link}>See All {props.title} Posts</Link>
         </div>
+        <hr/>
         <div className='grid'>
-        
         {
         //the posts from GraphQL Query are 'edges', but we'll call them posts
         props.posts
             .filter(post => !!post.node.frontmatter.date)
             .map(post => 
-                <PostLink key={post.node.id} post={post.node} />
+                <PostLink key={post.node.id} post={post} />
             )
         }
-        
         </div>
     </div>
   )
