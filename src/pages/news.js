@@ -23,7 +23,7 @@ const NewsPage = ({data}) => {
         />
         <div className='intro'>
           <h2>Welcome to our News Archive at Charter!</h2>
-          <p className='introduction-text'>From the latest developments in our healthcare services to the industry as a whole, you've come to the right place to stay up to date. Enjoy our articles, and if you'd like to submit a story to us for publication contact us by completing the form at the bottom of the page.</p>
+          <p>From the latest developments in our healthcare services to the industry as a whole, you've come to the right place to stay up to date. Enjoy our articles, and if you'd like to submit a story to us for publication contact us by completing the form at the bottom of the page.</p>
         </div>
         <div className='NewsArchive'>
             <div className='top-block'>

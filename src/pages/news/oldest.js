@@ -75,7 +75,7 @@ const OldestPage = ({
                 <div className='grid'>
                     
                     {/* Loop over posts in state and show PostLinks for each */}
-                    {posts.map(edge => <PostLink key={edge.node.id} post={edge.node} />)}
+                    {posts.map(edge => <PostLink key={edge.node.id} post={edge} />)}
                 
                 </div>
                 <ShowMoreButton content='Show more' clickCount={clickCount} isFinished={isFinished} showMorePosts={showMorePosts} />
