@@ -68,7 +68,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    oldest: allMarkdownRemark(sort: {order: ASC, fields: [frontmatter___date]}, filter: {}, limit: 5) {
+    oldest: allMarkdownRemark(sort: {order: ASC, fields: [frontmatter___date]}, filter: {}, limit: 3) {
       edges {
         node {
           id
@@ -90,7 +90,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    health: allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {category: {eq: "health"}}}, limit: 5) {
+    health: allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {category: {eq: "health"}}}, limit: 3) {
       edges {
         node {
           id
@@ -112,7 +112,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    research: allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {category: {eq: "research"}}}, limit: 5) {
+    research: allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {category: {eq: "research"}}}, limit: 3) {
       edges {
         node {
           id

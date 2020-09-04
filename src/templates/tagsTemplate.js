@@ -22,7 +22,7 @@ const Tags = ({ pageContext, data }) => {
     <Layout>
       <div className='tags-container'>
         <HeaderStrip 
-          title={`Tag: ${tag}`} 
+          title={`News Articles by Tag: ${tag}`} 
           image={archiveHeader}
         />
         <div className='intro'>

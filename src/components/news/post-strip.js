@@ -11,8 +11,8 @@ const PostStrip = (props) => {
         <h2>{props.title}</h2>
         <Link to={props.link}>See All {props.title}</Link>
         </div>
+        <hr/>
         <div className='grid'>
-        
         {
         //the posts from GraphQL Query are 'edges', but we'll call them posts
         props.posts
@@ -21,7 +21,6 @@ const PostStrip = (props) => {
                 <PostLink key={post.node.id} post={post} />
             )
         }
-        
         </div>
     </div>
   )
