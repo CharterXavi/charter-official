@@ -22,7 +22,7 @@ const ServicesStrip = () => {
         <h2>Our Post-Accute Care Services</h2>
         <div className='card-container'>
             <div className='card' data-aos='fade-up' data-aos-duration='600' >
-                <img src={heartIcon} alt="Heart symbol" class='icon' />
+                <img src={heartIcon} alt="Heart symbol" className='icon' />
                 <h3>Hospice</h3>
                 <p>Hospice is a special way of caring for people who have a life limiting illness.</p>
                 <Link to='/services/hospice'>
@@ -30,7 +30,7 @@ const ServicesStrip = () => {
                 </Link>
             </div>
             <div className='card' data-aos='fade-up' data-aos-duration='900' >
-                <img src={stethoscopeIcon} alt="Stehoscope symbol" class='icon' />
+                <img src={stethoscopeIcon} alt="Stehoscope symbol" className='icon' />
                 <h3>H.A.R.P.</h3>
                 <p>H.A.R.P. is our comprehensive plan to make sure we keep you out of the hospital.</p>
                 <Link to='/services/harp'>
@@ -38,7 +38,7 @@ const ServicesStrip = () => {
                 </Link>
             </div>
             <div className='card' data-aos='fade-up' data-aos-duration='1300' >
-                <img src={healthIcon} alt="Healthcare cross symbol" class='icon' />
+                <img src={healthIcon} alt="Healthcare cross symbol" className='icon' />
                 <h3>Palliative Care</h3>
                 <p>Our Palliative team can help you and your loved ones cope with serious illnesses.</p>
                 <Link to='/services/palliative-care'>
@@ -46,7 +46,7 @@ const ServicesStrip = () => {
                 </Link>
             </div>
             <div className='card' data-aos='fade-up' data-aos-duration='1900' >
-                <img src={houseIcon} alt="House symbol" class='houseIcon icon' />
+                <img src={houseIcon} alt="House symbol" className='houseIcon icon' />
                 <h3>Home Health</h3>
                 <p>We can deliver a wide range of services in the convenience and privacy of your own home.</p>
                 <Link to='/services/home-health'>

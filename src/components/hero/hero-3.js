@@ -20,8 +20,8 @@ const HeroStrip3 = () => {
                     <path d="M0 6.14358C0 6.14358 165.5 -2.85595 179.5 121.644C193.5 246.144 281 259.644 255.5 419.144C230 578.644 431 656.144 431 656.144H0V6.14358Z" fill="url(#paint20_linear)"/>
                     </g>
                     <defs>
-                    <filter id="filter20_d" x="-1" y="0" width="443" height="662.144" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <filter id="filter20_d" x="-1" y="0" width="443" height="662.144" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                    <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                     <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
                     <feOffset dx="5"/>
                     <feGaussianBlur stdDeviation="3"/>
@@ -30,8 +30,8 @@ const HeroStrip3 = () => {
                     <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
                     </filter>
                     <linearGradient id="paint20_linear" x1="0" y1="656.144" x2="431" y2="656.144" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#F493AA"/>
-                    <stop offset="1" stop-color="#F2D1C9"/>
+                    <stop stopColor="#F493AA"/>
+                    <stop offset="1" stopColor="#F2D1C9"/>
                     </linearGradient>
                     </defs>
                 </svg>
@@ -40,8 +40,8 @@ const HeroStrip3 = () => {
                     <path d="M442 6.14355C442 6.14355 244 38.1436 265 172.144C286 306.144 126.5 365.644 126.5 497.144C126.5 628.644 11 656.144 11 656.144H442V6.14355Z" fill="url(#paint21_linear)"/>
                     </g>
                     <defs>
-                    <filter id="filter21_d" x="0" y="0.143555" width="443" height="662" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <filter id="filter21_d" x="0" y="0.143555" width="443" height="662" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                    <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                     <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
                     <feOffset dx="-5"/>
                     <feGaussianBlur stdDeviation="3"/>
@@ -50,8 +50,8 @@ const HeroStrip3 = () => {
                     <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
                     </filter>
                     <linearGradient id="paint21_linear" x1="442" y1="656.144" x2="11" y2="656.144" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#F493AA"/>
-                    <stop offset="1" stop-color="#F2D1C9"/>
+                    <stop stopColor="#F493AA"/>
+                    <stop offset="1" stopColor="#F2D1C9"/>
                     </linearGradient>
                     </defs>
                 </svg>
