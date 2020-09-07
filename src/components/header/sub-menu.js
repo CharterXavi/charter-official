@@ -11,14 +11,13 @@ const SubMenu = (props) => {
         <div className={`SubMenu ${props.isSubMenuExpanded ? 'sub-expanded' : ''}`} style={{height: `${props.isSubMenuExpanded ? heightStr : '0px'}`}}>
             <ul>
             {props.subMenu.map(subLink => {
-                return <li>
-                <Link 
-                    to={`${subLink.path}`} 
-                    activeStyle={{background: 'black', outline: 'none', border: 'none'}}
-                    key={subLink.name}
-                >
-                {subLink.name}
-                </Link>
+                return <li key={subLink.name}>
+                    <Link 
+                        to={`${subLink.path}`} 
+                        activeStyle={{background: 'black', outline: 'none', border: 'none'}}
+                    >
+                    {subLink.name}
+                    </Link>
                 </li>
             })}
             </ul>
