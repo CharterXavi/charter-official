@@ -4,7 +4,7 @@ date: "2019-09-11"
 title: "Preparing for Flu Season"
 featuredImage: ../images/blog-content/hands.jpeg
 excerpt: 'Flu season is almost here!'
-category: 'health'
+category: 'Health'
 tags: ['home health', 'research', 'health']
 ---
 ### OH NO - THE FLU! 

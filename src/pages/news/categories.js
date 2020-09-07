@@ -9,6 +9,7 @@ import './categories.css';
 import Layout from "../../components/layout"
 import HeaderStrip from "../../components/header-strip/header-strip"
 import archiveHeader from '../../images/headers/archive.png';
+import ButtonSecondary from '../../components/buttons/button-secondary';
 
 
 const CategoriesPage = ({
@@ -35,6 +36,7 @@ const CategoriesPage = ({
                 ))}
             </ul>
             </div>
+            <ButtonSecondary content='← News page' link='/news' animation='fade-right' animationTime='1000' />
         </div>
     </Layout>
 )

@@ -4,7 +4,7 @@ date: "2019-05-06"
 title: "My THIRD blog post"
 featuredImage: ../images/blog-content/hands.jpeg
 excerpt: 'The third post on this site, ever!'
-category: 'research'
+category: 'Research'
 tags: ['home health', 'health']
 ---
 ### The THIRD blog post!

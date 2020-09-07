@@ -4,7 +4,7 @@ date: "2019-05-04"
 title: "My FIRST blog post"
 featuredImage: ../images/blog-content/smiling.jpeg
 excerpt: 'The first post on this site, ever!'
-category: 'research'
+category: 'Research'
 tags: ['home health', 'hospice']
 ---
 ### The first blog post!

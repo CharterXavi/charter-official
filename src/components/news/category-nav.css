@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
 }
-.CategoryNav h5 {
+.CategoryNav h4 {
     width: auto;
     margin: 0 8px;
 }
@@ -18,4 +18,13 @@
     padding: 16px;
     background: linear-gradient(66.41deg, #FFCE94 3.73%, #F05F7E 100%);
     color: white;
+}
+
+@media only screen and (max-width: 475px) {
+    .CategoryNav {
+        flex-wrap: wrap;
+    }
+    .CategoryNav .category-link {
+        margin: 4px;
+    }
 }

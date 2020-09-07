@@ -4,7 +4,7 @@ date: "2019-05-08"
 title: "My FIFTH blog post"
 featuredImage: ../images/blog-content/artist.jpeg
 excerpt: 'The fifth post on this site, ever!'
-category: 'research'
+category: 'Research'
 tags: ['palliative care', 'research']
 ---
 ### The FIFTH blog post!

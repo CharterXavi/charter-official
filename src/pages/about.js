@@ -18,13 +18,6 @@ const AboutPage = ({data}) => {
     AOS.refresh();
   });
 
-  const recentPosts = [];
-  for (let i = 0; i < 5; i++) {
-    if (data.recent.edges[i]) {
-      recentPosts.push(data.recent.edges[i]);
-    };
-  };
-
   return (
     <Layout>
       <SEO title="About Us" />
@@ -142,7 +135,7 @@ const AboutPage = ({data}) => {
         </div>
       </div>
       <Video />
-      <NewsStrip posts={recentPosts} />
+      <NewsStrip posts={data.recent.edges} />
       <OurTeamStrip />
       <LocationsStrip />
     </Layout>
@@ -153,7 +146,7 @@ export default AboutPage;
 
 export const recentPostsQuery = graphql`
 query {
-  recent: allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {}, limit: 5) {
+  recent: allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {}, limit: 3) {
     edges {
       node {
         id
