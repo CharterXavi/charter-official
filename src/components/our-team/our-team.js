@@ -70,12 +70,12 @@ const OurTeamStrip = () => {
             </div>
         </div>
         <ButtonPrimaryAlt content='See Our Team' link='/our-team' />
-        <svg className='team-wave-one' xmlns="http://www.w3.org/2000/svg" width="1440" height="750" viewBox="0 0 1440 750" fill="none">
+        <svg className='team-wave-one' xmlns="http://www.w3.org/2000/svg" width="1440" height="428" viewBox="0 0 1440 428" fill="none">
             <g filter="url(#filter5_d)">
-            <path d="M0 573C0 573 336.5 378 797 363.5C1257.5 349 1440 15 1440 15C1440 205.966 1440 554.034 1440 745H0V573Z" fill="url(#paint5_linear)"/>
+            <path d="M-2 395C-2 395 257 134.5 729.5 241C1202 347.5 1438 15 1438 15C1438 99.2057 1438 338.294 1438 422.5H688.5H-2V395Z" fill="url(#paint5_linear)"/>
             </g>
             <defs>
-            <filter id="filter5_d" x="-5" y="0" width="1460" height="750" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <filter id="filter5_d" x="-7" y="0" width="1460" height="427.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
             <feFlood flood-opacity="0" result="BackgroundImageFix"/>
             <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
             <feOffset dx="5" dy="-5"/>
@@ -84,7 +84,7 @@ const OurTeamStrip = () => {
             <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
             <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
             </filter>
-            <linearGradient id="paint5_linear" x1="0" y1="745" x2="1440" y2="745" gradientUnits="userSpaceOnUse">
+            <linearGradient id="paint5_linear" x1="-2" y1="422.5" x2="1438" y2="422.5" gradientUnits="userSpaceOnUse">
             <stop stop-color="#F493AA"/>
             <stop offset="1" stop-color="#F2D1C9"/>
             </linearGradient>
