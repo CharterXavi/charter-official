@@ -12,14 +12,14 @@ const Menu = (props) => {
             <ul>
                 {/* map through all of the links from gatsbyconfig.js */}
                 {props.menuLinks.map(link => {
-                    return <li>
+                    return <li key={link.name}>
                       <Link 
                         to={`${link.path}`} 
                         activeStyle={{background: 'black', outline: 'none', border: 'none'}}
-                        key={link.name}
                       >
                         {link.name}
                       </Link>
+
                       {/* If the first submenu object, as a sample, is populated, render a clickable plus sign to expand submenu */}
                       {link.subMenu[0].name !== '' && (
                         <MenuClicker expandSubMenu={props.expandSubMenu} id={link.name} />
