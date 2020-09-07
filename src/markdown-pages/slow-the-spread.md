@@ -4,7 +4,7 @@ date: "2019-09-04"
 title: "COVID-19: How to Slow The Spread"
 featuredImage: ../images/blog-content/covid.jpeg
 excerpt: 'What YOU can do to help stop COVID-19.'
-category: 'health'
+category: 'Health'
 tags: ['COVID19']
 ---
 ### COVID-19 is a nasty virus.

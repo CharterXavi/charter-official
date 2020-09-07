@@ -18,6 +18,7 @@ const NewsPage = ({data}) => {
   const researchPosts = data.research.edges;
   const categories = data.categories.group;
 
+  
   useEffect(() => {
     AOS.init();
     AOS.refresh();
@@ -43,8 +44,8 @@ const NewsPage = ({data}) => {
               <div className='bottom-block'>  
                 <CategoryNav categories={categories} />
                 <PostStrip posts={healthPosts} title='Health' link='/categories/health' />
-                <PostStrip posts={researchPosts} title='Research' link='/news/research' />
-                <PostStrip posts={oldestPosts} title='Oldest Posts' link='/news/oldest' />
+                <PostStrip posts={researchPosts} title='Research' link='/categories/research' />
+                <PostStrip posts={oldestPosts} title='Oldest' link='/news/oldest' />
               </div>
 
           </div>
@@ -102,7 +103,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    health: allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {category: {eq: "health"}}}, limit: 3) {
+    health: allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {category: {eq: "Health"}}}, limit: 3) {
       edges {
         node {
           id
@@ -124,7 +125,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    research: allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {category: {eq: "research"}}}, limit: 3) {
+    research: allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {category: {eq: "Research"}}}, limit: 3) {
       edges {
         node {
           id

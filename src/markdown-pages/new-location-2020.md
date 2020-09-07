@@ -4,7 +4,7 @@ date: "2020-09-06"
 title: "New Charter Location!"
 featuredImage: ../images/blog-content/smiling.jpeg
 excerpt: 'Charter is proud to announce a new location'
-category: 'health'
+category: 'Health'
 tags: ['hospice', 'research', 'health']
 ---
 ### Our newest location just launched!
