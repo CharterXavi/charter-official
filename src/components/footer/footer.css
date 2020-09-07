@@ -61,10 +61,6 @@
     width: 150px;
 }
 .Footer .socials ul li {
-    border: 1px solid lightgray;
-    color: white;
-    border-radius: 10px;
-    background: #363f55;
     width: 30px;
     height: 30px;
     display: flex;
