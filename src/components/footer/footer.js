@@ -2,6 +2,10 @@ import React from 'react';
 import './footer.css';
 import ContactForm from '../../components/form';
 import {Link} from 'gatsby';
+import facebook from '../../images/iconography/facebook.png';
+import linkedin from '../../images/iconography/linkedin.png';
+import instagram from '../../images/iconography/instagram.png';
+import twitter from '../../images/iconography/twitter.png';
 
 
 //TODO - MAKE CARDS EXPANDABLE ON MOBILE AND DESKTOP
@@ -35,10 +39,26 @@ const Footer = () => {
                 <div className='socials'>
                     <h4>Follow Us</h4>
                     <ul>
-                        <li>I</li>
-                        <li>T</li>
-                        <li>F</li>
-                        <li>L</li>
+                        <li>
+                            <a href="https://www.linkedin.com/company/charter-healthcare-group/" target='_blank'>
+                                <img src={linkedin} alt="Facebook Logo" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/CharterHCG" target='_blank'>
+                                <img src={facebook} alt="Facebook Logo" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/charterhcg/" target='_blank'>
+                                <img src={instagram} alt="Facebook Logo" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/charterhcg" target='_blank'>
+                                <img src={twitter} alt="Facebook Logo" />
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
