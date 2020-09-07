@@ -87,9 +87,8 @@ const TestimonialsStrip = (props) => {
                 <ArrowLeft goToPrev={goToPrev} />
                 {testimonialList.map((quote, index) => {
                     return (
-                        <div data-aos='fade-left' data-aos-duration={quote.animationTime}>
+                        <div data-aos='fade-left' data-aos-duration={quote.animationTime} key={quote.name} >
                             <Dot 
-                                key={quote.name} 
                                 isCurrentQuote={index === activeIndex ? true : false} 
                             />
                         </div>
