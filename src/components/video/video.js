@@ -29,8 +29,8 @@ const VideoStrip = () => {
         <path d="M0 0H452C452 0 313.847 27.4049 270.8 64.1825C227.752 100.96 245.271 164.564 130.645 174.948C16.0177 185.332 0 361 0 361V0Z" fill="url(#paint25_linear)"/>
         <defs>
         <linearGradient id="paint25_linear" x1="0" y1="361" x2="452" y2="361" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#F493AA"/>
-        <stop offset="1" stop-color="#F2D1C9"/>
+        <stop stopColor="#F493AA"/>
+        <stop offset="1" stopColor="#F2D1C9"/>
         </linearGradient>
         </defs>
       </svg>
@@ -49,7 +49,7 @@ const VideoStrip = () => {
       <iframe 
         className={`video ${videoState ? 'active' : ''}`} 
         src="https://player.vimeo.com/video/312555365" 
-        width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen
+        width="640" height="360" frameBorder="0" allowFullScreen
       ></iframe>
 
       <div className='play-btn-wrapper' onClick={showVideo}>
@@ -60,8 +60,8 @@ const VideoStrip = () => {
         <path d="M147.841 168.571C191.22 117.427 201.454 66.4466 314.678 77.2619C427.901 88.0772 446 0 446 0V236H0C0 236 104.462 219.716 147.841 168.571Z" fill="url(#paint26_linear)"/>
         <defs>
         <linearGradient id="paint26_linear" x1="0" y1="236" x2="446" y2="236" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#F493AA"/>
-        <stop offset="1" stop-color="#F2D1C9"/>
+        <stop stopColor="#F493AA"/>
+        <stop offset="1" stopColor="#F2D1C9"/>
         </linearGradient>
         </defs>
       </svg>
