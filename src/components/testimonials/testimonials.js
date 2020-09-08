@@ -103,8 +103,8 @@ const TestimonialsStrip = (props) => {
             <path d="M-2 395C-2 395 257 134.5 729.5 241C1202 347.5 1438 15 1438 15C1438 99.2057 1438 338.294 1438 422.5H688.5H-2V395Z" fill="url(#paint12_linear)"/>
             </g>
             <defs>
-            <filter id="filter12_d" x="-7" y="0" width="1460" height="427.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <filter id="filter12_d" x="-7" y="0" width="1460" height="427.5" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+            <feFlood floodOpacity="0" result="BackgroundImageFix"/>
             <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
             <feOffset dx="5" dy="-5"/>
             <feGaussianBlur stdDeviation="5"/>
@@ -113,8 +113,8 @@ const TestimonialsStrip = (props) => {
             <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
             </filter>
             <linearGradient id="paint12_linear" x1="-2" y1="422.5" x2="1438" y2="422.5" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#F493AA"/>
-            <stop offset="1" stop-color="#F2D1C9"/>
+            <stop stopColor="#F493AA"/>
+            <stop offset="1" stopColor="#F2D1C9"/>
             </linearGradient>
             </defs>
             </svg> 
