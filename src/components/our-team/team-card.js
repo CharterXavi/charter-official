@@ -19,7 +19,7 @@ const TeamCard = (props) => {
 
   return (
     <div className='TeamCard' data-aos='fade-up' data-aos-duration={props.animationTime} data-aos-once="true">
-        <img src={props.image} alt="Team Member" class={`${props.isClicked ? 'enlarge-image' : ''}`} />
+        <img src={props.image} alt="Team Member" className={`${props.isClicked ? 'enlarge-image' : ''}`} />
         <div className='card-header'>
             <h4>{props.name}</h4>
             <p className='introduction-text'>{props.title}</p>
