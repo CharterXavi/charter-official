@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import './home-chart.css'
 import { Line } from 'react-chartjs-2';
 
