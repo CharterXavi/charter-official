@@ -48,7 +48,7 @@ return (
         <div className='card-wrapper'>
             {
                 advantageList.map(item => {
-                    return <AdvantageCard img={item.img} title={item.title} content={item.content} animationTime={item.animationTime} />
+                    return <AdvantageCard key={item.title} img={item.img} title={item.title} content={item.content} animationTime={item.animationTime} />
                 })
             }
         </div>

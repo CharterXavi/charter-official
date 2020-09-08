@@ -98,6 +98,7 @@ const TeamGrid = () => {
                         isClicked={teamMember.isClicked} 
                         animationTime={teamMember.animationTime} 
                         expandBio={expandBio} 
+                        key={teamMember.name}
                     />   
                 })}
             </div>

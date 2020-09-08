@@ -9,28 +9,23 @@ const ButtonPrimaryAlt = (props) => {
         AOS.refresh();
     });
 
+    const download = false;
+    if (props.download) {
+        download = true;
+    }
+
     return (
         <div className='ButtonPrimaryAlt' data-aos={props.animation} data-aos-duration={props.animationTime}>
-            {props.download ?
             <a 
                 href={props.link}
-                download
-                className='btn-primary-alt'>
+                download={props.download === true}
+                className='btn-primary-alt'
+            >
                 {/* if an icon prop is passed, display it */}
                 {props.icon && <img src={props.icon} alt='Button Icon' />}
                 {/* display the content passed as a prop i.e. - what goes inside the button? */}
                 {props.content}
             </a>
-            : 
-            <a 
-                href={props.link}
-                className='btn-primary-alt'>
-                {/* if an icon prop is passed, display it */}
-                {props.icon && <img src={props.icon} alt='Button Icon' />}
-                {/* display the content passed as a prop i.e. - what goes inside the button? */}
-                {props.content}
-            </a>
-            }
         </div>
     );
 };

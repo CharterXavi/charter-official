@@ -3,7 +3,6 @@ module.exports = {
     title: `Charter Healthcare Group`,
     description: `Official website for Charter Healthcare Group.`,
     author: `Branon Eusebio`,
-    image: `src/images/charter-logo-rework-3-white.png`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -33,6 +32,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
+        icon: 'src/images/charter-feather.png'
       }
     },
     {
