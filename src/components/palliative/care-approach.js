@@ -48,7 +48,7 @@ return (
         <div className='care-card-wrapper'>
             {
                 careList.map(item => {
-                    return <CareCard img={item.img} title={item.title} content={item.content} animationTime={item.animationTime} />
+                    return <CareCard key={item.title} img={item.img} title={item.title} content={item.content} animationTime={item.animationTime} />
                 })
             }
         </div>
