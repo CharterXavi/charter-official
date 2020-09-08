@@ -93,7 +93,7 @@ const HospiceServices = () => {
         <div className='hospice-card-wrapper'>
             {
                 hospiceServicesList.map(service => {
-                    return <HospiceCard icon={service.icon} title={service.title} alt={service.alt} animationTime={service.animationTime}/>
+                    return <HospiceCard key={service.title} icon={service.icon} title={service.title} alt={service.alt} animationTime={service.animationTime}/>
                 })
             }
         </div>

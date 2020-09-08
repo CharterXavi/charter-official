@@ -48,7 +48,7 @@ const LevelsOfCare = (props) => {
         <div className='levels-card-wrapper'>
             {
                 levelsList.map(level => {
-                    return <LevelsCard img={level.img} title={level.title} content={level.content} animationTime={level.animationTime} />
+                    return <LevelsCard key={level.title} img={level.img} title={level.title} content={level.content} animationTime={level.animationTime} />
                 })
             }
         </div>
