@@ -10,18 +10,18 @@ const ButtonPrimary = (props) => {
     });
 
     return (
-        <div className='ButtonPrimary' data-aos={props.animation} data-aos-duration={props.animationTime}>
-            <a 
-                href={props.link}
-                download={props.download === true}
-                className='btn-primary'
-            >
-                {/* if an icon prop is passed, display it */}
-                {props.icon && <img src={props.icon} alt='Button Icon' />}
-                {/* display the content passed as a prop i.e. - what goes inside the button? */}
-                {props.content}
-            </a>
-        </div>
+        <a 
+            href={props.link}
+            className='ButtonPrimary'
+            download={props.download === true} 
+            data-aos={props.animation} 
+            data-aos-duration={props.animationTime}
+        >
+            {/* if an icon prop is passed, display it */}
+            {props.icon && <img src={props.icon} alt='Button Icon' />}
+            {/* display the content passed as a prop i.e. - what goes inside the button? */}
+            {props.content}
+        </a>
     );
 };
 
