@@ -22,7 +22,7 @@ form {
     align-items: center;
     width: 100%;
 }
-.message {
+.message, .message label {
     display: flex;
     justify-content: flex-start;
     align-items: center;

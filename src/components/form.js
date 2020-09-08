@@ -24,27 +24,32 @@ export default class MyForm extends React.Component {
         </div>
         <div className="name">
             <div className="first">
-                <label htmlFor="first-name"></label>
-                <input type="text" name='first-name' placeholder='First Name' required />
+                <label htmlFor="first-name">
+                  <input type="text" name='first-name' id='first-name' placeholder='First Name' required />
+                </label>
             </div>
             <div className="last">
-                <label htmlFor="last-name"></label>
-                <input type="text" name='last-name' placeholder='Last Name' required />
+                <label htmlFor="last-name">
+                  <input type="text" name='last-name' id='last-name' placeholder='Last Name' required />
+                </label>
             </div>
         </div>
         <div className='info'>
             <div className="email">
-                <label htmlFor="email"></label>
-                <input type="email" name='email' placeholder='Email Address' required />
+                <label htmlFor="email">
+                  <input type="email" name='email' id='email' placeholder='Email Address' required />
+                </label>
             </div>
             <div className="phone">
-                <label htmlFor="phone"></label>
-                <input type="tel" name='phone' placeholder='Phone Number' required />
+                <label htmlFor="phone">
+                  <input type="tel" name='phone' id='phone' placeholder='Phone Number' required />
+                </label>
             </div>
         </div>
         <div className="message">
-            <label htmlFor="message"></label>
-            <textarea name="message" placeholder='Leave us a message' required></textarea>
+            <label htmlFor="message">
+              <textarea name="message" id='message' placeholder='Leave us a message' required></textarea>
+            </label>
         </div>
         <div className="submit">
             {status === "SUCCESS" ? <p style={{backgroundColor: '#7E9772', color: 'white', fontSize: '18px', width: 'auto', padding: '8px', borderRadius: '10px'}}>Thanks for reaching out! We'll contact you as soon as possible.</p> : <button className='btn-primary' type='submit'>Submit</button>}
