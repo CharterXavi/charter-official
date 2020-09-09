@@ -1,7 +1,12 @@
-.TagsPage .intro {
+.CategoriesPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.CategoriesPage .intro {
     width: 100%;
 }
-
 .CategoriesPage ul {
     width: 70%;
     min-height: 200px;
@@ -20,6 +25,9 @@
 .CategoriesPage ul li {
     height: auto;
     margin: 16px 0;
+}
+.CategoriesPage .ButtonSecondary {
+    width: auto;
 }
 .CategoriesPage .category {
     margin: 0 0 0 0;

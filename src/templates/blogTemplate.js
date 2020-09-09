@@ -48,10 +48,7 @@ const BlogTemplate = ({ data }) => {
     AOS.init();
     AOS.refresh();
   });
-  console.log(_.kebabCase(postCategory.toLowerCase()));
-  //TO DO: add conditional logic that will look at post's frontmatter and based on the column-layout property, will render
-  //all of the content wrapped in that layout
-  //It's currently all wrapped in the same Layout Tag as always, but making a 2-col layout gives us another option
+
   return (
     <Layout>
       <HeaderStrip 
@@ -75,7 +72,7 @@ const BlogTemplate = ({ data }) => {
           </p>
           <p className='tag-wrapper'>Tags: 
             {postTags.map(tag => {
-              return <Link to={`/tags/${_.kebabCase(tag)}`} className='tag' >{tag}</Link> 
+              return <Link to={`/tags/${_.kebabCase(tag)}`} className='tag' key={tag} >{tag}</Link> 
             })}
           </p>
         </div>
@@ -84,14 +81,14 @@ const BlogTemplate = ({ data }) => {
             <img src={clockIcon} alt="Clock" />
             <h5>Recent Posts</h5>
               {recentPosts.map(post => {
-                return <Link to={post.node.frontmatter.slug}>{post.node.frontmatter.title}</Link>
+                return <Link to={post.node.frontmatter.slug} key={post.node.frontmatter.title} >{post.node.frontmatter.title}</Link>
               })}
           </div>
           <div className='related'>
           <img src={heartIcon} alt="Heart" />
             <h5>Related Posts</h5>
               {relatedPosts.map(post => {
-                return <Link to={post.node.frontmatter.slug}>{post.node.frontmatter.title}</Link>
+                return <Link to={post.node.frontmatter.slug} key={post.node.frontmatter.title}>{post.node.frontmatter.title}</Link>
               })}
           </div>
           <div className='share'>

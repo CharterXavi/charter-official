@@ -26,20 +26,23 @@ const Category = ({ pageContext, data }) => {
   const allPosts = data.allMarkdownRemark.edges; //capture all posts from GraphQL query for showMore program
   const newPostList = [];
 
-  //push first 6 posts to state upon mounting so the user gets the first posts upon loading the page
-  useEffect(() => {
-      for (let i = 0; i < 6; i++) {
-          //if this post exists, push it to the new list - helps avoid pushing 'undefined' nodes to list
-          if(allPosts[i]) {
-              newPostList.push(allPosts[i]);
-          }
-          if(!allPosts[6]) {
-            //if there aren't enough posts, hide show more button
-            setHideShowMore(true);
-        }
+
+  //defining your own mountEffect function using useEffect with empty array arg gets rid of ESLint error for missing dependencies
+  const useMountEffect = (func) => useEffect(func, [])
+  const renderInitialPosts = () => {
+    for (let i = 0; i < 6; i++) {
+      //if this post exists, push it to the new list - helps avoid pushing 'undefined' nodes to list
+      if(allPosts[i]) {
+        newPostList.push(allPosts[i]);
       }
-      setPosts(newPostList);
-  }, []); 
+      if(!allPosts[6]) {
+        //if there aren't enough posts, hide show more button
+        setHideShowMore(true);
+      }
+    }
+    return setPosts(newPostList);
+  }
+  useMountEffect(renderInitialPosts);
 
   //write a function that will update state to show 6 more posts
   const showMorePosts = (clickCount, isFinished) => {
@@ -57,8 +60,6 @@ const Category = ({ pageContext, data }) => {
           setPosts(newPostList);
           setClickCount(1);
           setIsFinished(false);
-          console.log('POSTS: ', newPostList);
-          console.log('CLICKS: ', clickCount);
       //Otherwise, show 6 more posts by replacing what's on the page with itself + another 6
       } else {
           //take clickCount as an input, and loop over 6 times for each click
@@ -74,8 +75,6 @@ const Category = ({ pageContext, data }) => {
           //update state properties
           setPosts(newPostList);
           setClickCount(newClickCount);
-          console.log('POSTS: ', newPostList);
-          console.log('CLICKS: ', clickCount);
       }
   }
 
@@ -92,7 +91,7 @@ const Category = ({ pageContext, data }) => {
           <div className='post-wrapper'>
             {posts.map(post => {
               return (
-                <PostLink to={post.node.frontmatter.slug} key={post.node.frontmatter.id} post={post} />
+                <PostLink to={post.node.frontmatter.slug} key={post.node.frontmatter.title} post={post} />
               )
             })}
           </div>

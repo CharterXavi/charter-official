@@ -1,7 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {Link} from 'gatsby';
 import './video.css';
-import playButton from '../../images/iconography/play-btn.png';
 import videoBlast1 from '../../images/iconography/video-blast1.png';
 import videoBlast2 from '../../images/iconography/video-blast2.png';
 import AOS from "aos";
@@ -49,10 +47,11 @@ const VideoStrip = () => {
       <iframe 
         className={`video ${videoState ? 'active' : ''}`} 
         src="https://player.vimeo.com/video/312555365" 
+        title='Charter Healthcare Introduction and Information'
         width="640" height="360" frameBorder="0" allowFullScreen
-      ></iframe>
+      />
 
-      <div className='play-btn-wrapper' onClick={showVideo}>
+      <div className='play-btn-wrapper' onClick={showVideo} onKeyDown={showVideo} role='button' tabIndex='0'>
         {videoState ? <ButtonPrimary content='Hide Video' /> : <ButtonPrimary content='Watch Video' />}
       </div>
 

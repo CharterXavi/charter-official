@@ -38,7 +38,7 @@ const TeamCard = (props) => {
                 </ul>
             </div>
         </div>
-        <div className={`card-expander ${props.isClicked ? 'hide' : ''}`} onClick={handleClick} >
+        <div className={`card-expander ${props.isClicked ? 'hide' : ''}`} onClick={handleClick} onKeyDown={handleClick} role='button' tabIndex='0' >
             {props.isClicked ? <p>Hide</p> : <p>Read more</p>}
         </div>
     </div>

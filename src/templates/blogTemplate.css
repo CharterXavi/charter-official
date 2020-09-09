@@ -88,11 +88,10 @@
     margin: 0 0 0 0;
     padding: 0 0 0 0;
 }
-.blog-post-container .btn-primary {
-    width: auto;
-}
 .blog-post-container .ButtonPrimary  {
     justify-content: flex-start;
+    margin: 16px 0 32px 0;
+    width: 195px;
 }
 .blog-post-container .blog-post .tag {
     margin: 0 0 0 0;
@@ -121,9 +120,6 @@
     display: flex;
     align-items: center;
     font-weight: bold;
-}
-.blog-post-container .ButtonPrimary {
-    margin: 16px 0 32px 0;
 }
 
 

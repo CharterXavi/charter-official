@@ -1,7 +1,12 @@
+.TagsPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .TagsPage .intro {
     width: 100%;
 }
-
 .TagsPage ul {
     width: 70%;
     min-height: 200px;
@@ -16,6 +21,9 @@
     padding: 0 0 0 0;
     box-sizing: border-box;
     padding: 16px;
+}
+.TagsPage .ButtonSecondary {
+    width: auto;
 }
 .TagsPage ul li {
     height: auto;

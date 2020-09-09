@@ -1,11 +1,13 @@
 import React, {useState, useEffect} from "react";
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import PostLink from "../../components/news/post-link";
 import Layout from '../../components/layout';
 import HeaderStrip from '../../components/header-strip/header-strip';
 import ShowMoreButton from '../../components/buttons/show-more';
+import ButtonPrimaryAlt from '../../components/buttons/button-primary-alt';
+import ButtonSecondary from '../../components/buttons/button-secondary';
 import archiveHeader from '../../images/headers/archive.png';
-import './recent.css';
+import './oldest.css';
 
 const OldestPage = ({
   data: {
@@ -18,15 +20,22 @@ const OldestPage = ({
     const [posts, setPosts] = useState([]); //posts state begin as an empty array
     const [clickCount, setClickCount] = useState(1); //click count state begins as a 1
     const [isFinished, setIsFinished] = useState(false); //when posts are all shown, change state to setFinished:true
+    const [hideShowMore, setHideShowMore] = useState(false); //when not enough posts, hide showMore button
     const newPostList = [];
-
-    //push first 6 posts to state upon mounting
-    useEffect(() => {
-        for (let i = 0; i < 6; i++) {
+    //defining your own mountEffect function using useEffect with empty array arg gets rid of ESLint error for missing dependencies
+    const useMountEffect = (func) => useEffect(func, [])
+    const renderInitialPosts = () => {
+      for (let i = 0; i < 6; i++) {
+        //if this post exists, push it to the new list - helps avoid pushing 'undefined' nodes to list
+        if(allOldestPosts[i]) {
             newPostList.push(allOldestPosts[i]);
+        } else {
+            setHideShowMore(true);
         }
-        setPosts(newPostList);
-      }, []);
+      }
+      return setPosts(newPostList);
+    }
+    useMountEffect(renderInitialPosts);
 
     //write a function that will update state to show 6 more posts
     const showMorePosts = (clickCount, isFinished) => {
@@ -35,28 +44,28 @@ const OldestPage = ({
         //if isFinished = true, reset everything to show first 6 posts once again
         if(isFinished) {
             for (let i = 0; i < 6; i++) {
+              //if this post exists, push it to the new list - helps avoid pushing 'undefined' nodes to list
+              if(allOldestPosts[i]) {
                 newPostList.push(allOldestPosts[i]);
+              }
             }
             setPosts(newPostList);
             setClickCount(1);
             setIsFinished(false);
-            console.log('POSTS: ', newPostList);
-            console.log('CLICKS: ', clickCount);
         //Otherwise, show 6 more posts by replacing what's on the page with itself + another 6
         } else {
             //take clickCount as an input, and loop over 6 times for each click
             //reset state to reflect new results
             for (let i = 0; i < clickCount * 6; i++) {
-                if (allOldestPosts[i]) {
-                    newPostList.push(allOldestPosts[i]);
-                } else {
-                    setIsFinished(true);
-                }      
+              //if this post exists, push it to the new list - helps avoid pushing 'undefined' nodes to list
+              if (allOldestPosts[i]) {
+                newPostList.push(allOldestPosts[i]);
+              } else {
+                  setIsFinished(true);
+              }         
             }
             setPosts(newPostList);
             setClickCount(newClickCount);
-            console.log('POSTS: ', newPostList);
-            console.log('CLICKS: ', clickCount);
         }
     }
 
@@ -67,7 +76,7 @@ const OldestPage = ({
             headline='See all of the older posts in our archive'
             image={archiveHeader}
         />
-        <div className='AllPosts'>
+        <div className='OldestPosts'>
             <div className='grid-wrapper'>
                 <div className='grid-header'>
                   <h2>All Oldest Articles</h2>
@@ -78,7 +87,11 @@ const OldestPage = ({
                     {posts.map(edge => <PostLink key={edge.node.id} post={edge} />)}
                 
                 </div>
-                <ShowMoreButton content='Show more' clickCount={clickCount} isFinished={isFinished} showMorePosts={showMorePosts} />
+                <div className='btn-container'>
+                  <ButtonSecondary link='/news' content ='← News Page' />
+                  {hideShowMore ? '' : <ShowMoreButton content='Show more' clickCount={clickCount} isFinished={isFinished} showMorePosts={showMorePosts} />}
+                  <ButtonPrimaryAlt link="/news/categories" content='All Categories →' />
+                </div>
             </div>
         </div>
       </Layout>

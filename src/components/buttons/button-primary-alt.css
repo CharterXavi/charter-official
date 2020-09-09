@@ -1,23 +1,17 @@
 .ButtonPrimaryAlt {
-    width: auto;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 8px 0 8px 0;
-}
-.btn-primary-alt {
     outline: none;
-    border: none;
+    color: var(--primary-accent);
     background: #FFFFFF;
     /* Brink Pink */    
     border: 2px solid #F05F7E;
-    box-sizing: border-box;
-    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.22);
     border-radius: 10px;
     min-width: 150px;
-    height: 50px;
+    width: auto;
+    box-sizing: border-box;
     padding: 8px 16px 8px 16px;
+    margin: 8px 0 8px 0;
+    height: 50px;
     transition: 0.4s ease all;
     display: flex;
     justify-content: center;
@@ -26,7 +20,7 @@
     font-weight: 400;
     font-family: 'Nunito', sans-serif;
 }
-.btn-primary-alt:hover {
+.ButtonPrimaryAlt:hover {
     border: 2px solid #F493AA;
     color: #F493AA;
     box-shadow: none;
@@ -34,7 +28,7 @@
     transition: 0.3s ease all;
     cursor: pointer;
 }
-.btn-primary img {
+.ButtonPrimaryAlt img {
     width: 30px;
     height: auto;
     margin: 0 0 0 0;

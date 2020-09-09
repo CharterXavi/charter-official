@@ -10,13 +10,15 @@ const Hamburger = ({ onClick }) => {
         AOS.refresh();
     });
     
-    const [isClicked, setClicked] = useState(false)
+    const [isClicked, setClicked] = useState(false);
+
+    const handleClick = () => {
+        onClick(); 
+        setClicked(!isClicked); 
+    };
 
     return (
-        <div className={`Hamburger ${isClicked ? 'hamburger-menu-flip' : ''}`} type="button" onClick={() => {
-            onClick(); {/* use the onClick method from parent to update parent's state */}
-            setClicked(!isClicked); {/* change local state of button when clicked to animate with CSS classes */}
-        }}>
+        <div className={`Hamburger ${isClicked ? 'hamburger-menu-flip' : ''}`} type='button' role='button' tabIndex='0' onClick={handleClick} onKeyDown={handleClick} >
             <div data-aos='fade-left' data-aos-duration='800'>
                 <div className={`burger1 ${isClicked ? 'burger1flip' : ''}`}></div>
             </div>
