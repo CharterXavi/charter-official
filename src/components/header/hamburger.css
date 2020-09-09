@@ -4,6 +4,8 @@
     margin: 0 32px 0 4px;
     padding: 5px 5px 0 5px;
     transition: 0.4s ease all;
+    outline: none;
+    border: none;
 }
 .Hamburger:hover {
     cursor: pointer;
