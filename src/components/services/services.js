@@ -36,7 +36,7 @@ const ServicesStrip = () => {
                 <img src={healthIcon} alt="Healthcare cross symbol" className='icon' />
                 <h3>Palliative Care</h3>
                 <p>Our Palliative team can help you and your loved ones cope with serious illnesses.</p>
-                <ButtonPrimaryAlt content='Read more' alt='Go to Palliative Care Page' to='/services/palliative-care' />
+                <ButtonPrimaryAlt content='Read more' alt='Go to Palliative Care Page' link='/services/palliative-care' />
             </div>
             <div className='card' data-aos='fade-up' data-aos-duration='1900' >
                 <img src={houseIcon} alt="House symbol" className='houseIcon icon' />
