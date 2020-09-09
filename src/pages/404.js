@@ -9,7 +9,7 @@ const NotFoundPage = () => (
   <Layout>
     <SEO title="404: Not found" />
     <div className='error-wrapper'>
-      <img src={errorImage} alt="Error image - page not found" />
+      <img src={errorImage} alt="Error - page not found" />
       <h1>NOT FOUND</h1>
       <p>The page you're looking for doesn't seem to be available. We're sorry for the inconvenience!</p>
       <Link to='/'>Return Home</Link>

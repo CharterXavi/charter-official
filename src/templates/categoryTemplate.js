@@ -57,8 +57,6 @@ const Category = ({ pageContext, data }) => {
           setPosts(newPostList);
           setClickCount(1);
           setIsFinished(false);
-          console.log('POSTS: ', newPostList);
-          console.log('CLICKS: ', clickCount);
       //Otherwise, show 6 more posts by replacing what's on the page with itself + another 6
       } else {
           //take clickCount as an input, and loop over 6 times for each click
@@ -74,8 +72,6 @@ const Category = ({ pageContext, data }) => {
           //update state properties
           setPosts(newPostList);
           setClickCount(newClickCount);
-          console.log('POSTS: ', newPostList);
-          console.log('CLICKS: ', clickCount);
       }
   }
 
@@ -92,7 +88,7 @@ const Category = ({ pageContext, data }) => {
           <div className='post-wrapper'>
             {posts.map(post => {
               return (
-                <PostLink to={post.node.frontmatter.slug} key={post.node.frontmatter.id} post={post} />
+                <PostLink to={post.node.frontmatter.slug} key={post.node.frontmatter.title} post={post} />
               )
             })}
           </div>

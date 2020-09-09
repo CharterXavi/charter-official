@@ -87,7 +87,7 @@ const Tags = ({ pageContext, data }) => {
           <div className='post-wrapper'>
             {posts.map(post => {
               return (
-                <PostLink to={post.node.frontmatter.slug} key={post.node.frontmatter.id} post={post} />
+                <PostLink to={post.node.frontmatter.slug} key={post.node.frontmatter.title} post={post} />
               )
             })}
           </div>
