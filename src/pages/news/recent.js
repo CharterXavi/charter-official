@@ -1,9 +1,11 @@
 import React, {useState, useEffect} from "react";
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import PostLink from "../../components/news/post-link";
 import Layout from '../../components/layout';
 import HeaderStrip from '../../components/header-strip/header-strip';
 import ShowMoreButton from '../../components/buttons/show-more';
+import ButtonPrimaryAlt from '../../components/buttons/button-primary-alt';
+import ButtonSecondary from '../../components/buttons/button-secondary';
 import archiveHeader from '../../images/headers/archive.png';
 import './recent.css';
 
@@ -21,18 +23,20 @@ const RecentPage = ({
     const [hideShowMore, setHideShowMore] = useState(false); //when not enough posts, hide showMore button
     const newPostList = [];
 
-    //push first 6 posts to state upon mounting so the user gets the first posts upon loading the page
-    useEffect(() => {
-        for (let i = 0; i < 6; i++) {
-          //if this post exists, push it to the new list - helps avoid pushing 'undefined' nodes to list
-          if(allRecentPosts[i]) {
-              newPostList.push(allRecentPosts[i]);
-          } else {
-              setHideShowMore(true);
-          }
+    //defining your own mountEffect function using useEffect with empty array arg gets rid of ESLint error for missing dependencies
+    const useMountEffect = (func) => useEffect(func, [])
+    const renderInitialPosts = () => {
+      for (let i = 0; i < 6; i++) {
+        //if this post exists, push it to the new list - helps avoid pushing 'undefined' nodes to list
+        if(allRecentPosts[i]) {
+            newPostList.push(allRecentPosts[i]);
+        } else {
+            setHideShowMore(true);
         }
-        setPosts(newPostList);
-      }, []);
+      }
+      return setPosts(newPostList);
+    }
+    useMountEffect(renderInitialPosts);
 
     //write a function that will update state to show 6 more posts
     const showMorePosts = (clickCount, isFinished) => {
@@ -50,8 +54,6 @@ const RecentPage = ({
             setPosts(newPostList);
             setClickCount(1);
             setIsFinished(false);
-            console.log('POSTS: ', newPostList);
-            console.log('CLICKS: ', clickCount);
         //Otherwise, show 6 more posts by replacing what's on the page with itself + another 6
         } else {
             //take clickCount as an input, and loop over 6 times for each click
@@ -67,8 +69,6 @@ const RecentPage = ({
             //update state properties
             setPosts(newPostList);
             setClickCount(newClickCount);
-            console.log('POSTS: ', newPostList);
-            console.log('CLICKS: ', clickCount);
         }
     }
 
@@ -79,7 +79,7 @@ const RecentPage = ({
             headline='Stay up to date in our company and industry!'
             image={archiveHeader}
         />
-        <div className='AllPosts'>
+        <div className='RecentPosts'>
             <div className='grid-wrapper'>
                 <div className='grid-header'>
                   <h2>All Recent Articles</h2>
@@ -90,7 +90,11 @@ const RecentPage = ({
                     {posts.map(edge => <PostLink key={edge.node.id} post={edge} />)}
                 
                 </div>
-                {hideShowMore ? '' : <ShowMoreButton content='Show more' clickCount={clickCount} isFinished={isFinished} showMorePosts={showMorePosts} />}
+                <div className='btn-container'>
+                  <ButtonSecondary link='/news' content ='← News Page' />
+                  {hideShowMore ? '' : <ShowMoreButton content='Show more' clickCount={clickCount} isFinished={isFinished} showMorePosts={showMorePosts} />}
+                  <ButtonPrimaryAlt link="/news/categories" content='All Categories →' />
+                </div>
             </div>
         </div>
       </Layout>

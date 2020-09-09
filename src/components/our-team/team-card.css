@@ -113,6 +113,9 @@
     cursor: pointer;
     background: var(--primary-accent);
 }
+.TeamCard .card-expander:focus {
+    display: none;
+}
 .TeamCard .card-expander p {
     width: auto;
 }

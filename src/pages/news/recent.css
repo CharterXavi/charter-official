@@ -1,4 +1,4 @@
-.AllPosts {
+.RecentPosts {
     width: 100%;
     height: auto;
     box-sizing: border-box;
@@ -10,10 +10,10 @@
     transition: 0.4s ease all;
     background: white;
 }
-.AllPosts h2 {
+.RecentPosts h2 {
     color: var(--heading-color);
 }
-.AllPosts .grid-wrapper {
+.RecentPosts .grid-wrapper {
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -22,7 +22,7 @@
     min-height: 200px;
     transition: 0.4s ease all;
 }
-.AllPosts .grid {
+.RecentPosts .grid {
     width: 80%;
     min-height: 500px;
     display: flex;
@@ -33,7 +33,7 @@
     transition: 0.4s ease all;
     margin: 0 0 32px 0;
 }
-.AllPosts .grid-wrapper .grid a {
+.RecentPosts .grid-wrapper .grid a {
     box-sizing: border-box;
     overflow: hidden;
     border-radius: 10px;
@@ -42,36 +42,47 @@
     width: 45%;
     height: 250px;
 }
-.AllPosts .grid-wrapper .grid a:hover .PostLink img {
+.RecentPosts .grid-wrapper .grid a:hover .PostLink img {
     filter: blur(2px);
     transform: scale(1.05);
 }
-.AllPosts .grid-wrapper .grid a:hover .PostLink .content {
+.RecentPosts .grid-wrapper .grid a:hover .PostLink .content {
     transform: scale(1.05) translateX(8px);
 }
-
+.RecentPosts .btn-container {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.RecentPosts .btn-container .ShowMoreButton,
+.RecentPosts .btn-container .ButtonPrimaryAlt,
+.RecentPosts .btn-container .ButtonSecondary
+{
+    margin: 0 8px;
+}
 @media only screen and (max-width: 1300px) {
-    .AllPosts .grid {
+    .RecentPosts .grid {
         width: 95%;
     }
 }
 @media only screen and (max-width: 800px) {
-    .AllPosts {
+    .RecentPosts {
         padding: 16px;
     }
-    .AllPosts .grid {
+    .RecentPosts .grid {
         width: 100%;
         margin: 0 0 16px 0;
     }
 }
 @media only screen and (max-width: 600px) {
-    .AllPosts {
+    .RecentPosts {
         padding: 16px;
     }
-    .AllPosts .grid {
+    .RecentPosts .grid {
         width: 100%;
     }
-    .AllPosts .grid-wrapper .grid a {
+    .RecentPosts .grid-wrapper .grid a {
         width: 100%;
         height: 200px;
     }

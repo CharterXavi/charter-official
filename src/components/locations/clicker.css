@@ -4,6 +4,11 @@
     margin: 0 0 0 0;
     padding: 4px;
     transition: 0.4s ease all;
+    outline: none;
+    border: none;
+}
+.Clicker:focus {
+    visibility: hidden;
 }
 .Clicker:hover {
     cursor: pointer;
