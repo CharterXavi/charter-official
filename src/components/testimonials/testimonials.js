@@ -31,7 +31,7 @@ const TestimonialsStrip = (props) => {
     ]
 
     const [activeIndex, setActiveIndex] = useState(0);
-    const [listLength, setListLength] = useState(testimonialList.length);
+    const [listLength] = useState(testimonialList.length);
 
     const goToPrev = () => {
         resetAutoRotate(); //clear the current quote cycling interval loop before initiating rerender of component

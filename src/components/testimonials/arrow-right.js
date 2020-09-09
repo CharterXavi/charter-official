@@ -1,5 +1,6 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import arrowRight from '../../images/iconography/arrow-right.png';
+import './arrow-right.css';
 
 const ArrowRight = (props) => {
 
@@ -8,8 +9,8 @@ const ArrowRight = (props) => {
     }
 
     return (
-        <div className='ArrowRight'>
-            <img src={arrowRight} alt="forward arrow" onClick={handleClick} />
+        <div className='ArrowRight' onClick={handleClick} onKeyDown={handleClick} role='button' tabIndex='0' >
+            <img src={arrowRight} alt="forward arrow" />
         </div>
     );
 };

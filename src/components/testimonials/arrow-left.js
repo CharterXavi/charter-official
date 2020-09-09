@@ -1,5 +1,6 @@
 import React from 'react';
 import arrowLeft from '../../images/iconography/arrow-left.png';
+import './arrow-left.css';
 
 const ArrowLeft = (props) => {
 
@@ -8,8 +9,8 @@ const ArrowLeft = (props) => {
     }
 
     return (
-        <div className='ArrowLeft'>
-            <img src={arrowLeft} alt="back arrow" onClick={handleClick} />
+        <div className='ArrowLeft' onClick={handleClick} onKeyDown={handleClick} role='button' tabIndex='0' >
+            <img src={arrowLeft} alt="back arrow" />
         </div>
     );
 };
