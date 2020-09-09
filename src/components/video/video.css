@@ -33,6 +33,11 @@
     position: relative;
     top: 0;
     z-index: 5;
+    outline: none;
+    border: none;
+}
+.VideoStrip .play-btn-wrapper:focus {
+    visibility: hidden;
 }
 .VideoStrip .hide {
     color: white;
