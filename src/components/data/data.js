@@ -7,40 +7,10 @@ import "aos/dist/aos.css";
 
 const DataStrip = () => {
   
-      useEffect(() => {
-          AOS.init();
-          AOS.refresh();
-      }); 
-    // //Method that will be passed down as a prop to handle state management and expand cards / animate clickers
-    // //ID passed down as a prop to child button - which invokes this function and passes its ID when clicked
-    // const showQuote = (id) => {
-    //     //create a new list from old list, but update whichever child was clicked on
-    //     const newList = testimonials.map((quote) => {
-    //         if(quote.name === id) {
-    //             const activeTestimonial = {
-    //                 //state is updated, component rerenders, and new props are passed down to children
-    //                 ...quote,
-    //                 isActive: !quote.isActive
-    //             }
-    //             //must return so .map can enter it into new array list
-    //             return activeTestimonial;
-    //         };
-    //         if (quote.name !== id) {
-    //             const inactiveTestimonial = {
-    //                 //state is updated, component rerenders, and new props are passed down to children
-    //                 ...quote,
-    //                 isActive: false
-    //             }
-    //             //must return so .map can enter it into new array list
-    //             return inactiveTestimonial;
-    //         }
-    //         //must return so .map can enter it into new array list
-    //         return quote;
-    //     });
-    //     //use setState method to update state
-    //     setTestimonials(newList);
-    // }
-
+  useEffect(() => {
+      AOS.init();
+      AOS.refresh();
+  }); 
 
   return (
     <div className='DataStrip'>

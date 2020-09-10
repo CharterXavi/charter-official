@@ -34,7 +34,7 @@
     text-align: center;
     transition: 0.3s ease all;
 }
-.ServicesStrip .card:hover .btn-primary-alt {
+.ServicesStrip .card:hover .ButtonPrimaryAlt {
     transform: translateY(8px);
     transition: 0.3s ease all;
 }
