@@ -30,7 +30,7 @@ const IndexPage = ({ data }) => {
         <PostStrip posts={recentPosts} title='The Latest' link='/news'/>
       </div>
       <OurTeamStrip />
-      <LocationsStrip />
+      <LocationsStrip svg={true} />
     </Layout>
   )
 }

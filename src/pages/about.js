@@ -137,7 +137,7 @@ const AboutPage = ({data}) => {
       <Video />
       <NewsStrip posts={data.recent.edges} />
       <OurTeamStrip />
-      <LocationsStrip />
+      <LocationsStrip svg={true} />
     </Layout>
     )
   }

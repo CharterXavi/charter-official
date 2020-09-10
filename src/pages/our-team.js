@@ -53,7 +53,7 @@ const OurTeamPage = () => (
         </defs>
       </svg>
     </div>
-    <LocationsStrip />
+    <LocationsStrip svg={true} />
   </Layout>
 )
 
