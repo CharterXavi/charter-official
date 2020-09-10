@@ -3,6 +3,11 @@ module.exports = {
     title: `Charter Healthcare Group`,
     description: `Official website for Charter Healthcare Group.`,
     author: `Branon Eusebio`,
+    url: 'http://localhost:8000/',
+    twitterHandle: '@charterhcg',
+    facebookHandle: '@charterhcg',
+    instagramHandle: '@charterhcg',
+    linkedinHandle: '@charter-healthcare-group'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

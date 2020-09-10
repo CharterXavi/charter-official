@@ -4,25 +4,27 @@ import Layout from '../components/layout';
 import HeaderStrip from '../components/header-strip/header-strip';
 import './blogTemplate.css';
 import archiveHeader from '../images/headers/archive.png';
-import linkedinIcon from '../images/iconography/linkedin.png';
-import twitterIcon from '../images/iconography/twitter.png';
-import facebookIcon from '../images/iconography/facebook.png';
 import clockIcon from '../images/iconography/clock.png';
 import groupIcon from '../images/iconography/group.png';
 import heartIcon from '../images/iconography/heart-icon.png';
 import ButtonPrimary from "../components/buttons/button-primary";
+import ShareButtons from '../components/social/share-buttons';
 import _ from 'lodash';
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const BlogTemplate = ({ data }) => {
+const BlogTemplate = (props) => {
 
-  const imageSrc = data.markdownRemark.frontmatter.featuredImage.childImageSharp.fluid.src; //capture this post's featured image
-  const postTitle = data.markdownRemark.frontmatter.title; //capture the title of this post
-  const postDate = data.markdownRemark.frontmatter.date; //capture the title of this post
-  const postCategory = data.markdownRemark.frontmatter.category; //capture the tags of this post
-  const postTags = data.markdownRemark.frontmatter.tags; //capture the category of this post
-  const allPosts = data.allMarkdownRemark.edges; //capture all posts in the site
+  const imageSrc = props.data.markdownRemark.frontmatter.featuredImage.childImageSharp.fluid.src; //capture this post's featured image
+  const postTitle = props.data.markdownRemark.frontmatter.title; //capture the title of this post
+  const postDate = props.data.markdownRemark.frontmatter.date; //capture the title of this post
+  const postCategory = props.data.markdownRemark.frontmatter.category; //capture the tags of this post
+  const postTags = props.data.markdownRemark.frontmatter.tags; //capture the category of this post
+  const postPath = props.location.href; //capture post path
+  const twitterHandle = 'charterhcg';
+  const facebookHandle = 'charterhcg';
+  const linkedinHandle = 'charter-healthcare-group';
+  const allPosts = props.data.allMarkdownRemark.edges; //capture all posts in the site
   const recentPosts = [];
   const relatedPosts = [];
 
@@ -64,7 +66,7 @@ const BlogTemplate = ({ data }) => {
           </div>
           <section
             className="blog-post-content"
-            dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
+            dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}
           />
           <ButtonPrimary content='← Back to News page' link='/news' animation='fade-right' animationTime='1000' />
           <p className='category-wrapper'>Category: 
@@ -94,11 +96,14 @@ const BlogTemplate = ({ data }) => {
           <div className='share'>
             <img src={groupIcon} alt="Group" />
             <h5>Share this post:</h5>
-            <ul>
-              <li><img src={linkedinIcon} alt="LinkedIn Logo" /></li>
-              <li><img src={twitterIcon} alt="Twitter Logo" /></li>
-              <li><img src={facebookIcon} alt="Facebook Logo" /></li>
-            </ul>
+            <ShareButtons 
+              title={postTitle} 
+              url={postPath}
+              facebookHandle={facebookHandle} 
+              linkedinHandle={linkedinHandle} 
+              twitterHandle={twitterHandle} 
+              tags={postTags} 
+            />
           </div>
         </div>
       </div>
