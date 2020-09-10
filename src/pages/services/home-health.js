@@ -22,7 +22,7 @@ const HomeHealthPage = () => (
       <HomeServices />
       <Advantages />
       <TestimonialsStrip svg={true} />
-      <LocationsStrip />
+      <LocationsStrip svg={true} />
     </div>
   </Layout>
 )

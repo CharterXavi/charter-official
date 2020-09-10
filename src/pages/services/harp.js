@@ -21,7 +21,7 @@ const HarpPage = () => (
       <TCM />
       <ACP />
       <TestimonialsStrip svg={true} />
-      <LocationsStrip />
+      <LocationsStrip svg={true} />
     </div>
   </Layout>
 )
