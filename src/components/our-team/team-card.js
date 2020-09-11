@@ -32,13 +32,13 @@ const TeamCard = (props) => {
             </div>
             <div className='social'>
                 <ul>
-                    <li><img src={facebookIcon} alt="Facebook Logo" /></li>
-                    <li><img src={twitterIcon} alt="Twitter Logo" /></li>
-                    <li><img src={linkedinIcon} alt="LinkedIn Logo" /></li>
+                    <li><a href={props.facebook} target='_blank' rel='noopenner noreferrer' className={`${props.facebook ? '' : 'disabled-link'}`}><img src={facebookIcon} alt="Facebook Logo" /></a></li>
+                    <li><a href={props.twitter} target='_blank' rel='noopenner noreferrer' className={`${props.twitter ? '' : 'disabled-link'}`}><img src={twitterIcon} alt="Twitter Logo" /></a></li>
+                    <li><a href={props.linkedIn} target='_blank' rel='noopenner noreferrer' className={`${props.linkedIn ? '' : 'disabled-link'}`}><img src={linkedinIcon} alt="LinkedIn Logo" /></a></li>
                 </ul>
             </div>
         </div>
-        <div className={`card-expander ${props.isClicked ? 'hide' : ''}`} onClick={handleClick} onKeyDown={handleClick} role='button' tabIndex='0' >
+        <div className={`card-expander ${props.isClicked ? 'hide-bio' : ''}`} onClick={handleClick} onKeyDown={handleClick} role='button'>
             {props.isClicked ? <p>Hide</p> : <p>Read more</p>}
         </div>
     </div>
