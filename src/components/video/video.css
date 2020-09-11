@@ -36,9 +36,6 @@
     outline: none;
     border: none;
 }
-.VideoStrip .play-btn-wrapper:focus {
-    visibility: hidden;
-}
 .VideoStrip .hide {
     color: white;
     width: 300px;

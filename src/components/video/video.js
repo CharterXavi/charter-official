@@ -51,7 +51,7 @@ const VideoStrip = () => {
         width="640" height="360" frameBorder="0" allowFullScreen
       />
 
-      <div className='play-btn-wrapper' onClick={showVideo} onKeyDown={showVideo} role='button' tabIndex='0'>
+      <div className='play-btn-wrapper' onClick={showVideo} onKeyDown={showVideo} role='button'>
         {videoState ? <ButtonPrimary content='Hide Video' /> : <ButtonPrimary content='Watch Video' />}
       </div>
 

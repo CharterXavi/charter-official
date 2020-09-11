@@ -100,7 +100,7 @@ const Header = () => {
         ]
       },
       {
-        name: 'Contact',
+        name: 'Contact Us',
         path: '/contact',
         isSubMenuExpanded: false,
         subMenu: [

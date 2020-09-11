@@ -7,9 +7,6 @@
     outline: none;
     border: none;
 }
-.Clicker:focus {
-    visibility: hidden;
-}
 .Clicker:hover {
     cursor: pointer;
 }

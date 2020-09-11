@@ -15,6 +15,7 @@ const TeamGrid = () => {
                 name: 'Steve Larkin',
                 title: 'Chief Executive Officer',
                 image: steve,
+                linkedIn: 'https://www.linkedin.com/in/steve-j-larkin-7352381b/',
                 quote: '"This is an inspirational, introductory quote from this team member."',
                 isClicked: false,
                 animationTime: 700
@@ -23,6 +24,7 @@ const TeamGrid = () => {
                 name: 'Sabina Del Rosario',
                 title: 'Chief Operating Officer',
                 image: sabina,
+                linkedIn: '',
                 quote: '"This is an inspirational, introductory quote from this team member."',
                 isClicked: false,
                 animationTime: 900
@@ -31,6 +33,7 @@ const TeamGrid = () => {
                 name: 'Vincent Castaldo',
                 title: 'Chief Financial Officer',
                 image: vince,
+                linkedIn: 'https://www.linkedin.com/in/vincent-castaldo-29310761/',
                 quote: '"This is an inspirational, introductory quote from this team member."',
                 isClicked: false,
                 animationTime: 1100
@@ -39,6 +42,7 @@ const TeamGrid = () => {
                 name: 'Dr. Jean-Claude Hage',
                 title: 'Chief Medical Officer',
                 image: jeanclaude,
+                linkedIn: '',
                 quote: '"This is an inspirational, introductory quote from this team member."',
                 isClicked: false,
                 animationTime: 1300
@@ -47,6 +51,7 @@ const TeamGrid = () => {
                 name: 'Daniel Hodous',
                 title: 'Director of Information Technology',
                 image: daniel,
+                linkedIn: 'https://www.linkedin.com/in/daniel-hodous-9245252a/',
                 quote: '"This is an inspirational, introductory quote from this team member."',
                 isClicked: false,
                 animationTime: 1500
@@ -55,6 +60,7 @@ const TeamGrid = () => {
                 name: 'Jerome De Jesus',
                 title: 'Director of Business Development',
                 image: jerome,
+                linkedIn: 'https://www.linkedin.com/in/jerome-de-jesus-394965171/',
                 quote: '"This is an inspirational, introductory quote from this team member."',
                 isClicked: false,
                 animationTime: 1700
@@ -94,6 +100,7 @@ const TeamGrid = () => {
                         image={teamMember.image} 
                         name={teamMember.name} 
                         title={teamMember.title} 
+                        linkedIn={teamMember.linkedIn}
                         quote={teamMember.quote} 
                         isClicked={teamMember.isClicked} 
                         animationTime={teamMember.animationTime} 

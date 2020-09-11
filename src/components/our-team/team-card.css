@@ -88,7 +88,10 @@
     height: 25px;
     margin: 4px;
 }
-
+.TeamCard .disabled-link {
+    filter: grayscale(100%) contrast(10%) opacity(50%);
+    cursor: not-allowed;
+}
 
 
 
@@ -114,15 +117,15 @@
     background: var(--primary-accent);
 }
 .TeamCard .card-expander:focus {
-    display: none;
+    outline: none;
 }
 .TeamCard .card-expander p {
     width: auto;
 }
-.TeamCard .hide {
+.TeamCard .hide-bio {
     background: var(--primary-accent);
 }
-.TeamCard .hide:hover {
+.TeamCard .hide-bio:hover {
     cursor: pointer;
     background: var(--primary-accent);
 }
