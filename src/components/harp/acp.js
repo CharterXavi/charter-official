@@ -6,6 +6,7 @@ import ButtonSecondary from '../buttons/button-secondary';
 import directiveForm from '../../images/directive.pdf';
 import polstForm from '../../images/polst.pdf';
 import healthIcon from '../../images/iconography/health-icon.png';
+import stethoscopeIcon from '../../images/iconography/stethoscope-icon.png';
 
 const ACP = () => {
 
@@ -26,7 +27,7 @@ const ACP = () => {
         <div className='forms'>
             <div className='form-card' data-aos='fade-up' data-aos-duration='800'>
               <div className='card-title'>
-                <img src={healthIcon} alt="" />
+                <img src={stethoscopeIcon} alt="" />
                 <h5>Physician's Orders for Life-Sustaining Treatment</h5>
               </div>
               <ButtonSecondary link={polstForm} download={true} content='Download form' />
