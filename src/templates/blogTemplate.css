@@ -33,6 +33,7 @@
 .blog-post-container .blog-post h5,
 .blog-post-container .blog-post h6 {
     color: var(--heading-color);
+    padding: 32px 0 4px 0;
 }
 .blog-post-container .sidebar {
     display: flex;
