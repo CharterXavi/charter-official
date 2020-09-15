@@ -79,8 +79,8 @@ const Header = () => {
             path: '/news/recent'
           },
           {
-            name: 'Health',
-            path: '/news/health'
+            name: 'Categories',
+            path: '/news/categories'
           },
           {
             name: 'Tags',

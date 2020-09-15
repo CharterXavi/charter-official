@@ -14,13 +14,12 @@ const RecentPage = ({
     allMarkdownRemark: { edges },
   }
 }) => {
-    const allRecentPosts = edges
-    .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
     
     const [posts, setPosts] = useState([]); //posts state begin as an empty array
     const [clickCount, setClickCount] = useState(1); //click count state begins as a 1
     const [isFinished, setIsFinished] = useState(false); //when posts are all shown, change state to setFinished:true
     const [hideShowMore, setHideShowMore] = useState(false); //when not enough posts, hide showMore button
+    const allRecentPosts = edges.filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
     const newPostList = [];
 
     //defining your own mountEffect function using useEffect with empty array arg gets rid of ESLint error for missing dependencies
@@ -28,10 +27,12 @@ const RecentPage = ({
     const renderInitialPosts = () => {
       for (let i = 0; i < 6; i++) {
         //if this post exists, push it to the new list - helps avoid pushing 'undefined' nodes to list
-        if(allRecentPosts[i]) {
+        if (allRecentPosts[i]) {
             newPostList.push(allRecentPosts[i]);
-        } else {
-            setHideShowMore(true);
+        }
+        if(!allRecentPosts[6]) {
+          //if there aren't enough posts, hide show more button
+          setHideShowMore(true);
         }
       }
       return setPosts(newPostList);
@@ -40,7 +41,7 @@ const RecentPage = ({
 
     //write a function that will update state to show 6 more posts
     const showMorePosts = (clickCount, isFinished) => {
-        const newClickCount = clickCount++;
+        const newClickCount = clickCount+1;
         
         //if isFinished = true, reset everything to show first 6 posts once again
         if(isFinished) {
@@ -58,7 +59,7 @@ const RecentPage = ({
         } else {
             //take clickCount as an input, and loop over 6 times for each click
             //update state to reflect new results
-            for (let i = 0; i < clickCount * 6; i++) {
+            for (let i = 0; i < newClickCount * 6; i++) {
               //if this post exists, push it to the new list - helps avoid pushing 'undefined' nodes to list
                 if (allRecentPosts[i]) {
                     newPostList.push(allRecentPosts[i]);
