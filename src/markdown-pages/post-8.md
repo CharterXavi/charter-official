@@ -2,7 +2,7 @@
 slug: "/news/flu-season-2020"
 date: "2019-09-11"
 title: "Post number 8!"
-featuredImage: ../images/blog-content/hands.jpeg
+featuredImage: ../images/blog-content/stethoscope.jpeg
 excerpt: 'Flu season is almost here!'
 category: 'Health'
 tags: ['home health', 'research', 'health']

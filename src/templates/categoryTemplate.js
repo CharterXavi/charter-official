@@ -46,7 +46,7 @@ const Category = ({ pageContext, data }) => {
 
   //write a function that will update state to show 6 more posts
   const showMorePosts = (clickCount, isFinished) => {
-      const newClickCount = clickCount++;
+      const newClickCount = clickCount+1;
       
       //if isFinished = true, reset everything to show first 6 posts once again
       if(isFinished) {
@@ -64,7 +64,7 @@ const Category = ({ pageContext, data }) => {
       } else {
           //take clickCount as an input, and loop over 6 times for each click
           //reset state to reflect new results
-          for (let i = 0; i < clickCount * 6; i++) {
+          for (let i = 0; i < newClickCount * 6; i++) {
               //if this post exists, push it to the new list - helps avoid pushing 'undefined' nodes to list
               if (allPosts[i]) {
                   newPostList.push(allPosts[i]);
