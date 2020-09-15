@@ -1,7 +1,7 @@
 ---
 slug: "/news/flu-season-2020"
 date: "2019-09-11"
-title: "Preparing for Flu Season"
+title: "Post number 8!"
 featuredImage: ../images/blog-content/hands.jpeg
 excerpt: 'Flu season is almost here!'
 category: 'Health'
