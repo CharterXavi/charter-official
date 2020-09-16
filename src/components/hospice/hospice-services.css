@@ -19,6 +19,9 @@
     padding: 32px 0 16px 0;
     background: none;
 }
+.HospiceServices .ButtonPrimaryAlt {
+    margin-top: 16px;
+}
 
 @media only screen and (max-width: 650px) {
     .HospiceServices .hospice-card-wrapper {
