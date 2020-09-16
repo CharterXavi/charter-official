@@ -22,7 +22,9 @@
 .HospiceServices .ButtonPrimaryAlt {
     margin-top: 16px;
 }
-
+.HospiceServices .bereavement {
+    min-height: 400px;
+}
 @media only screen and (max-width: 650px) {
     .HospiceServices .hospice-card-wrapper {
         width: 100%;
