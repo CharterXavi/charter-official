@@ -1,21 +1,13 @@
-.Services {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 32px 32px 64px 32px;
-    box-sizing: border-box;
-}
-.Services .content-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    width: 650px;
-}
+
 .Services .content-wrapper h2 {
     text-align: center;
     color: var(--primary-accent);
+}
+.ServicesPage .intro .ButtonPrimaryAlt {
+    margin-top: 16px;
+}
+.ServicesPage .bereavement {
+    min-height: 400px;
 }
 
 @media only screen and (max-width: 975px) {
