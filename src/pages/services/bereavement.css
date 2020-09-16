@@ -1,0 +1,104 @@
+.BereavementPage .services {
+    background: var(--light-clinic-blue);
+    position: relative;
+    overflow: visible;
+    top: 0;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    z-index: 0;
+    align-items: center;
+}
+.BereavementPage .services h2 {
+    background: -webkit-linear-gradient(0deg, #F493AA 0%, #F2D1C9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.BereavementPage .services .flowers-left {
+    position: absolute;
+    bottom: -10px;
+    left: 25%;
+    width: 260px;
+}
+.BereavementPage .services .flowers-right {
+    position: absolute;
+    bottom: -10px;
+    right: 25%;
+    width: 260px;
+}
+.BereavementPage .resources {
+    background: linear-gradient(180deg, #F6F7FB 33.85%, #363F55 33.86%, #363F55 100%);
+    position: relative;
+    min-height: 600px;
+    z-index: 0;
+    overflow: visible;
+}
+.BereavementPage .resources p,.BereavementPage .resources h2,.BereavementPage .resources img {
+    position: relative;
+    top: 0;
+    z-index: 1;
+    color: white;
+}
+.BereavementPage .resources img {
+    width: 45px;
+}
+.BereavementPage .resources .ButtonPrimaryAlt {
+    position: relative;
+    top: 0;
+    z-index: 1;
+    color: default;
+    margin-top: 16px;
+}
+.BereavementPage .resources .bereavement-svg {
+    width: 100vw;
+    height: auto;
+    position: absolute;
+    top: -8%;
+    z-index: 0;
+}
+
+@media only screen and (max-width: 900px) {
+    .BereavementPage .services .flowers-left {
+        left: 5%;
+    }
+    .BereavementPage .services .flowers-right {
+        right: 5%;
+    }
+    .BereavementPage .resources .bereavement-svg {
+        top: -10%;
+    }
+}
+@media only screen and (max-width: 750px) {
+    .BereavementPage .resources .bereavement-svg {
+        top: -8%;
+    }
+}
+@media only screen and (max-width: 680px) {
+    .BereavementPage .resources {
+        background: linear-gradient(180deg, #F6F7FB 18.23%, #363F55 18.24%, #363F55 100%);
+    }
+}
+@media only screen and (max-width: 500px) {
+    .BereavementPage .services .flowers-left {
+        left: 1%;
+        width: 200px;
+    }
+    .BereavementPage .services .flowers-right {
+        right: 1%;
+        width: 200px;
+    }
+    .BereavementPage .resources .bereavement-svg {
+        top: -6%;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .BereavementPage .services{
+        min-height: 600px;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .BereavementPage .resources {
+        background: linear-gradient(180deg, #F6F7FB 8.85%, #363F55 8.86%, #363F55 100%);
+    }
+}
