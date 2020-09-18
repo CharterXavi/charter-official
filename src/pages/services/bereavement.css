@@ -15,6 +15,9 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.BereavementPage .services ul {
+    padding-left: 20px;
+}
 .BereavementPage .services .flowers-left {
     position: absolute;
     bottom: -10px;
@@ -67,6 +70,12 @@
     }
     .BereavementPage .resources .bereavement-svg {
         top: -10%;
+        left: 0;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .BereavementPage .services {
+        align-items: flex-start;
     }
 }
 @media only screen and (max-width: 750px) {

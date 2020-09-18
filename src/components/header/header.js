@@ -55,6 +55,10 @@ const Header = () => {
           {
             name:'Home Health',
             path:'/services/home-health',
+          },
+          {
+            name:'Bereavement',
+            path:'/services/bereavement',
           }
         ]
       },

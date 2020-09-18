@@ -47,15 +47,13 @@
         padding: 32px 32px 32px 32px;
     }
     .DataStrip .right {
-        text-align: center;
-        align-items: center;
         width: 650px;
         padding: 0 32px 0 32px;
     }
 }
 @media only screen and (max-width: 660px) {
     .DataStrip {
-        padding: 16px;
+        padding: 16px 16px 64px 16px;
     }
     .DataStrip .left {
         width: 100%;
@@ -64,7 +62,7 @@
     }
     .DataStrip .right {
         width: 100%;
-        padding: 16px;
+        padding: 16px 0;
     }
 }
 @media only screen and (max-width: 450px) {

@@ -130,8 +130,12 @@ a {
   }
   .intro {
     padding: 32px 16px;
+    align-items: flex-start;
   }
   .intro h2 {
+    text-align: left;
+  }
+  .intro p {
     text-align: left;
   }
 }
