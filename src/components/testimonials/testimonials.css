@@ -96,8 +96,6 @@
         width: 650px;
     }
     .TestimonialsStrip .left {
-        text-align: center;
-        align-items: center;
         width: 650px;
         padding: 0 32px 0 32px;
     }
@@ -126,7 +124,7 @@
 }
 @media only screen and (max-width: 660px) {
     .TestimonialsStrip {
-        padding: 16px;
+        padding: 16px 16px 64px 16px;
     }
     .TestimonialsStrip .right {
         width: 100%;    
@@ -134,7 +132,7 @@
     }
     .TestimonialsStrip .left {
         width: 100%;
-        padding: 16px;
+        padding: 16px 0;
     }
     .TestimonialsStrip .quote-wave-one {
         bottom: 5px;

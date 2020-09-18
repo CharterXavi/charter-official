@@ -80,3 +80,14 @@
         min-width: 100%;
     }
 }
+@media only screen and (max-width: 500px) {
+    .tags-container .btn-container {
+        width: 100%;
+        flex-direction: column;
+    }
+    .tags-container .btn-container .ShowMoreButton,
+    .tags-container .btn-container .ButtonSecondary,
+    .tags-container .btn-container .ButtonPrimaryAlt  {
+        margin: 8px 0;
+    }
+}

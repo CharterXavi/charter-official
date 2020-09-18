@@ -119,6 +119,7 @@
     min-height: 40px;
     padding: 0 0 0 0;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     font-weight: bold;
 }

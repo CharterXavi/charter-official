@@ -3,6 +3,7 @@
 }
 .ACP ul  {
     max-width: 650px;
+    padding-left: 20px;
 }
 .ACP .forms {
     display: flex;
