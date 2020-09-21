@@ -34,10 +34,16 @@
     display: flex;
     align-items: center;
     color: #363f55;
-    padding: 8px;
+    padding: 16px 8px;
+    position: relative;
+    overflow: hidden;
 }
 .OurTeamStrip .card-container .card p {
     color: #F05F7E;
+    padding: 0;
+}
+.OurTeamStrip .card-container .card h4{
+    padding: 0;
 }
 .OurTeamStrip .card-container .card .card-info {
     display: flex;
@@ -45,17 +51,30 @@
     align-items: flex-start;
     justify-content: center;
     height: 100%;
-    width: 40%;
+    width: 50%;
 }
 .OurTeamStrip .card-container .card img {
     margin: 8px 32px 8px 8px;
     overflow: hidden;
     transition: 0.25s ease all;
+    position: relative;
+}
+.OurTeamStrip .card-container .card img::after {
+    content: 'Read more';
+    position: relative;
+    bottom: 0;
+    left: 14%;
+    z-index: 5;
+    color: black;
+    transition: 0.4s ease all;
 }
 .OurTeamStrip .card-container .card img:hover {
     cursor: pointer;
     filter: blur(2px);
     transform: scale(1.02);
+}
+.OurTeamStrip .card-container .card img:hover::after {
+    top: 49%;
 }
 .OurTeamStrip .ButtonPrimaryAlt {
     position: relative;

@@ -20,7 +20,7 @@ const OurTeamStrip = () => {
                 </Link>
                 <div className='card-info'>
                     <h4>Steve Larkin</h4>
-                    <p className='introduction-text'>Chief Executive Officer</p>
+                    <p>Chief Executive Officer</p>
                 </div>
             </div>
             <div className='card'>
@@ -29,7 +29,7 @@ const OurTeamStrip = () => {
                 </Link>
                 <div className='card-info'>
                     <h4>Sabina Del Rosario</h4>
-                    <p className='introduction-text'>Chief Operating Officer</p>
+                    <p>Chief Operating Officer</p>
                 </div>
             </div>
             <div className='card'>
@@ -38,7 +38,7 @@ const OurTeamStrip = () => {
                 </Link>
                 <div className='card-info'>
                     <h4>Vincent Castaldo</h4>
-                    <p className='introduction-text'>Chief Financial Officer</p>
+                    <p>Chief Financial Officer</p>
                 </div>
             </div>
             <div className='card'>
@@ -47,7 +47,7 @@ const OurTeamStrip = () => {
                 </Link>
                 <div className='card-info'>
                     <h4>Dr. Jean-Claude Hage</h4>
-                    <p className='introduction-text'>Chief Medical Officer</p>
+                    <p>Chief Medical Officer</p>
                 </div>
             </div>
             <div className='card'>
@@ -56,7 +56,7 @@ const OurTeamStrip = () => {
                 </Link>
                 <div className='card-info'>
                     <h4>Daniel Hodous</h4>
-                    <p className='introduction-text'>Director of Information Technology</p>
+                    <p>Director of Information Technology</p>
                 </div>
             </div>
             <div className='card'>
@@ -65,7 +65,7 @@ const OurTeamStrip = () => {
                 </Link>
                 <div className='card-info'>
                     <h4>Jerome De Jesus</h4>
-                    <p className='introduction-text'>Director of Business Development</p>
+                    <p>Director of Business Development</p>
                 </div>
             </div>
         </div>
