@@ -17,7 +17,12 @@ const HospiceEligibility = (props) => {
         <div className='left'>
             <div className='content-wrapper'>
                 <h2>Hospice Eligibility</h2>
-                <p>Each hospice team consists of health care workers from all disciplines: nurses, social workers, home health aides, spiritual counselors, and volunteers, all under the direction of a medical director. By tying all of these disciplines together, we can deliver nothing short of the most high-quality, all-encompassing hospice care available.</p>
+                <p>Hospice care is a special benefit fully covered under Medicare, Medi-Cal, and many private health insurances. Eligibility for hospice depends on your physician's order for hospice services and the following:</p>
+                <ul>
+                  <li>Your doctor and the hospice medical director certify that you have a terminal condition and meet specific medical criteria for hospice care.</li>
+                  <li>You opt for comfort care under hospice rather than pursuing aggressive procedures.</li>
+                  <li>You receive care from a Medicare approved hospice program.</li>
+                </ul>
             </div>
         </div>
         <div className='right'>
