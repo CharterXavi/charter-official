@@ -25,19 +25,19 @@ const LevelsOfCare = (props) => {
       {
         img: twoIcon,  
         title: 'Respite Care',
-        content: 'Delivered primarily where the patient resides and provided by a team of hospice professionals. Care may involve skilled nursing care, certified home health aides, emotional and spiritual care, social services and/or volunteer services.',
+        content: 'Provided in order to relieve the individuals caring for the patient from caregiving duties. Respite care is available for up to five days at a time in a skilled nursing facility. Hospice will cover the cost of the facility while under respite care.',
         animationTime: '1100'
       },
       {
         img: threeIcon,  
         title: 'General Inpatient Care',
-        content: 'Delivered primarily where the patient resides and provided by a team of hospice professionals. Care may involve skilled nursing care, certified home health aides, emotional and spiritual care, social services and/or volunteer services.',
+        content: 'Provided to patients with an acute onset of symptoms that cannot be managed on a routine level of care. Patients on general inpatient will be transferred to a contracted skilled nursing facility in order to have twenty-four hour nursing supervision.',
         animationTime: '1500'
       },
       {
         img: fourIcon,  
         title: 'Continuous Care',
-        content: 'Delivered primarily where the patient resides and provided by a team of hospice professionals. Care may involve skilled nursing care, certified home health aides, emotional and spiritual care, social services and/or volunteer services.',
+        content: 'Provided where the patient resides and is designed to maintain an individual at home during a medical crisis.',
         animationTime: '1900'
       }
   ]

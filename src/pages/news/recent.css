@@ -87,3 +87,14 @@
         height: 200px;
     }
 }
+@media only screen and (max-width: 500px) {
+    .RecentPosts .grid-wrapper .btn-container {
+        width: 100%;
+        flex-direction: column;
+    }
+    .RecentPosts .grid-wrapper .btn-container .ShowMoreButton,
+    .RecentPosts .grid-wrapper .btn-container .ButtonSecondary,
+    .RecentPosts .grid-wrapper .btn-container .ButtonPrimaryAlt  {
+        margin: 8px 0;
+    }
+}
