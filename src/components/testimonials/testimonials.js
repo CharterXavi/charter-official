@@ -71,7 +71,7 @@ const TestimonialsStrip = (props) => {
         <div className='left'> 
             <h2>We're keeping our patients happy.</h2>
             <p className='introduction-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus diam vitae ut et tincidunt quis sem est, ligula. Aliquam venenatis ut dapibus neque leo. Purus aliquet suscipit turpis volutpat nisl porta elit diam. Et nunc nunc neque aliquet ultricies risus.</p>
-            <ButtonPrimaryAlt content='Read more' animation='fade-up' animationTime='1000' />
+            <ButtonPrimaryAlt content='Read more' link='/about/testimonials' animation='fade-up' animationTime='1000' />
         </div>
         <div className='right'>
             <div className='quote-container'>

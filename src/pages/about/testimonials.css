@@ -1,0 +1,20 @@
+.TestimonialsPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.TestimonialsPage hr {
+    width: 70%;
+    border: 1px solid #f0f0f0;
+}
+.TestimonialsPage h2 {
+    width: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .TestimonialsPage h2 {
+        align-self: flex-start;
+        padding: 0 0 0 16px;
+    }
+}

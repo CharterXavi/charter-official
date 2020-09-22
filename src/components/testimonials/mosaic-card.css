@@ -1,0 +1,27 @@
+.MosaicCard {
+    width: auto;
+    height: auto;
+    padding: 32px;
+    margin: 8px 0;
+    background: var(--heading-color);
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.25s ease all;
+    color: var(--primary-accent);
+}
+.MosaicCard:hover {
+    box-shadow: 0px 9px 10px rgba(0, 0, 0, 0.15);
+    transform: translateY(-4px);
+}
+.MosaicCard .quote-text {
+    color: white;
+}
+.MosaicCard img {
+    width: 25px;
+}
+
+@media only screen and (max-width: 450px) {
+    .MosaicCard {
+        margin: 16px 0 0 0;
+    }
+}
