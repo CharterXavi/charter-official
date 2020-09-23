@@ -17,4 +17,8 @@
         align-self: flex-start;
         padding: 0 0 0 16px;
     }
+    .TestimonialsPage .intro h2 {
+        align-self: flex-start;
+        padding: 0 0 0 0;
+    }
 }

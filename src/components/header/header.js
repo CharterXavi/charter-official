@@ -30,8 +30,8 @@ const Header = () => {
         isSubMenuExpanded: false,
         subMenu: [
           {
-            name: '',
-            path: ''
+            name: 'Testimonials',
+            path: '/about/testimonials'
           }
         ]
       },
