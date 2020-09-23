@@ -2,7 +2,7 @@ import React, {useEffect} from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import HeaderStrip from '../components/header-strip/header-strip';
-import servicesImage from '../images/headers/services-header.png';
+import servicesImage from '../images/headers/services.png';
 import ServicesStrip from '../components/services/services';
 import LocationsStrip from '../components/locations/locations';
 import TestimonialsStrip from '../components/testimonials/testimonials';
