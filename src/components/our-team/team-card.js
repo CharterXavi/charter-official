@@ -2,9 +2,7 @@ import React, {useEffect} from 'react'
 import './team-card.css'
 import AOS from "aos";
 import "aos/dist/aos.css";
-import facebookIcon from '../../images/iconography/facebook.png';
-import twitterIcon from '../../images/iconography/twitter.png';
-import linkedinIcon from '../../images/iconography/linkedin.png';
+import SocialButton from '../../components/buttons/social-button';
 
 const TeamCard = (props) => {
 
@@ -21,7 +19,7 @@ const TeamCard = (props) => {
     <div className='TeamCard' data-aos='fade-up' data-aos-duration={props.animationTime} data-aos-once="true">
         <img src={props.image} alt="Team Member" className={`${props.isClicked ? 'enlarge-image' : ''}`} />
         <div className='card-header'>
-            <h4>{props.name}</h4>
+            <h3>{props.name}</h3>
             <p className='introduction-text'>{props.title}</p>
         </div>
         <div className='card-content'>
@@ -31,11 +29,7 @@ const TeamCard = (props) => {
                 <p>Egestas nisi, pretium mi ultricies lacus habitant cras. Aliquet nunc ultricies risus pretium suspendisse nibh diam. Egestas viverra et vitae ultrices odio non vitae iaculis. Lectus diam nisi, tellus, tortor fames.</p>
             </div>
             <div className='social'>
-                <ul>
-                    <li><a href={props.facebook} target='_blank' rel='noopenner noreferrer' className={`${props.facebook ? '' : 'disabled-link'}`}><img src={facebookIcon} alt="Facebook Logo" /></a></li>
-                    <li><a href={props.twitter} target='_blank' rel='noopenner noreferrer' className={`${props.twitter ? '' : 'disabled-link'}`}><img src={twitterIcon} alt="Twitter Logo" /></a></li>
-                    <li><a href={props.linkedIn} target='_blank' rel='noopenner noreferrer' className={`${props.linkedIn ? '' : 'disabled-link'}`}><img src={linkedinIcon} alt="LinkedIn Logo" /></a></li>
-                </ul>
+                <SocialButton content='LinkedIn' link={props.linkedIn} />
             </div>
         </div>
         <div className={`card-expander ${props.isClicked ? 'hide-bio' : ''}`} onClick={handleClick} onKeyDown={handleClick} role='button'>

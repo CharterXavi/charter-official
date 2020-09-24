@@ -31,13 +31,17 @@
     top: -60px;
     padding: 8px;
 }
-.TeamCard .card-header h4 {
+.TeamCard .card-header h3 {
     text-align: center;
+    padding: 8px 0;
 }
 .TeamCard .card-header .introduction-text  {
     text-align: center;
-    color: var(--primary-accent);
     padding: 0 0 0 0;
+    background: -webkit-linear-gradient(270deg, #0FBDBD -7.32%, #363F55 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
 }
 
 
@@ -75,18 +79,12 @@
 .TeamCard .social {
     width: 100%;
     position: absolute;
-    top: 222px;
+    top: 170px;
 }
-.TeamCard .social ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 0 0 0 0;
-}
-.TeamCard .social ul li img {
-    width: 25px;
-    height: 25px;
-    margin: 4px;
+.TeamCard .SocialButton {
+    position: absolute;
+    top: 0;
+    left: 35%;
 }
 .TeamCard .disabled-link {
     filter: grayscale(100%) contrast(10%) opacity(50%);

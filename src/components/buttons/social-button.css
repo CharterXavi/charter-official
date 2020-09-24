@@ -1,0 +1,42 @@
+.SocialButton {
+    outline: none;
+    background: -webkit-linear-gradient(270deg, #0FBDBD -7.32%, #363F55 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: 2px solid var(--heading-color);
+    border-radius: 75px;
+    width: 120px;
+    box-sizing: border-box;
+    padding: 8px 16px 8px 16px;
+    margin: 8px 0 8px 0;
+    height: 40px;
+    transition: 0.4s ease all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+}
+.SocialButton:hover {
+    color: #363f55;
+    box-shadow: none;
+    cursor: pointer;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.12);
+    transform: translateY(-1px);
+}
+.SocialButton img {
+    width: 30px;
+    height: auto;
+    margin: 0 0 0 0;
+}
+.disabled-btn {
+    filter: grayscale(100%) contrast(10%) opacity(50%);
+    cursor: not-allowed;
+}
+.disabled-btn:hover {
+    filter: grayscale(100%) contrast(10%) opacity(50%);
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: translateY(0px);
+}

@@ -24,7 +24,7 @@ const TeamGrid = () => {
                 name: 'Sabina Del Rosario',
                 title: 'Chief Operating Officer',
                 image: sabina,
-                linkedIn: '',
+                linkedIn: null,
                 quote: '"This is an inspirational, introductory quote from this team member."',
                 isClicked: false,
                 animationTime: 900
@@ -42,7 +42,7 @@ const TeamGrid = () => {
                 name: 'Dr. Jean-Claude Hage',
                 title: 'Chief Medical Officer',
                 image: jeanclaude,
-                linkedIn: '',
+                linkedIn: null,
                 quote: '"This is an inspirational, introductory quote from this team member."',
                 isClicked: false,
                 animationTime: 1300
