@@ -13,7 +13,7 @@
     box-shadow: 0px 9px 10px rgba(0, 0, 0, 0.15);
     transform: translateY(-4px);
 }
-.MosaicCard .quote-text {
+.MosaicCard p {
     color: white;
 }
 .MosaicCard img {
