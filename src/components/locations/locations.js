@@ -82,12 +82,12 @@ const LocationsStrip = (props) => {
   return (
     <div className='LocationsStrip'>
         {isSvg &&
-            <svg className='locations-wave-one' xmlns="http://www.w3.org/2000/svg" width="1440" height="522" viewBox="0 0 1440 522" fill="none">
+            <svg className='locations-wave-one' xmlns="http://www.w3.org/2000/svg" width="1440" height="464" viewBox="0 0 1440 464" fill="none">
                 <g filter="url(#filter8_d)">
-                <path d="M0 1H1440V83.5C1440 83.5 1284.5 369 783 340C281.5 311 0 503 0 503V1Z" fill="url(#paint8_linear)"/>
+                <path d="M0 1H1440V83.5C1440 83.5 1287 257.5 785.5 228.5C284 199.5 0 445 0 445V1Z" fill="url(#paint8_linear)"/>
                 </g>
                 <defs>
-                <filter id="filter8_d" x="-10" y="0" width="1460" height="522" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                <filter id="filter8_d" x="-10" y="0" width="1460" height="464" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
                 <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
                 <feOffset dy="9"/>
@@ -96,7 +96,7 @@ const LocationsStrip = (props) => {
                 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
                 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
                 </filter>
-                <linearGradient id="paint8_linear" x1="0" y1="503" x2="1440" y2="503" gradientUnits="userSpaceOnUse">
+                <linearGradient id="paint8_linear" x1="0" y1="445" x2="1440" y2="445" gradientUnits="userSpaceOnUse">
                 <stop stopColor="#F493AA"/>
                 <stop offset="1" stopColor="#F2D1C9"/>
                 </linearGradient>
