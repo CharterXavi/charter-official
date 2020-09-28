@@ -12,14 +12,6 @@
     color: var(--heading-color);
     position: relative;
 }
-.HomeServices .intro .image-background {
-    width: 650px;
-    height: 430px;
-    position: absolute;
-    top: 6%;
-    left: 33%;
-    background: linear-gradient(90deg, #F493AA 0%, #F2D1C9 100%);
-}
 .HomeServices img {
     border-radius: 10px;
     width: 650px;

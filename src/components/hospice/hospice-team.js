@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import './hospice-team.css';
 import AOS from "aos";
 import "aos/dist/aos.css";
-import hospiceTeam1 from '../../images/hospice-team1.png';
+import hospiceTeam from '../../images/hospice-team.png';
 
 const HospiceTeam = (props) => {
 
@@ -14,7 +14,7 @@ const HospiceTeam = (props) => {
   return (
     <div className='HospiceTeam'>
         <div className='left'>
-          <img src={hospiceTeam1} alt="Group of health care professionals" />
+          <img src={hospiceTeam} alt="Group of health care professionals" />
         </div>
         <div className='right'>
           <h2>Your Hospice Team</h2>

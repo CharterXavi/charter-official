@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import PostLink from "../../components/news/post-link";
 import Layout from '../../components/layout';
 import HeaderStrip from '../../components/header-strip/header-strip';
