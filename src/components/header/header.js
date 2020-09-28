@@ -152,7 +152,7 @@ const Header = () => {
           {/* pass handleClick function to child so that when it's invoked it will change state in parent */}
           {/* that way we can pass info about whether or not the button's been clicked to expand the menu here accordingly */}
           <div className='header-right'>
-            <ButtonPrimary icon={phoneIcon} link='tel:+11234567890' content='123-456-7890' />
+            <ButtonPrimary icon={phoneIcon} link='tel:+19096444965' content='909-644-4965' />
             {isMenuExpanded ? 
               <small>CLOSE</small> /* margin included since 'close' is longer word than 'menu', causing neighboring elements to move around */
               :
