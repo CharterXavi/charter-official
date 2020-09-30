@@ -118,8 +118,12 @@
         transform: rotate(0deg) translateY(9px) translateX(0px) scale(1.5);
         margin: 0 8px 0 8px;
     }
-    .TestimonialsStrip .quote-wave-one {
-        bottom: 0;
+    .quote-wave-one {
+        width: 100vw;
+        height: auto;
+        position: absolute;
+        bottom: -5px;
+        z-index: 1;
     }
 }
 @media only screen and (max-width: 660px) {

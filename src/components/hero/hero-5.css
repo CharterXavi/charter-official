@@ -1,15 +1,15 @@
-.Hero4 {
+.Hero5 {
     height: 650px;
     width: 100%;
     position: relative;
     top: 0;
     z-index: 2;
-    background: var(--hero-gradient-white);
+    background: linear-gradient(90deg, #FFFFFF 42.19%, #F6F7FB 61.98%);
     display: flex;
     justify-content: center;
     box-shadow: var(--standard-shadow);
 }
-.Hero4 .hero-wrapper {
+.Hero5 .hero-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,42 +18,43 @@
     background: white;
     overflow: hidden;
 }
-.Hero4 .hero-content h2 {
+.Hero5 .hero-content h2 {
     color: var(--heading-color);
     padding: 0 0 8px 0;
 }
-.Hero4 .hero-content p {
+.Hero5 .hero-content p {
     width: 250px;
 }
-.Hero4 .hero-content img {
+.Hero5 .hero-content img {
     width: 200px;
     height: auto;
 }
-.Hero4 .hero-wave-left {
+.Hero5 .hero-wave-left {
     display: none;
 }
-.Hero4 .hero-wave-right {
+.Hero5 .hero-wave-right {
     position: absolute;
     right: 0;
     z-index: 1;
 }
-.Hero4 .icon-blast-wrapper {
+.Hero5 .icon-blast-wrapper {
     position: absolute;
     right: 100px;
     width: 30%;
     z-index: 0;
 }
-.Hero4 .icon-blast {
+.Hero5 .icon-blast {
     width: 100%;
     opacity: 0.2;
 }
-.Hero4 .doctor-graphic {
+.Hero5 .doctor-graphic {
     position: absolute;
-    right: 20px;
+    right: 50px;
     bottom: -35px;
     z-index: 2;
+    width: 400px;
 }
-.Hero4 .hero-content {
+.Hero5 .hero-content {
     box-sizing: border-box;
     width: 350px;
     height: auto;
@@ -70,80 +71,80 @@
 
 
 @media only screen and (max-width: 950px) {
-    .Hero4 .hero-wave-left {
+    .Hero5 .hero-wave-left {
         display: none;
     }
-    .Hero4 .icon-blast-wrapper {
+    .Hero5 .icon-blast-wrapper {
         width: 65%;
         right: 75px;
     }
-    .Hero4 .icon-blast {
+    .Hero5 .icon-blast {
         width: 80%;
         opacity: 0.1;
     }
-    .Hero4 .doctor-graphic {
+    .Hero5 .doctor-graphic {
         width: 375px;
     }
-    .Hero4 {
+    .Hero5 {
         background: white;
         justify-content: flex-start;
     }
-    .Hero4 .hero-content {
+    .Hero5 .hero-content {
         width: 340px;
     }
 }
 
 @media only screen and (max-width: 550px) {
-    .Hero4 .hero-wrapper {
+    .Hero5 .hero-wrapper {
         background: var(--heading-color);
         width: 100%;
     }
-    .Hero4 .icon-blast-wrapper {
+    .Hero5 .icon-blast-wrapper {
         width: 100%;
         top: -10px;
         left: 200px;
         z-index: 0;
     }
-    .Hero4 .icon-blast {
+    .Hero5 .icon-blast {
         width: 60%;
         opacity: 0.1;
     }
-    .Hero4 .hero-content {
+    .Hero5 .hero-content {
         width: 100%;
         left: 0;
         box-sizing: border-box;
     }
-    .Hero4 .hero-content h1 {
+    .Hero5 .hero-content h1 {
         color: white;
     }
-    .Hero4 .hero-content h2 {
+    .Hero5 .hero-content h2 {
         color: white;
     }
-    .Hero4 .hero-content p {
+    .Hero5 .hero-content p {
         color: white;
     }
-    .Hero4 .hero-wave-right {
+    .Hero5 .hero-wave-right {
         display: none;
     }
-    .Hero4 .hero-wave-left {
+    .Hero5 .hero-wave-left {
         position: absolute;
         left: -30px;
         display: block;
         z-index: 1;
     }
-    .Hero4 .doctor-graphic {
+    .Hero5 .doctor-graphic {
         width: 275px;
     }
-    .Hero4 .hero-content img {
+    .Hero5 .hero-content img {
         width: 150px;
     }
 }
 
 @media only screen and (max-width: 340px) {
-    .Hero4 {
+    .Hero5 {
         height: 100vh;
     }
-    .Hero4 .doctor-graphic {
+    .Hero5 .doctor-graphic {
         right: 5px;
         width: 200px;
     }

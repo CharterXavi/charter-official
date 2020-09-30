@@ -88,7 +88,7 @@ const OurTeamStrip = () => {
         </svg>
         <svg className='team-wave-mobile-one' xmlns="http://www.w3.org/2000/svg" width="375" height="396" viewBox="0 0 375 396" fill="none">
             <g filter="url(#filter7_d)">
-            <path d="M0 135.205C0 135.205 60 33.0487 194.5 76.3878C329 119.727 375 25 375 25V381H0V135.205Z" fill="url(#paint7_linear)"/>
+            <path d="M0 135.205C0 135.205 60 33.0487 194.5 76.3878C329 119.727 375 25 375 25V381H0V135.205Z" fill="#F6F7FB"/>
             </g>
             <defs>
             <filter id="filter7_d" x="-15" y="0" width="415" height="396" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
@@ -100,15 +100,11 @@ const OurTeamStrip = () => {
             <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
             <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
             </filter>
-            <linearGradient id="paint7_linear" x1="0" y1="381" x2="375" y2="381" gradientUnits="userSpaceOnUse">
-            <stop stopColor="#F493AA"/>
-            <stop offset="1" stopColor="#F2D1C9"/>
-            </linearGradient>
             </defs>
         </svg>
         <svg className='team-wave-mobile-two' xmlns="http://www.w3.org/2000/svg" width="375" height="675" viewBox="0 0 375 675" fill="none">
             <g filter="url(#filter6_d)">
-            <path d="M0 153C0 153 88.5 85 192 103.5C295.5 122 375 25 375 25V675H0V153Z" fill="url(#paint6_linear)"/>
+            <path d="M0 153C0 153 88.5 85 192 103.5C295.5 122 375 25 375 25V675H0V153Z" fill="#F6F7FB"/>
             </g>
             <defs>
             <filter id="filter6_d" x="-15" y="0" width="415" height="690" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
@@ -120,10 +116,6 @@ const OurTeamStrip = () => {
             <feBlend mode="normal" in2="BackgroundImageFix" result="effect6_dropShadow"/>
             <feBlend mode="normal" in="SourceGraphic" in2="effect6_dropShadow" result="shape"/>
             </filter>
-            <linearGradient id="paint6_linear" x1="0" y1="675" x2="375" y2="675" gradientUnits="userSpaceOnUse">
-            <stop stopColor="#F493AA"/>
-            <stop offset="1" stopColor="#F2D1C9"/>
-            </linearGradient>
             </defs>
         </svg>
     </div>

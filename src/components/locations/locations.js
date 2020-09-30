@@ -102,7 +102,7 @@ const LocationsStrip = (props) => {
         {isSvg &&
             <svg className='locations-wave-mobile' xmlns="http://www.w3.org/2000/svg" width="375" height="463" viewBox="0 0 375 463" fill="none">
                 <g filter="url(#filter9_d)">
-                <path d="M0 0H375V381.5C375 381.5 335.099 437.158 204.5 396.223C73.901 355.288 0 444 0 444V0Z" fill="url(#paint9_linear)"/>
+                <path d="M0 0H375V381.5C375 381.5 335.099 437.158 204.5 396.223C73.901 355.288 0 444 0 444V0Z" fill="#F6F7FB"/>
                 </g>
                 <defs>
                 <filter id="filter9_d" x="-10" y="-1" width="395" height="464" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
@@ -114,17 +114,13 @@ const LocationsStrip = (props) => {
                 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
                 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
                 </filter>
-                <linearGradient id="paint9_linear" x1="0" y1="444" x2="375" y2="444" gradientUnits="userSpaceOnUse">
-                <stop stopColor="#F493AA"/>
-                <stop offset="1" stopColor="#F2D1C9"/>
-                </linearGradient>
                 </defs>
             </svg>
         }
         <div className='left'> 
         <img src={homeIcon} alt='Home Icon'/>
             <h2>Our Locations</h2>
-            <p>See our locations across southern California, and be on the lookout for new locations!</p>
+            <p>See our locations by state</p>
             <div className='card-container'>
                 {/* Map through each location, create a card component and pass state values and methods in as props */}
                 {locationsList.map((location) => {

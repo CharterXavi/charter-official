@@ -11,11 +11,13 @@
   --sunset: linear-gradient(37.36deg, #FFCE94 3.73%, #F05F7E 100%);
   --mist: linear-gradient(90deg, #F493AA 0%, #F2D1C9 100%);
   --ocean: linear-gradient(270deg, #0FBDBD -7.32%, #363F55 100%);
+  --hero-gradient-white: linear-gradient(90deg, #FFFFFF 42.19%, #F493AA 61.98%);
   --hero-gradient-light: linear-gradient(90deg, #F6F7FB 42.19%, #F493AA 61.98%);
   --hero-gradient-dark: linear-gradient(90deg, #363F55 42.19%, #F493AA 61.98%);
   --standard-shadow: 0px 0px 15px rgba(0, 0, 0, 0.10);
   --button-shadow: 0px 5px 12px rgba(0, 0, 0, 0.22);
   --nav-shadow: 0px 7px 15px 0px rgba(0,0,0,0.2);
+  --inset-shadow: 0px -5px 10px rgba(0, 0, 0, 0.2);
 }
 html {
   width: 100vw;
