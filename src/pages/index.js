@@ -24,8 +24,8 @@ const IndexPage = ({ data }) => {
       <AboutStrip />
       <ServicesStrip />
       <VideoStrip />
-      <TestimonialsStrip />
       <DataStrip />
+      <TestimonialsStrip />
       <div className='news'>
         <PostStrip posts={recentPosts} title='The Latest' link='/news'/>
       </div>

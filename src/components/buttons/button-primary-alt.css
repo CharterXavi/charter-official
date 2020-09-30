@@ -4,7 +4,7 @@
     background: #FFFFFF;
     /* Brink Pink */    
     border: 2px solid #F05F7E;
-    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.22);
+    box-shadow: var(--button-shadow);
     border-radius: 10px;
     min-width: 150px;
     width: auto;

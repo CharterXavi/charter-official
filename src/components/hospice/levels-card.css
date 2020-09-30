@@ -1,6 +1,6 @@
 .LevelsCard {
     width: 320px;
-    height: 275px;
+    height: 300px;
     border-radius: 10px;
     box-sizing: border-box;
     padding: 32px;
@@ -12,7 +12,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
+    box-shadow: var(--standard-shadow);
 }
 .LevelsCard:hover .number {
     transform: translatey(-8px) scale(1.1);

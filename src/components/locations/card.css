@@ -1,11 +1,10 @@
 .Card {
     box-sizing: border-box;
     padding: 8px;
-    border-radius: 10px;
-    border: 1px solid #eeeeee;
     transform: 0.4s ease all;
     width: 100%;
-    margin: 8px 0 8px 0;
+    margin: 8px 0;
+    border-radius: 10px;
 }
 .Card .card-title {
     box-sizing: border-box;
@@ -15,4 +14,8 @@
 }
 .Card:hover .Clicker {
     transform: scale(1.5);
+}
+.Card:hover {
+    box-shadow: var(--standard-shadow);
+    background: var(--light-clinic-blue);
 }

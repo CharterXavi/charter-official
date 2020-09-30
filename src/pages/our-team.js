@@ -32,26 +32,22 @@ const OurTeamPage = () => (
       <div className='right'>
         <img src={hiringImage} alt="Charter team standing together" />
       </div>
-      <svg className='hiring-wave' xmlns="http://www.w3.org/2000/svg" width="1440" height="448" viewBox="0 0 1440 448" fill="none">
-        <g filter="url(#filter12_d)">
-        <path d="M0 405C0 405 259 144.5 731.5 251C1204 357.5 1440 25 1440 25C1440 109.206 1440 348.294 1440 432.5H690.5H0V405Z" fill="url(#paint12_linear)"/>
-        </g>
-        <defs>
-        <filter id="filter12_d" x="-15" y="0" width="1480" height="447.5" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-        <feFlood floodOpacity="0" result="BackgroundImageFix"/>
-        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-        <feOffset dx="5" dy="-5"/>
-        <feGaussianBlur stdDeviation="10"/>
-        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-        </filter>
-        <linearGradient id="paint12_linear" x1="0" y1="432.5" x2="1440" y2="432.5" gradientUnits="userSpaceOnUse">
-        <stop stopColor="#F493AA"/>
-        <stop offset="1" stopColor="#F2D1C9"/>
-        </linearGradient>
-        </defs>
-      </svg>
+      <svg className='hiring-wave' xmlns="http://www.w3.org/2000/svg" width="1440" height="521" viewBox="0 0 1440 521" fill="none">
+            <g filter="url(#filter12_d)">
+            <path d="M1 482.19C1 482.19 260 161.919 732.5 292.855C1205 423.791 1441 15 1441 15C1441 118.527 1441 412.473 1441 516H691.5H1V482.19Z" fill="#F6F7FB"/>
+            </g>
+            <defs>
+            <filter id="filter12_d" x="-4" y="0" width="1460" height="521" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+            <feOffset dx="5" dy="-5"/>
+            <feGaussianBlur stdDeviation="5"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+            </filter>
+            </defs>
+        </svg>
     </div>
     <LocationsStrip svg={true} />
   </Layout>

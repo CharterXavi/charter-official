@@ -17,7 +17,7 @@
 }
 .expanded-card {
     height: 110px;
-    background: white;
     margin: 8px 0 0 0;
-    color: #363f55;
+    background: white;
+    color: var(--heading-color);
 }

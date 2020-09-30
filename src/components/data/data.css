@@ -4,11 +4,11 @@
     justify-content: center;
     padding: 64px;
     height: auto;
-    background: #F6F7FB;
+    background: var(--light-clinic-blue);
     color: var(--heading-color);
 }
 .DataStrip h2 {
-    color: #f05f7e;
+    color: var(--primary-accent);
 }
 .DataStrip .right {
     box-sizing: border-box;
