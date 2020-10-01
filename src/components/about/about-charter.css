@@ -1,0 +1,64 @@
+.AboutCharter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 64px 16px;
+}
+.AboutCharter h2 {
+    width: auto;
+    color: var(--primary-accent);
+}
+.AboutCharter .about-card-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    padding: 16px 0px 32px 0px;
+}
+.AboutCharter .about-card-wrapper .about-card {
+    width: 400px;
+    height: auto;
+    padding: 32px;
+    background: var(--light-clinic-blue);
+    border-radius: 10px;
+    box-shadow: var(--standard-shadow);
+    margin: 16px;
+}
+.AboutCharter .about-card-wrapper .about-card img {
+    transition: 0.25s ease all;
+}
+.AboutCharter .about-card-wrapper .about-card p {
+    transition: 0.25s ease all;
+}
+.AboutCharter .about-card-wrapper .about-card:hover img {
+    transform: translatey(-8px);
+}
+.AboutCharter .about-card-wrapper .about-card:hover p {
+    transform: translatey(8px);
+}
+
+@media only screen and (max-width: 1300px) {
+    .AboutCharter .about-card-wrapper .about-card {
+        width: 300px;
+    }
+}
+@media only screen and (max-width: 1100px) {
+    .AboutCharter .about-card-wrapper {
+        flex-wrap: wrap;
+    }
+    .AboutCharter .about-card-wrapper .about-card {
+        width: 350px;
+    }
+}
+@media only screen and (max-width: 860px) {
+    .AboutCharter .about-card-wrapper .about-card {
+        width: 450px;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .AboutCharter .about-card-wrapper .about-card {
+        width: 100%;
+        margin: 16px 0;
+    }
+}
