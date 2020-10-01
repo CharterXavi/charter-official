@@ -19,3 +19,8 @@
     box-shadow: var(--standard-shadow);
     background: var(--light-clinic-blue);
 }
+.Card .locationIcon {
+    height: 25px;
+    width: 15px;
+    padding-right: 8px;
+}

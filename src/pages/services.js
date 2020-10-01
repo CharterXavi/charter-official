@@ -3,7 +3,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import HeaderStrip from '../components/header-strip/header-strip';
 import servicesImage from '../images/headers/services.png';
-import ServicesStrip from '../components/services/services';
+import ServicesStrip2 from '../components/services/services2';
 import LocationsStrip from '../components/locations/locations';
 import TestimonialsStrip from '../components/testimonials/testimonials';
 import ButtonPrimary from '../components/buttons/button-primary';
@@ -33,7 +33,7 @@ const ServicesPage = () => {
             <p>At Charter Healthcare Group we believe in making a positive change in the lives of our patients and their families. For over ten years, we have been committed to providing exceptional care and life enhancing services to people all throughout the greater Los Angeles area.</p>
             <p>We have four main service offerings: home health care, palliative care, hospital admission reduction program (H.A.R.P.), and hospice. </p>
         </div>
-        <ServicesStrip />
+        <ServicesStrip2 />
         <div className='intro bereavement'>
             <h2>Bereavement</h2>
             <p>At Charter, we stand by our patients and their loved ones wherever possible. An especially important way to do that is through bereavement support and services. When grief and loss occur, life can get a lot harder and we want to make sure we’re helping you navigate it all.</p>

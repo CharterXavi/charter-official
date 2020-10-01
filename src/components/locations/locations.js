@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './locations.css';
-import homeIcon from '../../images/iconography/home-icon.png';
+import pinIcon from '../../images/iconography/locations/pin.png';
 import Card from './card';
 import Map from './map';
 
@@ -118,7 +118,7 @@ const LocationsStrip = (props) => {
             </svg>
         }
         <div className='left'> 
-        <img src={homeIcon} alt='Home Icon'/>
+        <img src={pinIcon} alt='Home Icon' className='icon' />
             <h2>Our Locations</h2>
             <p>See our locations by state</p>
             <div className='card-container'>

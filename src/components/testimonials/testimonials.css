@@ -24,6 +24,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    z-index: 2;
 }
 
 .TestimonialsStrip .right {
@@ -118,11 +119,11 @@
         transform: rotate(0deg) translateY(9px) translateX(0px) scale(1.5);
         margin: 0 8px 0 8px;
     }
-    .quote-wave-one {
+    .TestimonialsStrip .quote-wave-one {
         width: 100vw;
         height: auto;
         position: absolute;
-        bottom: -5px;
+        bottom: 0;
         z-index: 1;
     }
 }
