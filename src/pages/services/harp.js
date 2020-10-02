@@ -20,7 +20,7 @@ const HarpPage = () => (
       </div>
       <TCM />
       <ACP />
-      <TestimonialsStrip svg={true} />
+      <TestimonialsStrip />
       <LocationsStrip svg={true} />
     </div>
   </Layout>

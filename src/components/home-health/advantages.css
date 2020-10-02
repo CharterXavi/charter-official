@@ -5,7 +5,7 @@
     align-items: center;
     padding: 64px 32px;
     height: auto;
-    background: white;
+    background: var(--light-clinic-blue);
 }
 .Advantages h2 {
     width: auto;

@@ -8,13 +8,13 @@
     position: relative;
     top: 0;
     box-sizing: border-box;
-    padding: 16px;
     color: var(--heading-color);
 }
 .Quotes .quote-text {
     background: -webkit-linear-gradient(0deg, #F493AA 0%, #F2D1C9 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    width: 100%;
 }
 .Quotes .active {
     position: absolute;

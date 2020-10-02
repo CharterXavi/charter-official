@@ -1,5 +1,6 @@
 .ACP {
     padding: 64px 16px 16px 16px;
+    background: var(--light-clinic-blue);
 }
 .ACP ul  {
     max-width: 650px;
@@ -23,7 +24,7 @@
     align-items: center;
     box-sizing: border-box;
     padding: 16px;
-    background: var(--light-clinic-blue);
+    background: white;
     margin: 8px;
     border-radius: 10px;
     box-shadow: var(--standard-shadow);

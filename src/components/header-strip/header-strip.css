@@ -5,6 +5,7 @@
     position: relative;
     top: 0;
     overflow: hidden;
+    box-shadow: inset var(--nav-shadow);
 }
 .HeaderStrip .wave {
     position: absolute;
