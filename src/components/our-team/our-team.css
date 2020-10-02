@@ -7,7 +7,7 @@
     justify-content: center;
     position: relative;
     top: 0;
-    background: white;
+    background: var(--light-clinic-blue);
     padding: 64px 0 0 0;
 }
 .OurTeamStrip h2 {

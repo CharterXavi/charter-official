@@ -20,17 +20,19 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Home" />
-      <HeroStrip5 />
-      <AboutStrip />
-      <ServicesStrip2 />
-      <VideoStrip />
-      <DataStrip />
-      <TestimonialsStrip />
-      <div className='news'>
-        <PostStrip posts={recentPosts} title='The Latest' link='/news'/>
+      <div className='HomePage'>
+        <HeroStrip5 />
+        <AboutStrip />
+        <ServicesStrip2 />
+        <VideoStrip />
+        <DataStrip />
+        <TestimonialsStrip />
+        <div className='news'>
+          <PostStrip posts={recentPosts} title='The Latest' link='/news'/>
+        </div>
+        <OurTeamStrip />
+        <LocationsStrip svg={true} />
       </div>
-      <OurTeamStrip />
-      <LocationsStrip svg={true} />
     </Layout>
   )
 }

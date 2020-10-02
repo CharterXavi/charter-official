@@ -100,7 +100,7 @@ const TestimonialsStrip = (props) => {
             </div>
         </div>
         {
-            props.svg ? <svg className='quote-wave-one' xmlns="http://www.w3.org/2000/svg" width="1440" height="428" viewBox="0 0 1440 428" fill="none">
+            props.svg && <svg className='quote-wave-one' xmlns="http://www.w3.org/2000/svg" width="1440" height="428" viewBox="0 0 1440 428" fill="none">
             <g filter="url(#filter12_d)">
             <path d="M-2 395C-2 395 257 134.5 729.5 241C1202 347.5 1438 15 1438 15C1438 99.2057 1438 338.294 1438 422.5H688.5H-2V395Z" fill="#f6f7fb"/>
             </g>
@@ -116,8 +116,6 @@ const TestimonialsStrip = (props) => {
             </filter>
             </defs>
             </svg> 
-            :
-            ''
         } 
     </div>
   )
