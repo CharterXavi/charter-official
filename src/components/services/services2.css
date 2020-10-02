@@ -7,12 +7,14 @@
     height: auto;
     background-color: #F6F7FB; 
     color: var(--heading-color);
+    padding: 32px 16px;
+    box-sizing: border-box;
 }
 .ServicesStrip2 h2 {
     text-align: center;
     padding: 32px 0 0 0;
     width: 85%;
-    color: var(--heading-color);
+    color: var(--primary-accent);
 }
 .ServicesStrip2 .card-container {
     width: 1000px;

@@ -6,11 +6,10 @@ import servicesImage from '../images/headers/services.png';
 import ServicesStrip2 from '../components/services/services2';
 import LocationsStrip from '../components/locations/locations';
 import TestimonialsStrip from '../components/testimonials/testimonials';
-import ButtonPrimary from '../components/buttons/button-primary';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import './services.css';
-import PatientPath from '../components/services/patient-path';
+import DataStrip from '../components/data/data';
 
 const ServicesPage = () => {
     
@@ -34,13 +33,8 @@ const ServicesPage = () => {
             <p>We have four main service offerings: home health care, palliative care, hospital admission reduction program (H.A.R.P.), and hospice. </p>
         </div>
         <ServicesStrip2 />
-        <div className='intro bereavement'>
-            <h2>Bereavement</h2>
-            <p>At Charter, we stand by our patients and their loved ones wherever possible. An especially important way to do that is through bereavement support and services. When grief and loss occur, life can get a lot harder and we want to make sure we’re helping you navigate it all.</p>
-            <ButtonPrimary content='Visit Bereavement Page' link='/services/bereavement' />
-        </div>
-        <PatientPath />
-        <TestimonialsStrip svg={true} />
+        <DataStrip />
+        <TestimonialsStrip svg={false} />
         <LocationsStrip svg={true} />
       </div>
     </Layout>
