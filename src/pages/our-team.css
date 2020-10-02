@@ -6,7 +6,7 @@
     height: 600px;
     position: relative;
     top: 0;
-    background: white;
+    background: var(--light-clinic-blue);
 }
 .hiring-strip .right {
     max-width: 500px;

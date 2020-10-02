@@ -14,12 +14,12 @@ const ContactPage = () => (
       title='Contact Us'
       headline='Let us know how we can assist you'
     />
-    <div className='intro'>
-      <h1>We're here for you</h1>
+    <div className='intro contact-us'>
+      <h2>We're here for you</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi commodo pharetra, morbi pellentesque. Duis semper tellus velit, aliquam non. Blandit proin nulla erat lorem blandit mauris molestie pellentesque gravida. Interdum eget leo sem sed massa etiam congue.</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi commodo pharetra, morbi pellentesque. Duis semper tellus velit, aliquam non. Blandit proin nulla erat lorem blandit mauris molestie pellentesque gravida. Interdum eget leo sem sed massa etiam congue.</p>
     </div>
-    <LocationsStrip svg={false} />
+    <LocationsStrip svg={true} />
   </Layout>
 )
 

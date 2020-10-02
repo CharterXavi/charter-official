@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: white;
+    background: var(--light-clinic-blue);
 }
 .TeamGrid h2 {
     width: auto;
