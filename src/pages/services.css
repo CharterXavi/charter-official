@@ -9,6 +9,9 @@
 .ServicesPage .bereavement {
     min-height: 400px;
 }
+.ServicesPage .TestimonialsStrip {
+    background: var(--light-clinic-blue);
+}
 
 @media only screen and (max-width: 975px) {
     .Services .content-wrapper h2 {

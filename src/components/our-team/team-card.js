@@ -14,6 +14,8 @@ const TeamCard = (props) => {
     const handleClick = () => {
         props.expandBio(props.id);
     }
+    const charPerLine = 35;
+    const heightFactor = (((props.bio.length / charPerLine) * 22) + 50).toString().concat('px');
 
   return (
     <div className='TeamCard' data-aos='fade-up' data-aos-duration={props.animationTime} data-aos-once="true">
@@ -24,9 +26,8 @@ const TeamCard = (props) => {
         </div>
         <div className='card-content'>
             <p className='quote'>{props.quote}</p>
-            <div className={`biography ${props.isClicked ? 'expanded-bio' : ''}`}>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo sagittis, quis eget morbi leo sodales mattis lobortis hac. Sit adipiscing nulla vitae consequat egestas ultricies ultrices interdum.</p>
-                <p>Egestas nisi, pretium mi ultricies lacus habitant cras. Aliquet nunc ultricies risus pretium suspendisse nibh diam. Egestas viverra et vitae ultrices odio non vitae iaculis. Lectus diam nisi, tellus, tortor fames.</p>
+            <div className={`biography ${props.isClicked ? 'expanded-bio' : ''}`} style={{height: `${props.isClicked ? heightFactor : '0px'}`}}>
+                <p>{props.bio}</p>
             </div>
             <div className='social'>
                 <SocialButton content='LinkedIn' link={props.linkedIn} />

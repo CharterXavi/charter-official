@@ -1,0 +1,67 @@
+.ServicesStrip2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: #F6F7FB; 
+    color: var(--heading-color);
+    padding: 32px 16px;
+    box-sizing: border-box;
+}
+.ServicesStrip2 h2 {
+    text-align: center;
+    padding: 32px 0 0 0;
+    width: 85%;
+    color: var(--primary-accent);
+}
+.ServicesStrip2 .card-container {
+    width: 1000px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 32px 0 32px 0;
+}
+.ServicesStrip2 .card {
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+    padding: 8px;
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: 0.3s ease all;
+}
+.ServicesStrip2 .card:hover .ButtonPrimaryAlt {
+    transform: translateY(8px);
+    transition: 0.3s ease all;
+}
+.ServicesStrip2 .card:hover .icon {
+    transform: translateY(-8px);
+}
+.ServicesStrip2 .card h3, .ServicesStrip2 .card p {
+    color: #363f55;
+}
+.ServicesStrip2 .icon {
+    margin: 32px 0 8px 0;
+    transition: 0.3s ease all;
+}
+@media only screen and (max-width: 1000px) {
+    .ServicesStrip2 .card-container {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 665px) {
+    .ServicesStrip2 .card-container .card {
+        height: 300px;
+        width: 300px;
+    }
+    .ServicesStrip2 .card-container .card img {
+        height: 50px;
+        width: 50px;
+    }
+}

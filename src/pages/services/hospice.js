@@ -10,6 +10,7 @@ import HospiceTeam from '../../components/hospice/hospice-team';
 import LocationsStrip from "../../components/locations/locations";
 import LevelsOfCare from "../../components/hospice/levels-of-care";
 import HospiceEligibility from '../../components/hospice/hospice-eligibility';
+import BereavementStrip from "../../components/hospice/bereavement-strip";
 
 const HospicePage = () => {
   
@@ -35,7 +36,7 @@ const HospicePage = () => {
           <HospiceEligibility />
         </div>
         <LevelsOfCare />
-        <TestimonialsStrip svg={true} />
+        <BereavementStrip />
         <LocationsStrip svg={true} />
       </div>
     </Layout>

@@ -1,9 +1,9 @@
 .ButtonSecondary {
     outline: none;
     background: #FFFFFF; 
-    border: 2px solid #0FBDBD;
-    color: #0FBDBD;
-    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.22);
+    border: 2px solid var(--maximum-blue);
+    color: var(--maximum-blue);
+    box-shadow: var(--button-shadow);
     border-radius: 10px;
     min-width: 150px;
     width: auto;
@@ -20,8 +20,8 @@
     font-family: 'Nunito', sans-serif;
 }
 .ButtonSecondary:hover {
-    border: 2px solid #363f55;
-    color: #363f55;
+    border: 2px solid var(--heading-color);
+    color: var(--heading-color);
     box-shadow: none;
     transform: translateY(1px);
     transition: 0.3s ease all;

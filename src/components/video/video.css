@@ -8,6 +8,7 @@
     align-items: center;
     position: relative;
     overflow: hidden;
+    box-shadow: inset var(--nav-shadow);
 }
 .VideoStrip .title {
     margin: 16px 0;

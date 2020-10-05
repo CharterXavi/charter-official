@@ -1,6 +1,6 @@
 .SocialButton {
     outline: none;
-    background: -webkit-linear-gradient(270deg, #0FBDBD -7.32%, #363F55 100%);
+    background: var(--ocean);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     border: 2px solid var(--heading-color);
@@ -22,7 +22,7 @@
     color: #363f55;
     box-shadow: none;
     cursor: pointer;
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.12);
+    box-shadow: var(--button-shadow);
     transform: translateY(-1px);
 }
 .SocialButton img {

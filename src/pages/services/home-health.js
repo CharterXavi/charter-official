@@ -21,7 +21,7 @@ const HomeHealthPage = () => (
       </div>
       <HomeServices />
       <Advantages />
-      <TestimonialsStrip svg={true} />
+      <TestimonialsStrip />
       <LocationsStrip svg={true} />
     </div>
   </Layout>

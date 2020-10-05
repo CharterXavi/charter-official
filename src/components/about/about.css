@@ -5,6 +5,8 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    position: relative;
+    z-index: 1;
 }
 .AboutStrip h2 {
     color: var(--primary-accent);

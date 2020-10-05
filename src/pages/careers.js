@@ -8,9 +8,9 @@ import careersImage from '../images/headers/careers.png';
 import DemographicsChart from '../components/data/demographics';
 import TeamPics from '../components/our-team/team-pics';
 import ButtonPrimaryAlt from '../components/buttons/button-primary-alt';
-import healthIcon from '../images/iconography/health-icon.png';
-import clockIcon from '../images/iconography/clock.png';
-import highFiveIcon from '../images/iconography/high-five.png';
+import healthIcon from '../images/iconography/hospice/healthcare.png';
+import clockIcon from '../images/iconography/careers/clock.png';
+import awardIcon from '../images/iconography/careers/award.png';
 import './careers.css';
 
 const CareersPage = () => (
@@ -32,13 +32,13 @@ const CareersPage = () => (
         <DemographicsChart />
       </div>
     </div>
-    <div className='intro'>
+    <div className='intro benefits'>
       <h2>We take care of our own</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi commodo pharetra, morbi pellentesque. Duis semper tellus velit, aliquam non. Blandit proin nulla erat lorem blandit mauris molestie pellentesque gravida. Interdum eget leo sem sed massa etiam congue.</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod ipsum, semper erat eget phasellus fermentum a egestas. Arcu tincidunt neque in ac.</p>
       <div className='benefits-wrapper'>
         <div className='benefits-card'>
-          <img src={healthIcon} alt="" />
+          <img src={healthIcon} alt="Healthcare" />
           <h4>Health & Wellness</h4>
           <p>Cover your all your bases:</p>
           <ul>
@@ -49,7 +49,7 @@ const CareersPage = () => (
           </ul>
         </div>
         <div className='benefits-card'>
-          <img src={highFiveIcon} alt="" />
+          <img src={awardIcon} alt="Award" />
           <h4>Generous Incentives</h4>
           <p>Hard work at Charter pays off:</p>
           <ul>
@@ -62,7 +62,7 @@ const CareersPage = () => (
           </ul>
         </div>
         <div className='benefits-card'>
-          <img src={clockIcon} alt="" />
+          <img src={clockIcon} alt="Clock" />
           <h4>Real Flexibility</h4>
           <p>Balance life and work:</p>
           <ul>

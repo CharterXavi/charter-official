@@ -2,14 +2,14 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import AboutStrip from '../components/about/about';
-import ServicesStrip from '../components/services/services';
+import ServicesStrip2 from '../components/services/services2';
 import VideoStrip from '../components/video/video';
 import TestimonialsStrip from '../components/testimonials/testimonials';
 import OurTeamStrip from '../components/our-team/our-team';
 import LocationsStrip from '../components/locations/locations';
 import DataStrip from '../components/data/data';
 import {graphql} from 'gatsby';
-import HeroStrip4 from "../components/hero/hero-4";
+import HeroStrip5 from "../components/hero/hero-5";
 import PostStrip from "../components/news/post-strip";
 import './index.css';
 
@@ -20,17 +20,19 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Home" />
-      <HeroStrip4 />
-      <AboutStrip />
-      <ServicesStrip />
-      <VideoStrip />
-      <TestimonialsStrip />
-      <DataStrip />
-      <div className='news'>
-        <PostStrip posts={recentPosts} title='The Latest' link='/news'/>
+      <div className='HomePage'>
+        <HeroStrip5 />
+        <AboutStrip />
+        <ServicesStrip2 />
+        <VideoStrip />
+        <DataStrip />
+        <TestimonialsStrip />
+        <div className='news'>
+          <PostStrip posts={recentPosts} title='The Latest' link='/news'/>
+        </div>
+        <OurTeamStrip />
+        <LocationsStrip svg={true} />
       </div>
-      <OurTeamStrip />
-      <LocationsStrip svg={true} />
     </Layout>
   )
 }

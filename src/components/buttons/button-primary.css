@@ -4,7 +4,7 @@
     color: white;
     /* Rose */
     background: linear-gradient(180deg, #F493AA 0%, #F05F7E 100%);
-    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.22);
+    box-shadow: var(--button-shadow);
     border-radius: 10px;
     min-width: 150px;
     width: auto;

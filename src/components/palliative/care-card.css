@@ -5,7 +5,7 @@
     box-sizing: border-box;
     padding: 32px;
     margin: 8px;
-    background: var(--light-clinic-blue);
+    background: white;
     position: relative;
     top: 0;
     z-index: 2;

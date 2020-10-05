@@ -3,10 +3,11 @@
     width: 100%;
     position: relative;
     top: 0;
-    background: linear-gradient(90deg, #F6F7FB 42.19%, #F493AA 61.98%);
+    z-index: 2;
+    background: var(--hero-gradient-white);
     display: flex;
     justify-content: center;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
+    box-shadow: var(--standard-shadow);
 }
 .Hero4 .hero-wrapper {
     display: flex;
@@ -14,7 +15,7 @@
     justify-content: center;
     width: 1440px;
     position: relative;
-    background: var(--light-clinic-blue);
+    background: white;
     overflow: hidden;
 }
 .Hero4 .hero-content h2 {
@@ -38,11 +39,13 @@
 }
 .Hero4 .icon-blast-wrapper {
     position: absolute;
-    right: 150px;
+    right: 100px;
+    width: 30%;
     z-index: 0;
 }
 .Hero4 .icon-blast {
-    width: 300px;
+    width: 100%;
+    opacity: 0.2;
 }
 .Hero4 .doctor-graphic {
     position: absolute;
@@ -52,7 +55,7 @@
 }
 .Hero4 .hero-content {
     box-sizing: border-box;
-    width: 320px;
+    width: 350px;
     height: auto;
     display: flex;
     flex-direction: column;

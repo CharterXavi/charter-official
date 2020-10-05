@@ -36,16 +36,16 @@ const BereavementPage = () => (
         <img src={flowersLeft} alt="Flowers" className='flowers-left' data-aos='fade-up' data-aos-duration='900' />
         <img src={flowersRight} alt="Flowers" className='flowers-right' data-aos='fade-up' data-aos-duration='1500' />
       </div>
-    <div className='intro resources'>
-        <img src={heartIcon} alt="Heart" data-aos='fade-up' data-aos-duration='900' />
-        <h2>Additional Resources</h2>
-        <p>Bereavement is a tough time, and it can be challenging to navigate your grief and sadness in a healthy way while still tending to your obligations in day-to-day life. To help make sure you’re experiencing the bereavement process in the healthiest way possible, we offer therapy and counselling. This allows you to have accountability in your bereavement experience, monitoring things like depression, anxiety, sadness, grief in your children, adolescents, or teens, grief during holidays, and much more. Keeping up with how you’re doing and being available to you every step of the way allows our Charter providers to guide you through your bereavement with your wellbeing at the center of it all. In short, we are always here for you.</p>
-        <ButtonPrimaryAlt content='Reach out to us' link='/contact' />
-        <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="535" viewBox="0 0 1440 535" fill="none" className='bereavement-svg'>
-            <path d="M0 533.377V140C0 140 48 103.5 149 85C250 66.5 308 20 455.5 20C603 20 612 0.5 715.5 0.5C819 0.5 817 20 959.5 20C1102 20 1231.5 84 1316.5 102.5C1401.5 121 1440 151 1440 151V533.377C1440 533.377 1297.27 537.029 1120.57 533.377C943.858 529.725 876.743 533.377 703.434 533.377C530.124 533.377 509.735 533.377 327.929 533.377C146.124 533.377 0 533.377 0 533.377Z" fill="#363F55"/>
-        </svg>
-    </div>
-      <TestimonialsStrip svg={true} />
+      <div className='intro resources'>
+          <img src={heartIcon} alt="Heart" data-aos='fade-up' data-aos-duration='900' />
+          <h2>Additional Resources</h2>
+          <p>Bereavement is a tough time, and it can be challenging to navigate your grief and sadness in a healthy way while still tending to your obligations in day-to-day life. To help make sure you’re experiencing the bereavement process in the healthiest way possible, we offer therapy and counselling. This allows you to have accountability in your bereavement experience, monitoring things like depression, anxiety, sadness, grief in your children, adolescents, or teens, grief during holidays, and much more. Keeping up with how you’re doing and being available to you every step of the way allows our Charter providers to guide you through your bereavement with your wellbeing at the center of it all. In short, we are always here for you.</p>
+          <ButtonPrimaryAlt content='Reach out to us' link='/contact' />
+          <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="535" viewBox="0 0 1440 535" fill="none" className='bereavement-svg'>
+              <path d="M0 533.377V140C0 140 48 103.5 149 85C250 66.5 308 20 455.5 20C603 20 612 0.5 715.5 0.5C819 0.5 817 20 959.5 20C1102 20 1231.5 84 1316.5 102.5C1401.5 121 1440 151 1440 151V533.377C1440 533.377 1297.27 537.029 1120.57 533.377C943.858 529.725 876.743 533.377 703.434 533.377C530.124 533.377 509.735 533.377 327.929 533.377C146.124 533.377 0 533.377 0 533.377Z" fill="#363F55"/>
+          </svg>
+      </div>
+      <TestimonialsStrip />
       <LocationsStrip svg={true} />
     </div>
   </Layout>

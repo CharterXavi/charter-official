@@ -45,10 +45,10 @@
     margin: 32px 0 32px 0;
 }
 .Footer .right h4 {
-    color: #f05f7e;
+    color: var(--primary-accent);
 }
 .Footer .right li {
-    color: #363f55;
+    color: var(--heading-color);
 }
 .Footer .right div ul {
     list-style: none;
@@ -79,7 +79,7 @@
 .Footer .bottom {
     width: 100%;
     height: 60px;
-    background: #363f55;
+    background: var(--heading-color);
     display: flex;
     justify-content: center;
     align-items: center;

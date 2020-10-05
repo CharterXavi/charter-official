@@ -3,16 +3,16 @@ import './hospice-services.css';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import HospiceCard from './hospice-card';
-import healthIcon from '../../images/iconography/health-icon.png';
-import groupIcon from '../../images/iconography/group.png';
-import homeIcon from '../../images/iconography/home.png';
-import crossIcon from '../../images/iconography/cross.png';
-import pillIcon from '../../images/iconography/pill.png';
-import medicationsIcon from '../../images/iconography/medication.png';
-import stethoscopeIcon from '../../images/iconography/stethoscope-icon.png';
-import flowerIcon from '../../images/iconography/flower.png';
-import heartIcon from '../../images/iconography/heart-icon.png';
-import phoneIcon from '../../images/iconography/phone.png';
+import healthIcon from '../../images/iconography/hospice/healthcare.png';
+import groupIcon from '../../images/iconography/hospice/social.png';
+import homeIcon from '../../images/iconography/hospice/home.png';
+import crossIcon from '../../images/iconography/hospice/cross.png';
+import pillIcon from '../../images/iconography/hospice/pill.png';
+import medicationsIcon from '../../images/iconography/hospice/bottle.png';
+import stethoscopeIcon from '../../images/iconography/hospice/stethoscope.png';
+import flowerIcon from '../../images/iconography/hospice/flower.png';
+import heartIcon from '../../images/iconography/hospice/heart.png';
+import phoneIcon from '../../images/iconography/hospice/phone.png';
 import ButtonPrimaryAlt from '../buttons/button-primary-alt';
 
 const HospiceServices = () => {
@@ -97,11 +97,6 @@ const HospiceServices = () => {
                     return <HospiceCard key={service.title} icon={service.icon} title={service.title} alt={service.alt} animationTime={service.animationTime}/>
                 })
             }
-        </div>
-        <div className='intro bereavement'>
-            <h2>Bereavement</h2>
-            <p>At Charter, we stand by our patients and their loved ones wherever possible. An especially important way to do that is through bereavement support and services. When grief and loss occur, life can get a lot harder and we want to make sure we’re helping you navigate it all.</p>
-            <ButtonPrimaryAlt content='Visit Bereavement Page' link='/services/bereavement' />
         </div>
     </div>
   );

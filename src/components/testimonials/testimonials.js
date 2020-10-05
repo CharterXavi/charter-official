@@ -1,10 +1,11 @@
-import React, {useState} from 'react'
-import './testimonials.css'
-import Quotes from './quotes'
-import Dot from '../testimonials/dot'
-import ButtonPrimaryAlt from '../buttons/button-primary-alt'
+import React, {useState} from 'react';
+import './testimonials.css';
+import Quotes from './quotes';
+import Dot from '../testimonials/dot';
+import ButtonPrimaryAlt from '../buttons/button-primary-alt';
+import notificationIcon from '../../images/iconography/testimonials/notification.png';
 import ArrowLeft from './arrow-left';
-import ArrowRight from './arrow-right'
+import ArrowRight from './arrow-right';
 
 const TestimonialsStrip = (props) => {
     const testimonialList = [
@@ -69,8 +70,9 @@ const TestimonialsStrip = (props) => {
   return (
     <div className='TestimonialsStrip'>
         <div className='left'> 
+            <img src={notificationIcon} alt="Social media like" />
             <h2>We're keeping our patients happy.</h2>
-            <p className='introduction-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus diam vitae ut et tincidunt quis sem est, ligula. Aliquam venenatis ut dapibus neque leo. Purus aliquet suscipit turpis volutpat nisl porta elit diam. Et nunc nunc neque aliquet ultricies risus.</p>
+            <p className='introduction-text'>Feedback from our patients and their loved ones not only motivates us to keep working hard, but it also speaks volumes about our successes. See for yourself what others have to say about Charter!</p>
             <ButtonPrimaryAlt content='Read more' link='/about/testimonials' animation='fade-up' animationTime='1000' />
         </div>
         <div className='right'>
@@ -98,9 +100,9 @@ const TestimonialsStrip = (props) => {
             </div>
         </div>
         {
-            props.svg ? <svg className='quote-wave-one' xmlns="http://www.w3.org/2000/svg" width="1440" height="428" viewBox="0 0 1440 428" fill="none">
+            props.svg && <svg className='quote-wave-one' xmlns="http://www.w3.org/2000/svg" width="1440" height="428" viewBox="0 0 1440 428" fill="none">
             <g filter="url(#filter12_d)">
-            <path d="M-2 395C-2 395 257 134.5 729.5 241C1202 347.5 1438 15 1438 15C1438 99.2057 1438 338.294 1438 422.5H688.5H-2V395Z" fill="url(#paint12_linear)"/>
+            <path d="M-2 395C-2 395 257 134.5 729.5 241C1202 347.5 1438 15 1438 15C1438 99.2057 1438 338.294 1438 422.5H688.5H-2V395Z" fill="#f6f7fb"/>
             </g>
             <defs>
             <filter id="filter12_d" x="-7" y="0" width="1460" height="427.5" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
@@ -112,14 +114,8 @@ const TestimonialsStrip = (props) => {
             <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
             <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
             </filter>
-            <linearGradient id="paint12_linear" x1="-2" y1="422.5" x2="1438" y2="422.5" gradientUnits="userSpaceOnUse">
-            <stop stopColor="#F493AA"/>
-            <stop offset="1" stopColor="#F2D1C9"/>
-            </linearGradient>
             </defs>
             </svg> 
-            :
-            ''
         } 
     </div>
   )

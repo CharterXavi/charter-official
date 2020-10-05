@@ -35,7 +35,7 @@ const PalliativeCarePage = () => (
         </div>
       </div>
       <CareApproach />
-      <TestimonialsStrip svg={true} />
+      <TestimonialsStrip />
       <LocationsStrip svg={true} />
     </div>
   </Layout>

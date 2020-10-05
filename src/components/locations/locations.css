@@ -16,13 +16,13 @@
     box-sizing: border-box;
     min-height: 625px;
     border-radius: 10px;
-    background: rgba(250,250,250,0.95);
+    background: white;
     padding: 16px 32px;
     position: relative;
     top: 0;
     z-index: 4;
     margin: 16px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
+    box-shadow: var(--standard-shadow);
     color: #363f55;
 }
 .LocationsStrip .left h2 {
@@ -32,8 +32,7 @@
 .LocationsStrip .left h5 {
     padding: 8px 0 4px 0;
 }
-.LocationsStrip .left img{
-    width: 50px;
+.LocationsStrip .left .icon{
     margin: 0 0 0 0;
     padding: 16px 0 0 0;
 }
@@ -41,7 +40,7 @@
     width: 30%;
     height: 625px;
     border-radius: 10px;
-    background: rgba(100,100,100,0.95);
+    background: white;
     position: relative;
     top: 0;
     z-index: 4;

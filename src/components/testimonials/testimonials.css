@@ -9,7 +9,7 @@
     z-index: 1;
     box-sizing: border-box;
     color: var(--heading-color);
-    background: white;
+    background: var(--light-clinic-blue);
 }
 .TestimonialsStrip h2 {
     width: auto;
@@ -24,6 +24,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    z-index: 2;
 }
 
 .TestimonialsStrip .right {
@@ -37,7 +38,7 @@
 
 .TestimonialsStrip .right .quote-container {
     border-radius: 10px;
-    background: #F6F7FB;
+    background: white;
     box-sizing: border-box;
     padding: 32px;
     width: 500px;
@@ -84,12 +85,14 @@
         height: 350px;
     }
 }
-@media only screen and (max-width: 975px) {
+@media only screen and (max-width: 1000px) {
     .TestimonialsStrip {
         flex-direction: column-reverse;
+        padding: 64px 0;
     }
     .TestimonialsStrip .right {
         flex-direction: column;
+        width: 100%;
     }
     .TestimonialsStrip .right {
         align-items: center;
@@ -119,16 +122,20 @@
         margin: 0 8px 0 8px;
     }
     .TestimonialsStrip .quote-wave-one {
+        width: 100vw;
+        height: auto;
+        position: absolute;
         bottom: 0;
+        z-index: 1;
     }
 }
 @media only screen and (max-width: 660px) {
     .TestimonialsStrip {
-        padding: 16px 16px 64px 16px;
+        padding: 64px 16px;
     }
     .TestimonialsStrip .right {
         width: 100%;    
-        padding: 16px;
+        padding: 0;
     }
     .TestimonialsStrip .left {
         width: 100%;
