@@ -21,9 +21,7 @@
     width: 400px;
     height: auto;
     padding: 32px;
-    background: white;
     border-radius: 10px;
-    box-shadow: var(--standard-shadow);
     margin: 16px;
 }
 .AboutCharter .about-card-wrapper .about-card img {
