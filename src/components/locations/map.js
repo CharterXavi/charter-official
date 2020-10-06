@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import GoogleMapReact from 'google-map-react';
 import Marker from './marker';
  
@@ -97,13 +97,17 @@ const Map = (props) => {
 
 
     //Code for map functionality
-    const defaultBusinesses = [];
-
-    props.locations.cities.map(city => {
-        return city.locations.map(business => {
-            return defaultBusinesses.push(business);
-        })
-    })
+    const businesses = [];
+    //Loop through the layers of the locations prop and push business info to the businesses array
+    props.locations.map(state => {
+        if (state) {
+            return state.cities.map(city => {
+                city.locations.map(business => {
+                    return businesses.push(business);
+                });
+            });
+        };
+    });
 
   return (
     // Important! Always set the container height explicitly
@@ -117,11 +121,14 @@ const Map = (props) => {
         }}
       >
         {
-            defaultBusinesses.map(business => {
+            businesses.map(business => {
                 return <Marker
                   {...business.coordinates}
                   name={business.name}
+                  link={business.link}
                   color="#f05f7e"
+                  isHovered={props.isHovered}
+                  key={business.name}
                 />
             })
         }

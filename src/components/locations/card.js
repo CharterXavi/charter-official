@@ -27,6 +27,7 @@ const Card = (props) => {
             <Expander
                 isExpanded={props.isExpanded}
                 cities={props.cities}
+                hoverReveal={props.hoverReveal}
             />
         </div>
     );
