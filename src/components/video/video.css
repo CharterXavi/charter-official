@@ -1,6 +1,6 @@
 .VideoStrip {
     width: 100vw;
-    min-height: 700px;
+    height: 100vh;
     background: var(--heading-color);
     display: flex;
     flex-direction: column;
