@@ -12,13 +12,13 @@
     align-items: flex-start;
     justify-content: center;
 }
-.Expander p {
+.Expander a {
     padding: 4px 8px 4px 8px;
     width: auto;
     border-radius: 10px;
     box-sizing: border-box;
 }
-.Expander p:hover {
+.Expander a:hover {
     background: var(--heading-color);
     color: white;
     cursor: pointer;
