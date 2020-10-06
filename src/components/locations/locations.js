@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import './locations.css';
 import pinIcon from '../../images/iconography/locations/pin.png';
 import Card from './card';
@@ -18,7 +18,8 @@ const LocationsStrip = (props) => {
                       locations: [
                         {
                             name: 'Arizona Hospice Select',
-                            address: '1232 E. Broadway St. Suite 210, Tempe, AZ 85282'
+                            address: '1232 E. Broadway St. Suite 210, Tempe, AZ 85282',
+                            coordinates: { lat: 33.408025, lng: -111.919244 }
                         }
                       ]
                     },
@@ -27,7 +28,8 @@ const LocationsStrip = (props) => {
                       locations: [
                         {
                             name: 'Amber Hospice',
-                            address: '6400 E. Grant Rd., Suite 150 Tuscon, AZ 85715'
+                            address: '6400 E. Grant Rd., Suite 150 Tuscon, AZ 85715',
+                            coordinates: { lat: 32.24938, lng: -110.855152 }
                         }
                       ]
                     }
@@ -44,7 +46,8 @@ const LocationsStrip = (props) => {
                         locations: [
                             {
                                 name: 'Charter High Desert Health Care Group',
-                                address: '19015 Town Center Dr. Suite 104, Apple Valley, CA 92308'
+                                address: '19015 Town Center Dr. Suite 104, Apple Valley, CA 92308',
+                                coordinates: { lat: 34.465386, lng: -117.248551 }
                             }
                         ]
                     },
@@ -53,7 +56,8 @@ const LocationsStrip = (props) => {
                         locations: [
                             {
                                 name: 'Charter Hospice of Colton',
-                                address: '1007 E. Cooley Dr. Suite 100 Colton, CA 92324-3901'
+                                address: '1007 E. Cooley Dr. Suite 100 Colton, CA 92324-3901',
+                                coordinates: { lat: 34.05547, lng: -117.310526 }
                             }
                         ]
                     },
@@ -62,11 +66,13 @@ const LocationsStrip = (props) => {
                         locations: [
                             {
                                 name: 'Charter Home Health',
-                                address: '970 S. Village Oaks Dr. Suite 102, Covina, CA 91724'
+                                address: '970 S. Village Oaks Dr. Suite 102, Covina, CA 91724',
+                                coordinates: { lat: 34.071759, lng: -117.862599 }
                             },
                             {
                                 name: 'Charter Hospice of the San Gabriel Valley',
-                                address: '970 S. Village Oaks Dr. Suite 106, Covina, CA 91724'
+                                address: '970 S. Village Oaks Dr. Suite 106, Covina, CA 91724',
+                                coordinates: { lat: 34.071759, lng: -117.862599 }
                             }
                         ]
                     },
@@ -75,11 +81,13 @@ const LocationsStrip = (props) => {
                         locations: [
                             {
                                 name: 'Charter Home Health of the Desert',
-                                address: '72855 Fred Waring Dr. Suite A4, Palm Desert, CA 92260'
+                                address: '72855 Fred Waring Dr. Suite A4, Palm Desert, CA 92260',
+                                coordinates: { lat: 33.728698, lng: -116.394019 }
                             },
                             {
                                 name: 'Charter Hospice of the Desert',
-                                address: '72855 Fred Waring Dr. Suite A5, Palm Desert, CA 92260'
+                                address: '72855 Fred Waring Dr. Suite A5, Palm Desert, CA 92260',
+                                coordinates: { lat: 33.728114, lng: -116.394997 }
                             }
                         ]
                     },
@@ -88,7 +96,8 @@ const LocationsStrip = (props) => {
                         locations: [
                             {
                                 name: 'Cambridge Hospice',
-                                address: '9229 Utica Ave. Suite 100, Rancho Cucamonga, CA 91730'
+                                address: '9229 Utica Ave. Suite 100, Rancho Cucamonga, CA 91730',
+                                coordinates: { lat: 34.085486, lng: -117.57063 }
                             }
                         ]
                     },
@@ -97,7 +106,8 @@ const LocationsStrip = (props) => {
                         locations: [
                             {
                                 name: 'Cambridge Hospice of Riverside',
-                                address: '6560 Van Buren Blvd. Suite G, Riverside, CA 92503-1542'
+                                address: '6560 Van Buren Blvd. Suite G, Riverside, CA 92503-1542',
+                                coordinates: { lat: 33.949954, lng: -117.454308 }
                             }
                         ]
                     },
@@ -106,7 +116,8 @@ const LocationsStrip = (props) => {
                         locations: [
                             {
                                 name: 'Charter Hospice of San Diego',
-                                address: '16955 Via Del Campo Suite 100, San Diego, CA 92127-1719'
+                                address: '16955 Via Del Campo Suite 100, San Diego, CA 92127-1719',
+                                coordinates: { lat: 33.019872, lng: -117.092233 }
                             }
                         ]
                     },
@@ -115,7 +126,8 @@ const LocationsStrip = (props) => {
                         locations: [
                             {
                                 name: 'Charter Hospice',
-                                address: '5775 E Los Angeles Ave. Suite 226, Simi Valley, CA 93063-5215'
+                                address: '5775 E Los Angeles Ave. Suite 226, Simi Valley, CA 93063-5215',
+                                coordinates: { lat: 34.272140, lng: -118.679840 }
                             }
                         ]
                     },
@@ -124,7 +136,8 @@ const LocationsStrip = (props) => {
                         locations: [
                             {
                                 name: 'Cambridge Hospice of Orange County',
-                                address: '12235 Beach Blvd. Suite 200-B, Stanton, CA 90680-3939'
+                                address: '12235 Beach Blvd. Suite 200-B, Stanton, CA 90680-3939',
+                                coordinates: { lat: 33.784430, lng: -117.993590 }
                             }
                         ]
                     }
@@ -141,7 +154,8 @@ const LocationsStrip = (props) => {
                       locations: [
                           {
                               name: 'Vitality Home Healthcare',
-                              address: '1562 Taurus Ct., Loveland, CO 80537'
+                              address: '1562 Taurus Ct., Loveland, CO 80537',
+                              coordinates: { lat: 40.401090, lng: -105.054930 }
                           }
                       ]
                     }
@@ -158,7 +172,8 @@ const LocationsStrip = (props) => {
                       locations: [
                           {
                               name: 'Charter Healthcare of Las Vegas',
-                              address: '801 S. Rancho Drive Suite 6, Las Vegas, NV 89106-3812'
+                              address: '801 S. Rancho Drive Suite 6, Las Vegas, NV 89106-3812',
+                              coordinates: { lat: 36.161930, lng: -115.171330 }
                           }
                       ]
                     }
@@ -175,7 +190,8 @@ const LocationsStrip = (props) => {
                       locations: [
                           {
                               name: 'Heartwood Home Health & Hospice',
-                              address: '6671 S. Redwood Rd. Suite 101, West Jordan, UT 84084'
+                              address: '6671 S. Redwood Rd. Suite 101, West Jordan, UT 84084',
+                              coordinates: { lat: 40.630240, lng: -111.938240 }
                           }
                       ]
                     }
@@ -207,6 +223,19 @@ const LocationsStrip = (props) => {
         setLocationsList(newList);
     }
 
+    //Whichever state has been clicked on is the active Location to be sent to the map for rendering pins
+    const [ activeLocation, setActiveLocation ] = useState(locationsList[1]);
+    const updatePins = () => {
+        locationsList.map(location => {
+            if (location.isExpanded === true) {
+                setActiveLocation(location);
+            } 
+        })
+        console.log('LOCATION: ', activeLocation);
+    }
+    useEffect(() => {
+        updatePins();
+    })
 
   return (
     <div className='LocationsStrip'>
@@ -262,12 +291,13 @@ const LocationsStrip = (props) => {
                         expandCard={expandCard} 
                         animationTime={state.animationTime}
                         key={state.state}
+                        updatePins={updatePins}
                     />
                 })}
             </div>
         </div>
         <div className='right'>
-            <Map />
+            <Map locations={activeLocation} />
         </div> 
     </div>
   )

@@ -1,0 +1,21 @@
+.Marker {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    transform: translate(-50%, -50%);
+}
+.Marker img {
+    height: 100%;
+    width: auto;
+}
+.Marker p {
+    font-size: 12px;
+    width: 100%;
+}
+.Marker:hover {
+    z-index: 1;
+    cursor: pointer;
+}
