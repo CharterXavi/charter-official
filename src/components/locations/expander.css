@@ -13,10 +13,9 @@
     justify-content: center;
 }
 .Expander p {
-    padding: 0 0 0 0;
+    padding: 4px 0 4px 0;
 }
 .expanded-card {
-    height: 110px;
     margin: 8px 0 0 0;
     background: white;
     color: var(--heading-color);

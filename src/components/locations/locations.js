@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import './locations.css';
 import pinIcon from '../../images/iconography/locations/pin.png';
 import Card from './card';
@@ -18,7 +18,9 @@ const LocationsStrip = (props) => {
                       locations: [
                         {
                             name: 'Arizona Hospice Select',
-                            address: '1232 E. Broadway St. Suite 210, Tempe, AZ 85282'
+                            address: '1232 E. Broadway St. Suite 210, Tempe, AZ 85282',
+                            coordinates: { lat: 33.408025, lng: -111.919244 },
+                            link: 'https://goo.gl/maps/TnXuzuwG1Ec5TuWk6'
                         }
                       ]
                     },
@@ -27,7 +29,9 @@ const LocationsStrip = (props) => {
                       locations: [
                         {
                             name: 'Amber Hospice',
-                            address: '6400 E. Grant Rd., Suite 150 Tuscon, AZ 85715'
+                            address: '6400 E. Grant Rd., Suite 150 Tuscon, AZ 85715',
+                            coordinates: { lat: 32.24938, lng: -110.855152 },
+                            link: 'https://goo.gl/maps/bPJTJV3wBqTp2c8y7'
                         }
                       ]
                     }
@@ -44,7 +48,9 @@ const LocationsStrip = (props) => {
                         locations: [
                             {
                                 name: 'Charter High Desert Health Care Group',
-                                address: '19015 Town Center Dr. Suite 104, Apple Valley, CA 92308'
+                                address: '19015 Town Center Dr. Suite 104, Apple Valley, CA 92308',
+                                coordinates: { lat: 34.465386, lng: -117.248551 },
+                                link: 'https://goo.gl/maps/ubdJLu7KBqoLm27t9'
                             }
                         ]
                     },
@@ -53,7 +59,9 @@ const LocationsStrip = (props) => {
                         locations: [
                             {
                                 name: 'Charter Hospice of Colton',
-                                address: '1007 E. Cooley Dr. Suite 100 Colton, CA 92324-3901'
+                                address: '1007 E. Cooley Dr. Suite 100 Colton, CA 92324-3901',
+                                coordinates: { lat: 34.05547, lng: -117.310526 },
+                                link: 'https://goo.gl/maps/7pNfrqqzGiZFG5PK6'
                             }
                         ]
                     },
@@ -62,11 +70,15 @@ const LocationsStrip = (props) => {
                         locations: [
                             {
                                 name: 'Charter Home Health',
-                                address: '970 S. Village Oaks Dr. Suite 102, Covina, CA 91724'
+                                address: '970 S. Village Oaks Dr. Suite 102, Covina, CA 91724',
+                                coordinates: { lat: 34.071759, lng: -117.862599 },
+                                link: 'https://goo.gl/maps/pgsmZruf97YpLHWM7'
                             },
                             {
                                 name: 'Charter Hospice of the San Gabriel Valley',
-                                address: '970 S. Village Oaks Dr. Suite 106, Covina, CA 91724'
+                                address: '970 S. Village Oaks Dr. Suite 106, Covina, CA 91724',
+                                coordinates: { lat: 34.071759, lng: -117.862599 },
+                                link: 'https://goo.gl/maps/xXV8aS71NNM8oKP8A'
                             }
                         ]
                     },
@@ -75,11 +87,15 @@ const LocationsStrip = (props) => {
                         locations: [
                             {
                                 name: 'Charter Home Health of the Desert',
-                                address: '72855 Fred Waring Dr. Suite A4, Palm Desert, CA 92260'
+                                address: '72855 Fred Waring Dr. Suite A4, Palm Desert, CA 92260',
+                                coordinates: { lat: 33.728698, lng: -116.394019 },
+                                link: 'https://goo.gl/maps/J6c31pFG1oehbkCf6'
                             },
                             {
                                 name: 'Charter Hospice of the Desert',
-                                address: '72855 Fred Waring Dr. Suite A5, Palm Desert, CA 92260'
+                                address: '72855 Fred Waring Dr. Suite A5, Palm Desert, CA 92260',
+                                coordinates: { lat: 33.728114, lng: -116.394997 },
+                                link: 'https://goo.gl/maps/3jKQiq6x6XzjokTX7'
                             }
                         ]
                     },
@@ -88,7 +104,9 @@ const LocationsStrip = (props) => {
                         locations: [
                             {
                                 name: 'Cambridge Hospice',
-                                address: '9229 Utica Ave. Suite 100, Rancho Cucamonga, CA 91730'
+                                address: '9229 Utica Ave. Suite 100, Rancho Cucamonga, CA 91730',
+                                coordinates: { lat: 34.085486, lng: -117.57063 },
+                                link: 'https://goo.gl/maps/dteVihQGcRe4RYsA9'
                             }
                         ]
                     },
@@ -97,7 +115,9 @@ const LocationsStrip = (props) => {
                         locations: [
                             {
                                 name: 'Cambridge Hospice of Riverside',
-                                address: '6560 Van Buren Blvd. Suite G, Riverside, CA 92503-1542'
+                                address: '6560 Van Buren Blvd. Suite G, Riverside, CA 92503-1542',
+                                coordinates: { lat: 33.949954, lng: -117.454308 },
+                                link: 'https://goo.gl/maps/qrBbH7kDsYASQJMj8'
                             }
                         ]
                     },
@@ -106,7 +126,9 @@ const LocationsStrip = (props) => {
                         locations: [
                             {
                                 name: 'Charter Hospice of San Diego',
-                                address: '16955 Via Del Campo Suite 100, San Diego, CA 92127-1719'
+                                address: '16955 Via Del Campo Suite 100, San Diego, CA 92127-1719',
+                                coordinates: { lat: 33.019872, lng: -117.092233 },
+                                link: 'https://goo.gl/maps/V3rCjhb33ruM5m2S8'
                             }
                         ]
                     },
@@ -115,7 +137,9 @@ const LocationsStrip = (props) => {
                         locations: [
                             {
                                 name: 'Charter Hospice',
-                                address: '5775 E Los Angeles Ave. Suite 226, Simi Valley, CA 93063-5215'
+                                address: '5775 E Los Angeles Ave. Suite 226, Simi Valley, CA 93063-5215',
+                                coordinates: { lat: 34.272140, lng: -118.679840 },
+                                link: 'https://goo.gl/maps/pnM4ynGSvZMVSXAt9'
                             }
                         ]
                     },
@@ -124,7 +148,9 @@ const LocationsStrip = (props) => {
                         locations: [
                             {
                                 name: 'Cambridge Hospice of Orange County',
-                                address: '12235 Beach Blvd. Suite 200-B, Stanton, CA 90680-3939'
+                                address: '12235 Beach Blvd. Suite 200-B, Stanton, CA 90680-3939',
+                                coordinates: { lat: 33.784430, lng: -117.993590 },
+                                link: 'https://goo.gl/maps/TNcvBzkHQBNwSS4QA'
                             }
                         ]
                     }
@@ -141,7 +167,9 @@ const LocationsStrip = (props) => {
                       locations: [
                           {
                               name: 'Vitality Home Healthcare',
-                              address: '1562 Taurus Ct., Loveland, CO 80537'
+                              address: '1562 Taurus Ct., Loveland, CO 80537',
+                              coordinates: { lat: 40.401090, lng: -105.054930 },
+                              link: 'https://goo.gl/maps/EpZx2fVo8BXpkg1r8'
                           }
                       ]
                     }
@@ -158,7 +186,9 @@ const LocationsStrip = (props) => {
                       locations: [
                           {
                               name: 'Charter Healthcare of Las Vegas',
-                              address: '801 S. Rancho Drive Suite 6, Las Vegas, NV 89106-3812'
+                              address: '801 S. Rancho Drive Suite 6, Las Vegas, NV 89106-3812',
+                              coordinates: { lat: 36.161930, lng: -115.171330 },
+                              link: 'https://goo.gl/maps/WNZZRBXpuP2fSPKdA'
                           }
                       ]
                     }
@@ -175,7 +205,9 @@ const LocationsStrip = (props) => {
                       locations: [
                           {
                               name: 'Heartwood Home Health & Hospice',
-                              address: '6671 S. Redwood Rd. Suite 101, West Jordan, UT 84084'
+                              address: '6671 S. Redwood Rd. Suite 101, West Jordan, UT 84084',
+                              coordinates: { lat: 40.630240, lng: -111.938240 },
+                              link: 'https://goo.gl/maps/y3aa8qjHYBQMzV83A'
                           }
                       ]
                     }
@@ -205,6 +237,42 @@ const LocationsStrip = (props) => {
         });
         //use setState method to update state
         setLocationsList(newList);
+    }
+
+    //Whichever state has been clicked on is the active Location to be sent to the map for rendering pins
+    const [ activeLocations, setActiveLocations ] = useState(locationsList);
+    const updatePins = () => {
+         //create a new list from old list, but update whichever child was clicked on
+         const newList = locationsList.map((location) => {
+            if(location.isExpanded === true) {
+                const newLocation = location;
+                //must return so .map can enter it into new array list
+                return newLocation;
+            };
+            //for any items not expanded, return false so the map component knows not to render
+            return false;
+        });
+        //update list of active pins
+        setActiveLocations(newList);
+    }
+    useEffect(() => {
+        updatePins();
+    }, locationsList)
+
+    //Marker Hover functionality
+    const [ isHovered, setIsHovered ] = useState('');
+    const hoverReveal = (id) => {
+
+        locationsList.map(location => {
+            location.cities.map(city => {
+                city.locations.map(business => {
+                    if(business.name === id) {
+                        setIsHovered(business.name);
+                        console.log('IS HOVERED STATE: ', isHovered)
+                    }
+                })
+            })
+        })
     }
 
 
@@ -258,19 +326,22 @@ const LocationsStrip = (props) => {
                         id={state.state}
                         cities={state.cities}
                         isClicked={state.isClicked} 
-                        isExpanded={state.isExpanded} 
-                        expandCard={expandCard} 
+                        isExpanded={state.isExpanded}
                         animationTime={state.animationTime}
                         key={state.state}
+
+                        expandCard={expandCard} 
+                        updatePins={updatePins}
+                        hoverReveal={hoverReveal}
                     />
                 })}
             </div>
         </div>
         <div className='right'>
-            <Map />
+            <Map locations={activeLocations} isHovered={isHovered} />
         </div> 
     </div>
   )
 }
 
-export default LocationsStrip
+export default LocationsStrip;

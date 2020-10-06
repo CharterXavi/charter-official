@@ -15,6 +15,7 @@ const Card = (props) => {
     const handleClick = () => {
         //calls method passed as prop to update state and rerender
         props.expandCard(props.id);
+        props.updatePins();
     }
 
     return (
@@ -26,6 +27,7 @@ const Card = (props) => {
             <Expander
                 isExpanded={props.isExpanded}
                 cities={props.cities}
+                hoverReveal={props.hoverReveal}
             />
         </div>
     );

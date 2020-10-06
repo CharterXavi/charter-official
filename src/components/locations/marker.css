@@ -1,0 +1,45 @@
+.Marker {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 35px;
+    border-radius: 100%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.4s ease all;
+}
+.Marker a {
+    height: 100%;
+    width: auto;
+}
+.Marker a img {
+    height: 100%;
+    width: auto;
+}
+.Marker p {
+    font-size: 11px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: none;
+    position: absolute;
+    top: -45px;
+    background: var(--heading-color);
+    border-radius: 10px;
+    padding: 4px;
+    color: white;
+    font-weight: bold;
+}
+.Marker .active-hover {
+    display: block;
+}
+.Marker:hover p {
+    display: block;
+}
+.Marker:hover {
+    z-index: 1;
+    cursor: pointer;
+}
