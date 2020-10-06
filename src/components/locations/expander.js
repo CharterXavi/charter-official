@@ -4,7 +4,7 @@ import './expander.css'
 
 const Expander = (props) => {
   //calculate the height based on the amount of items in the list
-  const heightFactor = (props.cities.length * 30).toString().concat('px');
+  const heightFactor = (props.cities.length * 40).toString().concat('px');
   const handleHover = (id) => {
     props.hoverReveal(id);
   }
@@ -20,7 +20,7 @@ const Expander = (props) => {
     return (
         <div className={`Expander ${props.isExpanded ? 'expanded-card' : ''}`} style={{height: `${props.isExpanded ? heightFactor : '0px'}`}}>
           {businesses.map(business => {
-            return <p onMouseOver={() => {handleHover(business.name)}} id={business.name} >{business.name}</p>
+            return <a href={business.link} target='_blank' rel='noopener noreferrer' onMouseOver={() => {handleHover(business.name)}}>{business.name}</a>
           })}
         </div>
     );

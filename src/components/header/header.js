@@ -111,7 +111,7 @@ const Header = () => {
         ]
       }
     ]
-)
+  )
   //onClick function that will update this components state
   const handleHamburgerClick = () => {
     setHamburgerClicked(!isHamburgerClicked);
