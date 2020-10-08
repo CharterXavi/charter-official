@@ -7,7 +7,7 @@
     height: auto;
     background-color: #F6F7FB; 
     color: var(--heading-color);
-    padding: 32px 16px;
+    padding: 32px 16px 64px 16px;
     box-sizing: border-box;
 }
 .ServicesStrip2 h2 {

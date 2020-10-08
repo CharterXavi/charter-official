@@ -19,10 +19,7 @@ const TestimonialsPage = () => (
           <p>We work hard, day and night, to ensure the highest quality care and the greatest satisfaction for each and every one of our patients. In doing so, nothing motivates us to keep working diligently more than the kind feedback and gratitude from our patients, their famililes, and their loved ones.</p>
           <p>We’re excited to be able to share that joy with you - see for yourself what people have to say about Charter!</p>
         </div>
-        <hr/>
         <QuoteMosaic />
-        <h2>Our Partners</h2>
-        <Partners />
         <LocationsStrip svg={true}/>
     </div>
   </Layout>

@@ -34,8 +34,7 @@ const CareersPage = () => (
     </div>
     <div className='intro benefits'>
       <h2>We take care of our own</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi commodo pharetra, morbi pellentesque. Duis semper tellus velit, aliquam non. Blandit proin nulla erat lorem blandit mauris molestie pellentesque gravida. Interdum eget leo sem sed massa etiam congue.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod ipsum, semper erat eget phasellus fermentum a egestas. Arcu tincidunt neque in ac.</p>
+      <p>Here at Charter, we know that empowering our employees with competitive pay, benefits, and flexibility helps the company thrive. A healthy and happy company is formed by healthy, happy individuals, and we do our best to foster that kind of environment.</p>
       <div className='benefits-wrapper'>
         <div className='benefits-card'>
           <img src={healthIcon} alt="Healthcare" />
@@ -78,8 +77,7 @@ const CareersPage = () => (
     </div>
     <div className='intro join-us'>
       <h2>Join us!</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi commodo pharetra, morbi pellentesque. Duis semper tellus velit, aliquam non. Blandit proin nulla erat lorem blandit mauris molestie pellentesque gravida. Interdum eget leo sem sed massa etiam congue.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod ipsum, semper erat eget phasellus fermentum a egestas. Arcu tincidunt neque in ac.</p>
+      <p>Interested in joining the Charter family? As a fast-growing company we're always looking for the latest and greatest talent. Check out our current job listings and submit your application today.</p>
       <ButtonPrimaryAlt link='https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=ffc1c116-da32-4d3c-8e03-c4a1e22c100a&ccId=19000101_000001&type=MP&lang=en_US' content='See job openings' />
     </div>
     <OurTeamStrip />

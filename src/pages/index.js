@@ -9,7 +9,7 @@ import OurTeamStrip from '../components/our-team/our-team';
 import LocationsStrip from '../components/locations/locations';
 import DataStrip from '../components/data/data';
 import {graphql} from 'gatsby';
-import HeroStrip5 from "../components/hero/hero-5";
+import HeroStrip6 from "../components/hero/hero6";
 import PostStrip from "../components/news/post-strip";
 import './index.css';
 
@@ -21,7 +21,7 @@ const IndexPage = ({ data }) => {
     <Layout>
       <SEO title="Home" />
       <div className='HomePage'>
-        <HeroStrip5 />
+        <HeroStrip6 />
         <AboutStrip />
         <ServicesStrip2 />
         <VideoStrip />

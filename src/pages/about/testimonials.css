@@ -3,10 +3,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    background: var(--light-clinic-blue);
 }
-.TestimonialsPage hr {
-    width: 70%;
-    border: 1px solid #f0f0f0;
+.TestimonialsPage .HeaderStrip {
+    z-index: 2;
 }
 .TestimonialsPage h2 {
     width: auto;

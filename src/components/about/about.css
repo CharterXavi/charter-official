@@ -1,12 +1,12 @@
 .AboutStrip {
     height: auto;
-    background: white;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     position: relative;
     z-index: 1;
+    background: var(--light-clinic-blue);
 }
 .AboutStrip h2 {
     color: var(--primary-accent);

@@ -26,7 +26,7 @@ const ServicesStrip2 = () => {
                 <img src={medkitIcon} alt="Heart symbol" className='icon' />
                 <h3>Private Duty</h3>
                 <p>Hospice is a special way of caring for people who have a life limiting illness.</p>
-                <ButtonPrimaryAlt content='Read more' alt='Go to Hospice Page' link='/services' />
+                <ButtonPrimaryAlt content='Read more' alt='Go to Hospice Page' link='/services/private-duty' />
             </div>
             <div className='card' data-aos='fade-up' data-aos-duration='1000' >
                 <img src={homeIcon} alt="House symbol" className='icon' />
@@ -44,7 +44,7 @@ const ServicesStrip2 = () => {
                 <img src={ccmIcon} alt="Stehoscope symbol" className='icon' />
                 <h3>Complex Care Management</h3>
                 <p>H.A.R.P. is our comprehensive plan to make sure we keep you out of the hospital.</p>
-                <ButtonPrimaryAlt content='Read more' alt='Go to HARP Page' link='/services' />
+                <ButtonPrimaryAlt content='Read more' alt='Go to HARP Page' link='/services/ccm' />
             </div>
             <div className='card' data-aos='fade-up' data-aos-duration='1200' >
                 <img src={heartIcon} alt="Heart symbol" className='icon' />
@@ -56,7 +56,7 @@ const ServicesStrip2 = () => {
                 <img src={hospitalIcon} alt="Stehoscope symbol" className='icon' />
                 <h3>Acute / Hopsital-Based Care</h3>
                 <p>H.A.R.P. is our comprehensive plan to make sure we keep you out of the hospital.</p>
-                <ButtonPrimaryAlt content='Read more' alt='Go to HARP Page' link='/services' />
+                <ButtonPrimaryAlt content='Read more' alt='Go to HARP Page' link='/services/acute-care' />
             </div>
         </div>
     </div>
