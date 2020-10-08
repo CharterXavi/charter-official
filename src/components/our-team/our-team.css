@@ -8,8 +8,9 @@
     position: relative;
     top: 0;
     background: var(--light-clinic-blue);
-    padding: 64px 0 0 0;
+    padding: 64px 16px 16px 16px;
     z-index: 1;
+    box-sizing: border-box;
 }
 .OurTeamStrip h2 {
     text-align: center;
@@ -20,14 +21,14 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 32px;
+    padding: 32px 0;
     position: relative;
     top: 0;
     z-index: 2;
     background: white;
     box-shadow: var(--standard-shadow);
     border-radius: 10px;
-    width: 80%;
+    max-width: 1400px;
     height: 80%;
 }
 .OurTeamStrip .card-container .card {
@@ -101,9 +102,9 @@
     .OurTeamStrip .card-container .card img {
         margin: 0 16px 0 0;
     }
-    .OurTeamStrip .card-container .card .card-info {
+    /* .OurTeamStrip .card-container .card .card-info {
         width: 30%;
-    }
+    } */
 }
 @media only screen and (max-width: 900px) {
     .OurTeamStrip {
@@ -114,6 +115,10 @@
         flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
+        padding: 32px;
+        max-width: 100%;
+        width: 84%;
+        box-sizing: border-box;
     }
     .OurTeamStrip .card-container .card {
         width: 100%;
@@ -140,15 +145,26 @@
         bottom: -50px;
     }
 }
+@media only screen and (max-width: 600px) {
+    .OurTeamStrip .card-container {
+        width: 100%;
+    }
+    .OurTeamStrip h2 {
+        text-align: left;
+    }
+}
 @media only screen and (max-width: 500px) {
     .OurTeamStrip {
         height: auto;
+        padding: 16px;
     }
     .OurTeamStrip .card-container {
         flex-direction: column;
         flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
     }
     .OurTeamStrip .card-container .card {
         width: 90%;
@@ -158,12 +174,13 @@
         width: 100px;
     }
     .OurTeamStrip .card-container .card .card-info {
-        width: 50%;
+        width: 100%;
     }
-    .OurTeamStrip .card-container {
-        width: 90%;
-        margin: 0 0 0 0;
-        padding: 0 0 0 0;
+    .OurTeamStrip .card-container .card .card-info h4 {
+        width: 100%;
+    }
+    .OurTeamStrip .card-container .card .card-info p {
+        width: 100%;
     }
     .team-wave-mobile-one {
         display: none;
