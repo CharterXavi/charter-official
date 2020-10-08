@@ -7,13 +7,13 @@ import TCM from '../../components/harp/tcm';
 import ACP from '../../components/harp/acp';
 import TestimonialsStrip from '../../components/testimonials/testimonials';
 import LocationsStrip from '../../components/locations/locations';
-import './harp.css';
+import './ccm.css';
 
-const HarpPage = () => (
+const CCMPage = () => (
   <Layout>
-    <div className='HarpPage'>
-      <SEO title="HARP Page" />
-      <HeaderStrip image={harpImg} title='H.A.R.P.' headline='Hospital Admission Reduction Program' />
+    <div className='CCMPage'>
+      <SEO title="CCM Page" />
+      <HeaderStrip image={harpImg} title='C.C.M.' headline='Complex Care Management' />
       <div className='intro'>
         <h2>Keeping our patients out of the hospital</h2>
         <p>Our H.A.R.P. program, or "Hospital Admission Reduction Program", consists of two programs aimed at most effectively preventing our patients from going back to the hospital after they are discharged. This includes our Transitional Care Management (TCM) program and our Advanced Care Planning (ACP) program.</p>
@@ -26,4 +26,4 @@ const HarpPage = () => (
   </Layout>
 )
 
-export default HarpPage
+export default CCMPage

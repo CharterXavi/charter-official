@@ -41,20 +41,28 @@ const Header = () => {
         isSubMenuExpanded: false,
         subMenu: [
           {
-            name:'Hospice',
-            path:'/services/hospice',
+            name:'Private Duty Nursing',
+            path:'/services/private-duty',
           },
           {
-            name:'H.A.R.P.',
-            path:'/services/harp',
+          name:'Skilled Home Health',
+          path:'/services/home-health',
           },
           {
             name:'Palliative Care',
             path:'/services/palliative-care',
           },
           {
-            name:'Home Health',
-            path:'/services/home-health',
+            name:'Complex Care Management',
+            path:'/services/ccm',
+          },
+          {
+            name:'Hospice',
+            path:'/services/hospice',
+          },
+          {
+            name:'Acute/Hospital-Based Care',
+            path:'/services/acute-care',
           }
         ]
       },

@@ -279,17 +279,17 @@ const LocationsStrip = (props) => {
   return (
     <div className='LocationsStrip'>
         {isSvg &&
-            <svg className='locations-wave-one' xmlns="http://www.w3.org/2000/svg" width="1440" height="464" viewBox="0 0 1440 464" fill="none">
+            <svg className='locations-wave-one' xmlns="http://www.w3.org/2000/svg" width="1440" height="474" viewBox="0 0 1440 474" fill="none">
                 <g filter="url(#filter8_d)">
-                <path d="M1 1H1441V83.5C1441 83.5 1288 257.5 786.5 228.5C285 199.5 1 445 1 445V1Z" fill="#F6F7FB"/>
+                <path d="M1 10H1441V92.5C1441 92.5 1288 266.5 786.5 237.5C285 208.5 1 454 1 454V10Z" fill="#F6F7FB"/>
                 </g>
                 <defs>
-                <filter id="filter8_d" x="-9" y="0" width="1460" height="464" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <filter id="filter8_d" x="-14" y="0" width="1470" height="474" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
                 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
                 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-                <feOffset dy="9"/>
-                <feGaussianBlur stdDeviation="5"/>
-                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+                <feOffset dy="5"/>
+                <feGaussianBlur stdDeviation="7.5"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.75 0"/>
                 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
                 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
                 </filter>

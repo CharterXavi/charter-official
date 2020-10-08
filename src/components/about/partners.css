@@ -15,8 +15,6 @@
     width: auto;
     border-radius: 10px;
     margin: 8px;
-    box-shadow: var(--standard-shadow);
-    background: rgba( 250,250,250, 0.4);
 }
 .Partners .partner-wave-one {
     position: absolute;
