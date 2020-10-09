@@ -1,5 +1,5 @@
 import React from "react";
-import heartIcon from '../../images/iconography/heart-gradient.png';
+import heartIcon from '../../images/iconography/hospice/heart.png';
 import './mosaic-card.css';
 
 const MosaicCard = (props) => {

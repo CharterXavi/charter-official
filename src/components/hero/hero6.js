@@ -17,7 +17,7 @@ const HeroStrip6 = () => {
         <div className='Hero6'>
             <div className='hero-wrapper'>
                 <img src={heroCloud} alt="Cloud" className='hero-cloud'/>
-                <div data-aos='fade-down' data-aos-duration='1500' className='icon-blast-wrapper'>
+                <div data-aos='fade-up' data-aos-duration='1200' className='icon-blast-wrapper'>
                     <img className='icon-blast' src={iconBlast} alt="Healthcare icons floating around" />
                 </div>
                 <img className='doctor-graphic' src={doctorGraphic} alt="Doctor at a desk" />

@@ -39,8 +39,8 @@ input, textarea {
     border-radius: 10px;
     border: none;
     outline: none;
-    background: var(--light-clinic-blue);
-    color: var(--heading-color);
+    background: var(--scrubs-blue);
+    color: var(--light-clinic-blue);
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
     padding: 0 0 0 0;
@@ -55,12 +55,12 @@ input {
 }
 input::placeholder, textarea::placeholder {
     font-family: 'Nunito', sans-serif;
-    color: var(--heading-color);
+    color: var(--clinic-blue);
     font-size: 14px;
     font-weight: normal;
 }
 input:focus, textarea:focus {
-    box-shadow: 0 0 2px var(--heading-color);
+    box-shadow: 0 0 3px var(--light-clinic-blue);
 }
 textarea {
     width: 100%;
