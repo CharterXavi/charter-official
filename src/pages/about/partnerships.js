@@ -8,6 +8,8 @@ import DataStrip from '../../components/data/data';
 import LocationsStrip from '../../components/locations/locations';
 import Partners from '../../components/about/partners';
 import './partnerships.css';
+import ButtonPrimary from "../../components/buttons/button-primary";
+import networkIcon from '../../images/iconography/careers/hiring.png';
 
 const PartnershipsPage = () => (
   <Layout>
@@ -21,6 +23,12 @@ const PartnershipsPage = () => (
         <Partners />
         <DataStrip />
         <TestimonialsStrip />
+        <div className='intro become-partner'>
+            <img src={networkIcon} alt="Network" />
+            <h2>Partner with us!</h2>
+            <p>Interested in becoming a partner? We'd love to hear more about how we might be able to work together to serve our patients.</p>
+            <ButtonPrimary content='Become a partner' link='/contact'/>
+        </div>
         <LocationsStrip svg={true} />
     </div>
   </Layout>
