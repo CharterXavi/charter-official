@@ -79,10 +79,11 @@
 .Footer .bottom {
     width: 100%;
     height: 60px;
-    background: black;
+    background: var(--scrubs-blue);
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: var(--wave-shadow-top);
 }
 .Footer .bottom p {
     text-align: center;

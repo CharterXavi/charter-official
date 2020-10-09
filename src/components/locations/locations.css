@@ -9,10 +9,11 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding: 32px 0 32px 0;
+    padding: 32px 16px 32px 16px;
+    overflow: hidden;
 }
 .LocationsStrip .left {
-    width: 30%;
+    width: 575px;
     box-sizing: border-box;
     min-height: 625px;
     border-radius: 10px;
@@ -37,7 +38,7 @@
     padding: 16px 0 0 0;
 }
 .LocationsStrip .right {
-    width: 30%;
+    width: 575px;
     height: 625px;
     border-radius: 10px;
     background: white;
@@ -59,42 +60,42 @@
     display: none;
 }
 
-@media only screen and (max-width: 1230px) {
+@media only screen and (max-width: 950px) {
     .LocationsStrip {
         flex-direction: column;
         align-items: center;
     }
+    .LocationsStrip .card-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
     .LocationsStrip .left {
-        width: 80%;
         min-height: 300px;
         height: auto;
         padding: 16px 32px 32px 32px;
         margin: 32px 0 16px 0;
+        width: 650px;
     }
     .LocationsStrip .right {
-        width: 80%;
         height: 300px;
-    }
-    .LocationsStrip .card-container {
-        display: flex;
-        flex-wrap: wrap;
+        width: 650px;
     }
     .LocationsStrip .left .card {
         width: 45%;
         margin: 8px;
     }
 }
-@media only screen and (max-width: 665px) {
+@media only screen and (max-width: 660px) {
     .LocationsStrip {
         flex-direction: column;
     }
     .LocationsStrip .left {
-        width: 80%;
+        width: 100%;
         height: auto;
         padding: 16px 32px 32px 32px;
     }
     .LocationsStrip .right {
-        width: 80%;
+        width: 100%;
         height: 300px;
     }
     .LocationsStrip .card-container {
@@ -119,13 +120,11 @@
 @media only screen and (max-width: 450px) {
     .LocationsStrip .left {
         box-sizing: border-box;
-        width: 90%;
         padding: 16px;
         margin: 0 0 8px 0;
     }
     .LocationsStrip .right {
         box-sizing: border-box;
-        width: 90%;
         padding: 0 0 0 0;
         overflow: hidden;
     }

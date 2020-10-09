@@ -3,7 +3,7 @@
     height: auto;
     padding: 32px;
     margin: 8px 0;
-    background: var(--heading-color);
+    background: var(--scrubs-blue);
     border-radius: 10px;
     font-weight: bold;
     transition: 0.25s ease all;

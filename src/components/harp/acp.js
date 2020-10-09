@@ -5,8 +5,8 @@ import "aos/dist/aos.css";
 import ButtonSecondary from '../buttons/button-secondary';
 import directiveForm from '../../images/directive.pdf';
 import polstForm from '../../images/polst.pdf';
-import healthIcon from '../../images/iconography/health-icon.png';
-import stethoscopeIcon from '../../images/iconography/stethoscope-icon.png';
+import healthIcon from '../../images/iconography/hospice/healthcare.png';
+import stethoscopeIcon from '../../images/iconography/hospice/stethoscope.png';
 
 const ACP = () => {
 

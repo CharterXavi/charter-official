@@ -112,7 +112,7 @@
 }
 .TeamCard .card-expander:hover {
     cursor: pointer;
-    background: var(--clinic-blue);
+    background: var(--scrubs-blue);
 }
 .TeamCard .card-expander:focus {
     outline: none;
@@ -121,11 +121,11 @@
     width: auto;
 }
 .TeamCard .hide-bio {
-    background: var(--clinic-blue);
+    background: var(--scrubs-blue);
 }
 .TeamCard .hide-bio:hover {
     cursor: pointer;
-    background: var(--clinic-blue);
+    background: var(--scrubs-blue);
 }
 
 
