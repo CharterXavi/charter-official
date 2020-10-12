@@ -14,7 +14,7 @@ import './bereavement.css';
 const BereavementPage = () => (
   <Layout>
     <div className='BereavementPage'>
-      <SEO title="Bereavement Page" />
+      <SEO title="Bereavement" />
       <HeaderStrip image={bereavementImg} title='Bereavement' headline='Treatment for the soul' />
       <div className='intro'>
         <h2>Grief and Loss</h2>

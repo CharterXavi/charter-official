@@ -7,6 +7,7 @@ import ShowMoreButton from '../../components/buttons/show-more';
 import ButtonPrimaryAlt from '../../components/buttons/button-primary-alt';
 import ButtonSecondary from '../../components/buttons/button-secondary';
 import archiveHeader from '../../images/headers/archive.png';
+import SEO from '../../components/seo';
 import './oldest.css';
 
 const OldestPage = ({
@@ -74,6 +75,7 @@ const OldestPage = ({
 
   return (
       <Layout>
+        <SEO title='Oldest Articles' />
         <HeaderStrip 
             title='Oldest Articles'
             headline='See all of the older posts in our archive'

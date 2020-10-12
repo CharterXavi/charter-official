@@ -6,6 +6,7 @@ import archiveHeader from '../images/headers/archive.png';
 import RecentGrid from '../components/news/recent-grid';
 import PostStrip from '../components/news/post-strip';
 import CategoryNav from '../components/news/category-nav';
+import SEO from '../components/seo';
 import './news.css';
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -26,6 +27,7 @@ const NewsPage = ({data}) => {
 
   return (
       <Layout>
+        <SEO title='News' />
         <div className='NewsPage'>
           <HeaderStrip 
               title='News Archive'

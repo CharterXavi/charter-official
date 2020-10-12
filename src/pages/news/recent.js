@@ -7,6 +7,7 @@ import ShowMoreButton from '../../components/buttons/show-more';
 import ButtonPrimaryAlt from '../../components/buttons/button-primary-alt';
 import ButtonSecondary from '../../components/buttons/button-secondary';
 import archiveHeader from '../../images/headers/archive.png';
+import SEO from '../../components/seo';
 import './recent.css';
 
 const RecentPage = ({
@@ -75,6 +76,7 @@ const RecentPage = ({
 
   return (
       <Layout>
+        <SEO title='Recent Articles' />
         <HeaderStrip 
             title='Recent Articles'
             headline='Stay up to date in our company and industry!'

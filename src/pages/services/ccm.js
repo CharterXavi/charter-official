@@ -12,7 +12,7 @@ import './ccm.css';
 const CCMPage = () => (
   <Layout>
     <div className='CCMPage'>
-      <SEO title="CCM Page" />
+      <SEO title="CCM" />
       <HeaderStrip image={harpImg} title='C.C.M.' headline='Complex Care Management' />
       <div className='intro'>
         <h2>Keeping our patients out of the hospital</h2>

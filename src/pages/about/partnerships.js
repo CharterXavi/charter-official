@@ -13,8 +13,8 @@ import networkIcon from '../../images/iconography/careers/hiring.png';
 
 const PartnershipsPage = () => (
   <Layout>
+    <SEO title="Partnerships" />
     <div className='PartnershipsPage'>
-        <SEO title="Partnerships Page" />
         <HeaderStrip image={partnershipsImg} title='Partnerships' headline="Working together for the best patient outcomes" />
         <div className='intro'>
             <h2>Collaboration is key</h2>

@@ -10,7 +10,7 @@ import './acute-care.css';
 const AcuteCarePage = () => (
   <Layout>
     <div className='AcuteCarePage'>
-      <SEO title="Acute Care Page" />
+      <SEO title="Acute Care" />
       <HeaderStrip image={harpImg} title='Acute/Hospital-Based Care' headline="Quality solutions for urgent matters" />
       <div className='intro'>
         <h2>We're ready for anything</h2>

@@ -11,7 +11,7 @@ import './testimonials.css';
 
 const TestimonialsPage = () => (
   <Layout>
-    <SEO title="Testimonials Page" />
+    <SEO title="Testimonials" />
     <div className='TestimonialsPage'>
         <HeaderStrip title='Testmonials' headline="Kind words from our patients" image={testimonialsImg} />
         <div className='intro'>

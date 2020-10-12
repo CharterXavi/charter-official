@@ -10,7 +10,7 @@ import './private-duty.css';
 const PrivateDutyPage = () => (
   <Layout>
     <div className='PrivateDutyPage'>
-      <SEO title="Private Duty Page" />
+      <SEO title="Private Duty" />
       <HeaderStrip image={privateDutyImage} title='Private Duty Nursing' headline="Addressing our patients' daily needs" />
       <div className='intro'>
         <h2>Helping with daily challenges</h2>

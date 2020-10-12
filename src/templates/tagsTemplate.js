@@ -10,6 +10,7 @@ import ButtonPrimaryAlt from '../components/buttons/button-primary-alt';
 import ButtonSecondary from '../components/buttons/button-secondary';
 import PostLink from '../components/news/post-link';
 import ShowMoreButton from '../components/buttons/show-more';
+import SEO from '../components/seo';
 
 
 const Tags = ({ pageContext, data }) => {
@@ -18,6 +19,23 @@ const Tags = ({ pageContext, data }) => {
   const tagHeader = `${totalCount} post${
     totalCount === 1 ? "" : "s"
   } tagged with "${tag}"`
+
+
+  //Write small algorithm to take the Tag name dynamically and convert it to uppercase first letter
+  //It can then be used for a nice SEO title
+  let tagTitle = '';
+  let tagArray = [];
+  for(let i = 0; i < tag.length; i++) {
+    if(i === 0) {
+      let firstLetter = tag[0].toUpperCase();
+      tagArray.push(firstLetter);
+    } else {
+      tagArray.push(tag[i]);
+    }
+  }
+  tagTitle = tagArray.join('');
+  
+  
 
   const [posts, setPosts] = useState([]); //posts state begin as an empty array
   const [clickCount, setClickCount] = useState(1); //click count state begins as a 1
@@ -79,6 +97,7 @@ const Tags = ({ pageContext, data }) => {
 
   return (
     <Layout>
+      <SEO title={`${tagTitle} Articles`} />
       <div className='tags-container'>
         <HeaderStrip 
           title={`Tag: ${tag}`} 
