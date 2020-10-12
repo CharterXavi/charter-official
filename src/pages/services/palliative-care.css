@@ -1,3 +1,6 @@
+.PalliativeCare .intro {
+    background: var(--light-clinic-blue);
+}
 .PalliativeCare .intro .list-wrapper {
     display: flex;
     justify-content: center;

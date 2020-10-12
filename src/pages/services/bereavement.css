@@ -10,6 +10,9 @@
     z-index: 0;
     align-items: center;
 }
+.BereavementPage .intro {
+    background: var(--light-clinic-blue);
+}
 .BereavementPage .services h2 {
     background: -webkit-linear-gradient(0deg, #F493AA 0%, #F2D1C9 100%);
     -webkit-background-clip: text;

@@ -1,3 +1,4 @@
 .PrivateDutyPage .intro {
     min-height: 350px;
+    background: var(--light-clinic-blue);
 }
