@@ -3,10 +3,10 @@ import './advantages.css';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import AdvantageCard from './advantage-card';
-import group from '../../images/iconography/group.png';
-import clock from '../../images/iconography/clock.png';
-import checkbox from '../../images/iconography/checkbox.png';
-import health from '../../images/iconography/health-icon.png';
+import group from '../../images/iconography/hospice/group.png';
+import clock from '../../images/iconography/careers/clock.png';
+import checkbox from '../../images/iconography/about/checkbox.png';
+import health from '../../images/iconography/hospice/healthcare.png';
 
 const Advantages = (props) => {
 
