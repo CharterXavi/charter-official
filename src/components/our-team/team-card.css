@@ -6,7 +6,7 @@
     justify-content: flex-start;
     margin: 32px 8px 98px 8px;
     width: 400px;
-    min-height: 300px;
+    min-height: 400px;
     position: relative;
     top: 0;
     background: white;
@@ -18,7 +18,7 @@
 .TeamCard img {
     width: 150px;
     height: 150px;
-    position: relative;
+    position: absolute;
     top: -65px;
     transition: 0.4s ease all;
 }
@@ -26,16 +26,31 @@
     transform: scale(1.35);
     top: -90px;
 }
-.TeamCard .card-header {
-    position: relative;
-    top: -60px;
-    padding: 8px;
+.TeamCard .card-body {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    margin: 86px 0 0 0;
+    padding: 16px;
 }
-.TeamCard .card-header h3 {
+
+
+.TeamCard .header {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.TeamCard .header h3 {
     text-align: center;
     padding: 8px 0;
 }
-.TeamCard .card-header .introduction-text  {
+.TeamCard .header .introduction-text  {
     text-align: center;
     padding: 0 0 0 0;
     background: -webkit-linear-gradient(270deg, #0FBDBD -7.32%, #363F55 100%);
@@ -46,45 +61,30 @@
 
 
 
-
-
-.TeamCard .card-content {
-    height: auto;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px 64px 16px 64px;
+.TeamCard .content {
+    margin: 8px 0 0 0;
 }
 .TeamCard .quote {
     box-sizing: border-box;
     width: 100%;
     color: var(--heading-color);
     text-align: center;
+    margin: 16px 0 16px 0;
 }
 .TeamCard .biography {
-    position: relative;
     box-sizing: border-box;
-    top: 15px;
     width: 100%;
     height: 0px;
     overflow: hidden;
     transition: 0.4s ease all;
     color: var(--light-clinic-blue);
+    padding: 32px 0 0 0;
 }
+
+
+
 .TeamCard .expanded-bio {
     color: var(--heading-color);
-}
-.TeamCard .social {
-    width: 100%;
-    position: absolute;
-    top: 170px;
-}
-.TeamCard .SocialButton {
-    position: absolute;
-    top: 0;
-    left: 35%;
 }
 .TeamCard .disabled-link {
     filter: grayscale(100%) contrast(10%) opacity(50%);
@@ -93,7 +93,7 @@
 
 
 
-.TeamCard .card-expander {
+.TeamCard .expander {
     width: 100%;
     height: 50px;
     background: var(--heading-color);
@@ -103,21 +103,21 @@
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    position: relative;
-    bottom: 0;
+    position: absolute;
+    bottom: 0px;
     padding: 8px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     transition: 0.25s ease all;
 }
-.TeamCard .card-expander:hover {
+.TeamCard .expander:hover {
     cursor: pointer;
     background: var(--scrubs-blue);
 }
-.TeamCard .card-expander:focus {
+.TeamCard .expander:focus {
     outline: none;
 }
-.TeamCard .card-expander p {
+.TeamCard .expander p {
     width: auto;
 }
 .TeamCard .hide-bio {
