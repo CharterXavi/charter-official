@@ -2,9 +2,9 @@ import React, {useState} from 'react'
 import './team-grid.css'
 import steve from '../../images/team/steve.png'
 import sabina from '../../images/team/sabina.png'
-import daniel from '../../images/team/daniel.png'
+import sylvie from '../../images/team/sylvie.png'
 import jeanclaude from '../../images/team/jeanclaude.png'
-import jerome from '../../images/team/jerome.png'
+import meagan from '../../images/team/meagan.png'
 import vince from '../../images/team/vince.png'
 import TeamCard from './team-card';
 
@@ -52,9 +52,9 @@ const TeamGrid = () => {
                 animationTime: 1300
             },
             {
-                name: 'Daniel Hodous',
-                title: 'Director of Information Technology',
-                image: daniel,
+                name: 'Sylvie Boal',
+                title: 'Corporate Counsel, VP of Quality & Compliance',
+                image: sylvie,
                 linkedIn: 'https://www.linkedin.com/in/daniel-hodous-9245252a/',
                 quote: '"This is an inspirational, introductory quote from this team member."',
                 bio: '',
@@ -62,9 +62,9 @@ const TeamGrid = () => {
                 animationTime: 1500
             },
             {
-                name: 'Jerome De Jesus',
-                title: 'Director of Business Development',
-                image: jerome,
+                name: 'Meagan De Guzman',
+                title: 'VP of Human Resources',
+                image: meagan,
                 linkedIn: 'https://www.linkedin.com/in/jerome-de-jesus-394965171/',
                 quote: '"This is an inspirational, introductory quote from this team member."',
                 bio: '',

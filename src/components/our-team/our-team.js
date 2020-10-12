@@ -2,9 +2,9 @@ import React from 'react';
 import './our-team.css';
 import steve from '../../images/team/steve.png'
 import sabina from '../../images/team/sabina.png'
-import daniel from '../../images/team/daniel.png'
+import meagan from '../../images/team/meagan.png'
 import jeanclaude from '../../images/team/jeanclaude.png'
-import jerome from '../../images/team/jerome.png'
+import sylvie from '../../images/team/sylvie.png'
 import vince from '../../images/team/vince.png'
 import ButtonPrimaryAlt from '../buttons/button-primary-alt';
 import {Link} from 'gatsby';
@@ -52,20 +52,20 @@ const OurTeamStrip = (props) => {
             </div>
             <div className='card'>
                 <Link to='/our-team'>
-                    <img src={daniel} alt="Team Member" />
+                    <img src={sylvie} alt="Team Member" />
                 </Link>
                 <div className='card-info'>
-                    <h4>Daniel Hodous</h4>
-                    <p>Director of Information Technology</p>
+                    <h4>Syvlie Boal</h4>
+                    <p>Corporate Counsel, VP of Quality & Compliance</p>
                 </div>
             </div>
             <div className='card'>
                 <Link to='/our-team'>
-                    <img src={jerome} alt="Team Member" />
+                    <img src={meagan} alt="Team Member" />
                 </Link>
                 <div className='card-info'>
-                    <h4>Jerome De Jesus</h4>
-                    <p>Director of Business Development</p>
+                    <h4>Meagan De Guzman</h4>
+                    <p>VP of Human Resources</p>
                 </div>
             </div>
         </div>
