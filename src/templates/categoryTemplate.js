@@ -10,6 +10,7 @@ import ButtonPrimaryAlt from '../components/buttons/button-primary-alt';
 import ButtonSecondary from '../components/buttons/button-secondary';
 import PostLink from '../components/news/post-link';
 import ShowMoreButton from '../components/buttons/show-more';
+import SEO from '../components/seo';
 
 
 const Category = ({ pageContext, data }) => {
@@ -18,6 +19,21 @@ const Category = ({ pageContext, data }) => {
   const catHeader = `${totalCount} post${
     totalCount === 1 ? "" : "s"
   } in the "${category}" category`
+
+  //Write small algorithm to take the Tag name dynamically and convert it to uppercase first letter
+  //It can then be used for a nice SEO title
+  let categoryTitle = '';
+  let categoryArray = [];
+  for(let i = 0; i < category.length; i++) {
+    if(i === 0) {
+      let firstLetter = category[0].toUpperCase();
+      categoryArray.push(firstLetter);
+    } else {
+      categoryArray.push(category[i]);
+    }
+  }
+  categoryTitle = categoryArray.join('');
+
 
   const [posts, setPosts] = useState([]); //posts state begin as an empty array
   const [clickCount, setClickCount] = useState(1); //click count state begins as a 1
@@ -81,6 +97,7 @@ const Category = ({ pageContext, data }) => {
 
   return (
     <Layout>
+      <SEO title={`${categoryTitle} Articles`} />
       <div className='category-container'>
         <HeaderStrip 
           title={`Category: ${category}`} 

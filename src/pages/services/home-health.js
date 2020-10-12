@@ -12,7 +12,7 @@ import Advantages from '../../components/home-health/advantages';
 const HomeHealthPage = () => (
   <Layout>
     <div className='HomeHealth'>
-      <SEO title="Home Health Page" />
+      <SEO title="Skilled Home Health" />
       <HeaderStrip image={homeHealth} title='Home Health' headline='Convenient & quality healthcare right at home' />
       <div className='intro'>
         <h2>Meeting you where you're at</h2>

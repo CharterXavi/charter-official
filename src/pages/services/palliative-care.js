@@ -11,7 +11,7 @@ import LocationsStrip from '../../components/locations/locations';
 const PalliativeCarePage = () => (
   <Layout>
     <div className='PalliativeCare'>
-      <SEO title="Palliative" />
+      <SEO title="Palliative Care" />
       <HeaderStrip image={palliativeImage} title='Palliative Care' headline='Equipping people to cope with serious illnesses' />
       <div className='intro'>
         <h2>Empowering Patients</h2>

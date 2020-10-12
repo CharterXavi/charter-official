@@ -9,6 +9,7 @@ import groupIcon from '../images/iconography/group.png';
 import heartIcon from '../images/iconography/heart-icon.png';
 import ButtonPrimary from "../components/buttons/button-primary";
 import ShareButtons from '../components/social/share-buttons';
+import SEO from '../components/seo';
 import _ from 'lodash';
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -53,6 +54,7 @@ const BlogTemplate = (props) => {
 
   return (
     <Layout>
+      <SEO title={postTitle} />
       <HeaderStrip 
         title={postTitle} 
         image={archiveHeader}

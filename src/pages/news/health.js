@@ -5,6 +5,7 @@ import Layout from '../../components/layout';
 import HeaderStrip from '../../components/header-strip/header-strip';
 import ShowMoreButton from '../../components/buttons/show-more';
 import archiveHeader from '../../images/headers/archive.png';
+import SEO from '../../components/seo';
 import './recent.css';
 
 const HealthPage = ({data}) => {
@@ -70,6 +71,7 @@ const HealthPage = ({data}) => {
 
   return (
       <Layout>
+        <SEO title='Health Articles' />
         <HeaderStrip 
             title='Health Articles'
             headline='See all of the health-related posts in our archive'

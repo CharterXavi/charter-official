@@ -10,6 +10,7 @@ import Layout from "../../components/layout"
 import HeaderStrip from "../../components/header-strip/header-strip"
 import archiveHeader from '../../images/headers/archive.png';
 import ButtonSecondary from '../../components/buttons/button-secondary';
+import SEO from '../../components/seo';
 
 
 const TagsPage = ({
@@ -22,6 +23,7 @@ const TagsPage = ({
 }) => (
     <Layout>
         <Helmet title={title} />
+        <SEO title='Tags' />
         <div className='TagsPage'>
             <HeaderStrip image={archiveHeader} title='All Tags' headline='See our all of our news articles by tags' />
             <div className='intro'>
