@@ -33,12 +33,6 @@
     justify-content: center;
     background: var(--light-clinic-blue);
 }
-.join-us {
-    position: relative;
-    top: 0;
-    z-index: 1;
-    background: var(--light-clinic-blue);
-}
 .benefits {
     background: var(--light-clinic-blue);
 }
@@ -83,6 +77,50 @@
     width: auto;
     color: var(--heading-color);
 }
+
+.join-us .card-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 16px;
+}
+.join-us .card-wrapper .card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 300px;
+    min-height: 300px;
+    box-sizing: border-box;
+    padding: 32px;
+    border-radius: 10px;
+    margin: 16px;
+    color: var(--heading-color);
+}
+.join-us .card-wrapper .card:hover img {
+    transform: translatey(-8px);
+}
+.join-us .card-wrapper .card:hover p {
+    transform: translatey(8px);
+}
+.join-us .card-wrapper .card:hover .ButtonPrimaryAlt {
+    transform: translatey(8px);
+}
+.join-us .card-wrapper .card img {
+    transition: 0.4s ease all;
+}
+.join-us .card-wrapper .card h4 {
+    width: auto;
+    color: var(--heading-color);
+}
+.join-us .card-wrapper .card p {
+    width: auto;
+    color: var(--heading-color);
+    transition: 0.4s ease all;
+}
+
+
 @media only screen and (max-width: 1000px) {
     .benefits-wrapper {
         align-items: center;
