@@ -1,29 +1,46 @@
 .SocialButton {
     outline: none;
-    background: var(--ocean);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    border: 2px solid var(--heading-color);
-    border-radius: 75px;
-    width: 120px;
+    color: var(--maximum-blue);
+    box-shadow: var(--button-shadow);
+    background: white;
+    /* Brink Pink */    
+    border-radius: 30px;
+    min-width: 150px;
+    width: auto;
     box-sizing: border-box;
     padding: 8px 16px 8px 16px;
     margin: 8px 0 8px 0;
-    height: 40px;
+    height: 50px;
     transition: 0.4s ease all;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
     font-family: 'Nunito', sans-serif;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.SocialButton::before {
+    content: '';
+    width: 110%;
+    height: 100%;
+    background: var(--light-clinic-blue);
+    position: absolute;
+    top: 0;
+    left: -110%;
+    z-index: -2;
+    transition: 0.3s ease all;
+}
+.SocialButton:hover::before {
+    left: -5%;
 }
 .SocialButton:hover {
-    color: #363f55;
     box-shadow: none;
+    transform: translateY(2px);
+    transition: 0.3s ease all;
     cursor: pointer;
-    box-shadow: var(--button-shadow);
-    transform: translateY(-1px);
 }
 .SocialButton img {
     width: 30px;
@@ -31,11 +48,12 @@
     margin: 0 0 0 0;
 }
 .disabled-btn {
-    filter: grayscale(100%) contrast(10%) opacity(50%);
+    filter: grayscale(100%) contrast(10%) opacity(20%);
     cursor: not-allowed;
+    color: black;
 }
 .disabled-btn:hover {
-    filter: grayscale(100%) contrast(10%) opacity(50%);
+    filter: grayscale(100%) contrast(10%) opacity(10%);
     cursor: not-allowed;
     box-shadow: none;
     transform: translateY(0px);
