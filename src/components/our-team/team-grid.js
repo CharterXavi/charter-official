@@ -55,7 +55,7 @@ const TeamGrid = () => {
                 name: 'Sylvie Boal',
                 title: 'Corporate Counsel, VP of Quality & Compliance',
                 image: sylvie,
-                linkedIn: 'https://www.linkedin.com/in/daniel-hodous-9245252a/',
+                linkedIn: 'https://www.linkedin.com/in/sylvie-boal-41920557/',
                 quote: '"This is an inspirational, introductory quote from this team member."',
                 bio: '',
                 isClicked: false,
@@ -65,7 +65,7 @@ const TeamGrid = () => {
                 name: 'Meagan De Guzman',
                 title: 'VP of Human Resources',
                 image: meagan,
-                linkedIn: 'https://www.linkedin.com/in/jerome-de-jesus-394965171/',
+                linkedIn: null,
                 quote: '"This is an inspirational, introductory quote from this team member."',
                 bio: '',
                 isClicked: false,
@@ -97,7 +97,7 @@ const TeamGrid = () => {
 
   return (
     <div className='TeamGrid'>
-        <h2>Meet Our Team</h2>
+        <h2>Meet Our Executive Team</h2>
         <div className='grid-container'>
             <div className='card-container'>
                 {teamList.map(teamMember => {

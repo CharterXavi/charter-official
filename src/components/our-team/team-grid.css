@@ -5,10 +5,11 @@
     align-items: center;
     justify-content: center;
     background: var(--light-clinic-blue);
+    padding: 32px 0;
 }
 .TeamGrid h2 {
     width: auto;
-    color: var(--heading-color);
+    color: var(--primary-accent);
 }
 .TeamGrid .grid-container {
     padding: 75px 0 32px 0;

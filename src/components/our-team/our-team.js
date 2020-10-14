@@ -12,7 +12,7 @@ import {Link} from 'gatsby';
 const OurTeamStrip = (props) => {
   return (
     <div className='OurTeamStrip'>
-        <h2>Meet Our Team</h2>
+        <h2>Meet Our Executive Team</h2>
         <div className='card-container'>
             <div className='card'>
                 <Link to='/our-team'>

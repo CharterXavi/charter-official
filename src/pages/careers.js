@@ -7,10 +7,10 @@ import LocationsStrip from '../components/locations/locations';
 import careersImage from '../images/headers/careers.png';
 import DemographicsChart from '../components/data/demographics';
 import TeamPics from '../components/our-team/team-pics';
-import ButtonPrimaryAlt from '../components/buttons/button-primary-alt';
 import healthIcon from '../images/iconography/hospice/healthcare.png';
 import clockIcon from '../images/iconography/careers/clock.png';
 import awardIcon from '../images/iconography/careers/award.png';
+import JoinUsStrip from '../components/careers/join-us.js';
 import './careers.css';
 
 const CareersPage = () => (
@@ -75,11 +75,7 @@ const CareersPage = () => (
     <div className='picture-grid'>
       <TeamPics />
     </div>
-    <div className='intro join-us'>
-      <h2>Join us!</h2>
-      <p>Interested in joining the Charter family? As a fast-growing company we're always looking for the latest and greatest talent. Check out our current job listings and submit your application today.</p>
-      <ButtonPrimaryAlt link='https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=ffc1c116-da32-4d3c-8e03-c4a1e22c100a&ccId=19000101_000001&type=MP&lang=en_US' content='See job openings' />
-    </div>
+    <JoinUsStrip />
     <OurTeamStrip />
     <LocationsStrip svg={true} />
   </Layout>
