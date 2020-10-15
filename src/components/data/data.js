@@ -22,7 +22,9 @@ const DataStrip = () => {
           <img src={dataIcon} alt="Bar graph" />
             <h2>We're making a real impact.</h2>
             <p className='introduction-text'>We make a serious effort to track our impact by the numbers. From data on patient outcomes to community efforts and everything in between, we make sure we're always making a measurable difference.</p>
-            <ButtonPrimaryAlt content='Read more' animation='fade-up' animationTime='1000' />
+            <div data-aos='fade-up' data-aos-duration='1000' >
+              <ButtonPrimaryAlt content='Read more' />
+            </div>
         </div>
     </div>
   )

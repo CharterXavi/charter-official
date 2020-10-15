@@ -22,14 +22,14 @@ const HeroStrip6 = () => {
                 </div>
                 <img className='doctor-graphic' src={doctorGraphic} alt="Doctor at a desk" />
                 <div className='hero-content'>
-                    <img src={charterFeather} alt="Feather logo" data-aos='fade-right' data-aos-duration='1500'/>
-                    <h1>Charter Healthcare Group</h1>
-                    <h2 data-aos='fade-up' data-aos-duration='900'>
+                    <img src={charterFeather} alt="Feather logo" data-aos='fade-up' data-aos-duration='600'/>
+                    <h1 data-aos='fade-up' data-aos-duration='700'>Charter Healthcare Group</h1>
+                    <h2 data-aos='fade-up' data-aos-duration='1000'>
                         We're here for you.
                         <br></br>
                         We're there for you.  
                     </h2>
-                    <ButtonPrimary link='/about' content='Learn More' animation='fade-up' animationTime='1200' />
+                    <div data-aos='fade-up' data-aos-duration='1300'><ButtonPrimary link='/about' content='Learn More' /></div>
                 </div>
             </div>
         </div>

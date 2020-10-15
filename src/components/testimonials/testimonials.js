@@ -73,7 +73,9 @@ const TestimonialsStrip = (props) => {
             <img src={notificationIcon} alt="Social media like" />
             <h2>We're keeping our patients happy.</h2>
             <p className='introduction-text'>Feedback from our patients and their loved ones not only motivates us to keep working hard, but it also speaks volumes about our successes. See for yourself what others have to say about Charter!</p>
-            <ButtonPrimaryAlt content='Read more' link='/about/testimonials' animation='fade-up' animationTime='1000' />
+            <div data-aos='fade-up' data-aos-duration='1000' >
+                <ButtonPrimaryAlt content='Read more' link='/about/testimonials' />
+            </div>  
         </div>
         <div className='right'>
             <div className='quote-container'>
