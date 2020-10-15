@@ -70,7 +70,9 @@ const BlogTemplate = (props) => {
             className="blog-post-content"
             dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}
           />
-          <ButtonPrimary content='← Back to News page' link='/news' animation='fade-right' animationTime='1000' />
+          <div data-aos='fade-right' data-aos-duration='1000'>
+            <ButtonPrimary content='← Back to News page' link='/news' />
+          </div>
           <p className='category-wrapper'>Category: 
             <Link to={`/categories/${_.kebabCase(postCategory)}`} className='category' >{postCategory}</Link> 
           </p>
