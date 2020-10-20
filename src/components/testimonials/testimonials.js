@@ -69,36 +69,38 @@ const TestimonialsStrip = (props) => {
 
   return (
     <div className='TestimonialsStrip'>
-        <div className='left'> 
-            <img src={notificationIcon} alt="Social media like" />
-            <h2>We're keeping our patients happy.</h2>
-            <p className='introduction-text'>Feedback from our patients and their loved ones not only motivates us to keep working hard, but it also speaks volumes about our successes. See for yourself what others have to say about Charter!</p>
-            <div data-aos='fade-up' data-aos-duration='1000' >
-                <ButtonPrimaryAlt content='Read more' link='/about/testimonials' />
-            </div>  
-        </div>
-        <div className='right'>
-            <div className='quote-container'>
-                {/* Map through each location, create a card component and pass state values and methods in as props */}
-                {/* {testimonials.map((quote, index) => {
-                    if(index === activeIndex) {
-                        return <Quote name={quote.name} id={quote.name} isActive={true} quote={quote.quote} />
-                    }
-                })} */}
-                <Quotes activeIndex={activeIndex} data={testimonialList} />
+        <div className='two-column-left'>
+            <div className='left'> 
+                <img src={notificationIcon} alt="Social media like" />
+                <h2>We're keeping our patients happy.</h2>
+                <p>Feedback from our patients and their loved ones not only motivates us to keep working hard, but it also speaks volumes about our successes. See for yourself what others have to say about Charter!</p>
+                <div data-aos='fade-up' data-aos-duration='1000' >
+                    <ButtonPrimaryAlt content='Read more' link='/about/testimonials' />
+                </div>  
             </div>
-            <div className='carousel-control'>
-                <ArrowLeft goToPrev={goToPrev} />
-                {testimonialList.map((quote, index) => {
-                    return (
-                        <div data-aos='fade-left' data-aos-duration={quote.animationTime} key={quote.name} >
-                            <Dot 
-                                isCurrentQuote={index === activeIndex ? true : false} 
-                            />
-                        </div>
-                    )
-                })}
-                <ArrowRight goToNext={goToNext} />
+            <div className='right'>
+                <div className='quote-container'>
+                    {/* Map through each location, create a card component and pass state values and methods in as props */}
+                    {/* {testimonials.map((quote, index) => {
+                        if(index === activeIndex) {
+                            return <Quote name={quote.name} id={quote.name} isActive={true} quote={quote.quote} />
+                        }
+                    })} */}
+                    <Quotes activeIndex={activeIndex} data={testimonialList} />
+                </div>
+                <div className='carousel-control'>
+                    <ArrowLeft goToPrev={goToPrev} />
+                    {testimonialList.map((quote, index) => {
+                        return (
+                            <div data-aos='fade-left' data-aos-duration={quote.animationTime} key={quote.name} >
+                                <Dot 
+                                    isCurrentQuote={index === activeIndex ? true : false} 
+                                />
+                            </div>
+                        )
+                    })}
+                    <ArrowRight goToNext={goToNext} />
+                </div>
             </div>
         </div>
         {

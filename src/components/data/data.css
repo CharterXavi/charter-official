@@ -7,67 +7,24 @@
     background: var(--light-clinic-blue);
     color: var(--heading-color);
     box-sizing: border-box;
+    width: 100%;
 }
 .DataStrip h2 {
     color: var(--primary-accent);
 }
-.DataStrip .right {
-    box-sizing: border-box;
-    width: 650px;
-    height: 100%;
-    padding: 32px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-}
 
-.DataStrip .left {
-    box-sizing: border-box;
-    width: 650px;
-    height: 400px;
-    padding: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
 @media only screen and (max-width: 1200px) {
-    .DataStrip .left {
-        width: 550px;
+    .DataStrip {
+        padding: 64px 0;
     }
 }
 @media only screen and (max-width: 1000px) {
     .DataStrip {
         flex-direction: column;
-        padding: 64px 0;
-    }
-    .DataStrip .left {
-        width: 650px;
-        height: auto;
-        align-items: flex-start;
-        padding: 32px 32px 32px 32px;
-    }
-    .DataStrip .right {
-        width: 650px;
-        padding: 0 32px 0 32px;
     }
 }
-@media only screen and (max-width: 660px) {
-    .DataStrip {
-        padding: 64px 16px;
-    }
-    .DataStrip .left {
-        box-sizing: border-box;
-        width: 100%;  
-        padding: 16px 0;
-    }
-    .DataStrip .right {
-        width: 100%;
-        padding: 16px 0;
-    }
-}
-@media only screen and (max-width: 450px) {
-    .DataStrip .left {
-        width: 100%;
+@media only screen and (max-width: 850px) {
+    .DataStrip img {
+        width: 55px;
     }
 }

@@ -14,7 +14,8 @@ const PrivateDutyPage = () => (
       <HeaderStrip image={privateDutyImage} title='Private Duty Nursing' headline="Addressing our patients' daily needs" />
       <div className='intro'>
         <h2>Helping with daily challenges</h2>
-        <p>Our H.A.R.P. program, or "Hospital Admission Reduction Program", consists of two programs aimed at most effectively preventing our patients from going back to the hospital after they are discharged. This includes our Transitional Care Management (TCM) program and our Advanced Care Planning (ACP) program.</p>
+        <p>Private duty nursing involves sending specialized health care providers to serve patients of all ages who need quality care but want to regain some independence in their lives. Private duty nurses can offer you or your loved one top-quality medical care from the comfort of your home or anywhere else you may need skilled care.</p>
+        <p>We employ highly skilled nurses who also work hard to get to know you, your habits, your unique needs, and more. This allows us to fine-tune your private duty nursing care for the highest-quality experience.</p>
       </div>
       <TestimonialsStrip />
       <LocationsStrip svg={true} />

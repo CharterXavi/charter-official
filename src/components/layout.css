@@ -113,6 +113,62 @@ a {
 }
 
 
+/* --- COLUMN WITH TEXT-LEFT --- */
+.two-column-left {
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+.two-column-left .left {
+  padding: 16px;
+  box-sizing: border-box;
+  width: 600px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.two-column-left .right {
+  padding: 16px;
+  box-sizing: border-box;
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* --- COLUMN WITH TEXT-RIGHT --- */
+.two-column-right {
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+.two-column-right .left {
+  padding: 16px;
+  box-sizing: border-box;
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.two-column-right .right {
+  padding: 16px;
+  box-sizing: border-box;
+  width: 600px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+
 .intro {
   box-sizing: border-box;
   height: auto;
@@ -136,7 +192,43 @@ a {
   max-width: 650px;
 }
 
+@media only screen and (max-width: 1200px) {
+  .two-column-left .right, .two-column-left .left {
+    width: 50%;
+  }
+  .two-column-right .right, .two-column-right .left {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 850px) {
+  /* --- COLUMN WITH TEXT-LEFT --- */
+  .two-column-left {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .two-column-left .right {
+    flex-direction: column;
+    width: 100%;
+  }
+  .two-column-left .left {
+    width: 100%;
+  }
 
+
+  /* --- COLUMN WITH TEXT-RIGHT --- */
+  .two-column-right {
+    flex-direction: column;
+    width: 100%;
+  }
+  .two-column-right .right {
+    flex-direction: column;
+    width: 100%;
+  }
+  .two-column-right .left {
+    width: 100%;
+  }
+
+}
 @media only screen and (max-width: 768px) {
   .introduction-text {
     font-size: 16px;
