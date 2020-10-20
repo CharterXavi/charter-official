@@ -10,30 +10,11 @@
     box-sizing: border-box;
     color: var(--heading-color);
     background: var(--light-clinic-blue);
+    width: 100%;
 }
 .TestimonialsStrip h2 {
     width: auto;
     color: #f05f7e;
-}
-.TestimonialsStrip .left {
-    box-sizing: border-box;
-    width: 650px;
-    height: 100%;
-    padding: 32px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    z-index: 2;
-}
-
-.TestimonialsStrip .right {
-    box-sizing: border-box;
-    width: 650px;
-    padding: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
 }
 
 .TestimonialsStrip .right .quote-container {
@@ -71,15 +52,10 @@
 }
 
 
-
-
-
 @media only screen and (max-width: 1200px) {
-    .TestimonialsStrip .right {
-        width: 550px;
+    .TestimonialsStrip {
+        padding: 64px 0;
     }
-}
-@media only screen and (max-width: 1100px) {
     .TestimonialsStrip .right .quote-container {
         width: 400px;
         height: 350px;
@@ -90,20 +66,20 @@
         flex-direction: column-reverse;
         padding: 64px 0;
     }
-    .TestimonialsStrip .right {
-        flex-direction: column;
-        width: 100%;
-    }
-    .TestimonialsStrip .right {
-        align-items: center;
-        width: 650px;
-    }
-    .TestimonialsStrip .left {
-        width: 650px;
-        padding: 0 32px 0 32px;
-    }
     .TestimonialsStrip .right .quote-container {
         width: 100%;
+    }
+    .TestimonialsStrip .quote-wave-one {
+        width: 100vw;
+        height: auto;
+        position: absolute;
+        bottom: 0;
+        z-index: 1;
+    }
+}
+@media only screen and (max-width: 850px) {
+    .TestimonialsStrip img {
+        width: 55px;
     }
     .TestimonialsStrip .carousel-control {
         display: flex;
@@ -122,32 +98,6 @@
         margin: 0 8px 0 8px;
     }
     .TestimonialsStrip .quote-wave-one {
-        width: 100vw;
-        height: auto;
-        position: absolute;
-        bottom: 0;
-        z-index: 1;
-    }
-}
-@media only screen and (max-width: 660px) {
-    .TestimonialsStrip {
-        padding: 64px 16px;
-    }
-    .TestimonialsStrip .right {
-        width: 100%;    
-        padding: 0;
-    }
-    .TestimonialsStrip .left {
-        width: 100%;
-        padding: 16px 0;
-    }
-    .TestimonialsStrip .quote-wave-one {
         bottom: 5px;
-    }
-}
-@media only screen and (max-width: 450px) {
-    .TestimonialsStrip .right {
-        width: 100%;    
-        padding: 0 0 0 0;
     }
 }
