@@ -29,12 +29,8 @@ const HospicePage = () => {
           </div>
         </div>
         <HospiceServices />
-        <div className='intro'>
-          <HospiceTeam />
-        </div>
-        <div className='intro'>
-          <HospiceEligibility />
-        </div>
+        <HospiceTeam />
+        <HospiceEligibility />
         <LevelsOfCare />
         <BereavementStrip />
         <LocationsStrip svg={true} />

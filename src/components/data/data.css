@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 128px 64px 64px 64px;
+    padding: 64px 64px 64px 64px;
     height: auto;
     background: var(--light-clinic-blue);
     color: var(--heading-color);
