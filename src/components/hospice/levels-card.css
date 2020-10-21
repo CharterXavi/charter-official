@@ -1,6 +1,6 @@
 .LevelsCard {
-    width: 320px;
-    height: 300px;
+    width: 280px;
+    height: 350px;
     border-radius: 10px;
     box-sizing: border-box;
     padding: 32px;
@@ -26,4 +26,10 @@
     margin: 8px 0;
     text-align: center;
     width: auto;
+}
+
+@media only screen and (max-width: 1200px) {
+    .LevelsCard {
+        width: 320px;
+    }
 }

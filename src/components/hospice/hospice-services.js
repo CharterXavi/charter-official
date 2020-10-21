@@ -13,7 +13,6 @@ import stethoscopeIcon from '../../images/iconography/hospice/stethoscope.png';
 import flowerIcon from '../../images/iconography/hospice/flower.png';
 import heartIcon from '../../images/iconography/hospice/heart.png';
 import phoneIcon from '../../images/iconography/hospice/phone.png';
-import ButtonPrimaryAlt from '../buttons/button-primary-alt';
 
 const HospiceServices = () => {
 

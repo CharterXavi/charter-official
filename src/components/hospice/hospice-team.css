@@ -7,68 +7,35 @@
     position: relative;
     top: 0;
     box-sizing: border-box;
-    padding: 16px;
-}
-.HospiceTeam .right {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    box-sizing: border-box;
-    padding: 16px;
-}
-.HospiceTeam .left {
-    width: 50%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    box-sizing: border-box;
-    padding: 16px;
-}
-.HospiceTeam .right p {
-    width: 75%;
+    padding: 32px 0;
+    background: var(--light-clinic-blue);
 }
 
 .HospiceTeam .left img {
-    width: 75%;
     box-shadow: var(--standard-shadow);
     border-radius: 10px;
 }
 
 
-@media only screen and (max-width: 1250px) {
-    .HospiceTeam .right p {
-        width: 85%;
-    }
+@media only screen and (max-width: 1200px) {
     .HospiceTeam .left img {
-        width: 85%;
-    }
-}
-
-@media only screen and (max-width: 950px) {
-    .HospiceTeam {
-        padding: 0 0 0 0;
-    }
-    .HospiceTeam .left img {
-        width: 100%;
-    }
-    .HospiceTeam .right p {
         width: 100%;
     }
 }
 
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 850px) {
     .HospiceTeam {
         flex-direction: column;
     }
     .HospiceTeam .left {
         width: 100%;
-        padding: 16px 0;
+        padding: 16px;
     }
     .HospiceTeam .right {
         width: 100%;
-        padding: 16px 0;
+        padding: 16px;
+    }
+    .HospiceTeam .left .icon, .HospiceTeam .right .icon {
+        width: 45px;
     }
 }

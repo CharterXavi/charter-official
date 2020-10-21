@@ -1,5 +1,5 @@
 .AdvantageCard {
-    width: 320px;
+    width: 280px;
     height: 275px;
     border-radius: 10px;
     box-sizing: border-box;
@@ -34,4 +34,10 @@
     margin: 8px 0;
     text-align: center;
     width: auto;
+}
+
+@media only screen and (max-width: 1200px) {
+    .AdvantageCard {
+        width: 320px;
+    }
 }

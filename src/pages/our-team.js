@@ -25,14 +25,16 @@ const OurTeamPage = () => (
     </div>
     <TeamGrid />
     <div className='hiring-strip'>
-      <div className='left'>
-        <img src={hiringIcon} alt="Person" />
-        <h2>We're Hiring!</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus diam vitae ut et tincidunt quis sem est, ligula. Aliquam venenatis ut dapibus neque leo. Purus aliquet suscipit turpis volutpat nisl porta elit diam. Et nunc nunc neque aliquet ultricies risus.</p>
-        <ButtonPrimaryAlt content='See current openings' link='/careers' />
-      </div>
-      <div className='right'>
-        <img src={hiringImage} alt="Charter team standing together" />
+      <div className='two-column-left'>
+        <div className='left'>
+          <img src={hiringIcon} alt="Person" />
+          <h2>We're Hiring!</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus diam vitae ut et tincidunt quis sem est, ligula. Aliquam venenatis ut dapibus neque leo. Purus aliquet suscipit turpis volutpat nisl porta elit diam. Et nunc nunc neque aliquet ultricies risus.</p>
+          <ButtonPrimaryAlt content='See current openings' link='/careers' />
+        </div>
+        <div className='right'>
+          <img src={hiringImage} alt="Charter team standing together" />
+        </div>
       </div>
     </div>
     <LocationsStrip svg={true} />

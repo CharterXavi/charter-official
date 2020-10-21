@@ -101,13 +101,6 @@ a {
   font-size: 24px;
   line-height: 30px;
 }
-/* give each body component this class if you want it content-width */
-.content-width {
-  max-width: 1440px;
-}
-.content-width-small {
-  max-width: 720px;
-}
 .spacer {
   height: 75px;
 }
@@ -168,7 +161,7 @@ a {
 }
 
 
-
+/* --- INTRO CLASS SECTIONS --- */
 .intro {
   box-sizing: border-box;
   height: auto;
@@ -182,6 +175,7 @@ a {
   align-items: center;
   justify-content: center;
   color: var(--heading-color);
+  background: var(--light-clinic-blue);
 }
 .intro h2 {
   text-align: left;
