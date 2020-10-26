@@ -15,7 +15,7 @@ const PrivateDutyPage = () => (
       <div className='intro'>
         <h2>Helping with daily challenges</h2>
         <p>Private duty nursing involves sending specialized health care providers to serve patients of all ages who need quality care but want to regain some independence in their lives. Private duty nurses can offer you or your loved one top-quality medical care from the comfort of your home or anywhere else you may need skilled care.</p>
-        <p>We employ highly skilled nurses who also work hard to get to know you, your habits, your unique needs, and more. This allows us to fine-tune your private duty nursing care for the highest-quality experience.</p>
+        <p>We employ highly skilled nurses who also work hard to get to know you, your habits, your unique needs, and more. This allows us to fine-tune your private duty nursing care for the highest-quality experience. In other words, our nurses and staff are there to assist with more than just activities of daily living, personal care assistance, etc. - they're there for you in your time of need.</p>
       </div>
       <TestimonialsStrip />
       <LocationsStrip svg={true} />

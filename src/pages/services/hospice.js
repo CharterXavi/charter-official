@@ -33,6 +33,7 @@ const HospicePage = () => {
         <HospiceEligibility />
         <LevelsOfCare />
         <BereavementStrip />
+        <TestimonialsStrip />
         <LocationsStrip svg={true} />
       </div>
     </Layout>

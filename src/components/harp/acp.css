@@ -1,9 +1,16 @@
 .ACP {
-    padding: 64px 16px 16px 16px;
+    padding: 16px 0 64px 0;
     background: var(--light-clinic-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.ACP h2 {
+    color: var(--primary-accent);
 }
 .ACP ul  {
-    max-width: 650px;
+    max-width: 600px;
     padding-left: 20px;
 }
 .ACP .forms {
@@ -11,15 +18,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
+    padding: 16px;
 }
 .ACP .forms .form-card h5 {
     color: var(--primary-accent);
     width: 200px;
 }
 .ACP .forms .form-card {
-    width: 650px;
-    height: 100px;
+    width: 400px;
+    height: 175px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
@@ -31,16 +41,32 @@
 }
 .ACP .forms .form-card .card-title {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 100%;
 }
 .ACP .forms img {
     width: 45px;
     height: 45px;
     margin-right: 16px;
 }
-
+@media only screen and (max-width: 1200px) {
+    .ACP .forms .form-card {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 850px) {
+    .ACP .two-column-left {
+        flex-direction: column;
+    }
+    .ACP .forms .form-card {
+        flex-direction: row;
+        height: 100px;
+    }
+    .ACP .forms .form-card .card-title {
+        justify-content: flex-start;
+    }
+}
 @media only screen and (max-width: 768px) {
     .ACP {
         width: 100%;
