@@ -1,12 +1,11 @@
 import React from "react"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
-import HeaderStrip from '../../components/header-strip/header-strip';
+import HeaderStrip2 from '../../components/header-strip/header-strip2';
 import bereavementImg from '../../images/headers/bereavement.png';
 import flowersLeft from '../../images/iconography/flowers-left.png';
 import flowersRight from '../../images/iconography/flowers-right.png';
 import heartIcon from '../../images/iconography/heart-icon.png'
-import TestimonialsStrip from '../../components/testimonials/testimonials';
 import LocationsStrip from '../../components/locations/locations';
 import ButtonPrimaryAlt from '../../components/buttons/button-primary-alt';
 import './bereavement.css';
@@ -15,7 +14,7 @@ const BereavementPage = () => (
   <Layout>
     <div className='BereavementPage'>
       <SEO title="Bereavement" />
-      <HeaderStrip image={bereavementImg} title='Bereavement' headline='Treatment for the soul' />
+      <HeaderStrip2 image={bereavementImg} title='Bereavement' headline='Treatment for the soul' />
       <div className='intro'>
         <h2>Grief and Loss</h2>
         <p>Grief affects us in every way: physically, emotionally, mentally, and spiritually. It can leave us feeling alone and fearful. “Bereavement” refers to the period in which we process this grief following loss in our lives. As individuals we all experience grief and loss in a unique manner, and therefore the bereavement process may look a bit different for everyone. During this process, it is common to find yourself overwhelmed by everyday tasks and decision making. At Charter, we believe this is a crucial time to lend our support to you and your loved ones to make the bereavement process as manageable as possible. Our goal is to provide assistance and compassion to those we serve, ensuring that all families find the support they need throughout this difficult time.</p>

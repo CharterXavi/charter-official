@@ -1,7 +1,7 @@
 import React, {useEffect} from "react";
 import { graphql } from "gatsby";
 import Layout from '../components/layout';
-import HeaderStrip from '../components/header-strip/header-strip';
+import HeaderStrip2 from '../components/header-strip/header-strip2';
 import archiveHeader from '../images/headers/archive.png';
 import RecentGrid from '../components/news/recent-grid';
 import PostStrip from '../components/news/post-strip';
@@ -29,7 +29,7 @@ const NewsPage = ({data}) => {
       <Layout>
         <SEO title='News' />
         <div className='NewsPage'>
-          <HeaderStrip 
+          <HeaderStrip2 
               title='News Archive'
               headline='Stay up to date with our company and industry!'
               image={archiveHeader}

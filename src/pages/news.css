@@ -9,8 +9,8 @@
     background: white;
 }
 .NewsPage .intro {
-    background: var(--heading-color);
-    color: white;
+    background: var(--light-clinic-blue);
+    color: var(--heading-color);
     padding: 32px 16px 16px 16px;
 }
 .NewsArchive .top-block {
@@ -20,11 +20,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--heading-color);
+    background: var(--light-clinic-blue);
     box-shadow: var(--nav-shadow);
 }
 .NewsArchive .top-block h2 {
-    color: white;
+    color: var(--heading-color);
 }
 .NewsArchive .bottom-block {
     padding: 64px;

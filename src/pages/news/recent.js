@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 import { graphql } from "gatsby";
 import PostLink from "../../components/news/post-link";
 import Layout from '../../components/layout';
-import HeaderStrip from '../../components/header-strip/header-strip';
+import HeaderStrip2 from '../../components/header-strip/header-strip2';
 import ShowMoreButton from '../../components/buttons/show-more';
 import ButtonPrimaryAlt from '../../components/buttons/button-primary-alt';
 import ButtonSecondary from '../../components/buttons/button-secondary';
@@ -77,7 +77,7 @@ const RecentPage = ({
   return (
       <Layout>
         <SEO title='Recent Articles' />
-        <HeaderStrip 
+        <HeaderStrip2 
             title='Recent Articles'
             headline='Stay up to date in our company and industry!'
             image={archiveHeader}

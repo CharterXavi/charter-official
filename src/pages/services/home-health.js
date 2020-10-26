@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../../components/layout";
 import SEO from "../../components/seo";
 import homeHealth from '../../images/headers/home-health.png';
-import HeaderStrip from '../../components/header-strip/header-strip';
+import HeaderStrip2 from '../../components/header-strip/header-strip2';
 import HomeServices from '../../components/home-health/home-services';
 import './home-health.css';
 import TestimonialsStrip from '../../components/testimonials/testimonials';
@@ -13,7 +13,7 @@ const HomeHealthPage = () => (
   <Layout>
     <div className='HomeHealth'>
       <SEO title="Skilled Home Health" />
-      <HeaderStrip image={homeHealth} title='Home Health' headline='Convenient & quality healthcare right at home' />
+      <HeaderStrip2 image={homeHealth} title='Home Health' headline='Convenient & quality healthcare right at home' />
       <div className='intro'>
         <h2>Meeting you where you're at</h2>
         <p>Home Health offers a wide range of health care services delivered in the convenience and privacy of your home by specially trained healthcare professionals. It can help shorten or avoid extended hospital and skilled nursing facility stays. Whether you are recovering from surgery, dealing with an illness, or living with a chronic health condition,    Charter Home Health can provide the home-based skilled nursing, rehabilitation, and disease management assistance you need. We work hard to promote a caring and stress free environment, which is important to your recovery and well-being.</p>

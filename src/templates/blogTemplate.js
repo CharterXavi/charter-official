@@ -1,7 +1,7 @@
 import React, {useEffect} from "react"
 import { graphql, Link } from "gatsby"
 import Layout from '../components/layout';
-import HeaderStrip from '../components/header-strip/header-strip';
+import HeaderStrip2 from '../components/header-strip/header-strip2';
 import './blogTemplate.css';
 import archiveHeader from '../images/headers/archive.png';
 import clockIcon from '../images/iconography/clock.png';
@@ -55,59 +55,61 @@ const BlogTemplate = (props) => {
   return (
     <Layout>
       <SEO title={postTitle} />
-      <HeaderStrip 
+      <HeaderStrip2 
         title={postTitle} 
         image={archiveHeader}
       />
-      <div className="blog-post-container">
-        <div className="blog-post">
-          <img src={imageSrc} alt={postTitle} className='featured-img' />
-          <div className='post-info'>
-            <h2>{postTitle}</h2>
-            <p>{postDate}</p>
-          </div>
-          <section
-            className="blog-post-content"
-            dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}
-          />
-          <div data-aos='fade-right' data-aos-duration='1000'>
-            <ButtonPrimary content='← Back to News page' link='/news' />
-          </div>
-          <p className='category-wrapper'>Category: 
-            <Link to={`/categories/${_.kebabCase(postCategory)}`} className='category' >{postCategory}</Link> 
-          </p>
-          <p className='tag-wrapper'>Tags: 
-            {postTags.map(tag => {
-              return <Link to={`/tags/${_.kebabCase(tag)}`} className='tag' key={tag} >{tag}</Link> 
-            })}
-          </p>
-        </div>
-        <div className='sidebar'>
-          <div className='recent'>
-            <img src={clockIcon} alt="Clock" />
-            <h5>Recent Posts</h5>
-              {recentPosts.map(post => {
-                return <Link to={post.node.frontmatter.slug} key={post.node.frontmatter.title} >{post.node.frontmatter.title}</Link>
-              })}
-          </div>
-          <div className='related'>
-          <img src={heartIcon} alt="Heart" />
-            <h5>Related Posts</h5>
-              {relatedPosts.map(post => {
-                return <Link to={post.node.frontmatter.slug} key={post.node.frontmatter.title}>{post.node.frontmatter.title}</Link>
-              })}
-          </div>
-          <div className='share'>
-            <img src={groupIcon} alt="Group" />
-            <h5>Share this post:</h5>
-            <ShareButtons 
-              title={postTitle} 
-              url={postPath}
-              facebookHandle={facebookHandle} 
-              linkedinHandle={linkedinHandle} 
-              twitterHandle={twitterHandle} 
-              tags={postTags} 
+      <div className='blog-page'>
+        <div className="blog-post-container">
+          <div className="blog-post">
+            <img src={imageSrc} alt={postTitle} className='featured-img' />
+            <div className='post-info'>
+              <h2>{postTitle}</h2>
+              <p>{postDate}</p>
+            </div>
+            <section
+              className="blog-post-content"
+              dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}
             />
+            <div data-aos='fade-right' data-aos-duration='1000'>
+              <ButtonPrimary content='← Back to News page' link='/news' />
+            </div>
+            <p className='category-wrapper'>Category: 
+              <Link to={`/categories/${_.kebabCase(postCategory)}`} className='category' >{postCategory}</Link> 
+            </p>
+            <p className='tag-wrapper'>Tags: 
+              {postTags.map(tag => {
+                return <Link to={`/tags/${_.kebabCase(tag)}`} className='tag' key={tag} >{tag}</Link> 
+              })}
+            </p>
+          </div>
+          <div className='sidebar'>
+            <div className='recent'>
+              <img src={clockIcon} alt="Clock" />
+              <h5>Recent Posts</h5>
+                {recentPosts.map(post => {
+                  return <Link to={post.node.frontmatter.slug} key={post.node.frontmatter.title} >{post.node.frontmatter.title}</Link>
+                })}
+            </div>
+            <div className='related'>
+            <img src={heartIcon} alt="Heart" />
+              <h5>Related Posts</h5>
+                {relatedPosts.map(post => {
+                  return <Link to={post.node.frontmatter.slug} key={post.node.frontmatter.title}>{post.node.frontmatter.title}</Link>
+                })}
+            </div>
+            <div className='share'>
+              <img src={groupIcon} alt="Group" />
+              <h5>Share this post:</h5>
+              <ShareButtons 
+                title={postTitle} 
+                url={postPath}
+                facebookHandle={facebookHandle} 
+                linkedinHandle={linkedinHandle} 
+                twitterHandle={twitterHandle} 
+                tags={postTags} 
+              />
+            </div>
           </div>
         </div>
       </div>

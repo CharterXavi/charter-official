@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import teamImage from '../images/headers/our-team.png';
-import HeaderStrip from '../components/header-strip/header-strip';
+import HeaderStrip2 from '../components/header-strip/header-strip2';
 import LocationsStrip from '../components/locations/locations';
 import TeamGrid from '../components/our-team/team-grid';
 import hiringImage from '../images/hiring.png';
@@ -13,7 +13,7 @@ import './our-team.css';
 const OurTeamPage = () => (
   <Layout>
     <SEO title="Our Team" />
-    <HeaderStrip 
+    <HeaderStrip2 
       image={teamImage}
       title='Our Team'
       headline="We're blessed to get to work with the best"

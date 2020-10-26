@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     padding: 0 0 32px 0;
+    background: var(--light-clinic-blue);
 }
 .CategoriesPage .intro {
     width: 100%;
@@ -23,10 +24,11 @@
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    background: var(--light-clinic-blue);
+    background: white;
     padding: 0 0 0 0;
     box-sizing: border-box;
     padding: 16px;
+    box-shadow: var(--standard-shadow);
 }
 .CategoriesPage ul li {
     height: auto;

@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 // Components
 import { graphql } from "gatsby";
 import Layout from '../components/layout';
-import HeaderStrip from '../components/header-strip/header-strip';
+import HeaderStrip2 from '../components/header-strip/header-strip2';
 import archiveHeader from '../images/headers/archive.png';
 import ButtonPrimaryAlt from '../components/buttons/button-primary-alt';
 import ButtonSecondary from '../components/buttons/button-secondary';
@@ -99,7 +99,7 @@ const Category = ({ pageContext, data }) => {
     <Layout>
       <SEO title={`${categoryTitle} Articles`} />
       <div className='category-container'>
-        <HeaderStrip 
+        <HeaderStrip2 
           title={`Category: ${category}`} 
           image={archiveHeader}
         />

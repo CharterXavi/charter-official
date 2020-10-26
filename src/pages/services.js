@@ -1,7 +1,7 @@
 import React, {useEffect} from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import HeaderStrip from '../components/header-strip/header-strip';
+import HeaderStrip2 from '../components/header-strip/header-strip2';
 import servicesImage from '../images/headers/services.png';
 import ServicesStrip2 from '../components/services/services2';
 import LocationsStrip from '../components/locations/locations';
@@ -22,7 +22,7 @@ const ServicesPage = () => {
     <Layout>
       <div className='ServicesPage'>
         <SEO title="Services" />
-        <HeaderStrip 
+        <HeaderStrip2 
           image={servicesImage}
           title='Our Services'
           headline='Exceptional Care & Life Enhancing Services'
