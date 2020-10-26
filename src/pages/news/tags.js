@@ -7,7 +7,7 @@ import { Helmet } from "react-helmet"
 import { Link, graphql } from "gatsby"
 import './tags.css';
 import Layout from "../../components/layout"
-import HeaderStrip from "../../components/header-strip/header-strip"
+import HeaderStrip2 from "../../components/header-strip/header-strip2"
 import archiveHeader from '../../images/headers/archive.png';
 import ButtonSecondary from '../../components/buttons/button-secondary';
 import SEO from '../../components/seo';
@@ -25,7 +25,7 @@ const TagsPage = ({
         <Helmet title={title} />
         <SEO title='Tags' />
         <div className='TagsPage'>
-            <HeaderStrip image={archiveHeader} title='All Tags' headline='See our all of our news articles by tags' />
+            <HeaderStrip2 image={archiveHeader} title='All Tags' headline='See our all of our news articles by tags' />
             <div className='intro'>
             <h2>All Tags</h2>
             <ul>

@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import HeaderStrip from '../components/header-strip/header-strip';
+import HeaderStrip2 from '../components/header-strip/header-strip2';
 import OurTeamStrip from '../components/our-team/our-team';
 import LocationsStrip from '../components/locations/locations';
 import careersImage from '../images/headers/careers.png';
@@ -16,7 +16,7 @@ import './careers.css';
 const CareersPage = () => (
   <Layout>
     <SEO title="Careers" />
-    <HeaderStrip
+    <HeaderStrip2
       image={careersImage}
       title='Careers'
       headline='Come work for a passionate, people-driven company'

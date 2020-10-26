@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 import { graphql } from "gatsby";
 import PostLink from "../../components/news/post-link";
 import Layout from '../../components/layout';
-import HeaderStrip from '../../components/header-strip/header-strip';
+import HeaderStrip2 from '../../components/header-strip/header-strip2';
 import ShowMoreButton from '../../components/buttons/show-more';
 import archiveHeader from '../../images/headers/archive.png';
 import SEO from '../../components/seo';
@@ -72,7 +72,7 @@ const HealthPage = ({data}) => {
   return (
       <Layout>
         <SEO title='Health Articles' />
-        <HeaderStrip 
+        <HeaderStrip2 
             title='Health Articles'
             headline='See all of the health-related posts in our archive'
             image={archiveHeader}

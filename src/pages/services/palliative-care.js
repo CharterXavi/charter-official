@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
-import HeaderStrip from '../../components/header-strip/header-strip';
+import HeaderStrip2 from '../../components/header-strip/header-strip2';
 import palliativeImage from '../../images/headers/palliative.png';
 import './palliative-care.css';
 import CareApproach from '../../components/palliative/care-approach';
@@ -12,7 +12,7 @@ const PalliativeCarePage = () => (
   <Layout>
     <div className='PalliativeCare'>
       <SEO title="Palliative Care" />
-      <HeaderStrip image={palliativeImage} title='Palliative Care' headline='Equipping people to cope with serious illnesses' />
+      <HeaderStrip2 image={palliativeImage} title='Palliative Care' headline='Equipping people to cope with serious illnesses' />
       <div className='intro'>
         <h2>Empowering Patients & Improving Quality of Life</h2>
         <p>Serious illnesses and intensive treatments can cause exhaustion, pain, anxiety, depression, and more. Our Palliative team can help you and your loved ones cope with the difficult experience. Palliative care is a comprehensive care program specially-designed for individuals experiencing bothersome physical symptoms and emotional distress related to illnesses such as cancer, heart disease, lung disease, kidney failure, cystic fibrosis, renal disease, and respiratory disease, among others.</p>

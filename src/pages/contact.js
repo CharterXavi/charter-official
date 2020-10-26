@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import HeaderStrip from '../components/header-strip/header-strip';
+import HeaderStrip2 from '../components/header-strip/header-strip2';
 import contact from '../images/headers/contact.png';
 import './contact.css';
 import LocationsStrip from '../components/locations/locations';
@@ -9,7 +9,7 @@ import LocationsStrip from '../components/locations/locations';
 const ContactPage = () => (
   <Layout>
     <SEO title="Contact" />
-    <HeaderStrip 
+    <HeaderStrip2 
       image={contact}
       title='Contact Us'
       headline='Let us know how we can assist you'
