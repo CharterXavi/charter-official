@@ -4,7 +4,7 @@
     position: relative;
     top: 0;
     z-index: 2;
-    background: linear-gradient(180deg, #363F55 0%, #2C3959 47.92%, #F05F7E 100%);
+    background: var(--hero-gradient-colorful);
     display: flex;
     justify-content: center;
     box-sizing: border-box;

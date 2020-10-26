@@ -2,8 +2,8 @@ import React, {useEffect} from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import './about.css';
-import HeaderStrip from '../components/header-strip/header-strip';
-import Video from '../components/video/video';
+import HeaderStrip2 from '../components/header-strip/header-strip2';
+import Video2 from '../components/video/video2';
 import aboutImage from '../images/headers/about.png';
 import NewsStrip from '../components/news/news';
 import OurTeamStrip from '../components/our-team/our-team'
@@ -22,13 +22,13 @@ const AboutPage = ({data}) => {
   return (
     <Layout>
       <SEO title="About Us" />
-      <HeaderStrip 
+      <HeaderStrip2 
         image={aboutImage}
         title='About Charter'
         headline='Healthcare with YOU in mind at every stage'
       />
       <AboutCharter />
-      <Video />
+      <Video2 />
       <NewsStrip posts={data.recent.edges} />
       <OurTeamStrip />
       <LocationsStrip svg={true} />
