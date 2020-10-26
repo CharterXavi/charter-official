@@ -1,0 +1,117 @@
+.VideoStrip2 {
+    width: 100vw;
+    height: auto;
+    background: var(--light-clinic-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.VideoStrip2 .video-wrapper {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: var(--standard-shadow);
+    padding: 32px 0;
+}
+
+.VideoStrip2 .title {
+    margin: 16px 0;
+}
+.VideoStrip2 .title h2 {
+    text-align: center;
+    color: var(--heading-color);
+    font-size: 2rem;
+    padding: 4px 0;
+}
+.VideoStrip2 .title h2:nth-of-type(2) {
+    color: var(--primary-accent);
+}
+.VideoStrip2 .play-btn-wrapper {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: 16px;
+    text-align: center;
+    position: relative;
+    top: 0;
+    z-index: 5;
+    outline: none;
+    border: none;
+}
+.VideoStrip2 .hide {
+    color: white;
+    width: 300px;
+    text-align: center;
+    height: 0px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    transition: 0.4s ease all;
+    overflow: hidden;
+    opacity: 0;
+}
+.VideoStrip2 .active {
+    height: 360px;
+}
+.VideoStrip2 iframe {
+    max-width: 800px;
+    height: 0;
+    transition: 0.4s ease all;
+    border-radius: 10px;
+    position: relative;
+    z-index: 5;
+    box-shadow: var(--standard-shadow);
+}
+.VideoStrip2 .headline {
+    color: var(--heading-color);
+    width: 300px;
+    text-align: center;
+    height: 60px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    transition: 0.4s ease all;
+    opacity: 1;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .VideoStrip2 .active {
+        height: 300px;
+    }
+
+}
+@media only screen and (max-width: 650px) {
+    .VideoStrip2 {
+        height: 100vh;
+    }
+    /* .VideoStrip .video-wave-one, .VideoStrip .video-wave-two{
+        opacity: 0.8;
+    } */
+
+    .VideoStrip2 iframe {
+        max-width: 300px;
+        height: 0;
+        transition: 0.4s ease all;
+    }
+    .VideoStrip2 .active {
+        height: 200px;
+    }
+
+}
+@media only screen and (max-width: 330px) {
+
+    .VideoStrip2 .active {
+        height: 175px;
+    }
+}

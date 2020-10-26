@@ -15,6 +15,7 @@
   --hero-gradient-white: linear-gradient(90deg, #FFFFFF 42.19%, #F493AA 61.98%);
   --hero-gradient-light: linear-gradient(90deg, #F6F7FB 42.19%, #F493AA 61.98%);
   --hero-gradient-dark: linear-gradient(90deg, #363F55 42.19%, #F493AA 61.98%);
+  --hero-gradient-colorful: linear-gradient(180deg, #363F55 0%, #2C3959 47.92%, #F05F7E 100%);
   --standard-shadow: 0px 0px 15px rgba(0, 0, 0, 0.10);
   --button-shadow: 0px 5px 12px rgba(0, 0, 0, 0.22);
   --nav-shadow: 0px 7px 15px 0px rgba(0,0,0,0.2);
