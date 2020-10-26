@@ -10,7 +10,7 @@ const JoinUsStrip = () => {
     return (
         <div className='JoinUsStrip intro'>
             <h2>Join us!</h2>
-            <p>Interested in joining the Charter family? As a fast-growing company we're always looking for the latest and greatest talent, but even more than that we're always looking for employees who believe in our core values.</p>
+            <p>Interested in joining the Charter family? As a fast-growing company we're always looking for the latest and greatest talent, but even more than that we're always looking for employees who believe in our core values: <strong>compassion, integrity, and innovation.</strong></p>
             <div className='card-wrapper'>
                 <div className='card'>
                 <img src={volunteerIcon} alt="Volunteer" />
