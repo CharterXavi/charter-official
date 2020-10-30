@@ -1,0 +1,46 @@
+.VolunteerStrip {
+    position: relative;
+    top: 0;
+    z-index: 1;
+    background: var(--light-clinic-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.VolunteerStrip {
+    color: var(--heading-color);
+}
+.VolunteerStrip .two-column h4 {
+    color: var(--primary-accent);
+}
+.VolunteerStrip .card-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 16px 0;
+    width: 1200px;
+}
+.VolunteerStrip .card-wrapper .left, .VolunteerStrip .card-wrapper .right {
+    margin: 16px;
+    width: 100%;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .VolunteerStrip .card-wrapper {
+        align-items: center;
+        flex-direction: column;
+        padding: 16px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .VolunteerStrip .card-wrapper {
+        flex-direction: column;
+        padding: 0;
+        box-sizing: border-box;
+        width: 100%;
+    }
+}

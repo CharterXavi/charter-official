@@ -28,23 +28,31 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    box-sizing: border-box;
 }
 .HeaderStrip2 .header-content h1 {
     font-size: 72px;
     z-index: 3;
     color: white;
     padding: 16px 0 0 0;
+    width: auto;
 }
 .HeaderStrip2 .header-content h2 {
     z-index: 3;
     color: white;
     padding: 0 0 16px 0;
+    width: auto;
 }
 
 @media only screen and (max-width: 1700px) {
     .HeaderStrip2 .header-image {
         width: 1700px;
         right: 0;
+    }
+}
+@media only screen and (max-width: 1440px) {
+    .HeaderStrip2 .header-content {
+        width: 100%;
     }
 }
 @media only screen and (max-width: 1200px) {
@@ -59,9 +67,20 @@
     .HeaderStrip2 .header-image {
         right: -60%;
     }
+    .HeaderStrip2 .header-content h1 {
+        font-size: 3.5rem;
+    }
+    .HeaderStrip2 .header-content h2 {
+        font-size: 28px;
+    }
 }
 @media only screen and (max-width: 400px) {
     .HeaderStrip2 .header-wave {
         bottom: -5px;
+    }
+}
+@media only screen and (max-width: 340px) {
+    .HeaderStrip2 .header-content h1 {
+        font-size: 3rem;
     }
 }

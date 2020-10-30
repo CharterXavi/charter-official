@@ -56,8 +56,8 @@ const TeamGrid = () => {
                 title: 'Corporate Counsel, VP of Quality & Compliance',
                 image: sylvie,
                 linkedIn: 'https://www.linkedin.com/in/sylvie-boal-41920557/',
-                quote: '"This is an inspirational, introductory quote from this team member."',
-                bio: '',
+                quote: '"Fight for the things that you care about, but do it in a way that will lead others to join you." -RBG',
+                bio: 'Ms. Boal joined Charter in 2013 as a Compliance Officer to take on the ever-changing hospice and home health regulatory landscape. Since then, her position evolved into Corporate Counsel and expanded to handle external audits and surveys, employment risk management, contracts drafting and management, and transactional matters, while growing the department as a business partner. Alongside the leadership team, Ms. Boal has worked to support new clinical models that aim to provide a better continuum of care for patients in the post-acute space- from complex care management to end-of-life care.  She earned her juris doctor in 2012 at Western State College of Law and her bachelor’s degree from the University of California Irvine. Ms. Boal is a member of the California State Bar.',
                 isClicked: false,
                 animationTime: 1500
             },

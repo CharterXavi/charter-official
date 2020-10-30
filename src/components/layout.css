@@ -161,6 +161,25 @@ a {
   align-items: flex-start;
 }
 
+/* --- COLUMN WITH TEXT IN BOTH COLUMNS --- */
+.two-column {
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+.two-column .left, .two-column .right {
+  padding: 16px;
+  box-sizing: border-box;
+  width: 600px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
 
 /* --- INTRO CLASS SECTIONS --- */
 .intro {
@@ -194,6 +213,9 @@ a {
   .two-column-right .right, .two-column-right .left {
     width: 50%;
   }
+  .two-column .right, .two-column .left {
+    width: 50%;
+  }
 }
 @media only screen and (max-width: 850px) {
   /* --- COLUMN WITH TEXT-LEFT --- */
@@ -220,6 +242,12 @@ a {
     width: 100%;
   }
   .two-column-right .left {
+    width: 100%;
+  }
+
+  /* --- COLUMN WITH TEXT IN BOTH --- */
+  .two-column {
+    flex-direction: column;
     width: 100%;
   }
 
