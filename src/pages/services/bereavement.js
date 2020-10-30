@@ -46,8 +46,8 @@ const BereavementPage = () => (
       </div>
       <div className='intro'>
         <h2>Become a Bereavement volunteer</h2>
-        <p>Helping people in their time of need is an important, challenging, and rewarding experience. We maintain a team of caring and passionate volunteers in our bereavement program to help extend our reach and offer the best support possible. If you're interested in becoming a part of the bereavement volunteer team, please visit our V</p>
-        <ButtonPrimaryAlt content='Become a volunteer' link='/contact' />
+        <p>Helping people in their time of need is an important, challenging, and rewarding experience. We maintain a team of caring and passionate volunteers in our bereavement volunteer program to help extend our reach and offer the best support possible. If you're interested in becoming a part of the bereavement volunteer team, please visit our Volunteers page.</p>
+        <ButtonPrimaryAlt content='Become a volunteer' link='/careers/volunteering' />
       </div>
       <LocationsStrip svg={true} />
     </div>

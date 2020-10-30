@@ -106,7 +106,7 @@ const Header = () => {
         isSubMenuExpanded: false,
         subMenu: [
           {
-            name: 'Volunteering',
+            name: 'Volunteering & Interning',
             path: '/careers/volunteering'
           }
         ]

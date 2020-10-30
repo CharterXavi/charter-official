@@ -1,9 +1,5 @@
 import React, {useState, useEffect} from 'react';
 import './video2.css';
-import videoBlast1 from '../../images/iconography/video-blast1.png';
-import videoBlast2 from '../../images/iconography/video-blast2.png';
-import videoWaveTop from '../../images/video-wave-top.png';
-import videoWaveBottom from '../../images/video-wave-bottom.png';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import ButtonPrimary from '../buttons/button-primary';

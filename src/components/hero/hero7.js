@@ -28,7 +28,7 @@ const HeroStrip7 = () => {
                 <div className='hero-content'>
                     <img src={charterFeather} alt="Feather logo" data-aos='fade-up' data-aos-duration='600'/>
                     <h1 data-aos='fade-up' data-aos-duration='700'>Healthcare Solutions for every age and stage.</h1>
-                    <p className='introduction-text'>With top-tier providers, a wide variety of programs, and a track record of success, we’re equipped to meet our patients where they’re at and provide them the quality care they need.</p>
+                    <p data-aos='fade-up' data-aos-duration='900'>With top-tier providers, a wide variety of programs, and a track record of success, we’re equipped to meet our patients where they’re at and provide them the quality care they need.</p>
                     <div data-aos='fade-up' data-aos-duration='1300'>
                         <div className='play-btn-wrapper' onClick={showVideo} onKeyDown={showVideo} role='button'>
                             {videoState ? <ButtonPrimary content='Hide Video' /> : <ButtonPrimary content='Watch Video' />}
@@ -42,7 +42,7 @@ const HeroStrip7 = () => {
                         title='Charter Healthcare Introduction and Information'
                         width="640" height="360" frameBorder="0" allowFullScreen
                     />
-                    <img src={heroGraphic} alt="Icons" className={`hero-graphic ${videoState ? 'active-graphic' : ''}`} />
+                    <img src={heroGraphic} alt="Icons" className={`hero-graphic ${videoState ? 'active-graphic' : ''}`} data-aos='fade-up' data-aos-duration='700' />
                 </div>
             </div>
 

@@ -26,7 +26,7 @@ const PartnershipsPage = () => (
         <div className='intro become-partner'>
             <img src={networkIcon} alt="Network" />
             <h2>Partner with us!</h2>
-            <p>Interested in becoming a partner? We'd love to hear more about how we might be able to work together to serve our patients.</p>
+            <p>Interested in becoming a partner? We'd love to hear more about how we might be able to work together to serve our patients. Head over to our contact page and fill out the form at the bottom - we look forward to connecting with you.</p>
             <ButtonPrimary content='Become a partner' link='/contact'/>
         </div>
         <LocationsStrip svg={true} />
