@@ -16,7 +16,6 @@
     background: rgba(0,0,0,0.7);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    overflow-y: auto;
 }
 .Menu ul {
     list-style: none;

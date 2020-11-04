@@ -202,7 +202,7 @@ a {
   width: auto;
   color: var(--primary-accent);
 }
-.intro p, .intro h5 {
+.intro p, .intro ul {
   max-width: 650px;
 }
 
