@@ -11,14 +11,22 @@ const PrivateDutyPage = () => (
   <Layout>
     <div className='PrivateDutyPage'>
       <SEO title="Private Duty" />
-      <HeaderStrip2 image={privateDutyImage} title='Private Duty Nursing' headline="Addressing our patients' daily needs" />
+      <HeaderStrip2 image={privateDutyImage} title='Private Duty Home Care' headline="Addressing our patients' daily needs" />
       <div className='intro'>
-        <h2>Private Duty Nursing</h2>
-        <h5>What is Private Duty Nursing?</h5>
-        <p>Private duty nursing involves sending specialized health care providers to serve patients of all ages who need quality care but want to regain some independence in their lives. Private duty nurses can offer you or your loved one top-quality medical care from the comfort of your home, and they can provide more continuous and individual care than the average skilled nursing visit in a home health program.</p>
-        <p>We employ highly skilled nurses who also work hard to get to know you, your habits, your unique needs, and more. This allows us to fine-tune your private duty nursing care for the highest-quality experience. In other words, our nurses and staff are there to assist with more than just activities of daily living, personal care assistance, etc. - they're there for you in your time of need.</p>
+        <h2>Private Duty Home Care</h2>
+        <h5>What is Private Duty Home Care?</h5>
+        <p>Private duty home care is a service provided to individuals who need in-home support and assistance with day-to-day activities. A private duty caregiver is assigned to visit your home and help with daily living activities such as personal grooming, meal preparation, housekeeping, and companionship. Private duty care makes it possible for your loved ones to stay home safely and comfortably by customizing the services to meet the unique needs of each client.</p>
         <h5>The Goal</h5>
-        <p>Our goal with this service is simple: helping the patient and family gain as much independence back as possible and to gradually pull back on nursing care as the patient’s condition(s) improves. It's also crucial that we equip the family/caregiver with the skills and knowledge necessary to help execute the plan of care as well to ensure that true independence is achieved.</p>
+        <p>Our goal with this service is simple: helping the patient and family gain as much independence back as possible by maintaining a client’s ability to remain safely at home while offering relief from caregiver burden. Private Duty Home Care fills the gap in homecare services during periods ranging from a brief visit, to 24 hours a day.</p>
+        <h5>Services</h5>
+        <p>Some services provided are as follows:</p>
+        <ul>
+          <li>Personal care such as bathing, dressing, hygiene, transfers, and ambulation</li>
+          <li>Light housekeeping and maintenance around the house.</li>
+          <li>Cooking and meal preparation</li>
+          <li>Medication reminders</li>
+          <li>And more!</li>
+        </ul>
       </div>
       <TestimonialsStrip />
       <LocationsStrip svg={true} />

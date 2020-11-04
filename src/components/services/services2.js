@@ -24,8 +24,8 @@ const ServicesStrip2 = () => {
         <div className='card-container'>
             <div className='card' data-aos='fade-up' data-aos-duration='600' >
                 <img src={medkitIcon} alt="Heart symbol" className='icon' />
-                <h4>Private Duty</h4>
-                <p>Hospice is a special way of caring for people who have a life limiting illness.</p>
+                <h4>Private Duty Home Care</h4>
+                <p>Private duty home care offers in-home support for day-to-day activities.</p>
                 <ButtonPrimaryAlt content='Learn more' alt='Go to Hospice Page' link='/services/private-duty' />
             </div>
             <div className='card' data-aos='fade-up' data-aos-duration='1000' >
