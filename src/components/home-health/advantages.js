@@ -19,19 +19,19 @@ const Advantages = (props) => {
     {
       img: health,  
       title: 'Personalized Care',
-      content: 'Our health care providers work directly with your physician to better adapt to your specific health care needs.',
+      content: 'Our health care providers work directly with your physician so we can adapt to your specific health care needs as effecitvely as possible.',
       animationTime: '800'
     },
     {
       img: group,  
       title: 'Independence',
-      content: 'Helps you regain your independence and maintain your quality of life.',
+      content: 'We strive to help you regain your independence and maintain your quality of life so you can look forward to a brighter future.',
       animationTime: '1100'
     },
     {
       img: checkbox,  
       title: 'Control',
-      content: 'Gives you choices and allows you to be an active participant in your own care.',
+      content: 'Charter Home Health gives you choices and allows you to be an active participant in your own care and recovery journey.',
       animationTime: '1500'
     },
     {

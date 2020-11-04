@@ -32,8 +32,9 @@
     margin: 8px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
     transition: 0.3s ease all;
 }
 .ServicesStrip2 .card:hover .ButtonPrimaryAlt {

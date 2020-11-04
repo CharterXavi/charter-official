@@ -202,7 +202,7 @@ a {
   width: auto;
   color: var(--primary-accent);
 }
-.intro p {
+.intro p, .intro h5 {
   max-width: 650px;
 }
 
@@ -248,6 +248,9 @@ a {
   /* --- COLUMN WITH TEXT IN BOTH --- */
   .two-column {
     flex-direction: column;
+    width: 100%;
+  }
+  .two-column .left, .two-column .right {
     width: 100%;
   }
 

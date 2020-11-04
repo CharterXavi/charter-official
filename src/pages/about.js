@@ -25,7 +25,7 @@ const AboutPage = ({data}) => {
       <HeaderStrip2 
         image={aboutImage}
         title='About Charter'
-        headline='Healthcare with YOU in mind at every stage'
+        headline='A truly patient-centered healthcare company'
       />
       <AboutCharter />
       <Video2 />

@@ -42,8 +42,7 @@
     overflow: hidden;
 }
 .OurTeamStrip .card-container .card p {
-    color: var(--scrubs-blue);
-    font-weight: bold;
+    color: var(--primary-accent);
     padding: 0;
 }
 .OurTeamStrip .card-container .card h4{

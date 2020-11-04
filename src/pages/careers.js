@@ -23,18 +23,26 @@ const CareersPage = () => (
     />
     <div className='intro'>
       <h2>Our Charter Identity</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi commodo pharetra, morbi pellentesque. Duis semper tellus velit, aliquam non. Blandit proin nulla erat lorem blandit mauris molestie pellentesque gravida. Interdum eget leo sem sed massa etiam congue.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod ipsum, semper erat eget phasellus fermentum a egestas. Arcu tincidunt neque in ac.</p>
+      <h5>Who we are</h5>
+      <p>We're proud to be a part of what is undoubtedly a unique workforce. We've very intentionally build up our company with the most passionate and driven people we could find. Regardless of discipline or department we are a company that truly invests in what we do and the people we interact with, and we never lose sight of the impact we strive to make.</p>
+      <h5>What we're made of</h5>
+      <p>Charter is a diverse place, and we value this a lot. To know our company is composed of hard working, brilliant people from different walks of life, cultures, and worldviews helps us feel even more confident in our ability to improve lives wherever we go.</p>
     </div>
     <div className='demographics'>
       <h2>Our Workforce</h2>
+      <h5>Demographics</h5>
+      <p>Amongst the majority of our employees who respond with demographic information, diversity is front and center.</p>
+      <h5>Percentages:</h5>
       <div className='chart-wrapper'>
         <DemographicsChart />
       </div>
     </div>
     <div className='intro benefits'>
       <h2>We take care of our own</h2>
-      <p>Here at Charter, we know that empowering our employees with competitive pay, benefits, and flexibility helps the company thrive. A healthy and happy company is formed by healthy, happy individuals, and we do our best to foster that kind of environment.</p>
+      <h5>Mobility & recognition</h5>
+      <p>We love to recognize those doing exceptional work and make sure they know we appreciate them. We value promoting from within and we always make sure to keep feedback flowing with performance reviews, surveys, and more to make sure everyone's happy.</p>
+      <h5>Competitive Benefits</h5>
+      <p>We know that empowering our employees with competitive pay, benefits, and flexibility helps the company thrive. A healthy and happy company is formed by healthy, happy individuals, and we do our best to foster that kind of environment.</p>
       <div className='benefits-wrapper'>
         <div className='benefits-card'>
           <img src={healthIcon} alt="Healthcare" />
@@ -67,7 +75,7 @@ const CareersPage = () => (
           <ul>
             <li>Competitive vacation/sick pay accrual</li>
             <li>Flexible work hours</li>
-            <li>Cutting edge systems to make our nurses' lives easier</li>
+            <li>Cutting edge devices and systems to make our nurses' lives easier</li>
           </ul>
         </div>
       </div>

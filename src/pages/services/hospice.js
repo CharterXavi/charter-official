@@ -22,11 +22,10 @@ const HospicePage = () => {
         <HeaderStrip2 title='Hospice' headline='Caring for those with a life-limiting illness' image={hospiceImage} />
         <div className='intro'>
           <h2>Physical, emotional, and spiritual support</h2>
+          <h5>What is Hospice Care?</h5>
           <p>Hospice is a special way of caring for people who have a life limiting illness. Charter Hospice is committed to delivering the latest and most innovative approaches in pain and symptom management. Our focus is on improving a patient’s quality of life by creating a more comfortable environment for them and their loved ones. The hospice program allows us to provide the physical, emotional, and spiritual support that you and your family need during this time. Our interdisciplinary team works directly with your physician and our hospice medical director to ensure you receive the care you deserve.</p>
-          <div className='mission-statement'>
-            <h4>Our Mission Statement:</h4>
-            <p className='quote-text'>“To provide the most meaningful and comfortable experience to our patients and their families during the end of life journey.”</p>
-          </div>
+          <h5>Our Mission Statement</h5>
+          <p>“To provide the most meaningful and comfortable experience to our patients and their families during the end of life journey.”</p>
         </div>
         <HospiceServices />
         <HospiceTeam />

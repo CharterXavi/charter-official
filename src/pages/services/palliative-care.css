@@ -1,6 +1,9 @@
 .PalliativeCare .intro {
     background: var(--light-clinic-blue);
 }
+.PalliativeCare .intro h5 {
+    max-width: 650px;
+}
 .PalliativeCare .intro .list-wrapper {
     display: flex;
     justify-content: center;

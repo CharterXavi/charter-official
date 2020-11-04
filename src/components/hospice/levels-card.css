@@ -5,14 +5,12 @@
     box-sizing: border-box;
     padding: 32px;
     margin: 8px;
-    background: white;
     position: relative;
     color: var(--heading-color);
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
-    box-shadow: var(--standard-shadow);
 }
 .LevelsCard:hover .number {
     transform: translatey(-8px) scale(1.1);

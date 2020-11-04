@@ -5,31 +5,31 @@ import { Doughnut } from 'react-chartjs-2';
 const DemographicsChart = () => {
 
 const genderData = {
-    labels: ['Men', 'Women'],
+    labels: ['Male', 'Female', 'Not Specified'],
     datasets: [
         {
         fill: false,
-        backgroundColor: ['#f05f7e', 'orange'],
+        backgroundColor: ['orange', '#f05f7e', '#363f55'],
         borderColor: 'white',
-        data: [50, 50]
+        data: [21, 78, 1]
         }
     ]
 }
 const ethnicityData = {
-    labels: ['Asian', 'Caucasian', 'Black', 'Hispanic', 'Native American'],
+    labels: ['Asian', 'White', 'Black or African American', 'Native Hawaiian or Other Pacific Islander', 'Two or more races (Not Hispanic or Latino)', 'Hispanic or Latino'],
     datasets: [
         {
         fill: false,
-        backgroundColor: ['#f05f7e', '#0FBDBD', 'orange', '#F493AA', '#363f55'],
+        backgroundColor: ['#f05f7e', '#F493AA', '#F2D1C9', 'orange', '#0Fbdbd', '#546182', '#363f55'],
         borderColor: 'white',
-        data: [20, 20, 20, 20, 20]
+        data: [17, 36, 10, 2, 2, 33]
         }
     ]
 }
 
   return (
     <div className='DemographicsChart'>
-        <Doughnut data={genderData} options={{ maintainAspectRatio: false }}/>
+        <Doughnut data={genderData} options={{ maintainAspectRatio: false }} />
         <Doughnut data={ethnicityData} options={{ maintainAspectRatio: false }}/>
     </div>
   )

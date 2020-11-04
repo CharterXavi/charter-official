@@ -8,10 +8,13 @@
     z-index: 1;
     background: var(--light-clinic-blue);
 }
-.AboutStrip h2 {
+.AboutStrip .intro h2 {
     color: var(--primary-accent);
 }
-.AboutStrip p {
+.AboutStrip .intro p {
     color: #363f55;
     text-align: left;
+}
+.AboutStrip .intro h5 {
+    max-width: 650px;
 }
