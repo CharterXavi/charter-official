@@ -10,7 +10,9 @@
     padding: 32px 0;
     background: var(--light-clinic-blue);
 }
-
+.HospiceTeam h2 {
+    color: var(--heading-color);
+}
 .HospiceTeam .left img {
     box-shadow: var(--standard-shadow);
     border-radius: 10px;

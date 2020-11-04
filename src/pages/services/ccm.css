@@ -2,6 +2,9 @@
     min-height: 350px;
     background: var(--light-clinic-blue);
 }
+.CCMPage .intro h5 {
+    max-width: 650px;
+}
 .CCMPage .harp {
     padding: 16px;
     min-height: 200px;

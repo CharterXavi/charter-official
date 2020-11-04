@@ -27,8 +27,8 @@ const AboutCharter = () => {
           <div className='about-card' data-aos='fade-up' data-aos-duration='1300'>
               <img src={bookIcon} alt="Book" />
               <h3>Our Story</h3>
-              <p>Charter is committed to delivering high quality services that enhance the post acute care continuum in its communities by providing compassionate, innovative, and accessible healthcare solutions for patients and their families.</p>
-              <p>We strive to improve patient outcomes and quality of care while reducing ​the total cost of care by: ​</p>
+              <p>From the moment of conception, Charter has been a place where people care deeply about their work and their patients. Since we first obtained our accrediations and certifications in 2007, we've been expanding and growing rapidly to meet the needs of our communities at home and beyond.</p>
+              <p>As we continue extending our reach across southern California, we're also actively opening new doors in other states like Colorado, Nevada, Utah, Arizona, and beyond.</p>
           </div>
           <div className='about-card' data-aos='fade-up' data-aos-duration='1800'>
               <img src={checkboxIcon} alt="Checkbox" />

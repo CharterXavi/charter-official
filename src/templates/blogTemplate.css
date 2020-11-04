@@ -156,7 +156,11 @@
         display: flex;
         flex-direction: column;
         justify-items: flex-start;
-        align-items: center;
+        align-items: flex-start;
+        margin: 4px;
+    }
+    .blog-post-container .sidebar a {
+        text-align: left;
     }
     .blog-post-container .blog-post {
         width: 100%;

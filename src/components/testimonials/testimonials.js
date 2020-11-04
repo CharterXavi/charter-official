@@ -75,7 +75,7 @@ const TestimonialsStrip = (props) => {
                 <h2>We're keeping our patients happy.</h2>
                 <p>Feedback from our patients and their loved ones not only motivates us to keep working hard, but it also speaks volumes about our successes. See for yourself what others have to say about Charter!</p>
                 <div data-aos='fade-up' data-aos-duration='1000' >
-                    <ButtonPrimaryAlt content='Read more' link='/about/testimonials' />
+                    <ButtonPrimaryAlt content='See testimonials' link='/about/testimonials' />
                 </div>  
             </div>
             <div className='right'>

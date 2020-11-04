@@ -11,9 +11,10 @@ const VolunteeringPage = () => (
   <Layout>
     <div className='VolunteeringPage'>
         <SEO title="Volunteering/Interning" />
-        <HeaderStrip2 image={volunteeringImg} title='Volunteering & Interning' headline='Supporting our patients' />
+        <HeaderStrip2 image={volunteeringImg} title='Volunteering & Interning' headline="Help us change patients' lives" />
         <div className='intro'>
           <h2>Lending a hand at Charter</h2>
+          <h5>Volunteering & interning</h5>
           <p>Volunteers and interns play a crucial role in what we do here at Charter. These supportive roles allow us to extend the reach and quality of the care we provide our patients, while also providing the workers with rich, hands-on experience in the field that they feel interested in or called to.</p>
         </div>
         <VolunteerStrip />

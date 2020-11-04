@@ -11,7 +11,11 @@
     color: var(--heading-color);
     box-sizing: border-box;
 }
+.demographics h5, .demographics p {
+    max-width: 650px;
+}
 .demographics h2 {
+    color: var(--primary-accent);
     width: auto;
 }
 .demographics .chart-wrapper {
@@ -98,8 +102,13 @@
 }
 @media only screen and (max-width: 850px) {
     .demographics {
-        height: 1000px;
+        height: 1100px;
         justify-content: flex-start;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .demographics {
+        padding: 64px 16px;
     }
 }
 @media only screen and (max-width: 600px) {

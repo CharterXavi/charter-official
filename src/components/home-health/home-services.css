@@ -1,32 +1,24 @@
 .HomeServices {
     display: flex;
     justify-content: center;
-    min-height: 600px;
+    align-items: center;
     width: 100%;
     box-sizing: border-box;
     color: var(--heading-color);
-}
-.HomeServices .intro {
+    padding: 32px 16px;
     background: var(--light-clinic-blue);
-    position: relative;
     color: var(--heading-color);
-    position: relative;
 }
 .HomeServices img {
     border-radius: 10px;
-    width: 650px;
+    width: 100%;
     box-shadow: var(--standard-shadow);
-    margin: 16px 0;
 }
 .HomeServices ul {
-    width: 50%;
     height: auto;
     margin: 4px;
     padding: 0 0 0 0;
     list-style: none;
-}
-.HomeServices .full-list {
-    display: none;
 }
 .HomeServices ul li {
     padding: 8px 16px;
@@ -45,7 +37,7 @@
 .HomeServices .lists {
     display: flex;
     justify-content: center;
-    width: 650px;
+    width: auto;
 }
 
 @media only screen and (max-width: 900px) {

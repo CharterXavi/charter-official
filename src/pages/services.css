@@ -1,7 +1,6 @@
 
-.Services .content-wrapper h2 {
-    text-align: center;
-    color: var(--primary-accent);
+.ServicesPage .intro h5 {
+    max-width: 650px;
 }
 .ServicesPage .intro .ButtonPrimaryAlt {
     margin-top: 16px;
