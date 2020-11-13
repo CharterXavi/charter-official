@@ -9,7 +9,7 @@
   --maximum-blue: #0FBDBD;
   --scrubs-blue: #546182;
   --rose: linear-gradient(180deg, #F493AA 0%, #F05F7E 100%);
-  --sunset: linear-gradient(37.36deg, #FFCE94 3.73%, #F05F7E 100%);
+  --sunset: linear-gradient(66.41deg, #F05F7E 24.79%, #FFCE94 85.46%);
   --mist: linear-gradient(90deg, #F493AA 0%, #F2D1C9 100%);
   --ocean: linear-gradient(270deg, #0FBDBD -7.32%, #363F55 100%);
   --hero-gradient-white: linear-gradient(90deg, #FFFFFF 42.19%, #F493AA 61.98%);
@@ -37,7 +37,7 @@ body {
   padding: 0;
   width: 100%;
   font-family: 'Nunito', sans-serif;
-  font-size: 16px;
+  font-size: 17px;
 }
 h1, h2, h3 {
   font-family: 'Nunito', sans-serif;
@@ -202,7 +202,7 @@ a {
   width: auto;
   color: var(--primary-accent);
 }
-.intro p, .intro ul {
+.intro p, .intro h5 {
   max-width: 650px;
 }
 

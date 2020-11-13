@@ -5,3 +5,13 @@
 .PrivateDutyPage .intro h5 {
     max-width: 650px;
 }
+.PrivateDutyPage .intro ul {
+    width: 650px;
+}
+
+@media only screen and (max-width: 650px) {
+    .PrivateDutyPage .intro ul {
+        width: 100%;
+        padding: 0 0 0 20px;
+    }
+}

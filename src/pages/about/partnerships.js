@@ -18,6 +18,7 @@ const PartnershipsPage = () => (
         <HeaderStrip2 image={partnershipsImg} title='Partnerships' headline="Working together for the best patient outcomes" />
         <div className='intro'>
             <h2>Collaboration is key</h2>
+            <h5>Working Together</h5>
             <p>Every patient's care requires a collaborative effort of multiple different providers, staff, and organizations. At Charter, we know that efficient partnerships and trusted relationships are crucial to providing the best healthcare possible. We value our partnerships and we are always looking to build new relationships in the communities we serve.</p>
         </div>
         <Partners />

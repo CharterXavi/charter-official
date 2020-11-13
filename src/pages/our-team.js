@@ -29,8 +29,8 @@ const OurTeamPage = () => (
         <div className='left'>
           <img src={hiringIcon} alt="Person" />
           <h2>We're Hiring!</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus diam vitae ut et tincidunt quis sem est, ligula. Aliquam venenatis ut dapibus neque leo. Purus aliquet suscipit turpis volutpat nisl porta elit diam. Et nunc nunc neque aliquet ultricies risus.</p>
-          <ButtonPrimaryAlt content='See current openings' link='/careers' />
+          <p>Interested in a career at Charter? Visit our Careers page to learn more about who we are, what we stand for, and who we're looking for in our future employees. You can also read about our competitve compensation, benefits, culture, and more!</p>
+          <ButtonPrimaryAlt content='Visit Careers page' link='/careers' />
         </div>
         <div className='right'>
           <img src={hiringImage} alt="Charter team standing together" />

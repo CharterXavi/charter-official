@@ -45,7 +45,7 @@ const Header = () => {
         isSubMenuExpanded: false,
         subMenu: [
           {
-            name:'Private Duty Nursing',
+            name:'Private Duty Home Care',
             path:'/services/private-duty',
           },
           {
