@@ -41,6 +41,16 @@
 .Footer .right .headquarters {
     margin: 32px 0 32px 0;
 }
+.Footer .right .headquarters ul{
+    font-size: 15px;
+}
+.Footer .right .headquarters a{
+    color: white;
+    font-weight: normal;
+}
+.Footer .right .headquarters a:hover {
+    color: var(--primary-accent);
+}
 .Footer .right .socials {
     margin: 32px 0 32px 0;
 }

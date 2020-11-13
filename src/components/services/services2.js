@@ -31,19 +31,19 @@ const ServicesStrip2 = () => {
             <div className='card' data-aos='fade-up' data-aos-duration='1000' >
                 <img src={homeIcon} alt="House symbol" className='icon' />
                 <h4>Skilled Home Health</h4>
-                <p>We can deliver a wide range of services conveniently and privately at home.</p>
+                <p>We can deliver a range of services conveniently and privately at home.</p>
                 <ButtonPrimaryAlt content='Learn more' alt='Go to Home Health Page' link='/services/home-health' />
             </div>
             <div className='card' data-aos='fade-up' data-aos-duration='1400' >
                 <img src={healthIcon} alt="Healthcare cross symbol" className='icon' />
                 <h4>Palliative Care</h4>
-                <p>Our Palliative team can help you and your loved ones cope with serious illnesses.</p>
+                <p>Our Palliative team can help you / your loved ones cope with serious illnesses.</p>
                 <ButtonPrimaryAlt content='Learn more' alt='Go to Palliative Care Page' link='/services/palliative-care' />
             </div>
             <div className='card' data-aos='fade-up' data-aos-duration='800' >
                 <img src={ccmIcon} alt="Stehoscope symbol" className='icon' />
                 <h4>Complex Care Management</h4>
-                <p>C.C.M. is our comprehensive plan to make sure we keep patients out of the hospital.</p>
+                <p>C.C.M. is our comprehensive plan to keep patients out of the hospital.</p>
                 <ButtonPrimaryAlt content='Learn more' alt='Go to HARP Page' link='/services/ccm' />
             </div>
             <div className='card' data-aos='fade-up' data-aos-duration='1200' >

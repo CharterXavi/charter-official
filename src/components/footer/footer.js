@@ -32,8 +32,8 @@ const Footer = () => {
                     <h4>Charter Headquarters</h4>
                     <ul>
                         <li>9660 Haven Ave, Rancho Cucamonga, CA 91730</li>
-                        <li>P: 909-644-4965</li>
-                        <li>F: 909-503-1138</li>
+                        <li>P: <a href='tel: 909-644-4965'>909-644-4965</a></li>
+                        <li>F: <a href='fax: 909-503-1138'>909-503-1138</a></li>
                     </ul>
                 </div>
                 <div className='socials'>

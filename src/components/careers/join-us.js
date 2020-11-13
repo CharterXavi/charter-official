@@ -3,6 +3,7 @@ import volunteerIcon from '../../images/iconography/careers/volunteer.png';
 import jobIcon from '../../images/iconography/careers/briefcase.png';
 import internIcon from '../../images/iconography/careers/intern.png';
 import ButtonPrimaryAlt from '../../components/buttons/button-primary-alt';
+import GlassDoor from '../../components/careers/glassdoor';
 import './join-us.css';
 
 const JoinUsStrip = () => {
@@ -11,7 +12,7 @@ const JoinUsStrip = () => {
         <div className='JoinUsStrip intro'>
             <h2>Join us!</h2>
             <h5>Apply today</h5>
-            <p>Interested in joining the Charter family? As a fast-growing company we're always looking for the latest and greatest talent, but even more than that we're always looking for employees who believe in our core values: <strong>compassion, integrity, and innovation.</strong>If that sounds like you, we'd love to hear more about you.</p>
+            <p>Interested in joining the Charter family? As a fast-growing company we're always looking for the latest and greatest talent, but even more than that we're always looking for employees who believe in our core values: <strong>compassion, integrity, and innovation.</strong> If that sounds like you, we'd love to hear more about you.</p>
             <div className='card-wrapper'>
                 <div className='card'>
                 <img src={volunteerIcon} alt="Volunteer" />
@@ -32,6 +33,7 @@ const JoinUsStrip = () => {
                 <ButtonPrimaryAlt link='/careers/volunteering' content='Become an intern' />
                 </div>
             </div>
+            <GlassDoor />
         </div>
     );
 }

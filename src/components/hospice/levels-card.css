@@ -1,9 +1,9 @@
 .LevelsCard {
-    width: 280px;
-    height: 350px;
+    width: 300px;
+    height: auto;
     border-radius: 10px;
     box-sizing: border-box;
-    padding: 32px;
+    padding: 16px;
     margin: 8px;
     position: relative;
     color: var(--heading-color);
@@ -16,13 +16,13 @@
     transform: translatey(-8px) scale(1.1);
 }
 .LevelsCard .number {
-    position: absolute;
-    top: -25px;
+    position: relative;
+    left: 10px;
     transition: 0.4s ease all;
 }
 .LevelsCard h4 {
     margin: 8px 0;
-    text-align: center;
+    text-align: left;
     width: auto;
 }
 

@@ -74,6 +74,7 @@
     position: relative;
     z-index: 5;
     box-shadow: var(--standard-shadow);
+    background: var(--light-clinic-blue);
 }
 .VideoStrip2 .headline {
     color: var(--heading-color);
