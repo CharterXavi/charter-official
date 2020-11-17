@@ -1,5 +1,7 @@
 .HARP {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     min-height: 600px;
     width: 100%;
@@ -9,71 +11,54 @@
     position: relative;
     color: var(--heading-color);
 }
+.HARP h4 {
+    width: auto;
+}
 .HARP ul {
     padding: 0 0 0 20px;
 }
-.HARP .two-column .right {
-    justify-content: flex-start;
-}
 .HARP .forms {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     box-sizing: border-box;
     padding: 16px 0;
     width: 100%;
 }
-.HARP .forms .form-card h5 {
-    color: var(--primary-accent);
-    width: 200px;
+.HARP .forms .form-card h5, .HARP .forms .form-card p {
+    width: auto;
+    transition: 0.4s ease all;
 }
 .HARP .forms .form-card {
-    width: 100%;
-    height: 80px;
+    width: 300px;
+    height: auto;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     box-sizing: border-box;
     padding: 16px;
-    background: white;
     margin: 8px;
-    border-radius: 10px;
-    box-shadow: var(--standard-shadow);
-}
-.HARP .forms .form-card .card-title {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
 }
 .HARP .forms img {
-    width: 45px;
-    height: 45px;
     margin-right: 16px;
+    transition: 0.4s ease all;
+}
+.HARP .forms .form-card:hover img {
+    transform: translateY(-8px);
+}
+.HARP .forms .form-card:hover p, .HARP .forms .form-card:hover .ButtonSecondary {
+    transform: translateY(8px);
 }
 
-@media only screen and (max-width: 975px) {
-    .HARP .two-column .left .forms .form-card {
+
+@media only screen and (max-width: 950px) {
+    .HARP .forms {
         flex-direction: column;
-        height: auto;
-        align-items: flex-start;
     }
-}
-@media only screen and (max-width: 850px) {
-    .HARP .two-column .left, .HARP .two-column .right {
+    .HARP .forms .form-card {
         width: 100%;
-    }
-    .HARP .two-column .left .forms .form-card {
-        flex-direction: row;
-        height: 80px;
-        align-items: center;
-    }
-}
-@media only screen and (max-width: 485px) {
-    .HARP .two-column .left .forms .form-card {
-        flex-direction: column;
-        height: auto;
-        align-items: flex-start;
+        padding: 16px 0;
+        margin: 16px 0;
     }
 }

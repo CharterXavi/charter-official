@@ -27,8 +27,6 @@
     position: absolute;
     top: -25px;
     transition: 0.4s ease all;
-    width: 55px;
-    height:auto;
 }
 .AdvantageCard h4 {
     margin: 8px 0;

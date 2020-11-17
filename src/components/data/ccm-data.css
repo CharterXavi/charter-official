@@ -1,0 +1,79 @@
+.CCMData {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--light-clinic-blue);
+    padding: 32px 0;
+    box-sizing: border-box;
+    color: var(--heading-color);
+}
+.CCMData .intro {
+    padding: 16px;
+    height: auto;
+    min-height: 200px;
+}
+.CCMData h3 {
+    color: var(--primary-accent);
+}
+.CCMData .clinical-stats {
+    width: 100%;
+    padding: 32px 0 16px 0;
+    box-sizing: border-box;
+}
+
+.CCMData .clinical-stats .left .data-container {
+    height: 400px;
+    width: 500px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: var(--standard-shadow);
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+
+
+.CCMData .cost-stats {
+    width: 100%;
+    padding: 16px 0 32px 0;
+    box-sizing: border-box;
+}
+.CCMData .cost-stats .right .data-container {
+    height: 400px;
+    width: 500px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: var(--standard-shadow);
+    padding: 16px;
+    box-sizing: border-box;
+}
+.CCMData hr {
+    width: 1200px;
+    border: 2px solid var(--heading-color);
+    border-radius: 50px;
+    margin: 16px 0 32px 0;
+    opacity: 0.5;
+    box-shadow: var(--standard-shadow);
+}
+
+@media only screen and (max-width: 1200px) {
+    .CCMData .clinical-stats .left .data-container, .CCMData .cost-stats .right .data-container {
+        width: 90%;
+    }
+    .CCMData hr {
+        width: 94%;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .CCMData .clinical-stats .left .data-container, .CCMData .cost-stats .right .data-container {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .CCMData .clinical-stats .left .data-container, .CCMData .cost-stats .right .data-container {
+        height: 300px;
+    }
+}

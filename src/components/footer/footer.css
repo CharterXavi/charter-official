@@ -143,5 +143,8 @@
         padding: 4px;
         width: 100%;
     }
+    .Footer .bottom p {
+        font-size: 0.8rem;
+    }
 }
 

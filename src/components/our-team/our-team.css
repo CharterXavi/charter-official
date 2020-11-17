@@ -25,11 +25,11 @@
     position: relative;
     top: 0;
     z-index: 2;
+    border-radius: 10px;
+    max-width: 1200px;
+    height: 80%;
     background: white;
     box-shadow: var(--standard-shadow);
-    border-radius: 10px;
-    max-width: 1400px;
-    height: 80%;
 }
 .OurTeamStrip .card-container .card {
     width: 45%;
@@ -43,10 +43,11 @@
 }
 .OurTeamStrip .card-container .card p {
     color: var(--primary-accent);
-    padding: 0;
+    padding: 4px;
 }
 .OurTeamStrip .card-container .card h4{
-    padding: 0;
+    width: auto;
+    padding: 4px;
 }
 .OurTeamStrip .card-container .card .card-info {
     display: flex;
@@ -57,7 +58,7 @@
     width: 50%;
 }
 .OurTeamStrip .card-container .card img {
-    margin: 8px 32px 8px 8px;
+    margin: 8px;
     overflow: hidden;
     transition: 0.25s ease all;
     position: relative;
@@ -73,7 +74,6 @@
 }
 .OurTeamStrip .card-container .card img:hover {
     cursor: pointer;
-    filter: blur(2px);
     transform: scale(1.02);
 }
 .OurTeamStrip .card-container .card img:hover::after {

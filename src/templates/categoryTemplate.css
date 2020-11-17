@@ -62,14 +62,6 @@
     height: 250px;
 }
 
-.category-container .post-wrapper a:hover .PostLink img {
-    filter: blur(2px);
-    transform: scale(1.05);
-}
-.category-container .post-wrapper a:hover .PostLink .content {
-    transform: scale(1.05) translateX(8px);
-}
-
 @media only screen and (max-width: 1000px) {
     .category-container .post-wrapper {
         width: 100%;

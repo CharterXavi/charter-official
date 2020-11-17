@@ -6,7 +6,7 @@
     justify-content: flex-start;
     margin: 32px 8px 98px 8px;
     width: 400px;
-    min-height: 440px;
+    min-height: 415px;
     position: relative;
     top: 0;
     background: white;
@@ -46,7 +46,7 @@
     align-items: center;
     justify-content: flex-start;
 }
-.TeamCard .header h3 {
+.TeamCard .header h4 {
     text-align: center;
     padding: 8px 0;
 }
@@ -70,6 +70,8 @@
     color: var(--heading-color);
     text-align: center;
     margin: 16px 0 16px 0;
+    font-weight: bold;
+    font-size: 1rem;
 }
 .TeamCard .biography {
     box-sizing: border-box;
@@ -79,9 +81,19 @@
     transition: 0.4s ease all;
     color: var(--light-clinic-blue);
     padding: 32px 0 0 0;
+    font-size: 1rem;
 }
 
-
+.TeamCard hr {
+    border: solid 1px var(--heading-color);
+    border-radius: 30px;
+    margin: 0 0 16px 0;
+    width: 0;
+    transition: 0.4s ease all;
+}
+.TeamCard .stretch-hr {
+    width: 100%;
+}
 
 .TeamCard .expanded-bio {
     color: var(--heading-color);
@@ -119,6 +131,7 @@
 }
 .TeamCard .expander p {
     width: auto;
+    font-size: 1rem;
 }
 .TeamCard .hide-bio {
     background: var(--scrubs-blue);
