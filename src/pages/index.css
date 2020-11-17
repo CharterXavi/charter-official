@@ -3,9 +3,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--light-clinic-blue);
     box-sizing: border-box;
     padding: 16px 16px 98px 16px;
+    background: var(--light-clinic-blue);
 }
 .news .PostStrip {
     z-index: 1;

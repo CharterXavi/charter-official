@@ -9,7 +9,7 @@ import LocationsStrip from '../components/locations/locations';
 import DataStrip from '../components/data/data';
 import {graphql} from 'gatsby';
 import HeroStrip7 from "../components/hero/hero7";
-import PostStrip from "../components/news/post-strip";
+import RecentGrid from "../components/news/recent-grid";
 import './index.css';
 
 const IndexPage = ({ data }) => {
@@ -26,7 +26,7 @@ const IndexPage = ({ data }) => {
         <DataStrip />
         <TestimonialsStrip />
         <div className='news'>
-          <PostStrip posts={recentPosts} title='The Latest' link='/news'/>
+          <RecentGrid posts={recentPosts} title='The Latest' link='/news'/>
         </div>
         <OurTeamStrip />
         <LocationsStrip svg={true} />
@@ -39,7 +39,7 @@ export default IndexPage
 
 export const recentPostsQuery = graphql`
 query {
-  recent: allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {}, limit: 3) {
+  recent: allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {}, limit: 5) {
     edges {
       node {
         id

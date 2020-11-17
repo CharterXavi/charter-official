@@ -4,8 +4,8 @@ import SEO from "../../components/seo"
 import HeaderStrip2 from '../../components/header-strip/header-strip2';
 import harpImg from '../../images/headers/harp.png';
 import HARP from '../../components/ccm/harp';
-import TestimonialsStrip from '../../components/testimonials/testimonials';
 import LocationsStrip from '../../components/locations/locations';
+import CCMData from '../../components/data/ccm-data';
 import './ccm.css';
 
 const CCMPage = () => (
@@ -21,7 +21,7 @@ const CCMPage = () => (
         <p>Our CCM program accomplishes its goals primarily through our H.A.R.P. model (Hospitalization Admission Reduction Program) consisting of Transitional Care Management (TCM) and Advanced Care Planning (ACP).</p>
       </div>
       <HARP />
-      <TestimonialsStrip />
+      <CCMData />
       <LocationsStrip svg={true} />
     </div>
   </Layout>

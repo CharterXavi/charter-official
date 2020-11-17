@@ -12,8 +12,6 @@
     background: white;
 }
 .HospiceCard img {
-    width: 35px;
-    height: auto;
     margin: 8px 16px;
 }
 
@@ -23,7 +21,7 @@
         margin: 8px;
     }
     .HospiceCard img {
-        width: 30px;
+        width: 35px;
     }
 }
 @media only screen and (max-width: 575px) {

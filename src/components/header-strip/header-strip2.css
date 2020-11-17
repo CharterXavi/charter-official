@@ -75,6 +75,9 @@
     }
 }
 @media only screen and (max-width: 400px) {
+    .HeaderStrip2 img {
+        display: none;
+    }
     .HeaderStrip2 .header-wave {
         bottom: -5px;
     }

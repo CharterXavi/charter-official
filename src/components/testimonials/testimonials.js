@@ -79,15 +79,6 @@ const TestimonialsStrip = (props) => {
                 </div>  
             </div>
             <div className='right'>
-                <div className='quote-container'>
-                    {/* Map through each location, create a card component and pass state values and methods in as props */}
-                    {/* {testimonials.map((quote, index) => {
-                        if(index === activeIndex) {
-                            return <Quote name={quote.name} id={quote.name} isActive={true} quote={quote.quote} />
-                        }
-                    })} */}
-                    <Quotes activeIndex={activeIndex} data={testimonialList} />
-                </div>
                 <div className='carousel-control'>
                     <ArrowLeft goToPrev={goToPrev} />
                     {testimonialList.map((quote, index) => {
@@ -100,6 +91,15 @@ const TestimonialsStrip = (props) => {
                         )
                     })}
                     <ArrowRight goToNext={goToNext} />
+                </div>
+                <div className='quote-container'>
+                    {/* Map through each location, create a card component and pass state values and methods in as props */}
+                    {/* {testimonials.map((quote, index) => {
+                        if(index === activeIndex) {
+                            return <Quote name={quote.name} id={quote.name} isActive={true} quote={quote.quote} />
+                        }
+                    })} */}
+                    <Quotes activeIndex={activeIndex} data={testimonialList} />
                 </div>
             </div>
         </div>
