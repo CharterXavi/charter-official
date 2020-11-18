@@ -27,12 +27,21 @@ const ServicesPage = () => {
           title='Our Services'
           headline='Exceptional Care & Life Enhancing Services'
         />
-        <div className='intro'>
+        <div className='two-column'>
+          <div className='title'>
             <h2>Exceptional Care & Life Enhancing Services</h2>
-            <h5>We've got you covered</h5>
-            <p>At Charter Healthcare Group we believe in making a positive change in the lives of our patients and their families. For over ten years, we have been committed to providing exceptional care and life enhancing services to people all throughout the greater Los Angeles area. With a wide variety of programs, we're equipped to care for patients with varying conditions and needs.</p>
-            <h5>What we offer</h5>
-            <p>We have six main service offerings: private duty nursing, skilled home health care, palliative care, complex care management (CCM), hospice, and acute/hospital based care. </p>
+            <hr/>
+          </div>
+          <div className='content'>
+            <div className='left'>
+              <h5>We've got you covered</h5>
+              <p>At Charter Healthcare Group we believe in making a positive change in the lives of our patients and their families. For over ten years, we have been committed to providing exceptional care and life enhancing services to people all throughout the greater Los Angeles area. With a wide variety of programs, we're equipped to care for patients with varying conditions and needs.</p>
+            </div>
+            <div className='right'>
+              <h5>What we offer</h5>
+              <p>We have six main service offerings: private duty nursing, skilled home health care, palliative care, complex care management (CCM), hospice, and acute/hospital based care. </p>
+            </div>
+          </div>
         </div>
         <ServicesStrip2 />
         <DataStrip />

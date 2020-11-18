@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: flex-start;
     margin: 32px 8px 98px 8px;
-    width: 400px;
+    width: 450px;
     min-height: 415px;
     position: relative;
     top: 0;
@@ -145,6 +145,7 @@
 
 @media only screen and (max-width: 450px) {
     .TeamCard {
-        width: 90%;
+        width: 100%;
+        margin: 32px 0 64px 0;
     }
 }

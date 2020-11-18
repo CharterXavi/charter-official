@@ -6,28 +6,37 @@
     justify-content: center;
     background: var(--light-clinic-blue);
     padding: 32px 0;
+    border-right: 5px dotted rgb(255, 255, 255, 0.9);
+    border-left: 5px dotted white;
+    box-sizing: border-box;
 }
 .TeamGrid h2 {
     width: auto;
     color: var(--primary-accent);
 }
 .TeamGrid .grid-container {
-    padding: 75px 0 32px 0;
-    max-width: 70%;
+    padding: 64px 16px 32px 16px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
 }
 .TeamGrid .grid-container .card-container {
-    width: 100%;
+    width: 1000px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
+    box-sizing: border-box;
 }
 
-@media only screen and (max-width: 1200px) {
-    .TeamGrid .grid-container {
-        max-width: 100%;
+@media only screen and (max-width: 1000px) {
+    .TeamGrid {
+        border-right: none;
+        border-left: none;
+    }
+    .TeamGrid .grid-container .card-container {
+        width: 100%;
     }
 }

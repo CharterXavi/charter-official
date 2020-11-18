@@ -22,18 +22,18 @@ const Footer = () => {
                 <div className='helpful-links'>
                     <h4>Helpful Links</h4>
                     <ul>
-                        <li><Link to='/about'>About Charter</Link></li>
-                        <li><Link to='/careers'>Careers</Link></li>
-                        <li><Link to='/terms-and-conditions'>Terms & Conditions</Link></li>
-                        <li><Link to='/privacy-policy'>Privacy Policy</Link></li>
+                        <li className='detail-text'><Link to='/about'>About Charter</Link></li>
+                        <li className='detail-text'><Link to='/careers'>Careers</Link></li>
+                        <li className='detail-text'><Link to='/terms-and-conditions'>Terms & Conditions</Link></li>
+                        <li className='detail-text'><Link to='/privacy-policy'>Privacy Policy</Link></li>
                     </ul>
                 </div>
                 <div className='headquarters'>
                     <h4>Charter Headquarters</h4>
                     <ul>
-                        <li>9660 Haven Ave, Rancho Cucamonga, CA 91730</li>
-                        <li>P: <a href='tel: 909-644-4965'>909-644-4965</a></li>
-                        <li>F: <a href='fax: 909-503-1138'>909-503-1138</a></li>
+                        <li className='detail-text'>9660 Haven Ave, Rancho Cucamonga, CA 91730</li>
+                        <li className='detail-text'>P: <a href='tel: 909-644-4965'>909-644-4965</a></li>
+                        <li className='detail-text'>F: <a href='fax: 909-503-1138'>909-503-1138</a></li>
                     </ul>
                 </div>
                 <div className='socials'>

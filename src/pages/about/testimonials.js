@@ -13,12 +13,21 @@ const TestimonialsPage = () => (
     <SEO title="Testimonials" />
     <div className='TestimonialsPage'>
         <HeaderStrip2 title='Testmonials' headline="Kind words from our patients" image={testimonialsImg} />
-        <div className='intro'>
-          <h2>Kind words from our patients</h2>
-          <h5>Making a difference</h5>
-          <p>We work hard, day and night, to ensure the highest quality care and the greatest satisfaction for each and every one of our patients. In doing so, nothing motivates us to keep working diligently more than the kind feedback and gratitude from our patients, their famililes, and their loved ones.</p>
-          <h5>Testimonials</h5>
-          <p>We’re excited to be able to share that joy with you - see for yourself what people have to say about Charter!</p>
+        <div className='two-column'>
+          <div className='title'>
+            <h2>Kind words from our patients</h2>
+            <hr/>
+          </div>
+          <div className='content'>
+            <div className='left'>
+              <h5>Making a difference</h5>
+              <p>We work hard, day and night, to ensure the highest quality care and the greatest satisfaction for each and every one of our patients. In doing so, nothing motivates us to keep working diligently more than the kind feedback and gratitude from our patients, their famililes, and their loved ones.</p>
+            </div>
+            <div className='right'>
+              <h5>Testimonials</h5>
+              <p>We’re excited to be able to share that joy with you - see for yourself what people have to say about Charter!</p>
+            </div>
+          </div>
         </div>
         <QuoteMosaic />
         <LocationsStrip svg={true}/>

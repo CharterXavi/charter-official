@@ -16,19 +16,37 @@ const PartnershipsPage = () => (
     <SEO title="Partnerships" />
     <div className='PartnershipsPage'>
         <HeaderStrip2 image={partnershipsImg} title='Partnerships' headline="Working together for the best patient outcomes" />
-        <div className='intro'>
-            <h2>Collaboration is key</h2>
-            <h5>Working Together</h5>
-            <p>Every patient's care requires a collaborative effort of multiple different providers, staff, and organizations. At Charter, we know that efficient partnerships and trusted relationships are crucial to providing the best healthcare possible. We value our partnerships and we are always looking to build new relationships in the communities we serve.</p>
+        <div className='two-column'>
+            <div className='title'>
+              <h2>Collaboration is key</h2>
+              <hr/>
+            </div>
+            <div className='content'>
+              <div className='left'>
+                <h5>Working Together</h5>
+                <p>Every patient's care requires a collaborative effort of multiple different providers, staff, and organizations. At Charter, we know that efficient partnerships and trusted relationships are crucial to providing the best healthcare possible. We value our partnerships and we are always looking to build new relationships in the communities we serve.</p>
+              </div>
+              <div className='right'>
+
+              </div>
+            </div>
         </div>
         <Partners />
         <DataStrip />
         <TestimonialsStrip />
-        <div className='intro become-partner'>
+        <div className='two-column become-partner'>
+          <div className='title'>
             <img src={networkIcon} alt="Network" />
             <h2>Partner with us!</h2>
-            <p>Interested in becoming a partner? We'd love to hear more about how we might be able to work together to serve our patients. Head over to our contact page and fill out the form at the bottom - we look forward to connecting with you.</p>
-            <ButtonPrimary content='Become a partner' link='/contact'/>
+            <hr/>
+          </div>
+          <div className='content'>
+            <div className='left'>
+              <p>Interested in becoming a partner? We'd love to hear more about how we might be able to work together to serve our patients. Head over to our contact page and fill out the form at the bottom - we look forward to connecting with you.</p>
+            </div>
+            <div className='right'></div>
+          </div>
+          <ButtonPrimary content='Become a partner' link='/contact'/>
         </div>
         <LocationsStrip svg={true} />
     </div>

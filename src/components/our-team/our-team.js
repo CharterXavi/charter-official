@@ -12,7 +12,9 @@ import {Link} from 'gatsby';
 const OurTeamStrip = (props) => {
   return (
     <div className='OurTeamStrip'>
-        <h2>Meet Our Executive Team</h2>
+        <div className='title'>
+            <h2>Meet Our Executive Team</h2>
+        </div>
         <div className='card-container'>
             <div className='card'>
                 <Link to='/our-team'>
@@ -55,7 +57,7 @@ const OurTeamStrip = (props) => {
                     <img src={sylvie} alt="Team Member" />
                 </Link>
                 <div className='card-info'>
-                    <h4>Syvlie Boal</h4>
+                    <h4>Sylvie Boal</h4>
                     <p>Corporate Counsel, VP of Quality & Compliance</p>
                 </div>
             </div>
@@ -69,7 +71,9 @@ const OurTeamStrip = (props) => {
                 </div>
             </div>
         </div>
-        <ButtonPrimaryAlt content='See Our Team' link='/our-team' />
+        <div className='button-wrapper'>
+            <ButtonPrimaryAlt content='See Our Team' link='/our-team' />
+        </div>
         {
             props.svg && <svg className='team-wave-one' xmlns="http://www.w3.org/2000/svg" width="1440" height="521" viewBox="0 0 1440 521" fill="none">
                 <g filter="url(#filter5_d)">

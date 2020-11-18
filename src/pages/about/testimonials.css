@@ -8,17 +8,3 @@
 .TestimonialsPage .HeaderStrip {
     z-index: 2;
 }
-.TestimonialsPage h2 {
-    width: auto;
-}
-
-@media only screen and (max-width: 600px) {
-    .TestimonialsPage h2 {
-        align-self: flex-start;
-        padding: 0 0 0 16px;
-    }
-    .TestimonialsPage .intro h2 {
-        align-self: flex-start;
-        padding: 0 0 16px 0;
-    }
-}

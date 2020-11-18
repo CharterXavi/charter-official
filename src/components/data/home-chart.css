@@ -1,6 +1,6 @@
 .HomeChart {
-    width: 435px;
-    height: 335px;
+    width: 420px;
+    height: 375px;
     border-radius: 10px;
     position: relative;
     top: 0;
@@ -8,6 +8,7 @@
     box-shadow: var(--standard-shadow);
     padding: 32px;
     background: white;
+    box-sizing: border-box;
 }
 
 @media only screen and (max-width: 1200px) {
