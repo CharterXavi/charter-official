@@ -14,7 +14,7 @@ const ShowMoreButton = (props) => {
     return (
         <a 
         href={props.link}
-        className='ShowMoreButton'
+        className='ShowMoreButton button-text'
         download={props.download === true} 
         data-aos={props.animation} 
         data-aos-duration={props.animationTime}

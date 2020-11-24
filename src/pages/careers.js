@@ -15,77 +15,87 @@ import './careers.css';
 
 const CareersPage = () => (
   <Layout>
-    <SEO title="Careers" />
-    <HeaderStrip2
-      image={careersImage}
-      title='Careers'
-      headline='Come work for a passionate, people-driven company'
-    />
-    <div className='intro'>
-      <h2>Our Charter Identity</h2>
-      <h5>Who we are</h5>
-      <p>We're proud to be a part of what is undoubtedly a unique workforce. We've very intentionally build up our company with the most passionate and driven people we could find. Regardless of discipline or department we are a company that truly invests in what we do and the people we interact with, and we never lose sight of the impact we strive to make.</p>
-      <h5>What we're made of</h5>
-      <p>Charter is a diverse place, and we value this a lot. To know our company is composed of hard working, brilliant people from different walks of life, cultures, and worldviews helps us feel even more confident in our ability to improve lives wherever we go.</p>
-    </div>
-    <div className='demographics'>
-      <h2>Our Workforce</h2>
-      <h5>Demographics</h5>
-      <p>Amongst the majority of our employees who respond with demographic information, diversity is front and center.</p>
-      <h5>Percentages:</h5>
-      <div className='chart-wrapper'>
-        <DemographicsChart />
-      </div>
-    </div>
-    <div className='intro benefits'>
-      <h2>We take care of our own</h2>
-      <h5>Mobility & recognition</h5>
-      <p>We love to recognize those doing exceptional work and make sure they know we appreciate them. We value promoting from within and we always make sure to keep feedback flowing with performance reviews, surveys, and more to make sure everyone's happy.</p>
-      <h5>Competitive Benefits</h5>
-      <p>We know that empowering our employees with competitive pay, benefits, and flexibility helps the company thrive. A healthy and happy company is formed by healthy, happy individuals, and we do our best to foster that kind of environment.</p>
-      <div className='benefits-wrapper'>
-        <div className='benefits-card'>
-          <img src={healthIcon} alt="Healthcare" />
-          <h4>Health & Wellness</h4>
-          <p>Cover your all your bases:</p>
-          <ul>
-            <li>Medical, dental, vision, and life insurance</li>
-            <li>Critical illness insurance</li>
-            <li>Pet insurance</li>
-            <li>Short/long term disability</li>
-          </ul>
+    <div className="CareersPage">
+      <SEO title="Careers" />
+      <HeaderStrip2
+        image={careersImage}
+        title='Careers'
+        headline='Come work for a passionate, people-driven company'
+      />
+      <div className='two-column'>
+        <div className="title">
+          <h4>Our Charter Identity</h4>
+          <hr/>
         </div>
-        <div className='benefits-card'>
-          <img src={awardIcon} alt="Award" />
-          <h4>Generous Incentives</h4>
-          <p>Hard work at Charter pays off:</p>
-          <ul>
-            <li>401K company matching</li>
-            <li>Referral and retention bonuses</li>
-            <li>Employee of the Month program</li>
-            <li>Appreciation events</li>
-            <li>Birthday recognition & gifts</li>
-            <li>Anniversary rewards</li>
-          </ul>
-        </div>
-        <div className='benefits-card'>
-          <img src={clockIcon} alt="Clock" />
-          <h4>Real Flexibility</h4>
-          <p>Balance life and work:</p>
-          <ul>
-            <li>Competitive vacation/sick pay accrual</li>
-            <li>Flexible work hours</li>
-            <li>Cutting edge devices and systems to make our nurses' lives easier</li>
-          </ul>
+        <div className="content">
+          <div className="left">
+            <h6>Who we are</h6>
+            <p>We're proud to be a part of what is undoubtedly a unique workforce. We've very intentionally build up our company with the most passionate and driven people we could find. Regardless of discipline or department we are a company that truly invests in what we do and the people we interact with, and we never lose sight of the impact we strive to make.</p>
+          </div>
+          <div className="right">
+            <h6>What we're made of</h6>
+            <p>Charter is a diverse place, and we value this a lot. To know our company is composed of hard working, brilliant people from different walks of life, cultures, and worldviews helps us feel even more confident in our ability to improve lives wherever we go.</p>
+          </div>
         </div>
       </div>
+      {/* <div className='picture-grid'>
+        <TeamPics />
+      </div> */}
+      <div className='two-column'>
+        <div className="title">
+          <h4>We take care of our own</h4>
+          <hr/>
+        </div>
+        <div className="content">
+          <div className="left">
+            <h6>Competitive Benefits</h6>
+            <p>We know that empowering our employees with competitive pay, benefits, and flexibility helps the company thrive. A healthy and happy company is formed by healthy, happy individuals, and we do our best to foster that kind of environment.</p>
+          </div>
+          <div className="right">
+            <h6>Mobility & recognition</h6>
+            <p>We love to recognize those doing exceptional work and make sure they know we appreciate them. We value promoting from within and we always make sure to keep feedback flowing with performance reviews, surveys, and more to make sure everyone's happy.</p>
+          </div>
+        </div>
+        <div className='benefits-wrapper'>
+          <div className='benefits-card'>
+            <img src={awardIcon} alt="Award" />
+            <h6 className='detail-title'>Generous Incentives</h6>
+            <p className='detail-text'>We provide 401K company matching, referral and retention bonuses, an Employee of the Month program, anniversary & birthday rewards ,and more.</p>
+          </div>
+          <div className='benefits-card' >
+            <img src={healthIcon} alt="Healthcare" />
+            <h6 className='detail-title'>Health & Wellness</h6>
+            <p className='detail-text'>We help you cover all your bases with great insurance options: medical, dental, vision, life, critical illness, pet, short and/or long-term disability, etc.</p>
+          </div>
+          <div className='benefits-card'>
+            <img src={clockIcon} alt="Clock" />
+            <h6 className='detail-title'>Real Flexibility</h6>
+            <p className='detail-text'>We value flexibility. Enjoy competitive vacation/sick pay accrual, flexible work hours, and cutting edge, devices and systems to make our staffs' lives easier.</p>
+          </div>
+        </div>
+        <div className='two-column'>
+          <div className="title">
+            <h4>Our Workforce</h4>
+            <hr/>
+          </div>
+          <div className="content">
+            <div className="left">
+              <h6>Demographics</h6>
+              <p>Amongst the majority of our employees who respond with demographic information, diversity is front and center.</p>
+            </div>
+            <div className="right">
+              <h6>Percentages:</h6>
+            </div>
+          </div>
+          <div className='chart-wrapper'>
+            <DemographicsChart />
+          </div>
+        </div>
+      </div>
+      <JoinUsStrip />
+      <OurTeamStrip />
+      <LocationsStrip svg={true} />
     </div>
-    <div className='picture-grid'>
-      <TeamPics />
-    </div>
-    <JoinUsStrip />
-    <OurTeamStrip />
-    <LocationsStrip svg={true} />
   </Layout>
 )
 

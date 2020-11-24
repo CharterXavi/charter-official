@@ -1,7 +1,7 @@
 .ServicesStrip2 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
     height: auto;
@@ -10,11 +10,14 @@
     padding: 32px 16px 64px 16px;
     box-sizing: border-box;
 }
-.ServicesStrip2 h2 {
-    text-align: center;
-    padding: 32px 0 0 0;
-    width: 85%;
+.ServicesStrip2 .title {
+    text-align: left;
+    padding: 16px;
+    width: 1000px;
+}
+.ServicesStrip2 .title h2 {
     color: var(--primary-accent);
+    padding: 4px 0;
 }
 .ServicesStrip2 .card-container {
     width: 1000px;
@@ -22,13 +25,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 32px 0 32px 0;
 }
 .ServicesStrip2 .card {
-    width: 300px;
+    width: 308px;
     height: auto;
     border-radius: 10px;
-    padding: 8px;
+    padding: 4px;
     margin: 8px;
     display: flex;
     flex-direction: column;
@@ -44,7 +46,8 @@
 .ServicesStrip2 .card:hover .icon {
     transform: translateY(-8px);
 }
-.ServicesStrip2 .card h3, .ServicesStrip2 .card p {
+
+.ServicesStrip2 .card p {
     color: #363f55;
 }
 .ServicesStrip2 .icon {
@@ -55,10 +58,25 @@
     .ServicesStrip2 .card-container {
         width: 100%;
     }
+    .ServicesStrip2 .title {
+        width: 100%;
+        padding: 0 16px;
+    }
 }
 @media only screen and (max-width: 665px) {
     .ServicesStrip2 .card-container .card {
         width: 300px;
+    }
+    .ServicesStrip2 .card-container .card img {
+        height: 50px;
+        width: 50px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .ServicesStrip2 .card-container .card {
+        width: 100%;
+        padding: 16px 0;
+        margin: 0;
     }
     .ServicesStrip2 .card-container .card img {
         height: 50px;

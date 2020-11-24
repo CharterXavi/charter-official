@@ -73,7 +73,7 @@ const CCMData = () => {
   return (
     <div className='CCMData'>
       <div className='intro'>
-        <h2>The proven power of CCM</h2>
+        <h4>The proven power of CCM</h4>
         <p>Our Complex Care Management program has a solid track record in improving the quality of care patients receive and in lowering their overall healthcare costs by significantly reducing hospital admissions. To properly research our program and see its efficacy, we teamed up with UCLA Biostatistics in a large CCM Study.</p>
       </div>
       <hr/>
@@ -85,14 +85,14 @@ const CCMData = () => {
         </div>
         <div className='right'>
           <img src={heartIcon} alt="Heart" />
-          <h3>Healthier patients</h3>
+          <h5>Healthier patients</h5>
           <p>90 days after enrollment in the CCM program, we saw some wonderful changes: emergency room utilization decreased 34.19%, number of hospital admissions decreased 62.58%, and hospital bed days decreased 62.87%.</p>
         </div>
       </div>
       <div className='cost-stats two-column-left'>
         <div className='left'>
           <img src={moneyIcon} alt="Moneybag" />
-          <h3>More affordable care</h3>
+          <h5>More affordable care</h5>
           <p>The estimated cost savings attributed to the CCM model was $44,708,312. Estimated operating cost of the CCM model was $19,331,564 which gave a total estimated net savings of $25,376,748; return on investment (ROI) 2.31. The cost savings analysis and ROI demonstrated a significantly cost effective model of care.</p>
         </div>
         <div className='right'>

@@ -8,31 +8,39 @@
     position: relative;
     top: 0;
     background: var(--light-clinic-blue);
-    padding: 64px 16px 16px 16px;
+    padding: 32px 16px 64px 16px;
     z-index: 1;
     box-sizing: border-box;
 }
-.OurTeamStrip h2 {
+.OurTeamStrip .title {
     text-align: center;
-    color: #363f55;
+    padding: 16px;
+    width: 1000px;
+}
+.OurTeamStrip .title h4 {
+    text-align: center;
+    color: var(--primary-accent);
+    padding: 4px 0;
 }
 .OurTeamStrip .card-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 32px 0;
+    padding: 16px;
+    box-sizing: border-box;
     position: relative;
     top: 0;
     z-index: 2;
     border-radius: 10px;
-    max-width: 1200px;
+    max-width: 1000px;
     height: 80%;
-    background: white;
-    box-shadow: var(--standard-shadow);
+    /* background: white;
+    box-shadow: var(--standard-shadow); */
 }
 .OurTeamStrip .card-container .card {
-    width: 45%;
+    box-sizing: border-box;
+    width: 50%;
     height: 200px;
     display: flex;
     align-items: center;
@@ -42,19 +50,20 @@
     overflow: hidden;
 }
 .OurTeamStrip .card-container .card p {
-    color: var(--primary-accent);
-    padding: 4px;
+    font-size: 1rem;
+    padding: 0;
 }
 .OurTeamStrip .card-container .card h4{
     width: auto;
-    padding: 4px;
+    padding: 0;
+
 }
 .OurTeamStrip .card-container .card .card-info {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    height: 100%;
+    height: auto;
     width: 50%;
 }
 .OurTeamStrip .card-container .card img {
@@ -62,6 +71,7 @@
     overflow: hidden;
     transition: 0.25s ease all;
     position: relative;
+    width: 180px;
 }
 .OurTeamStrip .card-container .card img::after {
     content: 'Read more';
@@ -79,25 +89,12 @@
 .OurTeamStrip .card-container .card img:hover::after {
     top: 49%;
 }
-.OurTeamStrip .ButtonPrimaryAlt {
-    position: relative;
-    bottom: 0;
-    z-index: 3;
-    margin: 32px 0 32px 0;
+.OurTeamStrip .button-wrapper {
+    width: 1000px;
+    display: flex;
+    justify-content: center;
 }
-.team-wave-one {
-    width: 100vw;
-    height: auto;
-    position: absolute;
-    bottom: -5px;
-    z-index: 1;
-}
-.team-wave-mobile-one {
-    display: none;
-}
-.team-wave-mobile-two {
-    display: none;
-}
+
 @media only screen and (max-width: 1100px) {
     .OurTeamStrip .card-container .card img {
         margin: 0 16px 0 0;
@@ -106,28 +103,24 @@
         width: 30%;
     } */
 }
+@media only screen and (max-width: 1000px) {
+    .OurTeamStrip .title {
+        width: 100%;
+        padding: 0 16px;
+    }
+}
 @media only screen and (max-width: 900px) {
     .OurTeamStrip {
         height: auto;
     }
-    .OurTeamStrip .card-container {
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        padding: 32px;
-        max-width: 100%;
-        width: 84%;
-        box-sizing: border-box;
-    }
     .OurTeamStrip .card-container .card {
-        width: 100%;
+        padding: 8px 0;
     }
     .OurTeamStrip .card-container .card img {
-        margin: 0 32px 0 0;
+        margin: 0 8px 0 0;
     }
     .OurTeamStrip .card-container .card .card-info {
-        width: 40%;
+        width: 50%;
     }
     .team-wave-mobile-one {
         display: block;
@@ -135,14 +128,6 @@
         bottom: -40px;
         width: 100%;
         height: auto;
-    }
-    .team-wave-one {
-        display: none;
-    }
-}
-@media only screen and (max-width: 665px) {
-    .team-wave-mobile-one {
-        bottom: -50px;
     }
 }
 @media only screen and (max-width: 600px) {
@@ -171,7 +156,7 @@
         height: 150px;
     }
     .OurTeamStrip .card-container .card img {
-        width: 100px;
+        width: 150px;
     }
     .OurTeamStrip .card-container .card .card-info {
         width: 100%;
@@ -181,19 +166,6 @@
     }
     .OurTeamStrip .card-container .card .card-info p {
         width: 100%;
-    }
-    .team-wave-mobile-one {
-        display: none;
-    }
-    .team-wave-one {
-        display: none;
-    }
-    .team-wave-mobile-two {
-        display: block;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: auto;
     }
 }
 @media only screen and (max-width: 400px) {

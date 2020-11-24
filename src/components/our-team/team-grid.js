@@ -97,7 +97,7 @@ const TeamGrid = () => {
 
   return (
     <div className='TeamGrid'>
-        <h2>Meet Our Executive Team</h2>
+        <h4>Meet Our Executive Team</h4>
         <div className='grid-container'>
             <div className='card-container'>
                 {teamList.map(teamMember => {

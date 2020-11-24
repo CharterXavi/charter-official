@@ -14,13 +14,13 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    width: 1200px;
+    width: 1000px;
     padding: 16px 0px 32px 0px;
 }
 .AboutCharter .about-card-wrapper .about-card {
-    width: 400px;
+    width: 300px;
     height: auto;
-    padding: 32px;
+    padding: 8px;
     border-radius: 10px;
     margin: 16px;
 }

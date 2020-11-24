@@ -12,14 +12,16 @@ import {Link} from 'gatsby';
 const OurTeamStrip = (props) => {
   return (
     <div className='OurTeamStrip'>
-        <h2>Meet Our Executive Team</h2>
+        <div className='title'>
+            <h4>Meet Our Executive Team</h4>
+        </div>
         <div className='card-container'>
             <div className='card'>
                 <Link to='/our-team'>
                     <img src={steve} alt="Team Member" />
                 </Link>
                 <div className='card-info'>
-                    <h4>Steve Larkin</h4>
+                    <h6>Steve Larkin</h6>
                     <p>Chief Executive Officer</p>
                 </div>
             </div>
@@ -28,7 +30,7 @@ const OurTeamStrip = (props) => {
                     <img src={sabina} alt="Team Member" />
                 </Link>
                 <div className='card-info'>
-                    <h4>Sabina Del Rosario</h4>
+                    <h6>Sabina Del Rosario</h6>
                     <p>Chief Operating Officer</p>
                 </div>
             </div>
@@ -37,7 +39,7 @@ const OurTeamStrip = (props) => {
                     <img src={vince} alt="Team Member" />
                 </Link>
                 <div className='card-info'>
-                    <h4>Vincent Castaldo</h4>
+                    <h6>Vincent Castaldo</h6>
                     <p>Chief Financial Officer</p>
                 </div>
             </div>
@@ -46,7 +48,7 @@ const OurTeamStrip = (props) => {
                     <img src={jeanclaude} alt="Team Member" />
                 </Link>
                 <div className='card-info'>
-                    <h4>Dr. Jean-Claude Hage</h4>
+                    <h6>Dr. Jean-Claude Hage</h6>
                     <p>Chief Medical Officer</p>
                 </div>
             </div>
@@ -55,7 +57,7 @@ const OurTeamStrip = (props) => {
                     <img src={sylvie} alt="Team Member" />
                 </Link>
                 <div className='card-info'>
-                    <h4>Syvlie Boal</h4>
+                    <h6>Sylvie Boal</h6>
                     <p>Corporate Counsel, VP of Quality & Compliance</p>
                 </div>
             </div>
@@ -64,12 +66,14 @@ const OurTeamStrip = (props) => {
                     <img src={meagan} alt="Team Member" />
                 </Link>
                 <div className='card-info'>
-                    <h4>Meagan De Guzman</h4>
+                    <h6>Meagan De Guzman</h6>
                     <p>VP of Human Resources</p>
                 </div>
             </div>
         </div>
-        <ButtonPrimaryAlt content='See Our Team' link='/our-team' />
+        <div className='button-wrapper'>
+            <ButtonPrimaryAlt content='See Our Team' link='/our-team' />
+        </div>
         {
             props.svg && <svg className='team-wave-one' xmlns="http://www.w3.org/2000/svg" width="1440" height="521" viewBox="0 0 1440 521" fill="none">
                 <g filter="url(#filter5_d)">

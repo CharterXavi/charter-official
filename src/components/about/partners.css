@@ -5,8 +5,11 @@
     align-items: center;
     justify-content: center;
     padding: 32px 16px;
+    margin: 32px 0;
     box-sizing: border-box;
     position: relative;
+    background: white;
+    box-shadow: var(--standard-shadow);
 }
 .Partners img {
     width: auto;

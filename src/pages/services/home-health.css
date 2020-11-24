@@ -1,10 +1,17 @@
-.HomeHealth .intro {
+.HomeHealthPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background: var(--light-clinic-blue);
 }
-.HomeHealth .intro h5 {
+.HomeHealthPage .intro {
+    background: var(--light-clinic-blue);
+}
+.HomeHealthPage .intro h5 {
     max-width: 650px;
 }
-.HomeHealth .intro ul {
+.HomeHealthPage .intro ul {
     width: 650px;
     padding: 0 0 0 40px;
 }

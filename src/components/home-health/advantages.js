@@ -23,28 +23,28 @@ const Advantages = (props) => {
       animationTime: '800'
     },
     {
+      img: clock,  
+      title: 'Convenience',
+      content: 'Shortens and in some cases, eliminates hospitalizations or skilled nursing home stays. Many risks, such as infection, are eliminated or minimized when care is given at home.',
+      animationTime: '1100'
+    },
+    {
       img: group,  
       title: 'Independence',
       content: 'We strive to help you regain your independence and maintain your quality of life so you can look forward to a brighter future.',
-      animationTime: '1100'
+      animationTime: '1500'
     },
     {
       img: checkbox,  
       title: 'Control',
       content: 'Charter Home Health gives you choices and allows you to be an active participant in your own care and recovery journey.',
-      animationTime: '1500'
-    },
-    {
-      img: clock,  
-      title: 'Convenience',
-      content: 'Shortens and in some cases, eliminates hospitalizations or skilled nursing home stays. Many risks, such as infection, are eliminated or minimized when care is given at home.',
       animationTime: '1900'
     }
 ]
 
 return (
     <div className='Advantages'>
-        <h2>Advantages of Home Health</h2>
+        <h4>Advantages of Home Health</h4>
         <div className='card-wrapper'>
             {
                 advantageList.map(item => {

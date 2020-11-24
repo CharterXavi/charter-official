@@ -3,10 +3,13 @@
     flex-direction: column;
     justify-items: center;
     align-items: center;
-    width: 75%;
+    width: 1000px;
     min-height: 200px;
     margin: 32px 0 32px 0;
     z-index: 1;
+}
+.PostStrip h5 {
+    color: var(--heading-color);
 }
 .PostStrip hr {
     width: 100%;
@@ -39,13 +42,13 @@
     border-radius: 10px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
     width: 500px;
-    height: 300px;
+    height: 250px;
 }
 .PostStrip .grid a:nth-of-type(2) {
     margin: 0 16px;
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1000px) {
     .PostStrip .grid a:nth-of-type(3) {
         display: none; 
     }
@@ -55,18 +58,11 @@
     .PostStrip .grid a:nth-of-type(1) {
         margin: 0 16px 0 0;
     }
-}
-@media only screen and (max-width: 1150px) {
     .PostStrip {
-        width: 90%;
+        width: 100%;
     }
     .PostStrip .grid a {
         height: 200px;
-    }
-}
-@media only screen and (max-width: 950px) {
-    .PostStrip {
-        width: 100%;
     }
 }
 @media only screen and (max-width: 600px) {

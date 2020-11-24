@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import ButtonPrimary from '../buttons/button-primary';
-import charterFeather from '../../images/iconography/charter-feather.png';
 import heroGraphic from '../../images/iconography/hero-graphic.png';
+import charterTree from '../../images/charter-tree.png';
 import './hero7.css';
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -26,7 +26,7 @@ const HeroStrip7 = () => {
 
             <div className='hero-wrapper'>
                 <div className='hero-content'>
-                    <img src={charterFeather} alt="Feather logo" data-aos='fade-up' data-aos-duration='600'/>
+                    <img src={charterTree} alt="Feather logo" data-aos='fade-up' data-aos-duration='600'/>
                     <h1 data-aos='fade-up' data-aos-duration='700'>Healthcare Solutions for every age and stage.</h1>
                     <p data-aos='fade-up' data-aos-duration='900'>With top-tier providers, a wide variety of programs, and a track record of success, we’re equipped to meet our patients where they’re at and provide them the quality care they need.</p>
                     <div data-aos='fade-up' data-aos-duration='1300'>

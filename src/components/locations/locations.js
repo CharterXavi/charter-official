@@ -316,7 +316,7 @@ const LocationsStrip = (props) => {
         }
         <div className='left'> 
         <img src={pinIcon} alt='Home Icon' className='icon' />
-            <h2>Our Locations</h2>
+            <h4>Our Locations</h4>
             <p>See our locations by state</p>
             <div className='card-container'>
                 {/* Map through each location, create a card component and pass state values and methods in as props */}

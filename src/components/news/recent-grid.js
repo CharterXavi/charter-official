@@ -8,8 +8,8 @@ const RecentGrid = (props) => {
   return (
     <div className='RecentGrid'>
         <div className='grid-header'>
-        <h2>The Latest</h2>
-        <Link to='/news/recent'>See All Recent Articles</Link>
+          <h5>{props.title}</h5>
+          <Link to='/news/recent'>{props.linkContent}</Link>
         </div>
         <hr/>
         <div className='grid'>

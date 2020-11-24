@@ -41,9 +41,6 @@
 .Footer .right .headquarters {
     margin: 32px 0 32px 0;
 }
-.Footer .right .headquarters ul{
-    font-size: 15px;
-}
 .Footer .right .headquarters a{
     color: white;
     font-weight: normal;
@@ -54,7 +51,7 @@
 .Footer .right .socials {
     margin: 32px 0 32px 0;
 }
-.Footer .right h4 {
+.Footer .right h6 {
     color: var(--primary-accent);
 }
 .Footer .right li {

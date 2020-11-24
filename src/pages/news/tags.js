@@ -27,7 +27,7 @@ const TagsPage = ({
         <div className='TagsPage'>
             <HeaderStrip2 image={archiveHeader} title='All Tags' headline='See our all of our news articles by tags' />
             <div className='intro'>
-            <h2>All Tags</h2>
+            <h4>All Tags</h4>
             <ul>
                 {group.map(tag => (
                 <li key={tag.fieldValue}>

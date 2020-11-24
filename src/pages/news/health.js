@@ -80,7 +80,7 @@ const HealthPage = ({data}) => {
         <div className='AllPosts'>
             <div className='grid-wrapper'>
                 <div className='grid-header'>
-                  <h2>All Health Articles</h2>
+                  <h4>All Health Articles</h4>
                 </div>
                 <div className='grid'>
                     

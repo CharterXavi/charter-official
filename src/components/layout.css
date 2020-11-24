@@ -1,6 +1,6 @@
 /* -------------- GLOBAL STYLES ---------------- */
 :root {
-  --primary-accent: #f05f7e;
+  --primary-accent: #F3476C;
   --pink-sherbet: #F493AA;
   --light-accent: #f2d1c9;
   --heading-color: #363f55;
@@ -8,8 +8,10 @@
   --light-clinic-blue: #F6F7FB;
   --maximum-blue: #0FBDBD;
   --scrubs-blue: #546182;
+  --scrubs-blue: #546182;
+  --detail-grey: #535968;
   --rose: linear-gradient(180deg, #F493AA 0%, #F05F7E 100%);
-  --sunset: linear-gradient(66.41deg, #F05F7E 24.79%, #FFCE94 85.46%);
+  --sunset: linear-gradient(66.41deg, #F3476C 24.79%, #FFCE94 85.46%);
   --mist: linear-gradient(90deg, #F493AA 0%, #F2D1C9 100%);
   --ocean: linear-gradient(270deg, #0FBDBD -7.32%, #363F55 100%);
   --hero-gradient-white: linear-gradient(90deg, #FFFFFF 42.19%, #F493AA 61.98%);
@@ -39,69 +41,108 @@ body {
   font-family: 'Nunito', sans-serif;
   font-size: 17px;
 }
-h1, h2, h3 {
-  font-family: 'Nunito', sans-serif;
-  font-weight: bold 700;
-}
-h2, h3 {
-  color: black;
-  width: 100%;
-}
-h4, h5, h6 {
+h1, h2, h4, h5, h6 {
   font-family: 'Nunito', sans-serif;
   text-align: left;
-  width: 100%;
 }
 h1 {
   color: var(--primary-accent);
-  font-size: 2.3em;
-  font-weight: 700;
+  font-size: 4.75em;
   padding: 16px 0;
   margin: 0 0;
+  letter-spacing: 0px;
+  font-weight: 600;
 }
 h2 {
-  font-size: 1.75em;
+  font-size: 3.5em;
+  font-weight: 600;
   padding: 16px 0;
   margin: 0 0;
+  letter-spacing: -0.5px;
+  color: var(--primary-accent);
 }
 h3 {
-  font-size: 1.5em;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  color: var(--primary-accent);
+  font-size: 2.75em;
   padding: 16px 0;
   margin: 0 0;
-  color: var(--heading-color);
+  letter-spacing: 0px;
 }
 h4 {
+  font-size: 2em;
+  padding: 8px 0;
+  margin: 0 0;
+  letter-spacing: 0.25px;
+  font-weight: 600;
+  color: var(--primary-accent);
+}
+h5 {
+  font-size: 1.5em;
+  padding: 8px 0;
+  margin: 0 0;
+  letter-spacing: 0px;
+  font-weight: 600;
+  color: var(--primary-accent);
+}
+h6 {
   font-size: 1.25em;
   padding: 8px 0;
   margin: 0 0;
-}
-h5 {
-  font-size: 1em;
-  padding: 8px 0;
-  margin: 0 0;
+  letter-spacing: 0.15px;
+  font-weight: 700;
+  color: var(--heading-color);
 }
 p {
+  color: var(--heading-color);
   font-size: 1em;
   width: 100%;
   padding: 8px 0;
   margin: 0 0;
+  font-weight: 400px;
+  letter-spacing: 0.5px;
+}
+ul {
+  margin: 4px 0;
+}
+li {
+  color: var(--heading-color);
+  font-size: 1em;
+  width: 100%;
+  padding: 0;
+  margin: 0 0;
+  font-weight: 400px;
+  letter-spacing: 0.5px;
 }
 a {
-  font-size: 15px;
+  font-size: 1em;
   font-weight: bold;
   text-decoration: none;
   color: var(--primary-accent);
   cursor: pointer;
 }
-.introduction-text {
-  font-family: 'Nunito', sans-serif;
-  font-size: 18px;
+hr {
+  width: 100%;
+  border: 3px solid white;
+  box-sizing: border-box;
+  border-radius: 50px;
 }
-.quote-text {
-  font-style: normal;
+.detail-title {
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.9em;
   font-weight: bold;
-  font-size: 24px;
-  line-height: 30px;
+}
+.detail-text {
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.9em;
+  color: var(--detail-grey);
+}
+.button-text {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  letter-spacing: 1.25px;
 }
 .spacer {
   height: 75px;
@@ -110,16 +151,17 @@ a {
 
 /* --- COLUMN WITH TEXT-LEFT --- */
 .two-column-left {
-  max-width: 1200px;
+  max-width: 1000px;
   display: flex;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
+  color: var(--heading-color);
 }
 .two-column-left .left {
-  padding: 16px;
+  padding: 16px 16px 16px 0;
   box-sizing: border-box;
-  width: 600px;
+  width: 50%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -130,9 +172,9 @@ a {
   color: var(--primary-accent);
 }
 .two-column-left .right {
-  padding: 16px;
+  padding: 16px 0 16px 16px;
   box-sizing: border-box;
-  width: 600px;
+  width: 50%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -140,24 +182,25 @@ a {
 
 /* --- COLUMN WITH TEXT-RIGHT --- */
 .two-column-right {
-  max-width: 1200px;
+  color: var(--heading-color);
+  max-width: 1000px;
   display: flex;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
 }
 .two-column-right .left {
-  padding: 16px;
+  padding: 16px 16px 16px 0;
   box-sizing: border-box;
-  width: 600px;
+  width: 50%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
 .two-column-right .right {
-  padding: 16px;
+  padding: 16px 0 16px 16px;
   box-sizing: border-box;
-  width: 600px;
+  width: 50%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -169,16 +212,42 @@ a {
 }
 /* --- COLUMN WITH TEXT IN BOTH COLUMNS --- */
 .two-column {
-  max-width: 1200px;
+  color: var(--heading-color);
+  max-width: 1000px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+  padding: 16px;
+}
+.two-column .title {
+  box-sizing: border-box;
+  padding: 16px 0 0 0;
+  width: 100%;
+}
+.two-column .content {
+  display: flex;
+  width: 100%;
   box-sizing: border-box;
 }
-.two-column-left h2 {
+.two-column .title h2 {
   color: var(--primary-accent);
+  padding: 4px 0;
+  box-sizing: border-box;
+  text-align: left;
 }
-.two-column .left, .two-column .right {
+.two-column .content .left {
+  padding: 16px 16px 16px 0;
+  box-sizing: border-box;
+  width: 600px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.two-column .content .right {
   padding: 16px;
   box-sizing: border-box;
   width: 600px;
@@ -188,8 +257,6 @@ a {
   justify-content: flex-start;
   align-items: flex-start;
 }
-
-
 /* --- INTRO CLASS SECTIONS --- */
 .intro {
   box-sizing: border-box;
@@ -212,7 +279,7 @@ a {
   color: var(--primary-accent);
 }
 .intro p, .intro h5 {
-  max-width: 650px;
+  max-width: 1000px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -222,11 +289,9 @@ a {
   .two-column-right .right, .two-column-right .left {
     width: 50%;
   }
-  .two-column .right, .two-column .left {
-    width: 50%;
-  }
 }
-@media only screen and (max-width: 850px) {
+
+@media only screen and (max-width: 1000px) {
   /* --- COLUMN WITH TEXT-LEFT --- */
   .two-column-left {
     flex-direction: column-reverse;
@@ -239,7 +304,6 @@ a {
   .two-column-left .left {
     width: 100%;
   }
-
 
   /* --- COLUMN WITH TEXT-RIGHT --- */
   .two-column-right {
@@ -261,6 +325,7 @@ a {
   }
   .two-column .left, .two-column .right {
     width: 100%;
+    padding: 0;
   }
 
 }
@@ -282,5 +347,19 @@ a {
 @media only screen and (max-width: 600px) {
   .spacer {
     height: 60px;
+  }
+  .two-column {
+    align-items: flex-start;
+  }
+  .two-column .title h2 {
+    text-align: left;
+  }
+  .two-column .content {
+    flex-direction: column;
+    width: 100%;
+  }
+  .two-column .content .left, .two-column .content .right {
+    padding: 8px 0;
+    width: 100%;
   }
 }

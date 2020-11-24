@@ -41,18 +41,23 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      // resolve: `gatsby-plugin-prefetch-google-fonts`,
+      // options: {
+      //   fonts: [
+      //     {
+      //       family: `Nunito`,
+      //       variants: ['300', '400', '700']
+      //     }
+      //   ],
+      // }
+      resolve: `gatsby-plugin-google-fonts-v2`,
       options: {
         fonts: [
           {
-            family: `Nunito`,
-            variants: ['400', '700']
-          },
-          {
-            family: `Comfortaa`,
-            variants: ['400', '700']
+            family: 'Nunito',
+            weights: ['300', '400', '600', '700', '800']
           }
-        ],
+        ]
       }
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality

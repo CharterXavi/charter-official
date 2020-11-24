@@ -13,8 +13,8 @@ const AdvantageCard = (props) => {
 return (
     <div className='AdvantageCard' data-aos='fade-up' data-aos-duration={props.animationTime} >
         <img src={props.img} alt="Letter" className='icon'/>
-        <h4>{props.title}</h4>
-        <p>{props.content}</p>
+        <h6 className='detail-title'>{props.title}</h6>
+        <p className='detail-text'>{props.content}</p>
     </div>
   );
 }

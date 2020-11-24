@@ -12,7 +12,7 @@ const ButtonPrimaryAlt = (props) => {
     return (
         <a 
         href={props.link}
-        className='ButtonPrimaryAlt'
+        className='ButtonPrimaryAlt button-text'
         download={props.download === true} 
         data-aos={props.animation} 
         data-aos-duration={props.animationTime}

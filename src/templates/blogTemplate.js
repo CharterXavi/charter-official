@@ -64,7 +64,7 @@ const BlogTemplate = (props) => {
           <div className="blog-post">
             <img src={imageSrc} alt={postTitle} className='featured-img' />
             <div className='post-info'>
-              <h2>{postTitle}</h2>
+              <h3>{postTitle}</h3>
               <p>{postDate}</p>
             </div>
             <section
@@ -86,21 +86,21 @@ const BlogTemplate = (props) => {
           <div className='sidebar'>
             <div className='recent'>
               <img src={clockIcon} alt="Clock" />
-              <h5>Recent Posts</h5>
+              <h6 className='detail-title'>Recent Posts</h6>
                 {recentPosts.map(post => {
-                  return <Link to={post.node.frontmatter.slug} key={post.node.frontmatter.title} >{post.node.frontmatter.title}</Link>
+                  return <p className='detail-text'><Link to={post.node.frontmatter.slug} key={post.node.frontmatter.title} >{post.node.frontmatter.title}</Link></p>
                 })}
             </div>
             <div className='related'>
             <img src={heartIcon} alt="Heart" />
-              <h5>Related Posts</h5>
+              <h6 className='detail-title'>Related Posts</h6>
                 {relatedPosts.map(post => {
-                  return <Link to={post.node.frontmatter.slug} key={post.node.frontmatter.title}>{post.node.frontmatter.title}</Link>
+                  return <p className='detail-text'><Link to={post.node.frontmatter.slug} key={post.node.frontmatter.title} >{post.node.frontmatter.title}</Link></p>
                 })}
             </div>
             <div className='share'>
               <img src={groupIcon} alt="Group" />
-              <h5>Share this post:</h5>
+              <h6 className='detail-title'>Share this post:</h6>
               <ShareButtons 
                 title={postTitle} 
                 url={postPath}

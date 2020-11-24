@@ -14,7 +14,7 @@ const HeaderStrip2 = (props) => {
     <div className='HeaderStrip2'>
       <div className='header-content'>
         <h1 data-aos='fade-right' data-aos-duration='800'>{props.title}</h1>
-        <h2 data-aos='fade-right' data-aos-duration='1000'>{props.headline}</h2>
+        <h5 data-aos='fade-right' data-aos-duration='1000'>{props.headline}</h5>
       </div>
       <img src={props.image} alt="header" className='header-image' />
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 199" fill="none" className='header-wave'>

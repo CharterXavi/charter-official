@@ -1,10 +1,9 @@
 .AdvantageCard {
-    width: 280px;
+    width: 250px;
     height: 275px;
     border-radius: 10px;
     box-sizing: border-box;
-    padding: 32px;
-    margin: 8px;
+    padding: 16px;
     position: relative;
     top: 0;
     z-index: 2;
@@ -24,9 +23,8 @@
     transform: translatey(8px);
 }
 .AdvantageCard .icon {
-    position: absolute;
-    top: -25px;
     transition: 0.4s ease all;
+    width: 45px;
 }
 .AdvantageCard h4 {
     margin: 8px 0;

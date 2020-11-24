@@ -11,8 +11,8 @@ const Quotes = (props) => {
                 className={index === props.activeIndex ? 'active' : 'inactive'}
                 key={index}
             >
-                <h4>{quote.name}</h4>
-                <p className='quote-text'>"{quote.quote}"</p>
+                <p className='detail-title'>{quote.name}</p>
+                <h5 className='quote-text'>"{quote.quote}"</h5>
             </div>
             )}
         </div>

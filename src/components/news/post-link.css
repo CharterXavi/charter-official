@@ -46,6 +46,7 @@
 }
 .PostLink .categories .category {
     padding: 0 0 0 0;
+    color: white;
 }
 .PostLink .content {
     transition: 0.4s ease all;

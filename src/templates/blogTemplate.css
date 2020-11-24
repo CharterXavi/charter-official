@@ -53,9 +53,13 @@
     position: sticky;
     top: 190px;
 }
-.blog-post-container .sidebar h5 {
+.blog-post-container .sidebar h6 {
     width: auto;
     color: var(--primary-accent);
+}
+.blog-post-container .sidebar .detail-text {
+    width: auto;
+    padding: 4px 0;
 }
 .blog-post-container .sidebar img {
     width: 25px;
@@ -96,7 +100,7 @@
 .blog-post-container .ButtonPrimary  {
     justify-content: flex-start;
     margin: 16px 0 32px 0;
-    width: 195px;
+    width: 240px;
 }
 .blog-post-container .blog-post .tag {
     margin: 0 0 0 0;

@@ -44,7 +44,7 @@ const CareApproach = (props) => {
 
 return (
     <div className='CareApproach'>
-                <h2>Our Palliative C.A.R.E. Approach</h2>
+                <h4>Our Palliative C.A.R.E. Approach</h4>
         <div className='care-card-wrapper'>
             {
                 careList.map(item => {

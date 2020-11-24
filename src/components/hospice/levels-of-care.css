@@ -7,7 +7,7 @@
     height: auto;
     background: var(--light-clinic-blue);
 }
-.LevelsOfCare h2 {
+.LevelsOfCare h4 {
     width: auto;
     padding: 0 0 32px 0;
     color: var(--primary-accent);
@@ -17,7 +17,7 @@
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
-    width: 1400px;
+    width: 1000px;
 }
 
 @media only screen and (max-width: 1200px) {

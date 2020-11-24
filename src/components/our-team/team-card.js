@@ -24,12 +24,12 @@ const TeamCard = (props) => {
         <img src={props.image} alt="Team Member" className={`${props.isClicked ? 'enlarge-image' : ''}`} />
         <div className='card-body'>
             <div className='header'>
-                <h4>{props.name}</h4>
+                <h6>{props.name}</h6>
                 <p className='introduction-text'>{props.title}</p>
                 <SocialButton content='LinkedIn' link={props.linkedIn} />
             </div>
             <div className='content'>
-                <p className='quote'>{props.quote}</p>
+                <p className='quote detail-text'>{props.quote}</p>
                 <div className={`biography ${props.isClicked ? 'expanded-bio' : ''}`} style={{height: `${props.isClicked ? heightFactor : '0px'}`}}>
                     <hr className={`${props.isClicked ? 'stretch-hr' : ''}`}/>
                     <p>{props.bio}</p>

@@ -1,11 +1,14 @@
-.PartnershipsPage .intro {
-    padding: 32px 16px;
+.PartnershipsPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: var(--light-clinic-blue);
 }
 .PartnershipsPage .become-partner {
-    padding: 64px 16px;
+    padding: 64px 0;
     background: var(--light-clinic-blue);
     color: var(--heading-color);
     position: relative;
     overflow: hidden;
-    height: 500px;
 }

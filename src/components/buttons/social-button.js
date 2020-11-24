@@ -12,7 +12,7 @@ const SocialButton = (props) => {
     return (
         <a 
         href={props.link}
-        className={`SocialButton ${props.link ? '' : 'disabled-btn'}`}
+        className={`SocialButton button-text ${props.link ? '' : 'disabled-btn'}`}
         download={props.download === true} 
         data-aos={props.animation} 
         data-aos-duration={props.animationTime}

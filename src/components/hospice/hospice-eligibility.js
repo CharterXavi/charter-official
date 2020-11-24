@@ -19,7 +19,7 @@ const HospiceEligibility = (props) => {
         <div className='left'>
               <div className='content-wrapper'>
                   <img src={checkboxIcon} alt="Group" className='icon'/>
-                  <h2>Hospice Eligibility</h2>
+                  <h4>Hospice Eligibility</h4>
                   <p>Hospice care is a special benefit fully covered under Medicare, Medi-Cal, and many private health insurances. Eligibility for hospice depends on your physician's order for hospice services and the following:</p>
                   <ul>
                     <li>Your doctor and the hospice medical director certify that you have a terminal condition and meet specific medical criteria for hospice care.</li>

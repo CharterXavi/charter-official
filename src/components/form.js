@@ -19,7 +19,7 @@ export default class MyForm extends React.Component {
         method="POST"
       >
         <div className="headings">
-            <h2>Contact Us</h2>
+            <h4>Contact Us</h4>
             <p>We would love to hear from you!</p>
         </div>
         <div className="name">

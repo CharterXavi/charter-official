@@ -44,7 +44,7 @@ const LevelsOfCare = (props) => {
 
   return (
     <div className='LevelsOfCare'>
-        <h2>4 Levels of Care</h2>
+        <h4>4 Levels of Care</h4>
         <div className='levels-card-wrapper'>
             {
                 levelsList.map(level => {
