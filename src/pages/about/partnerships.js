@@ -18,12 +18,12 @@ const PartnershipsPage = () => (
         <HeaderStrip2 image={partnershipsImg} title='Partnerships' headline="Working together for the best patient outcomes" />
         <div className='two-column'>
             <div className='title'>
-              <h2>Collaboration is key</h2>
+              <h4>Collaboration is key</h4>
               <hr/>
             </div>
             <div className='content'>
               <div className='left'>
-                <h5>Working Together</h5>
+                <h6>Working Together</h6>
                 <p>Every patient's care requires a collaborative effort of multiple different providers, staff, and organizations. At Charter, we know that efficient partnerships and trusted relationships are crucial to providing the best healthcare possible. We value our partnerships and we are always looking to build new relationships in the communities we serve.</p>
               </div>
               <div className='right'>
@@ -37,7 +37,7 @@ const PartnershipsPage = () => (
         <div className='two-column become-partner'>
           <div className='title'>
             <img src={networkIcon} alt="Network" />
-            <h2>Partner with us!</h2>
+            <h4>Partner with us!</h4>
             <hr/>
           </div>
           <div className='content'>

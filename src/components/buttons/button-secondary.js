@@ -12,7 +12,7 @@ const ButtonSecondary = (props) => {
     return (
         <a 
         href={props.link}
-        className='ButtonSecondary'
+        className='ButtonSecondary button-text'
         download={props.download === true} 
         data-aos={props.animation} 
         data-aos-duration={props.animationTime}

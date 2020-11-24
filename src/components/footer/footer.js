@@ -20,7 +20,7 @@ const Footer = () => {
             </div>
             <div className='right'>
                 <div className='helpful-links'>
-                    <h4>Helpful Links</h4>
+                    <h6>Helpful Links</h6>
                     <ul>
                         <li className='detail-text'><Link to='/about'>About Charter</Link></li>
                         <li className='detail-text'><Link to='/careers'>Careers</Link></li>
@@ -29,7 +29,7 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className='headquarters'>
-                    <h4>Charter Headquarters</h4>
+                    <h6>Charter Headquarters</h6>
                     <ul>
                         <li className='detail-text'>9660 Haven Ave, Rancho Cucamonga, CA 91730</li>
                         <li className='detail-text'>P: <a href='tel: 909-644-4965'>909-644-4965</a></li>
@@ -37,7 +37,7 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className='socials'>
-                    <h4>Follow Us</h4>
+                    <h6>Follow Us</h6>
                     <ul>
                         <li>
                             <a href="https://www.linkedin.com/company/charter-healthcare-group/" target='_blank' rel="noopener noreferrer">

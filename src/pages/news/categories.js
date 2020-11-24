@@ -27,7 +27,7 @@ const CategoriesPage = ({
         <div className='CategoriesPage'>
             <HeaderStrip2 image={archiveHeader} title='All Categories' headline='See our all of our news articles by categories' />
             <div className='intro'>
-            <h2>All Categories</h2>
+            <h4>All Categories</h4>
             <ul>
                 {group.map(category => (
                 <li key={category.fieldValue}>

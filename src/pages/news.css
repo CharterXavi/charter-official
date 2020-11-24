@@ -8,6 +8,13 @@
     justify-items: center;
     background: white;
 }
+.NewsPage {
+    background: var(--light-clinic-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .NewsPage .intro {
     background: var(--light-clinic-blue);
     color: var(--heading-color);
@@ -21,7 +28,6 @@
     justify-content: center;
     align-items: center;
     background: var(--light-clinic-blue);
-    box-shadow: var(--nav-shadow);
 }
 .NewsArchive .top-block h2 {
     color: var(--heading-color);

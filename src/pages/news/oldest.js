@@ -84,7 +84,7 @@ const OldestPage = ({
         <div className='OldestPosts'>
             <div className='grid-wrapper'>
                 <div className='grid-header'>
-                  <h2>All Oldest Articles</h2>
+                  <h4>All Oldest Articles</h4>
                 </div>
                 <div className='grid'>
                     

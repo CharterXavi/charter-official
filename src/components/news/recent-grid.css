@@ -8,6 +8,9 @@
     margin: 32px 0 0 0;
     z-index: 1;
 }
+.RecentGrid h5 {
+    color: var(--heading-color);
+}
 .RecentGrid .grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);

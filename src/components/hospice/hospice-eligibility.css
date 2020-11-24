@@ -14,7 +14,9 @@
 .HospiceEligibility .left h2, .HospiceEligibility .right h2 {
     color: var(--heading-color);
 }
-
+.HospiceEligibility .left .icon, .HospiceEligibility .right .icon {
+    width: 40px;
+}
 .HospiceEligibility .left ul {
     padding-left: 20px;
 }

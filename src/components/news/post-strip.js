@@ -8,8 +8,8 @@ const PostStrip = (props) => {
   return (
     <div className='PostStrip'>
         <div className='grid-header'>
-        <h2>{props.title}</h2>
-        <Link to={props.link}>See All {props.title} Posts</Link>
+          <h5>{props.title}</h5>
+          <Link to={props.link}>See All {props.title} Posts</Link>
         </div>
         <hr/>
         <div className='grid'>

@@ -80,7 +80,7 @@ const ResearchPage = ({data}) => {
         <div className='AllPosts'>
             <div className='grid-wrapper'>
                 <div className='grid-header'>
-                  <h2>All Research Articles</h2>
+                  <h4>All Research Articles</h4>
                 </div>
                 <div className='grid'>
                     

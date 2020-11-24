@@ -14,7 +14,7 @@ const HomeServices = () => {
   return (
     <div className='HomeServices'>
         <div className='intro'>
-          <h2>Home Health Services</h2>
+          <h4>Home Health Services</h4>
           <p>We provide a vast selection of healthcare services in our home health programs. Making sure each patient has all of their needs met is crucial to ensuring the highest quality care. This includes the following and more:</p>
           <ul>
               <li>Skilled Nursing Care</li>

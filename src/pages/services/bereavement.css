@@ -1,10 +1,17 @@
+.BereavementPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--light-clinic-blue);
+}
 .BereavementPage .services {
     background: var(--light-clinic-blue);
     position: relative;
     overflow: visible;
     top: 0;
-    min-height: 500px;
     display: flex;
+    height: 125px;
     flex-direction: column;
     justify-content: flex-start;
     z-index: 0;
@@ -12,11 +19,15 @@
 }
 .BereavementPage .intro {
     background: var(--light-clinic-blue);
+    padding: 32px 0;
 }
-.BereavementPage .services h2 {
-    background: -webkit-linear-gradient(0deg, #F493AA 0%, #F2D1C9 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.BereavementPage .resources .two-column .title {
+    position: relative;
+    top: 0;
+    z-index: 5;
+}
+.BereavementPage .resources .two-column .title h4 {
+    color: white;
 }
 .BereavementPage .services ul {
     padding-left: 20px;
@@ -40,7 +51,7 @@
     z-index: 0;
     overflow: visible;
 }
-.BereavementPage .resources p,.BereavementPage .resources h2,.BereavementPage .resources img {
+.BereavementPage .resources p,.BereavementPage .resources h6,.BereavementPage .resources img {
     position: relative;
     top: 0;
     z-index: 1;
@@ -64,53 +75,69 @@
     z-index: 0;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 915px) {
     .BereavementPage .services .flowers-left {
-        left: 5%;
+        left: 15%;
+        top: -15%;
     }
     .BereavementPage .services .flowers-right {
-        right: 5%;
+        right: 15%;
+        top: -30%;
     }
     .BereavementPage .resources .bereavement-svg {
-        top: -10%;
+        top: -5%;
         left: 0;
     }
 }
-@media only screen and (max-width: 768px) {
-    .BereavementPage .services {
-        align-items: flex-start;
-    }
-}
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 885px) {
     .BereavementPage .resources .bereavement-svg {
-        top: -8%;
+        width: 110%;
+        left: -5%;
     }
 }
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 835px) {
+    .BereavementPage .resources .bereavement-svg {
+        width: 120%;
+    }
+}
+@media only screen and (max-width: 790px) {
+    .BereavementPage .resources .bereavement-svg {
+        width: 120%;
+        left: -8%;
+        top: -3%;
+    }
+}
+@media only screen and (max-width: 730px) {
+    .BereavementPage .resources .bereavement-svg {
+        width: 130%;
+        left: -10%;
+    }
     .BereavementPage .resources {
         background: linear-gradient(180deg, #F6F7FB 18.23%, #363F55 18.24%, #363F55 100%);
     }
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 485px) {
+    .BereavementPage .resources .bereavement-svg {
+        width: 140%;
+        left: -15%;
+    }
     .BereavementPage .services .flowers-left {
-        left: 1%;
-        width: 200px;
+        left: 5%;
+        top: -20%;
     }
     .BereavementPage .services .flowers-right {
-        right: 1%;
-        width: 200px;
-    }
-    .BereavementPage .resources .bereavement-svg {
-        top: -6%;
-    }
-}
-@media only screen and (max-width: 450px) {
-    .BereavementPage .services{
-        min-height: 600px;
+        right: 5%;
+        top: -40%;
     }
 }
 @media only screen and (max-width: 450px) {
     .BereavementPage .resources {
         background: linear-gradient(180deg, #F6F7FB 8.85%, #363F55 8.86%, #363F55 100%);
+    }
+}
+@media only screen and (max-width: 340px) {
+    .BereavementPage .resources .bereavement-svg {
+        width: 180%;
+        left: -40%;
     }
 }

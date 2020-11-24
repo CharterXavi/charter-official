@@ -21,11 +21,11 @@ const VideoStrip2 = () => {
 
   return (
     <div className='VideoStrip2'>
-      <div className='video-wrapper'>
+      <div className={`video-wrapper ${videoState ? 'active-wrapper' : ''}`}>
         <div className='title'>
-          <h2>See the</h2>
-          <h2>Charter Difference</h2>
-          <h2>for yourself</h2>
+          <h4 className={`${videoState ? 'active-heading' : ''}`}>See the</h4>
+          <h4 className={`${videoState ? 'active-heading' : ''}`}>Charter Difference</h4>
+          <h4 className={`${videoState ? 'active-heading' : ''}`}>for yourself</h4>
         </div>
 
         <p className={`${videoState ? 'hide' : 'headline'}`} >

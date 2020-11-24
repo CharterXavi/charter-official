@@ -34,9 +34,17 @@ const NewsPage = ({data}) => {
               headline='Stay up to date with our company and industry!'
               image={archiveHeader}
           />
-          <div className='intro'>
-            <h2>Welcome to our News Archive at Charter!</h2>
-            <p>From the latest developments in our healthcare services to the industry as a whole, you've come to the right place to stay up to date. Enjoy our articles, and if you'd like to submit a story to us for publication contact us by completing the form at the bottom of the page.</p>
+          <div className='two-column'>
+            <div className="title">
+              <h4>Welcome to our News Archive at Charter!</h4>
+              <hr/>
+            </div>
+            <div className="content">
+              <div className="left">
+                <p>From the latest developments in our healthcare services to the industry as a whole, you've come to the right place to stay up to date. Enjoy our articles, and if you'd like to submit a story to us for publication contact us by completing the form at the bottom of the page.</p>
+              </div>
+              <div className="right"></div>
+            </div>      
           </div>
           <div className='NewsArchive'>
               <div className='top-block'>

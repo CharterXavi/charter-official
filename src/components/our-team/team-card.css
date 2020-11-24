@@ -132,6 +132,7 @@
 .TeamCard .expander p {
     width: auto;
     font-size: 1rem;
+    color: white;
 }
 .TeamCard .hide-bio {
     background: var(--scrubs-blue);

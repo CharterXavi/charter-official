@@ -16,8 +16,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1rem;
-    font-weight: bold;
     font-family: 'Nunito', sans-serif;
     position: relative;
     overflow: hidden;

@@ -7,8 +7,8 @@ const MosaicCard = (props) => {
   return (
     <div className='MosaicCard'>
         <img src={heartIcon} alt="Heart" />
-        <p>{`"${props.quote}"`}</p>
-        <p>- {props.author}</p>
+        <p className='detail-text'>{`"${props.quote}"`}</p>
+        <p className='detail-text'>- {props.author}</p>
     </div>
   )
 }

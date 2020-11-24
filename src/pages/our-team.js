@@ -21,12 +21,12 @@ const OurTeamPage = () => (
       />
       <div className='two-column'>
         <div className='title'>
-          <h2>We've got uniquely qualified and passionate teams</h2>
+          <h4>We've got uniquely qualified and passionate teams</h4>
           <hr/>
         </div>
         <div className='content'>
           <div className='left'>
-            <h5>Lifetimes of experience</h5>
+            <h6>Lifetimes of experience</h6>
             <p>Our leadership wields many decades of combined experience across disciplines. We get to draw on the vast and diverse wisdom of those who have been in their field for years, and we owe a lot of our success to that.</p>
           </div>
           <div className='right'>
@@ -38,7 +38,7 @@ const OurTeamPage = () => (
         <div className='two-column-left'>
           <div className='left'>
             <img src={hiringIcon} alt="Person" />
-            <h2>We're Hiring!</h2>
+            <h4>We're Hiring!</h4>
             <p>Interested in a career at Charter? Visit our Careers page to learn more about who we are, what we stand for, and who we're looking for in our future employees. You can also read about our competitve compensation, benefits, culture, and more!</p>
             <ButtonPrimaryAlt content='Visit Careers page' link='/careers' />
           </div>

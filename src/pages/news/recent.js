@@ -85,7 +85,7 @@ const RecentPage = ({
         <div className='RecentPosts'>
             <div className='grid-wrapper'>
                 <div className='grid-header'>
-                  <h2>All Recent Articles</h2>
+                  <h4>All Recent Articles</h4>
                 </div>
                 <div className='grid'>
                     

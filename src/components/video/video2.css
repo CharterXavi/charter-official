@@ -23,18 +23,27 @@
     border-radius: 10px;
     box-shadow: var(--standard-shadow);
     padding: 32px 0;
+    transition: 0.4s ease all;
+}
+.VideoStrip2 .active-wrapper {
+    background: var(--heading-color);
+    width: 100%;
+}
+.VideoStrip2 .title h4.active-heading {
+    color: white;
 }
 
 .VideoStrip2 .title {
     margin: 16px 0;
 }
-.VideoStrip2 .title h2 {
+.VideoStrip2 .title h4 {
     text-align: center;
     color: var(--heading-color);
     font-size: 2rem;
     padding: 4px 0;
+    transition: 0.4s ease all;
 }
-.VideoStrip2 .title h2:nth-of-type(2) {
+.VideoStrip2 .title h4:nth-of-type(2) {
     color: var(--primary-accent);
 }
 .VideoStrip2 .play-btn-wrapper {
@@ -73,8 +82,6 @@
     border-radius: 10px;
     position: relative;
     z-index: 5;
-    box-shadow: var(--standard-shadow);
-    background: var(--light-clinic-blue);
 }
 .VideoStrip2 .headline {
     color: var(--heading-color);
@@ -85,6 +92,7 @@
     font-size: 18px;
     transition: 0.4s ease all;
     opacity: 1;
+    margin: 0 0 32px 0;
 }
 @media only screen and (max-width: 1200px) {
     .VideoStrip2 .video-wrapper {
