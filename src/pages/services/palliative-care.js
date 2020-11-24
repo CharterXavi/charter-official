@@ -10,7 +10,7 @@ import LocationsStrip from '../../components/locations/locations';
 
 const PalliativeCarePage = () => (
   <Layout>
-    <div className='PalliativeCare'>
+    <div className='PalliativeCarePage'>
       <SEO title="Palliative Care" />
       <HeaderStrip2 image={palliativeImage} title='Palliative Care' headline='Equipping people to cope with serious illnesses' />
       <div className='two-column'>
