@@ -10,11 +10,6 @@
     box-sizing: border-box;
     color: var(--heading-color);
 }
-.CCMData .intro {
-    padding: 16px;
-    height: auto;
-    min-height: 200px;
-}
 .CCMData h3 {
     color: var(--primary-accent);
 }
@@ -49,14 +44,6 @@
     box-shadow: var(--standard-shadow);
     padding: 16px;
     box-sizing: border-box;
-}
-.CCMData hr {
-    width: 1200px;
-    border: 2px solid var(--heading-color);
-    border-radius: 50px;
-    margin: 16px 0 32px 0;
-    opacity: 0.5;
-    box-shadow: var(--standard-shadow);
 }
 
 @media only screen and (max-width: 1200px) {
