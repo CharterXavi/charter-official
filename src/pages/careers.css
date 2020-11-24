@@ -5,6 +5,9 @@
     justify-content: center;
     background: var(--light-clinic-blue);
 }
+.CareersPage .two-column {
+    margin: 16px 0;
+}
 .CareersPage .chart-wrapper {
     box-sizing: border-box;
     width: 100%;
@@ -67,10 +70,10 @@
     margin: 0;
     width: 100%;
 }
-.benefits-wrapper .benefits-card h5{
+.benefits-wrapper .benefits-card h6{
     width: auto;
     color: var(--heading-color);
-    border-left: 1px solid vaR(--primary-accent);
+    border-left: 2px solid var(--primary-accent);
     padding: 0 0 0 16px;
     margin: 8px 0 0 0;
 }

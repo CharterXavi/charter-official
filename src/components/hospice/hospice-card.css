@@ -1,33 +1,19 @@
 .HospiceCard {
-    width: 300px;
+    width: 250px;
     height: 90px;
     box-sizing: border-box;
     padding: 16px;
     display: flex;
+    justify-content: flex-start;
     align-items: center;
     color: var(--heading-color);
     border-radius: 10px;
-    box-shadow: var(--standard-shadow);
-    margin: 8px;
-    background: white;
 }
 .HospiceCard img {
     margin: 8px 16px;
     width: 40px;
 }
-
-@media only screen and (max-width: 768px) {
-    .HospiceCard {
-        width: 250px;
-        margin: 8px;
-    }
-    .HospiceCard img {
-        width: 35px;
-    }
-}
-@media only screen and (max-width: 575px) {
-    .HospiceCard {
-        width: 100%;
-        margin: 8px 0;
-    }
+.HospiceCard h6 {
+    border-left: none;
+    padding: 0;
 }

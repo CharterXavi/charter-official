@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 64px 32px;
+    padding: 64px 32px 32px 32px;
     height: auto;
     background: var(--light-clinic-blue);
 }

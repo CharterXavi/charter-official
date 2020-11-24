@@ -1,4 +1,7 @@
-.AcuteCarePage .intro {
-    min-height: 350px;
+.AcuteCarePage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background: var(--light-clinic-blue);
 }

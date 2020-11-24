@@ -13,11 +13,16 @@ const AboutStrip = () => {
         <div className='content'>
           <div className='left'>
               <h6>Passion & experience</h6>
-              <p>Our hard work and dedication have earned us a reputation as a premier provider of  hospice, home health, and transitional care in the communities we serve. We have a team of highly experienced and compassionate individuals who are ready to help make sure you and your loved one get the care you deserve. All of our programs are individually customized to meet our patients' changing needs. Under our services, you will have your own personal plan of care and a team of caring individuals there to ensure you have a meaningful and comfortable experience. So let us make a difference in your life today!</p>
+              <p>Through years of hard work and dedication, we've earned our reputation as a premier provider of hospice, home health, and transitional care in the communities we serve.
+                We have the experienced and compassionate required to make sure you and your loved one get the care you deserve. All of our programs are individually tailored to meet our patients' changing needs. 
+                Under our services, you will have your own personal plan of care and a team of dedicated professionals at your side to ensure the most meaningful and comfortable experience possible. 
+                Let us make a difference in your life today!</p>
           </div> 
           <div className='right'>   
               <h6>Committed to changing lives</h6>
-              <p>At Charter Healthcare Group we believe in making a positive change in the lives of our patients and their families. For over ten years, we have been committed to providing exceptional care and life enhancing services to people all throughout San Bernardino, Riverside, and parts of Los Angeles and Orange counties.</p>
+              <p>At Charter Healthcare Group we believe in making a positive change in the lives of our patients and their families. 
+                For over ten years, we have been committed to providing exceptional care and life enhancing services to people all throughout San Bernardino, Riverside, and parts of Los Angeles and Orange counties.
+                We don't plan on stopping there!</p>
           </div>
         </div>
         <ButtonPrimaryAlt content='Get to know Charter' link='/about' />

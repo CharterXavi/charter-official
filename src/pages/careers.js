@@ -73,23 +73,21 @@ const CareersPage = () => (
             <p className='detail-text'>We value flexibility. Enjoy competitive vacation/sick pay accrual, flexible work hours, and cutting edge, devices and systems to make our staffs' lives easier.</p>
           </div>
         </div>
-        <div className='two-column'>
-          <div className="title">
-            <h4>Our Workforce</h4>
-            <hr/>
+      </div>
+      <div className='two-column'>
+        <div className="title">
+          <h4>Our Workforce</h4>
+          <hr/>
+        </div>
+        <div className="content">
+          <div className="left">
+            <h6>Demographics</h6>
+            <p>Amongst the majority of our employees who respond with demographic information, diversity is front and center.</p>
           </div>
-          <div className="content">
-            <div className="left">
-              <h6>Demographics</h6>
-              <p>Amongst the majority of our employees who respond with demographic information, diversity is front and center.</p>
-            </div>
-            <div className="right">
-              <h6>Percentages:</h6>
-            </div>
-          </div>
-          <div className='chart-wrapper'>
-            <DemographicsChart />
-          </div>
+          <div className="right"></div>
+        </div>
+        <div className='chart-wrapper'>
+          <DemographicsChart />
         </div>
       </div>
       <JoinUsStrip />
