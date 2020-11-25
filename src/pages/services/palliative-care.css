@@ -1,22 +1,7 @@
-.PalliativeCare .intro {
-    background: var(--light-clinic-blue);
-}
-.PalliativeCare .intro h5 {
-    max-width: 650px;
-}
-.PalliativeCare .intro .list-wrapper {
+.PalliativeCarePage {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    width: 650px;
-    box-sizing: border-box;
-}
-.PalliativeCare .intro .list-wrapper ul {
-    width: 300px;
-
-}
-
-@media only screen and (max-width: 786px) {
-    .PalliativeCare .intro .list-wrapper {
-        width: 100%;
-    }
+    align-items: center;
+    background: var(--light-clinic-blue);
 }

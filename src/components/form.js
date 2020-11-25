@@ -51,6 +51,7 @@ export default class MyForm extends React.Component {
               <textarea name="message" id='message' placeholder='Leave us a message' required></textarea>
             </label>
         </div>
+        <input type="text" name="_gotcha" style={{display: 'none'}} />
         <div className="submit">
             {status === "SUCCESS" ? <p style={{backgroundColor: '#7E9772', color: 'white', fontSize: '18px', width: 'auto', padding: '8px', borderRadius: '10px'}}>Thanks for reaching out! We'll contact you as soon as possible.</p> : <button className='btn-primary' type='submit'>Submit</button>}
             {status === "ERROR" && <p style={{backgroundColor: '#D45E60', color: 'white', fontSize: '18px', width: 'auto', padding: '8px', borderRadius: '10px'}}>Ooops! There was an error.</p>}

@@ -39,6 +39,13 @@
     text-align: left;
     transition: 0.3s ease all;
 }
+.ServicesStrip2 .card h6 {
+    width: auto;
+    color: var(--heading-color);
+    border-left: 2px solid var(--primary-accent);
+    padding: 0px 0px 0px 16px;
+    margin: 8px 0px 0px;
+}
 .ServicesStrip2 .card:hover .ButtonPrimaryAlt {
     transform: translateY(8px);
     transition: 0.3s ease all;

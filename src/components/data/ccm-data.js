@@ -72,11 +72,15 @@ const CCMData = () => {
 
   return (
     <div className='CCMData'>
-      <div className='intro'>
-        <h4>The proven power of CCM</h4>
-        <p>Our Complex Care Management program has a solid track record in improving the quality of care patients receive and in lowering their overall healthcare costs by significantly reducing hospital admissions. To properly research our program and see its efficacy, we teamed up with UCLA Biostatistics in a large CCM Study.</p>
+      <div className='two-column'>
+        <div className="title">
+          <h4>The proven power of CCM</h4>
+          <hr/>
+        </div>
+        <div className="content">
+          <p>Our Complex Care Management program has a solid track record in improving the quality of care patients receive and in lowering their overall healthcare costs by significantly reducing hospital admissions. To properly research our program and see its efficacy, we teamed up with UCLA Biostatistics in a large CCM Study.</p>
+        </div>
       </div>
-      <hr/>
       <div className='clinical-stats two-column-right'>
         <div className='left'>
           <div className='data-container'>

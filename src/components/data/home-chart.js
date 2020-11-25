@@ -9,7 +9,7 @@ const data = {
     'April', 'May', 'June', 'July'],
     datasets: [
         {
-        label: 'Patient Health',
+        label: '',
         fill: false,
         lineTension: 0.5,
         backgroundColor: 'rgba(75,192,192,1)',
@@ -18,7 +18,7 @@ const data = {
         data: [22, 45, 78, 67, 95, 86, 110]
         },
         {
-        label: 'Patient Satisfaction',
+        label: '',
         fill: false,
         lineTension: 0.5,
         backgroundColor: 'rgba(75,192,192,1)',

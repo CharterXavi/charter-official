@@ -22,6 +22,7 @@ const ServicesStrip2 = () => {
     <div className='ServicesStrip2'>
         <div className='title'>
             <h4>Our Services</h4>
+            <hr/>
         </div>
         <div className='card-container'>
             <div className='card' data-aos='fade-up' data-aos-duration='600' >

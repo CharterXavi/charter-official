@@ -20,7 +20,7 @@ const HospiceTeam = () => {
         </div>
         <div className='right'>
           <img src={groupIcon} alt="Group" className='icon'/>
-          <h4>Your Hospice Team</h4>
+          <h5>Your Hospice Team</h5>
           <p>Each hospice team consists of health care workers from all disciplines: nurses, social workers, home health aides, spiritual counselors, and volunteers, all under the direction of a medical director. By tying all of these disciplines together, we can deliver nothing short of the most high-quality, all-encompassing hospice care available.</p>
         </div>
       </div>

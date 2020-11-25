@@ -12,10 +12,6 @@
     background: var(--light-clinic-blue);
     width: 100%;
 }
-.TestimonialsStrip h2 {
-    width: auto;
-    color: #f05f7e;
-}
 
 .TestimonialsStrip .right .quote-container {
     border-radius: 10px;
@@ -29,13 +25,6 @@
     position: relative;
     top:0;
     z-index: 1;
-}
-.TestimonialsStrip .quote-wave-one {
-    position: absolute;
-    bottom: -20px;
-    width: 100vw;
-    height: auto;
-    z-index: -1;
 }
 .TestimonialsStrip .carousel-control {
     margin: 8px;
@@ -69,13 +58,6 @@
     .TestimonialsStrip .right .quote-container {
         width: 100%;
     }
-    .TestimonialsStrip .quote-wave-one {
-        width: 100vw;
-        height: auto;
-        position: absolute;
-        bottom: 0;
-        z-index: 1;
-    }
 }
 @media only screen and (max-width: 850px) {
     .TestimonialsStrip .right {
@@ -99,8 +81,5 @@
     .TestimonialsStrip .carousel-control img:hover {
         transform: rotate(0deg) translateY(9px) translateX(0px) scale(1.5);
         margin: 0 8px 0 8px;
-    }
-    .TestimonialsStrip .quote-wave-one {
-        bottom: 5px;
     }
 }

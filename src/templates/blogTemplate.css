@@ -57,13 +57,17 @@
     width: auto;
     color: var(--primary-accent);
 }
+.blog-post-container .sidebar .detail-title {
+    width: auto;
+    padding: 0;
+    border-left: none;
+}
 .blog-post-container .sidebar .detail-text {
     width: auto;
-    padding: 4px 0;
+    padding: 0;
 }
 .blog-post-container .sidebar img {
-    width: 25px;
-    height: auto;
+    height: 35px;
     margin: 8px 0 0 0;
 }
 .blog-post-container .sidebar a {

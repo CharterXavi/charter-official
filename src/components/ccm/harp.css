@@ -22,15 +22,14 @@
     justify-content: center;
     align-items: flex-start;
     box-sizing: border-box;
-    padding: 16px 0;
     width: 100%;
 }
-.HARP .forms .form-card h5, .HARP .forms .form-card p {
+.HARP .forms .form-card h6, .HARP .forms .form-card p {
     width: auto;
     transition: 0.4s ease all;
 }
 .HARP .forms .form-card {
-    width: 300px;
+    width: 50%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -38,11 +37,11 @@
     align-items: flex-start;
     box-sizing: border-box;
     padding: 16px;
-    margin: 8px;
 }
 .HARP .forms img {
     margin-right: 16px;
     transition: 0.4s ease all;
+    width: 45px;
 }
 .HARP .forms .form-card:hover img {
     transform: translateY(-8px);

@@ -24,12 +24,12 @@
 }
 .AdvantageCard .icon {
     transition: 0.4s ease all;
-    width: 45px;
+    height: 45px;
 }
-.AdvantageCard h4 {
-    margin: 8px 0;
+.AdvantageCard h6 {
     text-align: center;
     width: auto;
+    border-left: 2px solid var(--primary-accent);
 }
 
 @media only screen and (max-width: 1200px) {

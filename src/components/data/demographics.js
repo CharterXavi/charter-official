@@ -2,7 +2,7 @@ import React from 'react'
 import './demographics.css'
 import { Doughnut } from 'react-chartjs-2';
 
-const DemographicsChart = () => {
+const DemographicsCharts = () => {
 
 const genderData = {
     labels: ['Male', 'Female', 'Not Specified'],
@@ -28,11 +28,17 @@ const ethnicityData = {
 }
 
   return (
-    <div className='DemographicsChart'>
-        <Doughnut data={genderData} options={{ maintainAspectRatio: false }} />
-        <Doughnut data={ethnicityData} options={{ maintainAspectRatio: false }}/>
+    <div className='DemographicCharts'>
+        <div className='gender-chart'>
+            <h6 className='detail-title'>Gender Distribution</h6>
+            <Doughnut data={genderData} options={{ maintainAspectRatio: false }} />
+        </div>
+        <div className='ethnicity-chart'>
+            <h6 className='detail-title'>Ethnic/Racial Distribution</h6>
+            <Doughnut data={ethnicityData} options={{ maintainAspectRatio: false }} />
+        </div>
     </div>
   )
 }
 
-export default DemographicsChart;
+export default DemographicsCharts;

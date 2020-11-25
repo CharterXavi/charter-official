@@ -86,8 +86,8 @@ const HospiceServices = () => {
 
   return (
     <div className='HospiceServices'>
-        <div className='intro'>
-            <h4>What we offer</h4>
+        <div className='two-column'>
+            <h5>What we offer</h5>
             <p>Charter Hospice allows you to have a personalized plan of care that is carefully designed to meet your health needs. We provide an array of services to help makethings easier for you and your loved ones.</p>
         </div>
         <div className='hospice-card-wrapper'>
