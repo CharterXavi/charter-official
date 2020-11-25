@@ -11,10 +11,10 @@
 .CareersPage .chart-wrapper {
     box-sizing: border-box;
     width: 100%;
-    height: 450px;
+    height: auto;
     padding: 32px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 .picture-grid {
@@ -91,10 +91,14 @@
         box-sizing: border-box;
         width: 100%;
     }
+    .CareersPage .chart-wrapper {
+        width: 100%;
+        padding: 0;
+        box-sizing: border-box;
+    }
 }
 @media only screen and (max-width: 850px) {
     .demographics {
-        height: 1100px;
         justify-content: flex-start;
     }
 }

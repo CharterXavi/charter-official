@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import React, {useState} from 'react'
 import './header.css'
-import Logo from '../../images/charter-logo.png'; //uses webpack to store data about the image in an import
+import Logo from '../../images/charter-compass.png'; //uses webpack to store data about the image in an import
 import Hamburger from './hamburger'
 import ButtonPrimary from '../buttons/button-primary'
 import Menu from './menu'

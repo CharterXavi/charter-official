@@ -1,7 +1,5 @@
 .JoinUsStrip {
-    position: relative;
-    top: 0;
-    z-index: 1;
+    width: 100%;
     background: var(--light-clinic-blue);
     display: flex;
     flex-direction: column;

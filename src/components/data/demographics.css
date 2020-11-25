@@ -1,33 +1,33 @@
-.DemographicsChart {
-    width: 600px;
-    height: 100%;
-    border-radius: 10px;
-    box-sizing: border-box;
-    position: relative;
-    top: 0;
-    z-index: 1;
+.DemographicCharts {
+    width: 1000px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
 }
-.DemographicsChart .chart1 {
-    width: 50px;
+.DemographicCharts .gender-chart {
+    width: 450px;
+    height: 400px;
+}
+.DemographicCharts .ethnicity-chart {
+    width: 450px;
+    height: 400px;
 }
 
-
-@media only screen and (max-width: 1150px) {
-    .DemographicsChart {
-        width: 400px;
+@media only screen and (max-width: 1000px) {
+    .DemographicCharts {
+        width: 100%;
+    }
+    .DemographicCharts .gender-chart {
+        margin: 0 0 32px 0;
+    }
+    .DemographicCharts .ethnicity-chart {
+        margin: 32px 0 0 0;
     }
 }
-@media only screen and (max-width: 850px) {
-    .DemographicsChart {
-        flex-wrap: wrap;
-        align-items: flex-start;
-    }
-}
-@media only screen and (max-width: 420px) {
-    .DemographicsChart {
-        width: 280px;
+@media only screen and (max-width: 490px) {
+    .DemographicCharts .gender-chart,
+    .DemographicCharts .ethnicity-chart {
+        width: 100%;
     }
 }
