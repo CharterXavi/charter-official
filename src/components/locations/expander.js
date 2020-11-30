@@ -20,7 +20,7 @@ const Expander = (props) => {
     return (
         <div className={`Expander ${props.isExpanded ? 'expanded-card' : ''}`} style={{height: `${props.isExpanded ? heightFactor : '0px'}`}}>
           {businesses.map(business => {
-            return <a href={business.link} target='_blank' rel='noopener noreferrer' onMouseOver={() => {handleHover(business.name)}}>{business.name}</a>
+            return <a href={business.link} target='_blank' rel='noopener noreferrer' key={business.name} onMouseOver={() => {handleHover(business.name)}}>{business.name}</a>
           })}
         </div>
     );

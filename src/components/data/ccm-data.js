@@ -3,7 +3,6 @@ import './ccm-data.css'
 import { Line, Bar } from 'react-chartjs-2';
 import heartIcon from '../../images/iconography/services/heart.png';
 import moneyIcon from '../../images/iconography/moneybag.png';
-import ButtonSecondary from '../buttons/button-secondary';
 
 const CCMData = () => {
 

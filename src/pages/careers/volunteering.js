@@ -23,7 +23,7 @@ const VolunteeringPage = () => (
           <div className="content">
             <div className="left">
               <img src={volunteerIcon} alt="volunteer" />
-              <h4>Volunteering</h4>
+              <h5>Volunteering</h5>
               <p>From the start of the hospice movement in the United States, volunteers have been at the heart of hospice care. Before Medicare certified hospice programs, hospice was an all-volunteer program. Over the years hospice has evolved into a team of people each with their own unique set of skills, dedicated to providing exceptional end of life care to those we serve.</p>
               <h6>What do volunteers do?</h6>
               <p>Our volunteers listen to patients when they wish to share their life experience, and this gives patients a chance to reflect on the meaningful moments that gave their life purpose. In an attempt to spare family members’ sadness, patients will sometimes speak openly to a volunteer, providing the patient a safe person to share their feelings with.</p>
@@ -36,7 +36,7 @@ const VolunteeringPage = () => (
             </div>
             <div className="right">
               <img src={jobIcon} alt="Briefcase" />
-              <h4>Internships</h4>
+              <h5>Internships</h5>
               <p>Interested in a career in healthcare? Interning is one of the best ways to gain hands-on experience and cultivate your budding passions.</p>
               <h6>What we offer</h6>
               <p>At Charter, our interns get to be an integral part of the exciting work our teams do. We take on interns in many different disciplines and departments throughout the company, including our healthcare programs, recruitment, social work, human resources (HR), and many more.</p>

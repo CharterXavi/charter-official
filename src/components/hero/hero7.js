@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import ButtonPrimary from '../buttons/button-primary';
 import heroGraphic from '../../images/iconography/hero-graphic.png';
-import charterTree from '../../images/charter-tree.png';
+import charterCompass from '../../images/charter-compass-icon.png';
 import './hero7.css';
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -22,11 +22,9 @@ const HeroStrip7 = () => {
 
     return (
         <div className='Hero7'>
-
-
             <div className='hero-wrapper'>
                 <div className='hero-content'>
-                    <img src={charterTree} alt="Feather logo" data-aos='fade-up' data-aos-duration='600'/>
+                    <img src={charterCompass} alt="Compass logo" data-aos='fade-up' data-aos-duration='600'/>
                     <h1 data-aos='fade-up' data-aos-duration='700'>Healthcare Solutions for every age and stage.</h1>
                     <p data-aos='fade-up' data-aos-duration='900'>With top-tier providers, a wide variety of programs, and a track record of success, we’re equipped to meet our patients where they’re at and provide them the quality care they need.</p>
                     <div data-aos='fade-up' data-aos-duration='1300'>
@@ -52,7 +50,7 @@ const HeroStrip7 = () => {
                 <path d="M15 75.3871C15 75.3871 279.5 -49.2332 727 75.386C1174.5 200.005 1415 75.3871 1415 75.3871V177H15V75.3871Z" fill="#F6F7FB"/>
                 </g>
                 <defs>
-                <filter id="filter0_d" x="0" y="0" width="1430" height="187" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <filter id="filter0_d" x="0" y="0" width="1430" height="187" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
                 <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
                 <feOffset dy="-5"/>
