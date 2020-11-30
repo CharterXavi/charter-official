@@ -70,7 +70,7 @@
     overflow: hidden;
     transition: 0.25s ease all;
     position: relative;
-    width: 180px;
+    width: 200px;
 }
 .OurTeamStrip .card-container .card img::after {
     content: 'Read more';

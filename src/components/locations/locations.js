@@ -284,8 +284,8 @@ const LocationsStrip = (props) => {
                 <path d="M1 10H1441V92.5C1441 92.5 1288 266.5 786.5 237.5C285 208.5 1 454 1 454V10Z" fill="#F6F7FB"/>
                 </g>
                 <defs>
-                <filter id="filter8_d" x="-14" y="0" width="1470" height="474" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <filter id="filter8_d" x="-14" y="0" width="1470" height="474" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
                 <feOffset dy="5"/>
                 <feGaussianBlur stdDeviation="7.5"/>

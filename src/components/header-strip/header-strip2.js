@@ -22,8 +22,8 @@ const HeaderStrip2 = (props) => {
         <path d="M-1 35.9684C-1 35.9684 248.444 -30.983 794.556 109.296C1340.67 249.575 1599 35.9684 1599 35.9684V189H-1V35.9684Z" fill="#F6F7FB"/>
         </g>
         <defs>
-        <filter id="filter0_d" x="-16" y="0" width="1630" height="199" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <filter id="filter0_d" x="-16" y="0" width="1630" height="199" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix"/>
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
         <feOffset dy="-5"/>
         <feGaussianBlur stdDeviation="7.5"/>

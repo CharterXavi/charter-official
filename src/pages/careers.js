@@ -21,6 +21,7 @@ const CareersPage = () => {
     AOS.init();
     AOS.refresh();
   });
+  
   return (
     <Layout>
       <div className="CareersPage">
