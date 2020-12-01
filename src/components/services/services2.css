@@ -5,17 +5,49 @@
     align-items: center;
     width: 100%;
     height: auto;
-    background-color: #F6F7FB; 
+    background-color: var(--light-clinic-blue); 
     color: var(--heading-color);
     padding: 32px 16px 64px 16px;
     box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+}
+.ServicesStrip2::before {
+    content :'';
+    position: absolute;
+    top: 4%;
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    background: white;
+    transform-origin: 0, 0;
+    transform: skewY(5deg);
+    z-index: 0;
+    overflow: hidden;
+    box-shadow: var(--standard-shadow);
+}
+.ServicesStrip2 .compass-one {
+    position: absolute;
+    z-index: -1;
+    width: 75%;
+    top: -250px;
+    opacity: 0.075;
+    right: -30%;
+    animation: rotate 180s infinite linear;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(-180deg); }
+    100% { transform: rotate(180deg); }
 }
 .ServicesStrip2 .title {
     text-align: left;
     padding: 16px;
     width: 1000px;
+    position: relative;
+    z-index: 2;
 }
-.ServicesStrip2 .title h2 {
+.ServicesStrip2 .title h6 {
     color: var(--primary-accent);
     padding: 4px 0;
 }
@@ -42,9 +74,9 @@
 .ServicesStrip2 .card h6 {
     width: auto;
     color: var(--heading-color);
+    padding: 0 0 0 16px;
     border-left: 2px solid var(--primary-accent);
-    padding: 0px 0px 0px 16px;
-    margin: 8px 0px 0px;
+    transition: 0.25 ease all;
 }
 .ServicesStrip2 .card:hover .ButtonPrimaryAlt {
     transform: translateY(8px);
@@ -53,7 +85,6 @@
 .ServicesStrip2 .card:hover .icon {
     transform: translateY(-8px);
 }
-
 .ServicesStrip2 .card p {
     color: #363f55;
 }
@@ -68,6 +99,11 @@
     .ServicesStrip2 .title {
         width: 100%;
         padding: 0 16px;
+    }
+}
+@media only screen and (max-width: 750px) {
+    .ServicesStrip2::before, .ServicesStrip2 .compass-one {
+        display: none;
     }
 }
 @media only screen and (max-width: 665px) {

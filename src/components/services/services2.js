@@ -7,6 +7,7 @@ import ccmIcon from '../../images/iconography/services/ccm.png';
 import healthIcon from '../../images/iconography/services/healthcare.png';
 import hospitalIcon from '../../images/iconography/services/hospital.png';
 import ButtonPrimaryAlt from '../buttons/button-primary-alt';
+import charterCompass from '../../images/charter-compass-icon-navy.png';
 // Data AOS for react imports
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -22,7 +23,6 @@ const ServicesStrip2 = () => {
     <div className='ServicesStrip2'>
         <div className='title'>
             <h4>Our Services</h4>
-            <hr/>
         </div>
         <div className='card-container'>
             <div className='card' data-aos='fade-up' data-aos-duration='600' >
@@ -62,6 +62,8 @@ const ServicesStrip2 = () => {
                 <ButtonPrimaryAlt content='Learn more' alt='Go to HARP Page' link='/services/acute-care' />
             </div>
         </div>
+        <img src={charterCompass} alt="Compass" className='compass-one' />
+    
     </div>
   )
 }

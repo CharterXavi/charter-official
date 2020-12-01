@@ -3,7 +3,7 @@
     height: 275px;
     border-radius: 10px;
     box-sizing: border-box;
-    padding: 32px;
+    padding: 8px;
     margin: 8px;
     position: relative;
     top: 0;
@@ -24,8 +24,6 @@
     transform: translatey(8px);
 }
 .CareCard .letter {
-    position: absolute;
-    top: -25px;
     transition: 0.4s ease all;
 }
 .CareCard h4 {

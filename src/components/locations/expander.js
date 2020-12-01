@@ -1,10 +1,27 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import './expander.css'
 
 
 const Expander = (props) => {
+
+
+  //Upon render or rerender, allow for height calculation to be dynamic based on window size
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  useEffect(() => {
+      //upon render, listen for screen size change and setState to 
+      window.addEventListener('resize', handleResize);
+      console.log(heightFactor);
+  })
+  const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+  } 
+
   //calculate the height based on the amount of items in the list
-  const heightFactor = (props.cities.length * 40).toString().concat('px');
+  const heightFactor = `${screenWidth < 450 ? 
+    ((props.cities.length * 59) + screenWidth/100).toString().concat('px')
+    :
+    (props.cities.length * 45).toString().concat('px')
+  }`;
   const handleHover = (id) => {
     props.hoverReveal(id);
   }

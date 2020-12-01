@@ -23,11 +23,10 @@ const OurTeamPage = () => (
         <div className='title'>
           <h4>We've got uniquely qualified and passionate teams</h4>
           <hr/>
+          <p>Our leadership wields many decades of combined experience across disciplines. Drawing on the vast and diverse wisdom of those who have been in their field for years helps us succeed in providing the best care for our patients and the best experience for our partners, providers, and employees.</p>
         </div>
         <div className='content'>
           <div className='left'>
-            <h6>Lifetimes of experience</h6>
-            <p>Our leadership wields many decades of combined experience across disciplines. We get to draw on the vast and diverse wisdom of those who have been in their field for years, and we owe a lot of our success to that.</p>
           </div>
           <div className='right'>
           </div>

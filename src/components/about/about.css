@@ -7,6 +7,6 @@
     position: relative;
     z-index: 1;
     background: var(--light-clinic-blue);
-    padding: 64px 0;
+    padding: 64px 0 98px 0;
 }
 

@@ -36,6 +36,7 @@
 .TagsPage ul li {
     height: auto;
     margin: 16px 0;
+    width: auto;
 }
 .TagsPage .tag {
     margin: 0 0 0 0;

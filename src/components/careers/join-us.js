@@ -13,16 +13,14 @@ const JoinUsStrip = () => {
                 <div className="title">
                     <h4>Join us!</h4>
                     <hr/>
+                    <p>
+                        Interested in joining the Charter family? As a fast-growing company we're always looking for the latest and greatest talent,
+                        but even more than that we're always looking for employees who believe in our core values: <strong>compassion, integrity, and innovation. </strong>
+                        If that sounds like you, we'd love to hear more about you.
+                    </p>
                 </div>
                 <div className="content">
-                    <div className="left">
-                        <h6>Apply today</h6>
-                        <p>
-                            Interested in joining the Charter family? As a fast-growing company we're always looking for the latest and greatest talent,
-                            but even more than that we're always looking for employees who believe in our core values: <strong>compassion, integrity, and innovation. </strong>
-                            If that sounds like you, we'd love to hear more about you.
-                        </p>
-                        </div>
+                    <div className="left"></div>
                     <div className="right"></div>
                 </div>
                 <div className='card-wrapper'>

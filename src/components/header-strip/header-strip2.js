@@ -2,6 +2,7 @@ import React, {useEffect} from 'react';
 import './header-strip2.css';
 import AOS from "aos";
 import "aos/dist/aos.css";
+import charterCompass from '../../images/charter-compass-icon.png';
 
 const HeaderStrip2 = (props) => {
 
@@ -12,6 +13,7 @@ const HeaderStrip2 = (props) => {
 
   return (
     <div className='HeaderStrip2'>
+      <img src={charterCompass} alt="Compass" className='logo'/>
       <div className='header-content'>
         <h1 data-aos='fade-right' data-aos-duration='800'>{props.title}</h1>
         <h5 data-aos='fade-right' data-aos-duration='1000'>{props.headline}</h5>
@@ -33,6 +35,7 @@ const HeaderStrip2 = (props) => {
         </filter>
         </defs>
       </svg>
+
     </div>
   );
 }

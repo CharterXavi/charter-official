@@ -33,6 +33,7 @@
 .CategoriesPage ul li {
     height: auto;
     margin: 16px 0;
+    width: auto;
 }
 .CategoriesPage .ButtonSecondary {
     width: auto;

@@ -9,6 +9,9 @@
     box-shadow: inset var(--nav-shadow);
     background: var(--hero-gradient-colorful);
 }
+.HeaderStrip2 .logo {
+    display: none;
+}
 .HeaderStrip2 .header-image {
     position: absolute;
     width: 100%;
@@ -29,6 +32,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     box-sizing: border-box;
+    overflow-Y: hidden;
 }
 .HeaderStrip2 .header-content h1 {
     z-index: 3;
@@ -80,7 +84,22 @@
     .HeaderStrip2 .header-wave {
         bottom: -5px;
     }
+    .HeaderStrip2 .logo {
+        display: block;
+        position: absolute;
+        bottom: -40%;
+        animation: rotate 90s infinite linear;
+        width: 400px;
+        opacity: 0.2;
+    }   
 }
+
+
+@keyframes rotate {
+    0% { transform: rotate(-180deg); }
+    100% { transform: rotate(180deg); }
+}
+
 @media only screen and (max-width: 340px) {
     .HeaderStrip2 .header-content h1 {
         font-size: 3rem;
