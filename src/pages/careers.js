@@ -33,17 +33,14 @@ const CareersPage = () => {
         />
         <div className='two-column'>
           <div className="title">
-            <h4>Our Charter Identity</h4>
+            <h3>Our Charter Identity</h3>
             <hr/>
+            <p>We're proud to be a part of what is undoubtedly a unique workforce. We've very intentionally build up our company with the most passionate and driven people we could find. Regardless of discipline or department we are a company that truly invests in what we do and the people we interact with, and we never lose sight of the impact we strive to make.</p>
           </div>
           <div className="content">
             <div className="left">
-              <h6>Who we are</h6>
-              <p>We're proud to be a part of what is undoubtedly a unique workforce. We've very intentionally build up our company with the most passionate and driven people we could find. Regardless of discipline or department we are a company that truly invests in what we do and the people we interact with, and we never lose sight of the impact we strive to make.</p>
             </div>
             <div className="right">
-              <h6>What we're made of</h6>
-              <p>Charter is a diverse place, and we value this a lot. To know our company is composed of hard working, brilliant people from different walks of life, cultures, and worldviews helps us feel even more confident in our ability to improve lives wherever we go.</p>
             </div>
           </div>
         </div>
@@ -90,10 +87,13 @@ const CareersPage = () => {
           </div>
           <div className="content">
             <div className="left">
-              <h6>Demographics</h6>
-              <p>Diversity is front and center in our workforce at Charter. We believe in the power of the different perspectives that each team member brings to the table.</p>
+              <h6>What we're made of</h6>
+              <p>We value diversity at Charter. To know our company is composed of hard working, brilliant people from different walks of life, cultures, and worldviews helps us feel even more confident in our ability to improve lives wherever we go.</p>
             </div>
-            <div className="right"></div>
+            <div className="right">
+              <h6>Demographics</h6>
+              <p>Our workforce reflects our values. In our growing workforce, diversity is front and center. Just see for yourself!</p>
+            </div>
           </div>
           <div className='chart-wrapper'>
             <DemographicsChart />

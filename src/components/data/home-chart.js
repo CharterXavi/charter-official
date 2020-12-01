@@ -22,7 +22,7 @@ const data = {
         fill: false,
         lineTension: 0.5,
         backgroundColor: 'rgba(75,192,192,1)',
-        borderColor: '#363f55',
+        borderColor: '#0FBDBD',
         borderWidth: 2,
         data: [10, 25, 18, 45, 64, 55, 89]
         }

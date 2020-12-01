@@ -16,9 +16,18 @@ const AcuteCarePage = () => (
         <div className="title">
           <h4>We're ready for anything</h4>
           <hr/>
+          <p>Although our programs are largely aimed at reducing hospital visits and lowering costs, we're prepared in the case of emergency.</p>
         </div>
-        <div className="content"></div>
-        <p>Our H.A.R.P. program, or "Hospital Admission Reduction Program", consists of two programs aimed at most effectively preventing our patients from going back to the hospital after they are discharged. This includes our Transitional Care Management (TCM) program and our Advanced Care Planning (ACP) program.</p>
+        <div className="content">
+          <div className="left">
+            <h6>BPCI</h6>
+            <p></p>
+          </div>
+          <div className="right">
+            <h6>General Inpatient Care (GIP)</h6>
+            <p></p>
+          </div>
+        </div>
       </div>
       <TestimonialsStrip />
       <LocationsStrip svg={true} />

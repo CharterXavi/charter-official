@@ -12,7 +12,7 @@ const CCMPage = () => (
   <Layout>
     <div className='CCMPage'>
       <SEO title="CCM" />
-      <HeaderStrip2 image={harpImg} title='C.C.M.' headline='Complex Care Management' />
+      <HeaderStrip2 image={harpImg} title='Complex Care Management' headline='Reducing hospital readmissions and costs' />
       <div className='two-column'>
         <div className="title">
           <h4>Keeping our patients out of the hospital</h4>

@@ -10,9 +10,10 @@
     border-left: 5px dotted white;
     box-sizing: border-box;
 }
-.TeamGrid h2 {
+.TeamGrid h4 {
     width: auto;
     color: var(--primary-accent);
+    padding: 0 16px;
 }
 .TeamGrid .grid-container {
     padding: 64px 16px 32px 16px;

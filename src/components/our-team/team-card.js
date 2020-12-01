@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useState} from 'react'
 import './team-card.css'
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -15,9 +15,31 @@ const TeamCard = (props) => {
         props.expandBio(props.id);
     }
 
-    //Calc height dynamically based on size of bio
-    const charPerLine = 45;
-    const heightFactor = (((props.bio.length / charPerLine) * 25) + 50).toString().concat('px');
+
+
+//Upon render or rerender, allow for height calculation to be dynamic based on window size
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+    useEffect(() => {
+        //upon render, listen for screen size change and setState to 
+        window.addEventListener('resize', handleResize);
+        console.log(heightFactor);
+    })
+    const handleResize = () => {
+        setScreenWidth(window.innerWidth);
+    } 
+//Calc height dynamically based on size of bio
+    //define a character/line number - if the screen width is below 450px allow for 1 word / every 10px, 
+    // otherwise 50px per line will do
+    let charPerLine = `${screenWidth < 450 ? screenWidth / 10 : 50}`;
+    //define a height factor and convert it to px
+    let heightFactor = `${props.bio.length > 800 ? 
+        //if the bio is beyond 800px, give 28 px/per line
+        (((props.bio.length / charPerLine) * 28)).toString().concat('px')
+        :
+        //if bio is below 800px give 30.5 px/per line & 
+        //add 25 px to account for lack of whitespace in calculation for shorter bios
+        (((props.bio.length / charPerLine) * 30.5) + 25).toString().concat('px')
+    }`;
 
   return (
     <div className='TeamCard' data-aos='fade-up' data-aos-duration={props.animationTime} data-aos-once="true">

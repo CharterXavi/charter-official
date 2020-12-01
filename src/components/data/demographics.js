@@ -9,7 +9,7 @@ const genderData = {
     datasets: [
         {
         fill: false,
-        backgroundColor: ['orange', '#f05f7e', '#363f55'],
+        backgroundColor: ['#0Fbdbd', '#f05f7e', '#363f55'],
         borderColor: 'white',
         data: [21, 78, 1]
         }
@@ -20,7 +20,7 @@ const ethnicityData = {
     datasets: [
         {
         fill: false,
-        backgroundColor: ['#f05f7e', '#F493AA', '#F2D1C9', 'orange', '#0Fbdbd', '#546182', '#363f55'],
+        backgroundColor: ['#f05f7e', '#F493AA', '#F2D1C9', '#363f55', 'orange', '#0Fbdbd', '#546182', '#0Fbdbd'],
         borderColor: 'white',
         data: [17, 36, 10, 2, 2, 33]
         }

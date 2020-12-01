@@ -37,7 +37,7 @@ const CareApproach = (props) => {
     {
       img: e,  
       title: 'Education',
-      content: 'Discussions about treatment choices including symptom and pain management will be provided so that you understand your condition, care options and other needs.',
+      content: 'Discussions about treatment, choices like symptom/pain management, will be provided so that you understand your condition, care options and other needs.',
       animationTime: '1900'
     }
 ]

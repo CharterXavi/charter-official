@@ -39,6 +39,7 @@ body {
   width: 100%;
   font-family: 'Nunito', sans-serif;
   font-size: 17px;
+  overflow-x: hidden;
 }
 h1, h2, h4, h5, h6 {
   font-family: 'Nunito', sans-serif;

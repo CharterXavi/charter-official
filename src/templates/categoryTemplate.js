@@ -104,7 +104,7 @@ const Category = ({ pageContext, data }) => {
           image={archiveHeader}
         />
         <div className='intro'>
-          <h2>{catHeader}</h2>
+          <h4>{catHeader}</h4>
           <div className='post-wrapper'>
             {posts.map(post => {
               return (

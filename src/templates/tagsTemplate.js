@@ -104,7 +104,7 @@ const Tags = ({ pageContext, data }) => {
           image={archiveHeader}
         />
         <div className='intro'>
-          <h2>{tagHeader}</h2>
+          <h4>{tagHeader}</h4>
           <div className='post-wrapper'>
             {posts.map(post => {
               return (
