@@ -1,3 +1,6 @@
+.HomePage {
+    background: var(--light-clinic-blue);
+}
 .news {
     width: 100%;
     display: flex;
