@@ -12,10 +12,26 @@
     z-index: 1;
     box-sizing: border-box;
 }
+/* .OurTeamStrip::before {
+    content :'';
+    position: absolute;
+    top: -2%;
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    background: white;
+    transform-origin: 0, 0;
+    transform: skewY(-5deg);
+    z-index: 0;
+    overflow: hidden;
+    box-shadow: var(--standard-shadow);
+} */
 .OurTeamStrip .title {
     text-align: center;
     padding: 16px;
     width: 1000px;
+    position: relative;
+    z-index: 2;
 }
 .OurTeamStrip .title h4 {
     text-align: center;
@@ -130,6 +146,10 @@
     }
 }
 @media only screen and (max-width: 800px) {
+    .OurTeamStrip::before {
+        display: none;
+        margin: 0 0;
+    }
     .OurTeamStrip .card-container {
         width: 100%;
     }

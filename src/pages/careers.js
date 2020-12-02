@@ -6,7 +6,6 @@ import OurTeamStrip from '../components/our-team/our-team';
 import LocationsStrip from '../components/locations/locations';
 import careersImage from '../images/headers/careers.png';
 import DemographicsChart from '../components/data/demographics';
-import TeamPics from '../components/our-team/team-pics';
 import healthIcon from '../images/iconography/hospice/healthcare.png';
 import clockIcon from '../images/iconography/careers/clock.png';
 import awardIcon from '../images/iconography/careers/award.png';
@@ -44,7 +43,7 @@ const CareersPage = () => {
             </div>
           </div>
         </div>
-        <div className='two-column'>
+        <div className='two-column benefits'>
           <div className="title">
             <h4>We take care of our own</h4>
             <hr/>
@@ -76,9 +75,6 @@ const CareersPage = () => {
               <p className='detail-text'>We value flexibility. Enjoy competitive vacation/sick pay accrual, flexible work hours, and cutting edge, devices and systems to make our staffs' lives easier.</p>
             </div>
           </div>
-        </div>
-        <div className='picture-grid'>
-          <TeamPics />
         </div>
         <div className='two-column'>
           <div className="title">

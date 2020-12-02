@@ -1,3 +1,6 @@
+.AboutPage {
+    background: var(--light-clinic-blue);
+}
 .AboutUs .content-wrapper {
     display: flex;
     flex-direction: column;

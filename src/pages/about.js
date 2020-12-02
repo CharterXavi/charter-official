@@ -22,16 +22,18 @@ const AboutPage = ({data}) => {
   return (
     <Layout>
       <SEO title="About Us" />
-      <HeaderStrip2 
-        image={aboutImage}
-        title='About Charter'
-        headline='A truly patient-centered healthcare company'
-      />
-      <AboutCharter />
-      <Video2 />
-      <NewsStrip posts={data.recent.edges} />
-      <OurTeamStrip />
-      <LocationsStrip svg={true} />
+      <div className='AboutPage'>
+        <HeaderStrip2 
+          image={aboutImage}
+          title='About Charter'
+          headline='A truly patient-centered healthcare company'
+        />
+        <AboutCharter />
+        <Video2 />
+        <NewsStrip posts={data.recent.edges} />
+        <OurTeamStrip />
+        <LocationsStrip svg={true} />
+      </div>
     </Layout>
     )
   }
