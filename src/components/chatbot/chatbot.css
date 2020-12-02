@@ -1,0 +1,19 @@
+/* -- CHAT BOT COMPONENT -- */
+.Chatbot {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 9;
+}
+.Chatbot h2 {
+    color: white;
+}
+.Chatbot a:hover {
+    opacity: 0.8;
+}
+
+@media only screen and (max-width: 568px) {
+    .Chatbot {
+        z-index: 10;
+    }
+}

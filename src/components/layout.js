@@ -9,6 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Header from "./header/header"
 import Footer from "./footer/footer"
+import Chatbot from './chatbot/chatbot';
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -24,7 +25,10 @@ const Layout = ({ children }) => {
       > */}
       {/* Use a div to push the rest of the content down to line up after the navbar, since it's fixed */}
       <div className='spacer'></div>
-        <main>{children}</main>
+      <main>
+        {children}
+        <Chatbot />
+      </main>
       <Footer />
       {/* </div> */}
     </>
