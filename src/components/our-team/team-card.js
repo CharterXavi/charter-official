@@ -18,15 +18,14 @@ const TeamCard = (props) => {
 
 
 //Upon render or rerender, allow for height calculation to be dynamic based on window size
-    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+    const [screenWidth, setScreenWidth] = useState(0);
     useEffect(() => {
         //upon render, listen for screen size change and setState to 
-        window.addEventListener('resize', handleResize);
-        console.log(heightFactor);
+        if (typeof window !== 'undefined') {
+            window.addEventListener('resize', setScreenWidth(window.innerWidth));
+        }
     })
-    const handleResize = () => {
-        setScreenWidth(window.innerWidth);
-    } 
+
 //Calc height dynamically based on size of bio
     //define a character/line number - if the screen width is below 450px allow for 1 word / every 10px, 
     // otherwise 50px per line will do
