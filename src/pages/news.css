@@ -7,6 +7,7 @@
     align-items: center;
     justify-items: center;
     background: white;
+    overflow-x: hidden;
 }
 .NewsPage {
     background: var(--light-clinic-blue);

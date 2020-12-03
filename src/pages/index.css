@@ -1,5 +1,6 @@
 .HomePage {
     background: var(--light-clinic-blue);
+    overflow-x: hidden;
 }
 .news {
     width: 100%;

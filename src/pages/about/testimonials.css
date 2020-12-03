@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: flex-start;
     background: var(--light-clinic-blue);
+    overflow-x: hidden;
 }
 .TestimonialsPage .HeaderStrip {
     z-index: 2;

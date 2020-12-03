@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     background: var(--light-clinic-blue);
+    overflow-x: hidden;
 }
 .CCMPage .intro {
     background: var(--light-clinic-blue);

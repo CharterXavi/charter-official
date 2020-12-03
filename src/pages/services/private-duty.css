@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     background: var(--light-clinic-blue);
+    overflow-x: hidden;
 }
 .PrivateDutyPage .intro {
     min-height: 350px;

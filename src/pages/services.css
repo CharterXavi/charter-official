@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     background: var(--light-clinic-blue);
+    overflow-x: hidden;
 }
 .ServicesPage .intro h5 {
     max-width: 650px;

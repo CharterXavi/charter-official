@@ -4,6 +4,7 @@
     justify-content: flex-start;
     align-items: center;
     background: var(--light-clinic-blue);
+    overflow-x: hidden;
 }
 .PartnershipsPage .become-partner {
     padding: 64px 0;

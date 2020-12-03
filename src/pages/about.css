@@ -1,5 +1,6 @@
 .AboutPage {
     background: var(--light-clinic-blue);
+    overflow-x: hidden;
 }
 .AboutUs .content-wrapper {
     display: flex;
