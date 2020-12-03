@@ -70,6 +70,7 @@
     opacity: 1;
     transition: 0.7s ease all;
     padding: 16px 16px 0 0;
+    height: auto;
 }
 .Hero7 .hero-wrapper .hero-assets .active-graphic {
     opacity: 0;
@@ -127,6 +128,7 @@
     }
     .Hero7 .hero-wrapper .hero-assets .hero-graphic {
         width: 400px;
+        height: auto;
         padding: 0;
     }
     .Hero7 .hero-wrapper .hero-content {
@@ -215,6 +217,7 @@
     }
     .Hero7 .hero-wrapper .hero-assets .hero-graphic {
         width: 300px;
+        height: auto;
         margin: 0;
     }
 }
@@ -244,6 +247,7 @@
 @media only screen and (max-width: 325px) {
     .Hero7 .hero-wrapper .hero-assets .hero-graphic {
         width: 225px;
+        height: auto;
     }
     /* -- VIDEO -- */
     .Hero7 .active {

@@ -10,7 +10,7 @@ const Chatbot = () => {
         headerBgColor: '#f05f7e',
         headerFontColor: '#fff',
         headerFontSize: '24px',
-        botBubbleColor: '#f05f7e',
+        botBubbleColor: '#546182',
         botFontColor: '#fff',
         userBubbleColor: 'white',
         userFontColor: '#363f55',
@@ -18,31 +18,41 @@ const Chatbot = () => {
     const steps = [
         {
             id: '1',
-            message: 'What is your name?',
+            message: 'Welcome to Charter Healthcare Group! 👋🏼',
             trigger: '2',
-          },
-          {
+        },
+        {
             id: '2',
-            user: true,
+            message: "I'm the CharterBot and I'm here to assist you today. ✌🏼 To start, what's your name?",
             trigger: '3',
-          },
-          {
+        },
+        {
             id: '3',
+            user: true,
+            trigger: '4',
+        },
+        {
+            id: '4',
             message: 'Hi {previousValue}, nice to meet you!',
             end: true,
-          },
+        },
     ]
     const buttonStyles = {
         background: 'linear-gradient(66.41deg, #FF6687 34.32%, #FF6AB2 51.86%, #FFCE94 85.46%, #F71414 99.5%)',
         boxShadow: '0px 1px 4px rgba(0, 0, 0, 0.4)',
-        width: '70px',
-        height: '70px'
+        width: '60px',
+        height: '60px'
     }
     const inputStyles = {
         background: 'white',
         color: '#363f55',
         margin: '0 0'
     }
+
+    // const [isHovered, setIsHovered] = useState(false);
+    // const handleHover = () => {
+    //     setIsHovered(true);
+    // }
 
     return (
         <div className="Chatbot">
@@ -56,6 +66,10 @@ const Chatbot = () => {
                     placeholder='Type your message here...'
                 />
             </ThemeProvider>
+
+            {/* <div className={`notification ${isHovered ? 'hide' : ''}`}>
+                Chat with us →
+            </div> */}
         </div>
     );
 }

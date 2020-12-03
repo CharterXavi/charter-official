@@ -46,7 +46,6 @@ const BlogTemplate = (props) => {
     }
   });
 
-
   useEffect(() => {
     AOS.init();
     AOS.refresh();
@@ -61,6 +60,7 @@ const BlogTemplate = (props) => {
       />
       <div className='blog-page'>
         <div className="blog-post-container">
+
           <div className="blog-post">
             <img src={imageSrc} alt={postTitle} className='featured-img' />
             <div className='post-info'>
@@ -83,6 +83,7 @@ const BlogTemplate = (props) => {
               })}
             </p>
           </div>
+
           <div className='sidebar'>
             <div className='recent'>
               <img src={clockIcon} alt="Clock" />
@@ -111,6 +112,7 @@ const BlogTemplate = (props) => {
               />
             </div>
           </div>
+
         </div>
       </div>
     </Layout>

@@ -14,6 +14,7 @@
   --sunset: linear-gradient(66.41deg, #F3476C 24.79%, #FFCE94 85.46%);
   --mist: linear-gradient(90deg, #F493AA 0%, #F2D1C9 100%);
   --ocean: linear-gradient(270deg, #0FBDBD -7.32%, #363F55 100%);
+  --super-gradient: linear-gradient(66.41deg, #FF6687 34.32%, #FF6AB2 51.86%, #FFCE94 85.46%, #F71414 99.5%);
   --hero-gradient-white: linear-gradient(90deg, #FFFFFF 42.19%, #F493AA 61.98%);
   --hero-gradient-light: linear-gradient(90deg, #F6F7FB 42.19%, #F493AA 61.98%);
   --hero-gradient-dark: linear-gradient(90deg, #363F55 42.19%, #F493AA 61.98%);
@@ -39,7 +40,6 @@ body {
   width: 100%;
   font-family: 'Nunito', sans-serif;
   font-size: 17px;
-  overflow-x: hidden;
 }
 h1, h2, h4, h5, h6 {
   font-family: 'Nunito', sans-serif;
