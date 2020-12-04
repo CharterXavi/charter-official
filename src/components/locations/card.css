@@ -19,6 +19,10 @@
     align-items: center;
     font-weight: bold;
 }
+.Card.active-card {
+    box-shadow: var(--standard-shadow);
+    background: var(--light-clinic-blue);
+}
 .Card:hover .Clicker {
     transform: scale(1.5);
 }

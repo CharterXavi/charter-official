@@ -17,6 +17,8 @@
     width: auto;
     border-radius: 10px;
     box-sizing: border-box;
+    color: var(--heading-color);
+    font-weight: 600;
 }
 .Expander a:hover {
     background: var(--heading-color);
