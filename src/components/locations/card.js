@@ -19,7 +19,7 @@ const Card = (props) => {
     }
 
     return (
-        <div className='Card' data-aos='fade-up' data-aos-duration={props.animationTime} data-aos-once="true">
+        <div className={`Card ${props.isExpanded ? 'active-card' : ''}`} data-aos='fade-up' data-aos-duration={props.animationTime} data-aos-once="true">
             <div className='card-title'>
                 <p>{props.state}</p>
                 <Clicker onClick={handleClick} />
