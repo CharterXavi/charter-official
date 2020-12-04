@@ -11,7 +11,7 @@
     overflow: hidden;
 }
 .Hero7 .hero-wrapper {
-    height: 93vh;
+    height: 85vh;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -116,7 +116,7 @@
         margin: 32px 0;
     }
 }
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1200px) {
     .Hero7 .hero-wrapper {
         height: 100vh;
     }
@@ -153,7 +153,6 @@
 }
 @media only screen and (max-width: 800px) {
     .Hero7 .hero-wrapper {
-        height: 93vh;
         padding: 16px 0;
     }
     .Hero7 .hero-wave {
@@ -162,6 +161,10 @@
     }
 }
 @media only screen and (max-width: 650px) {
+    .Hero7 .hero-wrapper {
+        height: 100vh;
+        padding: 32px 0;
+    }
     .Hero7 .hero-wrapper .hero-assets {
         width: 100%;
         box-sizing: border-box;
@@ -195,36 +198,44 @@
 }
 @media only screen and (max-width: 450px) {
     .Hero7 {
-        height: 90vh;
+        height: 100vh;
     }
     .Hero7 .hero-wrapper  {
-        padding: 16px 0 0 0;
+        padding: 32px 0 0 0;
     }
     .Hero7 .hero-wave {
         bottom: -5px;
     }
     .Hero7 .hero-content h1 {
         font-size: 2.5rem;
+        text-align: center;
+    }
+    .Hero7 .hero-content {
+        align-items: center;
     }
     .Hero7 .hero-content p {
         display: none;
     }
     /* -- VIDEO -- */
     .Hero7 iframe {
-        top: 60px;
+        top: 10px;
         width: 92%;
         height: 250px;
     }
     .Hero7 .hero-wrapper .hero-assets .hero-graphic {
         width: 300px;
-        height: auto;
+        height: 278px;
         margin: 0;
     }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 400px) {
     .Hero7 .hero-wave {
         bottom: -3px;
+    }
+    .Hero7 .hero-wrapper .hero-assets .hero-graphic {
+        width: 80%;
+        height: 100%;
     }
     /* -- VIDEO -- */
     .Hero7 iframe {
@@ -233,10 +244,13 @@
         height: 200px;
     }
     .Hero7 .hero-content h1 {
-        font-size: 2rem;
+        font-size: 2.25rem;
     }
 }
 @media only screen and (max-width: 340px) {
+    .Hero7 .hero-wrapper {
+        padding: 16px 0;
+    }
     /* -- VIDEO -- */
     .Hero7 iframe {
         top: 45px;
@@ -262,5 +276,8 @@
     }
     .Hero7 .hero-wave {
         width: 120%;
+    }
+    .Hero7 .hero-content h1 {
+        font-size: 2rem;
     }
 }
