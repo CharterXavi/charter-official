@@ -11,15 +11,14 @@
     color: var(--heading-color);
 }
 .Quotes .quote-text {
-    background: -webkit-linear-gradient(0deg, #F493AA 0%, #F2D1C9 100%);
+    background: var(--super-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     width: 100%;
-    font-weight: bold;
 }
 .Quotes .active {
     position: absolute;
-    top: 35%;
+    top: 25%;
     opacity: 1;
     transition: 0.4s ease all;
 }
@@ -29,4 +28,28 @@
     opacity: 0;
     transition: 0.4s ease all;
 }
+.Quotes .icon {
+    width: 20px;
+    animation: heartbeat 1.1s infinite linear;
+}
 
+@keyframes heartbeat {
+    0% {
+        width: 20px;
+    }
+    10% {
+        width: 34px;
+    }
+    15% {
+        width: 28px;
+    }
+    30% {
+        width: 32px;
+    }
+    50% {
+        width: 20px;
+    }
+    100% {
+        width: 20px;
+    }
+}
