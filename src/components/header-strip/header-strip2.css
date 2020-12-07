@@ -77,7 +77,7 @@
         font-size: 28px;
     }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
     .HeaderStrip2 img {
         display: none;
     }
@@ -89,8 +89,8 @@
         position: absolute;
         bottom: -40%;
         animation: rotate 90s infinite linear;
-        width: 400px;
-        opacity: 0.2;
+        width: 110%;
+        opacity: 0.4;
     }   
 }
 

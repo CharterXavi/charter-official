@@ -16,10 +16,33 @@
 .MosaicCard:hover p {
     color: var(--primary-accent);
 }
-.MosaicCard img {
-    width: 25px;
+.MosaicCard:hover .icon {
+    animation: heartbeat 1s infinite linear;
+}
+.MosaicCard .icon {
+    width: 26px;
 }
 
+@keyframes heartbeat {
+    0% {
+        width: 26px;
+    }
+    10% {
+        width: 34px;
+    }
+    15% {
+        width: 28px;
+    }
+    30% {
+        width: 32px;
+    }
+    50% {
+        width: 26px;
+    }
+    100% {
+        width: 26px;
+    }
+}
 @media only screen and (max-width: 450px) {
     .MosaicCard {
         margin: 16px 0 0 0;

@@ -61,6 +61,9 @@
     outline: none;
     border: none;
 }
+.VideoStrip2 .play-btn-wrapper .ButtonPrimary {
+    min-height: 45px;
+}
 .VideoStrip2 .hide {
     color: white;
     width: 300px;

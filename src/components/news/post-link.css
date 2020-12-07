@@ -37,7 +37,7 @@
     right: 16px;
     z-index: 5;
     color: white;
-    background: linear-gradient(66.41deg, #FFCE94 3.73%, #F05F7E 100%);
+    background: var(--super-gradient);
     border-radius: 5px;
     padding: 4px 8px;
     margin: 0 0 0 0;

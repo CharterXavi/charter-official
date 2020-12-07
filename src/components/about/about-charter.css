@@ -36,6 +36,9 @@
 .AboutCharter .about-card-wrapper .about-card:hover p {
     transform: translatey(8px);
 }
+.AboutCharter .about-card-wrapper .about-card:hover .icon {
+    transform: translateY(-8px);
+}
 
 @media only screen and (max-width: 1300px) {
     .AboutCharter .about-card-wrapper .about-card {

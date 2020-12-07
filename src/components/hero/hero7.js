@@ -1,14 +1,16 @@
 import React, {useEffect, useState} from 'react';
 import ButtonPrimary from '../buttons/button-primary';
 import heroGraphic from '../../images/iconography/hero-graphic.png';
-import charterCompass from '../../images/charter-compass-icon.png';
+import charterCompass from '../../images/charter-compass-v6-white.png';
 import './hero7.css';
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const HeroStrip7 = () => {
     useEffect(() => {
-        AOS.init();
+        AOS.init({
+            once: true
+        });
         AOS.refresh();
     });
 

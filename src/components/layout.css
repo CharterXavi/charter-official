@@ -1,6 +1,6 @@
 /* -------------- GLOBAL STYLES ---------------- */
 :root {
-  --primary-accent: #F3476C;
+  --primary-accent: #F22C57;
   --pink-sherbet: #F493AA;
   --light-accent: #f2d1c9;
   --heading-color: #363f55;
@@ -8,13 +8,12 @@
   --light-clinic-blue: #F6F7FB;
   --maximum-blue: #0FBDBD;
   --scrubs-blue: #546182;
-  --scrubs-blue: #546182;
   --detail-grey: #535968;
   --rose: linear-gradient(180deg, #F493AA 0%, #F05F7E 100%);
   --sunset: linear-gradient(66.41deg, #F3476C 24.79%, #FFCE94 85.46%);
   --mist: linear-gradient(90deg, #F493AA 0%, #F2D1C9 100%);
   --ocean: linear-gradient(270deg, #0FBDBD -7.32%, #363F55 100%);
-  --super-gradient: linear-gradient(66.41deg, #FF6687 34.32%, #FF6AB2 51.86%, #FFCE94 85.46%, #F71414 99.5%);
+  --super-gradient: linear-gradient(66.41deg, #F14D70 14.26%, #FF008A 34.32%, #FF446C 53.87%, #FFB016 87.46%);
   --hero-gradient-white: linear-gradient(90deg, #FFFFFF 42.19%, #F493AA 61.98%);
   --hero-gradient-light: linear-gradient(90deg, #F6F7FB 42.19%, #F493AA 61.98%);
   --hero-gradient-dark: linear-gradient(90deg, #363F55 42.19%, #F493AA 61.98%);
@@ -34,7 +33,7 @@ html {
   font-family: 'Nunito', sans-serif;
   overflow-x: hidden;
   background: var(--heading-color);
-  overscroll-behavior: none;
+  overscroll-behavior: none; 
 }
 body {
   margin: 0;
@@ -77,7 +76,7 @@ h4 {
   padding: 8px 0;
   margin: 0 0;
   letter-spacing: 0.25px;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--primary-accent);
 }
 h5 {
@@ -85,7 +84,7 @@ h5 {
   padding: 8px 0;
   margin: 0 0;
   letter-spacing: 0px;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--primary-accent);
 }
 h6 {
@@ -154,7 +153,11 @@ hr {
 .spacer {
   height: 75px;
 }
-
+.icon {
+  margin: 0 0 0 0;
+  transition: 0.3s ease all;
+  height: 50px;
+}
 
 /* --- COLUMN WITH TEXT-LEFT --- */
 .two-column-left {
@@ -378,5 +381,28 @@ hr {
   .two-column .content .left, .two-column .content .right {
     padding: 8px 0;
     width: 100%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  :root {
+    --primary-accent: #F22C57;
+    --heading-color: #282e3e;
+    --clinic-blue: #CED3DC;
+    --light-clinic-blue: #F6F7FB;
+    --maximum-blue: #0fbdbd;
+    --scrubs-blue: #546182;
+    --detail-grey: #535968;
+    --rose: linear-gradient(180deg, #F493AA 0%, #F22C57 100%);
+    --sunset: linear-gradient(66.41deg, #F22C57 24.79%, #FFCE94 85.46%);
+    --mist: linear-gradient(90deg, #F493AA 0%, #F2D1C9 100%);
+    --ocean: linear-gradient(270deg, #0FBDBD -7.32%, #282e3e 100%);
+    --super-gradient: linear-gradient(66.41deg, #F22C57 3.73%, #FF008A 30.81%, #F14D70 51.86%, #FFCE94 100%);
+    --hero-gradient-white: linear-gradient(90deg, #FFFFFF 42.19%, #F493AA 61.98%);
+    --hero-gradient-light: linear-gradient(90deg, #F6F7FB 42.19%, #F493AA 61.98%);
+    --hero-gradient-dark: linear-gradient(90deg, #363F55 42.19%, #F493AA 61.98%);
+    --hero-gradient-colorful: linear-gradient(180deg, #282e3e 0%, #2C3959 47.92%, #F22C57 100%);
+  }
+  .icon {
+    height: 40px;
   }
 }
