@@ -38,12 +38,11 @@
     box-sizing: border-box;
     padding: 16px;
 }
-.HARP .forms img {
-    margin-right: 16px;
+.HARP .forms .icon {
     transition: 0.4s ease all;
-    width: 45px;
+    width: 50px;
 }
-.HARP .forms .form-card:hover img {
+.HARP .forms .form-card:hover .icon {
     transform: translateY(-8px);
 }
 .HARP .forms .form-card:hover p, .HARP .forms .form-card:hover .ButtonSecondary {
