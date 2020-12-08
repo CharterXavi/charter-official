@@ -3,13 +3,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 64px 32px;
+    padding: 32px;
     height: auto;
     background: var(--light-clinic-blue);
 }
-.Advantages h2 {
+.Advantages h4 {
     width: auto;
-    padding: 0 0 64px 0;
     color: var(--primary-accent);
 }
 .Advantages .card-wrapper {
@@ -26,5 +25,17 @@
 @media only screen and (max-width: 1200px) {
     .Advantages .card-wrapper {
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .Advantages {
+        padding: 32px 16px;
+    }
+    .Advantages h4 {
+        text-align: left;
+    }
+    .Advantages {
+        align-items: flex-start;
     }
 }
