@@ -9,7 +9,7 @@
     color: var(--heading-color);
     border-radius: 10px;
 }
-.HospiceCard img {
+.HospiceCard .icon {
     margin: 8px 16px;
     width: 40px;
 }

@@ -12,7 +12,7 @@ const HospiceCard = (props) => {
 
   return (
     <div className='HospiceCard' data-aos='fade-up' data-aos-duration={props.animationTime} >
-        <img src={props.icon} alt={props.alt} />
+        {props.icon}
         <h6 className='detail-title'>{props.title}</h6>
     </div>
   );

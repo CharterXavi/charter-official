@@ -7,7 +7,7 @@ const Chatbot = () => {
 
     const theme = {
         background: 'white',
-        headerBgColor: '#f05f7e',
+        headerBgColor: '#F22C57',
         headerFontColor: '#fff',
         headerFontSize: '24px',
         botBubbleColor: '#546182',

@@ -4,6 +4,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import AdvantageCard from './advantage-card';
 import HealthcareIcon from '../icons/healthcare';
+import CheckboxIcon from '../icons/checkbox';
+import VolunteerIcon from '../icons/volunteer';
+import ClockIcon from '../icons/clock';
 
 const Advantages = (props) => {
 
@@ -20,19 +23,19 @@ const Advantages = (props) => {
       animationTime: '800'
     },
     {
-      icon: '',  
+      icon: <ClockIcon />,  
       title: 'Convenience',
       content: 'Shortens and in some cases, eliminates hospitalizations or skilled nursing home stays. Many risks, such as infection, are eliminated or minimized when care is given at home.',
       animationTime: '1100'
     },
     {
-      icon: '',  
+      icon: <VolunteerIcon />,  
       title: 'Independence',
       content: 'We strive to help you regain your independence and maintain your quality of life so you can look forward to a brighter future.',
       animationTime: '1500'
     },
     {
-      icon: '',  
+      icon: <CheckboxIcon />,  
       title: 'Control',
       content: 'Charter Home Health gives you choices and allows you to be an active participant in your own care and recovery journey.',
       animationTime: '1900'

@@ -3,16 +3,16 @@ import './hospice-services.css';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import HospiceCard from './hospice-card';
-import healthIcon from '../../images/iconography/hospice/healthcare.png';
-import groupIcon from '../../images/iconography/hospice/social.png';
-import homeIcon from '../../images/iconography/hospice/home.png';
-import crossIcon from '../../images/iconography/hospice/cross.png';
-import pillIcon from '../../images/iconography/hospice/pill.png';
-import medicationsIcon from '../../images/iconography/hospice/bottle.png';
-import stethoscopeIcon from '../../images/iconography/hospice/stethoscope.png';
-import flowerIcon from '../../images/iconography/hospice/flower.png';
-import heartIcon from '../../images/iconography/hospice/heart.png';
-import phoneIcon from '../../images/iconography/hospice/phone.png';
+import HealthcareIcon from '../../components/icons/healthcare';
+import HomeIcon from '../../components/icons/home';
+import StethoscopeIcon from '../../components/icons/stethoscope';
+import HeartIcon from '../../components/icons/heart';
+import GroupIcon from '../../components/icons/group';
+import FlowerIcon from '../../components/icons/flower';
+import PhoneIcon from '../../components/icons/phone';
+import CrossIcon from '../../components/icons/cross';
+import PillIcon from '../../components/icons/pill';
+import BottleIcon from '../../components/icons/bottle';
 
 const HospiceServices = () => {
 
@@ -23,61 +23,61 @@ const HospiceServices = () => {
 
   const hospiceServicesList = [
       {
-        icon: healthIcon,
+        icon: <HealthcareIcon />,
         title: 'Nursing Services',
         alt: 'Health Cross Symbol',
         animationTime: '800'
       },
       {
-        icon: groupIcon,
+        icon: <GroupIcon />,
         title: 'Social Services',
         alt: 'Group of three people',
         animationTime: '1000'
       },
       {
-        icon: homeIcon,
+        icon: <HomeIcon />,
         title: 'Home Health Aide',
         alt: 'House',
         animationTime: '1200'
       },
       {
-        icon: crossIcon,
+        icon: <CrossIcon />,
         title: 'Spiritual Support',
         alt: 'Religious cross',
         animationTime: '1400'
       },
       {
-        icon: pillIcon,
+        icon: <PillIcon />,
         title: 'Medications',
         alt: 'Pill',
         animationTime: '1600'
       },
       {
-        icon: medicationsIcon,
+        icon: <BottleIcon />,
         title: 'Medical Supplies',
         alt: 'Pill Bottle',
         animationTime: '1800'
       },
       {
-        icon: stethoscopeIcon,
+        icon: <StethoscopeIcon />,
         title: 'Medical Equipment',
         alt: 'Stethoscope',
         animationTime: '2000'
       },
       {
-        icon: flowerIcon,
+        icon: <FlowerIcon />,
         title: 'Bereavement Services',
         alt: 'Flower',
         animationTime: '2200'
       },
       {
-        icon: heartIcon,
+        icon: <HeartIcon />,
         title: 'Therapy',
         alt: 'Heart',
         animationTime: '2300'
       },
       {
-        icon: phoneIcon,
+        icon: <PhoneIcon />,
         title: '24 Hr. Health Line',
         alt: 'Phone',
         animationTime: '2400'

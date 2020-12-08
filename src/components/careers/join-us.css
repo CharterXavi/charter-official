@@ -27,7 +27,7 @@
     padding: 8px;
     transition: 0.25s ease all;
 }
-.JoinUsStrip .card-wrapper .card:hover img {
+.JoinUsStrip .card-wrapper .card:hover .icon {
     transform: translatey(-8px);
 }
 .JoinUsStrip .card-wrapper .card:hover p {
@@ -35,10 +35,6 @@
 }
 .JoinUsStrip .card-wrapper .card:hover .ButtonPrimaryAlt {
     transform: translatey(8px);
-}
-.JoinUsStrip .card-wrapper .card img {
-    transition: 0.4s ease all;
-    height: 45px;
 }
 .JoinUsStrip .card-wrapper .card h6 {
     width: auto;

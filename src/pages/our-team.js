@@ -6,7 +6,7 @@ import HeaderStrip2 from '../components/header-strip/header-strip2';
 import LocationsStrip from '../components/locations/locations';
 import TeamGrid from '../components/our-team/team-grid';
 import hiringImage from '../images/hiring.png';
-import hiringIcon from '../images/iconography/careers/hiring.png';
+import NetworkIcon from '../components/icons/network';
 import ButtonPrimaryAlt from '../components/buttons/button-primary-alt';
 import './our-team.css';
 
@@ -36,7 +36,7 @@ const OurTeamPage = () => (
       <div className='hiring-strip'>
         <div className='two-column-left'>
           <div className='left'>
-            <img src={hiringIcon} alt="Person" />
+            <NetworkIcon />
             <h4>We're Hiring!</h4>
             <p>Interested in a career at Charter? Visit our Careers page to learn more about who we are, what we stand for, and who we're looking for in our future employees. You can also read about our competitve compensation, benefits, culture, and more!</p>
             <ButtonPrimaryAlt content='Visit Careers page' link='/careers' />

@@ -17,9 +17,6 @@
     box-shadow: var(--standard-shadow);
     border-radius: 10px;
 }
-.HospiceTeam .left .icon, .HospiceTeam .right .icon {
-    width: 40px;
-}
 
 @media only screen and (max-width: 1200px) {
     .HospiceTeam .left img {
@@ -38,8 +35,5 @@
     .HospiceTeam .right {
         width: 100%;
         padding: 16px;
-    }
-    .HospiceTeam .left .icon, .HospiceTeam .right .icon {
-        width: 45px;
     }
 }

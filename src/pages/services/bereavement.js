@@ -5,7 +5,7 @@ import HeaderStrip2 from '../../components/header-strip/header-strip2';
 import bereavementImg from '../../images/headers/bereavement.png';
 import flowersLeft from '../../images/iconography/flowers-left.png';
 import flowersRight from '../../images/iconography/flowers-right.png';
-import heartIcon from '../../images/iconography/heart-icon.png'
+import HeartIcon from '../../components/icons/heart';
 import LocationsStrip from '../../components/locations/locations';
 import ButtonPrimaryAlt from '../../components/buttons/button-primary-alt';
 import './bereavement.css';
@@ -54,7 +54,7 @@ const BereavementPage = () => (
 
         <div className='two-column'>
           <div className="title">
-            <img src={heartIcon} alt="Heart" data-aos='fade-up' data-aos-duration='900' />
+            <HeartIcon />
             <h4>We're here for you</h4>
             <hr/>
           </div>

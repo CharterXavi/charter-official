@@ -3,7 +3,7 @@ import './hospice-team.css';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import hospiceTeam from '../../images/hospice-team.png';
-import groupIcon from '../../images/iconography/hospice/group.png';
+import GroupIcon from '../../components/icons/group';
 
 const HospiceTeam = () => {
 
@@ -19,7 +19,7 @@ const HospiceTeam = () => {
             <img src={hospiceTeam} alt="Group of health care professionals" />
         </div>
         <div className='right'>
-          <img src={groupIcon} alt="Group" className='icon'/>
+          <GroupIcon />
           <h5>Your Hospice Team</h5>
           <p>Each hospice team consists of health care workers from all disciplines: nurses, social workers, home health aides, spiritual counselors, and volunteers, all under the direction of a medical director. By tying all of these disciplines together, we can deliver nothing short of the most high-quality, all-encompassing hospice care available.</p>
         </div>
