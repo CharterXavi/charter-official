@@ -58,21 +58,9 @@
     .TestimonialsStrip .right .quote-container {
         width: 100%;
     }
-}
-@media only screen and (max-width: 850px) {
-    .TestimonialsStrip .right {
-        flex-direction: column-reverse;
-    }
-    .TestimonialsStrip img {
-        width: 55px;
-    }
     .TestimonialsStrip .carousel-control {
         display: flex;
         margin: 8px 8px 8px 0;
-    }
-    .TestimonialsStrip .carousel-control .Dot {
-        width: 22px;
-        height: 22px;
     }
     .TestimonialsStrip .carousel-control img {
         transform: rotate(0deg) translateY(9px) translateX(0px);
@@ -81,5 +69,15 @@
     .TestimonialsStrip .carousel-control img:hover {
         transform: rotate(0deg) translateY(9px) translateX(0px) scale(1.5);
         margin: 0 8px 0 8px;
+    }
+    .TestimonialsStrip .carousel-control .Dot {
+        width: 22px;
+        height: 22px;
+    }
+    .TestimonialsStrip .right {
+        flex-direction: column-reverse;
+    }
+    .TestimonialsStrip img {
+        width: 55px;
     }
 }

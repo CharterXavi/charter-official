@@ -6,7 +6,6 @@ import ButtonPrimary from '../buttons/button-primary';
 
 const QuoteMosaic = () => {
 
-
   const quoteList = [
     {
       quote: "I cannot put into words how much I appreciate the hospice team that attended to my husband. All were compassionate, caring and gental at all times. The avaiability of everyone anytime needed was amazing. I am so grateful for the care and pain free transition for my husbands passing. Thank you Thank you to all from the bottom of my heart. And thank you for the continued support offered to me.",

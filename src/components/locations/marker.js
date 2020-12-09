@@ -1,8 +1,9 @@
 import React from 'react';
-import PinIcon from '../icons/pin';
+import pinIcon from '../../images/iconography/locations/pin.png';
 import './marker.css';
 
 const Marker = (props) => {
+
     return (
         <div className="Marker" title={props.name}>
             {
@@ -12,7 +13,7 @@ const Marker = (props) => {
                 <p>{props.name}</p>
             }
             <a href={props.link} target='_blank' rel='noreferrer noopener'>
-                <PinIcon />
+                <img src={pinIcon} alt="Pin" className='icon'/>
             </a>
         </div>
     );

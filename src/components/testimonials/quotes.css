@@ -15,10 +15,11 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     width: 100%;
+    font-size: 20px;
 }
 .Quotes .active {
     position: absolute;
-    top: 23%;
+    top: 10%;
     opacity: 1;
     transition: 0.4s ease all;
 }
@@ -55,5 +56,28 @@
     }
     100% {
         width: 20px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .Quotes .active {
+        top: 0%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .Quotes .active {
+        top: -5%;
+    }
+    .Quotes .quote-text {
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 330px) {
+    .Quotes .active {
+        top: -5%;
+    }
+    .Quotes .quote-text {
+        font-size: 16px;
     }
 }

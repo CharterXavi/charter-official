@@ -10,23 +10,23 @@ import LikeIcon from '../icons/like';
 const TestimonialsStrip = (props) => {
     const testimonialList = [
         {
-            name: 'Johnny Appleseed',
-            quote: 'Charter was there for me when I needed it most - they rock!',
+            name: 'Catherine Peterson',
+            quote: 'The team we had at the house was the best ever. We looked forward to their visits as they were so caring and treated my mother like a queen. They were especially helpful to me as her caregiver.',
             animationTime: '800',
         },
         {
-            name: 'Jane Doe',
-            quote: 'Charter is the BEST!!',
+            name: 'Willeta Calloway',
+            quote: 'Don’t know what I would have done without Cambridge/Charter Hospice. The service and support was amazing. Thank you so much.',
             animationTime: '1100',
         },
         {
-            name: 'Jack Sparrow',
-            quote: "Yooo hoooo yooo hooo, a pirate's life for me...",
+            name: 'Harland Would',
+            quote: "I am so grateful for Charter Healthcare. From the very beginning, through all the tough times, you were always available, kind and caring, then at my wife's passing, help for me was immediate, then continued contact. Blessings on you all!",
             animationTime: '1500',
         },
         {
-            name: 'Granny Smith',
-            quote: "I'm doing better than ever and it's all thanks to Charter.",
+            name: 'Clarence Parson',
+            quote: "I appreciate the support I have received from Charter. You have been a blessing to me and my family. I cannot thank you enough for your kindness. Much love to all of you.",
             animationTime: '2000',
         }
     ]
@@ -60,7 +60,7 @@ const TestimonialsStrip = (props) => {
     }
 
     //set an interval function to cycle to the next quote every 4.5 sec, this runs each rerender
-    let rotate = setInterval(goToNext, 4500);
+    let rotate = setInterval(goToNext, 7000);
     //create a function that will clear the interval
     const resetAutoRotate = () => {
         clearInterval(rotate);
@@ -72,7 +72,7 @@ const TestimonialsStrip = (props) => {
         <div className='two-column-left'>
             <div className='left'> 
                 <LikeIcon />
-                <h5>We're keeping our patients happy.</h5>
+                <h5>We're going above and beyond.</h5>
                 <p>Feedback from our patients and their loved ones not only motivates us to keep working hard, but it also speaks volumes about our successes. See for yourself what others have to say about Charter!</p>
                 <div data-aos='fade-up' data-aos-duration='1000' >
                     <ButtonPrimaryAlt content='See testimonials' link='/about/testimonials' />
