@@ -9,7 +9,7 @@ const RecentGrid = (props) => {
     <div className='RecentGrid'>
         <div className='grid-header'>
           <h5>{props.title}</h5>
-          <Link to='/news/recent'>{props.linkContent}</Link>
+          <Link to={props.link}>{props.linkContent}</Link>
         </div>
         <hr/>
         <div className='grid'>

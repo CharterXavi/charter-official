@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import './locations.css';
-import pinIcon from '../../images/iconography/locations/pin.png';
 import Card from './card';
 import Map from './map';
+import PinIcon from '../icons/pin';
 
 const LocationsStrip = (props) => {
     const [locationsList, setLocationsList] = useState(
@@ -315,7 +315,7 @@ const LocationsStrip = (props) => {
             </svg>
         }
         <div className='left'> 
-        <img src={pinIcon} alt='Home Icon' className='icon' />
+            <PinIcon />
             <h4>Our Locations</h4>
             <p>See our locations by state</p>
             <div className='card-container'>

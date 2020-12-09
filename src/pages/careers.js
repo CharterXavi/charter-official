@@ -6,9 +6,9 @@ import OurTeamStrip from '../components/our-team/our-team';
 import LocationsStrip from '../components/locations/locations';
 import careersImage from '../images/headers/careers.png';
 import DemographicsChart from '../components/data/demographics';
-import healthIcon from '../images/iconography/hospice/healthcare.png';
-import clockIcon from '../images/iconography/careers/clock.png';
-import awardIcon from '../images/iconography/careers/award.png';
+import HealthcareIcon from '../components/icons/healthcare';
+import AwardIcon from '../components/icons/award';
+import ClockIcon from '../components/icons/clock';
 import JoinUsStrip from '../components/careers/join-us.js';
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -60,17 +60,17 @@ const CareersPage = () => {
           </div>
           <div className='benefits-wrapper'>
             <div className='benefits-card' data-aos='fade-up' data-aos-duration='800'>
-              <img src={awardIcon} alt="Award" />
+              <AwardIcon />
               <h6 className='detail-title'>Generous Incentives</h6>
               <p className='detail-text'>We provide 401K company matching, referral and retention bonuses, an Employee of the Month program, anniversary & birthday rewards ,and more.</p>
             </div>
             <div className='benefits-card' data-aos='fade-up' data-aos-duration='1200'>
-              <img src={healthIcon} alt="Healthcare" />
+              <HealthcareIcon />
               <h6 className='detail-title'>Health & Wellness</h6>
               <p className='detail-text'>We help you cover all your bases with great insurance options: medical, dental, vision, life, critical illness, pet, short and/or long-term disability, etc.</p>
             </div>
             <div className='benefits-card' data-aos='fade-up' data-aos-duration='1600'>
-              <img src={clockIcon} alt="Clock" />
+              <ClockIcon />
               <h6 className='detail-title'>Real Flexibility</h6>
               <p className='detail-text'>We value flexibility. Enjoy competitive vacation/sick pay accrual, flexible work hours, and cutting edge, devices and systems to make our staffs' lives easier.</p>
             </div>

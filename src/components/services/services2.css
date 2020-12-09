@@ -29,16 +29,16 @@
 .ServicesStrip2 .compass-one {
     position: absolute;
     z-index: -1;
-    width: 75%;
-    top: -250px;
+    width: 70%;
+    top: -230px;
     opacity: 0.075;
-    right: -30%;
-    animation: rotate 180s infinite linear;
+    right: -20%;
+    animation: rotate 150s infinite linear;
 }
 
 @keyframes rotate {
-    0% { transform: rotate(-180deg); }
-    100% { transform: rotate(180deg); }
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 .ServicesStrip2 .title {
     text-align: left;
@@ -46,6 +46,9 @@
     width: 1000px;
     position: relative;
     z-index: 2;
+}
+.ServicesStrip2 .title hr {
+    display: none;
 }
 .ServicesStrip2 .title h6 {
     color: var(--primary-accent);
@@ -75,8 +78,11 @@
     width: auto;
     color: var(--heading-color);
     padding: 0 0 0 16px;
-    border-left: 2px solid var(--primary-accent);
+    border-left: 2px solid var(--scrubs-blue);
     transition: 0.25 ease all;
+}
+.ServicesStrip2 .card .icon {
+    margin: 32px 0 16px 0;
 }
 .ServicesStrip2 .card:hover .ButtonPrimaryAlt {
     transform: translateY(8px);
@@ -87,10 +93,6 @@
 }
 .ServicesStrip2 .card p {
     color: #363f55;
-}
-.ServicesStrip2 .icon {
-    margin: 32px 0 8px 0;
-    transition: 0.3s ease all;
 }
 @media only screen and (max-width: 1000px) {
     .ServicesStrip2 .card-container {
@@ -106,23 +108,13 @@
         display: none;
     }
 }
-@media only screen and (max-width: 665px) {
-    .ServicesStrip2 .card-container .card {
-        width: 300px;
-    }
-    .ServicesStrip2 .card-container .card img {
-        height: 50px;
-        width: 50px;
-    }
-}
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 700px) {
     .ServicesStrip2 .card-container .card {
         width: 100%;
         padding: 16px 0;
         margin: 0;
     }
-    .ServicesStrip2 .card-container .card img {
-        height: 50px;
-        width: 50px;
+    .ServicesStrip2 .title hr {
+        display: block;
     }
 }

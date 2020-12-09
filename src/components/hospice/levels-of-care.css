@@ -25,3 +25,9 @@
         width: 100%;
     }
 }
+@media only screen and (max-width: 550px) {
+    .LevelsOfCare {
+        padding: 32px 16px;
+        align-items: flex-start;
+    }
+}

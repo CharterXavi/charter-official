@@ -7,7 +7,7 @@ const Chatbot = () => {
 
     const theme = {
         background: 'white',
-        headerBgColor: '#f05f7e',
+        headerBgColor: '#F22C57',
         headerFontColor: '#fff',
         headerFontSize: '24px',
         botBubbleColor: '#546182',
@@ -38,7 +38,7 @@ const Chatbot = () => {
         },
     ]
     const buttonStyles = {
-        background: 'linear-gradient(66.41deg, #FF6687 34.32%, #FF6AB2 51.86%, #FFCE94 85.46%, #F71414 99.5%)',
+        background: 'linear-gradient(66.41deg, #F14D70 14.26%, #FF008A 34.32%, #FF446C 53.87%, #FFB016 87.46%)',
         boxShadow: '0px 1px 4px rgba(0, 0, 0, 0.4)',
         width: '60px',
         height: '60px'

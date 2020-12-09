@@ -1,8 +1,8 @@
 import React from 'react'
 import './ccm-data.css'
 import { Line, Bar } from 'react-chartjs-2';
-import heartIcon from '../../images/iconography/services/heart.png';
-import moneyIcon from '../../images/iconography/moneybag.png';
+import MoneybagIcon from '../icons/moneybag';
+import HeartIcon from '../icons/heart';
 
 const CCMData = () => {
 
@@ -87,14 +87,14 @@ const CCMData = () => {
           </div>
         </div>
         <div className='right'>
-          <img src={heartIcon} alt="Heart" />
+          <HeartIcon />
           <h5>Healthier patients</h5>
           <p>90 days after enrollment in the CCM program, we saw some wonderful changes: emergency room utilization decreased 34.19%, number of hospital admissions decreased 62.58%, and hospital bed days decreased 62.87%.</p>
         </div>
       </div>
       <div className='cost-stats two-column-left'>
         <div className='left'>
-          <img src={moneyIcon} alt="Moneybag" />
+          <MoneybagIcon />
           <h5>More affordable care</h5>
           <p>The estimated cost savings attributed to the CCM model was $44,708,312. Estimated operating cost of the CCM model was $19,331,564 which gave a total estimated net savings of $25,376,748; return on investment (ROI) 2.31. The cost savings analysis and ROI demonstrated a significantly cost effective model of care.</p>
         </div>

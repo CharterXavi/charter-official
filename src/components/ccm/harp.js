@@ -7,6 +7,8 @@ import directiveForm from '../../images/directive.pdf';
 import polstForm from '../../images/polst.pdf';
 import healthIcon from '../../images/iconography/hospice/healthcare.png';
 import stethoscopeIcon from '../../images/iconography/hospice/stethoscope.png';
+import HealthcareIcon from '../icons/healthcare';
+import StethoscopeIcon from '../icons/stethoscope';
 
 const HARP = () => {
 
@@ -57,13 +59,13 @@ const HARP = () => {
         </div>
         <div className='forms'>
               <div className='form-card' data-aos='fade-up' data-aos-duration='800'>
-                <img src={healthIcon} alt="Healthcare" />
+                <HealthcareIcon />
                 <h6 className='detail-title'>Advanced Healthcare Directive</h6>
-                <p className='detail-text'>You have the right to give instructions about your own health care. You also have the right to name someone else to make health care decisions for you. This form lets you do either or both of these things.</p>
+                <p className='detail-text'>You have the right to give instructions about your own health care and to name someone else to make health care decisions for you. This form lets you do either or both of these things.</p>
                 <ButtonSecondary link={directiveForm} download={true} content='Download form' />
               </div>
               <div className='form-card' data-aos='fade-up' data-aos-duration='1400'>
-                <img src={stethoscopeIcon} alt="Stethoscope" />
+                <StethoscopeIcon />
                 <h6 className='detail-title'>Physician's Orders for Life-Sustaining Treatment (POLST)</h6>
                 <p className='detail-text'>This is a medical order that tells emergency health care professionals what to do during a medical crisis where the patient cannot speak for him or herself.</p>
                 <ButtonSecondary link={polstForm} download={true} content='Download form' />

@@ -52,10 +52,8 @@
     padding: 8px;
     transition: 0.25s ease all;
 }
-.benefits-wrapper .benefits-card img {
-    height: 45px;
-}
-.benefits-wrapper .benefits-card:hover img{
+
+.benefits-wrapper .benefits-card:hover .icon{
     transform: translatey(-8px);
 }
 .benefits-wrapper .benefits-card:hover p{

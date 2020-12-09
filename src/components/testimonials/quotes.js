@@ -1,5 +1,6 @@
 import React from 'react'
 import './quotes.css'
+import HeartIcon from '../icons/heart';
 
 const Quotes = (props) => {
 
@@ -11,6 +12,7 @@ const Quotes = (props) => {
                 className={index === props.activeIndex ? 'active' : 'inactive'}
                 key={index}
             >
+                <HeartIcon />
                 <p className='detail-title'>{quote.name}</p>
                 <h5 className='quote-text'>"{quote.quote}"</h5>
             </div>
