@@ -68,8 +68,9 @@
     width: auto;
     padding: 0;
 }
-.blog-post-container .sidebar img {
+.blog-post-container .sidebar .icon {
     height: 35px;
+    width: 35px;
     margin: 8px 0 0 0;
 }
 .blog-post-container .sidebar a {
@@ -111,7 +112,7 @@
 .blog-post-container .blog-post .tag {
     margin: 0 0 0 0;
     color: white;
-    background: linear-gradient(270deg, #0FBDBD -7.32%, #363F55 100%);
+    background: var(--maximum-blue);
     border-radius: 5px;
     padding: 4px 8px;
     margin: 4px;
@@ -121,7 +122,7 @@
 .blog-post-container .blog-post .category {
     margin: 0 0 0 0;
     color: white;
-    background: linear-gradient(66.41deg, #FFCE94 3.73%, #F05F7E 100%);
+    background: var(--primary-accent);
     border-radius: 5px;
     padding: 4px 8px;
     margin: 4px;

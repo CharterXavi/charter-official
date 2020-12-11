@@ -3,7 +3,7 @@ module.exports = {
     title: `Charter Healthcare Group`,
     description: `Official website for Charter Healthcare Group.`,
     author: `Branon Eusebio`,
-    url: 'http://localhost:8000/',
+    url: 'https://charter-official-prototype.netlify.app/',
     twitterHandle: '@charterhcg',
     facebookHandle: '@charterhcg',
     instagramHandle: '@charterhcg',
