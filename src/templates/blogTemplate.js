@@ -4,9 +4,9 @@ import Layout from '../components/layout';
 import HeaderStrip2 from '../components/header-strip/header-strip2';
 import './blogTemplate.css';
 import archiveHeader from '../images/headers/archive.png';
-import clockIcon from '../images/iconography/careers/clock.png';
-import groupIcon from '../images/iconography/careers/hiring.png';
-import heartIcon from '../images/iconography/services/heart.png';
+import ClockIcon from '../components/icons/clock';
+import HeartIcon from '../components/icons/heart';
+import NetworkIcon from '../components/icons/network';
 import ButtonPrimary from "../components/buttons/button-primary";
 import ShareButtons from '../components/social/share-buttons';
 import SEO from '../components/seo';
@@ -86,21 +86,21 @@ const BlogTemplate = (props) => {
 
           <div className='sidebar'>
             <div className='recent'>
-              <img src={clockIcon} alt="Clock" />
+              <ClockIcon />
               <h6 className='detail-title'>Recent Posts</h6>
                 {recentPosts.map(post => {
                   return <p className='detail-text'><Link to={post.node.frontmatter.slug} key={post.node.frontmatter.title} >{post.node.frontmatter.title}</Link></p>
                 })}
             </div>
             <div className='related'>
-            <img src={heartIcon} alt="Heart" />
+              <HeartIcon />
               <h6 className='detail-title'>Related Posts</h6>
                 {relatedPosts.map(post => {
                   return <p className='detail-text'><Link to={post.node.frontmatter.slug} key={post.node.frontmatter.title} >{post.node.frontmatter.title}</Link></p>
                 })}
             </div>
             <div className='share'>
-              <img src={groupIcon} alt="Group" />
+              <NetworkIcon />
               <h6 className='detail-title'>Share this post:</h6>
               <ShareButtons 
                 title={postTitle} 
