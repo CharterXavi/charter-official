@@ -11,7 +11,7 @@ const AcuteCarePage = () => (
   <Layout>
     <div className='AcuteCarePage'>
       <SEO title="Acute Care" />
-      <HeaderStrip2 image={acuteImg} title='Acute or Hospital-Based Care' headline="Quality solutions for urgent matters" />
+      <HeaderStrip2 image={acuteImg} title='Acute or Hospital-Based Care' headline="Bridging the gaps in the care continuum" />
       <div className='two-column'>
         <div className="title">
           <h4>We're ready for anything</h4>
@@ -30,13 +30,21 @@ const AcuteCarePage = () => (
               with the inpatient case management team to ensure a smooth and appropriate transition from hospital 
               to either home or post acute facility.
             </p>
-          </div>
-          <div className="right">
             <h6>General Inpatient Care (GIP)</h6>
             <p>
               General inpatient care (GIP) is a short-term care hospice program focused on providing pain/symptom 
               management that cannot be accomplished in another setting. GIP can be provided in the hospital, 
               SNF or hospice inpatient facility.
+            </p>
+          </div>
+          <div className="right">
+            <h6>BPCI Program</h6>
+            <p>
+              The Bundled Payments for Care Improvement Advanced (BPCI) program is an incentivized managed care program by the Centers for Medicare and Medicaid Services (CMS) for Medicare patients that hospitals can opt into. 
+              Hospitals that opt in to the program are tasked with managing the patient's care for 90 days starting from the hospital discharge date. 
+              At Charter, we help work with these participating hospitals to manage these patients in the home and SNF setting while also providing a nurse navigator to manage patients from the inpatient setting as well. 
+              Patients benefit because they get additional post acute services for 90 days after discharge. As we work hard at Charter to lower the overall costs to patients after hospitalization through our innovative care, the hospital gets a payout from CMS.
+              In short, hospitals are financially incentivized to rely on innovative care providers like Charter to help provide a better, more consistent continuity of care after patients are discharged.  
             </p>
           </div>
         </div>
