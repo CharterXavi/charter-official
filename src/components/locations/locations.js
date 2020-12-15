@@ -241,23 +241,25 @@ const LocationsStrip = (props) => {
 
     //Whichever state has been clicked on is the active Location to be sent to the map for rendering pins
     const [ activeLocations, setActiveLocations ] = useState(locationsList);
-    const updatePins = () => {
-         //create a new list from old list, but update whichever child was clicked on
-         const newList = locationsList.map((location) => {
-            if(location.isExpanded === true) {
-                const newLocation = location;
-                //must return so .map can enter it into new array list
-                return newLocation;
-            };
-            //for any items not expanded, return false so the map component knows not to render
-            return false;
-        });
-        //update list of active pins
-        setActiveLocations(newList);
-    }
+
     useEffect(() => {
+        const updatePins = () => {
+            //create a new list from old list, but update whichever child was clicked on
+            const newList = locationsList.map((location) => {
+               if(location.isExpanded === true) {
+                   const newLocation = location;
+                   //must return so .map can enter it into new array list
+                   return newLocation;
+               };
+               //for any items not expanded, return false so the map component knows not to render
+               return false;
+           });
+           //update list of active pins
+           setActiveLocations(newList);
+       }
+
         updatePins();
-    }, locationsList)
+    }, [locationsList])
 
     //Marker Hover functionality
     const [ isHovered, setIsHovered ] = useState('');
@@ -267,12 +269,15 @@ const LocationsStrip = (props) => {
             location.cities.map(city => {
                 city.locations.map(business => {
                     if(business.name === id) {
-                        setIsHovered(business.name);
-                        console.log('IS HOVERED STATE: ', isHovered)
+                        return setIsHovered(business.name);
                     }
-                })
-            })
-        })
+                    return business;
+                });
+                return city;
+            });
+            return location;
+        });
+
     }
 
 
@@ -331,7 +336,6 @@ const LocationsStrip = (props) => {
                         key={state.state}
 
                         expandCard={expandCard} 
-                        updatePins={updatePins}
                         hoverReveal={hoverReveal}
                     />
                 })}
