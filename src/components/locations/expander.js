@@ -6,13 +6,16 @@ const Expander = (props) => {
 
 
   //Upon render or rerender, allow for height calculation to be dynamic based on window size
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const [screenWidth, setScreenWidth] = useState(0);
   useEffect(() => {
       //upon render, listen for screen size change and setState to 
       if (typeof window !== 'undefined') {
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize); 
       }
+  });
+  useEffect(() => {
+    handleResize();
   });
   const handleResize = () => {
     setScreenWidth(window.innerWidth);

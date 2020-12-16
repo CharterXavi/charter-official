@@ -11,7 +11,7 @@ const TeamCard = (props) => {
         AOS.refresh();
     });
 
-    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+    const [screenWidth, setScreenWidth] = useState(0);
     const [charPerLine, setCharPerLine] = useState(`${screenWidth < 450 ? screenWidth / 10 : 50}`);
     const [heightFactor, setHeightFactor] = useState(`${props.bio.length > 800 ? 
         //if the bio is beyond 800px, give 28 px/per line
@@ -42,6 +42,9 @@ const TeamCard = (props) => {
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize); 
       }
+    });
+    useEffect(() => {
+        handleResize();
     });
 
     const handleClick = () => {
