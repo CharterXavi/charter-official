@@ -9,7 +9,6 @@ import LocationsStrip from '../../components/locations/locations';
 import Partners from '../../components/about/partners';
 import './partnerships.css';
 import ButtonPrimary from "../../components/buttons/button-primary";
-import networkIcon from '../../images/iconography/careers/hiring.png';
 
 const PartnershipsPage = () => (
   <Layout>

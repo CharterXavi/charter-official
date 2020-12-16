@@ -29,7 +29,7 @@ const HealthPage = ({data}) => {
             }
         }
         setPosts(newPostList);
-    }, []); 
+    }, [allHealthPosts, newPostList]); 
 
     //write a function that will update state to show 6 more posts
     const showMorePosts = (clickCount, isFinished) => {
