@@ -135,7 +135,7 @@ const QuoteMosaic = () => {
       //reset the 'isFinished' state
       setIsFinished(false);
     } else {
-      //update clicks
+      //update clicks00
       setClicks(clicks + 1);
     }
   };
