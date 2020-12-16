@@ -63,6 +63,9 @@
     width: 65px;
     height: auto;
 }
+.Hero7 .play-btn-wrapper:focus {
+    outline: none;
+}
 
 /* -- GRAPHIC --*/
 .Hero7 .hero-wrapper .hero-assets .hero-graphic {

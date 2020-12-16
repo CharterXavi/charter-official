@@ -15,7 +15,6 @@ const Card = (props) => {
     const handleClick = () => {
         //calls method passed as prop to update state and rerender
         props.expandCard(props.id);
-        props.updatePins();
     }
 
     return (

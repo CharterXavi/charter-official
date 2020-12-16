@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import GoogleMapReact from 'google-map-react';
 import Marker from './marker';
  
@@ -102,11 +102,12 @@ const Map = (props) => {
     props.locations.map(state => {
         if (state) {
             return state.cities.map(city => {
-                city.locations.map(business => {
+                return city.locations.map(business => {
                     return businesses.push(business);
                 });
             });
         };
+        return state;
     });
 
   return (

@@ -29,7 +29,7 @@ const ResearchPage = ({data}) => {
             }
         }
         setPosts(newPostList);
-    }, []); 
+    }, [allResearchPosts, newPostList]); 
 
     //write a function that will update state to show 6 more posts
     const showMorePosts = (clickCount, isFinished) => {

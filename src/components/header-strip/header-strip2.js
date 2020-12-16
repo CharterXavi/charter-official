@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import './header-strip2.css';
 import AOS from "aos";
 import "aos/dist/aos.css";
-import charterCompass from '../../images/charter-compass-icon.png';
+import charterCompass from '../../images/charter-compass-V6-white.png';
 
 const HeaderStrip2 = (props) => {
 

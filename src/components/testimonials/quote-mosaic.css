@@ -23,6 +23,9 @@
     justify-content: center;
     align-items: center;
 }
+.QuoteMosaic .button-wrapper:focus {
+    outline: none;
+}
 
 @media only screen and (max-width: 1200px) {
     .QuoteMosaic .quote-wrapper{
