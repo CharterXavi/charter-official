@@ -56,7 +56,11 @@ module.exports = {
           {
             family: 'Nunito',
             weights: ['300', '400', '600', '700', '800']
-          }
+          },
+          {
+            family: 'Comfortaa',
+            weights: ['300', '400', ,'500', '600', '700']
+          },
         ]
       }
     },

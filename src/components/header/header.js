@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import React, {useState} from 'react'
 import './header.css'
-import Logo from '../../images/charter-compass-v6.png'; //uses webpack to store data about the image in an import
+import Logo from '../../components/icons/logo'//uses webpack to store data about the image in an import
 import Hamburger from './hamburger'
 import ButtonPrimary from '../buttons/button-primary'
 import Menu from './menu'
@@ -131,7 +131,6 @@ const Header = () => {
   }
 
   const expandSubMenu = (id) => {
-    console.log('SubMenu expanded: ', id);
     //create a new list from old list, but update whichever child was clicked on
     const newList = menuLinks.map((mainLink) => {
         if(mainLink.name === id) {
@@ -155,7 +154,7 @@ const Header = () => {
       <div className='header-boundary'>
         <div className='main-bar'>
           <Link to="/">
-            <img src={Logo} alt='Charter Logo' /> {/* data about Logo from webpack used as src for image */}
+            <Logo />
           </Link>
           {/* pass handleClick function to child so that when it's invoked it will change state in parent */}
           {/* that way we can pass info about whether or not the button's been clicked to expand the menu here accordingly */}

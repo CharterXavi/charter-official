@@ -46,7 +46,7 @@
     width: 260px;
 }
 .BereavementPage .resources {
-    background: linear-gradient(180deg, #F6F7FB 33.85%, #363F55 33.86%, #363F55 100%);
+    background: linear-gradient(180deg, #F6F7FB 33.85%, #282e3e 33.86%, #282e3e 100%);
     position: relative;
     min-height: 600px;
     z-index: 0;

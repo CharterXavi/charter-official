@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import './testimonials.css';
 import Quotes from './quotes';
 import Dot from '../testimonials/dot';
@@ -58,7 +58,11 @@ const TestimonialsStrip = (props) => {
         };
         setActiveIndex(index); //initiate state change and rerender of component
     }
-
+    useEffect(() => {
+        return function cleanUp() {
+            clearInterval(rotate);
+        }
+    })
     //set an interval function to cycle to the next quote every 4.5 sec, this runs each rerender
     let rotate = setInterval(goToNext, 7000);
     //create a function that will clear the interval

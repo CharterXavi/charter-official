@@ -11,7 +11,7 @@ return (
       <mask id="briefcase2" fill="white">
         <rect x="20.8931" y="23" width="8.21429" height="7.39286" rx="0.912699"/>
       </mask>
-      <rect x="20.8931" y="23" width="8.21429" height="7.39286" rx="0.912699" fill="white" stroke="#363F55" stroke-width="3.65079" mask="url(#briefcase2)"/>
+      <rect x="20.8931" y="23" width="8.21429" height="7.39286" rx="0.912699" fill="white" stroke="#363F55" strokeWidth="3.65079" mask="url(#briefcase2)"/>
     </g>
     <defs>
       <filter id="briefcase" x="0.174603" y="0" width="49.6508" height="44.7223" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
