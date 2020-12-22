@@ -53,15 +53,12 @@
 }
 .Hero7 .hero-content p {
     color: white;
-    padding: 0 0 8px 0;
+    padding: 0 0 16px 0;
 }
 .Hero7 .hero-content h1 {
     color: white;
     font-size: 3.5rem;
-}
-.Hero7 .hero-content img {
-    width: 65px;
-    height: auto;
+    padding: 32px 0 16px 0;
 }
 .Hero7 .play-btn-wrapper:focus {
     outline: none;
@@ -72,7 +69,7 @@
     position: relative;
     opacity: 1;
     transition: 0.7s ease all;
-    padding: 16px 16px 0 0;
+    padding: 0 16px 0 0;
     height: auto;
 }
 .Hero7 .hero-wrapper .hero-assets .active-graphic {
@@ -127,7 +124,7 @@
         flex-direction: column-reverse;
         justify-content: flex-end;
         align-items: center;
-        padding: 64px 0;
+        padding: 32px 0;
     }
     .Hero7 .hero-wrapper .hero-assets .hero-graphic {
         width: 400px;

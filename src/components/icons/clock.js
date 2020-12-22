@@ -23,7 +23,7 @@ const ClockIcon = () => {
         </g>
         <defs>
             <filter id="clock" x="0" y="0" width="54" height="54" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feFlood floodOpacity="0" result="BackgroundImageFix"/>
             <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
             <feOffset dy="2"/>
             <feGaussianBlur stdDeviation="1"/>

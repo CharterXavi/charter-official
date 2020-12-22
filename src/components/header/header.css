@@ -33,6 +33,11 @@
     height: 70px;
     margin: 0 0 0 32px;
 }
+.Header .Logo {
+    height: 70px;
+    width: 200px;
+    margin-left: 20px;
+}
 .Header .btn-primary {
     margin: 0 0 0 0;
     width: auto;
@@ -70,10 +75,9 @@ small {
     .Header .header-boundary {
         height: 65px;
     }
-    .Header img {
-        height: 55px;
-        width: 110px;
-        margin: 0 0 0 16px;
+    .Header .Logo {
+        height: 45px;
+        margin: 0 0 0 0px;
     }
     .Header .ButtonPrimary {
         display: none;

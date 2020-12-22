@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import ButtonPrimary from '../buttons/button-primary';
-import heroGraphic from '../../images/iconography/hero-graphic.png';
+import HeroGraphic from '../../components/icons/hero-graphic';
 import charterCompass from '../../images/charter-compass-v6-white.png';
 import './hero7.css';
 import AOS from "aos";
@@ -26,7 +26,6 @@ const HeroStrip7 = () => {
         <div className='Hero7'>
             <div className='hero-wrapper'>
                 <div className='hero-content'>
-                    <img src={charterCompass} alt="Compass logo" data-aos='fade-up' data-aos-duration='600'/>
                     <h1 data-aos='fade-up' data-aos-duration='700'>Healthcare Solutions for every age and stage.</h1>
                     <p data-aos='fade-up' data-aos-duration='900'>With top-tier providers, a wide variety of programs, and a track record of success, we’re equipped to meet our patients where they’re at and provide them the quality care they need.</p>
                     <div data-aos='fade-up' data-aos-duration='1300'>
@@ -42,7 +41,7 @@ const HeroStrip7 = () => {
                         title='Charter Healthcare Introduction and Information'
                         width="640" height="360" frameBorder="0" allowFullScreen
                     />
-                    <img src={heroGraphic} alt="Icons" className={`hero-graphic ${videoState ? 'active-graphic' : ''}`} data-aos='fade-up' data-aos-duration='700' />
+                    <HeroGraphic classProp={`hero-graphic ${videoState ? 'active-graphic' : ''}`} />
                 </div>
             </div>
 
