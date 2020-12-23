@@ -16,7 +16,7 @@
 }
 .CategoryNav .category-link:hover {
     padding: 16px;
-    background: linear-gradient(66.41deg, #FFCE94 3.73%, #F05F7E 100%);
+    background: var(--super-gradient);
     color: white;
 }
 
