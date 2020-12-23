@@ -20,6 +20,69 @@
     box-sizing: border-box;
     padding: 98px 0 0 0;
 }
+.Hero7 .animation {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    display: flex;
+    justify-content: space-evenly;
+}
+.Hero7 .animation .icon {
+    position: relative;
+}
+.Hero7 .animation .icon:nth-of-type(1) {
+    animation: fade-up 4s infinite linear;
+    width: 15px;
+}
+.Hero7 .animation .icon:nth-of-type(2) {
+    animation: fade-up 3s infinite linear;
+    width: 30px;
+}
+.Hero7 .animation .icon:nth-of-type(3) {
+    animation: fade-up 6s infinite linear;
+    width: 20px;
+}
+.Hero7 .animation .icon:nth-of-type(4) {
+    animation: fade-up 5s infinite linear;
+    width: 15px;
+}
+.Hero7 .animation .icon:nth-of-type(5) {
+    animation: fade-up 3.7s infinite linear;
+    width: 30px;
+}
+.Hero7 .animation .icon:nth-of-type(6) {
+    animation: fade-up 4.5s infinite linear;
+    width: 20px;
+}
+.Hero7 .animation .icon:nth-of-type(7) {
+    animation: fade-up 5s infinite linear;
+    width: 15px;
+}
+.Hero7 .animation .icon:nth-of-type(8) {
+    animation: fade-up 3.7s infinite linear;
+    width: 15px;
+}
+.Hero7 .animation .icon:nth-of-type(9) {
+    animation: fade-up 2.5s infinite linear;
+    width: 20px;
+}
+.Hero7 .animation .icon:nth-of-type(10) {
+    animation: fade-up 7s infinite linear;
+    width: 25px;
+}
+
+
+@keyframes fade-up {
+    0% {
+        opacity: 0.75;
+        bottom: 0px;
+    }
+    100% {
+        opacity: 0;
+        bottom: 300px;
+    }
+}
 
 
 /* --- ASSETS --- */
@@ -166,6 +229,16 @@
     .Hero7 .hero-wave {
         width: 110%;
         height: auto;
+    }
+    @keyframes fade-up {
+        0% {
+            opacity: 0.75;
+            bottom: -50px;
+        }
+        100% {
+            opacity: 0;
+            bottom: 300px;
+        }
     }
 }
 @media only screen and (max-width: 650px) {
