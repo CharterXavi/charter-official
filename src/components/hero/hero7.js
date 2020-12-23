@@ -26,8 +26,9 @@ const HeroStrip7 = () => {
         <div className='Hero7'>
             <div className='hero-wrapper'>
                 <div className='hero-content'>
-                    <h1 data-aos='fade-up' data-aos-duration='700'>Healthcare Solutions for every age and stage.</h1>
-                    <p data-aos='fade-up' data-aos-duration='900'>With top-tier providers, a wide variety of programs, and a track record of success, we’re equipped to meet our patients where they’re at and provide them the quality care they need.</p>
+                    <h5 data-aos='fade-up' data-aos-duration='600'>Post-acute care is complicated.</h5>
+                    <h1 data-aos='fade-up' data-aos-duration='600'>Let's navigate it together.</h1>
+                    <h6 className='detail-title' data-aos='fade-up' data-aos-duration='1000'>With top-tier providers, a wide variety of programs, and a track record of success, we’re equipped to meet our patients where they’re at and provide them the quality care they need.</h6>
                     <div data-aos='fade-up' data-aos-duration='1300'>
                         <div className='play-btn-wrapper' onClick={showVideo} onKeyDown={showVideo} role='button' tabIndex='0'>
                             {videoState ? <ButtonPrimary content='Hide Video' /> : <ButtonPrimary content='Watch Video' />}
