@@ -1,7 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import ButtonPrimary from '../buttons/button-primary';
 import HeroGraphic from '../../components/icons/hero-graphic';
-import charterCompass from '../../images/charter-compass-v6-white.png';
+import PlusSign from '../../components/icons/plus-sign';
+import HeartIcon from '../../components/icons/heart';
+import HealthcareIcon from '../../components/icons/healthcare';
 import './hero7.css';
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -46,6 +48,18 @@ const HeroStrip7 = () => {
                 </div>
             </div>
 
+            <div className="animation"> 
+                <HeartIcon />
+                <PlusSign />
+                <HeartIcon />
+                <HealthcareIcon />
+                <PlusSign />
+                <HeartIcon />
+                <HealthcareIcon />
+                <HeartIcon />
+                <PlusSign />
+                <HealthcareIcon />
+            </div>
 
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1430 187" fill="none" className='hero-wave'>
                 <g filter="url(#filter0_d)">
