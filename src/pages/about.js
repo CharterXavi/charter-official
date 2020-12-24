@@ -5,7 +5,7 @@ import './about.css';
 import HeaderStrip2 from '../components/header-strip/header-strip2';
 import Video2 from '../components/video/video2';
 import aboutImage from '../images/headers/about.png';
-import NewsStrip from '../components/news/news';
+import PostStrip from '../components/news/post-strip';
 import OurTeamStrip from '../components/our-team/our-team'
 import LocationsStrip from '../components/locations/locations';
 import AboutCharter from '../components/about/about-charter';
@@ -30,7 +30,7 @@ const AboutPage = ({data}) => {
         />
         <AboutCharter />
         <Video2 />
-        <NewsStrip posts={data.recent.edges} />
+        <PostStrip title='Recent' link='/news' posts={data.recent.edges} />
         <OurTeamStrip />
         <LocationsStrip svg={true} />
       </div>

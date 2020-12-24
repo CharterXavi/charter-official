@@ -18,7 +18,7 @@ const Hamburger = ({ onClick }) => {
     };
 
     return (
-        <div className={`Hamburger ${isClicked ? 'hamburger-menu-flip' : ''}`} type='button' role='button' tabIndex='0' onClick={handleClick} onKeyDown={handleClick} >
+        <div className={`Hamburger ${isClicked ? 'hamburger-menu-flip' : ''}`} type='button' role='button' tabIndex='0' onClick={handleClick} onKeyDown={handleClick} ariaLabel='Menu' >
             <div data-aos='fade-left' data-aos-duration='800'>
                 <div className={`burger1 ${isClicked ? 'burger1flip' : ''}`}></div>
             </div>

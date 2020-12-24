@@ -1,11 +1,11 @@
 import React, {useState} from 'react'
 import './team-grid.css'
-import steve from '../../images/team/steve.png'
-import sabina from '../../images/team/sabina.png'
-import sylvie from '../../images/team/sylvie.png'
-import jeanclaude from '../../images/team/jeanclaude.png'
-import meagan from '../../images/team/meagan.png'
-import vince from '../../images/team/vince.png'
+import steve from '../../images/team/steve.webp'
+import sabina from '../../images/team/sabina.webp'
+import sylvie from '../../images/team/sylvie.webp'
+import jeanclaude from '../../images/team/jeanclaude.webp'
+import meagan from '../../images/team/meagan.webp'
+import vince from '../../images/team/vince.webp'
 import TeamCard from './team-card';
 
 const TeamGrid = () => {
