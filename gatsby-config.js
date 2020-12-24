@@ -37,7 +37,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: 'src/images/charter-feather.png'
+        icon: 'src/images/charter-compass-v6-white.webp'
       }
     },
     {
