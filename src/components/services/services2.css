@@ -79,7 +79,7 @@
     color: var(--heading-color);
     padding: 0 0 0 16px;
     border-left: 2px solid var(--scrubs-blue);
-    transition: 0.25 ease all;
+    transition: 0.25s ease all;
 }
 .ServicesStrip2 .card .icon {
     margin: 32px 0 16px 0;
