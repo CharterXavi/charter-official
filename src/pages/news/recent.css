@@ -1,0 +1,93 @@
+.RecentPosts {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    transition: 0.4s ease all;
+    background: var(--light-clinic-blue);
+}
+.RecentPosts h2 {
+    color: var(--heading-color);
+}
+.RecentPosts .grid-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    min-height: 200px;
+    transition: 0.4s ease all;
+}
+.RecentPosts .grid {
+    width: 80%;
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    box-sizing: border-box;
+    transition: 0.4s ease all;
+    margin: 0 0 32px 0;
+}
+.RecentPosts .grid-wrapper .grid a {
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
+    margin: 8px;
+    width: 45%;
+    height: 250px;
+}
+.RecentPosts .btn-container {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.RecentPosts .btn-container .ShowMoreButton,
+.RecentPosts .btn-container .ButtonPrimaryAlt,
+.RecentPosts .btn-container .ButtonSecondary
+{
+    margin: 0 8px;
+}
+@media only screen and (max-width: 1300px) {
+    .RecentPosts .grid {
+        width: 95%;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .RecentPosts {
+        padding: 16px;
+    }
+    .RecentPosts .grid {
+        width: 100%;
+        margin: 0 0 16px 0;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .RecentPosts {
+        padding: 16px;
+    }
+    .RecentPosts .grid {
+        width: 100%;
+    }
+    .RecentPosts .grid-wrapper .grid a {
+        width: 100%;
+        height: 200px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .RecentPosts .grid-wrapper .btn-container {
+        width: 100%;
+        flex-direction: column;
+    }
+    .RecentPosts .grid-wrapper .btn-container .ShowMoreButton,
+    .RecentPosts .grid-wrapper .btn-container .ButtonSecondary,
+    .RecentPosts .grid-wrapper .btn-container .ButtonPrimaryAlt  {
+        margin: 8px 0;
+    }
+}
