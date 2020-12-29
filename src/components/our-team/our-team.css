@@ -87,6 +87,7 @@
     transition: 0.25s ease all;
     position: relative;
     width: 200px;
+    height: 200px;
 }
 .OurTeamStrip .card-container .card img::after {
     content: 'Read more';
@@ -175,6 +176,7 @@
     }
     .OurTeamStrip .card-container .card img {
         width: 150px;
+        height: 150px;
     }
     .OurTeamStrip .card-container .card .card-info {
         width: 100%;

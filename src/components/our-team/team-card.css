@@ -17,6 +17,7 @@
 }
 .TeamCard img {
     width: 175px;
+    height: 175px;
     position: absolute;
     top: -80px;
     transition: 0.4s ease all;
