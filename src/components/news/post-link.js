@@ -18,7 +18,7 @@ const PostLink = (props) => {
                     {props.post.node.frontmatter.date}
                 </div>
                 <div className='overlay'></div>
-                <img src={imageSrc} alt="Blog Post" />
+                <img src={imageSrc} alt="Blog Post" width='320' height='250'/>
             </div>
         </Link>
     )

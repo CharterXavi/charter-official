@@ -18,7 +18,7 @@ const OurTeamStrip = (props) => {
         <div className='card-container'>
             <div className='card'>
                 <Link to='/our-team'>
-                    <img src={steve} alt="Team Member" />
+                    <img src={steve} alt="Team Member" width='200' height='200'/>
                 </Link>
                 <div className='card-info'>
                     <h6>Steve Larkin</h6>
@@ -27,7 +27,7 @@ const OurTeamStrip = (props) => {
             </div>
             <div className='card'>
                 <Link to='/our-team'>
-                    <img src={sabina} alt="Team Member" />
+                    <img src={sabina} alt="Team Member" width='200' height='200'/>
                 </Link>
                 <div className='card-info'>
                     <h6>Sabina Del Rosario</h6>
@@ -36,7 +36,7 @@ const OurTeamStrip = (props) => {
             </div>
             <div className='card'>
                 <Link to='/our-team'>
-                    <img src={vince} alt="Team Member" />
+                    <img src={vince} alt="Team Member" width='200' height='200'/>
                 </Link>
                 <div className='card-info'>
                     <h6>Vincent Castaldo</h6>
@@ -45,7 +45,7 @@ const OurTeamStrip = (props) => {
             </div>
             <div className='card'>
                 <Link to='/our-team'>
-                    <img src={jeanclaude} alt="Team Member" />
+                    <img src={jeanclaude} alt="Team Member" width='200' height='200'/>
                 </Link>
                 <div className='card-info'>
                     <h6>Dr. Jean-Claude Hage</h6>
@@ -54,7 +54,7 @@ const OurTeamStrip = (props) => {
             </div>
             <div className='card'>
                 <Link to='/our-team'>
-                    <img src={sylvie} alt="Team Member" />
+                    <img src={sylvie} alt="Team Member" width='200' height='200'/>
                 </Link>
                 <div className='card-info'>
                     <h6>Sylvie Boal</h6>
@@ -63,7 +63,7 @@ const OurTeamStrip = (props) => {
             </div>
             <div className='card'>
                 <Link to='/our-team'>
-                    <img src={meagan} alt="Team Member" />
+                    <img src={meagan} alt="Team Member" width='200' height='200' />
                 </Link>
                 <div className='card-info'>
                     <h6>Meagan De Guzman</h6>
