@@ -6,6 +6,10 @@ form {
     align-items: flex-start;
     justify-content: center;
 }
+form label {
+    color: var(--scrubs-blue);
+    font-size: 0.75rem;
+}
 .headings h2 {
     color: #f05f73;
     text-align: left;
@@ -24,8 +28,9 @@ form {
 }
 .message, .message label {
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
 }
 .name .first, .name .last {

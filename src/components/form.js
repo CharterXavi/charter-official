@@ -25,11 +25,13 @@ export default class MyForm extends React.Component {
         <div className="name">
             <div className="first">
                 <label htmlFor="first-name">
+                  First Name
                   <input type="text" name='first-name' id='first-name' placeholder='First Name' required />
                 </label>
             </div>
             <div className="last">
                 <label htmlFor="last-name">
+                  Last Name
                   <input type="text" name='last-name' id='last-name' placeholder='Last Name' required />
                 </label>
             </div>
@@ -37,17 +39,20 @@ export default class MyForm extends React.Component {
         <div className='info'>
             <div className="email">
                 <label htmlFor="email">
+                  Email
                   <input type="email" name='email' id='email' placeholder='Email Address' required />
                 </label>
             </div>
             <div className="phone">
                 <label htmlFor="phone">
+                  Phone Number
                   <input type="tel" name='phone' id='phone' placeholder='Phone Number' required />
                 </label>
             </div>
         </div>
         <div className="message">
             <label htmlFor="message">
+              Message
               <textarea name="message" id='message' placeholder='Leave us a message' required></textarea>
             </label>
         </div>
