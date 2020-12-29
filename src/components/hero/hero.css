@@ -1,0 +1,155 @@
+.Hero {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    top: 0;
+    background: white;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    font-family: 'Quicksand', sans-serif;
+    color: var(--heading-color);
+}
+.Hero .homeIcon {
+    width: 60px;
+    height: 60px;
+    margin: 8px 0 8px 0;
+}
+.white-block {
+    background: white;
+    height: 100%;
+    width: 10%;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+.Hero .hero-wave-one {
+    width: auto;
+    height: 100vh;
+    position: absolute;
+    top: -5%;
+    left: 10%;
+    z-index: 2;
+}
+.Hero .hero-wave-two {
+    width: 75%;
+    height: auto;
+    position: absolute;
+    top: -5%;
+    right: 0;
+    z-index: 1;
+}
+.Hero .hero-wave-mobile-one, .Hero .hero-wave-mobile-two {
+    display: none;
+}
+.Hero img {
+    width: 1500px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+}
+.side-content {
+    position: relative;
+    z-index: 5;
+    width: 1440px;
+    padding: 32px;
+    margin: 64px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.side-content .btn-primary {
+    margin: 16px 0 0 0;
+}
+.side-content p {
+    width: 350px;
+}
+
+@media only screen and (max-width: 1440px) {
+    .white-block {
+        width: 0%;
+    }
+    .Hero .hero-wave-one {
+        left: -2%;
+    }
+    .Hero .hero-wave-two {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .Hero {
+        height: 100vh;
+        overflow-y: hidden;
+    }
+    .white-block {
+        width: 0;
+    }
+    .Hero .hero-wave-one {
+        left: -20%;
+    }
+    .Hero .hero-wave-two {
+        display: none;
+    }
+    .Hero img {
+        height: auto;
+    }
+    .Hero h1, .Hero p {
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .Hero h1, .Hero p {
+        width: 75%;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .Hero h1, .Hero p {
+        width: 100%;
+    }
+    .Hero .hero-wave-one, .Hero .hero-wave-two {
+        display: none;
+    }
+    .Hero .hero-wave-mobile-one {
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: auto;
+        z-index: 3;
+    }
+    .Hero .hero-wave-mobile-two {
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: auto;
+        z-index: 2;
+    }
+    .side-content {
+        margin: 16px 0 0 0;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .Hero h1 {
+        font-size: 1.8rem;
+    }
+    .Hero p {
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 330px) {
+    .Hero h1 {
+        font-size: 1.5rem;
+    }
+    .Hero p {
+        font-size: 0.9rem;
+    }
+    .Hero .homeIcon {
+        width: 40px;
+        height: 40px;
+    }
+}
