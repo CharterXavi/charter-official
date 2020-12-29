@@ -105,15 +105,9 @@ const QuoteMosaic = () => {
       let newColTwo = [];
       let newColThree = [];
       for(let i = 0; i < (postsToShow*clicks); i++) {
-        if(quoteList1[i]) {
           newColOne.push(quoteList1[i]);
-        }
-        if(quoteList2[i]) {
           newColTwo.push(quoteList2[i]);
-        }
-        if(quoteList3[i]) {
           newColThree.push(quoteList3[i]);
-        }
       }
       //Set each column state equal to the three lists of quotes
       setColumnOne(newColOne);
@@ -123,6 +117,12 @@ const QuoteMosaic = () => {
     
     updateGrid();
     changeButtonText();
+
+    return () => {
+      setColumnOne([]);
+      setColumnTwo([]);
+      setColumnThree([]);
+    }
   }, [clicks])
 
 
