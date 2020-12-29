@@ -1,9 +1,9 @@
 import React from "react";
 import {Link} from 'gatsby';
-import Layout from "../components/layout";
-import SEO from "../components/seo";
-import errorImage from '../images/404.png';
-import './404.css';
+import Layout from "../../components/layout";
+import SEO from "../../components/seo";
+import errorImage from '../../images/404.png';
+import './privacy-policy.css';
 
 const PrivacyPage = () => (
   <Layout>
