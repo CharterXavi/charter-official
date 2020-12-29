@@ -43,7 +43,7 @@
 .SocialButton img {
     width: 30px;
     height: auto;
-    margin: 0 0 0 0;
+    margin: 0 4px 0 0;
 }
 .disabled-btn {
     filter: grayscale(100%) contrast(10%) opacity(20%);
