@@ -153,7 +153,7 @@ const Header = () => {
     <header className='Header'>
       <div className='header-boundary'>
         <div className='main-bar'>
-          <Link to="/">
+          <Link to="/" aria-label='Visit the home page'>
             <Logo />
           </Link>
           {/* pass handleClick function to child so that when it's invoked it will change state in parent */}
