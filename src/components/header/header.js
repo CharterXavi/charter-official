@@ -5,7 +5,7 @@ import Logo from '../../components/icons/logo'//uses webpack to store data about
 import Hamburger from './hamburger'
 import ButtonPrimary from '../buttons/button-primary'
 import Menu from './menu'
-import phoneIcon from '../../images/iconography/phone-outline.png'; //uses webpack to store data about the image in an import
+import phoneIcon from '../../images/iconography/phone.png'; //uses webpack to store data about the image in an import
 
 const Header = () => {
   //initial states: menu is not expanded and the button hasn't been clicked
