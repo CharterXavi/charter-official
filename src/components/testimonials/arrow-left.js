@@ -10,7 +10,7 @@ const ArrowLeft = (props) => {
 
     return (
         <div className='ArrowLeft' onClick={handleClick} onKeyDown={handleClick} role='button' tabIndex='0' >
-            <img src={arrowLeft} alt="back arrow" />
+            <img src={arrowLeft} alt="back arrow" width='20' height='11.5' />
         </div>
     );
 };
