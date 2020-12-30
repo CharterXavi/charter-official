@@ -41,17 +41,6 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: 'Nunito',
-            variants: ['300', '400', '600', '700', '800']
-          }
-        ],
-        fontDisplay: 'swap',
-        cache: true
-      }
       // resolve: `gatsby-plugin-google-fonts-v2`,
       // options: {
       //   fonts: [
@@ -62,6 +51,25 @@ module.exports = {
       //   ],
       //   display: 'swap'
       // }
+      resolve: `gatsby-plugin-webfonts`,
+      options: {
+        fonts: {
+          google: [
+            {
+              family: "Nunito",
+              variants: ['300', '400', '600', '700', '800'],
+              //subsets: ['latin']
+              //text: 'Hello'
+              fontDisplay: 'swap'
+              //strategy: 'selfHosted' // 'base64' || 'cdn'
+            }
+          ]
+        }
+        //formats: ['woff2', 'woff'],
+        //useMinify: true,
+        //usePreload: true,
+        //usePreconnect: false,
+      }
     },
     {
       resolve: `gatsby-plugin-google-gtag`,
