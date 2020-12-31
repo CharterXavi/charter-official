@@ -11,6 +11,7 @@ const VideoStrip2 = () => {
     AOS.refresh();
   });
 
+  
   const [videoState, setVideoState] = useState(false);
   const [buttonState, setButtonState] = useState(false);
 

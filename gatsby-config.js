@@ -56,6 +56,14 @@ module.exports = {
         fonts: {
           google: [
             {
+              family: "Roboto",
+              variants: ["300", "400", "500", "700"],
+              //subsets: ['latin']
+              //text: 'Hello'
+              fontDisplay: 'swap',
+              //strategy: 'selfHosted' // 'base64' || 'cdn'
+            },
+            {
               family: "Nunito",
               variants: ['300', '400', '600', '700', '800'],
               //subsets: ['latin']
