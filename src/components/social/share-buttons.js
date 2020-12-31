@@ -1,14 +1,16 @@
-import React from 'react';
 import './share-buttons.css';
+
 import {
-  FacebookShareButton,
   FacebookIcon,
-  LinkedinShareButton,
+  FacebookShareButton,
   LinkedinIcon,
-  TwitterShareButton,
-  TwitterIcon
+  LinkedinShareButton,
+  TwitterIcon,
+  TwitterShareButton
 } from 'react-share';
- 
+
+import React from 'react';
+
 const ShareButtons = ({title, url, facebookHandle, linkedinHandle, twitterHandle, tags}) => {
     
     return(

@@ -2,7 +2,7 @@
 slug: "/news/my-fourth-post"
 date: "2019-05-07"
 title: "My FOURTH blog post"
-featuredImage: ../images/blog-content/stethoscope.jpeg
+featuredImage: ../images/blog-content/stethoscope.webp
 excerpt: 'The fourth post on this site, ever!'
 category: 'Research'
 tags: ['health', 'HARP']

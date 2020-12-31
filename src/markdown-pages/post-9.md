@@ -2,7 +2,7 @@
 slug: "/news/my-ninth-post"
 date: "2019-05-12"
 title: "My NINTH blog post"
-featuredImage: ../images/blog-content/stethoscope.jpeg
+featuredImage: ../images/blog-content/stethoscope.webp
 excerpt: 'The ninth post on this site, ever!'
 category: 'Health'
 tags: ['hospice', 'research', 'health']

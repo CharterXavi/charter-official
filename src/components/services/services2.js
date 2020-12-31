@@ -1,16 +1,18 @@
-import React, {useEffect} from 'react';
 import './services2.css';
-import ButtonPrimaryAlt from '../buttons/button-primary-alt';
-import charterCompass from '../../images/charter-compass-v6-navy.webp';
+import "aos/dist/aos.css";
+
+import React, {useEffect} from 'react';
+
 // Data AOS for react imports
 import AOS from "aos";
-import "aos/dist/aos.css";
-import HeartIcon from '../icons/heart';
+import ButtonPrimaryAlt from '../buttons/button-primary-alt';
 import CCMIcon from '../icons/ccm';
 import HealthcareIcon from '../icons/healthcare';
+import HeartIcon from '../icons/heart';
 import HomeIcon from '../icons/home';
-import MedkitIcon from '../icons/medkit';
 import HospitalIcon from '../icons/hospital';
+import MedkitIcon from '../icons/medkit';
+import charterCompass from '../../images/charter-compass-v6-navy.webp';
 
 const ServicesStrip2 = () => {
     

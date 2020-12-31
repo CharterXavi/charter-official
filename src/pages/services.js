@@ -1,15 +1,17 @@
-import React, {useEffect} from "react";
-import Layout from "../components/layout";
-import SEO from "../components/seo";
-import HeaderStrip2 from '../components/header-strip/header-strip2';
-import servicesImage from '../images/headers/services.png';
-import ServicesStrip2 from '../components/services/services2';
-import LocationsStrip from '../components/locations/locations';
-import TestimonialsStrip from '../components/testimonials/testimonials';
-import AOS from "aos";
 import "aos/dist/aos.css";
 import './services.css';
+
+import React, {useEffect} from "react";
+
+import AOS from "aos";
 import DataStrip from '../components/data/data';
+import HeaderStrip2 from '../components/header-strip/header-strip2';
+import Layout from "../components/layout";
+import LocationsStrip from '../components/locations/locations';
+import SEO from "../components/seo";
+import ServicesStrip2 from '../components/services/services2';
+import TestimonialsStrip from '../components/testimonials/testimonials';
+import servicesImage from '../images/headers/services.png';
 
 const ServicesPage = () => {
     

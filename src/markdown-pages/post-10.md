@@ -2,7 +2,7 @@
 slug: "/news/my-tenth-post"
 date: "2019-05-13"
 title: "My TENTH blog post"
-featuredImage: ../images/blog-content/artist.jpeg
+featuredImage: ../images/blog-content/artist.webp
 excerpt: 'The tenth post on this site, ever!'
 category: 'Health'
 tags: ['hospice']

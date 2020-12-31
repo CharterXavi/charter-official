@@ -5,12 +5,13 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
-import Header from "./header/header"
-import Footer from "./footer/footer"
-import Chatbot from './chatbot/chatbot';
 import "./layout.css"
+
+import Chatbot from './chatbot/chatbot';
+import Footer from "./footer/footer"
+import Header from "./header/header"
+import PropTypes from "prop-types"
+import React from "react"
 
 const Layout = ({ children }) => {
   return (

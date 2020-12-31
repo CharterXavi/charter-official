@@ -1,10 +1,11 @@
-import React, {useEffect} from 'react';
 import './hospice-eligibility.css';
-import AOS from "aos";
 import "aos/dist/aos.css";
-import hospiceEligibility from '../../images/hospice-eligibility.png';
-import CheckboxIcon from '../../components/icons/checkbox';
 
+import React, {useEffect} from 'react';
+
+import AOS from "aos";
+import CheckboxIcon from '../icons/checkbox';
+import hospiceEligibility from '../../images/hospice-eligibility.png';
 
 const HospiceEligibility = (props) => {
 

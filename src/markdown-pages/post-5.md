@@ -2,7 +2,7 @@
 slug: "/news/my-fifth-post"
 date: "2019-05-08"
 title: "My FIFTH blog post"
-featuredImage: ../images/blog-content/artist.jpeg
+featuredImage: ../images/blog-content/artist.webp
 excerpt: 'The fifth post on this site, ever!'
 category: 'Research'
 tags: ['palliative care', 'research']

@@ -1,8 +1,10 @@
-import React from 'react'
 import './ccm-data.css'
-import { Line, Bar } from 'react-chartjs-2';
-import MoneybagIcon from '../icons/moneybag';
+
+import { Bar, Line } from 'react-chartjs-2';
+
 import HeartIcon from '../icons/heart';
+import MoneybagIcon from '../icons/moneybag';
+import React from 'react'
 
 const CCMData = () => {
 

@@ -2,7 +2,7 @@
 slug: "/news/mental-health-during-covid"
 date: "2020-09-06"
 title: "Mental Health During COVID19"
-featuredImage: ../images/blog-content/hands.jpeg
+featuredImage: ../images/blog-content/hands.webp
 excerpt: 'Keeping your mind healthy during the COVID19 pandemic'
 category: 'Health'
 tags: ['mental health', 'depression', 'anxiety', 'COVID19']

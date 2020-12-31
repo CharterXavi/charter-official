@@ -1,12 +1,14 @@
-import React, {useEffect} from 'react';
 import './advantages.css';
-import AOS from "aos";
 import "aos/dist/aos.css";
+
+import React, {useEffect} from 'react';
+
+import AOS from "aos";
 import AdvantageCard from './advantage-card';
-import HealthcareIcon from '../icons/healthcare';
 import CheckboxIcon from '../icons/checkbox';
-import VolunteerIcon from '../icons/volunteer';
 import ClockIcon from '../icons/clock';
+import HealthcareIcon from '../icons/healthcare';
+import VolunteerIcon from '../icons/volunteer';
 
 const Advantages = (props) => {
 

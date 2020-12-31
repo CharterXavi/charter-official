@@ -1,7 +1,8 @@
-import React from 'react';
 import './bereavement-strip.css';
-import ButtonPrimaryAlt from '../../components/buttons/button-primary-alt';
-import FlowerIcon from '../../components/icons/flower';
+
+import ButtonPrimaryAlt from '../buttons/button-primary-alt';
+import FlowerIcon from '../icons/flower';
+import React from 'react';
 
 const BereavementStrip = () => {
 

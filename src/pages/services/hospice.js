@@ -1,16 +1,17 @@
-import React from "react"
-import Layout from "../../components/layout";
-import SEO from "../../components/seo";
-import HeaderStrip2 from "../../components/header-strip/header-strip2";
 import './hospice.css';
-import hospiceImage from '../../images/headers/hospice.png';
-import HospiceServices from "../../components/hospice/hospice-services";
-import TestimonialsStrip from "../../components/testimonials/testimonials";
-import HospiceTeam from '../../components/hospice/hospice-team';
-import LocationsStrip from "../../components/locations/locations";
-import LevelsOfCare from "../../components/hospice/levels-of-care";
-import HospiceEligibility from '../../components/hospice/hospice-eligibility';
+
 import BereavementStrip from "../../components/hospice/bereavement-strip";
+import HeaderStrip2 from "../../components/header-strip/header-strip2";
+import HospiceEligibility from '../../components/hospice/hospice-eligibility';
+import HospiceServices from "../../components/hospice/hospice-services";
+import HospiceTeam from '../../components/hospice/hospice-team';
+import Layout from "../../components/layout";
+import LevelsOfCare from "../../components/hospice/levels-of-care";
+import LocationsStrip from "../../components/locations/locations";
+import React from "react"
+import SEO from "../../components/seo";
+import TestimonialsStrip from "../../components/testimonials/testimonials";
+import hospiceImage from '../../images/headers/hospice.png';
 
 const HospicePage = () => {
   

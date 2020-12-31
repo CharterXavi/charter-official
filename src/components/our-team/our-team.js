@@ -1,13 +1,14 @@
-import React from 'react';
 import './our-team.css';
-import steve from '../../images/team/steve.webp'
-import sabina from '../../images/team/sabina.webp'
-import meagan from '../../images/team/meagan.webp'
-import jeanclaude from '../../images/team/jeanclaude.webp'
-import sylvie from '../../images/team/sylvie.webp'
-import vince from '../../images/team/vince.webp'
+
 import ButtonPrimaryAlt from '../buttons/button-primary-alt';
 import {Link} from 'gatsby';
+import React from 'react';
+import jeanclaude from '../../images/team/jeanclaude.webp'
+import meagan from '../../images/team/meagan.webp'
+import sabina from '../../images/team/sabina.webp'
+import steve from '../../images/team/steve.webp'
+import sylvie from '../../images/team/sylvie.webp'
+import vince from '../../images/team/vince.webp'
 
 const OurTeamStrip = (props) => {
   return (

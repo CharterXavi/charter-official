@@ -1,6 +1,7 @@
+import './arrow-left.css';
+
 import React from 'react';
 import arrowLeft from '../../images/iconography/arrow-left.png';
-import './arrow-left.css';
 
 const ArrowLeft = (props) => {
 

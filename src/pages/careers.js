@@ -1,18 +1,20 @@
-import React, {useEffect} from "react";
-import Layout from "../components/layout";
-import SEO from "../components/seo";
-import HeaderStrip2 from '../components/header-strip/header-strip2';
-import OurTeamStrip from '../components/our-team/our-team';
-import LocationsStrip from '../components/locations/locations';
-import careersImage from '../images/headers/careers.png';
-import DemographicsChart from '../components/data/demographics';
-import HealthcareIcon from '../components/icons/healthcare';
-import AwardIcon from '../components/icons/award';
-import ClockIcon from '../components/icons/clock';
-import JoinUsStrip from '../components/careers/join-us.js';
-import AOS from "aos";
 import "aos/dist/aos.css";
 import './careers.css';
+
+import React, {useEffect} from "react";
+
+import AOS from "aos";
+import AwardIcon from '../components/icons/award';
+import ClockIcon from '../components/icons/clock';
+import DemographicsChart from '../components/data/demographics';
+import HeaderStrip2 from '../components/header-strip/header-strip2';
+import HealthcareIcon from '../components/icons/healthcare';
+import JoinUsStrip from '../components/careers/join-us.js';
+import Layout from "../components/layout";
+import LocationsStrip from '../components/locations/locations';
+import OurTeamStrip from '../components/our-team/our-team';
+import SEO from "../components/seo";
+import careersImage from '../images/headers/careers.png';
 
 const CareersPage = () => {
 

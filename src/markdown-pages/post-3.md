@@ -2,7 +2,7 @@
 slug: "/news/my-third-post"
 date: "2019-05-06"
 title: "My THIRD blog post"
-featuredImage: ../images/blog-content/hands.jpeg
+featuredImage: ../images/blog-content/hands.webp
 excerpt: 'The third post on this site, ever!'
 category: 'Research'
 tags: ['home health', 'health']

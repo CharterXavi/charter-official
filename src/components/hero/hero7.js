@@ -1,12 +1,14 @@
-import React, {useEffect, useState} from 'react';
-import ButtonPrimary from '../buttons/button-primary';
-import HeroGraphic from '../../components/icons/hero-graphic';
-import PlusSign from '../../components/icons/plus-sign';
-import HeartIcon from '../../components/icons/heart';
-import HealthcareIcon from '../../components/icons/healthcare';
 import './hero7.css';
-import AOS from "aos";
 import "aos/dist/aos.css";
+
+import React, {useEffect, useState} from 'react';
+
+import AOS from "aos";
+import ButtonPrimary from '../buttons/button-primary';
+import HealthcareIcon from '../icons/healthcare';
+import HeartIcon from '../icons/heart';
+import HeroGraphic from '../icons/hero-graphic';
+import PlusSign from '../icons/plus-sign';
 
 const HeroStrip7 = () => {
     useEffect(() => {

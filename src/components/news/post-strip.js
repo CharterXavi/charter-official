@@ -1,7 +1,8 @@
-import React from "react";
+import './post-strip.css';
+
 import { Link } from "gatsby";
 import PostLink from "./post-link";
-import './post-strip.css';
+import React from "react";
 
 const PostStrip = (props) => {
 

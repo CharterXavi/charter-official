@@ -1,14 +1,15 @@
-import React from "react"
-import Layout from "../../components/layout"
-import SEO from "../../components/seo"
+import './bereavement.css';
+
+import ButtonPrimaryAlt from '../../components/buttons/button-primary-alt';
 import HeaderStrip2 from '../../components/header-strip/header-strip2';
+import HeartIcon from '../../components/icons/heart';
+import Layout from "../../components/layout"
+import LocationsStrip from '../../components/locations/locations';
+import React from "react"
+import SEO from "../../components/seo"
 import bereavementImg from '../../images/headers/bereavement.png';
 import flowersLeft from '../../images/iconography/flowers-left.png';
 import flowersRight from '../../images/iconography/flowers-right.png';
-import HeartIcon from '../../components/icons/heart';
-import LocationsStrip from '../../components/locations/locations';
-import ButtonPrimaryAlt from '../../components/buttons/button-primary-alt';
-import './bereavement.css';
 
 const BereavementPage = () => (
   <Layout>

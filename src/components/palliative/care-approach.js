@@ -1,12 +1,14 @@
-import React, {useEffect} from 'react';
 import './care-approach.css';
-import AOS from "aos";
 import "aos/dist/aos.css";
+
+import React, {useEffect} from 'react';
+
+import AOS from "aos";
 import CareCard from './care-card';
-import c from '../../images/iconography/c.png';
 import a from '../../images/iconography/a.png';
-import r from '../../images/iconography/r.png';
+import c from '../../images/iconography/c.png';
 import e from '../../images/iconography/e.png';
+import r from '../../images/iconography/r.png';
 
 const CareApproach = (props) => {
 

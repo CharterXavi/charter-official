@@ -1,9 +1,9 @@
-import React from 'react'
-import {Link} from 'gatsby'
 import './menu.css'
-import SubMenu from './sub-menu';
-import MenuClicker from './menu-clicker';
 
+import {Link} from 'gatsby'
+import MenuClicker from './menu-clicker';
+import React from 'react'
+import SubMenu from './sub-menu';
 
 const Menu = (props) => {
   //render a menu that displays a link for each page in the config file

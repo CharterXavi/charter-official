@@ -1,9 +1,10 @@
+import './join-us.css';
+
+import BriefcaseIcon from '../icons/briefcase';
+import ButtonPrimaryAlt from '../buttons/button-primary-alt';
+import InternIcon from '../icons/intern';
 import React from 'react';
 import VolunteerIcon from '../icons/volunteer';
-import BriefcaseIcon from '../icons/briefcase';
-import InternIcon from '../icons/intern';
-import ButtonPrimaryAlt from '../../components/buttons/button-primary-alt';
-import './join-us.css';
 
 const JoinUsStrip = () => {
 

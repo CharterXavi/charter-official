@@ -1,12 +1,14 @@
-import React, {useEffect} from 'react';
 import './harp.css';
-import AOS from "aos";
 import "aos/dist/aos.css";
+
+import React, {useEffect} from 'react';
+
+import AOS from "aos";
 import ButtonSecondary from '../buttons/button-secondary';
-import directiveForm from '../../images/directive.pdf';
-import polstForm from '../../images/polst.pdf';
 import HealthcareIcon from '../icons/healthcare';
 import StethoscopeIcon from '../icons/stethoscope';
+import directiveForm from './directive.pdf';
+import polstForm from './polst.pdf';
 
 const HARP = () => {
 

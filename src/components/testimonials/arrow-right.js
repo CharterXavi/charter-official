@@ -1,6 +1,7 @@
+import './arrow-right.css';
+
 import React from 'react';
 import arrowRight from '../../images/iconography/arrow-right.png';
-import './arrow-right.css';
 
 const ArrowRight = (props) => {
 

@@ -1,14 +1,16 @@
-import React, {useState, useEffect} from "react";
-import { graphql } from "gatsby";
-import PostLink from "../../components/news/post-link";
-import Layout from '../../components/layout';
-import HeaderStrip2 from '../../components/header-strip/header-strip2';
-import ShowMoreButton from '../../components/buttons/show-more';
+import './oldest.css';
+
+import React, {useEffect, useState} from "react";
+
 import ButtonPrimaryAlt from '../../components/buttons/button-primary-alt';
 import ButtonSecondary from '../../components/buttons/button-secondary';
-import archiveHeader from '../../images/headers/archive.png';
+import HeaderStrip2 from '../../components/header-strip/header-strip2';
+import Layout from '../../components/layout';
+import PostLink from "../../components/news/post-link";
 import SEO from '../../components/seo';
-import './oldest.css';
+import ShowMoreButton from '../../components/buttons/show-more';
+import archiveHeader from '../../images/headers/archive.png';
+import { graphql } from "gatsby";
 
 const OldestPage = ({
   data: {

@@ -1,17 +1,18 @@
-import React from "react"
-import PropTypes from "prop-types"
-// Utilities
-import kebabCase from "lodash/kebabCase"
+import './tags.css';
+
+import { Link, graphql } from "gatsby"
+
+import ButtonSecondary from '../../components/buttons/button-secondary';
+import HeaderStrip2 from "../../components/header-strip/header-strip2"
 // Components
 import { Helmet } from "react-helmet"
-import { Link, graphql } from "gatsby"
-import './tags.css';
 import Layout from "../../components/layout"
-import HeaderStrip2 from "../../components/header-strip/header-strip2"
-import archiveHeader from '../../images/headers/archive.png';
-import ButtonSecondary from '../../components/buttons/button-secondary';
+import PropTypes from "prop-types"
+import React from "react"
 import SEO from '../../components/seo';
-
+import archiveHeader from '../../images/headers/archive.png';
+// Utilities
+import kebabCase from "lodash/kebabCase"
 
 const TagsPage = ({
   data: {

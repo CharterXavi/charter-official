@@ -1,6 +1,7 @@
-import React from "react";
-import { Link } from "gatsby";
 import './post-link.css';
+
+import { Link } from "gatsby";
+import React from "react";
 
 const PostLink = (props) => {
     

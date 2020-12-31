@@ -2,7 +2,7 @@
 slug: "/news/slow-the-spread"
 date: "2019-09-04"
 title: "COVID-19: How to Slow The Spread"
-featuredImage: ../images/blog-content/covid.jpeg
+featuredImage: ../images/blog-content/covid.webp
 excerpt: 'What YOU can do to help stop COVID-19.'
 category: 'Health'
 tags: ['COVID19']

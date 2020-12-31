@@ -1,12 +1,14 @@
-import React, {useState, useEffect} from "react";
-import { graphql } from "gatsby";
-import PostLink from "../../components/news/post-link";
-import Layout from '../../components/layout';
+import './recent.css';
+
+import React, {useEffect, useState} from "react";
+
 import HeaderStrip2 from '../../components/header-strip/header-strip2';
+import Layout from '../../components/layout';
+import PostLink from "../../components/news/post-link";
+import SEO from '../../components/seo';
 import ShowMoreButton from '../../components/buttons/show-more';
 import archiveHeader from '../../images/headers/archive.png';
-import SEO from '../../components/seo';
-import './recent.css';
+import { graphql } from "gatsby";
 
 const HealthPage = ({data}) => {
     const allHealthPosts = data.health.edges.filter(edge => !!edge.node.frontmatter.date); // You can filter your posts based on some criteria

@@ -1,6 +1,6 @@
-import React, {useState} from 'react'
 import './clicker.css'
 
+import React, {useState} from 'react'
 
 const Clicker = (props) => {
     const [isClicked, setClicked] = useState(false)

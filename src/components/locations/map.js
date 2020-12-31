@@ -1,7 +1,7 @@
-import React from 'react';
 import GoogleMapReact from 'google-map-react';
 import Marker from './marker';
- 
+import React from 'react';
+
 const Map = (props) => {
   //Default map properties
   const center = {

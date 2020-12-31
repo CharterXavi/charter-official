@@ -1,11 +1,13 @@
-import React, {useState, useEffect} from 'react';
 import './testimonials.css';
-import Quotes from './quotes';
-import Dot from '../testimonials/dot';
-import ButtonPrimaryAlt from '../buttons/button-primary-alt';
+
+import React, {useEffect, useState} from 'react';
+
 import ArrowLeft from './arrow-left';
 import ArrowRight from './arrow-right';
+import ButtonPrimaryAlt from '../buttons/button-primary-alt';
+import Dot from '../testimonials/dot';
 import LikeIcon from '../icons/like';
+import Quotes from './quotes';
 
 const TestimonialsStrip = (props) => {
     const testimonialList = [

@@ -2,7 +2,7 @@
 slug: "/news/my-second-post"
 date: "2019-05-05"
 title: "My SECOND blog post"
-featuredImage: ../images/blog-content/covid.jpeg
+featuredImage: ../images/blog-content/covid.webp
 excerpt: 'The second post on this site, ever!'
 category: 'Charter News'
 tags: ['home health', 'research', 'health']

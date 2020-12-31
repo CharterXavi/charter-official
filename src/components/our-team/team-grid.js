@@ -1,12 +1,14 @@
-import React, {useState} from 'react'
 import './team-grid.css'
-import steve from '../../images/team/steve.webp'
-import sabina from '../../images/team/sabina.webp'
-import sylvie from '../../images/team/sylvie.webp'
+
+import React, {useState} from 'react'
+
+import TeamCard from './team-card';
 import jeanclaude from '../../images/team/jeanclaude.webp'
 import meagan from '../../images/team/meagan.webp'
+import sabina from '../../images/team/sabina.webp'
+import steve from '../../images/team/steve.webp'
+import sylvie from '../../images/team/sylvie.webp'
 import vince from '../../images/team/vince.webp'
-import TeamCard from './team-card';
 
 const TeamGrid = () => {
     const [teamList, setTeamList] = useState(
