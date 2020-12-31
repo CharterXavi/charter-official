@@ -3,8 +3,8 @@ import './harp.css';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import ButtonSecondary from '../buttons/button-secondary';
-import directiveForm from '../../images/directive.pdf';
-import polstForm from '../../images/polst.pdf';
+import directiveForm from './directive.pdf';
+import polstForm from './polst.pdf';
 import HealthcareIcon from '../icons/healthcare';
 import StethoscopeIcon from '../icons/stethoscope';
 
