@@ -67,10 +67,6 @@ const Chatbot = () => {
                     placeholder='Type your message here...'
                 />
             </ThemeProvider>
-
-            {/* <div className={`notification ${isHovered ? 'hide' : ''}`}>
-                Chat with us →
-            </div> */}
         </div>
     );
 }
