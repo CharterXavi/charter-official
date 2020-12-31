@@ -1,7 +1,8 @@
-import React from "react";
+import './recent-grid.css';
+
 import { Link } from "gatsby";
 import PostLink from "../../components/news/post-link";
-import './recent-grid.css';
+import React from "react";
 
 const RecentGrid = (props) => {
 

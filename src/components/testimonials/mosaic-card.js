@@ -1,8 +1,10 @@
-import React, {useEffect} from "react";
 import './mosaic-card.css';
+import "aos/dist/aos.css";
+
+import React, {useEffect} from "react";
+
 // Data AOS for react imports
 import AOS from "aos";
-import "aos/dist/aos.css";
 
 const MosaicCard = (props) => {
 

@@ -1,12 +1,13 @@
-import React from "react"
-import Layout from "../../components/layout"
-import SEO from "../../components/seo"
-import HeaderStrip2 from '../../components/header-strip/header-strip2';
-import harpImg from '../../images/headers/harp.png';
-import HARP from '../../components/ccm/harp';
-import LocationsStrip from '../../components/locations/locations';
-import CCMData from '../../components/data/ccm-data';
 import './ccm.css';
+
+import CCMData from '../../components/data/ccm-data';
+import HARP from '../../components/ccm/harp';
+import HeaderStrip2 from '../../components/header-strip/header-strip2';
+import Layout from "../../components/layout"
+import LocationsStrip from '../../components/locations/locations';
+import React from "react"
+import SEO from "../../components/seo"
+import harpImg from '../../images/headers/harp.png';
 
 const CCMPage = () => (
   <Layout>

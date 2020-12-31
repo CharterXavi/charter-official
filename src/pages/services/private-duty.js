@@ -1,11 +1,12 @@
-import React from "react"
-import Layout from "../../components/layout"
-import SEO from "../../components/seo"
-import HeaderStrip2 from '../../components/header-strip/header-strip2';
-import privateDutyImage from '../../images/headers/private-duty.png';
-import TestimonialsStrip from '../../components/testimonials/testimonials';
-import LocationsStrip from '../../components/locations/locations';
 import './private-duty.css';
+
+import HeaderStrip2 from '../../components/header-strip/header-strip2';
+import Layout from "../../components/layout"
+import LocationsStrip from '../../components/locations/locations';
+import React from "react"
+import SEO from "../../components/seo"
+import TestimonialsStrip from '../../components/testimonials/testimonials';
+import privateDutyImage from '../../images/headers/private-duty.png';
 
 const PrivateDutyPage = () => (
   <Layout>

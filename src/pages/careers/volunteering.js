@@ -1,13 +1,14 @@
-import React from "react"
-import Layout from "../../components/layout"
-import SEO from "../../components/seo"
-import HeaderStrip2 from '../../components/header-strip/header-strip2';
-import LocationsStrip from '../../components/locations/locations';
-import volunteeringImg from '../../images/headers/volunteer.png';
-import VolunteerIcon from '../../components/icons/volunteer';
+import './volunteering.css';
+
 import BriefcaseIcon from '../../components/icons/briefcase';
 import ButtonPrimaryAlt from '../../components/buttons/button-primary-alt';
-import './volunteering.css';
+import HeaderStrip2 from '../../components/header-strip/header-strip2';
+import Layout from "../../components/layout"
+import LocationsStrip from '../../components/locations/locations';
+import React from "react"
+import SEO from "../../components/seo"
+import VolunteerIcon from '../../components/icons/volunteer';
+import volunteeringImg from '../../images/headers/volunteer.png';
 
 const VolunteeringPage = () => (
   <Layout>

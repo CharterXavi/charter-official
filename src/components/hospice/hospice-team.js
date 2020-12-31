@@ -1,9 +1,11 @@
-import React, {useEffect} from 'react';
 import './hospice-team.css';
-import AOS from "aos";
 import "aos/dist/aos.css";
+
+import React, {useEffect} from 'react';
+
+import AOS from "aos";
+import GroupIcon from '../icons/group';
 import hospiceTeam from '../../images/hospice-team.png';
-import GroupIcon from '../../components/icons/group';
 
 const HospiceTeam = () => {
 

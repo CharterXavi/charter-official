@@ -1,10 +1,11 @@
-import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import HeaderStrip2 from '../components/header-strip/header-strip2';
-import contact from '../images/headers/contact.png';
 import './contact.css';
+
+import HeaderStrip2 from '../components/header-strip/header-strip2';
+import Layout from "../components/layout"
 import LocationsStrip from '../components/locations/locations';
+import React from "react"
+import SEO from "../components/seo"
+import contact from '../images/headers/contact.png';
 
 const ContactPage = () => (
   <Layout>

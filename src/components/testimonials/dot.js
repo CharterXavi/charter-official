@@ -1,5 +1,6 @@
-import React from 'react'
 import './dot.css'
+
+import React from 'react'
 
 const Dot = (props) => {
 

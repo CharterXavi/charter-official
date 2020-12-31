@@ -1,8 +1,9 @@
-import React, {useState, useEffect} from 'react'
 import './hamburger.css'
-import AOS from "aos";
 import "aos/dist/aos.css";
 
+import React, {useEffect, useState} from 'react'
+
+import AOS from "aos";
 
 const Hamburger = ({ onClick }) => {
     useEffect(() => {

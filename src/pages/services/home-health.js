@@ -1,12 +1,13 @@
-import React from "react";
-import Layout from "../../components/layout";
-import SEO from "../../components/seo";
-import homeHealth from '../../images/headers/home-health.png';
-import HeaderStrip2 from '../../components/header-strip/header-strip2';
 import './home-health.css';
-import TestimonialsStrip from '../../components/testimonials/testimonials';
-import LocationsStrip from '../../components/locations/locations';
+
 import Advantages from '../../components/home-health/advantages';
+import HeaderStrip2 from '../../components/header-strip/header-strip2';
+import Layout from "../../components/layout";
+import LocationsStrip from '../../components/locations/locations';
+import React from "react";
+import SEO from "../../components/seo";
+import TestimonialsStrip from '../../components/testimonials/testimonials';
+import homeHealth from '../../images/headers/home-health.png';
 
 const HomeHealthPage = () => (
   <Layout>

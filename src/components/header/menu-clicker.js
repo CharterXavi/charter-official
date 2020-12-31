@@ -1,6 +1,6 @@
-import React, {useState} from 'react'
 import './menu-clicker.css'
 
+import React, {useState} from 'react'
 
 const MenuClicker = (props) => {
     const [isClicked, setClicked] = useState(false)

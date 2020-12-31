@@ -1,12 +1,12 @@
-import React from 'react';
 import './footer.css';
-import ContactForm from '../../components/form';
-import {Link} from 'gatsby';
-import facebook from '../../images/iconography/facebook.png';
-import linkedin from '../../images/iconography/linkedin.png';
-import instagram from '../../images/iconography/instagram.png';
-import twitter from '../../images/iconography/twitter.png';
 
+import ContactForm from '../form';
+import {Link} from 'gatsby';
+import React from 'react';
+import facebook from '../../images/iconography/facebook.png';
+import instagram from '../../images/iconography/instagram.png';
+import linkedin from '../../images/iconography/linkedin.png';
+import twitter from '../../images/iconography/twitter.png';
 
 //TODO - MAKE CARDS EXPANDABLE ON MOBILE AND DESKTOP
 

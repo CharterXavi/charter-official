@@ -1,5 +1,7 @@
-import React, {useState, useEffect} from 'react';
 import './locations.css';
+
+import React, {useEffect, useState} from 'react';
+
 import Card from './card';
 import Map from './map';
 import PinIcon from '../icons/pin';

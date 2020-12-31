@@ -1,11 +1,15 @@
-import { Link } from "gatsby"
-import React, {useState} from 'react'
 import './header.css'
-import Logo from '../../components/icons/logo'//uses webpack to store data about the image in an import
-import Hamburger from './hamburger'
+
+import React, {useState} from 'react'
+
 import ButtonPrimary from '../buttons/button-primary'
+import Hamburger from './hamburger'
+import { Link } from "gatsby"
+import Logo from '../icons/logo'
 import Menu from './menu'
 import phoneIcon from '../../images/iconography/phone.png'; //uses webpack to store data about the image in an import
+
+//uses webpack to store data about the image in an import
 
 const Header = () => {
   //initial states: menu is not expanded and the button hasn't been clicked

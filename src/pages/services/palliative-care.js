@@ -1,12 +1,13 @@
-import React from "react"
-import Layout from "../../components/layout"
-import SEO from "../../components/seo"
-import HeaderStrip2 from '../../components/header-strip/header-strip2';
-import palliativeImage from '../../images/headers/palliative.png';
 import './palliative-care.css';
+
 import CareApproach from '../../components/palliative/care-approach';
-import TestimonialsStrip from '../../components/testimonials/testimonials';
+import HeaderStrip2 from '../../components/header-strip/header-strip2';
+import Layout from "../../components/layout"
 import LocationsStrip from '../../components/locations/locations';
+import React from "react"
+import SEO from "../../components/seo"
+import TestimonialsStrip from '../../components/testimonials/testimonials';
+import palliativeImage from '../../images/headers/palliative.png';
 
 const PalliativeCarePage = () => (
   <Layout>

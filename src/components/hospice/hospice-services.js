@@ -1,18 +1,20 @@
-import React, {useEffect} from 'react';
 import './hospice-services.css';
-import AOS from "aos";
 import "aos/dist/aos.css";
+
+import React, {useEffect} from 'react';
+
+import AOS from "aos";
+import BottleIcon from '../icons/bottle';
+import CrossIcon from '../icons/cross';
+import FlowerIcon from '../icons/flower';
+import GroupIcon from '../icons/group';
+import HealthcareIcon from '../icons/healthcare';
+import HeartIcon from '../icons/heart';
+import HomeIcon from '../icons/home';
 import HospiceCard from './hospice-card';
-import HealthcareIcon from '../../components/icons/healthcare';
-import HomeIcon from '../../components/icons/home';
-import StethoscopeIcon from '../../components/icons/stethoscope';
-import HeartIcon from '../../components/icons/heart';
-import GroupIcon from '../../components/icons/group';
-import FlowerIcon from '../../components/icons/flower';
-import PhoneIcon from '../../components/icons/phone';
-import CrossIcon from '../../components/icons/cross';
-import PillIcon from '../../components/icons/pill';
-import BottleIcon from '../../components/icons/bottle';
+import PhoneIcon from '../icons/phone';
+import PillIcon from '../icons/pill';
+import StethoscopeIcon from '../icons/stethoscope';
 
 const HospiceServices = () => {
 

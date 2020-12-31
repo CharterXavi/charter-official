@@ -1,8 +1,9 @@
-import React, {useState, useEffect} from "react";
 import './quote-mosaic.css';
-import MosaicCard from '../../components/testimonials/mosaic-card';
-import ButtonPrimary from '../buttons/button-primary';
 
+import React, {useEffect, useState} from "react";
+
+import ButtonPrimary from '../buttons/button-primary';
+import MosaicCard from '../testimonials/mosaic-card';
 
 const QuoteMosaic = () => {
 

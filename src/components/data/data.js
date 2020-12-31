@@ -1,10 +1,12 @@
-import React, {useEffect} from 'react';
 import './data.css';
-import ButtonPrimaryAlt from '../buttons/button-primary-alt';
-import HomeChart from './home-chart';
-import AOS from "aos";
 import "aos/dist/aos.css";
+
+import React, {useEffect} from 'react';
+
+import AOS from "aos";
+import ButtonPrimaryAlt from '../buttons/button-primary-alt';
 import DataIcon from '../icons/data';
+import HomeChart from './home-chart';
 
 const DataStrip = () => {
   

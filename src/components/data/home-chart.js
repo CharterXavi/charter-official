@@ -1,6 +1,7 @@
-import React from 'react'
 import './home-chart.css'
+
 import { Line } from 'react-chartjs-2';
+import React from 'react'
 
 const HomeChart = () => {
 

@@ -1,6 +1,7 @@
+import './marker.css';
+
 import React from 'react';
 import pinIcon from '../../images/iconography/locations/pin.png';
-import './marker.css';
 
 const Marker = (props) => {
 

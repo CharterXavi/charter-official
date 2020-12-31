@@ -1,14 +1,15 @@
-import React from "react";
-import Layout from "../components/layout";
-import SEO from "../components/seo";
-import teamImage from '../images/headers/our-team.png';
+import './our-team.css';
+
+import ButtonPrimaryAlt from '../components/buttons/button-primary-alt';
 import HeaderStrip2 from '../components/header-strip/header-strip2';
+import Layout from "../components/layout";
 import LocationsStrip from '../components/locations/locations';
+import NetworkIcon from '../components/icons/network';
+import React from "react";
+import SEO from "../components/seo";
 import TeamGrid from '../components/our-team/team-grid';
 import hiringImage from '../images/hiring.png';
-import NetworkIcon from '../components/icons/network';
-import ButtonPrimaryAlt from '../components/buttons/button-primary-alt';
-import './our-team.css';
+import teamImage from '../images/headers/our-team.png';
 
 const OurTeamPage = () => (
   <Layout>

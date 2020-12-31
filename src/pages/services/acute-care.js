@@ -1,11 +1,12 @@
-import React from "react"
-import Layout from "../../components/layout"
-import SEO from "../../components/seo"
-import HeaderStrip2 from '../../components/header-strip/header-strip2';
-import acuteImg from '../../images/headers/acute-care.png';
-import TestimonialsStrip from '../../components/testimonials/testimonials';
-import LocationsStrip from '../../components/locations/locations';
 import './acute-care.css';
+
+import HeaderStrip2 from '../../components/header-strip/header-strip2';
+import Layout from "../../components/layout"
+import LocationsStrip from '../../components/locations/locations';
+import React from "react"
+import SEO from "../../components/seo"
+import TestimonialsStrip from '../../components/testimonials/testimonials';
+import acuteImg from '../../images/headers/acute-care.png';
 
 const AcuteCarePage = () => (
   <Layout>

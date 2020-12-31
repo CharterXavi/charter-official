@@ -1,14 +1,15 @@
-import React from "react"
-import Layout from "../../components/layout"
-import SEO from "../../components/seo"
-import HeaderStrip2 from '../../components/header-strip/header-strip2';
-import partnershipsImg from '../../images/headers/partnerships.png';
-import TestimonialsStrip from '../../components/testimonials/testimonials';
+import './partnerships.css';
+
+import ButtonPrimary from "../../components/buttons/button-primary";
 import DataStrip from '../../components/data/data';
+import HeaderStrip2 from '../../components/header-strip/header-strip2';
+import Layout from "../../components/layout"
 import LocationsStrip from '../../components/locations/locations';
 import Partners from '../../components/about/partners';
-import './partnerships.css';
-import ButtonPrimary from "../../components/buttons/button-primary";
+import React from "react"
+import SEO from "../../components/seo"
+import TestimonialsStrip from '../../components/testimonials/testimonials';
+import partnershipsImg from '../../images/headers/partnerships.png';
 
 const PartnershipsPage = () => (
   <Layout>

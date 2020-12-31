@@ -1,6 +1,7 @@
-import React from 'react';
-import {Link} from 'gatsby';
 import './category-nav.css';
+
+import {Link} from 'gatsby';
+import React from 'react';
 import _ from 'lodash';
 
 const CategoryNav = (props) => {

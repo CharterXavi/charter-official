@@ -1,16 +1,17 @@
-import React from "react";
-import Layout from "../components/layout";
-import SEO from "../components/seo";
+import './index.css';
+
 import AboutStrip from '../components/about/about';
+import DataStrip from '../components/data/data';
+import HeroStrip7 from "../components/hero/hero7";
+import Layout from "../components/layout";
+import LocationsStrip from '../components/locations/locations';
+import OurTeamStrip from '../components/our-team/our-team';
+import React from "react";
+import RecentGrid from "../components/news/recent-grid";
+import SEO from "../components/seo";
 import ServicesStrip2 from '../components/services/services2';
 import TestimonialsStrip from '../components/testimonials/testimonials';
-import OurTeamStrip from '../components/our-team/our-team';
-import LocationsStrip from '../components/locations/locations';
-import DataStrip from '../components/data/data';
 import {graphql} from 'gatsby';
-import HeroStrip7 from "../components/hero/hero7";
-import RecentGrid from "../components/news/recent-grid";
-import './index.css';
 
 const IndexPage = ({ data }) => {
 

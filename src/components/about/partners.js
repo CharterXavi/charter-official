@@ -1,5 +1,6 @@
-import React from "react";
 import './partners.css';
+
+import React from "react";
 import bcbs from '../../images/partners/bcbs.png';
 import epic from '../../images/partners/epic.png';
 import healthcarePartners from '../../images/partners/healthcare-partners.png';
@@ -7,8 +8,8 @@ import healthcenterPartners from '../../images/partners/healthcenter-partners.pn
 import hollywoodPres from '../../images/partners/hollywood-pres.png';
 import iehp from '../../images/partners/iehp.png';
 import kaiser from '../../images/partners/kaiser.png';
-import LACare from '../../images/partners/lacare.png';
-import LLUH from '../../images/partners/lluh.png';
+import laCare from '../../images/partners/lacare.png';
+import lluh from '../../images/partners/lluh.png';
 import mediCal from '../../images/partners/medical.png';
 import medicare from '../../images/partners/medicare.png';
 import monarch from '../../images/partners/monarch.png';
@@ -26,8 +27,8 @@ const Partners = () => {
         <img src={hollywoodPres} alt="Company Logo" />
         <img src={iehp} alt="Company Logo" />
         <img src={kaiser} alt="Company Logo" />
-        <img src={LACare} alt="Company Logo" />
-        <img src={LLUH} alt="Company Logo" />
+        <img src={laCare} alt="Company Logo" />
+        <img src={lluh} alt="Company Logo" />
         <img src={mediCal} alt="Company Logo" />
         <img src={medicare} alt="Company Logo" />
         <img src={monarch} alt="Company Logo" />

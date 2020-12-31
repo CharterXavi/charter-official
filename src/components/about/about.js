@@ -1,6 +1,7 @@
-import React from 'react'
 import './about.css'
+
 import ButtonPrimaryAlt from '../buttons/button-primary-alt';
+import React from 'react'
 
 const AboutStrip = () => {
   return (

@@ -1,16 +1,18 @@
-import React, {useEffect} from "react";
-import Layout from "../components/layout";
-import SEO from "../components/seo";
 import './about.css';
+import "aos/dist/aos.css";
+
+import React, {useEffect} from "react";
+
+import AOS from "aos";
+import AboutCharter from '../components/about/about-charter';
 import HeaderStrip2 from '../components/header-strip/header-strip2';
+import Layout from "../components/layout";
+import LocationsStrip from '../components/locations/locations';
+import OurTeamStrip from '../components/our-team/our-team'
+import PostStrip from '../components/news/post-strip';
+import SEO from "../components/seo";
 import Video2 from '../components/video/video2';
 import aboutImage from '../images/headers/about.png';
-import PostStrip from '../components/news/post-strip';
-import OurTeamStrip from '../components/our-team/our-team'
-import LocationsStrip from '../components/locations/locations';
-import AboutCharter from '../components/about/about-charter';
-import AOS from "aos";
-import "aos/dist/aos.css";
 import {graphql} from 'gatsby';
 
 const AboutPage = ({data}) => {

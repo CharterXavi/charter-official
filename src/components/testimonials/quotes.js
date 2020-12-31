@@ -1,6 +1,7 @@
-import React from 'react'
 import './quotes.css'
+
 import HeartIcon from '../icons/heart';
+import React from 'react'
 
 const Quotes = (props) => {
 

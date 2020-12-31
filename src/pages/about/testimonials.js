@@ -1,12 +1,12 @@
-import React from "react";
+import './testimonials.css';
+
+import HeaderStrip2 from '../../components/header-strip/header-strip2';
 import Layout from "../../components/layout";
+import LocationsStrip from '../../components/locations/locations';
+import QuoteMosaic from '../../components/testimonials/quote-mosaic';
+import React from "react";
 import SEO from "../../components/seo";
 import testimonialsImg from '../../images/headers/testimonials.png';
-import HeaderStrip2 from '../../components/header-strip/header-strip2';
-import QuoteMosaic from '../../components/testimonials/quote-mosaic';
-import LocationsStrip from '../../components/locations/locations';
-
-import './testimonials.css';
 
 const TestimonialsPage = () => (
   <Layout>

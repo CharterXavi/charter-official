@@ -1,15 +1,17 @@
-import React, {useEffect} from "react";
-import { graphql } from "gatsby";
-import Layout from '../components/layout';
-import HeaderStrip2 from '../components/header-strip/header-strip2';
-import archiveHeader from '../images/headers/archive.png';
-import RecentGrid from '../components/news/recent-grid';
-import PostStrip from '../components/news/post-strip';
-import CategoryNav from '../components/news/category-nav';
-import SEO from '../components/seo';
 import './news.css';
-import AOS from "aos";
 import "aos/dist/aos.css";
+
+import React, {useEffect} from "react";
+
+import AOS from "aos";
+import CategoryNav from '../components/news/category-nav';
+import HeaderStrip2 from '../components/header-strip/header-strip2';
+import Layout from '../components/layout';
+import PostStrip from '../components/news/post-strip';
+import RecentGrid from '../components/news/recent-grid';
+import SEO from '../components/seo';
+import archiveHeader from '../images/headers/archive.png';
+import { graphql } from "gatsby";
 
 const NewsPage = ({data}) => {
 

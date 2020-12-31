@@ -1,7 +1,7 @@
-import React from 'react';
-import {Link} from 'gatsby';
 import './sub-menu.css';
 
+import {Link} from 'gatsby';
+import React from 'react';
 
 const SubMenu = (props) => {
     const heightFactor = (props.subMenu.length * 76).toString(); //76 used instead of 75px due to 1 px border in between each
