@@ -2,7 +2,7 @@
 slug: "/news/my-first-post"
 date: "2019-05-04"
 title: "My FIRST blog post"
-featuredImage: ../images/blog-content/smiling.jpeg
+featuredImage: ../images/blog-content/smiling.webp
 excerpt: 'The first post on this site, ever!'
 category: 'Research'
 tags: ['home health', 'hospice']

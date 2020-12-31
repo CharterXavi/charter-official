@@ -2,7 +2,7 @@
 slug: "/news/my-sixth-post"
 date: "2019-05-09"
 title: "My SIXTH blog post"
-featuredImage: ../images/blog-content/smiling.jpeg
+featuredImage: ../images/blog-content/smiling.webp
 excerpt: 'The SIXTH post on this site, ever!'
 category: 'Charter News'
 tags: ['seniors', 'health']

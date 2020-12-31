@@ -60,7 +60,7 @@ module.exports = {
               variants: ['300', '400', '600', '700', '800'],
               //subsets: ['latin']
               //text: 'Hello'
-              fontDisplay: 'swap'
+              fontDisplay: 'swap',
               //strategy: 'selfHosted' // 'base64' || 'cdn'
             }
           ]

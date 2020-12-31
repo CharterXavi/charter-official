@@ -2,7 +2,7 @@
 slug: "/news/my-eighth-post"
 date: "2020-09-14"
 title: "Preparing for the Flu Season"
-featuredImage: ../images/blog-content/masks.jpeg
+featuredImage: ../images/blog-content/masks.webp
 excerpt: 'Tips on how to navigate the flu season during a pandemic'
 category: 'Health'
 tags: ['flu', 'vaccines', 'hygiene', 'CDC', 'COVID19']

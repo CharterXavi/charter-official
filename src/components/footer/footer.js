@@ -24,8 +24,8 @@ const Footer = () => {
                     <ul>
                         <li className='detail-text'><Link to='/about'>About Charter</Link></li>
                         <li className='detail-text'><Link to='/careers'>Careers</Link></li>
-                        <li className='detail-text'><Link to='/terms-and-conditions'>Terms & Conditions</Link></li>
-                        <li className='detail-text'><Link to='/privacy-policy'>Privacy Policy</Link></li>
+                        <li className='detail-text'><Link to='/footer/terms-and-conditions'>Terms & Conditions</Link></li>
+                        <li className='detail-text'><Link to='/footer/privacy-policy'>Privacy Policy</Link></li>
                     </ul>
                 </div>
                 <div className='headquarters'>

@@ -2,7 +2,7 @@
 slug: "/news/my-seventh-post"
 date: "2019-05-10"
 title: "My SEVENTH blog post"
-featuredImage: ../images/blog-content/covid.jpeg
+featuredImage: ../images/blog-content/covid.webp
 excerpt: 'The seventh post on this site, ever!'
 category: 'Health'
 tags: ['flu season']
