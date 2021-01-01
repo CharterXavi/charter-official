@@ -79,15 +79,26 @@ module.exports = {
         //usePreconnect: false,
       }
     },
+    // {
+    //   resolve: `gatsby-plugin-google-gtag`,
+    //   options: {
+    //     // You can add multiple tracking ids and a pageview event will be fired for all of them.
+    //     trackingIds: [
+    //       "G-KFB9PYV6G2", // Google Analytics / GA
+    //     ],
+    //   },
+    // },
     {
-      resolve: `gatsby-plugin-google-gtag`,
+      resolve: `gatsby-plugin-google-analytics`,
       options: {
-        // You can add multiple tracking ids and a pageview event will be fired for all of them.
-        trackingIds: [
-          "G-KFB9PYV6G2", // Google Analytics / GA
-        ],
+        // The property ID; the tracking code won't be generated without it
+        trackingId: "G-KFB9PYV6G2",
+        // Defines where to place the tracking script - `true` in the head and `false` in the body
+        head: false,
+        // Defers execution of google analytics script after page load
+        defer: false,
       },
-    }
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
