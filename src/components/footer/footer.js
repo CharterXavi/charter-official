@@ -8,8 +8,6 @@ import instagram from '../../images/iconography/instagram.png';
 import linkedin from '../../images/iconography/linkedin.png';
 import twitter from '../../images/iconography/twitter.png';
 
-//TODO - MAKE CARDS EXPANDABLE ON MOBILE AND DESKTOP
-
 const Footer = () => {
   return (
     <footer className='Footer'>
