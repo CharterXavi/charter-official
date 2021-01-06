@@ -14,7 +14,7 @@ useEffect(() => {
 });
 
 return (
-  <svg width="572" height="531" viewBox="0 0 572 531" fill="none" xmlns="http://www.w3.org/2000/svg" className={props.classProp} data-aos='fade-up' data-aos-duration='600'>
+  <svg width="572" height="531" viewBox="0 0 572 531" fill="none" xmlns="http://www.w3.org/2000/svg" className={props.classProp} data-aos='fade-up' data-aos-duration='200'>
     <g filter="url(#ba)">
     <path d="m315 500.87v2.367c0 0.829-0.671 1.5-1.5 1.5-0.828 0-1.5-0.671-1.5-1.5v-4.086-0.03-0.37-0.029-0.218c0-0.828 0.672-1.5 1.5-1.5 0.038 0 0.076 1e-3 0.113 4e-3 0.045-3e-3 0.09-5e-3 0.135-5e-3h8.503c0.046 0 0.091 2e-3 0.136 5e-3 0.037-3e-3 0.075-4e-3 0.113-4e-3 0.829 0 1.5 0.672 1.5 1.5v4.733c0 0.829-0.671 1.5-1.5 1.5-0.828 0-1.5-0.671-1.5-1.5v-2.367h-6z" clipRule="evenodd" fill="#363F55" fillRule="evenodd"/>
     <path d="m182.9 488.82-0.037 1.188 0.037-1.188-6.842-0.215 7.883-16.906 13.103 6.11-7.883 16.906-4.563-5.103c-0.434-0.485-1.047-0.772-1.698-0.792z" fill="#fff" stroke="#363F55" strokeWidth="2.3782"/>
