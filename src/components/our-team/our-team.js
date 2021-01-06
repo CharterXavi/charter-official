@@ -3,6 +3,7 @@ import './our-team.css';
 import ButtonPrimaryAlt from '../buttons/button-primary-alt';
 import {Link} from 'gatsby';
 import React from 'react';
+import carol from '../../images/team/carol.webp'
 import jeanclaude from '../../images/team/jeanclaude.webp'
 import meagan from '../../images/team/meagan.webp'
 import sabina from '../../images/team/sabina.webp'
@@ -69,6 +70,15 @@ const OurTeamStrip = (props) => {
                 <div className='card-info'>
                     <h6>Meagan De Guzman</h6>
                     <p>VP of Human Resources</p>
+                </div>
+            </div>
+            <div className='card'>
+                <Link to='/our-team'>
+                    <img src={carol} alt="Team Member" width='200' height='200' />
+                </Link>
+                <div className='card-info'>
+                    <h6>Carol Lynn</h6>
+                    <p>VP of Communications</p>
                 </div>
             </div>
         </div>

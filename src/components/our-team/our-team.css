@@ -41,7 +41,7 @@
 .OurTeamStrip .card-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     padding: 16px;
     box-sizing: border-box;
