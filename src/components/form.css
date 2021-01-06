@@ -8,7 +8,7 @@ form {
 }
 form label {
     color: var(--scrubs-blue);
-    font-size: 0.75rem;
+    font-size: 0rem;
 }
 .headings h2 {
     color: #f05f73;

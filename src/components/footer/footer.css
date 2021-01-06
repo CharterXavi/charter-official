@@ -14,7 +14,7 @@
 }
 .Footer .content-wrapper {
     display: flex;
-    width: 70%;
+    width: 1200px;
     height: 600px;
 }
 .Footer .left {
@@ -103,12 +103,15 @@
 }
 @media only screen and (max-width: 1200px) {
     .Footer .content-wrapper {
-        width: 80%;
+        width: 100%;
     }
 }
 @media only screen and (max-width: 950px) {
-    .Footer .content-wrapper {
-        width: 90%;
+    .Footer .left{
+        width: 70%;
+    }
+    .Footer .right {
+        width: 30%;
     }
 }
 @media only screen and (max-width: 800px) {
@@ -117,6 +120,10 @@
     }
 }
 @media only screen and (max-width: 665px) {
+    .Footer {
+        box-sizing: border-box;
+        padding: 0 16px;
+    }
     .Footer .content-wrapper {
         flex-direction: column;
     }
@@ -146,5 +153,5 @@
     .Footer .bottom p {
         font-size: 0.8rem;
     }
-}
+} 
 
