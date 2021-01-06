@@ -3,6 +3,7 @@ import './team-grid.css'
 import React, {useState} from 'react'
 
 import TeamCard from './team-card';
+import carol from '../../images/team/carol.webp'
 import jeanclaude from '../../images/team/jeanclaude.webp'
 import meagan from '../../images/team/meagan.webp'
 import sabina from '../../images/team/sabina.webp'
@@ -71,7 +72,17 @@ const TeamGrid = () => {
                 quote: '"The strength of the team is each individual member. The strength of each member is the team." -Phil Jackson',
                 bio: "Meagan De Guzman is the Director of Human Resources for Charter Health Holdings LLC. Meagan has had over 10 years of successful Human Resource Management experience with high growth and high performance in developing business strategies aimed at increasing employment engagement, supporting compliance and legal practices, coordination and administration of Benefits and Payroll, and works closely with senior leadership in development of training system practices. She currently supports over 1000 employees in 14 programs. Meagan's key to sucess has been a strong philosophical view that the Human Resources function must be viewed as an integral partner in shaping, developing, and executing a company's core strategies. Achieving leadership credibility requires close alignment of it's HR policies and practices with the core strategies. Having and HR team with the requisite skills and experience has been a major factor in the sucess of the department. A native of the Southern California area, Meagan graduated with a Bachelor's of Science in Business Administration with an emphasis in Human Resources and Management. She enjoys spending time with her husband and two children.",
                 isClicked: false,
-                animationTime: 1700
+                animationTime: 1500
+            },
+            {
+                name: 'Carol Lynn',
+                title: 'VP of Communications',
+                image: carol,
+                linkedIn: 'https://www.linkedin.com/in/carol-fite-lynn-3b86377/',
+                quote: '"This is an inspirational, introductory quote from this team member."',
+                bio: "",
+                isClicked: false,
+                animationTime: 1500
             }
         ]
     )
@@ -100,24 +111,22 @@ const TeamGrid = () => {
   return (
     <div className='TeamGrid'>
         <h4>Meet Our Executive Team</h4>
-        <div className='grid-container'>
-            <div className='card-container'>
-                {teamList.map(teamMember => {
-                    return <TeamCard 
-                        id={teamMember.name}
-                        image={teamMember.image} 
-                        name={teamMember.name} 
-                        title={teamMember.title} 
-                        linkedIn={teamMember.linkedIn}
-                        quote={teamMember.quote}
-                        bio={teamMember.bio}
-                        isClicked={teamMember.isClicked} 
-                        animationTime={teamMember.animationTime} 
-                        expandBio={expandBio} 
-                        key={teamMember.name}
-                    />   
-                })}
-            </div>
+        <div className='card-container'>
+            {teamList.map(teamMember => {
+                return <TeamCard 
+                    id={teamMember.name}
+                    image={teamMember.image} 
+                    name={teamMember.name} 
+                    title={teamMember.title} 
+                    linkedIn={teamMember.linkedIn}
+                    quote={teamMember.quote}
+                    bio={teamMember.bio}
+                    isClicked={teamMember.isClicked} 
+                    animationTime={teamMember.animationTime} 
+                    expandBio={expandBio} 
+                    key={teamMember.name}
+                />   
+            })}
         </div>
     </div>
   )
