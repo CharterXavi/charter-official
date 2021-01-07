@@ -36,10 +36,10 @@
     width: 100%;
 }
 .Footer .right .helpful-links {
-    margin: 0 0 32px 0;
+    margin: 8px 0 16px 0;
 }
 .Footer .right .headquarters {
-    margin: 32px 0 32px 0;
+    margin: 16px 0 16px 0;
 }
 .Footer .right .headquarters a{
     color: white;
@@ -49,7 +49,7 @@
     color: var(--primary-accent);
 }
 .Footer .right .socials {
-    margin: 32px 0 32px 0;
+    margin: 16px 0 16px 0;
 }
 .Footer .right h6 {
     color: var(--primary-accent);
