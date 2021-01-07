@@ -26,16 +26,16 @@ const JoinUsStrip = () => {
                 </div>
                 <div className='card-wrapper'>
                     <div className='card'>
-                        <VolunteerIcon />
-                        <h6 className='detail-title'>Volunteering</h6>
-                        <p className='detail-text'>We offer a wide variety of volunteer positions for those looking to lend a hand in our patients' lives.</p>
-                        <ButtonPrimaryAlt link='/careers/volunteering' content='Become a volunteer' />
-                    </div>
-                    <div className='card'>
                         <BriefcaseIcon />
                         <h6 className='detail-title'>Jobs</h6>
                         <p className='detail-text'>We're always looking to add ambitiuos talent to our rapidly-expanding workforce. Apply today!</p>
                         <ButtonPrimaryAlt link='https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=ffc1c116-da32-4d3c-8e03-c4a1e22c100a&ccId=19000101_000001&type=MP&lang=en_US' content='See job openings' />
+                    </div>
+                    <div className='card'>
+                        <VolunteerIcon />
+                        <h6 className='detail-title'>Volunteering</h6>
+                        <p className='detail-text'>We offer a wide variety of volunteer positions for those looking to lend a hand in our patients' lives.</p>
+                        <ButtonPrimaryAlt link='/careers/volunteering' content='Become a volunteer' />
                     </div>
                     <div className='card'>
                         <InternIcon />
