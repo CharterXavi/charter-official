@@ -33,7 +33,7 @@ const HeroStrip7 = () => {
                     <h5>Post-acute care is complicated.</h5>
                     <h1>Let's navigate it together.</h1>
                     <h6 className='detail-title'>With top-tier providers, a wide variety of programs, and a track record of success, we’re equipped to meet our patients where they’re at and provide them the quality care they need.</h6>
-                    <div data-aos='fade-up' data-aos-duration='800'>
+                    <div>
                         <div className='play-btn-wrapper' onClick={showVideo} onKeyDown={showVideo} role='button' tabIndex='0'>
                             {videoState ? <ButtonPrimary content='Hide Video' link='#' /> : <ButtonPrimary content='Watch Video' link='#'/>}
                         </div>
