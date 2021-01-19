@@ -7,7 +7,7 @@ import SEO from "../../components/seo";
 const PrivacyPage = () => (
   <Layout>
     <SEO title="Privacy Policy" />
-    <div className='page PrivacyPage'>
+    <div className='PrivacyPage'>
       <section className='two-column'>
         <h1>Privacy Policy</h1>
         <hr/>

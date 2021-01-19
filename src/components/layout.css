@@ -109,7 +109,7 @@ ul {
   margin: 4px 0;
 }
 li {
-  color: var(--heading-color);
+  color: var(--detail-grey);
   font-size: 1em;
   width: 100%;
   padding: 0;
