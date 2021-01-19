@@ -1,28 +1,7 @@
-.error-wrapper {
+.TermsPage {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 64px;
-}
-.error-wrapper img {
-    width: 600px;
-    height: auto;
-}
-.error-wrapper h1 {
-    text-align:center;
-}
-.error-wrapper p {
-    text-align: center;
-    width: auto;
-    padding: 16px 0 16px 0;
-    color: white;
-}
-
-@media only screen and (max-width: 650px) {
-    .error-wrapper img {
-        width: 90%;
-    }
+    align-items: center;
+    background: var(--light-clinic-blue);
 }
