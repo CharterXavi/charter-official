@@ -34,6 +34,7 @@ const TermsPage = () => (
           not extend beyond the borders of the Charter Site. Other standards and policies may apply outside our Site. We encourage you to read the
           terms of use, privacy policies and other policies which apply to these third-party websites before using them. 
         </p>
+        
         <ol>
         {/* ------------- SERVICES AVAILABLE THROUGH THE SITE ------------- */}
           <li>
