@@ -30,7 +30,7 @@ const CareersPage = () => {
         <HeaderStrip2
           image={careersImage}
           title='Careers'
-          headline='Come work for a passionate, people-driven company'
+          headline='Come work with us!'
         />
         <div className='two-column'>
           <div className="title">

@@ -1,3 +1,8 @@
-.contact-us {
+.ContactPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background: var(--light-clinic-blue);
+    overflow-x: hidden;
 }

@@ -48,7 +48,7 @@
 }
 
 .disabled-alt-btn {
-    filter: contrast(90%) opacity(75%);
+    filter: contrast(100%) opacity(75%);
     cursor: not-allowed;
     outline: none;
     color: var(--primary-accent);
