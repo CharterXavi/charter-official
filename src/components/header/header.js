@@ -85,25 +85,25 @@ const Header = () => {
           }
         ]
       },
-      {
-        name: 'News',
-        path: '/news',
-        isSubMenuExpanded: false,
-        subMenu: [
-          {
-            name: 'Recent',
-            path: '/news/recent'
-          },
-          {
-            name: 'Categories',
-            path: '/news/categories'
-          },
-          {
-            name: 'Tags',
-            path: '/news/tags'
-          }
-        ]
-      },
+      // {
+      //   name: 'News',
+      //   path: '/news',
+      //   isSubMenuExpanded: false,
+      //   subMenu: [
+      //     {
+      //       name: 'Recent',
+      //       path: '/news/recent'
+      //     },
+      //     {
+      //       name: 'Categories',
+      //       path: '/news/categories'
+      //     },
+      //     {
+      //       name: 'Tags',
+      //       path: '/news/tags'
+      //     }
+      //   ]
+      // },
       {
         name: 'Careers',
         path: '/careers',
