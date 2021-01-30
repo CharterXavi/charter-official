@@ -19,7 +19,7 @@ const TeamGrid = () => {
                 title: 'Chief Executive Officer',
                 image: steve,
                 linkedIn: 'https://www.linkedin.com/in/steve-j-larkin-7352381b/',
-                quote: '"This is an inspirational, introductory quote from this team member."',
+                quote: '"Go Charter!"',
                 bio: 'Steve J Larkin is a highly accomplished health care management executive with more than 20 years of industry experience. He has a proven ability to increase sales, market share, productivity and profitability. He is the Chief Executive Officer of Charter Health Holdings, LLC.  Steve joined Charter in 2018 after spending time with Pharos Capital as an Operating Partner. There, he provided insight and advised the firm on multiple post-acute and healthcare delivery investment opportunities consisting of home health/hospice, palliative care, ABA therapy, behavioral health, and physician practice/surgical roll-ups. Prior to partnering with Pharos Capital and joining Charter, he worked as a Division President at Compassus, a nationwide network of community-based hospice, home health and palliative care services. As Division President he oversaw the growth and development of 52 programs in 17 states. Steve Larkin holds a Master’s in Business Administration and Health Care Administration from Saint Louis University and Webster University respectively, as well as a Bachelor of Science from Iowa State University.',
                 isClicked: false,
                 animationTime: 700
@@ -49,8 +49,8 @@ const TeamGrid = () => {
                 title: 'Chief Medical Officer',
                 image: jeanclaude,
                 linkedIn: null,
-                quote: '"This is an inspirational, introductory quote from this team member."',
-                bio: '',
+                quote: '"Go Charter!"',
+                bio: 'Dr. Hage has been in practice in the Inland Empire area for over 20 years. He is a board certified family physician with additional certification in Hospice & Palliative Medicine. He finished his training at LLU in 1995 and remained there for 3 years as part of the Family Medicine Faculty and Director of the Family Medicine Residency clinic before going into private practice in San Bernardino in 1999. While initially treating patients of all ages and even delivering many babies, he started focusing on his elderly patients which now comprise the overwhelming majority of the people he treats and he does so in many settings: office, nursing homes, assisted living, and even at home when time permits. He is keen on caring for people at the later stages of their life and helping them with all the difficulties that may set it while sharing with them all the positives that they may easily tend to overlook and striving to improve the quality of their life as much as possible.',
                 isClicked: false,
                 animationTime: 1300
             },
@@ -79,8 +79,8 @@ const TeamGrid = () => {
                 title: 'VP of Communications',
                 image: carol,
                 linkedIn: 'https://www.linkedin.com/in/carol-fite-lynn-3b86377/',
-                quote: '"This is an inspirational, introductory quote from this team member."',
-                bio: "",
+                quote: '"Go Charter!"',
+                bio: "Carol is a high-performing healthcare communication and marketing leader with 11 years in communications and public relations. She possesses a successful record of leading an organization's marketing and public relations efforts, with a strong emphasis on media relations, community relations, and social media. She brings to the table a strong knowledge and understanding of the marketing complexities within the healthcare industry, as well as the challenges and opportunities. Carol loves what she does, and her passion shows in her performance to her clients and team.",
                 isClicked: false,
                 animationTime: 1500
             }
