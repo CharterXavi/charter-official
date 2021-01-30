@@ -58,7 +58,7 @@ const Chatbot = () => {
         },
         {
             id: '7',
-            message: "Other than that feel free to contact us for further help, and stay tuned - we have smoe exciting changes coming to this website! Have a great day ✨",
+            message: "Other than that feel free to contact us for further help, and stay tuned - we have some exciting plans for our new website! Have a great day ✨",
             end: true,
         },
     ]
