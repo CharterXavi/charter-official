@@ -35,6 +35,30 @@ const Chatbot = () => {
         {
             id: '4',
             message: 'Hi {previousValue}, nice to meet you!',
+            trigger: '5',
+        },
+        {
+            id: '5',
+            message: "I'm still in training, so for now to help you find what you're looking for, here are the different pages you can visit: ",
+            trigger: '6',
+        },
+        {
+            id: '6',
+            component: (
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/our-team">Our Team</a></li>
+                    <li><a href="/careers">Careers</a></li>
+                    <li><a href="/contact">Contact Us</a></li>
+                </ul>
+            ),
+            trigger: '7',
+        },
+        {
+            id: '7',
+            message: "Other than that feel free to contact us for further help, and stay tuned - we have some exciting plans for our new website! Have a great day ✨",
             end: true,
         },
     ]

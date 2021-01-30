@@ -30,13 +30,13 @@ const CareersPage = () => {
         <HeaderStrip2
           image={careersImage}
           title='Careers'
-          headline='Come work for a passionate, people-driven company'
+          headline='Come work with us!'
         />
         <div className='two-column'>
           <div className="title">
             <h3>Our Charter Identity</h3>
             <hr/>
-            <p>We're proud to be a part of what is undoubtedly a unique workforce. We've very intentionally build up our company with the most passionate and driven people we could find. Regardless of discipline or department we are a company that truly invests in what we do and the people we interact with, and we never lose sight of the impact we strive to make.</p>
+            <p>We're proud to be a part of what is undoubtedly a unique workforce. We've very intentionally built up our company with the most passionate and driven people we could find. Regardless of discipline or department we are a company that truly invests in what we do and the people we interact with, and we never lose sight of the impact we're making.</p>
           </div>
           <div className="content">
             <div className="left">
@@ -74,7 +74,7 @@ const CareersPage = () => {
             <div className='benefits-card' data-aos='fade-up' data-aos-duration='1600'>
               <ClockIcon />
               <h6 className='detail-title'>Real Flexibility</h6>
-              <p className='detail-text'>We value flexibility. Enjoy competitive vacation/sick pay accrual, flexible work hours, and cutting edge, devices and systems to make our staffs' lives easier.</p>
+              <p className='detail-text'>We value flexibility. Enjoy competitive vacation/sick pay accrual, flexible work hours, and cutting edge, devices and systems to make the lives of our staff easier.</p>
             </div>
           </div>
         </div>

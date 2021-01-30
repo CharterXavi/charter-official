@@ -27,7 +27,7 @@ const IndexPage = ({ data }) => {
         <DataStrip />
         <TestimonialsStrip />
         <div className='news'>
-          <RecentGrid posts={recentPosts} title='The Latest at Charter' link='/news' linkContent='See our blog'/>
+          <RecentGrid posts={recentPosts} title='The Latest at Charter' link='/' linkContent='Coming Soon! 🎉'/>
         </div>
         <OurTeamStrip />
         <LocationsStrip svg={true} />
