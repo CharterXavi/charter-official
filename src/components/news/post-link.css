@@ -88,6 +88,7 @@
 /* Disabled until blogs are setup! */
 .PostLink::after {
     content: 'Coming Soon! 🎉';
+    color: white;
     position: absolute;
     top: 0;
     z-index: 9;

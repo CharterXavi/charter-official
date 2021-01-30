@@ -14,7 +14,7 @@ const ButtonPrimaryAlt = (props) => {
     return (
         <a 
         href={props.link}
-        className='ButtonPrimaryAlt button-text'
+        className={props.isDisabled ? 'disabled-alt-btn button-text' : 'ButtonPrimaryAlt button-text'}
         download={props.download === true} 
         data-aos={props.animation} 
         data-aos-duration={props.animationTime}

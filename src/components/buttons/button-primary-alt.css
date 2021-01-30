@@ -46,3 +46,33 @@
     height: auto;
     margin: 0 4px 0 0;
 }
+
+.disabled-alt-btn {
+    filter: contrast(90%) opacity(75%);
+    cursor: not-allowed;
+    outline: none;
+    color: var(--primary-accent);
+    box-shadow: var(--button-shadow);
+    background: white;
+    /* Brink Pink */    
+    border-radius: 30px;
+    min-width: 150px;
+    width: auto;
+    box-sizing: border-box;
+    padding: 8px 16px 8px 16px;
+    margin: 8px 0 8px 0;
+    height: 45px;
+    transition: 0.4s ease all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.disabled-alt-btn:hover {
+    filter: grayscale(50%) contrast(10%) opacity(90%);
+    cursor: not-allowed;
+    transform: translateY(0px);
+}
