@@ -10,7 +10,8 @@ const RecentGrid = (props) => {
     <div className='RecentGrid'>
         <div className='grid-header'>
           <h5>{props.title}</h5>
-          {props.link && <Link to={props.link}>{props.linkContent}</Link>}
+          {/* ----  Linking to nothing until posts are available to render  ---- */}
+          {props.link && <Link>{props.linkContent}</Link>}
         </div>
         <hr/>
         <div className='grid'>

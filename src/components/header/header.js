@@ -85,7 +85,7 @@ const Header = () => {
           }
         ]
       },
-      // {
+      // {  ------- DISABLED UNTIL POSTS ARE AVAILABLE TO RENDER -----------
       //   name: 'News',
       //   path: '/news',
       //   isSubMenuExpanded: false,
@@ -103,7 +103,7 @@ const Header = () => {
       //       path: '/news/tags'
       //     }
       //   ]
-      // },
+      // }, 
       {
         name: 'Careers',
         path: '/careers',
