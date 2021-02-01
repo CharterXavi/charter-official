@@ -1,0 +1,8 @@
+#Redirect all old charterhcg.com links in Wix site to some existing page equivalent in new Gatsby site, if changed
+
+/volunteer                                  /careers/volunteering         301
+/hospice                                    /services/hospice             301
+/transitional-care                          /services/ccm                 301
+/home-health                                /services/home-health         301
+/copy-of-transitional-care-managemen        /services/palliative-care     301
+
