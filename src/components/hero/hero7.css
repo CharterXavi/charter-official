@@ -75,8 +75,12 @@
 
 @keyframes fade-up {
     0% {
-        opacity: 0.75;
+        opacity: 0;
         bottom: 0px;
+    }
+    33% {
+        opacity: 0.75;
+        bottom: 100px;
     }
     100% {
         opacity: 0;
