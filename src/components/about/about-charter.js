@@ -30,13 +30,16 @@ const AboutCharter = () => {
           <BookIcon />
           <h6>Our Story</h6>
           <p>From the moment of conception, Charter has been a place where people care deeply about their work and their patients. Since we first obtained our accrediations and certifications in 2007, we've been expanding and growing rapidly to meet the needs of our communities at home and beyond.</p>
-          <p>As we continue extending our reach across southern California, we're also actively opening new doors in other states like Colorado, Nevada, Utah, Arizona, and beyond.</p>
+          <p>
+            We continue to extend our reach across southern California, and have opened new doors in Colorado, Nevada, Utah, Arizona, and Nebraska.
+            We look forward to expanding our access to additional states and territories in the future to meet the demand of needed patient care.
+          </p>
         </div>
         <div className='about-card' data-aos='fade-up' data-aos-duration='1800'>
           <CheckboxIcon />
           <h6>Our Commitment</h6>
-          <p>We're committed to instilling compassion and sensitivity in our teams for our patients, families, and peers. We believe in the power of truly, genuinely being there for those that depend on us and our services.</p>
-          <p>But that's not all. We're committed as well to training and education, creating an environment of learning, and fostering healthy working relationships. </p>
+          <p>We're committed to instilling compassion and sensitivity in our teams for our patients, families, and peers. We believe in the power of genuinely being there for those that depend on us and our services.</p>
+          <p>We're also committed to continuous learning and development and fostering healthy working relationships.</p>
         </div>
       </div>
     </div>

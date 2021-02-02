@@ -37,7 +37,7 @@ const ServicesPage = () => {
           <div className='content'>
             <div className='left'>
               <h6>We've got you covered</h6>
-              <p>At Charter Healthcare Group we believe in making a positive change in the lives of our patients and their families. For over ten years, we have been committed to providing exceptional care and life enhancing services to people all throughout the greater Los Angeles area. With a wide variety of programs, we're equipped to care for patients with varying conditions and needs.</p>
+              <p>For over ten years, we have been committed to providing exceptional care and life enhancing services to our patients while providing a sense of relief for their families and friends.</p>
             </div>
             <div className='right'>
               <h6>What we offer</h6>
