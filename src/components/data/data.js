@@ -24,7 +24,9 @@ const DataStrip = () => {
           <div className='right'> 
             <DataIcon />
             <h5>We're making a real impact.</h5>
-            <p>We make a serious effort to track our impact by the numbers. From data on patient outcomes to community efforts and everything in between, we make sure we're always making a measurable difference.</p>
+            <p>
+              We use data to monitor the impact we have on our patients' lives and inform our decisions to ensure the best outcome for our patients and partners.
+            </p>
             <div data-aos='fade-up' data-aos-duration='1000' >
               {/* Disabling button until Data Page is built out */}
               <ButtonPrimaryAlt content='Data coming soon! 🎉' isDisabled={true} />

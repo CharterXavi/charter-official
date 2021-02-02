@@ -79,7 +79,7 @@ const TestimonialsStrip = (props) => {
             <div className='left'> 
                 <LikeIcon />
                 <h5>We're going above and beyond.</h5>
-                <p>Feedback from our patients and their loved ones not only motivates us to keep working hard, but it also speaks volumes about our successes. See for yourself what others have to say about Charter!</p>
+                <p>Feedback from our patients and their loved ones not only motivates us to keep working hard, but it also speaks volumes about our successes. See what others have to say about Charter!</p>
                 <div data-aos='fade-up' data-aos-duration='1000' >
                     <ButtonPrimaryAlt content='See testimonials' link='/about/testimonials' />
                 </div>  
