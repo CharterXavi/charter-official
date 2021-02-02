@@ -37,7 +37,7 @@ const AcuteCarePage = () => (
             <p>
               General inpatient care (GIP) is a short-term care hospice program focused on providing pain/symptom 
               management that cannot be accomplished in another setting. GIP can be provided in the hospital, 
-              SNF or hospice inpatient facility.
+              Skilled Nursing Facility (SNF) or hospice inpatient facility.
             </p>
           </div>
         </div>

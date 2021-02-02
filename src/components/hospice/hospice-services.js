@@ -90,7 +90,7 @@ const HospiceServices = () => {
     <div className='HospiceServices'>
         <div className='two-column'>
             <h5>What we offer</h5>
-            <p>Charter Hospice allows you to have a personalized plan of care that is carefully designed to meet your health needs. We provide an array of services to help makethings easier for you and your loved ones.</p>
+            <p>Charter Hospice allows you to have a personalized plan of care that is carefully designed to meet your health needs. We provide an array of services to help make the transition easier for you and your loved ones.</p>
         </div>
         <div className='hospice-card-wrapper'>
             {

@@ -16,7 +16,7 @@ const HomeHealthPage = () => (
       <HeaderStrip2 image={homeHealth} title='Skilled Home Health' headline='Convenient & quality healthcare right at home' />
       <div className='two-column'>
         <div className="title">
-          <h4>Meeting you where you're at</h4>
+          <h4>Meeting you where are</h4>
           <hr/>
         </div>
         <div className="content">

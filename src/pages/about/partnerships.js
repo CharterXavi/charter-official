@@ -34,7 +34,9 @@ const PartnershipsPage = () => (
                 <p>
                   The Bundled Payments for Care Improvement Advanced (BPCI) program is an incentivized managed care program by the Centers for Medicare and Medicaid Services (CMS) for Medicare patients that hospitals can opt into. 
                   Hospitals that opt in to the program are tasked with managing the patient's care for 90 days starting from the hospital discharge date. 
-                  At Charter, we help work with these participating hospitals to manage these patients in the home and SNF setting while also providing a nurse navigator to manage patients from the inpatient setting as well. 
+                  At Charter, we help work with these participating hospitals to manage these patients in the home and Skilled Nursing Facility (SNF) settings while also providing a nurse navigator to manage patients from the inpatient setting as well. 
+                </p>
+                <p>
                   Patients benefit because they get additional post acute services for 90 days after discharge. As we work hard at Charter to lower the overall costs to patients after hospitalization through our innovative care, the hospital gets a payout from CMS.
                   In short, hospitals are financially incentivized to rely on innovative care providers like Charter to help provide a better, more consistent continuity of care after patients are discharged.  
                 </p>

@@ -34,8 +34,8 @@ const HARP = () => {
             <p>The Program can help you:</p>
             <ul>
                 <li>Stay safe and stable at home to avoid unnecessary visits to the hospital</li>
-                <li>Set goals or your health</li>
-                <li>Prepare for your routine visit to your primary care doctor</li>
+                <li>Set goals for your health</li>
+                <li>Prepare for routine visits to your primary care doctor</li>
                 <li>Answer questions and concerns you may have regarding your condition</li>
                 <li>Learn about your symptoms and how to treat them</li>
                 <li>Teach you about your health condition and your medications</li>
@@ -54,7 +54,7 @@ const HARP = () => {
           </div>
           <div className="right">
             <h6>Forms</h6>
-            <p>Two important forms should be completed during this process: the Advanced Healthcare Directive and the Physician's Order for Life-Sustaining Treatment (POLST).</p>
+            <p>Two important forms should be completed during this process: the Advanced Healthcare Directive and the Physician's Order for Life-Sustaining Treatment (POLST). These forms are available for download below.</p>
           </div>
         </div>
         <div className='forms'>

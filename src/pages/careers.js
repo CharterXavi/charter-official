@@ -36,7 +36,7 @@ const CareersPage = () => {
           <div className="title">
             <h3>Our Charter Identity</h3>
             <hr/>
-            <p>We're proud to be a part of what is undoubtedly a unique workforce. We've very intentionally built up our company with the most passionate and driven people we could find. Regardless of discipline or department we are a company that truly invests in what we do and the people we interact with, and we never lose sight of the impact we're making.</p>
+            <p>We're proud to be a part of what is undoubtedly a unique workforce. We've very intentionally built up our company with the most passionate and driven people we could find. Regardless of discipline or department, we are a company that truly invests in our people and what we do, and we never lose sight of the impact we're making.</p>
           </div>
           <div className="content">
             <div className="left">
@@ -64,7 +64,7 @@ const CareersPage = () => {
             <div className='benefits-card' data-aos='fade-up' data-aos-duration='800'>
               <AwardIcon />
               <h6 className='detail-title'>Generous Incentives</h6>
-              <p className='detail-text'>We provide 401K company matching, referral and retention bonuses, an Employee of the Month program, anniversary & birthday rewards ,and more.</p>
+              <p className='detail-text'>We provide 401K company matching, referral and retention bonuses, an Employee of the Month program, anniversary & birthday rewards, and more.</p>
             </div>
             <div className='benefits-card' data-aos='fade-up' data-aos-duration='1200'>
               <HealthcareIcon />
