@@ -19,7 +19,7 @@ const LocationsStrip = (props) => {
                       name: 'Tempe',
                       locations: [
                         {
-                            name: 'Arizona Hospice Select',
+                            name: 'Charter Healthcare of Phoenix',
                             address: '1232 E. Broadway St. Suite 210, Tempe, AZ 85282',
                             coordinates: { lat: 33.408025, lng: -111.919244 },
                             link: 'https://goo.gl/maps/TnXuzuwG1Ec5TuWk6'
@@ -30,7 +30,7 @@ const LocationsStrip = (props) => {
                       name: 'Tuscon',
                       locations: [
                         {
-                            name: 'Amber Hospice',
+                            name: 'Charter Healthcare of Tuscon',
                             address: '6400 E. Grant Rd., Suite 150 Tuscon, AZ 85715',
                             coordinates: { lat: 32.24938, lng: -110.855152 },
                             link: 'https://goo.gl/maps/bPJTJV3wBqTp2c8y7'
@@ -206,7 +206,7 @@ const LocationsStrip = (props) => {
                       name: 'West Jordan',
                       locations: [
                           {
-                              name: 'Heartwood Home Health & Hospice',
+                              name: 'Charter Healthcare West Jordan',
                               address: '6671 S. Redwood Rd. Suite 101, West Jordan, UT 84084',
                               coordinates: { lat: 40.630240, lng: -111.938240 },
                               link: 'https://goo.gl/maps/y3aa8qjHYBQMzV83A'
