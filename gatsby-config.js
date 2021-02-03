@@ -3,7 +3,7 @@ module.exports = {
     title: `Charter Healthcare Group`,
     description: `Official website for Charter Healthcare Group.`,
     author: `Branon Eusebio`,
-    url: 'https://charter-official-prototype.netlify.app/',
+    url: 'https://charterhcg.com/',
     twitterHandle: '@charterhcg',
     facebookHandle: '@charterhcg',
     instagramHandle: '@charterhcg',
@@ -92,7 +92,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // The property ID; the tracking code won't be generated without it
-        trackingId: "G-KFB9PYV6G2",
+        trackingId: "G-5VH1HRENRY",
         // Defines where to place the tracking script - `true` in the head and `false` in the body
         head: false,
         // Defers execution of google analytics script after page load
