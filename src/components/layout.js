@@ -28,7 +28,7 @@ const Layout = ({ children }) => {
       <div className='spacer'></div>
       <main>
         {children}
-        <Chatbot />
+        {/* <Chatbot /> */}
       </main>
       <Footer />
       {/* </div> */}
