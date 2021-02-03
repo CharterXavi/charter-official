@@ -1,5 +1,6 @@
 import './form.css'
 
+import ReCAPTCHA from 'react-google-recaptcha';
 import React from 'react'
 
 export default class MyForm extends React.Component {
@@ -58,6 +59,11 @@ export default class MyForm extends React.Component {
             </label>
         </div>
         <input type="text" name="_gotcha" style={{display: 'none'}} />
+        <ReCAPTCHA 
+          style={{padding: '16px 0'}}
+          theme='dark'
+          sitekey='6Ld750gaAAAAALwfP-9KCCJeG1im5IjFTgTs7cHx'
+        />
         <div className="submit">
             {status === "SUCCESS" ? <p style={{backgroundColor: '#7E9772', color: 'white', fontSize: '18px', width: 'auto', padding: '8px', borderRadius: '10px'}}>Thanks for reaching out! We'll contact you as soon as possible.</p> : <button className='btn-primary' type='submit' aria-label='Submit Form'>Submit</button>}
             {status === "ERROR" && <p style={{backgroundColor: '#D45E60', color: 'white', fontSize: '18px', width: 'auto', padding: '8px', borderRadius: '10px'}}>Ooops! There was an error.</p>}
