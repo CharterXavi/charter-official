@@ -20,10 +20,17 @@ form label {
     color: white;
     padding: 4px 0 8px 0;
 }
-.name, .info, .submit {
+.name, .info {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+}
+.submit {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
     width: 100%;
 }
 .message, .message label {

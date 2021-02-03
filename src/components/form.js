@@ -65,8 +65,8 @@ export default class MyForm extends React.Component {
           sitekey='6Ld750gaAAAAALwfP-9KCCJeG1im5IjFTgTs7cHx'
         />
         <div className="submit">
-            {status === "SUCCESS" ? <p style={{backgroundColor: '#7E9772', color: 'white', fontSize: '18px', width: 'auto', padding: '8px', borderRadius: '10px'}}>Thanks for reaching out! We'll contact you as soon as possible.</p> : <button className='btn-primary' type='submit' aria-label='Submit Form'>Submit</button>}
-            {status === "ERROR" && <p style={{backgroundColor: '#D45E60', color: 'white', fontSize: '18px', width: 'auto', padding: '8px', borderRadius: '10px'}}>Ooops! There was an error.</p>}
+            {status === "SUCCESS" ? <p className='detail-text' style={{backgroundColor: '#63af40', color: 'white', width: 'auto', padding: '8px', borderRadius: '10px', margin: '16px 0'}}>Thanks for reaching out! We'll contact you as soon as possible.</p> : <button className='btn-primary' type='submit' aria-label='Submit Form'>Submit</button>}
+            {status === "ERROR" && <p className='detail-text' style={{backgroundColor: '#d12629', color: 'white', width: 'auto', padding: '8px', borderRadius: '10px', margin: '16px 0'}}>Ooops! There was an error - please ensure your email is a valid format (youremail@somewhere.com, for example) and that your phone number is correct.</p>}
         </div>
       </form>
     );
