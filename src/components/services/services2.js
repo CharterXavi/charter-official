@@ -60,7 +60,7 @@ const ServicesStrip2 = () => {
             </div>
             <div className='card' data-aos='fade-up' data-aos-duration='1600' >
                 <HospitalIcon />
-                <h6>Acute / Hopsital-Based Care</h6>
+                <h6>Acute / Hospital-Based Care</h6>
                 <p className='detail-text'>We offer Acute/Hospital-based care in times of emergency.</p>
                 <ButtonPrimaryAlt content='Acute Care →' alt='Go to HARP Page' link='/services/acute-care' />
             </div>
