@@ -79,26 +79,26 @@ module.exports = {
         //usePreconnect: false,
       }
     },
-    // {
-    //   resolve: `gatsby-plugin-google-gtag`,
-    //   options: {
-    //     // You can add multiple tracking ids and a pageview event will be fired for all of them.
-    //     trackingIds: [
-    //       "G-KFB9PYV6G2", // Google Analytics / GA
-    //     ],
-    //   },
-    // },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        // The property ID; the tracking code won't be generated without it
-        trackingId: "G-5VH1HRENRY",
-        // Defines where to place the tracking script - `true` in the head and `false` in the body
-        head: false,
-        // Defers execution of google analytics script after page load
-        defer: false,
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        trackingIds: [
+          "G-5VH1HRENRY", // Google Analytics / GA
+        ],
       },
     },
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     // The property ID; the tracking code won't be generated without it
+    //     trackingId: "G-5VH1HRENRY",
+    //     // Defines where to place the tracking script - `true` in the head and `false` in the body
+    //     head: false,
+    //     // Defers execution of google analytics script after page load
+    //     defer: false,
+    //   },
+    // },
     'gatsby-transformer-remark',
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
