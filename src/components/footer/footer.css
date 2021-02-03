@@ -15,7 +15,7 @@
 .Footer .content-wrapper {
     display: flex;
     width: 1000px;
-    height: 600px;
+    min-height: 600px;
 }
 .Footer .left {
     width: 70%;
