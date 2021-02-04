@@ -98,7 +98,6 @@ const CareersPage = () => {
           </div>
         </div>
         <JoinUsStrip />
-        <OurTeamStrip />
         <LocationsStrip svg={true} />
       </div>
     </Layout>

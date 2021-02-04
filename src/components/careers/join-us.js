@@ -28,7 +28,7 @@ const JoinUsStrip = () => {
                     <div className='card'>
                         <BriefcaseIcon />
                         <h6 className='detail-title'>Jobs</h6>
-                        <p className='detail-text'>We're always looking to add ambitiuos talent to our rapidly-expanding workforce. Apply today!</p>
+                        <p className='detail-text'>We're always looking to add ambitious talent to our rapidly-expanding workforce. Apply today!</p>
                         <ButtonPrimaryAlt link='https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=ffc1c116-da32-4d3c-8e03-c4a1e22c100a&ccId=19000101_000001&type=MP&lang=en_US' content='See job openings' />
                     </div>
                     <div className='card'>
