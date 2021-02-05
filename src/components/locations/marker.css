@@ -20,7 +20,8 @@
 }
 .Marker p {
     font-size: 11px;
-    width: 100%;
+    width: auto;
+    height: auto;
     padding: 0;
     margin: 0;
     display: none;
@@ -34,6 +35,7 @@
 }
 .Marker .active-hover {
     display: block;
+    text-align: center;
 }
 .Marker:hover p {
     display: block;
