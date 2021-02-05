@@ -206,7 +206,7 @@ const LocationsStrip = (props) => {
                       name: 'West Jordan',
                       locations: [
                           {
-                              name: 'Charter Healthcare West Jordan',
+                              name: 'Charter Healthcare of West Jordan',
                               address: '6671 S. Redwood Rd. Suite 101, West Jordan, UT 84084',
                               coordinates: { lat: 40.630240, lng: -111.938240 },
                               link: 'https://goo.gl/maps/y3aa8qjHYBQMzV83A'
