@@ -188,9 +188,9 @@ const LocationsStrip = (props) => {
                       locations: [
                           {
                               name: 'Charter Healthcare of Las Vegas',
-                              address: '801 S. Rancho Drive Suite 6, Las Vegas, NV 89106-3812',
+                              address: '2739 Sunridge Heights Parkway, Suite 110, Henderson, NV 89044',
                               coordinates: { lat: 36.161930, lng: -115.171330 },
-                              link: 'https://goo.gl/maps/WNZZRBXpuP2fSPKdA'
+                              link: 'https://goo.gl/maps/FgQoN7QNy7xuFJhu5'
                           }
                       ]
                     }
