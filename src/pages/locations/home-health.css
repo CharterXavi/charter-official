@@ -1,0 +1,105 @@
+.HomeHealthPage {
+    background: var(--light-clinic-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.HomeHealthPage .business-info {
+    padding: 0 16px 64px 16px;
+}
+.news {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 16px 16px 98px 16px;
+    background: var(--light-clinic-blue);
+}
+.news .PostStrip {
+    z-index: 1;
+    margin: 0;
+}
+
+.HomeHealthPage {
+    width: 100%;
+    background: var(--light-clinic-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.HomeHealthPage .card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    width: 1000px;
+}
+.HomeHealthPage .card-wrapper .card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 320px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 8px 0;
+    color: var(--heading-color);
+    padding: 8px;
+    transition: 0.25s ease all;
+}
+.HomeHealthPage .card-wrapper .card:hover .icon {
+    transform: translatey(-8px);
+}
+.HomeHealthPage .card-wrapper .card:hover p {
+    transform: translatey(8px);
+}
+.HomeHealthPage .card-wrapper .card h6 {
+    width: auto;
+    color: var(--heading-color);
+    border-left: 2px solid var(--primary-accent);
+    padding: 0 0 0 16px;
+    margin: 8px 0 0 0;
+}
+.HomeHealthPage .card-wrapper .card p {
+    width: auto;
+    color: var(--heading-color);
+    transition: 0.4s ease all;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .HomeHealthPage .card-wrapper {
+        align-items: center;
+        flex-direction: column;
+        padding: 16px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .HomeHealthPage .card-wrapper .card {
+        width: 55%;
+        min-width: 400px;
+        box-sizing: border-box;
+        min-height: 300px;
+        margin: 16px 0;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .HomeHealthPage .card-wrapper {
+        flex-direction: column;
+        padding: 0;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .HomeHealthPage .card-wrapper .card {
+        width: 100%;
+        box-sizing: border-box;
+        min-height: 0;
+        min-width: 0;
+        margin: 16px 0;
+        padding: 16px 0 16px 0;
+    }
+}

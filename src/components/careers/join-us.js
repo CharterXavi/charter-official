@@ -20,10 +20,6 @@ const JoinUsStrip = () => {
                         If that sounds like you, we'd love to hear more about you.
                     </p>
                 </div>
-                <div className="content">
-                    <div className="left"></div>
-                    <div className="right"></div>
-                </div>
                 <div className='card-wrapper'>
                     <div className='card'>
                         <BriefcaseIcon />

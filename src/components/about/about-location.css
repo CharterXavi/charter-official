@@ -1,0 +1,12 @@
+.AboutLocationStrip {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    background: var(--light-clinic-blue);
+    padding: 64px 0;
+}
+
