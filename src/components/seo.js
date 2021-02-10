@@ -10,6 +10,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import { Helmet } from "react-helmet"
 import PropTypes from "prop-types"
 import React from "react"
+import defaultImage from '../images/charter-compass-v6-navy.webp'
 
 function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
@@ -51,6 +52,10 @@ function SEO({ description, lang, meta, title }) {
         {
           property: `og:type`,
           content: `website`,
+        },
+        {
+          property: `og:image`,
+          content: defaultImage,
         },
         {
           name: `twitter:card`,
