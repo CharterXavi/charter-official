@@ -11,6 +11,9 @@
      box-shadow: var(--standard-shadow);
      margin: 16px 0 0 0;
 }
+.HomeHealthPage .two-column img {
+    width: 100%;
+}
 .HomeHealthPage .business-info {
     padding: 0 16px 64px 16px;
     position: relative;
@@ -73,36 +76,3 @@
     color: var(--heading-color);
 }
 
-
-@media only screen and (max-width: 1000px) {
-    .HomeHealthPage .card-wrapper {
-        align-items: center;
-        flex-direction: column;
-        padding: 16px;
-        box-sizing: border-box;
-        width: 100%;
-    }
-    .HomeHealthPage .card-wrapper .card {
-        width: 55%;
-        min-width: 400px;
-        box-sizing: border-box;
-        min-height: 300px;
-        margin: 16px 0;
-    }
-}
-@media only screen and (max-width: 600px) {
-    .HomeHealthPage .card-wrapper {
-        flex-direction: column;
-        padding: 0;
-        box-sizing: border-box;
-        width: 100%;
-    }
-    .HomeHealthPage .card-wrapper .card {
-        width: 100%;
-        box-sizing: border-box;
-        min-height: 0;
-        min-width: 0;
-        margin: 16px 0;
-        padding: 16px 0 16px 0;
-    }
-}
