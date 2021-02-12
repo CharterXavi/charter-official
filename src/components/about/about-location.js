@@ -11,6 +11,7 @@ const AboutLocationStrip = (props) => {
           <h3>{props.title}</h3>
           <hr/>
         </div>
+        {props.image && <img src={props.image} alt="people" className='about-image' />}
         <div className='content'>
             <div className='left'>
                 {props.leftContent}
