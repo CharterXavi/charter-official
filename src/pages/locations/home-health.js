@@ -10,6 +10,8 @@ import RecentGrid from "../../components/news/recent-grid";
 import SEO from "../../components/seo";
 import ServicesStrip2 from '../../components/services/services2';
 import TestimonialsStrip from '../../components/testimonials/testimonials';
+import aboutImage from '../../images/home-health.png'
+import businessImage from '../../images/hiring.png';
 import {graphql} from 'gatsby';
 import homeHealthLocation from '../../images/headers/home-health-location.png';
 
@@ -56,51 +58,59 @@ const HomeHealthPage = ({ data }) => {
             title='Charter Home Health'
             leftContent={leftContent}
             rightContent={rightContent}
+            image={aboutImage}
         />
         <div className="two-column business-info">
           <div className="title">
             <h5>Business Information</h5>
             <hr/>
           </div>
-          <div className='card-wrapper'>
-            <div className='card'>
-                
-                <h6 className='detail-title'>Our Office</h6>
-                <p className='detail-text'>
-                  <a href='https://goo.gl/maps/pgsmZruf97YpLHWM7' target='_blank' rel='noopener noreferrer'>
-                    970 S Village Oaks Dr #102
-                    <br />
-                    Covina, CA 91724
-                  </a>
-                </p>
-                
+          <div className="content">
+            <div className="left">
+              <img src={businessImage} alt="team"/>
             </div>
-            <div className='card'>
-                
-                <h6 className='detail-title'>Hours of Operation</h6>
-                <p className='detail-text'>
-                  <ul>
-                    <li>M: 8:00 am - 5:00 pm</li>
-                    <li>Tu: 8:00 am - 5:00 pm</li>
-                    <li>W: 8:00 am - 5:00 pm</li>
-                    <li>Th: 8:00 am - 5:00 pm</li>
-                    <li>F: 8:00 am - 5:00 pm</li>
-                    <li>S: closed</li>
-                    <li>Su: closed</li>
-                  </ul>
-                </p>
-                
-            </div>
-            <div className='card'>
-                
-                <h6 className='detail-title'>Contact Information</h6>
-                <p className='detail-text'>
-                  <ul>
-                    <li>Phone: <a href='tel: 123-456-7890'>123-456-7890</a></li>
-                    <li>Fax: <a href='fax: 123-456-7890'>123-456-7890</a></li>
-                  </ul>
-                </p>
-                
+            <div className="right">
+              <div className='card-wrapper'>
+                <div className='card'>
+                    
+                    <h6 className='detail-title'>Our Office</h6>
+                    <p className='detail-text'>
+                      <a href='https://goo.gl/maps/pgsmZruf97YpLHWM7' target='_blank' rel='noopener noreferrer'>
+                        970 S Village Oaks Dr #102
+                        <br />
+                        Covina, CA 91724
+                      </a>
+                    </p>
+                    
+                </div>
+                <div className='card'>
+                    
+                    <h6 className='detail-title'>Hours of Operation</h6>
+                    <p className='detail-text'>
+                      <ul>
+                        <li>M: 8:00 am - 5:00 pm</li>
+                        <li>Tu: 8:00 am - 5:00 pm</li>
+                        <li>W: 8:00 am - 5:00 pm</li>
+                        <li>Th: 8:00 am - 5:00 pm</li>
+                        <li>F: 8:00 am - 5:00 pm</li>
+                        <li>S: closed</li>
+                        <li>Su: closed</li>
+                      </ul>
+                    </p>
+                    
+                </div>
+                <div className='card'>
+                    
+                    <h6 className='detail-title'>Contact Information</h6>
+                    <p className='detail-text'>
+                      <ul>
+                        <li>Phone: <a href='tel: 123-456-7890'>123-456-7890</a></li>
+                        <li>Fax: <a href='fax: 123-456-7890'>123-456-7890</a></li>
+                      </ul>
+                    </p>
+                    
+                </div>
+              </div>
             </div>
           </div>
         </div>
