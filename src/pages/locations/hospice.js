@@ -94,8 +94,6 @@ const HomeHealthPage = ({ data }) => {
                         <li>W: 8:00 am - 5:00 pm</li>
                         <li>Th: 8:00 am - 5:00 pm</li>
                         <li>F: 8:00 am - 5:00 pm</li>
-                        <li>S: closed</li>
-                        <li>Su: closed</li>
                       </ul>
                     </p>
                     

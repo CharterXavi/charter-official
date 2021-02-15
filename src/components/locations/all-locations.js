@@ -24,7 +24,7 @@ const AllLocations = (props) => {
             {props.pages.map(location => {
                 return (
                     <li key={location.name} className='card'>
-                        <a href={location.path} target='_blank' rel='noopener noreferrer'>
+                        <a href={location.path}>
                             <h6 className="detail-title">{location.name}</h6>
                             <p className="detail-text">
                                 {location.region}
