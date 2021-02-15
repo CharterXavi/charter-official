@@ -7,7 +7,105 @@ module.exports = {
     twitterHandle: '@charterhcg',
     facebookHandle: '@charterhcg',
     instagramHandle: '@charterhcg',
-    linkedinHandle: '@charter-healthcare-group'
+    linkedinHandle: '@charter-healthcare-group',
+    locations: [
+      {
+        name: 'Charter Healthcare of Phoenix',
+        path: '/locations/phoenix',
+        region: 'Tempe, AZ',
+        number: '909-644-4965',
+      },
+      {
+        name: 'Charter Healthcare of Tuscon',
+        path: '/locations/tuscon',
+        region: 'Tuscon, AZ',
+        number: '909-644-4965',
+      },
+      {
+        name: 'Charter High Desert Healthcare Group',
+        path: '/locations/high-desert',
+        region: 'Apple Valley, CA',
+        number: '909-644-4965',
+      },
+      {
+        name: 'Charter Hospice of Colton',
+        path: '/locations/hospice-colton',
+        region: 'Colton, CA',
+        number: '909-644-4965',
+      },
+      {
+        name: 'Charter Home Health',
+        path: '/locations/home-health',
+        region: 'Covina, CA',
+        number: '909-644-4965',
+      },
+      {
+        name: 'Charter Hospice of the San Gabriel Valley',
+        path: '/locations/hospice-san-gabriel-valley',
+        region: 'Covina, CA',
+        number: '909-644-4965',
+      },
+      {
+        name: 'Charter Home Health of the Desert',
+        path: '/locations/home-health-desert',
+        region: 'Palm Desert, CA',
+        number: '909-644-4965',
+      },
+      {
+        name: 'Charter Hospice of the Desert',
+        path: '/locations/hospice-desert',
+        region: 'Covina, CA',
+        number: '909-644-4965',
+      },
+      {
+        name: 'Cambridge Hospice',
+        path: '/locations/cambridge-hospice',
+        region: 'Rancho Cucamonga, CA',
+        number: '909-644-4965',
+      },
+      {
+        name: 'Cambridge Hospice of Riverside',
+        path: '/locations/cambridge-hospice-riverside',
+        region: 'Riverside, CA',
+        number: '909-644-4965',
+      },
+      {
+        name: 'Charter Hospice of San Diego',
+        path: '/locations/hospice-san-diego',
+        region: 'San Diego, CA',
+        number: '909-644-4965',
+      },
+      {
+        name: 'Charter Hospice',
+        path: '/locations/hospice',
+        region: 'Simi Valley, CA',
+        number: '909-644-4965',
+      },
+      {
+        name: 'Cambridge Hospice of Orange County',
+        path: '/locations/hospice-orange-county',
+        region: 'Simi Valley, CA',
+        number: '909-644-4965',
+      },
+      {
+        name: 'Vitality Home Healthcare',
+        path: '/locations/home-health-vitality',
+        region: 'Loveland, CO',
+        number: '909-644-4965',
+      },
+      {
+        name: 'Charter Healthcare of Las Vegas',
+        path: '/locations/las-vegas',
+        region: 'Henderson, NV',
+        number: '909-644-4965',
+      },
+      {
+        name: 'Charter Healthcare of West Jordan',
+        path: '/locations/west-jordan',
+        region: 'West Jordan, Utah',
+        number: '909-644-4965',
+      },
+    ]
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
