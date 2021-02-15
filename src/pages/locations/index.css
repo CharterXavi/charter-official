@@ -1,26 +1,26 @@
-.HomeHealthPage {
+.location-page {
     background: var(--light-clinic-blue);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.HomeHealthPage .two-column .about-image {
+.location-page .two-column .about-image {
      width: 100%;
      border-radius: 10px;
      box-shadow: var(--standard-shadow);
      margin: 16px 0 0 0;
 }
-.HomeHealthPage .two-column img {
+.location-page .two-column img {
     width: 100%;
 }
-.HomeHealthPage .business-info {
+.location-page .business-info {
     padding: 0 16px 64px 16px;
     position: relative;
     top: 0;
     z-index: 5;
 }
-.news {
+.location-page .news {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -29,12 +29,15 @@
     padding: 16px 16px 98px 16px;
     background: var(--light-clinic-blue);
 }
-.news .PostStrip {
+.location-page .news .PostStrip {
     z-index: 1;
     margin: 0;
 }
+.location-page .two-column .ButtonPrimaryAlt{
+    margin: 0;
+}
 
-.HomeHealthPage {
+.location-page {
     width: 100%;
     background: var(--light-clinic-blue);
     display: flex;
@@ -42,7 +45,7 @@
     align-items: center;
     justify-content: center;
 }
-.HomeHealthPage .card-wrapper {
+.location-page .card-wrapper {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -50,7 +53,7 @@
     box-sizing: border-box;
     width: 100%;
 }
-.HomeHealthPage .card-wrapper .card {
+.location-page .card-wrapper .card {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -64,14 +67,14 @@
     transition: 0.25s ease all;
 }
 
-.HomeHealthPage .card-wrapper .card h6 {
+.location-page .card-wrapper .card h6 {
     width: auto;
     color: var(--heading-color);
     border-left: 2px solid var(--primary-accent);
     padding: 0 0 0 16px;
     margin: 8px 0 0 0;
 }
-.HomeHealthPage .card-wrapper .card p {
+.location-page .card-wrapper .card p {
     width: auto;
     color: var(--heading-color);
 }

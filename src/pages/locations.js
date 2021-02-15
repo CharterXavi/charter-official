@@ -1,8 +1,8 @@
-import './index.css';
+import './locations.css';
 
+import AllLocations from '../components/locations/all-locations'
 import HeaderStrip2 from '../components/header-strip/header-strip2';
 import Layout from "../components/layout";
-import LocationsList from '../components/locations/locations-list'
 import React from "react";
 import SEO from "../components/seo";
 import {graphql} from 'gatsby';
@@ -10,7 +10,7 @@ import locationsImage from '../images/headers/locations.png'
 
 const LocationsPage = ({ data }) => {
 
-  const locations = data.edges;
+  const locations = data.allSite.edges[0].node.siteMetadata.locations;
   
   return (
     <Layout>
@@ -22,7 +22,7 @@ const LocationsPage = ({ data }) => {
           image={locationsImage}
         />
 
-        <LocationsList 
+        <AllLocations 
           pages={locations}
         />
       </div>
@@ -32,13 +32,20 @@ const LocationsPage = ({ data }) => {
 
 export default LocationsPage
 
-export const recentPostsQuery = graphql`
+export const pagesQuery = graphql`
 query {
-  allSitePage(filter: {path: {regex: "/locations/", ne: "/locations/"}}) {
+  allSite(filter: {siteMetadata: {locations: {}}}) {
     edges {
       node {
         id
-        path
+        siteMetadata {
+          locations {
+            name
+            path
+            region
+            number
+          }
+        }
       }
     }
   }

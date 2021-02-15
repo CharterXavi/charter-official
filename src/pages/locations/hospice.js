@@ -1,6 +1,7 @@
 import './index.css';
 
 import AboutLocationStrip from '../../components/about/about-location';
+import ButtonPrimaryAlt from '../../components/buttons/button-primary-alt'
 import DataStrip from '../../components/data/data';
 import HeaderStrip2 from '../../components/header-strip/header-strip2';
 import Layout from "../../components/layout";
@@ -113,6 +114,7 @@ const HomeHealthPage = ({ data }) => {
               </div>
             </div>
           </div>
+          <ButtonPrimaryAlt content='← See all charter locations' link='/locations' />
         </div>
         <ServicesStrip2 />
         <DataStrip />
