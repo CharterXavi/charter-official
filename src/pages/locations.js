@@ -1,36 +1,30 @@
 import './index.css';
 
-import AboutStrip from '../components/about/about';
-import DataStrip from '../components/data/data';
-import HeroStrip7 from "../components/hero/hero7";
+import HeaderStrip2 from '../components/header-strip/header-strip2';
 import Layout from "../components/layout";
-import LocationsStrip from '../components/locations/locations';
-import OurTeamStrip from '../components/our-team/our-team';
+import LocationsList from '../components/locations/locations-list'
 import React from "react";
-import RecentGrid from "../components/news/recent-grid";
 import SEO from "../components/seo";
-import ServicesStrip2 from '../components/services/services2';
-import TestimonialsStrip from '../components/testimonials/testimonials';
 import {graphql} from 'gatsby';
+import locationsImage from '../images/headers/locations.png'
 
 const LocationsPage = ({ data }) => {
 
-  const recentPosts = data.recent.edges;
+  const locations = data.edges;
   
   return (
     <Layout>
       <SEO title="Home" />
-      <div className='HomePage'>
-        <HeroStrip7 />
-        <AboutStrip />
-        <ServicesStrip2 />
-        <DataStrip />
-        <TestimonialsStrip />
-        <div className='news'>
-          <RecentGrid posts={recentPosts} title='The Latest at Charter' link='/' linkContent='Coming Soon! 🎉'/>
-        </div>
-        <OurTeamStrip />
-        <LocationsStrip svg={true} />
+      <div className='LocationsPage'>
+        <HeaderStrip2
+          title='Locations'
+          headline='See all of our locations'
+          image={locationsImage}
+        />
+
+        <LocationsList 
+          pages={locations}
+        />
       </div>
     </Layout>
   )
@@ -40,25 +34,11 @@ export default LocationsPage
 
 export const recentPostsQuery = graphql`
 query {
-  recent: allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {}, limit: 5) {
+  allSitePage(filter: {path: {regex: "/locations/", ne: "/locations/"}}) {
     edges {
       node {
         id
-        excerpt(pruneLength: 250)
-        frontmatter {
-          date(formatString: "MMMM DD, YYYY")
-          slug
-          title
-          category
-          featuredImage {
-            relativePath
-            childImageSharp {
-              fluid {
-                src
-              }
-            }
-          }
-        }
+        path
       }
     }
   }
