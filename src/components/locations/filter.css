@@ -15,10 +15,10 @@
     font-weight: bold;
 }
 .Filter li:hover {
-    background: var(--super-gradient);
+    background: var(--primary-accent);
     color: white;
 }
 .Filter li.active {
-    background: var(--super-gradient);
+    background: var(--primary-accent);
     color: white;
 }
