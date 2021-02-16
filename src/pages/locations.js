@@ -42,7 +42,8 @@ query {
           locations {
             name
             path
-            region
+            city
+            state
             number
           }
         }

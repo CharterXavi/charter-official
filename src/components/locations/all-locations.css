@@ -16,7 +16,7 @@
     flex-wrap: wrap;
     width: 100%;
     list-style: none;
-    padding: 0;
+    padding: 16px 0;
 }
 .AllLocations .card-list .card {
     width: 305px;
