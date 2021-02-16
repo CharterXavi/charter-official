@@ -35,7 +35,7 @@ const AllLocations = (props) => {
     }
 
     return (
-        <div className='AllLocations' data-aos='fade-up' data-aos-duration={props.animationTime} data-aos-once="true">
+        <div className='AllLocations'>
             <div className="two-column">
                 <div className="title">
                     <h4>All Charter Locations</h4>
@@ -49,15 +49,17 @@ const AllLocations = (props) => {
             <ul className='card-list'>
             {activeLocations.map(location => {
                 return (
-                    <li key={location.name} className='card'>
-                        <a href={location.path}>
-                            <h6 className="detail-title">{location.name}</h6>
-                            <p className="detail-text">
-                                {location.city}, {location.state}
-                                <br />
-                                P: {location.number}
-                            </p>
-                        </a>
+                    <li key={location.name} data-aos='fade-up' data-aos-duration='500'>
+                        <div className='card'>
+                            <a href={location.path}>
+                                <h6 className="detail-title">{location.name}</h6>
+                                <p className="detail-text">
+                                    {location.city}, {location.state}
+                                    <br />
+                                    P: {location.number}
+                                </p>
+                            </a>
+                        </div>
                     </li>
                 )
             })}
