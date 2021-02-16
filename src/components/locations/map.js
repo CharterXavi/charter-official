@@ -6,9 +6,9 @@ const Map = (props) => {
   //Default map properties
   const center = {
       lat: 40.09024,
-      lng: -114.712891
+      lng: -105.712891
   };
-  const zoom = 5;
+  const zoom = 4;
   const mapStyles = () => 
     [
       {

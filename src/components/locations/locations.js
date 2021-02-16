@@ -11,7 +11,7 @@ const LocationsStrip = (props) => {
         [
             {
                 state: 'Arizona',
-                animationTime: '800',
+                animationTime: '600',
                 isClicked: false,
                 isExpanded: false,
                 cities: [
@@ -41,7 +41,7 @@ const LocationsStrip = (props) => {
             },
             {
                 state: 'California',
-                animationTime: '1000',
+                animationTime: '700',
                 isClicked: false,
                 isExpanded: false,
                 cities: [
@@ -160,7 +160,7 @@ const LocationsStrip = (props) => {
             },
             {
                 state: 'Colorado',
-                animationTime: '1300',
+                animationTime: '800',
                 isClicked: false,
                 isExpanded: false,
                 cities: [
@@ -178,8 +178,38 @@ const LocationsStrip = (props) => {
                   ]
             },
             {
+                state: 'Nebraska',
+                animationTime: '900',
+                isClicked: false,
+                isExpanded: false,
+                cities: [
+                    {
+                      name: 'Omaha',
+                      locations: [
+                          {
+                              name: 'PhysMed Nebraska Office',
+                              address: '4905 S 107th Ave, Omaha, NE 68127',
+                              coordinates: { lat: 41.210443, lng: -96.0788 },
+                              link: 'https://goo.gl/maps/Ws4XjgwtM2r4ymU78'
+                          },
+                      ]
+                    },
+                    {
+                        name: 'Omaha',
+                        locations: [
+                            {
+                              name: 'Serene Care Hospice Nebraska Office',
+                              address: '4905 S 107th Ave, Omaha, NE 68127',
+                              coordinates: { lat: 41.210443, lng: -96.0788 },
+                              link: 'https://goo.gl/maps/Ws4XjgwtM2r4ymU78'
+                          },
+                        ]
+                    }
+                  ]
+            },
+            {
                 state: 'Nevada',
-                animationTime: '1600',
+                animationTime: '1000',
                 isClicked: false,
                 isExpanded: false,
                 cities: [
@@ -198,7 +228,7 @@ const LocationsStrip = (props) => {
             },
             {
                 state: 'Utah',
-                animationTime: '2000',
+                animationTime: '1100',
                 isClicked: false,
                 isExpanded: false,
                 cities: [
