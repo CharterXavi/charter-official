@@ -1,0 +1,24 @@
+.Filter {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0;
+}
+.Filter li {
+    width: auto;
+    margin: 8px;
+    border-radius: 10px;
+    padding: 8px 16px;
+    background: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+.Filter li:hover {
+    background: var(--super-gradient);
+    color: white;
+}
+.Filter li.active {
+    background: var(--super-gradient);
+    color: white;
+}
