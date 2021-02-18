@@ -85,7 +85,7 @@
 }
 
 
-/* Disabled until blogs are setup! */
+/* Disabled until blogs are setup!
 .PostLink::after {
     content: 'COMING SOON! 🎉';
     color: white;
@@ -102,4 +102,4 @@
     justify-content: center;
     background: black;
     opacity: 0.7;
-}
+} */

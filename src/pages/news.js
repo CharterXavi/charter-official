@@ -16,7 +16,7 @@ import { graphql } from "gatsby";
 const NewsPage = ({data}) => {
 
   const recentPosts = data.recent.edges;
-  const oldestPosts = data.oldest.edges;
+  const charterNews = data.charterNews.edges;
   const healthPosts = data.health.edges;
   const researchPosts = data.research.edges;
   const categories = data.categories.group;
@@ -55,9 +55,9 @@ const NewsPage = ({data}) => {
               
               <div className='bottom-block'>  
                 <CategoryNav categories={categories} />
-                <PostStrip posts={healthPosts} title='Health' link='/categories/health' />
-                <PostStrip posts={researchPosts} title='Research' link='/categories/research' />
-                <PostStrip posts={oldestPosts} title='Oldest' link='/news/oldest' />
+                <PostStrip posts={charterNews} title='Charter News' link='/categories/charter-news' />
+                {/* <PostStrip posts={healthPosts} title='Health' link='/categories/health' />
+                <PostStrip posts={researchPosts} title='Research' link='/categories/research' /> */}
               </div>
 
           </div>
@@ -138,6 +138,28 @@ export const pageQuery = graphql`
       }
     }
     research: allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {category: {eq: "Research"}}}, limit: 3) {
+      edges {
+        node {
+          id
+          excerpt(pruneLength: 250)
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            slug
+            title
+            category
+            featuredImage {
+              relativePath
+              childImageSharp {
+                fluid {
+                  src
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    charterNews: allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {category: {eq: "Charter News"}}}, limit: 3) {
       edges {
         node {
           id

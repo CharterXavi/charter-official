@@ -6,6 +6,7 @@ import HeroStrip7 from "../components/hero/hero7";
 import Layout from "../components/layout";
 import LocationsStrip from '../components/locations/locations';
 import OurTeamStrip from '../components/our-team/our-team';
+import PostStrip from '../components/news/post-strip';
 import React from "react";
 import RecentGrid from "../components/news/recent-grid";
 import SEO from "../components/seo";
@@ -27,7 +28,9 @@ const IndexPage = ({ data }) => {
         <DataStrip />
         <TestimonialsStrip />
         <div className='news'>
-          <RecentGrid posts={recentPosts} title='The Latest at Charter' link='/' linkContent='Coming Soon! 🎉'/>
+          {/* ---- Disabled on home page until more blog posts are available for formatting purposes ---- */}
+          {/* <RecentGrid posts={recentPosts} title='The Latest at Charter' link='/' linkContent='Coming Soon! 🎉'/> */}
+          <PostStrip posts={recentPosts} title='The Latest at Charter' link='/news' linkContent='Visit our news archive'/>
         </div>
         <OurTeamStrip />
         <LocationsStrip svg={true} />

@@ -108,14 +108,14 @@ module.exports = {
         number: '909-644-4965',
       },
       {
-        name: 'PhysMed Nebraska Office',
+        name: 'PhysMed Home Health of Omaha',
         path: '/locations/physmed',
         city: 'Omaha',
         state: 'Nebraska',
         number: '402-926-4088',
       },
       {
-        name: 'Serene Care Hospice Nebraska Office',
+        name: 'SereneCare Hospice of Omaha',
         path: '/locations/serene-care',
         city: 'Omaha',
         state: 'Nebraska',
