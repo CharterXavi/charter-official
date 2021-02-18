@@ -65,16 +65,19 @@
     .HeaderStrip2 .header-content {
         padding: 126px 16px 0 16px;
     }
+    .HeaderStrip2 .header-content h1 {
+        font-size: 3rem;
+    }
+    .HeaderStrip2 .header-content h2 {
+        font-size: 28px;
+    }
 }
 @media only screen and (max-width: 800px) {
     .HeaderStrip2 .header-image {
         right: -60%;
     }
     .HeaderStrip2 .header-content h1 {
-        font-size: 3.5rem;
-    }
-    .HeaderStrip2 .header-content h2 {
-        font-size: 28px;
+        font-size: 2.5rem;
     }
 }
 @media only screen and (max-width: 500px) {
@@ -102,6 +105,6 @@
 
 @media only screen and (max-width: 340px) {
     .HeaderStrip2 .header-content h1 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 }

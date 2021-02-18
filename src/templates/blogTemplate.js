@@ -1,18 +1,20 @@
-import React, {useEffect} from "react"
-import { graphql, Link } from "gatsby"
-import Layout from '../components/layout';
-import HeaderStrip2 from '../components/header-strip/header-strip2';
 import './blogTemplate.css';
-import archiveHeader from '../images/headers/archive.png';
-import ClockIcon from '../components/icons/clock';
-import HeartIcon from '../components/icons/heart';
-import NetworkIcon from '../components/icons/network';
-import ButtonPrimary from "../components/buttons/button-primary";
-import ShareButtons from '../components/social/share-buttons';
-import SEO from '../components/seo';
-import _ from 'lodash';
-import AOS from "aos";
 import "aos/dist/aos.css";
+
+import { Link, graphql } from "gatsby"
+import React, {useEffect} from "react"
+
+import AOS from "aos";
+import ButtonPrimary from "../components/buttons/button-primary";
+import ClockIcon from '../components/icons/clock';
+import HeaderStrip2 from '../components/header-strip/header-strip2';
+import HeartIcon from '../components/icons/heart';
+import Layout from '../components/layout';
+import NetworkIcon from '../components/icons/network';
+import SEO from '../components/seo';
+import ShareButtons from '../components/social/share-buttons';
+import _ from 'lodash';
+import archiveHeader from '../images/headers/archive.png';
 
 const BlogTemplate = (props) => {
 
@@ -64,8 +66,9 @@ const BlogTemplate = (props) => {
           <div className="blog-post">
             <img src={imageSrc} alt={postTitle} className='featured-img' />
             <div className='post-info'>
-              <h3>{postTitle}</h3>
+              <h4>{postTitle}</h4>
               <p>{postDate}</p>
+              <hr/>
             </div>
             <section
               className="blog-post-content"

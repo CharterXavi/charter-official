@@ -187,7 +187,7 @@ const LocationsStrip = (props) => {
                       name: 'Omaha',
                       locations: [
                           {
-                              name: 'PhysMed Nebraska Office',
+                              name: 'PhysMed Home Health of Omaha',
                               address: '4905 S 107th Ave, Omaha, NE 68127',
                               coordinates: { lat: 41.210443, lng: -96.0788 },
                               link: 'https://goo.gl/maps/Ws4XjgwtM2r4ymU78'
@@ -198,7 +198,7 @@ const LocationsStrip = (props) => {
                         name: 'Omaha',
                         locations: [
                             {
-                              name: 'Serene Care Hospice Nebraska Office',
+                              name: 'SereneCare Hospice of Omaha',
                               address: '4905 S 107th Ave, Omaha, NE 68127',
                               coordinates: { lat: 41.210443, lng: -96.0788 },
                               link: 'https://goo.gl/maps/Ws4XjgwtM2r4ymU78'
