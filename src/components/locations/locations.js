@@ -27,10 +27,10 @@ const LocationsStrip = (props) => {
                       ]
                     },
                     {
-                      name: 'Tuscon',
+                      name: 'Tucson',
                       locations: [
                         {
-                            name: 'Charter Healthcare of Tuscon',
+                            name: 'Charter Healthcare of Tucson',
                             address: '6400 E. Grant Rd., Suite 150 Tuscon, AZ 85715',
                             coordinates: { lat: 32.24938, lng: -110.855152 },
                             link: 'https://goo.gl/maps/bPJTJV3wBqTp2c8y7'

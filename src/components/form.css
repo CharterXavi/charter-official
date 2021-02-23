@@ -40,13 +40,13 @@ form label {
     align-items: flex-start;
     width: 100%;
 }
-.name .first, .name .last {
+.name .first, .name .department {
     width: 48%;
 }
 .info .email, .info .phone {
     width: 48%;
 }
-input, textarea {
+input, select {
     margin: 8px 0 8px 0;
     border-radius: 10px;
     border: none;
@@ -56,16 +56,15 @@ input, textarea {
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
     padding: 0 0 0 0;
-}
-input {
     width: 100%;
     height: 50px;
     padding: 16px;
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
     box-sizing: border-box;  
+    -webkit-appearance: none;
 }
-input::placeholder, textarea::placeholder {
+input::placeholder, textarea::placeholder, select::placeholder {
     font-family: 'Nunito', sans-serif;
     color: var(--clinic-blue);
     font-size: 14px;
@@ -75,6 +74,15 @@ input:focus, textarea:focus {
     box-shadow: 0 0 3px var(--light-clinic-blue);
 }
 textarea {
+    margin: 8px 0 8px 0;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: var(--scrubs-blue);
+    color: var(--light-clinic-blue);
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    padding: 0 0 0 0;
     width: 100%;
     height: 100px;
     padding: 16px;
@@ -124,12 +132,14 @@ form .btn-primary:hover::before {
     opacity: 1;
 }
 
+
+
 @media only screen and (max-width: 800px) {
     form .name, form .info {
         flex-direction: column;
         align-items: flex-start;
     }
-    .name .first, .name .last, .info .email, .info .phone {
+    .name .first, .name .department, .info .email, .info .phone {
         width: 100%;
     }
     .name input, .info input {

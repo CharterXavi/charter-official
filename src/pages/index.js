@@ -8,7 +8,7 @@ import LocationsStrip from '../components/locations/locations';
 import OurTeamStrip from '../components/our-team/our-team';
 import PostStrip from '../components/news/post-strip';
 import React from "react";
-import RecentGrid from "../components/news/recent-grid";
+// import RecentGrid from "../components/news/recent-grid";
 import SEO from "../components/seo";
 import ServicesStrip2 from '../components/services/services2';
 import TestimonialsStrip from '../components/testimonials/testimonials';
