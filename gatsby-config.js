@@ -17,9 +17,9 @@ module.exports = {
         number: '909-644-4965',
       },
       {
-        name: 'Charter Healthcare of Tuscon',
+        name: 'Charter Healthcare of Tucson',
         path: '/locations/tuscon',
-        city: 'Tuscon',
+        city: 'Tucson',
         state: 'Arizona',
         number: '909-644-4965',
       },

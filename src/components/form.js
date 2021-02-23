@@ -26,15 +26,21 @@ export default class MyForm extends React.Component {
         </div>
         <div className="name">
             <div className="first">
-                <label htmlFor="first-name">
+                <label htmlFor="full-name">
                   First Name
-                  <input type="text" name='first-name' id='first-name' placeholder='First Name' required />
+                  <input type="text" name='full-name' id='full-name' placeholder='Full Name' required />
                 </label>
             </div>
-            <div className="last">
-                <label htmlFor="last-name">
+            <div className="department">
+                <label htmlFor="department">
                   Last Name
-                  <input type="text" name='last-name' id='last-name' placeholder='Last Name' required />
+                  <select type="select" name='department' id='department' required>
+                    <option value="" selected disabled hidden>Department to contact...</option>
+                    <option value="communications">Communications</option>
+                    <option value="human-resources">Human Resources</option>
+                    <option value="it">I.T.</option>
+                    <option value="compliance">Corporate Compliance</option>
+                  </select>
                 </label>
             </div>
         </div>
