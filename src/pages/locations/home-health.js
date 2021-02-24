@@ -54,16 +54,16 @@ const HomeHealthPage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Covina Home Health, Hospice, & Palliative Care" />
       <div className='HomeHealthPage location-page'>
         <HeaderStrip2
             image={homeHealthLocation}
             title='Charter Home Health'
-            headline='Covina, CA'
+            headline='Covina Home Health, Hospice, & Palliative Care'
         />
         <div className="two-column">
           <div className="title">
-            <h4>Additional Text Block</h4>
+            <h3>Additional Text Block</h3>
             <hr/>
           </div>
           <div className="content">
