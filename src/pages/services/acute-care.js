@@ -11,8 +11,8 @@ import acuteImg from '../../images/headers/acute-care.png';
 const AcuteCarePage = () => (
   <Layout>
     <div className='AcuteCarePage'>
-      <SEO title="Acute Care" />
-      <HeaderStrip2 image={acuteImg} title='Acute or Hospital-Based Care' headline="Bridging the gaps in the care continuum" />
+      <SEO title="Inpatient Acute or Hospital Based Medical Care" />
+      <HeaderStrip2 image={acuteImg} title='Acute or Hospital-Based Care' headline="Bridging the gaps in the inpatient acute medical care continuum" />
       <div className='two-column'>
         <div className="title">
           <h4>We're ready for anything</h4>
@@ -23,8 +23,9 @@ const AcuteCarePage = () => (
           <div className="left">
             <h6>Navigator Program</h6>
             <p>
-              We employ special Nurse Navigators to engage patients at the bedside before they ever leave the hostpial. 
-              Starting communication from the inpatient setting allows for increased compliance and engagement in the post acute setting. 
+              We employ special Nurse Navigators to engage patients at the bedside before they ever leave the
+              hospital-based care. Starting communication from the inpatient acute care setting allows for
+              increased compliance and engagement in the post acute setting.
             </p>
             <p>  
               The nurse navigator provides insight into the post-acute needs of the patient and works closely 
