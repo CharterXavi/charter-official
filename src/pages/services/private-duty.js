@@ -11,8 +11,8 @@ import privateDutyImage from '../../images/headers/private-duty.png';
 const PrivateDutyPage = () => (
   <Layout>
     <div className='PrivateDutyPage'>
-      <SEO title="Private Duty" />
-      <HeaderStrip2 image={privateDutyImage} title='Private Duty Home Care' headline="Addressing our patients' daily needs" />
+      <SEO title="Quality Private Duty Home Care" />
+      <HeaderStrip2 image={privateDutyImage} title='Private Duty Home Care' headline="Addressing our patients' daily needs through high quality in-home support and assistance" />
       <div className='two-column'>
         <div className="title">
           <h4>Private Duty Home Care</h4>
@@ -21,7 +21,12 @@ const PrivateDutyPage = () => (
         <div className="content">
           <div className="left">
             <h6>What is Private Duty Home Care?</h6>
-            <p>Private duty home care is a service provided to individuals who need in-home support and assistance with day-to-day activities. A private duty caregiver is assigned to visit your home and help with daily living activities such as personal grooming, meal preparation, housekeeping, and companionship. Private duty care makes it possible for your loved ones to stay home safely and comfortably by customizing the services to meet the unique needs of each client.</p>
+            <p>
+              Private duty home care is a service provided to individuals who need in-home support and assistance with day-to-day activities.
+              A private duty caregiver is assigned to visit your home and help with daily living activities such as personal grooming, meal preparation,
+              housekeeping, and companionship. Our high quality private duty home care makes it possible for your loved ones to stay home safely and
+              comfortably by customizing the services to meet the unique needs of each client.
+            </p>
             <h6>Services</h6>
             <p>Some services provided are as follows:</p>
             <ul>

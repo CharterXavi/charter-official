@@ -19,8 +19,8 @@ const HospicePage = () => {
   return (
     <Layout>
       <div className='HospicePage'>
-        <SEO title="Hospice" />
-        <HeaderStrip2 title='Hospice' headline='Caring for those with a life-limiting illness' image={hospiceImage} />
+        <SEO title="Best Hospice Care Services" />
+        <HeaderStrip2 title='Hospice' headline='Caring for those with a life-limiting illness by providing the best hospice care services in the world' image={hospiceImage} />
         <div className='two-column'>
           <div className="title">
             <h4>Physical, emotional, and spiritual support</h4>
@@ -29,7 +29,14 @@ const HospicePage = () => {
           <div className="content">
             <div className="left">
               <h6>What is Hospice Care?</h6>
-              <p>Hospice is a special way of caring for people who have a life limiting illness. Charter Hospice is committed to delivering the latest and most innovative approaches in pain and symptom management. Our focus is on improving a patient’s quality of life by creating a more comfortable environment for them and their loved ones. The hospice program allows us to provide the physical, emotional, and spiritual support that you and your family need during this time. Our interdisciplinary team works directly with your physician and our hospice medical director to ensure you receive the care you deserve.</p></div>
+              <p>
+                Hospice is a special way of caring for people who have a life limiting illness. Charter Hospice is committed to delivering the latest and most
+                innovative approaches in pain and symptom management. Our focus is on improving a patient’s quality of life by creating a more comfortable
+                environment for them and their loved ones. The hospice services allow us to provide the physical, emotional, and spiritual support that you
+                and your family need during this time. Our interdisciplinary team works directly with your physician and our hospice medical director to ensure
+                you receive the best hospice care possible.
+              </p>
+            </div>
             <div className="right">
               <h6>Our Mission Statement</h6>
               <p>“To provide the most meaningful and comfortable experience to our patients and their families during the end of life journey.”</p>

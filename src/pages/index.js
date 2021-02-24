@@ -20,7 +20,7 @@ const IndexPage = ({ data }) => {
   
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Total Home & Post Acute Care" />
       <div className='HomePage'>
         <HeroStrip7 />
         <AboutStrip />
