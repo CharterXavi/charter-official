@@ -12,8 +12,8 @@ import harpImg from '../../images/headers/harp.png';
 const CCMPage = () => (
   <Layout>
     <div className='CCMPage'>
-      <SEO title="CCM" />
-      <HeaderStrip2 image={harpImg} title='Complex Care Management' headline='Reducing hospital readmissions and costs' />
+      <SEO title="Complex Care Management | Transitional Care & Advanced Care Planning" />
+      <HeaderStrip2 image={harpImg} title='Complex Care Management' headline='Reducing hospital readmissions and costs through transitional care and advance care planning' />
       <div className='two-column'>
         <div className="title">
           <h4>Keeping our patients out of the hospital</h4>
