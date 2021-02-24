@@ -118,14 +118,17 @@
     z-index: 3;
     padding: 32px 16px;
 }
-.Hero7 .hero-content h5 {
-    color: white;
-    padding: 56px 0 8px 0;
-}
 .Hero7 .hero-content h1 {
     color: white;
-    font-size: 3rem;
-    padding: 0px;
+    font-size: 2.5rem;
+    padding: 64px 0 8px 0;
+}
+.Hero7 .hero-content h2 {
+    background: var(--super-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+    padding: 0;
 }
 .Hero7 .hero-content h6 {
     color: white;
@@ -210,7 +213,7 @@
     .Hero7 .hero-wrapper .hero-content img {
         display: none;
     }
-    .Hero7 .hero-content h5 {
+    .Hero7 .hero-content h1 {
         color: white;
         padding: 16px 0 8px 0;
     }
@@ -291,12 +294,12 @@
     .Hero7 .hero-wave {
         bottom: -5px;
     }
-    .Hero7 .hero-content h1 {
-        font-size: 2.5rem;
+    .Hero7 .hero-content h2 {
+        font-size: 2rem;
         text-align: center;
     }
-    .Hero7 .hero-content h5 {
-        font-size: 1.25rem;
+    .Hero7 .hero-content h1 {
+        font-size: 2.5rem;
         text-align: center;
     }
     .Hero7 .hero-content {
@@ -334,6 +337,9 @@
     }
     .Hero7 .hero-content h1 {
         font-size: 2.25rem;
+    }
+    .Hero7 .hero-content h2 {
+        font-size: 1.75rem;
     }
 }
 @media only screen and (max-width: 340px) {

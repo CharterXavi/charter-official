@@ -30,9 +30,13 @@ const HeroStrip7 = () => {
         <div className='Hero7'>
             <div className='hero-wrapper'>
                 <div className='hero-content'>
-                    <h5>Post-acute care is complicated.</h5>
-                    <h1>Let's navigate it together.</h1>
-                    <h6 className='detail-title'>With top-tier providers, a wide variety of programs, and a track record of success, we’re equipped to meet our patients where they’re at and provide them the quality care they need.</h6>
+                    <h1>Post-acute care is complicated.</h1>
+                    <h2>Let's navigate it together.</h2>
+                    <h6 className='detail-title'>
+                        With top-tier providers, a wide variety of programs, and a track record of success,
+                        we’re equipped to meet our patients where they’re at and provide them the best total 
+                        home and post-acute health care available.
+                    </h6>
                     <div>
                         <div className='play-btn-wrapper' onClick={showVideo} onKeyDown={showVideo} role='button' tabIndex='0'>
                             {videoState ? <ButtonPrimary content='Hide Video' link='#' /> : <ButtonPrimary content='Watch Video' link='#'/>}
