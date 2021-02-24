@@ -1,6 +1,5 @@
 import './index.css';
 
-import AboutLocationStrip from '../../components/about/about-location';
 import ButtonPrimaryAlt from '../../components/buttons/button-primary-alt'
 import DataStrip from '../../components/data/data';
 import HeaderStrip2 from '../../components/header-strip/header-strip2';
@@ -21,32 +20,6 @@ import homeHealthLocation from '../../images/headers/home-health-location.png';
 const HomeHealthPage = ({ data }) => {
 
   const recentPosts = data.recent.edges;
-
-  //About info section props
-  const leftContent = (
-      <div>
-          <h6>Our Commitment</h6>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-      </div>
-  )
-  const rightContent = (
-      <div>
-        <h6>Our Values</h6>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-          laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-          non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </div>
-  )
 
   //Location coordinates for map component
   const lat = 34.071759;
@@ -89,12 +62,39 @@ const HomeHealthPage = ({ data }) => {
             </div>
           </div>
         </div>
-        <AboutLocationStrip 
-            title='Charter Home Health'
-            leftContent={leftContent}
-            rightContent={rightContent}
-            image={aboutImage}
-        />
+
+        {/*-------------- ABOUT SECTION -------------- */}
+        <div className='two-column about-block'>
+          <div className='title'>
+            <h4>Charter Home Health</h4>
+            <hr/>
+          </div>
+          <img src={aboutImage} alt="people" className='about-image' />
+          <div className='content'>
+              <div className='left'>
+                <h6>Our Commitment</h6>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                  voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                  non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+              </div> 
+              <div className='right'>   
+                <h6>Our Values</h6>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                  voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                  non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+              </div>
+          </div>
+          <ButtonPrimaryAlt content='Get to know Charter' link='/about' />
+        </div>
+
         <div className="two-column business-info">
           <div className="title">
             <h5>Business Information</h5>
