@@ -11,7 +11,7 @@ import privateDutyImage from '../../images/headers/private-duty.png';
 const PrivateDutyPage = () => (
   <Layout>
     <div className='PrivateDutyPage'>
-      <SEO title="Private Duty" />
+      <SEO title="Quality Private Duty Home Care" />
       <HeaderStrip2 image={privateDutyImage} title='Private Duty Home Care' headline="Addressing our patients' daily needs through high quality in-home support and assistance" />
       <div className='two-column'>
         <div className="title">
