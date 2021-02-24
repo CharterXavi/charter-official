@@ -40,11 +40,12 @@
     padding: 16px 0 0 0;
     width: auto;
 }
-.HeaderStrip2 .header-content h5 {
+.HeaderStrip2 .header-content h2 {
     z-index: 3;
     color: white;
     padding: 0 0 16px 0;
     width: auto;
+    font-size: 1.5rem;
 }
 
 @media only screen and (max-width: 1700px) {
@@ -69,7 +70,7 @@
         font-size: 3rem;
     }
     .HeaderStrip2 .header-content h2 {
-        font-size: 28px;
+        font-size: 24px;
     }
 }
 @media only screen and (max-width: 800px) {

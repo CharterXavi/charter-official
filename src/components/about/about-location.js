@@ -8,7 +8,7 @@ const AboutLocationStrip = (props) => {
     <div className='AboutLocationStrip'>
       <div className='two-column'>
         <div className='title'>
-          <h3>{props.title}</h3>
+          <h4>{props.title}</h4>
           <hr/>
         </div>
         {props.image && <img src={props.image} alt="people" className='about-image' />}
