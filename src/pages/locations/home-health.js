@@ -34,9 +34,11 @@ const HomeHealthPage = ({ data }) => {
             title='Charter Home Health'
             headline='Covina Home Health, Hospice, & Palliative Care'
         />
+
+        {/*-------------- TOP TEXT BLOCK -------------- */}
         <div className="two-column">
           <div className="title">
-            <h3>Additional Text Block</h3>
+            <h4>Additional Text Block</h4>
             <hr/>
           </div>
           <div className="content">
@@ -95,6 +97,7 @@ const HomeHealthPage = ({ data }) => {
           <ButtonPrimaryAlt content='Get to know Charter' link='/about' />
         </div>
 
+        {/*-------------- BUSINESS INFO SECTION -------------- */}
         <div className="two-column business-info">
           <div className="title">
             <h5>Business Information</h5>
@@ -154,6 +157,7 @@ const HomeHealthPage = ({ data }) => {
           </div>
           <ButtonPrimaryAlt content='← See all charter locations' link='/locations' />
         </div>
+
         <ServicesStrip2 />
         <DataStrip />
         <TestimonialsStrip />
