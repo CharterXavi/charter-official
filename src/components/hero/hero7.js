@@ -31,7 +31,7 @@ const HeroStrip7 = () => {
             <div className='hero-wrapper'>
                 <div className='hero-content'>
                     <h1>Post-acute care is complicated.</h1>
-                    <h2>Let's navigate it together.</h2>
+                    <h2>Let's navigate your total home health care together.</h2>
                     <h6 className='detail-title'>
                         With top-tier providers, a wide variety of programs, and a track record of success,
                         we’re equipped to meet our patients where they’re at and provide them the best total 
