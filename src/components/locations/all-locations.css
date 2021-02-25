@@ -41,8 +41,8 @@
     box-shadow: 0px 9px 10px rgba(0, 0, 0, 0.15);
     transform: translateY(-4px);
 }
-.AllLocations .card .detail-text a{
-    margin: 16px 0 0 0;
+.AllLocations .card .detail-text:nth-of-type(odd) {
+    padding: 24px 0 0 0;
 }
 .AllLocations .card .bottom-link {
     width: 100%;
@@ -78,6 +78,6 @@
     }
     .AllLocations .card-list li {
         width: 100%;
-        min-height: 200px;
+        min-height: 220px;
     }
 }
