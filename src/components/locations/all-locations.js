@@ -51,14 +51,14 @@ const AllLocations = (props) => {
                 return (
                     <li key={location.name} data-aos='fade-up' data-aos-duration='500'>
                         <div className='card'>
-                            <a href={location.path}>
-                                <h6 className="detail-title">{location.name}</h6>
-                                <p className="detail-text">
-                                    {location.city}, {location.state}
-                                    <br />
-                                    P: {location.number}
-                                </p>
-                            </a>
+                            <h6 className="detail-title">{location.name}</h6>
+                            <p className="detail-text">
+                                {location.address}
+                            </p>
+                            <p className="detail-text">
+                                <a href={`tel:${location.number}`}>{location.number}</a>
+                            </p>
+                            <a href={location.path} className='bottom-link'>View page</a>
                         </div>
                     </li>
                 )
