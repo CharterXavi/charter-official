@@ -5,6 +5,8 @@ import React, {useEffect, useState} from 'react'
 
 import AOS from "aos";
 import Filter from './filter'
+import PhoneIcon from '../icons/phone';
+import PinIcon from '../icons/pin';
 
 const AllLocations = (props) => {
     const [activeLocations, setActiveLocations] = useState(props.pages);
@@ -51,11 +53,11 @@ const AllLocations = (props) => {
                 return (
                     <li key={location.name} data-aos='fade-up' data-aos-duration='500'>
                         <div className='card'>
-                            <h6 className="detail-title">{location.name}</h6>
+                            <h6 className='detail-title'>{location.name}</h6>
                             <p className="detail-text">
                                 {location.address}
                             </p>
-                            <p className="detail-text">
+                            <p className="detail-text"> 
                                 <a href={`tel:${location.number}`}>{location.number}</a>
                             </p>
                             <a href={location.path} className='bottom-link'>View {location.city} page</a>
