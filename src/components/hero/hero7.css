@@ -339,7 +339,11 @@
         font-size: 2.25rem;
     }
     .Hero7 .hero-content h2 {
-        font-size: 1.75rem;
+        font-size: 1.25rem;
+        color: white;
+        background: none;
+        -webkit-background-clip: none;
+        -webkit-text-fill-color: white;
     }
 }
 @media only screen and (max-width: 340px) {
