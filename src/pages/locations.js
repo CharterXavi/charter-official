@@ -1,12 +1,13 @@
 import './locations.css';
 
-import AllLocations from '../components/locations/all-locations'
+import AllLocations from '../components/locations/all-locations';
 import HeaderStrip2 from '../components/header-strip/header-strip2';
+import LargeMap from '../components/locations/large-map';
 import Layout from "../components/layout";
 import React from "react";
 import SEO from "../components/seo";
 import {graphql} from 'gatsby';
-import locationsImage from '../images/headers/locations.png'
+import locationsImage from '../images/headers/locations.png';
 
 const LocationsPage = ({ data }) => {
 
@@ -14,14 +15,14 @@ const LocationsPage = ({ data }) => {
   
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Locations Near You" />
       <div className='LocationsPage'>
         <HeaderStrip2
           title='Locations'
-          headline='See all of our locations'
+          headline='Find your nearest location'
           image={locationsImage}
         />
-
+        <LargeMap locations={locations} />
         <AllLocations 
           pages={locations}
         />
@@ -45,6 +46,13 @@ query {
             city
             state
             number
+            address
+            coordinates {
+              lat
+              lng
+            }
+            isClicked
+            isExpanded
           }
         }
       }

@@ -1,0 +1,8 @@
+.LargeMap {
+    width: calc(100% - 32px);
+    height: 600px;
+    box-shadow: var(--standard-shadow);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 32px;
+}
