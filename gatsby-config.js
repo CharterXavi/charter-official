@@ -89,7 +89,7 @@ module.exports = {
       {
         name: 'Charter Hospice of the Desert',
         path: '/locations/hospice-desert',
-        city: 'Covina',
+        city: 'Palm Desert',
         state: 'California',
         number: '909-644-4965',
         address: '72855 Fred Waring Dr. Suite A5, Palm Desert, CA 92260',
