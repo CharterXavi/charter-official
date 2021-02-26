@@ -25,6 +25,9 @@
     overflow: hidden;
     box-shadow: var(--standard-shadow);
 }
+.location-page .two-column .map-container .small-map {
+    border-radius: 10px;
+}
 .location-page .two-column .map-container .Marker {
     height: 30px;
     width: 20px;
