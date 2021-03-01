@@ -11,6 +11,7 @@ export default class MyForm extends React.Component {
       status: ""
     };
   }
+  
 
   render() {
     const { status } = this.state;
