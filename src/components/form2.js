@@ -4,7 +4,7 @@ import React, {useState} from 'react'
 
 import ReCAPTCHA from 'react-google-recaptcha';
 
-const ContactForm2 = (props) => {
+const ContactForm2 = () => {
 
   const [status, setStatus] = useState("");
 
@@ -19,9 +19,9 @@ const ContactForm2 = (props) => {
       if (xhr.readyState !== XMLHttpRequest.DONE) return;
       if (xhr.status === 200) {
         form.reset();
-        setStatus({ status: "SUCCESS" });
+        setStatus("SUCCESS");
       } else {
-        setStatus({ status: "ERROR" });
+        setStatus("ERROR");
       }
     };
     xhr.send(data);
