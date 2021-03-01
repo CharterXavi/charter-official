@@ -1,6 +1,6 @@
 import './footer.css';
 
-import ContactForm from '../form';
+import ContactForm2 from '../form2';
 import {Link} from 'gatsby';
 import React from 'react';
 import facebook from '../../images/iconography/facebook.png';
@@ -14,7 +14,7 @@ const Footer = () => {
         <hr/>
         <div className='content-wrapper'>
             <div className='left'>
-                <ContactForm />
+                <ContactForm2 />
             </div>
             <div className='right'>
                 <div className='helpful-links'>
