@@ -25,22 +25,39 @@ const OldestPage = ({
     const allOldestPosts = edges.filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
     const newPostList = [];
 
-    //defining your own mountEffect function using useEffect with empty array arg gets rid of ESLint error for missing dependencies
-    const useMountEffect = (func) => useEffect(func, [])
-    const renderInitialPosts = () => {
-      for (let i = 0; i < 6; i++) {
-        //if this post exists, push it to the new list - helps avoid pushing 'undefined' nodes to list
-        if(allOldestPosts[i]) {
+    // //defining your own mountEffect function using useEffect with empty array arg gets rid of ESLint error for missing dependencies
+    // const useMountEffect = (func) => useEffect(func, [])
+    // const renderInitialPosts = () => {
+    //   for (let i = 0; i < 6; i++) {
+    //     //if this post exists, push it to the new list - helps avoid pushing 'undefined' nodes to list
+    //     if(allOldestPosts[i]) {
+    //         newPostList.push(allOldestPosts[i]);
+    //     }
+    //     if(!allOldestPosts[6]) {
+    //       //if there aren't enough posts, hide show more button
+    //       setHideShowMore(true);
+    //     }
+    //   }
+    //   return setPosts(newPostList);
+    // }
+    // useMountEffect(renderInitialPosts);
+    
+    useEffect(() => {
+      const renderInitialPosts = () => {
+        for (let i = 0; i < 6; i++) {
+          //if this post exists, push it to the new list - helps avoid pushing 'undefined' nodes to list
+          if(allOldestPosts[i]) {
             newPostList.push(allOldestPosts[i]);
+          }
+          if(!allOldestPosts[6]) {
+            //if there aren't enough posts, hide show more button
+            setHideShowMore(true);
+          }
         }
-        if(!allOldestPosts[6]) {
-          //if there aren't enough posts, hide show more button
-          setHideShowMore(true);
-        }
+        return setPosts(newPostList);
       }
-      return setPosts(newPostList);
-    }
-    useMountEffect(renderInitialPosts);
+      renderInitialPosts();
+    }, [allOldestPosts, newPostList]);
 
     //write a function that will update state to show 6 more posts
     const showMorePosts = (clickCount, isFinished) => {
