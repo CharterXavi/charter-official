@@ -13,7 +13,7 @@ import PostStrip from '../components/news/post-strip';
 import SEO from "../components/seo";
 import Video2 from '../components/video/video2';
 import aboutImage from '../images/headers/about.png';
-import {graphql} from 'gatsby';
+import { graphql } from "gatsby"
 
 const AboutPage = ({data}) => {
   useEffect(() => {

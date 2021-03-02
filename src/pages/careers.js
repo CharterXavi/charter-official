@@ -12,7 +12,6 @@ import HealthcareIcon from '../components/icons/healthcare';
 import JoinUsStrip from '../components/careers/join-us.js';
 import Layout from "../components/layout";
 import LocationsStrip from '../components/locations/locations';
-import OurTeamStrip from '../components/our-team/our-team';
 import SEO from "../components/seo";
 import careersImage from '../images/headers/careers.png';
 

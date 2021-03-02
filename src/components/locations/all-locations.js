@@ -5,8 +5,6 @@ import React, {useEffect, useState} from 'react'
 
 import AOS from "aos";
 import Filter from './filter'
-import PhoneIcon from '../icons/phone';
-import PinIcon from '../icons/pin';
 
 const AllLocations = (props) => {
     const [activeLocations, setActiveLocations] = useState(props.pages);
@@ -32,8 +30,9 @@ const AllLocations = (props) => {
             if(item.state === state) {
                 return newLocations.push(item);
             }
+            return item;
         })
-        setActiveLocations(newLocations);
+        return setActiveLocations(newLocations);
     }
 
     return (

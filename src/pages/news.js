@@ -17,11 +17,11 @@ const NewsPage = ({data}) => {
 
   const recentPosts = data.recent.edges;
   const charterNews = data.charterNews.edges;
-  const healthPosts = data.health.edges;
-  const researchPosts = data.research.edges;
+  // const healthPosts = data.health.edges;
+  // const researchPosts = data.research.edges;
   const categories = data.categories.group;
 
-  
+
   useEffect(() => {
     AOS.init();
     AOS.refresh();
@@ -31,7 +31,7 @@ const NewsPage = ({data}) => {
       <Layout>
         <SEO title='News' />
         <div className='NewsPage'>
-          <HeaderStrip2 
+          <HeaderStrip2
               title='News Archive'
               headline='Stay up to date with our company and industry!'
               image={archiveHeader}
@@ -46,14 +46,14 @@ const NewsPage = ({data}) => {
               <div className="left">
               </div>
               <div className="right"></div>
-            </div>      
+            </div>
           </div>
           <div className='NewsArchive'>
               <div className='top-block'>
                 <RecentGrid posts={recentPosts} />
               </div>
-              
-              <div className='bottom-block'>  
+
+              <div className='bottom-block'>
                 <CategoryNav categories={categories} />
                 <PostStrip posts={charterNews} title='Charter News' link='/categories/charter-news' />
                 {/* <PostStrip posts={healthPosts} title='Health' link='/categories/health' />

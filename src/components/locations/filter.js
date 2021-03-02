@@ -13,10 +13,30 @@ const Filter = (props) => {
 
     return (
         <ul className='Filter'>
-            <li className={`${isActive === 'all' ? 'active' : ''}`} onClick={() => handleClick('all')} key='all'>All</li>
+            <li 
+            className={`${isActive === 'all' ? 'active' : ''}`} 
+            key='all'
+            >
+                <button
+                onClick={() => handleClick('all')} 
+                onKeyPress={() => handleClick('all')} 
+                >
+                    All
+                </button>
+            </li>
             {props.allStates.map(locationState => {
                 return (
-                    <li className={`${isActive === locationState ? 'active' : ''}`} onClick={() => {handleClick(locationState)}} key={locationState}>{locationState}</li>
+                    <li 
+                    className={`${isActive === locationState ? 'active' : ''}`} 
+                    key={locationState}
+                    >
+                        <button
+                        onClick={() => {handleClick(locationState)}} 
+                        onKeyPress={() => handleClick('all')} 
+                        >
+                            {locationState}
+                        </button>
+                    </li>
                 )
             })}
         </ul>
