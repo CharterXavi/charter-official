@@ -76,7 +76,7 @@ const Category = ({ pageContext, data }) => {
       return setPosts(newPostList);
     }
     renderInitialPosts();
-  });
+  }, []);
 
   //write a function that will update state to show 6 more posts
   const showMorePosts = (clickCount, isFinished) => {
@@ -142,7 +142,7 @@ const Category = ({ pageContext, data }) => {
 }
 Category.propTypes = {
   pageContext: PropTypes.shape({
-    tag: PropTypes.string.isRequired,
+    category: PropTypes.string.isRequired,
   }),
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
