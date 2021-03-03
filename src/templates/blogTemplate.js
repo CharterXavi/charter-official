@@ -92,14 +92,14 @@ const BlogTemplate = (props) => {
               <ClockIcon />
               <h6 className='detail-title'>Recent Posts</h6>
                 {recentPosts.map(post => {
-                  return <p className='detail-text'><Link to={post.node.frontmatter.slug} key={post.node.frontmatter.title} >{post.node.frontmatter.title}</Link></p>
+                  return <p className='detail-text' key={post.node.frontmatter.title}><Link to={post.node.frontmatter.slug}>{post.node.frontmatter.title}</Link></p>
                 })}
             </div>
             <div className='related'>
               <HeartIcon />
               <h6 className='detail-title'>Related Posts</h6>
                 {relatedPosts.map(post => {
-                  return <p className='detail-text'><Link to={post.node.frontmatter.slug} key={post.node.frontmatter.title} >{post.node.frontmatter.title}</Link></p>
+                  return <p className='detail-text' key={post.node.frontmatter.title}><Link to={post.node.frontmatter.slug}>{post.node.frontmatter.title}</Link></p>
                 })}
             </div>
             <div className='share'>

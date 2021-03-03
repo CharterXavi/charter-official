@@ -7,7 +7,7 @@
 
 import "./layout.css"
 
-import Chatbot from './chatbot/chatbot';
+// import Chatbot from './chatbot/chatbot';
 import Footer from "./footer/footer"
 import Header from "./header/header"
 import PropTypes from "prop-types"

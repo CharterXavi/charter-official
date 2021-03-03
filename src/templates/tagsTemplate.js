@@ -1,17 +1,18 @@
 import './tagsTemplate.css';
-import React, {useState, useEffect} from "react";
-import PropTypes from "prop-types";
-// Components
-import { graphql } from "gatsby";
-import Layout from '../components/layout';
-import HeaderStrip2 from '../components/header-strip/header-strip2';
-import archiveHeader from '../images/headers/archive.png';
+
+import React, {useEffect, useState} from "react";
+
 import ButtonPrimaryAlt from '../components/buttons/button-primary-alt';
 import ButtonSecondary from '../components/buttons/button-secondary';
+import HeaderStrip2 from '../components/header-strip/header-strip2';
+import Layout from '../components/layout';
 import PostLink from '../components/news/post-link';
-import ShowMoreButton from '../components/buttons/show-more';
+import PropTypes from "prop-types";
 import SEO from '../components/seo';
-
+import ShowMoreButton from '../components/buttons/show-more';
+import archiveHeader from '../images/headers/archive.png';
+// Components
+import { graphql } from "gatsby";
 
 const Tags = ({ pageContext, data }) => {
   const { tag } = pageContext
@@ -44,22 +45,39 @@ const Tags = ({ pageContext, data }) => {
   const allPosts = data.allMarkdownRemark.edges;
   const newPostList = [];
 
-  //defining your own mountEffect function using useEffect with empty array arg gets rid of ESLint error for missing dependencies
-  const useMountEffect = (func) => useEffect(func, [])
-  const renderInitialPosts = () => {
-    for (let i = 0; i < 6; i++) {
-      //if this post exists, push it to the new list - helps avoid pushing 'undefined' nodes to list
-      if(allPosts[i]) {
-        newPostList.push(allPosts[i]);
+  // //defining your own mountEffect function using useEffect with empty array arg gets rid of ESLint error for missing dependencies
+  // const useMountEffect = (func) => useEffect(func, [])
+  // const renderInitialPosts = () => {
+  //   for (let i = 0; i < 6; i++) {
+  //     //if this post exists, push it to the new list - helps avoid pushing 'undefined' nodes to list
+  //     if(allPosts[i]) {
+  //       newPostList.push(allPosts[i]);
+  //     }
+  //     if(!allPosts[6]) {
+  //       //if there aren't enough posts, hide show more button
+  //       setHideShowMore(true);
+  //     }
+  //   }
+  //   return setPosts(newPostList);
+  // }
+  // useMountEffect(renderInitialPosts);
+
+  useEffect(() => {
+    const renderInitialPosts = () => {
+      for (let i = 0; i < 6; i++) {
+        //if this post exists, push it to the new list - helps avoid pushing 'undefined' nodes to list
+        if(allPosts[i]) {
+          newPostList.push(allPosts[i]);
+        }
+        if(!allPosts[6]) {
+          //if there aren't enough posts, hide show more button
+          setHideShowMore(true);
+        }
       }
-      if(!allPosts[6]) {
-        //if there aren't enough posts, hide show more button
-        setHideShowMore(true);
-      }
+      return setPosts(newPostList);
     }
-    return setPosts(newPostList);
-  }
-  useMountEffect(renderInitialPosts);
+    renderInitialPosts();
+  }, []);
 
   //write a function that will update state to show 6 more posts
   const showMorePosts = (clickCount, isFinished) => {
