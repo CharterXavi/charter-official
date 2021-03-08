@@ -5,8 +5,42 @@ import React, {useState} from 'react'
 import ReCAPTCHA from 'react-google-recaptcha';
 
 const ContactForm = () => {
+  const formOptions = [
+    {
+      name: "default",
+      action: "https://formspree.io/f/mbjzqojd"
+    },
+    {
+      name: "communications",
+      action: "https://formspree.io/f/xwkwdzkg"
+    },
+    {
+      name: "human-resources",
+      action: "https://formspree.io/f/mleoyvdl"
+    },
+    {
+      name: "careers",
+      action: "https://formspree.io/f/myybqvzd"
+    },
+    {
+      name: "compliance", 
+      action: "https://formspree.io/f/mjvpqzkg"
+    },
+  ]
 
   const [status, setStatus] = useState("");
+  const [action, setAction] = useState(formOptions[0].action);
+
+  const handleChange = (ev) => {
+    ev.preventDefault();
+    
+    formOptions.forEach(department => {
+      if(department.name === ev.target.value) {
+        return setAction(department.action);
+      }
+      return;
+    });
+  }
 
   const submitForm = (ev) => {
     ev.preventDefault();
@@ -30,7 +64,7 @@ const ContactForm = () => {
   return (
     <form
       onSubmit={submitForm}
-      action="https://formspree.io/mbjzqojd"
+      action={action}
       method="POST"
     >
       <div className="headings">
@@ -47,12 +81,11 @@ const ContactForm = () => {
           <div className="department">
               <label htmlFor="department">
                 Last Name
-                <select type="select" name='department' id='department' defaultValue="default" required>
+                <select type="select" name='department' id='department' defaultValue="default" required onChange={handleChange}>
                   <option value="default" disabled hidden>Department to contact...</option>
                   <option value="communications">Communications</option>
                   <option value="human-resources">Human Resources</option>
                   <option value="careers">Careers/Recruitment</option>
-                  <option value="it">I.T.</option>
                   <option value="compliance">Corporate Compliance</option>
                 </select>
               </label>
