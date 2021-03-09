@@ -9,7 +9,7 @@ import HealthcareIcon from '../icons/healthcare';
 import HeartIcon from '../icons/heart';
 import HeroGraphic from '../icons/hero-graphic';
 import PlusSign from '../icons/plus-sign';
-import coverImage from '../../images/headers/cover5.jpg';
+import coverImage from '../../images/headers/cover5.png';
 
 const HeroStrip7 = () => {
     useEffect(() => {
