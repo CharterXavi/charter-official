@@ -27,7 +27,7 @@
     min-height: 100%;
     object-fit: cover;
     height: auto;
-    opacity: 10%; 
+    opacity: 0.15; 
     left: 0;
 }
 .Hero7 .animation {
