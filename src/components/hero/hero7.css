@@ -287,7 +287,9 @@
     .Hero7 .hero-content h1 {
         font-size: 3rem;
     }
-    
+    .Hero7 img {
+        display: none;
+    }
     /* -- VIDEO -- */
     .Hero7 .active {
         opacity: 1;
