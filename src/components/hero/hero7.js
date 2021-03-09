@@ -9,6 +9,7 @@ import HealthcareIcon from '../icons/healthcare';
 import HeartIcon from '../icons/heart';
 import HeroGraphic from '../icons/hero-graphic';
 import PlusSign from '../icons/plus-sign';
+import coverImage from '../../images/headers/cover5.jpg';
 
 const HeroStrip7 = () => {
     useEffect(() => {
@@ -28,6 +29,7 @@ const HeroStrip7 = () => {
 
     return (
         <div className='Hero7'>
+            <img src={coverImage} alt="nurse"/>
             <div className='hero-wrapper'>
                 <div className='hero-content'>
                     <h1>Post-acute care is complicated.</h1>

@@ -82,11 +82,11 @@ const ContactForm = () => {
               <label htmlFor="department">
                 Last Name
                 <select type="select" name='department' id='department' defaultValue="default" required onChange={handleChange}>
-                  <option value="default" disabled hidden>Department to contact...</option>
-                  <option value="communications">Communications</option>
-                  <option value="human-resources">Human Resources</option>
+                  <option value="default" disabled hidden>What can we help you with?</option>
+                  <option value="communications">General Inquiry</option>
                   <option value="careers">Careers/Recruitment</option>
-                  <option value="compliance">Corporate Compliance</option>
+                  <option value="human-resources">Human Resources</option>
+                  <option value="compliance">Complaints</option>
                 </select>
               </label>
           </div>
