@@ -8,6 +8,8 @@
     color: var(--heading-color);
     box-sizing: border-box;
     width: 100%;
+    position: relative;
+    z-index: 1;
 }
 .DataStrip h2 {
     color: var(--primary-accent);

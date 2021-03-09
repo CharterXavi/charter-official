@@ -6,6 +6,7 @@
     width: 1000px;
     min-height: 200px;
     margin: 32px 0 32px 0;
+    position: relative;
     z-index: 1;
 }
 .PostStrip h5 {
