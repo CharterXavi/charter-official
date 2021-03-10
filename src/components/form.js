@@ -85,6 +85,7 @@ const ContactForm = () => {
                   <option value="default" disabled hidden>What can we help you with?</option>
                   <option value="communications">General Inquiry</option>
                   <option value="careers">Careers/Recruitment</option>
+                  <option value="communications">Media/Press Requests</option>
                   <option value="human-resources">Human Resources</option>
                   <option value="compliance">Complaints</option>
                 </select>
