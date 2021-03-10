@@ -9,7 +9,7 @@ import HealthcareIcon from '../icons/healthcare';
 import HeartIcon from '../icons/heart';
 import HeroGraphic from '../icons/hero-graphic';
 import PlusSign from '../icons/plus-sign';
-import coverImage from '../../images/headers/cover5.png';
+import coverImage from '../../images/headers/cover5.webp';
 
 const HeroStrip7 = () => {
     useEffect(() => {
@@ -62,11 +62,6 @@ const HeroStrip7 = () => {
                 <HeartIcon />
                 <HealthcareIcon />
                 <PlusSign />
-                <HeartIcon />
-                <HealthcareIcon />
-                <HeartIcon />
-                <PlusSign />
-                <HealthcareIcon />
             </div>
 
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1430 187" fill="none" className='hero-wave'>
