@@ -4,6 +4,7 @@ module.exports = {
     description: `Official website for Charter Healthcare Group.`,
     author: `Branon Eusebio`,
     url: 'https://charterhcg.com/',
+    siteUrl: 'https://charterhcg.com/',
     twitterHandle: '@charterhcg',
     facebookHandle: '@charterhcg',
     instagramHandle: '@charterhcg',
