@@ -31,9 +31,10 @@
     left: 0;
 }
 .Hero7 .animation {
-    width: 100%;
+    width: 50%;
     position: absolute;
     bottom: 0;
+    right: 0;
     z-index: -1;
     display: flex;
     justify-content: space-evenly;
@@ -89,12 +90,12 @@
         bottom: 0px;
     }
     33% {
-        opacity: 0.75;
+        opacity: 0.35;
         bottom: 100px;
     }
     100% {
         opacity: 0;
-        bottom: 300px;
+        bottom: 600px;
     }
 }
 
@@ -152,13 +153,13 @@
 /* -- GRAPHIC --*/
 .Hero7 .hero-wrapper .hero-assets .hero-graphic {
     position: absolute;
-    opacity: 1;
+    opacity: 0.4;
     transition: 0.5s ease all;
     padding: 0 16px 0 0;
     height: auto;
-    width: 1000px;
-    right: -400px;
-    top: 50px;
+    width: 900px;
+    right: -300px;
+    top: 100px;
 }
 .Hero7 .hero-wrapper .hero-assets .active-graphic {
     opacity: 0;
@@ -222,6 +223,7 @@
         width: 400px;
         height: auto;
         padding: 0;
+        opacity: 1;
     }
     .Hero7 .hero-wrapper .hero-content {
         width: 650px;
@@ -237,6 +239,9 @@
     .Hero7 .hero-wrapper .hero-assets .active-graphic {
         opacity: 0;
         transform: translateY(150px);
+    }
+    .Hero7 .animation {
+        width: 100%;
     }
     /* -- VIDEO -- */
     .Hero7 .active {

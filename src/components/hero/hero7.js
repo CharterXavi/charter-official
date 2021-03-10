@@ -62,11 +62,6 @@ const HeroStrip7 = () => {
                 <HeartIcon />
                 <HealthcareIcon />
                 <PlusSign />
-                <HeartIcon />
-                <HealthcareIcon />
-                <HeartIcon />
-                <PlusSign />
-                <HealthcareIcon />
             </div>
 
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1430 187" fill="none" className='hero-wave'>
