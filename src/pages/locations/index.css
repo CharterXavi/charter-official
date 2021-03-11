@@ -17,7 +17,7 @@
 .location-page .two-column img {
     width: 100%;
 }
-.location-page .two-column .map-container {
+.location-page .two-column .left.map-container {
     padding: 0;
     margin: 16px 16px 32px 0;
     height: 450px;
