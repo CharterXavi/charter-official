@@ -16,7 +16,7 @@
     position: absolute;
     width: 100%;
     min-height: 100%;
-    opacity: 0.45;
+    opacity: 0.25;
     object-fit: cover;
 }
 .HeaderStrip2 .header-wave {

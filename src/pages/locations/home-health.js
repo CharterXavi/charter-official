@@ -12,10 +12,10 @@ import SEO from "../../components/seo";
 import ServicesStrip2 from '../../components/services/services2';
 import SmallMap from '../../components/locations/small-map';
 import TestimonialsStrip from '../../components/testimonials/testimonials';
-import aboutImage from '../../images/home-health.png'
+import aboutImage from '../../images/covina-home-health-about.png'
 // import businessImage from '../../images/hiring.png';
 import {graphql} from 'gatsby';
-import homeHealthLocation from '../../images/headers/home-health-location.png';
+import headerImage from '../../images/headers/covina-home-health.png';
 
 const HomeHealthPage = ({ data }) => {
 
@@ -30,7 +30,7 @@ const HomeHealthPage = ({ data }) => {
       <SEO title="Covina Home Health, Hospice, & Palliative Care" />
       <div className='HomeHealthPage location-page'>
         <HeaderStrip2
-            image={homeHealthLocation}
+            image={headerImage}
             title='Charter Home Health'
             headline='Covina Home Health, Hospice, & Palliative Care'
         />
