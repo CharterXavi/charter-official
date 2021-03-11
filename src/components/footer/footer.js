@@ -3,6 +3,7 @@ import './footer.css';
 import ContactForm from '../form';
 import {Link} from 'gatsby';
 import React from 'react';
+import compass from '../../images/charter-compass-v6-white.webp'
 import facebook from '../../images/iconography/facebook.png';
 import instagram from '../../images/iconography/instagram.png';
 import linkedin from '../../images/iconography/linkedin.png';
@@ -11,7 +12,7 @@ import twitter from '../../images/iconography/twitter.png';
 const Footer = () => {
   return (
     <footer className='Footer'>
-        <hr/>
+        <img src={compass} alt="Charter Compass" className='logo'/>
         <div className='content-wrapper'>
             <div className='left'>
                 <ContactForm />

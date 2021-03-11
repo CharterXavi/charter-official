@@ -9,10 +9,20 @@
     background: var(--heading-color);
     position: relative;
     z-index: 1;
+    overflow: hidden;
 }
 .Footer hr {
     width: 70%;
     border: 1px solid var(--heading-color);
+}
+.Footer .logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 900px;
+    filter: grayscale(100%) contrast(200%);
+    opacity: 0.10;
 }
 .Footer .content-wrapper {
     display: flex;
