@@ -23,27 +23,6 @@
     width: 900px;
     filter: grayscale(100%) contrast(200%);
     opacity: 0.10;
-    animation: rotate2 12s infinite linear;
-}
-
-@keyframes rotate2 {
-    0% { transform: rotate(0deg); }
-    5% { transform: rotate(10deg); }
-    6% { transform: rotate(12deg); }
-    7% { transform: rotate(12deg); }
-    8% { transform: rotate(13deg); }
-    9% { transform: rotate(14deg); }
-    20% { transform: rotate(-185deg); }
-    21% { transform: rotate(-176deg); }
-    23% { transform: rotate(-182deg); }
-    25% { transform: rotate(-179deg); }
-    30% { transform: rotate(-180deg); }
-    35% { transform: rotate(5deg); }
-    36% { transform: rotate(-4deg); }
-    37% { transform: rotate(2deg); }
-    39% { transform: rotate(-1deg); }
-    41% { transform: rotate(0deg); }
-    100% { transform: rotate(0deg); }
 }
 .Footer .content-wrapper {
     display: flex;
