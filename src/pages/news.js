@@ -17,7 +17,7 @@ const NewsPage = ({data}) => {
 
   const recentPosts = data.recent.edges;
   const charterNews = data.charterNews.edges;
-  // const healthPosts = data.health.edges;
+  const healthcarePosts = data.healthcare.edges;
   // const researchPosts = data.research.edges;
   const categories = data.categories.group;
 
@@ -56,8 +56,8 @@ const NewsPage = ({data}) => {
               <div className='bottom-block'>
                 <CategoryNav categories={categories} />
                 <PostStrip posts={charterNews} title='Charter News' link='/categories/charter-news' />
-                {/* <PostStrip posts={healthPosts} title='Health' link='/categories/health' />
-                <PostStrip posts={researchPosts} title='Research' link='/categories/research' /> */}
+                <PostStrip posts={healthcarePosts} title='Healthcare' link='/categories/health' />
+                {/* <PostStrip posts={researchPosts} title='Research' link='/categories/research' /> */}
               </div>
 
           </div>
@@ -115,7 +115,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    health: allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {category: {eq: "Health"}}}, limit: 3) {
+    healthcare: allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {category: {eq: "Healthcare"}}}, limit: 3) {
       edges {
         node {
           id
