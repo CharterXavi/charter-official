@@ -1,19 +1,20 @@
 import './404.css';
 
+import ButtonPrimary from '../components/buttons/button-primary'
 import Layout from "../components/layout";
 import {Link} from 'gatsby';
 import React from "react";
 import SEO from "../components/seo";
-import errorImage from '../images/404.png';
+import compass from '../images/charter-compass-v6-white.webp'
 
 const NotFoundPage = () => (
   <Layout>
     <SEO title="404: Not found" />
     <div className='error-wrapper'>
-      <img src={errorImage} alt="Error - page not found" />
-      <h3>NOT FOUND</h3>
-      <h6>The page you're looking for doesn't seem to be available. We're sorry for the inconvenience!</h6>
-      <Link to='/'>Return Home</Link>
+      <img src={compass} alt="Charter Compass" className='logo'/>
+      <h3>404 | NOT FOUND</h3>
+      <h6 style={{color: 'white'}}>The page you're looking for doesn't seem to be available. We're sorry for the inconvenience!</h6>
+      <ButtonPrimary link='/' content='Return home' />
     </div>
   </Layout>
 )

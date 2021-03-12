@@ -7,10 +7,6 @@
     box-sizing: border-box;
     padding: 64px;
 }
-.error-wrapper img {
-    width: 600px;
-    height: auto;
-}
 .error-wrapper h1 {
     text-align:center;
 }
@@ -21,6 +17,73 @@
     color: white;
 }
 
+.error-wrapper img {
+    width: 600px;
+    height: auto;
+    animation: rotate2 10s infinite linear;
+}
+
+@keyframes rotate2 {
+    0% {
+        transform: rotate(0deg);
+        filter: grayscale(0%); 
+    }
+    5% {
+        transform: rotate(10deg);
+        filter: grayscale(0%); 
+    }
+    6% {
+        transform: rotate(12deg);
+        filter: grayscale(100%); 
+    }
+    7% {
+        transform: rotate(12deg);
+        filter: grayscale(0%); 
+    }
+    8% {
+        transform: rotate(13deg);
+        filter: grayscale(100%); 
+    }
+    9% { 
+        transform: rotate(14deg);
+        filter: grayscale(0%); 
+    }
+    20% {
+        transform: rotate(-185deg);
+        filter: grayscale(100%); 
+    }
+    21% { 
+        transform: rotate(-176deg);
+        filter: grayscale(0%); 
+    }
+    23% { 
+        transform: rotate(-182deg);
+        filter: grayscale(100%); 
+    }
+    25% { 
+        transform: rotate(-179deg);
+        filter: grayscale(0%); 
+    }
+    30% { transform: rotate(-180deg); }
+    35% { 
+        transform: rotate(5deg);
+        filter: grayscale(100%); 
+    }
+    36% {
+        transform: rotate(-4deg);
+        filter: grayscale(0%); 
+    }
+    37% { 
+        transform: rotate(2deg);
+        filter: grayscale(100%);
+    }
+    39% {
+        transform: rotate(-1deg);
+        filter: grayscale(0%);
+    }
+    41% { transform: rotate(0deg); }
+    100% { transform: rotate(0deg); }
+}
 @media only screen and (max-width: 650px) {
     .error-wrapper img {
         width: 90%;
