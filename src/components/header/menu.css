@@ -1,6 +1,6 @@
 .Menu {
     height: 0;
-    overflow-y: hidden;
+    overflow-y: scroll;
     text-align: center;
     width: 100%;
     transition: 0.4s ease all;
