@@ -1,4 +1,3 @@
-
 .SubMenu {
     height: 0;
     overflow-y: hidden;
@@ -18,7 +17,7 @@
 }
 .SubMenu ul {
     list-style: none;
-    height: 100vh;
+    height: auto;
     padding: 0 0 0 0;
     margin: 0 0 0 0;
 }
