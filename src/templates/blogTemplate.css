@@ -32,6 +32,13 @@
 .blog-post-container .blog-post .post-info p {
     padding: 4px 0 16px 0;
 }
+.blog-post-container .blog-post section p {
+    padding: 4px 0 16px 0;
+    box-sizing: border-box;
+}
+.blog-post-container .blog-post section p img {
+    width: 100%;
+}
 .blog-post-container .blog-post h2,
 .blog-post-container .blog-post h3,
 .blog-post-container .blog-post h4,

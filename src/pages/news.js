@@ -56,7 +56,7 @@ const NewsPage = ({data}) => {
               <div className='bottom-block'>
                 <CategoryNav categories={categories} />
                 <PostStrip posts={charterNews} title='Charter News' link='/categories/charter-news' />
-                <PostStrip posts={healthcarePosts} title='Healthcare' link='/categories/health' />
+                <PostStrip posts={healthcarePosts} title='Healthcare' link='/categories/healthcare' />
                 {/* <PostStrip posts={researchPosts} title='Research' link='/categories/research' /> */}
               </div>
 
