@@ -45,7 +45,7 @@ query {
             path
             city
             state
-            number
+            phone
             address
             coordinates {
               lat
