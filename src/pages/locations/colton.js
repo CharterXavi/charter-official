@@ -17,12 +17,12 @@ import aboutImage from '../../images/covina-home-health-about.png'
 import {graphql} from 'gatsby';
 import headerImage from '../../images/headers/covina-home-health.png';
 
-const HomeHealthPage = ({ data }) => {
+const ColtonPage = ({ data }) => {
 
   //Get/organize all the data from the graphQL Queries for posts and correct location data from gatsby.config
   const recentPosts = data.recent.edges;
   const locations = data.locations.edges[0].node.siteMetadata.locations;
-  const pageName = 'Charter Home Health';
+  const pageName = 'Charter Hospice of Colton';
   let pageLocation = {};
   for(let i = 0; i < locations.length; i++) {
     if(locations[i].name === pageName) {
@@ -174,7 +174,7 @@ const HomeHealthPage = ({ data }) => {
   )
 }
 
-export default HomeHealthPage
+export default ColtonPage;
 
 export const recentPostsQuery = graphql`
 query {

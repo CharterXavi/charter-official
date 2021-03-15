@@ -57,7 +57,7 @@ const AllLocations = (props) => {
                                 {location.address}
                             </p>
                             <p className="detail-text"> 
-                                <a href={`tel:${location.number}`}>{location.number}</a>
+                                <a href={`tel:${location.phone}`}>{location.phone}</a>
                             </p>
                             <a href={location.path} className='bottom-link'>View {location.city} page</a>
                         </div>

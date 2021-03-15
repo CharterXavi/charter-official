@@ -17,20 +17,21 @@ import aboutImage from '../../images/covina-home-health-about.png'
 import {graphql} from 'gatsby';
 import headerImage from '../../images/headers/covina-home-health.png';
 
-const HomeHealthPage = ({ data }) => {
+const TucsonPage = ({ data }) => {
 
   //Get/organize all the data from the graphQL Queries for posts and correct location data from gatsby.config
   const recentPosts = data.recent.edges;
   const locations = data.locations.edges[0].node.siteMetadata.locations;
-  const pageName = 'Charter Home Health';
+  const pageName = 'Charter Healthcare of Tucson';
   let pageLocation = {};
   for(let i = 0; i < locations.length; i++) {
     if(locations[i].name === pageName) {
       pageLocation = locations[i];
     }
   }
+  
   //Destructure the various properties of this page's location object for ease of use in JSX
-  const { name, address, city, phone, fax, state, coordinates, mapLink } = pageLocation;
+  const { name, address, city, phone, state, fax, coordinates, mapLink } = pageLocation;
 
 
   return (
@@ -174,7 +175,7 @@ const HomeHealthPage = ({ data }) => {
   )
 }
 
-export default HomeHealthPage
+export default TucsonPage
 
 export const recentPostsQuery = graphql`
 query {
