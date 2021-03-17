@@ -54,10 +54,12 @@ const AllLocations = (props) => {
                         <div className='card'>
                             <h6 className='detail-title'>{location.name}</h6>
                             <p className="detail-text">
-                                {location.address}
+                                {location.address.general}
+                                {location.address.homeHealth}
                             </p>
                             <p className="detail-text"> 
-                                <a href={`tel:${location.phone}`}>{location.phone}</a>
+                                <a href={`tel:${location.phone.general}`}>{location.phone.general}</a>
+                                <a href={`tel:${location.phone.homeHealth}`}>{location.phone.homeHealth}</a>
                             </p>
                             <a href={location.path} className='bottom-link'>View {location.city} page</a>
                         </div>

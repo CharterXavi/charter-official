@@ -128,7 +128,7 @@ const PhoenixPage = ({ data }) => {
                       {city}, {state}
                       <br/>
                       <a href={mapLink} target='_blank' rel='noopener noreferrer'>
-                        {address}
+                        {address.general}
                       </a>
                     </p>
                 </div>
@@ -148,8 +148,8 @@ const PhoenixPage = ({ data }) => {
                     <h6 className='detail-title'>Contact Information</h6>
                     <p className='detail-text'>
                       <ul>
-                        <li>Phone: <a href={`tel: ${phone}`}>{phone}</a></li>
-                        <li>Fax: <a href={`fax: ${fax}`}>{fax}</a></li>
+                        <li>Phone: <a href={`tel: ${phone.general}`}>{phone.general}</a></li>
+                        <li>Fax: <a href={`fax: ${fax.general}`}>{fax.general}</a></li>
                       </ul>
                     </p> 
                 </div>
@@ -206,12 +206,24 @@ query {
         siteMetadata {
           locations {
             name
-            address
+            address {
+              general
+              homeHealth
+              hospice
+            }
             city
             isClicked
             isExpanded
-            phone
-            fax
+            phone {
+              general
+              homeHealth
+              hospice
+            }
+            fax {
+              general
+              homeHealth
+              hospice
+            }
             path
             state
             coordinates {

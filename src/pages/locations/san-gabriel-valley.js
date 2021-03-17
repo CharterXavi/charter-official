@@ -17,12 +17,12 @@ import aboutImage from '../../images/covina-home-health-about.png'
 import {graphql} from 'gatsby';
 import headerImage from '../../images/headers/covina-home-health.png';
 
-const HomeHealthPage = ({ data }) => {
+const SanGabrielValleyPage = ({ data }) => {
 
   //Get/organize all the data from the graphQL Queries for posts and correct location data from gatsby.config
   const recentPosts = data.recent.edges;
   const locations = data.locations.edges[0].node.siteMetadata.locations;
-  const pageName = 'Charter Hospice of the San Gabriel Valley';
+  const pageName = 'Charter Healthcare of San Gabriel Valley';
   let pageLocation = {};
   for(let i = 0; i < locations.length; i++) {
     if(locations[i].name === pageName) {
@@ -36,7 +36,7 @@ const HomeHealthPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Covina Home Health, Hospice, & Palliative Care" />
-      <div className='HomeHealthPage location-page'>
+      <div className='location-page long-title'>
         <HeaderStrip2
             image={headerImage}
             title={name}
@@ -123,25 +123,30 @@ const HomeHealthPage = ({ data }) => {
             </div>
             <div className="right">
               <div className='card-wrapper'>
-                <div className='card'>  
+                <div className='card'>   
                     <h6 className='detail-title'>Our Office</h6>
                     <p className='detail-text'>
                       {city}, {state}
                       <br/>
-                      <a href={mapLink} target='_blank' rel='noopener noreferrer'>
-                        {address}
-                      </a>
+                      <p>
+                        Home Health: 
+                        <a href={mapLink} target='_blank' rel='noopener noreferrer'>
+                            {address.homeHealth}
+                        </a>
+                      </p>
+                      <p>
+                        Hospice: 
+                        <a href={mapLink} target='_blank' rel='noopener noreferrer'>
+                            {address.hospice}
+                        </a>
+                      </p>
                     </p>
                 </div>
                 <div className='card'>
                     <h6 className='detail-title'>Hours of Operation</h6>
                     <p className='detail-text'>
                       <ul>
-                        <li>M: 8:00 am - 5:00 pm</li>
-                        <li>Tu: 8:00 am - 5:00 pm</li>
-                        <li>W: 8:00 am - 5:00 pm</li>
-                        <li>Th: 8:00 am - 5:00 pm</li>
-                        <li>F: 8:00 am - 5:00 pm</li>
+                        <li>M-F: 8:00am - 5:00pm</li>
                       </ul>
                     </p>
                 </div>
@@ -149,8 +154,12 @@ const HomeHealthPage = ({ data }) => {
                     <h6 className='detail-title'>Contact Information</h6>
                     <p className='detail-text'>
                       <ul>
-                        <li>Phone: <a href={`tel: ${phone}`}>{phone}</a></li>
-                        <li>Fax: <a href={`fax: ${fax}`}>{fax}</a></li>
+                        Home Health
+                        <li>Phone: <a href={`tel: ${phone.homeHealth}`}>{phone.homeHealth}</a></li>
+                        <li>Fax: <a href={`fax: ${fax.homeHealth}`}>{fax.homeHealth}</a></li>
+                        Hospice
+                        <li>Phone: <a href={`tel: ${phone.hospice}`}>{phone.hospice}</a></li>
+                        <li>Fax: <a href={`fax: ${fax.hospice}`}>{fax.hospice}</a></li>
                       </ul>
                     </p> 
                 </div>
@@ -174,7 +183,7 @@ const HomeHealthPage = ({ data }) => {
   )
 }
 
-export default HomeHealthPage
+export default SanGabrielValleyPage
 
 export const recentPostsQuery = graphql`
 query {
@@ -207,12 +216,24 @@ query {
         siteMetadata {
           locations {
             name
-            address
+            address {
+              general
+              homeHealth
+              hospice
+            }
             city
             isClicked
             isExpanded
-            phone
-            fax
+            phone {
+              general
+              homeHealth
+              hospice
+            }
+            fax {
+              general
+              homeHealth
+              hospice
+            }
             path
             state
             coordinates {

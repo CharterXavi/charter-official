@@ -97,4 +97,7 @@
     width: auto;
     color: var(--heading-color);
 }
+.long-title .HeaderStrip2 .header-content h1 {
+    font-size: 4rem;
+}
 
