@@ -16,9 +16,21 @@ module.exports = {
         mapLink: 'https://goo.gl/maps/TnXuzuwG1Ec5TuWk6',
         city: 'Tempe',
         state: 'Arizona',
-        phone: '480-750-4008',
-        fax: '480-498-5245',
-        address: '1232 E. Broadway St. Ste. 210, Tempe, AZ 85282',
+        phone: {
+          general: '480-750-4008',
+          homeHealth: '',
+          hospice: ''
+        },
+        fax: {
+          general: '480-498-5245',
+          homeHealth: '',
+          hospice: ''
+        },
+        address: {
+          general: '1232 E. Broadway St. Ste. 210, Tempe, AZ 85282',
+          homeHealth: '',
+          hospice: ''
+        },
         coordinates: { lat: 33.408025, lng: -111.919244 },
         isClicked: false,
         isExpanded: false,
@@ -29,165 +41,271 @@ module.exports = {
         mapLink: 'https://goo.gl/maps/bPJTJV3wBqTp2c8y7',
         city: 'Tucson',
         state: 'Arizona',
-        phone: '623-256-8098',
-        fax: '888-509-0063',
-        address: '6400 E. Grant Rd., Ste. 150 Tucson, AZ 85715',
+        phone: {
+          general: '623-256-8098',
+          homeHealth: '',
+          hospice: ''
+        },
+        fax: {
+          general: '888-509-0063',
+          homeHealth: '',
+          hospice: ''
+        },
+        address: {
+          general: '6400 E. Grant Rd., Ste. 150 Tucson, AZ 85715',
+          homeHealth: '',
+          hospice: ''
+        },
         coordinates: { lat: 32.24938, lng: -110.855152 },
         isClicked: false,
         isExpanded: false,
       },
       {
-        name: 'Charter High Desert Healthcare Group',
+        name: 'Charter Healthcare of High Desert',
         path: '/locations/high-desert',
         mapLink: 'https://goo.gl/maps/ubdJLu7KBqoLm27t9',
         city: 'Apple Valley',
         state: 'California',
-        phone: '760-247-1161',
-        fax: '760-247-5502',
-        address: '19015 Town Center Dr. Ste. 104, Apple Valley, CA 92308',
+        phone: {
+          general: '760-247-1161',
+          homeHealth: '',
+          hospice: ''
+        },
+        fax: {
+          general: '760-247-5502',
+          homeHealth: '',
+          hospice: ''
+        },
+        address: {
+          general: '19015 Town Center Dr. Ste. 104, Apple Valley, CA 92308',
+          homeHealth: '',
+          hospice: ''
+        },
         coordinates: { lat: 34.465386, lng: -117.248551 },
         isClicked: false,
         isExpanded: false,
       },
       {
-        name: 'Charter Hospice of Colton',
-        path: '/locations/colton',
+        name: 'Charter Healthcare of San Bernardino',
+        path: '/locations/san-bernardino',
         mapLink: 'https://goo.gl/maps/7pNfrqqzGiZFG5PK6',
         city: 'Colton',
         state: 'California',
-        phone: '909-825-2969',
-        fax: '909-825-8751',
-        address: '1007 E. Cooley Dr. Ste. 100 Colton, CA 92324',
+        phone: {
+          general: '909-825-2969',
+          homeHealth: '',
+          hospice: ''
+        },
+        fax: {
+          general: '909-825-8751',
+          homeHealth: '',
+          hospice: ''
+        },
+        address: {
+          general: '1007 E. Cooley Dr. Ste. 100 Colton, CA 92324',
+          homeHealth: '',
+          hospice: ''
+        },
         coordinates: { lat: 34.05547, lng: -117.310526 },
         isClicked: false,
         isExpanded: false,
       },
       {
-        name: 'Charter Home Health',
-        path: '/locations/home-health',
+        name: 'Charter Healthcare of San Gabriel Valley',
+        path: '/locations/san-gabriel-valley',
         mapLink: 'https://goo.gl/maps/pgsmZruf97YpLHWM7',
         city: 'Covina',
         state: 'California',
-        phone: '626-915-7490',
-        fax: '626-915-6050',
-        address: '970 S. Village Oaks Dr. Ste. 102, Covina, CA 91724',
+        phone: {
+          general: '',
+          homeHealth: '626-915-7490',
+          hospice: '626-331-8001'
+        },
+        fax: {
+          general: '',
+          homeHealth: '626-915-6050',
+          hospice: '626-331-8311'
+        },
+        address: {
+          general: '',
+          homeHealth: '970 S. Village Oaks Dr. Ste. 102, Covina, CA 91724',
+          hospice: '970 S. Village Oaks Dr. Ste. 106, Covina, CA 91724'
+        },
         coordinates: { lat: 34.071759, lng: -117.862599 },
         isClicked: false,
         isExpanded: false,
       },
       {
-        name: 'Charter Hospice of the San Gabriel Valley',
-        path: '/locations/san-gabriel-valley',
-        mapLink: 'https://goo.gl/maps/xXV8aS71NNM8oKP8A',
-        city: 'Covina',
-        state: 'California',
-        phone: '626-331-8001',
-        fax: '626-331-8311',
-        address: '970 S. Village Oaks Dr. Ste. 106, Covina, CA 91724',
-        coordinates: { lat: 34.071759, lng: -117.862599 },
-        isClicked: false,
-        isExpanded: false,
-      },
-      {
-        name: 'Charter Home Health of the Desert',
-        path: '/locations/home-health-desert',
+        name: 'Charter Healthcare of Palm Desert',
+        path: '/locations/palm-desert',
         mapLink: 'https://goo.gl/maps/J6c31pFG1oehbkCf6',
         city: 'Palm Desert',
         state: 'California',
-        phone: '760-568-2400',
-        fax: '760-568-2439',
-        address: '72855 Fred Waring Dr. Ste. A4, Palm Desert, CA 92260',
+        phone: {
+          general: '',
+          homeHealth: '760-568-2400',
+          hospice: '760-568-2002'
+        },
+        fax: {
+          general: '',
+          homeHealth: '760-568-2439',
+          hospice: '760-568-2043'
+        },
+        address: {
+          general: '',
+          homeHealth: '72855 Fred Waring Dr. Ste. A4, Palm Desert, CA 92260',
+          hospice: '72855 Fred Waring Dr. Ste. A5, Palm Desert, CA 92260'
+        },
         coordinates: { lat: 33.728698, lng: -116.394019 },
         isClicked: false,
         isExpanded: false,
       },
       {
-        name: 'Charter Hospice of the Desert',
-        path: '/locations/hospice-desert',
-        mapLink: 'https://goo.gl/maps/3jKQiq6x6XzjokTX7',
-        city: 'Palm Desert',
-        state: 'California',
-        phone: '760-568-2002',
-        fax: '760-568-2043',
-        address: '72855 Fred Waring Dr. Ste. A5, Palm Desert, CA 92260',
-        coordinates: { lat: 33.728114, lng: -116.394997 },
-        isClicked: false,
-        isExpanded: false,
-      },
-      {
-        name: 'Cambridge Hospice',
-        path: '/locations/cambridge-hospice',
+        name: 'Cambridge Hospice of Rancho Cucamonga',
+        path: '/locations/rancho-cucamonga',
         mapLink: 'https://goo.gl/maps/dteVihQGcRe4RYsA9',
         city: 'Rancho Cucamonga',
         state: 'California',
-        phone: '866-669-1686',
-        fax: '909-532-8685',
-        address: '9229 Utica Ave. Ste. 100, Rancho Cucamonga, CA 91730',
+        phone: {
+          general: '866-669-1686',
+          homeHealth: '',
+          hospice: ''
+        },
+        fax: {
+          general: '909-532-8685',
+          homeHealth: '',
+          hospice: ''
+        },
+        address: {
+          general: '9229 Utica Ave. Ste. 100, Rancho Cucamonga, CA 91730',
+          homeHealth: '',
+          hospice: ''
+        },
         coordinates: { lat: 34.085486, lng: -117.57063 },
         isClicked: false,
         isExpanded: false,
       },
       {
         name: 'Cambridge Hospice of Riverside',
-        path: '/locations/cambridge-hospice-riverside',
+        path: '/locations/riverside',
         mapLink: 'https://goo.gl/maps/qrBbH7kDsYASQJMj8',
         city: 'Riverside',
         state: 'California',
-        phone: '951-509-9474',
-        fax: '951-509-9471',
-        address: '6560 Van Buren Blvd. Ste. G, Riverside, CA 92503',
+        phone: {
+          general: '951-509-9474',
+          homeHealth: '',
+          hospice: ''
+        },
+        fax: {
+          general: '951-509-9471',
+          homeHealth: '',
+          hospice: ''
+        },
+        address: {
+          general: '6560 Van Buren Blvd. Ste. G, Riverside, CA 92503',
+          homeHealth: '',
+          hospice: ''
+        },
         coordinates: { lat: 33.949954, lng: -117.454308 },
         isClicked: false,
         isExpanded: false,
       },
       {
-        name: 'Charter Hospice of San Diego',
-        path: '/locations/hospice-san-diego',
+        name: 'Charter Healthcare of San Diego',
+        path: '/locations/san-diego',
         mapLink: 'https://goo.gl/maps/V3rCjhb33ruM5m2S8',
         city: 'San Diego',
         state: 'California',
-        phone: '760-414-9717',
-        fax: '760-414-9717',
-        address: '16955 Via Del Campo Ste. 100, San Diego, CA 92127',
+        phone: {
+          general: '760-414-9717',
+          homeHealth: '',
+          hospice: ''
+        },
+        fax: {
+          general: '760-414-9717',
+          homeHealth: '',
+          hospice: ''
+        },
+        address: {
+          general: '16955 Via Del Campo Ste. 100, San Diego, CA 92127',
+          homeHealth: '',
+          hospice: ''
+        },
         coordinates: { lat: 33.019872, lng: -117.092233 },
         isClicked: false,
         isExpanded: false,
       },
       {
-        name: 'Charter Hospice',
-        path: '/locations/hospice',
+        name: 'Charter Healthcare of Simi Valley',
+        path: '/locations/simi-valley',
         mapLink: 'https://goo.gl/maps/pnM4ynGSvZMVSXAt9',
         city: 'Simi Valley',
         state: 'California',
-        phone: '805-582-0033',
-        fax: '805-583-9455',
-        address: '5775 E Los Angeles Ave. Ste. 226, Simi Valley, CA 93063',
+        phone: {
+          general: '805-582-0033',
+          homeHealth: '',
+          hospice: ''
+        },
+        fax: {
+          general: '805-583-9455',
+          homeHealth: '',
+          hospice: ''
+        },
+        address: {
+          general: '5775 E Los Angeles Ave. Ste. 226, Simi Valley, CA 93063',
+          homeHealth: '',
+          hospice: ''
+        },
         coordinates: { lat: 34.272140, lng: -118.679840 },
         isClicked: false,
         isExpanded: false,
       },
       {
         name: 'Cambridge Hospice of Orange County',
-        path: '/locations/hospice-orange-county',
+        path: '/locations/orange-county',
         mapLink: 'https://goo.gl/maps/TNcvBzkHQBNwSS4QA',
         city: 'Stanton',
         state: 'California',
-        phone: '714-332-6052',
-        fax: '714-332-6038',
-        address: '12235 Beach Blvd. Ste. 200-B, Stanton, CA 90680',
+        phone: {
+          general: '714-332-6052',
+          homeHealth: '',
+          hospice: ''
+        },
+        fax: {
+          general: '714-332-6038',
+          homeHealth: '',
+          hospice: ''
+        },
+        address: {
+          general: '12235 Beach Blvd. Ste. 200-B, Stanton, CA 90680',
+          homeHealth: '',
+          hospice: ''
+        },
         coordinates: { lat: 33.784430, lng: -117.993590 },
         isClicked: false,
         isExpanded: false,
       },
       {
-        name: 'Vitality Home Healthcare',
-        path: '/locations/home-health-vitality',
+        name: 'Charter Healthcare of Fort Collins',
+        path: '/locations/fort-collins',
         mapLink: 'https://goo.gl/maps/EpZx2fVo8BXpkg1r8',
         city: 'Loveland',
         state: 'Colorado',
-        phone: '970-667-2273',
-        fax: '888-891-0585',
-        address: '1562 Taurus Ct., Loveland, CO 80537',
+        phone: {
+          general: '970-667-2273',
+          homeHealth: '',
+          hospice: ''
+        },
+        fax: {
+          general: '888-891-0585',
+          homeHealth: '',
+          hospice: ''
+        },
+        address: {
+          general: '1562 Taurus Ct., Loveland, CO 80537',
+          homeHealth: '',
+          hospice: ''
+        },
         coordinates: { lat: 40.401090, lng: -105.054930 },
         isClicked: false,
         isExpanded: false,
@@ -198,9 +316,21 @@ module.exports = {
         mapLink: 'https://goo.gl/maps/Ws4XjgwtM2r4ymU78',
         city: 'Omaha',
         state: 'Nebraska',
-        phone: '402-926-4088',
-        fax: '402-926-4197',
-        address: '4905 S 107th Ave, Omaha, NE 68127',
+        phone: {
+          general: '402-926-4088',
+          homeHealth: '',
+          hospice: ''
+        },
+        fax: {
+          general: '402-926-4197',
+          homeHealth: '',
+          hospice: ''
+        },
+        address: {
+          general: '4905 S 107th Ave, Omaha, NE 68127',
+          homeHealth: '',
+          hospice: ''
+        },
         coordinates: { lat: 41.210443, lng: -96.0788 },
         isClicked: false,
         isExpanded: false,
@@ -211,9 +341,21 @@ module.exports = {
         mapLink: 'https://goo.gl/maps/Ws4XjgwtM2r4ymU78',
         city: 'Omaha',
         state: 'Nebraska',
-        phone: '402-597-2585',
-        fax: '402-597-2644',
-        address: '4905 S 107th Ave, Omaha, NE 68127',
+        phone: {
+          general: '402-597-2585',
+          homeHealth: '',
+          hospice: ''
+        },
+        fax: {
+          general: '402-597-2644',
+          homeHealth: '',
+          hospice: ''
+        },
+        address: {
+          general: '4905 S 107th Ave, Omaha, NE 68127',
+          homeHealth: '',
+          hospice: ''
+        },
         coordinates: { lat: 41.210443, lng: -96.0788 },
         isClicked: false,
         isExpanded: false,
@@ -224,22 +366,46 @@ module.exports = {
         mapLink: 'https://goo.gl/maps/FgQoN7QNy7xuFJhu5',
         city: 'Henderson',
         state: 'Nevada',
-        phone: '702-818-3178',
-        fax: '702-818-5227',
-        address: '2739 Sunridge Heights Parkway, Ste. 110, Henderson, NV 89044',
+        phone: {
+          general: '702-818-3178',
+          homeHealth: '',
+          hospice: ''
+        },
+        fax: {
+          general: '702-818-5227',
+          homeHealth: '',
+          hospice: ''
+        },
+        address: {
+          general: '2739 Sunridge Heights Parkway, Ste. 110, Henderson, NV 89044',
+          homeHealth: '',
+          hospice: ''
+        },
         coordinates: { lat: 36.161930, lng: -115.171330 },
         isClicked: false,
         isExpanded: false,
       },
       {
-        name: 'Charter Healthcare of West Jordan',
-        path: '/locations/west-jordan',
+        name: 'Charter Healthcare of Salt Lake City',
+        path: '/locations/salt-lake-city',
         mapLink: 'https://goo.gl/maps/y3aa8qjHYBQMzV83A', 
         city: 'West Jordan',
         state: 'Utah',
-        phone: '801-261-9490',
-        fax: '801-261-5856',
-        address: '6671 S. Redwood Rd. Ste. 101, West Jordan, UT 84084',
+        phone: {
+          general: '801-261-9490',
+          homeHealth: '',
+          hospice: ''
+        },
+        fax: {
+          general: '801-261-5856',
+          homeHealth: '',
+          hospice: ''
+        },
+        address: {
+          general: '6671 S. Redwood Rd. Ste. 101, West Jordan, UT 84084',
+          homeHealth: '',
+          hospice: ''
+        },
         coordinates: { lat: 40.630240, lng: -111.938240 },
         isClicked: false,
         isExpanded: false,

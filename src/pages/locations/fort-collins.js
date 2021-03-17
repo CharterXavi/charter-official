@@ -17,12 +17,12 @@ import aboutImage from '../../images/covina-home-health-about.png'
 import {graphql} from 'gatsby';
 import headerImage from '../../images/headers/covina-home-health.png';
 
-const HospiceSanDiegoPage = ({ data }) => {
+const FortCollinsPage = ({ data }) => {
 
   //Get/organize all the data from the graphQL Queries for posts and correct location data from gatsby.config
   const recentPosts = data.recent.edges;
   const locations = data.locations.edges[0].node.siteMetadata.locations;
-  const pageName = 'Charter Hospice of San Diego';
+  const pageName = 'Charter Healthcare of Fort Collins';
   let pageLocation = {};
   for(let i = 0; i < locations.length; i++) {
     if(locations[i].name === pageName) {
@@ -129,7 +129,7 @@ const HospiceSanDiegoPage = ({ data }) => {
                       {city}, {state}
                       <br/>
                       <a href={mapLink} target='_blank' rel='noopener noreferrer'>
-                        {address}
+                        {address.general}
                       </a>
                     </p>
                 </div>
@@ -149,8 +149,8 @@ const HospiceSanDiegoPage = ({ data }) => {
                     <h6 className='detail-title'>Contact Information</h6>
                     <p className='detail-text'>
                       <ul>
-                        <li>Phone: <a href={`tel: ${phone}`}>{phone}</a></li>
-                        <li>Fax: <a href={`fax: ${fax}`}>{fax}</a></li>
+                        <li>Phone: <a href={`tel: ${phone.general}`}>{phone.general}</a></li>
+                        <li>Fax: <a href={`fax: ${fax.general}`}>{fax.general}</a></li>
                       </ul>
                     </p> 
                 </div>
@@ -174,7 +174,7 @@ const HospiceSanDiegoPage = ({ data }) => {
   )
 }
 
-export default HospiceSanDiegoPage;
+export default FortCollinsPage;
 
 export const recentPostsQuery = graphql`
 query {
@@ -207,11 +207,24 @@ query {
         siteMetadata {
           locations {
             name
-            address
+            address {
+              general
+              homeHealth
+              hospice
+            }
             city
             isClicked
             isExpanded
-            phone
+            phone {
+              general
+              homeHealth
+              hospice
+            }
+            fax {
+              general
+              homeHealth
+              hospice
+            }
             path
             state
             coordinates {

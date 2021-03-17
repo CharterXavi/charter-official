@@ -45,8 +45,16 @@ query {
             path
             city
             state
-            phone
-            address
+            phone {
+              general
+              homeHealth
+              hospice
+            }
+            address {
+              general
+              homeHealth
+              hospice
+            }
             coordinates {
               lat
               lng
