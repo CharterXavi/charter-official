@@ -35,39 +35,38 @@ const PhysMedPage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Covina Home Health, Hospice, & Palliative Care" />
-      <div className='HomeHealthPage location-page'>
+      <SEO title="Omaha Home Health, Hospice, & Palliative Care" />
+      <div className='location-page'>
         <HeaderStrip2
             image={headerImage}
             title={name}
-            headline='High Desert Home Health & Hospice Care'
+            headline='The leading home health and hospice care provider in Omaha'
         />
 
         {/*-------------- TOP TEXT BLOCK -------------- */}
         <div className="two-column">
           <div className="title">
-            <h4>Additional Text Block</h4>
+            <h4>Delivering the highest quality healthcare in the Omaha area.</h4>
             <hr/>
           </div>
           <div className="content">
             <div className="left">
-              <h6>Information</h6>
+              <h6>Compassionate and Experienced Healthcare</h6>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                PhysMed Home Health of Omaha is dedicated to providing you or your loved ones with the best
+                healthcare available. Our caring and compassionate staff have years of experience in providing services
+                that allow our patients to live their best lives every day. We treat each of our clients with the respect
+                and compassion they deserve while administering expert care services in a professional manner at all
+                times. Contact us today to learn how we can help.
               </p>
             </div>
             <div className="right">
-              <h6>Information</h6>
+              <h6>Quality Healthcare Services</h6>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                PhysMed Home Health of Omaha is a premier provider of a variety of healthcare services including
+                skilled home health, hospice care, and palliative care. Our staff is adept in utilizing proven and modern
+                techniques to best allow our clients to fully live their best lives. If you are searching for the perfect
+                healthcare provider, look no further and contact us today.
               </p>
             </div>
           </div>
@@ -84,21 +83,19 @@ const PhysMedPage = ({ data }) => {
               <div className='left'>
                 <h6>Our Commitment</h6>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                  voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                  non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  We're committed to instilling compassion and sensitivity in our teams for our patients, families,
+                  and peers. We believe in the power of genuinely being there for those that depend on us and our
+                  services. Our commitment to our clients and their wellbeing is what separates us from our competitors
+                  as we continue to enhance the lives of our clients every day.
                 </p>
               </div> 
               <div className='right'>   
                 <h6>Our Values</h6>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                  voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                  non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  At Charter Healthcare, we instill our values into each and every one of our caregivers. We believe
+                  in integrity, respect, compassion, and service to others. We hold ourselves accountable to ethical
+                  standards that are beyond reproach. We believe our clients and employees are to be treated with
+                  dignity and courtesy at all times as we create a warm and caring environment.
                 </p>
               </div>
           </div>
