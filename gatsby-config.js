@@ -14,7 +14,7 @@ module.exports = {
         name: 'Charter Healthcare of Phoenix',
         path: '/locations/phoenix',
         mapLink: 'https://goo.gl/maps/TnXuzuwG1Ec5TuWk6',
-        city: 'Tempe',
+        city: 'Phoenix',
         state: 'Arizona',
         phone: {
           general: '480-750-4008',
@@ -64,7 +64,7 @@ module.exports = {
         name: 'Charter Healthcare of High Desert',
         path: '/locations/high-desert',
         mapLink: 'https://goo.gl/maps/ubdJLu7KBqoLm27t9',
-        city: 'Apple Valley',
+        city: 'High Desert',
         state: 'California',
         phone: {
           general: '760-247-1161',
@@ -89,7 +89,7 @@ module.exports = {
         name: 'Charter Healthcare of San Bernardino',
         path: '/locations/san-bernardino',
         mapLink: 'https://goo.gl/maps/7pNfrqqzGiZFG5PK6',
-        city: 'Colton',
+        city: 'San Bernardino',
         state: 'California',
         phone: {
           general: '909-825-2969',
@@ -114,7 +114,7 @@ module.exports = {
         name: 'Charter Healthcare of San Gabriel Valley',
         path: '/locations/san-gabriel-valley',
         mapLink: 'https://goo.gl/maps/pgsmZruf97YpLHWM7',
-        city: 'Covina',
+        city: 'San Gabriel Valley',
         state: 'California',
         phone: {
           general: '',
@@ -264,7 +264,7 @@ module.exports = {
         name: 'Cambridge Hospice of Orange County',
         path: '/locations/orange-county',
         mapLink: 'https://goo.gl/maps/TNcvBzkHQBNwSS4QA',
-        city: 'Stanton',
+        city: 'Orange County',
         state: 'California',
         phone: {
           general: '714-332-6052',
@@ -289,7 +289,7 @@ module.exports = {
         name: 'Charter Healthcare of Fort Collins',
         path: '/locations/fort-collins',
         mapLink: 'https://goo.gl/maps/EpZx2fVo8BXpkg1r8',
-        city: 'Loveland',
+        city: 'Fort Collins',
         state: 'Colorado',
         phone: {
           general: '970-667-2273',
@@ -364,7 +364,7 @@ module.exports = {
         name: 'Charter Healthcare of Las Vegas',
         path: '/locations/las-vegas',
         mapLink: 'https://goo.gl/maps/FgQoN7QNy7xuFJhu5',
-        city: 'Henderson',
+        city: 'Las Vegas',
         state: 'Nevada',
         phone: {
           general: '702-818-3178',
@@ -389,7 +389,7 @@ module.exports = {
         name: 'Charter Healthcare of Salt Lake City',
         path: '/locations/salt-lake-city',
         mapLink: 'https://goo.gl/maps/y3aa8qjHYBQMzV83A', 
-        city: 'West Jordan',
+        city: 'Salt Lake City',
         state: 'Utah',
         phone: {
           general: '801-261-9490',
