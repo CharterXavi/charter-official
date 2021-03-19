@@ -7,6 +7,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const blogPostTemplate = path.resolve("./src/templates/blogTemplate.js")
   const tagTemplate = path.resolve("./src/templates/tagsTemplate.js")
   const categoryTemplate = path.resolve("./src/templates/categoryTemplate.js")
+  // const locationTemplate = path.resolve("./src/templates/locationTemplate.js")
 
   const result = await graphql(`
     {
@@ -78,4 +79,18 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       },
     })
   })
+
+  // // Programmaitcally create locations pages, help reference at: https://www.robinwieruch.de/gatsby-graphql
+  // const locations = result.data.locations.edges[0].node.siteMetadata.locations;
+  // locations.forEach(location => {
+
+    
+  //   createPage({
+  //     path: `/locations/${_.kebabCase(location.city)}/`,
+  //     component: locationTemplate, //render locationTemplate.js
+  //     context: {
+  //       location: location.name,
+  //     },
+  //   })
+  // })
 }
