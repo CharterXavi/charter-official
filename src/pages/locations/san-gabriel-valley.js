@@ -12,10 +12,10 @@ import SEO from "../../components/seo";
 import ServicesStrip2 from '../../components/services/services2';
 import SmallMap from '../../components/locations/small-map';
 import TestimonialsStrip from '../../components/testimonials/testimonials';
-import aboutImage from '../../images/covina-home-health-about.png'
+import aboutImage from '../../images/about-san-gabriel-valley.png'
 // import businessImage from '../../images/hiring.png';
 import {graphql} from 'gatsby';
-import headerImage from '../../images/headers/covina-home-health.png';
+import headerImage from '../../images/headers/san-gabriel-valley.png';
 
 const SanGabrielValleyPage = ({ data }) => {
 
