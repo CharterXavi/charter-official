@@ -3,25 +3,21 @@ import React from 'react';
 const GroupIcon = () => {
 
 return (
-  <svg width="50" height="51" viewBox="0 0 60 51" fill="none" xmlns="http://www.w3.org/2000/svg" className='icon'>
-    <g filter="url(#group)">
-      <path d="M41.2094 18.437C44.5733 11.7355 53.8887 11.7356 56.7351 18.4371C59.5814 25.1386 56.7351 37.3589 56.7351 37.3589H48.9723H41.2095C41.2095 37.3589 37.8455 25.1385 41.2094 18.437Z" fill="white"/>
-      <ellipse cx="48.8573" cy="7.18442" rx="6.53063" ry="7.18442" fill="white"/>
-      <path d="M3.49505 18.437C6.85892 11.7355 16.1744 11.7356 19.0207 18.4371C21.8671 25.1386 19.0207 37.359 19.0207 37.359H11.2579H3.49516C3.49516 37.359 0.131184 25.1385 3.49505 18.437Z" fill="#363F55"/>
-        <ellipse cx="11.1429" cy="7.18442" rx="6.53063" ry="7.18442" fill="#363F55"/>
-      <path fillRule="evenodd" clipRule="evenodd" d="M33.502 17.2909C36.4903 15.8789 38.5721 12.715 38.5721 9.03846C38.5721 4.04666 34.7345 0 30.0006 0C25.2667 0 21.4292 4.04666 21.4292 9.03846C21.4292 12.8402 23.6551 16.0938 26.8076 17.429C24.0327 18.3088 21.5149 20.2308 19.9627 23.195C15.5476 31.6259 19.9629 47 19.9629 47H30.1515H40.3401C40.3401 47 44.076 31.626 40.3401 23.1951C38.9531 20.0648 36.3956 18.0967 33.502 17.2909Z" fill="url(#group1)"/>
-    </g>
+  <svg className='icon' viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M10 13.75C12.0711 13.75 13.75 12.0711 13.75 10C13.75 7.92893 12.0711 6.25 10 6.25C7.92893 6.25 6.25 7.92893 6.25 10C6.25 12.0711 7.92893 13.75 10 13.75Z" fill="#282E3E"/>
+    <path d="M7.3 15C6.02975 15 5 16.0297 5 17.3V28.95C5 30.2203 6.02975 31.25 7.3 31.25H12.7C13.9703 31.25 15 30.2203 15 28.95V17.3C15 16.0297 13.9703 15 12.7 15H7.3Z" fill="#282E3E"/>
+    <path d="M30 13.75C32.0711 13.75 33.75 12.0711 33.75 10C33.75 7.92893 32.0711 6.25 30 6.25C27.9289 6.25 26.25 7.92893 26.25 10C26.25 12.0711 27.9289 13.75 30 13.75Z" fill="white"/>
+    <path d="M27.3 15C26.0297 15 25 16.0297 25 17.3V28.95C25 30.2203 26.0297 31.25 27.3 31.25H32.7C33.9703 31.25 35 30.2203 35 28.95V17.3C35 16.0297 33.9703 15 32.7 15H27.3Z" fill="white"/>
+    <path d="M20 15C22.7614 15 25 12.7614 25 10C25 7.23858 22.7614 5 20 5C17.2386 5 15 7.23858 15 10C15 12.7614 17.2386 15 20 15Z" fill="url(#group)"/>
+    <path d="M16.25 16.25C14.8693 16.25 13.75 17.3693 13.75 18.75V32.5C13.75 33.8807 14.8693 35 16.25 35H23.75C25.1307 35 26.25 33.8807 26.25 32.5V18.75C26.25 17.3693 25.1307 16.25 23.75 16.25H16.25Z" fill="url(#group1)"/>
     <defs>
-      <filter id="group" x="0" y="0" width="60.0001" height="51" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-        <feFlood floodOpacity="0" result="BackgroundImageFix"/>
-        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-        <feOffset dy="2"/>
-        <feGaussianBlur stdDeviation="1"/>
-        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-      </filter>
-      <linearGradient id="group1" x1="19.2862" y1="47" x2="50.9081" y2="39.9491" gradientUnits="userSpaceOnUse">
+      <linearGradient id="group" x1="14.4196" y1="35" x2="31.1543" y2="31.9553" gradientUnits="userSpaceOnUse">
+        <stop offset="0.109375" stopColor="#F14D70"/>
+        <stop offset="0.317708" stopColor="#FF008A"/>
+        <stop offset="0.520833" stopColor="#FF446C"/>
+        <stop offset="0.869792" stopColor="#FFB016"/>
+      </linearGradient>
+      <linearGradient id="group1" x1="14.4196" y1="35" x2="31.1543" y2="31.9553" gradientUnits="userSpaceOnUse">
         <stop offset="0.109375" stopColor="#F14D70"/>
         <stop offset="0.317708" stopColor="#FF008A"/>
         <stop offset="0.520833" stopColor="#FF446C"/>

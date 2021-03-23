@@ -3,34 +3,22 @@ import React from 'react';
 const HospitalIcon = () => {
 
 return (
-  <svg width="58" viewBox="0 0 61 54" fill="none" xmlns="http://www.w3.org/2000/svg" className='icon'>
-    <g filter="url(#hospital)">
-        <rect x="3.01807" y="18.0852" width="54.9643" height="30.8511" rx="2" fill="#363F55"/>
-        <rect x="9.125" y="23.4043" width="4.07143" height="8.51064" rx="1" fill="white"/>
-        <rect x="9.125" y="36.1704" width="4.07143" height="8.51064" rx="1" fill="white"/>
-        <rect x="48.8218" y="23.4043" width="4.07142" height="8.51064" rx="1" fill="white"/>
-        <rect x="48.8218" y="36.1704" width="4.07142" height="8.51064" rx="1" fill="white"/>
-        <rect width="48.9362" height="26.46" rx="2" transform="matrix(0 -1 -1 0 44.46 48.9363)" fill="url(#hospital1)"/>
-        <path fillRule="evenodd" clipRule="evenodd" d="M32.0201 4.25537C32.8485 4.25537 33.5201 4.92694 33.5201 5.75537V8.24473H35.8359C36.6644 8.24473 37.3359 8.91631 37.3359 9.74473V11.532C37.3359 12.3604 36.6644 13.032 35.8359 13.032H33.5201V15.5213C33.5201 16.3498 32.8485 17.0213 32.0201 17.0213H30.4405C29.612 17.0213 28.9405 16.3498 28.9405 15.5213V13.032H26.6236C25.7952 13.032 25.1236 12.3604 25.1236 11.532V9.74473C25.1236 8.9163 25.7952 8.24473 26.6236 8.24473H28.9405V5.75537C28.9405 4.92694 29.612 4.25537 30.4405 4.25537H32.0201Z" fill="white"/>
-        <rect width="8.14154" height="8.51064" rx="1" transform="matrix(-1 0 0 1 35.3008 40.4255)" fill="white"/>
-        <rect x="2" y="47.8723" width="57" height="2.12766" rx="1" fill="#363F55"/>
-    </g>
+  <svg className='icon' viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="4" y="17" width="32" height="18" rx="1.02857" fill="#282E3E"/>
+    <rect width="30" height="16" rx="1.02857" transform="matrix(0 -1 -1 0 28 35)" fill="url(#hospital)"/>
+    <path d="M21.4911 9.87286C21.4911 9.39079 21.0922 9 20.6001 9H19.6617C19.1696 9 18.7707 9.39079 18.7707 9.87286V11.3214H17.3945C16.9023 11.3214 16.5034 11.7122 16.5034 12.1943V13.2343C16.5034 13.7164 16.9023 14.1072 17.3945 14.1072H18.7707V15.5557C18.7707 16.0378 19.1696 16.4286 19.6617 16.4286H20.6001C21.0922 16.4286 21.4911 16.0378 21.4911 15.5557V14.1072H22.8669C23.359 14.1072 23.7579 13.7164 23.7579 13.2343V12.1943C23.7579 11.7122 23.359 11.3214 22.8669 11.3214H21.4911V9.87286Z" fill="white"/>
+    <path d="M30.5814 20.7248C30.5814 20.4034 30.8474 20.1429 31.1755 20.1429H32.406C32.734 20.1429 33 20.4034 33 20.7248V24.5134C33 24.8348 32.734 25.0953 32.406 25.0953H31.1755C30.8474 25.0953 30.5814 24.8348 30.5814 24.5134V20.7248Z" fill="white"/>
+    <path d="M7 20.7248C7 20.4034 7.26596 20.1429 7.59403 20.1429H8.82453C9.1526 20.1429 9.41856 20.4034 9.41856 20.7248V24.5134C9.41856 24.8348 9.1526 25.0953 8.82453 25.0953H7.59403C7.26596 25.0953 7 24.8348 7 24.5134V20.7248Z" fill="white"/>
+    <path d="M7.59403 27.5715C7.26596 27.5715 7 27.832 7 28.1534V31.942C7 32.2633 7.26596 32.5239 7.59403 32.5239H8.82453C9.1526 32.5239 9.41856 32.2633 9.41856 31.942V28.1534C9.41856 27.832 9.1526 27.5715 8.82453 27.5715H7.59403Z" fill="white"/>
+    <path d="M30.5814 28.1534C30.5814 27.832 30.8474 27.5715 31.1755 27.5715H32.406C32.734 27.5715 33 27.832 33 28.1534V31.942C33 32.2633 32.734 32.5239 32.406 32.5239H31.1755C30.8474 32.5239 30.5814 32.2633 30.5814 31.942V28.1534Z" fill="white"/>
+    <path d="M22.5493 30.6295C22.5493 30.3081 22.2834 30.0476 21.9553 30.0476H18.307C17.979 30.0476 17.713 30.3081 17.713 30.6295V34.4181C17.713 34.7395 17.979 35 18.307 35H21.9553C22.2834 35 22.5493 34.7395 22.5493 34.4181V30.6295Z" fill="white"/>
     <defs>
-        <filter id="hospital" x="0" y="0" width="61" height="54" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-            <feFlood floodOpacity="0" result="BackgroundImageFix"/>
-            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-            <feOffset dy="2"/>
-            <feGaussianBlur stdDeviation="1"/>
-            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-        </filter>
-        <linearGradient id="hospital1" x1="2.62158" y1="26.46" x2="43.5876" y2="-6.62302" gradientUnits="userSpaceOnUse">
-            <stop offset="0.109375" stopColor="#F14D70"/>
-            <stop offset="0.317708" stopColor="#FF008A"/>
-            <stop offset="0.520833" stopColor="#FF446C"/>
-            <stop offset="0.869792" stopColor="#FFB016"/>
-        </linearGradient>
+      <linearGradient id="hospital" x1="1.60714" y1="16" x2="26.4482" y2="-4.33818" gradientUnits="userSpaceOnUse">
+        <stop offset="0.109375" stopColor="#F14D70"/>
+        <stop offset="0.317708" stopColor="#FF008A"/>
+        <stop offset="0.520833" stopColor="#FF446C"/>
+        <stop offset="0.869792" stopColor="#FFB016"/>
+      </linearGradient>
     </defs>
   </svg>
   );

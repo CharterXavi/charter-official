@@ -3,24 +3,41 @@ import React from 'react';
 const PillIcon = () => {
 
 return (
-  <svg width="56" height="50" viewBox="0 0 56 50" fill="none" xmlns="http://www.w3.org/2000/svg" className='icon'>
-    <g filter="url(#pill)">
-      <path d="M28 14H43C48.5228 14 53 18.4772 53 24C53 29.5228 48.5228 34 43 34H28V14Z" fill="#363F55"/>
-      <path d="M25 16H43C47.4183 16 51 19.5817 51 24C51 28.4183 47.4183 32 43 32H25V16Z" fill="white"/>
-      <path d="M28 33H13C8.02944 33 4 28.9706 4 24C4 19.0294 8.02944 15 13 15H28L28 33Z" fill="url(#pill1)" stroke="#363F55" strokeWidth="2"/>
-      <path d="M9.6412 17.7342C11.3021 17.1402 11.8433 17.4175 12.0109 17.8863C12.1786 18.355 11.9092 18.8376 10.2483 19.4316C7.57509 20.3877 7.48424 23.1868 7.3166 22.7181C7.14895 22.2493 6.72822 19.0736 9.6412 17.7342Z" fill="white"/>
-    </g>
+  <svg className='icon' viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M20 14H29.5C33.0899 14 36 16.9101 36 20.5V21.5C36 25.0899 33.0899 28 29.5 28H20V14Z" fill="#282E3E"/>
+    <path d="M18.0796 15.4H29.1196C32.2124 15.4 34.7196 17.9072 34.7196 21C34.7196 24.0928 32.2124 26.6 29.1196 26.6H18.0796V15.4Z" fill="white"/>
+    <path d="M19.9901 27.35H10.5001C7.26927 27.35 4.65014 24.7309 4.65014 21.5V20.5C4.65014 17.2691 7.26927 14.65 10.5001 14.65L19.9901 14.65V27.35Z" fill="url(#pill)" stroke="#282E3E" strokeWidth="1.3"/>
+    <path d="M8.25097 16.6139C9.31395 16.1981 9.6603 16.3922 9.76759 16.7204C9.87488 17.0485 9.70249 17.3863 8.63951 17.8021C6.92867 18.4714 6.87052 20.4307 6.76323 20.1026C6.65594 19.7745 6.38667 17.5515 8.25097 16.6139Z" fill="white"/>
+    <path d="M13.5884 6.60081L13.1276 5L12.6669 6.60081L11.0913 7.06897L12.6669 7.53712L13.1276 9.13793L13.5884 7.53712L15.164 7.06897L13.5884 6.60081Z" fill="url(#pill1)"/>
+    <path d="M8.49714 10.7388L8.03636 9.13794L7.57559 10.7388L6 11.2069L7.57559 11.6751L8.03636 13.2759L8.49714 11.6751L10.0727 11.2069L8.49714 10.7388Z" fill="url(#pill2)"/>
+    <path d="M24.836 31.8965L25.1816 33.0972L26.3633 33.4483L25.1816 33.7994L24.836 35L24.4904 33.7994L23.3088 33.4483L24.4904 33.0972L24.836 31.8965Z" fill="url(#pill3)"/>
+    <path d="M31.8337 30.9942L31.2001 28.7931L30.5665 30.9942L28.4001 31.6379L30.5665 32.2816L31.2001 34.4828L31.8337 32.2816L34.0001 31.6379L31.8337 30.9942Z" fill="url(#pill4)"/>
     <defs>
-      <filter id="pill" x="1" y="14" width="54" height="24" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-        <feFlood floodOpacity="0" result="BackgroundImageFix"/>
-        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-        <feOffset dy="2"/>
-        <feGaussianBlur stdDeviation="1"/>
-        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-      </filter>
-      <linearGradient id="pill1" x1="27.6071" y1="14" x2="0.410527" y2="29.4383" gradientUnits="userSpaceOnUse">
+      <linearGradient id="pill" x1="19.7487" y1="14" x2="1.61787" y2="23.4099" gradientUnits="userSpaceOnUse">
+        <stop offset="0.109375" stopColor="#F14D70"/>
+        <stop offset="0.317708" stopColor="#FF008A"/>
+        <stop offset="0.520833" stopColor="#FF446C"/>
+        <stop offset="0.869792" stopColor="#FFB016"/>
+      </linearGradient>
+      <linearGradient id="pill1" x1="7.5" y1="35" x2="40.7104" y2="21.4651" gradientUnits="userSpaceOnUse">
+        <stop offset="0.109375" stopColor="#F14D70"/>
+        <stop offset="0.317708" stopColor="#FF008A"/>
+        <stop offset="0.520833" stopColor="#FF446C"/>
+        <stop offset="0.869792" stopColor="#FFB016"/>
+      </linearGradient>
+      <linearGradient id="pill2" x1="7.5" y1="35" x2="40.7104" y2="21.4651" gradientUnits="userSpaceOnUse">
+        <stop offset="0.109375" stopColor="#F14D70"/>
+        <stop offset="0.317708" stopColor="#FF008A"/>
+        <stop offset="0.520833" stopColor="#FF446C"/>
+        <stop offset="0.869792" stopColor="#FFB016"/>
+      </linearGradient>
+      <linearGradient id="pill3" x1="7.5" y1="35" x2="40.7104" y2="21.4651" gradientUnits="userSpaceOnUse">
+        <stop offset="0.109375" stopColor="#F14D70"/>
+        <stop offset="0.317708" stopColor="#FF008A"/>
+        <stop offset="0.520833" stopColor="#FF446C"/>
+        <stop offset="0.869792" stopColor="#FFB016"/>
+      </linearGradient>
+      <linearGradient id="pill4" x1="7.5" y1="35" x2="40.7104" y2="21.4651" gradientUnits="userSpaceOnUse">
         <stop offset="0.109375" stopColor="#F14D70"/>
         <stop offset="0.317708" stopColor="#FF008A"/>
         <stop offset="0.520833" stopColor="#FF446C"/>
@@ -28,6 +45,7 @@ return (
       </linearGradient>
     </defs>
   </svg>
+
   );
 }
 

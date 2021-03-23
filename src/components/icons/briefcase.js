@@ -3,31 +3,17 @@ import React from 'react';
 const BriefcaseIcon = () => {
 
 return (
-  <svg fill="none" className="icon" viewBox="0 0 50 45" xmlns="http://www.w3.org/2000/svg">
-    <g filter="url(#briefcase2)">
-      <path d="m32.576 0.0018136c0.03-0.0010435 0.0601-0.0015695 0.0904-0.0015695 1.4114 0 2.5555 1.1442 2.5555 2.5556v5.8413c0 1.4114-1.1441 2.5555-2.5555 2.5555s-2.5556-1.1441-2.5556-2.5555v-2.9206h-10.222v2.9206c0 1.4114-1.1442 2.5555-2.5556 2.5555s-2.5555-1.1441-2.5555-2.5555v-5.6156c-2e-4 -0.01436-4e-4 -0.02875-4e-4 -0.04316s2e-4 -0.0288 4e-4 -0.04316v-0.1394c0-1.4114 1.1441-2.5556 2.5555-2.5556 0.0301 0 0.06 5.1864e-4 0.0898 0.0015475 0.0307-0.0010178 0.0615-0.0015308 0.0924-0.0015308h14.968c0.031 0 0.0619 5.1558e-4 0.0927 0.0015386z" fill="#363F55" clipRule="evenodd" fillRule="evenodd"/>
-      <rect x="2.9127" y="9.127" width="44.175" height="31.032" rx=".9127" fill="url(#briefcase3)" stroke="#363F55" strokeWidth="1.8254"/>
-      <rect x="3.6426" y="25.464" width="42.714" height="1.6429" fill="#363F55"/>
-      <mask id="briefcase1" fill="white">
-        <rect x="20.893" y="23" width="8.2143" height="7.3929" rx=".9127"/>
-      </mask>
-      <rect x="20.893" y="23" width="8.2143" height="7.3929" rx=".9127" fill="#fff" mask="url(#briefcase1)" stroke="#363F55" strokeWidth="3.65079"/>
-    </g>
+  <svg className='icon' viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="4.5" y="12.1" width="31" height="21.4" rx="0.5" fill="url(#briefcase)" stroke="#282E3E"/>
+    <path d="M26.3999 6C26.989 6 27.4665 6.50144 27.4665 7.12V12H23.1999V9.36H16.7999V12H12.5332V7.12C12.5332 6.50144 13.0108 6 13.5999 6H26.3999Z" fill="#282E3E"/>
+    <path d="M16.7999 22.8C16.7999 22.1814 17.2774 21.68 17.8665 21.68H22.1332C22.7223 21.68 23.1999 22.1814 23.1999 22.8V23.36H35.4665V24.48H23.1999V25.04C23.1999 25.6586 22.7223 26.16 22.1332 26.16H17.8665C17.2774 26.16 16.7999 25.6586 16.7999 25.04V24.48H4.5332V23.36H16.7999V22.8Z" fill="#282E3E"/>
+    <rect x="17.8667" y="22.8" width="4.26667" height="2.24" fill="white"/>
     <defs>
-      <filter id="briefcase2" x=".1746" y="0" width="49.651" height="44.722" colorInterpolationFilters="sRGB" filterUnits="userSpaceOnUse">
-        <feFlood floodOpacity="0" result="BackgroundImageFix"/>
-        <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-        <feOffset dy="1.8254"/>
-        <feGaussianBlur stdDeviation="0.912699"/>
-        <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-        <feBlend in2="BackgroundImageFix" result="effect1_dropShadow"/>
-        <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-      </filter>
-      <linearGradient id="briefcase3" x1="4.4643" x2="50.778" y1="41.072" y2="12.759" gradientUnits="userSpaceOnUse">
-        <stop offset=".10938" stopColor="#F14D70"/>
-        <stop offset=".31771" stopColor="#FF008A"/>
-        <stop offset=".52083" stopColor="#FF446C"/>
-        <stop offset=".86979" stopColor="#FFB016"/>
+      <linearGradient id="briefcase" x1="5.71429" y1="34" x2="37.5752" y2="14.1252" gradientUnits="userSpaceOnUse">
+        <stop offset="0.109375" stopColor="#F14D70"/>
+        <stop offset="0.317708" stopColor="#FF008A"/>
+        <stop offset="0.520833" stopColor="#FF446C"/>
+        <stop offset="0.869792" stopColor="#FFB016"/>
       </linearGradient>
     </defs>
   </svg>

@@ -2,9 +2,17 @@ import React from 'react';
 
 const PlusSign = () => {
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none" className='icon PlusSign'>
-            <path d="M17 2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V10.5C13 11.8807 11.8807 13 10.5 13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H10.5C11.8807 17 13 18.1193 13 19.5V28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V19.5C17 18.1193 18.1193 17 19.5 17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H19.5C18.1193 13 17 11.8807 17 10.5V2Z" fill="#F05f7e"/>
-        </svg>
+    <svg className='icon PlusSign' viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M22 7C22 5.89543 21.1046 5 20 5C18.8954 5 18 5.89543 18 7V15.5C18 16.8807 16.8807 18 15.5 18H7C5.89543 18 5 18.8954 5 20C5 21.1046 5.89543 22 7 22H15.5C16.8807 22 18 23.1193 18 24.5V33C18 34.1046 18.8954 35 20 35C21.1046 35 22 34.1046 22 33V24.5C22 23.1193 23.1193 22 24.5 22H33C34.1046 22 35 21.1046 35 20C35 18.8954 34.1046 18 33 18H24.5C23.1193 18 22 16.8807 22 15.5V7Z" fill="url(#plusSign)"/>
+        <defs>
+            <linearGradient id="plusSign" x1="6.60714" y1="35" x2="41.4552" y2="19.7833" gradientUnits="userSpaceOnUse">
+                <stop offset="0.109375" stopColor="#F14D70"/>
+                <stop offset="0.317708" stopColor="#FF008A"/>
+                <stop offset="0.520833" stopColor="#FF446C"/>
+                <stop offset="0.869792" stopColor="#FFB016"/>
+            </linearGradient>
+        </defs>
+    </svg>
     );
 }
 
