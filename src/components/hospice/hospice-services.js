@@ -7,13 +7,13 @@ import AOS from "aos";
 import BottleIcon from '../icons/bottle';
 import CrossIcon from '../icons/cross';
 import FlowerIcon from '../icons/flower';
-import GroupIcon from '../icons/group';
 import HealthcareIcon from '../icons/healthcare';
 import HeartIcon from '../icons/heart';
 import HomeIcon from '../icons/home';
 import HospiceCard from './hospice-card';
 import PhoneIcon from '../icons/phone';
 import PillIcon from '../icons/pill';
+import SocialIcon from '../icons/social';
 import StethoscopeIcon from '../icons/stethoscope';
 
 const HospiceServices = () => {
@@ -31,7 +31,7 @@ const HospiceServices = () => {
         animationTime: '800'
       },
       {
-        icon: <GroupIcon />,
+        icon: <SocialIcon />,
         title: 'Social Services',
         alt: 'Group of three people',
         animationTime: '1000'

@@ -3,22 +3,11 @@ import React from 'react';
 const HealthcareIcon = () => {
 
 return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="54" viewBox="0 0 54 54" fill="none" className='icon'>
-        <g filter="url(#healthcare)">
-            <circle cx="27" cy="25" r="24" fill="url(#healthcare1)" stroke="#363F55" strokeWidth="2"/>
-            <path fillRule="evenodd" clipRule="evenodd" d="M32 12C32 10.8954 31.1046 10 30 10H24C22.8954 10 22 10.8954 22 12V18C22 19.1046 21.1046 20 20 20H14C12.8954 20 12 20.8954 12 22V28C12 29.1046 12.8954 30 14 30H20C21.1046 30 22 30.8954 22 32V38C22 39.1046 22.8954 40 24 40H30C31.1046 40 32 39.1046 32 38V32C32 30.8954 32.8954 30 34 30H40C41.1046 30 42 29.1046 42 28V22C42 20.8954 41.1046 20 40 20H34C32.8954 20 32 19.1046 32 18V12Z" fill="white"/>
-        </g>
+    <svg className='icon' viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="15.4263" fill="url(#healthcare)" stroke="#282E3E" strokeWidth="1.14748"/>
+        <path d="M23.2006 11.5155C23.2006 10.8994 22.7011 10.4 22.0851 10.4H17.9161C17.3 10.4 16.8006 10.8994 16.8006 11.5155V15.6845C16.8006 16.3006 16.3011 16.8 15.6851 16.8H11.5159C10.8998 16.8 10.4004 17.2994 10.4004 17.9155V22.0845C10.4004 22.7006 10.8998 23.2 11.5159 23.2H15.6851C16.3011 23.2 16.8006 23.6994 16.8006 24.3155V28.4845C16.8006 29.1006 17.3 29.6 17.9161 29.6H22.0851C22.7011 29.6 23.2006 29.1006 23.2006 28.4845V24.3155C23.2006 23.6994 23.7 23.2 24.3161 23.2H28.4849C29.101 23.2 29.6004 22.7006 29.6004 22.0845V17.9155C29.6004 17.2994 29.101 16.8 28.4849 16.8H24.3161C23.7 16.8 23.2006 16.3006 23.2006 15.6845V11.5155Z" fill="white"/>
         <defs>
-            <filter id="healthcare" x="0" y="0" width="54" height="54" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-                <feFlood floodOpacity="0" result="BackgroundImageFix"/>
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-                <feOffset dy="2"/>
-                <feGaussianBlur stdDeviation="1"/>
-                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-            </filter>
-            <linearGradient id="healthcare1" x1="4.67857" y1="50" x2="62.7587" y2="24.6388" gradientUnits="userSpaceOnUse">
+            <linearGradient id="healthcare" x1="5.71429" y1="36" x2="42.8856" y2="19.7689" gradientUnits="userSpaceOnUse">
                 <stop offset="0.109375" stopColor="#F14D70"/>
                 <stop offset="0.317708" stopColor="#FF008A"/>
                 <stop offset="0.520833" stopColor="#FF446C"/>

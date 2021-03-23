@@ -3,31 +3,16 @@ import React from 'react';
 const BriefcaseIcon = () => {
 
 return (
-  <svg fill="none" className="icon" viewBox="0 0 50 45" xmlns="http://www.w3.org/2000/svg">
-    <g filter="url(#briefcase2)">
-      <path d="m32.576 0.0018136c0.03-0.0010435 0.0601-0.0015695 0.0904-0.0015695 1.4114 0 2.5555 1.1442 2.5555 2.5556v5.8413c0 1.4114-1.1441 2.5555-2.5555 2.5555s-2.5556-1.1441-2.5556-2.5555v-2.9206h-10.222v2.9206c0 1.4114-1.1442 2.5555-2.5556 2.5555s-2.5555-1.1441-2.5555-2.5555v-5.6156c-2e-4 -0.01436-4e-4 -0.02875-4e-4 -0.04316s2e-4 -0.0288 4e-4 -0.04316v-0.1394c0-1.4114 1.1441-2.5556 2.5555-2.5556 0.0301 0 0.06 5.1864e-4 0.0898 0.0015475 0.0307-0.0010178 0.0615-0.0015308 0.0924-0.0015308h14.968c0.031 0 0.0619 5.1558e-4 0.0927 0.0015386z" fill="#363F55" clipRule="evenodd" fillRule="evenodd"/>
-      <rect x="2.9127" y="9.127" width="44.175" height="31.032" rx=".9127" fill="url(#briefcase3)" stroke="#363F55" strokeWidth="1.8254"/>
-      <rect x="3.6426" y="25.464" width="42.714" height="1.6429" fill="#363F55"/>
-      <mask id="briefcase1" fill="white">
-        <rect x="20.893" y="23" width="8.2143" height="7.3929" rx=".9127"/>
-      </mask>
-      <rect x="20.893" y="23" width="8.2143" height="7.3929" rx=".9127" fill="#fff" mask="url(#briefcase1)" stroke="#363F55" strokeWidth="3.65079"/>
-    </g>
+  <svg className='icon' viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M25.6929 6.00107C25.7138 6.00036 25.7348 6 25.7559 6C26.7378 6 27.5337 6.78002 27.5337 7.74222V11.7244C27.5337 12.6867 26.7378 13.4667 25.7559 13.4667C24.7741 13.4667 23.9782 12.6867 23.9782 11.7245V9.73336H16.8673V11.7245C16.8673 12.6867 16.0713 13.4667 15.0895 13.4667C14.1076 13.4667 13.3117 12.6867 13.3117 11.7245V7.91634C13.3113 7.89985 13.311 7.8833 13.311 7.86669C13.311 7.85009 13.3113 7.83354 13.3117 7.81704V7.74224C13.3117 6.78004 14.1076 6.00002 15.0895 6.00002C15.1103 6.00002 15.131 6.00037 15.1516 6.00106C15.1729 6.00037 15.1943 6.00003 15.2158 6.00003H25.6285C25.6501 6.00003 25.6715 6.00038 25.6929 6.00107Z" fill="#282E3E"/>
+    <rect x="5.02499" y="12.2016" width="30.7967" height="21.1967" rx="0.601651" fill="url(#briefcase)" stroke="#282E3E" strokeWidth="1.2033"/>
+    <path d="M18.168 23.9616V23.8783V23.36V22.3022C18.168 22.3 18.1683 22.2991 18.1686 22.2984C18.1691 22.2972 18.1705 22.2947 18.1734 22.2919C18.1791 22.2863 18.188 22.2816 18.2013 22.2816H22.6457C22.659 22.2816 22.6678 22.2863 22.6735 22.2919C22.6765 22.2947 22.6778 22.2972 22.6783 22.2984C22.6787 22.2991 22.679 22.3 22.679 22.3022V23.36V23.8783V23.9616V24.48V26.0977C22.679 26.0999 22.6787 26.1007 22.6783 26.1015C22.6778 26.1027 22.6765 26.1051 22.6735 26.108C22.6678 26.1136 22.659 26.1183 22.6457 26.1183H18.2013C18.188 26.1183 18.1791 26.1136 18.1734 26.108C18.1705 26.1051 18.1691 26.1027 18.1686 26.1015C18.1683 26.1007 18.168 26.0999 18.168 26.0977V24.48V23.9616Z" fill="white" stroke="#282E3E" strokeWidth="1.2033"/>
     <defs>
-      <filter id="briefcase2" x=".1746" y="0" width="49.651" height="44.722" colorInterpolationFilters="sRGB" filterUnits="userSpaceOnUse">
-        <feFlood floodOpacity="0" result="BackgroundImageFix"/>
-        <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-        <feOffset dy="1.8254"/>
-        <feGaussianBlur stdDeviation="0.912699"/>
-        <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-        <feBlend in2="BackgroundImageFix" result="effect1_dropShadow"/>
-        <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-      </filter>
-      <linearGradient id="briefcase3" x1="4.4643" x2="50.778" y1="41.072" y2="12.759" gradientUnits="userSpaceOnUse">
-        <stop offset=".10938" stopColor="#F14D70"/>
-        <stop offset=".31771" stopColor="#FF008A"/>
-        <stop offset=".52083" stopColor="#FF446C"/>
-        <stop offset=".86979" stopColor="#FFB016"/>
+      <linearGradient id="briefcase" x1="6.13763" y1="34" x2="37.9986" y2="14.1253" gradientUnits="userSpaceOnUse">
+        <stop offset="0.109375" stopColor="#F14D70"/>
+        <stop offset="0.317708" stopColor="#FF008A"/>
+        <stop offset="0.520833" stopColor="#FF446C"/>
+        <stop offset="0.869792" stopColor="#FFB016"/>
       </linearGradient>
     </defs>
   </svg>
