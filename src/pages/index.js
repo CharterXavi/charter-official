@@ -43,7 +43,7 @@ export default IndexPage
 
 export const recentPostsQuery = graphql`
 query {
-  recent: allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {}, limit: 5) {
+  recent: allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {}, limit: 3) {
     edges {
       node {
         id
