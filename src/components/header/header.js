@@ -102,17 +102,9 @@ const Header = () => {
         isSubMenuExpanded: false,
         subMenu: [
           {
-            name: 'Recent',
-            path: '/news/recent'
+            name: '',
+            path: ''
           },
-          {
-            name: 'Categories',
-            path: '/news/categories'
-          },
-          {
-            name: 'Tags',
-            path: '/news/tags'
-          }
         ]
       }, 
       {
