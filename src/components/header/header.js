@@ -75,6 +75,17 @@ const Header = () => {
         ]
       },
       {
+        name: 'Locations',
+        path: '/locations',
+        isSubMenuExpanded: false,
+        subMenu: [
+          {
+            name: '',
+            path: ''
+          }
+        ]
+      },
+      {
         name: 'Our Team',
         path: '/our-team',
         isSubMenuExpanded: false,
@@ -85,25 +96,25 @@ const Header = () => {
           }
         ]
       },
-      // {  ------- DISABLED UNTIL POSTS ARE AVAILABLE TO RENDER -----------
-      //   name: 'News',
-      //   path: '/news',
-      //   isSubMenuExpanded: false,
-      //   subMenu: [
-      //     {
-      //       name: 'Recent',
-      //       path: '/news/recent'
-      //     },
-      //     {
-      //       name: 'Categories',
-      //       path: '/news/categories'
-      //     },
-      //     {
-      //       name: 'Tags',
-      //       path: '/news/tags'
-      //     }
-      //   ]
-      // }, 
+      {
+        name: 'News',
+        path: '/news',
+        isSubMenuExpanded: false,
+        subMenu: [
+          {
+            name: 'Recent',
+            path: '/news/recent'
+          },
+          {
+            name: 'Categories',
+            path: '/news/categories'
+          },
+          {
+            name: 'Tags',
+            path: '/news/tags'
+          }
+        ]
+      }, 
       {
         name: 'Careers',
         path: '/careers',
