@@ -2,6 +2,8 @@ import './expander.css'
 
 import React, {useEffect, useState} from 'react'
 
+import { Link } from 'gatsby'
+
 const Expander = (props) => {
 
 
@@ -43,16 +45,14 @@ const Expander = (props) => {
     return (
         <div className={`Expander ${props.isExpanded ? 'expanded-card' : ''}`} style={{height: `${props.isExpanded ? heightFactor : '0px'}`}}>
           {businesses.map(business => {
-            return <a 
-              href={business.link} 
-              target='_blank' 
-              rel='noopener noreferrer' 
+            return <Link 
+              to={business.link} 
               key={business.name} 
               onMouseOver={() => {handleHover(business.name)}}
               onFocus={() => {handleHover(business.name)}}
             >
               {business.name}
-            </a>
+            </Link>
           })}
         </div>
     );
