@@ -22,7 +22,7 @@ const LocationsStrip = (props) => {
                             name: 'Charter Healthcare of Phoenix',
                             address: '1232 E. Broadway St. Suite 210, Tempe, AZ 85282',
                             coordinates: { lat: 33.408025, lng: -111.919244 },
-                            link: 'https://goo.gl/maps/TnXuzuwG1Ec5TuWk6'
+                            link: '/locations/phoenix'
                         }
                       ]
                     },
@@ -33,7 +33,7 @@ const LocationsStrip = (props) => {
                             name: 'Charter Healthcare of Tucson',
                             address: '6400 E. Grant Rd., Suite 150 Tuscon, AZ 85715',
                             coordinates: { lat: 32.24938, lng: -110.855152 },
-                            link: 'https://goo.gl/maps/bPJTJV3wBqTp2c8y7'
+                            link: '/locations/tucson'
                         }
                       ]
                     }
@@ -49,10 +49,10 @@ const LocationsStrip = (props) => {
                         name: 'Apple Valley',
                         locations: [
                             {
-                                name: 'Charter High Desert Health Care Group',
+                                name: 'Charter Healthcare of High Desert',
                                 address: '19015 Town Center Dr. Suite 104, Apple Valley, CA 92308',
                                 coordinates: { lat: 34.465386, lng: -117.248551 },
-                                link: 'https://goo.gl/maps/ubdJLu7KBqoLm27t9'
+                                link: '/locations/high-desert'
                             }
                         ]
                     },
@@ -60,10 +60,10 @@ const LocationsStrip = (props) => {
                         name: 'Colton',
                         locations: [
                             {
-                                name: 'Charter Hospice of Colton',
+                                name: 'Charter Healthcare of San Bernadino',
                                 address: '1007 E. Cooley Dr. Suite 100 Colton, CA 92324-3901',
                                 coordinates: { lat: 34.05547, lng: -117.310526 },
-                                link: 'https://goo.gl/maps/7pNfrqqzGiZFG5PK6'
+                                link: 'locations/san-bernardino'
                             }
                         ]
                     },
@@ -71,16 +71,10 @@ const LocationsStrip = (props) => {
                         name: 'Covina',
                         locations: [
                             {
-                                name: 'Charter Home Health',
+                                name: 'Charter Healthcare of San Gabriel Valley',
                                 address: '970 S. Village Oaks Dr. Suite 102, Covina, CA 91724',
                                 coordinates: { lat: 34.071759, lng: -117.862599 },
-                                link: 'https://goo.gl/maps/pgsmZruf97YpLHWM7'
-                            },
-                            {
-                                name: 'Charter Hospice of the San Gabriel Valley',
-                                address: '970 S. Village Oaks Dr. Suite 106, Covina, CA 91724',
-                                coordinates: { lat: 34.071759, lng: -117.862599 },
-                                link: 'https://goo.gl/maps/xXV8aS71NNM8oKP8A'
+                                link: '/locations/san-gabriel-valley'
                             }
                         ]
                     },
@@ -88,27 +82,21 @@ const LocationsStrip = (props) => {
                         name: 'Palm Desert',
                         locations: [
                             {
-                                name: 'Charter Home Health of the Desert',
+                                name: 'Charter Healthcare of Palm Desert',
                                 address: '72855 Fred Waring Dr. Suite A4, Palm Desert, CA 92260',
                                 coordinates: { lat: 33.728698, lng: -116.394019 },
-                                link: 'https://goo.gl/maps/J6c31pFG1oehbkCf6'
-                            },
-                            {
-                                name: 'Charter Hospice of the Desert',
-                                address: '72855 Fred Waring Dr. Suite A5, Palm Desert, CA 92260',
-                                coordinates: { lat: 33.728114, lng: -116.394997 },
-                                link: 'https://goo.gl/maps/3jKQiq6x6XzjokTX7'
+                                link: '/locations/palm-desert'
                             }
                         ]
                     },
                     {
-                        name: 'Rancho Cucamonga',
+                        name: 'Rancho Cucamonga of Rancho Cucamonga',
                         locations: [
                             {
-                                name: 'Cambridge Hospice',
+                                name: 'Cambridge Hospice of Rancho Cucamonga',
                                 address: '9229 Utica Ave. Suite 100, Rancho Cucamonga, CA 91730',
                                 coordinates: { lat: 34.085486, lng: -117.57063 },
-                                link: 'https://goo.gl/maps/dteVihQGcRe4RYsA9'
+                                link: '/locations/rancho-cucamonga'
                             }
                         ]
                     },
@@ -119,7 +107,7 @@ const LocationsStrip = (props) => {
                                 name: 'Cambridge Hospice of Riverside',
                                 address: '6560 Van Buren Blvd. Suite G, Riverside, CA 92503-1542',
                                 coordinates: { lat: 33.949954, lng: -117.454308 },
-                                link: 'https://goo.gl/maps/qrBbH7kDsYASQJMj8'
+                                link: '/locations/riverside'
                             }
                         ]
                     },
@@ -127,10 +115,10 @@ const LocationsStrip = (props) => {
                         name: 'San Diego',
                         locations: [
                             {
-                                name: 'Charter Hospice of San Diego',
+                                name: 'Charter Healthcare of San Diego',
                                 address: '16955 Via Del Campo Suite 100, San Diego, CA 92127-1719',
                                 coordinates: { lat: 33.019872, lng: -117.092233 },
-                                link: 'https://goo.gl/maps/V3rCjhb33ruM5m2S8'
+                                link: '/locations/san-diego'
                             }
                         ]
                     },
@@ -138,10 +126,10 @@ const LocationsStrip = (props) => {
                         name: 'Simi Valley',
                         locations: [
                             {
-                                name: 'Charter Hospice',
+                                name: 'Charter Healthcare of Simi Valley',
                                 address: '5775 E Los Angeles Ave. Suite 226, Simi Valley, CA 93063-5215',
                                 coordinates: { lat: 34.272140, lng: -118.679840 },
-                                link: 'https://goo.gl/maps/pnM4ynGSvZMVSXAt9'
+                                link: '/locations/simi-valley'
                             }
                         ]
                     },
@@ -152,7 +140,7 @@ const LocationsStrip = (props) => {
                                 name: 'Cambridge Hospice of Orange County',
                                 address: '12235 Beach Blvd. Suite 200-B, Stanton, CA 90680-3939',
                                 coordinates: { lat: 33.784430, lng: -117.993590 },
-                                link: 'https://goo.gl/maps/TNcvBzkHQBNwSS4QA'
+                                link: '/locations/orange-county'
                             }
                         ]
                     }
@@ -168,10 +156,10 @@ const LocationsStrip = (props) => {
                       name: 'Loveland',
                       locations: [
                           {
-                              name: 'Vitality Home Healthcare',
+                              name: 'Charter Healthcare of Fort Collins',
                               address: '1562 Taurus Ct., Loveland, CO 80537',
                               coordinates: { lat: 40.401090, lng: -105.054930 },
-                              link: 'https://goo.gl/maps/EpZx2fVo8BXpkg1r8'
+                              link: '/locations/fort-collins'
                           }
                       ]
                     }
@@ -190,7 +178,7 @@ const LocationsStrip = (props) => {
                               name: 'PhysMed Home Health of Omaha',
                               address: '4905 S 107th Ave, Omaha, NE 68127',
                               coordinates: { lat: 41.210443, lng: -96.0788 },
-                              link: 'https://goo.gl/maps/Ws4XjgwtM2r4ymU78'
+                              link: '/locations/physmed'
                           },
                       ]
                     },
@@ -201,7 +189,7 @@ const LocationsStrip = (props) => {
                               name: 'SereneCare Hospice of Omaha',
                               address: '4905 S 107th Ave, Omaha, NE 68127',
                               coordinates: { lat: 41.210443, lng: -96.0788 },
-                              link: 'https://goo.gl/maps/Ws4XjgwtM2r4ymU78'
+                              link: '/locations/serene-care'
                           },
                         ]
                     }
@@ -220,7 +208,7 @@ const LocationsStrip = (props) => {
                               name: 'Charter Healthcare of Las Vegas',
                               address: '2739 Sunridge Heights Parkway, Suite 110, Henderson, NV 89044',
                               coordinates: { lat: 36.161930, lng: -115.171330 },
-                              link: 'https://goo.gl/maps/FgQoN7QNy7xuFJhu5'
+                              link: '/locations/las-vegas'
                           }
                       ]
                     }
@@ -236,10 +224,10 @@ const LocationsStrip = (props) => {
                       name: 'West Jordan',
                       locations: [
                           {
-                              name: 'Charter Healthcare of West Jordan',
+                              name: 'Charter Healthcare of Salt Lake City',
                               address: '6671 S. Redwood Rd. Suite 101, West Jordan, UT 84084',
                               coordinates: { lat: 40.630240, lng: -111.938240 },
-                              link: 'https://goo.gl/maps/y3aa8qjHYBQMzV83A'
+                              link: '/locations/salt-lake-city'
                           }
                       ]
                     }
