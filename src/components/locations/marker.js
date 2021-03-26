@@ -1,5 +1,6 @@
 import './marker.css';
 
+import {Link} from 'gatsby'
 import React from 'react';
 import pinIcon from '../../images/iconography/locations/pin.png';
 
@@ -13,9 +14,9 @@ const Marker = (props) => {
                 :
                 <p>{props.name}</p>
             }
-            <a href={props.link} target='_blank' rel='noreferrer noopener'>
+            <Link to={props.link}>
                 <img src={pinIcon} alt="Pin" className='icon'/>
-            </a>
+            </Link>
         </div>
     );
   };
