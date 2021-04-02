@@ -8,7 +8,7 @@ const ContactForm = () => {
   const formOptions = [
     {
       name: "default",
-      action: "https://formspree.io/f/mbjzqojd"
+      action: ""
     },
     {
       name: "communications",
@@ -82,7 +82,7 @@ const ContactForm = () => {
               <label htmlFor="department">
                 Last Name
                 <select type="select" name='department' id='department' defaultValue="default" required onChange={handleChange}>
-                  <option value="default" disabled hidden>What can we help you with?</option>
+                  <option value="default" disabled hidden>Submission type...</option>
                   <option value="communications">General Inquiry</option>
                   <option value="careers">Careers/Recruitment</option>
                   <option value="communications">Media/Press Requests</option>
@@ -120,7 +120,7 @@ const ContactForm = () => {
       />
       <div className="submit">
           {status === "SUCCESS" ? <p className='detail-text' style={{backgroundColor: '#63af40', color: 'white', width: 'auto', padding: '8px', borderRadius: '10px', margin: '16px 0'}}>Thanks for reaching out! We'll contact you as soon as possible. NOTE: form submissions are not monitored 24/7. In case of emergency, contact your local office for immediate assistance or call 911.</p> : <button className='btn-primary' type='submit' aria-label='Submit Form'>Submit</button>}
-          {status === "ERROR" && <p className='detail-text' style={{backgroundColor: '#d12629', color: 'white', width: 'auto', padding: '8px', borderRadius: '10px', margin: '16px 0'}}>Ooops! There was an error - please ensure your email is a valid format (youremail@somewhere.com, for example) and that your phone number is correct.</p>}
+          {status === "ERROR" && <p className='detail-text' style={{backgroundColor: '#d12629', color: 'white', width: 'auto', padding: '8px', borderRadius: '10px', margin: '16px 0'}}>Oops! There was an error. Please check your email and phone number format, and select an option for 'submission 'type'.</p>}
       </div>
     </form>
   );
