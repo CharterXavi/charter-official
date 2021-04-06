@@ -10,16 +10,12 @@ import "./layout.css"
 // import Chatbot from './chatbot/chatbot';
 import Footer from "./footer/footer"
 import Header from "./header/header"
-import { Helmet } from 'react-helmet'
 import PropTypes from "prop-types"
 import React from "react"
 
 const Layout = ({ children }) => {
   return (
     <>
-      <Helmet>
-        <script type="text/javascript" src="//script.crazyegg.com/pages/scripts/0091/3042.js" async="async"></script>
-      </Helmet>
       <Header />
       {/* <div
         style={{
