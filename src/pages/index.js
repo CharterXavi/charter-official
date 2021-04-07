@@ -21,9 +21,6 @@ const IndexPage = ({ data }) => {
   
   return (
     <Layout>
-      <Helmet>
-        <script type="text/javascript" src="https://script.crazyegg.com/pages/scripts/0091/3042.js" async="async" data-react-helmet="false" />
-      </Helmet>
       <SEO title="Total Home & Post Acute Care" />
       <div className='HomePage'>
         <HeroStrip7 />

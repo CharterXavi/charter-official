@@ -10,6 +10,7 @@ import "./layout.css"
 // import Chatbot from './chatbot/chatbot';
 import Footer from "./footer/footer"
 import Header from "./header/header"
+import {Helmet} from 'react-helmet'
 import PropTypes from "prop-types"
 import React from "react"
 

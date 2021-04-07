@@ -5,15 +5,5 @@
  */
 
 // You can delete this file if you're not using it
-// Import React so that you can use JSX in HeadComponents
-// const React = require("react")
 
-// const HeadComponents = [
-//     <script type="text/javascript" src="//script.crazyegg.com/pages/scripts/0091/3042.js" async="async" data-react-helmet="false" />
-// ]
 
-// exports.onRenderBody = ({
-//   setHeadComponents
-// }, pluginOptions) => {
-//   setHeadComponents(HeadComponents)
-// }
