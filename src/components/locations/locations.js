@@ -63,7 +63,7 @@ const LocationsStrip = (props) => {
                                 name: 'Charter Healthcare of San Bernadino',
                                 address: '1007 E. Cooley Dr. Suite 100 Colton, CA 92324-3901',
                                 coordinates: { lat: 34.05547, lng: -117.310526 },
-                                link: 'locations/san-bernardino'
+                                link: '/locations/san-bernardino'
                             }
                         ]
                     },
