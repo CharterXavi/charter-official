@@ -42,8 +42,8 @@ The Ali sisters have accrued nearly 2,000 volunteer hours since they began volun
 ##### Zaira Chanax, San Gabriel, CA
 Zaira has completed more than 175 volunteer hours serving as team leader for the Charter Hospice program in the San Gabriel Valley. She regularly goes beyond the call of duty to support her team and ensure they have the information necessary to help as many patients as possible. During the pandemic, Zaira has remained committed to the Charter Hospice volunteer program by displaying strong leadership among her fellow volunteers and completing many virtual patient visits.
 
-##### Luna Gonzalez, Moreno Valley, CA
-Luna has served as president of the Hospice Huskies, our volunteer group in Moreno Valley since 2019. She has logged more than 260 volunteer hours and has led training and orientation programs for many other volunteers. A talented artist, Luna created a mural for Corona Post-Acute Care that hangs in the facility for all patients to enjoy.
+##### Luna Gonzalez, Corona, CA
+Luna has served as president of the Hospice Huskies, our volunteer group in Corona since 2019. She has logged more than 260 volunteer hours and has led training and orientation programs for many other volunteers. A talented artist, Luna created a mural for Corona Post-Acute Care that hangs in the facility for all patients to enjoy.
 
 ##### Clemens Kang, Eastvale, CA
 As president of the Hospice Mustangs, our volunteer group in Eastvale, Clemens consistently demonstrates tremendous leadership and compassion. He has volunteered more than 124 hours over the past year and is dedicated to honoring patients through active listening, companionship and friendship. 
