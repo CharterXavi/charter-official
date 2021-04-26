@@ -361,6 +361,31 @@ module.exports = {
         isExpanded: false,
       },
       {
+        name: 'Providence Home Health and Hospice',
+        path: '/locations/houston',
+        mapLink: 'https://goo.gl/maps/238cHwf1KN613AK5A', 
+        city: 'Houston',
+        state: 'Texas',
+        phone: {
+          general: '832-532-7538',
+          homeHealth: '',
+          hospice: ''
+        },
+        fax: {
+          general: '',
+          homeHealth: '',
+          hospice: ''
+        },
+        address: {
+          general: '11420 Dairy Ashford Rd. Suite 108 Sugar Land, TX 77478',
+          homeHealth: '',
+          hospice: ''
+        },
+        coordinates: { lat: 29.65467157248156, lng: -95.59837821522869 },
+        isClicked: false,
+        isExpanded: false,
+      },
+      {
         name: 'Charter Healthcare of Salt Lake City',
         path: '/locations/salt-lake-city',
         mapLink: 'https://goo.gl/maps/y3aa8qjHYBQMzV83A', 

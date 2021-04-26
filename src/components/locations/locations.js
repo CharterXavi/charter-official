@@ -210,13 +210,13 @@ const LocationsStrip = (props) => {
                 isExpanded: false,
                 cities: [
                     {
-                      name: 'Sugar Land',
+                      name: 'Houston',
                       locations: [
                           {
                               name: 'Providence Home Health and Hospice',
                               address: '11420 Dairy Ashford Rd. Suite 108 Sugar Land, TX 77478',
                               coordinates: { lat: 29.65467157248156, lng: -95.59837821522869 },
-                              link: '/locations/sugar-land'
+                              link: '/locations/houston'
                           }
                       ]
                     }
