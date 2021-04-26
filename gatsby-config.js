@@ -236,31 +236,6 @@ module.exports = {
         isExpanded: false,
       },
       {
-        name: 'Charter Healthcare of Simi Valley',
-        path: '/locations/simi-valley',
-        mapLink: 'https://goo.gl/maps/pnM4ynGSvZMVSXAt9',
-        city: 'Simi Valley',
-        state: 'California',
-        phone: {
-          general: '805-582-0033',
-          homeHealth: '',
-          hospice: ''
-        },
-        fax: {
-          general: '805-583-9455',
-          homeHealth: '',
-          hospice: ''
-        },
-        address: {
-          general: '5775 E Los Angeles Ave. Ste. 226, Simi Valley, CA 93063',
-          homeHealth: '',
-          hospice: ''
-        },
-        coordinates: { lat: 34.272140, lng: -118.679840 },
-        isClicked: false,
-        isExpanded: false,
-      },
-      {
         name: 'Cambridge Hospice of Orange County',
         path: '/locations/orange-county',
         mapLink: 'https://goo.gl/maps/TNcvBzkHQBNwSS4QA',
@@ -382,6 +357,31 @@ module.exports = {
           hospice: ''
         },
         coordinates: { lat: 36.161930, lng: -115.171330 },
+        isClicked: false,
+        isExpanded: false,
+      },
+      {
+        name: 'Providence Home Health and Hospice',
+        path: '/locations/houston',
+        mapLink: 'https://goo.gl/maps/238cHwf1KN613AK5A', 
+        city: 'Houston',
+        state: 'Texas',
+        phone: {
+          general: '832-532-7538',
+          homeHealth: '',
+          hospice: ''
+        },
+        fax: {
+          general: '',
+          homeHealth: '',
+          hospice: ''
+        },
+        address: {
+          general: '11420 Dairy Ashford Rd. Suite 108 Sugar Land, TX 77478',
+          homeHealth: '',
+          hospice: ''
+        },
+        coordinates: { lat: 29.65467157248156, lng: -95.59837821522869 },
         isClicked: false,
         isExpanded: false,
       },

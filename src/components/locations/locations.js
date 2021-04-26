@@ -123,17 +123,6 @@ const LocationsStrip = (props) => {
                         ]
                     },
                     {
-                        name: 'Simi Valley',
-                        locations: [
-                            {
-                                name: 'Charter Healthcare of Simi Valley',
-                                address: '5775 E Los Angeles Ave. Suite 226, Simi Valley, CA 93063-5215',
-                                coordinates: { lat: 34.272140, lng: -118.679840 },
-                                link: '/locations/simi-valley'
-                            }
-                        ]
-                    },
-                    {
                         name: 'Stanton',
                         locations: [
                             {
@@ -215,8 +204,27 @@ const LocationsStrip = (props) => {
                   ]
             },
             {
-                state: 'Utah',
+                state: 'Texas',
                 animationTime: '1100',
+                isClicked: false,
+                isExpanded: false,
+                cities: [
+                    {
+                      name: 'Houston',
+                      locations: [
+                          {
+                              name: 'Providence Home Health and Hospice',
+                              address: '11420 Dairy Ashford Rd. Suite 108 Sugar Land, TX 77478',
+                              coordinates: { lat: 29.65467157248156, lng: -95.59837821522869 },
+                              link: '/locations/houston'
+                          }
+                      ]
+                    }
+                  ]
+            },
+            {
+                state: 'Utah',
+                animationTime: '1200',
                 isClicked: false,
                 isExpanded: false,
                 cities: [

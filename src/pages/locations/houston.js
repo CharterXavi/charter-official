@@ -17,12 +17,12 @@ import aboutImage from '../../images/about-simi-valley.png'
 import {graphql} from 'gatsby';
 import headerImage from '../../images/headers/simi-valley.png';
 
-const SimiValleyPage = ({ data }) => {
+const HoustonPage = ({ data }) => {
 
   //Get/organize all the data from the graphQL Queries for posts and correct location data from gatsby.config
   const recentPosts = data.recent.edges;
   const locations = data.locations.edges[0].node.siteMetadata.locations;
-  const pageName = 'Charter Healthcare of Simi Valley';
+  const pageName = 'Providence Home Health and Hospice';
   let pageLocation = {};
   for(let i = 0; i < locations.length; i++) {
     if(locations[i].name === pageName) {
@@ -35,25 +35,25 @@ const SimiValleyPage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Simi Valley Home Health, Hospice, & Palliative Care" />
+      <SEO title="Providence Home Health and Hospice" />
       <div className='location-page'>
         <HeaderStrip2
             image={headerImage}
             title={name}
-            headline='The leading home health and hospice care provider in Simi Valley'
+            headline='The leading home health and hospice care provider in Houston'
         />
 
         {/*-------------- TOP TEXT BLOCK -------------- */}
         <div className="two-column">
           <div className="title">
-            <h4>Delivering the highest quality healthcare in the Simi Valley area.</h4>
+            <h4>Delivering the highest quality healthcare in the Houston area.</h4>
             <hr/>
           </div>
           <div className="content">
             <div className="left">
               <h6>Compassionate and Experienced Healthcare</h6>
               <p>
-                Charter Healthcare of Simi Valley is dedicated to providing you or your loved ones with the best
+                Providence Home Health and Hospice is dedicated to providing you or your loved ones with the best
                 healthcare available. Our caring and compassionate staff have years of experience in providing services
                 that allow our patients to live their best lives every day. We treat each of our clients with the respect
                 and compassion they deserve while administering expert care services in a professional manner at all
@@ -63,7 +63,7 @@ const SimiValleyPage = ({ data }) => {
             <div className="right">
               <h6>Quality Healthcare Services</h6>
               <p>
-                Charter Healthcare of Simi Valley is a premier provider of a variety of healthcare services including
+                Providence Home Health and Hospice is a premier provider of a variety of healthcare services including
                 skilled home health, hospice care, and palliative care. Our staff is adept in utilizing proven and modern
                 techniques to best allow our clients to fully live their best lives. If you are searching for the perfect
                 healthcare provider, look no further and contact us today.
@@ -171,7 +171,7 @@ const SimiValleyPage = ({ data }) => {
   )
 }
 
-export default SimiValleyPage;
+export default HoustonPage;
 
 export const recentPostsQuery = graphql`
 query {
