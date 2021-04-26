@@ -210,13 +210,13 @@ const LocationsStrip = (props) => {
                 isExpanded: false,
                 cities: [
                     {
-                      name: 'West Jordan',
+                      name: 'Sugar Land',
                       locations: [
                           {
-                              name: 'Charter Healthcare of Salt Lake City',
-                              address: '6671 S. Redwood Rd. Suite 101, West Jordan, UT 84084',
-                              coordinates: { lat: 40.630240, lng: -111.938240 },
-                              link: '/locations/salt-lake-city'
+                              name: 'Providence Home Health and Hospice',
+                              address: '11420 Dairy Ashford Rd. Suite 108 Sugar Land, TX 77478',
+                              coordinates: { lat: 29.65467157248156, lng: -95.59837821522869 },
+                              link: '/locations/sugar-land'
                           }
                       ]
                     }
