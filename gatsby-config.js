@@ -236,31 +236,6 @@ module.exports = {
         isExpanded: false,
       },
       {
-        name: 'Charter Healthcare of Simi Valley',
-        path: '/locations/simi-valley',
-        mapLink: 'https://goo.gl/maps/pnM4ynGSvZMVSXAt9',
-        city: 'Simi Valley',
-        state: 'California',
-        phone: {
-          general: '805-582-0033',
-          homeHealth: '',
-          hospice: ''
-        },
-        fax: {
-          general: '805-583-9455',
-          homeHealth: '',
-          hospice: ''
-        },
-        address: {
-          general: '5775 E Los Angeles Ave. Ste. 226, Simi Valley, CA 93063',
-          homeHealth: '',
-          hospice: ''
-        },
-        coordinates: { lat: 34.272140, lng: -118.679840 },
-        isClicked: false,
-        isExpanded: false,
-      },
-      {
         name: 'Cambridge Hospice of Orange County',
         path: '/locations/orange-county',
         mapLink: 'https://goo.gl/maps/TNcvBzkHQBNwSS4QA',

@@ -7,6 +7,7 @@ import AOS from "aos";
 import Filter from './filter'
 
 const AllLocations = (props) => {
+    //All locations are passed in as props from locations page
     const [activeLocations, setActiveLocations] = useState(props.pages);
 
     useEffect(() => {

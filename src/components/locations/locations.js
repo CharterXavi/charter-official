@@ -123,17 +123,6 @@ const LocationsStrip = (props) => {
                         ]
                     },
                     {
-                        name: 'Simi Valley',
-                        locations: [
-                            {
-                                name: 'Charter Healthcare of Simi Valley',
-                                address: '5775 E Los Angeles Ave. Suite 226, Simi Valley, CA 93063-5215',
-                                coordinates: { lat: 34.272140, lng: -118.679840 },
-                                link: '/locations/simi-valley'
-                            }
-                        ]
-                    },
-                    {
                         name: 'Stanton',
                         locations: [
                             {
@@ -215,8 +204,27 @@ const LocationsStrip = (props) => {
                   ]
             },
             {
-                state: 'Utah',
+                state: 'Texas',
                 animationTime: '1100',
+                isClicked: false,
+                isExpanded: false,
+                cities: [
+                    {
+                      name: 'West Jordan',
+                      locations: [
+                          {
+                              name: 'Charter Healthcare of Salt Lake City',
+                              address: '6671 S. Redwood Rd. Suite 101, West Jordan, UT 84084',
+                              coordinates: { lat: 40.630240, lng: -111.938240 },
+                              link: '/locations/salt-lake-city'
+                          }
+                      ]
+                    }
+                  ]
+            },
+            {
+                state: 'Utah',
+                animationTime: '1200',
                 isClicked: false,
                 isExpanded: false,
                 cities: [
