@@ -16,7 +16,7 @@ import kebabCase from "lodash/kebabCase"
 
 const CategoriesPage = ({
   data: {
-    allMarkdownRemark: { group },
+    allContentfulBlogPost: { group },
     site: {
       siteMetadata: { title },
     },
@@ -32,7 +32,7 @@ const CategoriesPage = ({
             <ul>
                 {group.map(category => (
                 <li key={category.fieldValue}>
-                    <Link to={`/categories/${kebabCase(category.fieldValue)}/`} className='category'>
+                    <Link to={`/news/categories/${kebabCase(category.fieldValue)}/`} className='category'>
                     {category.fieldValue} ({category.totalCount})
                     </Link>
                 </li>
@@ -72,8 +72,8 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(limit: 2000) {
-      group(field: frontmatter___category) {
+    allContentfulBlogPost(limit: 2000) {
+      group(field: category) {
         fieldValue
         totalCount
       }

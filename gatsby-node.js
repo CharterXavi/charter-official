@@ -25,14 +25,22 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
   const result = await graphql(`
     {
-      
-      tagsGroup: allMarkdownRemark(limit: 2000) {
-        group(field: frontmatter___tags) {
+      allContentfulBlogPost(limit: 1000) {
+        edges {
+          node {
+            slug
+            tags
+            category
+          }
+        }
+      }
+      tagsGroup: allContentfulBlogPost(limit: 2000) {
+        group(field: tags) {
           fieldValue
         }
       }
-      categoriesGroup: allMarkdownRemark(limit: 2000) {
-        group(field: frontmatter___category) {
+      categoriesGroup: allContentfulBlogPost(limit: 2000) {
+        group(field: category) {
           fieldValue
         }
       }
@@ -45,14 +53,14 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   }
 
   // Extract post  data from query & create post detail pages
-  const posts = result.data.allMarkdownRemark.edges
+  const posts = result.data.allContentfulBlogPost.edges
   posts.forEach(({ node }) => {
     createPage({
-      path: node.frontmatter.slug,
+      path: `/news/${_.kebabCase(node.slug)}/`,
       component: blogPostTemplate, //render blogTemplate.js
       context: {
         // additional data can be passed via context
-        slug: node.frontmatter.slug,
+        slug: node.slug,
       }
     })
   })
@@ -61,7 +69,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const tags = result.data.tagsGroup.group
   tags.forEach(tag => {
     createPage({
-      path: `/tags/${_.kebabCase(tag.fieldValue)}/`,
+      path: `/news/tags/${_.kebabCase(tag.fieldValue)}/`,
       component: tagTemplate, //render tagsTemplate.js
       context: {
         tag: tag.fieldValue,
@@ -73,7 +81,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const categories = result.data.categoriesGroup.group
   categories.forEach(cat => {
     createPage({
-      path: `/categories/${_.kebabCase(cat.fieldValue)}/`,
+      path: `/news/categories/${_.kebabCase(cat.fieldValue)}/`,
       component: categoryTemplate, //render tagsTemplate.js
       context: {
         category: cat.fieldValue,

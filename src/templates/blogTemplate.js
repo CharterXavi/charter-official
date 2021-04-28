@@ -126,33 +126,28 @@ export default BlogTemplate;
 
 export const pageQuery = graphql`
   query($slug: String!) {
-    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
-      html
-      frontmatter {
-        date(formatString: "MMMM DD, YYYY")
-        slug
-        tags
-        category
-        title
-        featuredImage {
-          relativePath
-          childImageSharp {
-            fluid {
-              src
-            }
-          }
+    contentfulBlogPost(slug: {eq: $slug}) {
+      category
+      content {
+        raw
+      }
+      slug
+      title
+      tags
+      image {
+        fluid {
+          src
         }
       }
+      date(formatString: "MMMM DD, YYYY")
     }
-    allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}) {
+    allContentfulBlogPost(sort: {order: DESC, fields: [date]}) {
       edges {
         node {
-          frontmatter {
-            slug
-            category
-            tags
-            title
-          }
+          slug
+          category
+          tags
+          title
         }
       }
     }

@@ -168,27 +168,22 @@ export default Tags;
 
 export const pageQuery = graphql`
   query($tag: String) {
-    allMarkdownRemark(
+    allContentfulBlogPost(
       limit: 2000
-      sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { tags: { in: [$tag] } } }
+      sort: { fields: date, order: DESC }
+      filter: { tags: { in: [$tag] } }
     ) {
       totalCount
       edges {
         node {
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            slug
-            tags
-            category
-            title
-            featuredImage {
-              relativePath
-              childImageSharp {
-                fluid {
-                  src
-                }
-              }
+          date(formatString: "MMMM DD, YYYY")
+          slug
+          tags
+          category
+          title
+          image {
+            fluid {
+              src
             }
           }
         }
