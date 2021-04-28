@@ -333,7 +333,7 @@ module.exports = {
           hospice: ''
         },
         address: {
-          general: '4905 S 107th Ave, Omaha, NE 68127',
+          general: '10707 O Street, Omaha Nebraska 68127',
           homeHealth: '',
           hospice: ''
         },
@@ -531,6 +531,7 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
     `gatsby-plugin-sitemap`,
+    `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-contentful`,
       options: {
