@@ -7,24 +7,25 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const blogPostTemplate = path.resolve("./src/templates/blogTemplate.js")
   const tagTemplate = path.resolve("./src/templates/tagsTemplate.js")
   const categoryTemplate = path.resolve("./src/templates/categoryTemplate.js")
-  // const locationTemplate = path.resolve("./src/templates/locationTemplate.js")
+
+  // allMarkdownRemark(
+  //   sort: { order: DESC, fields: [frontmatter___date] }
+  //   limit: 1000
+  // ) {
+  //   edges {
+  //     node {
+  //       frontmatter {
+  //         slug
+  //         tags
+  //         category
+  //       }
+  //     }
+  //   }
+  // }
 
   const result = await graphql(`
     {
-      allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___date] }
-        limit: 1000
-      ) {
-        edges {
-          node {
-            frontmatter {
-              slug
-              tags
-              category
-            }
-          }
-        }
-      }
+      
       tagsGroup: allMarkdownRemark(limit: 2000) {
         group(field: frontmatter___tags) {
           fieldValue
