@@ -2,7 +2,6 @@ import './index.css';
 
 import AboutStrip from '../components/about/about';
 import DataStrip from '../components/data/data';
-import { Helmet } from 'react-helmet';
 import HeroStrip7 from "../components/hero/hero7";
 import Layout from "../components/layout";
 import LocationsStrip from '../components/locations/locations';
@@ -13,11 +12,14 @@ import React from "react";
 import SEO from "../components/seo";
 import ServicesStrip2 from '../components/services/services2';
 import TestimonialsStrip from '../components/testimonials/testimonials';
-import {graphql} from 'gatsby';
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import { graphql } from 'gatsby';
 
 const IndexPage = ({ data }) => {
 
   const recentPosts = data.recent.edges;
+  const document = JSON.parse(data.contentfulPosts.edges[0].node.content.raw);
+  console.log(document);
   
   return (
     <Layout>
@@ -62,6 +64,15 @@ query {
               }
             }
           }
+        }
+      }
+    }
+  }
+  contentfulPosts: allContentfulBlogPost(sort: {order: DESC, fields: date}, limit: 3) {
+    edges {
+      node {
+        content {
+          raw
         }
       }
     }
