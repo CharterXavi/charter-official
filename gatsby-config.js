@@ -1,3 +1,9 @@
+const dotenv = require('dotenv');
+
+if(process.env.NODE_ENV !== 'production') {
+  dotenv.config();
+}
+
 module.exports = {
   siteMetadata: {
     title: `Charter Healthcare Group`,
@@ -525,5 +531,12 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
     `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: 'i5qxlyyjmn13',
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
+      }
+    }
   ],
 }
