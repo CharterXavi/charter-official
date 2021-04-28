@@ -16,7 +16,7 @@ import { graphql } from "gatsby";
 
 const Tags = ({ pageContext, data }) => {
   const { tag } = pageContext
-  const { totalCount } = data.allMarkdownRemark
+  const { totalCount } = data.allContentfulBlogPost
   const tagHeader = `${totalCount} post${
     totalCount === 1 ? "" : "s"
   } tagged with "${tag}"`
