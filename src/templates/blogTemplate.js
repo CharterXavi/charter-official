@@ -17,31 +17,26 @@ import _ from 'lodash';
 import archiveHeader from '../images/headers/archive.png';
 
 const BlogTemplate = (props) => {
-
-  const imageSrc = props.data.markdownRemark.frontmatter.featuredImage.childImageSharp.fluid.src; //capture this post's featured image
-  const postTitle = props.data.markdownRemark.frontmatter.title; //capture the title of this post
-  const postDate = props.data.markdownRemark.frontmatter.date; //capture the title of this post
-  const postCategory = props.data.markdownRemark.frontmatter.category; //capture the tags of this post
-  const postTags = props.data.markdownRemark.frontmatter.tags; //capture the category of this post
-  const postPath = props.location.href; //capture post path
+  const post = props.data.contentfulBlogPost;
+  
+  const { title, date, category, tags, slug } = post;
+  const src = post.image.fluid.src;
   const twitterHandle = 'charterhcg';
   const facebookHandle = 'charterhcg';
   const linkedinHandle = 'charter-healthcare-group';
-  const allPosts = props.data.allMarkdownRemark.edges; //capture all posts in the site
+  const allPosts = props.data.allContentfulBlogPost.edges; //capture all posts in the site
   const recentPosts = [];
   const relatedPosts = [];
 
-
-  allPosts.map(post => {
-    // create an array of posts with recent posts (related posts)
-    if (recentPosts.length < 3) {
+  allPosts.forEach(post => {
+    // populate recent posts array
+    if ((post.node.title !== title) && (recentPosts.length < 3)) {
       recentPosts.push(post);
     }
-
-    // create an array of posts with similar tags (related posts)
-    if (post.node.frontmatter.title === postTitle) {
+    // populate related posts array
+    if (post.node.title === title) {
       return post;
-    } else if ((post.node.frontmatter.category === postCategory) && (relatedPosts.length < 3)) {
+    } else if ((post.node.category === category) && (relatedPosts.length < 3)) {
       return relatedPosts.push(post);
     } else {
       return post;
@@ -55,34 +50,33 @@ const BlogTemplate = (props) => {
 
   return (
     <Layout>
-      <SEO title={postTitle} />
+      <SEO title={title} />
       <HeaderStrip2 
-        title={postTitle} 
+        title={title} 
         image={archiveHeader}
       />
       <div className='blog-page'>
         <div className="blog-post-container">
 
           <div className="blog-post">
-            <img src={imageSrc} alt={postTitle} className='featured-img' />
+            <img src={src} alt={title} className='featured-img' />
             <div className='post-info'>
-              <h4>{postTitle}</h4>
-              <p>{postDate}</p>
+              <h4>{title}</h4>
+              <p>{date}</p>
               <hr/>
             </div>
-            <section
-              className="blog-post-content"
-              dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}
-            />
+            <section className="blog-post-content">
+              {}
+            </section>
             <div data-aos='fade-right' data-aos-duration='1000'>
               <ButtonPrimary content='← Back to News page' link='/news' />
             </div>
             <p className='category-wrapper'>Category: 
-              <Link to={`/categories/${_.kebabCase(postCategory)}`} className='category' >{postCategory}</Link> 
+              <Link to={`/news/categories/${_.kebabCase(category)}`} className='category' >{category}</Link> 
             </p>
             <p className='tag-wrapper'>Tags: 
-              {postTags.map(tag => {
-                return <Link to={`/tags/${_.kebabCase(tag)}`} className='tag' key={tag} >{tag}</Link> 
+              {tags.map(tag => {
+                return <Link to={`/news/tags/${_.kebabCase(tag)}`} className='tag' key={tag} >{tag}</Link> 
               })}
             </p>
           </div>
@@ -92,26 +86,27 @@ const BlogTemplate = (props) => {
               <ClockIcon />
               <h6 className='detail-title'>Recent Posts</h6>
                 {recentPosts.map(post => {
-                  return <p className='detail-text' key={post.node.frontmatter.title}><Link to={post.node.frontmatter.slug}>{post.node.frontmatter.title}</Link></p>
+                  return <p className='detail-text' key={post.node.title}><Link to={post.node.slug}>{post.node.title}</Link></p>
                 })}
             </div>
             <div className='related'>
               <HeartIcon />
               <h6 className='detail-title'>Related Posts</h6>
                 {relatedPosts.map(post => {
-                  return <p className='detail-text' key={post.node.frontmatter.title}><Link to={post.node.frontmatter.slug}>{post.node.frontmatter.title}</Link></p>
+                  return <p className='detail-text' key={post.node.title}><Link to={post.node.slug}>{post.node.title}</Link></p>
                 })}
             </div>
+            
             <div className='share'>
               <NetworkIcon />
               <h6 className='detail-title'>Share this post:</h6>
               <ShareButtons 
-                title={postTitle} 
-                url={postPath}
+                title={title} 
+                url={`https://charterhcg.com/news/${slug}`}
                 facebookHandle={facebookHandle} 
                 linkedinHandle={linkedinHandle} 
                 twitterHandle={twitterHandle} 
-                tags={postTags} 
+                tags={tags} 
               />
             </div>
           </div>

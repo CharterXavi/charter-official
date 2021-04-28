@@ -8,7 +8,7 @@ const PostLink = (props) => {
     let imageSrc = props.post.node.image.fluid.src;
     
     return (
-        <Link to={props.post.node.slug}>
+        <Link to={`/news/${props.post.node.slug}`}>
             <div className='PostLink'>
                 <div className='categories'>
                     <p className='category'>{props.post.node.category}</p>

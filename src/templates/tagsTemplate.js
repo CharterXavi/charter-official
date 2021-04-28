@@ -25,16 +25,14 @@ const Tags = ({ pageContext, data }) => {
   //Write small algorithm to take the Tag name dynamically and convert it to uppercase first letter
   //It can then be used for a nice SEO title
   let tagTitle = '';
-  let tagArray = [];
   for(let i = 0; i < tag.length; i++) {
     if(i === 0) {
       let firstLetter = tag[0].toUpperCase();
-      tagArray.push(firstLetter);
+      tagTitle += firstLetter;
     } else {
-      tagArray.push(tag[i]);
+      tagTitle += tag[i];
     }
   }
-  tagTitle = tagArray.join('');
   
   
 
@@ -42,7 +40,7 @@ const Tags = ({ pageContext, data }) => {
   const [clickCount, setClickCount] = useState(1); //click count state begins as a 1
   const [isFinished, setIsFinished] = useState(false); //when posts are all shown, change state to setFinished:true
   const [hideShowMore, setHideShowMore] = useState(false); //when not enough posts, hide showMore button
-  const allPosts = data.allMarkdownRemark.edges;
+  const allPosts = data.allContentfulBlogPost.edges;
   const newPostList = [];
 
   // //defining your own mountEffect function using useEffect with empty array arg gets rid of ESLint error for missing dependencies
@@ -126,7 +124,7 @@ const Tags = ({ pageContext, data }) => {
           <div className='post-wrapper'>
             {posts.map(post => {
               return (
-                <PostLink to={post.node.frontmatter.slug} key={post.node.frontmatter.title} post={post} />
+                <PostLink to={post.node.slug} key={post.node.title} post={post} />
               )
             })}
           </div>
