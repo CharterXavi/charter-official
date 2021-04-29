@@ -57,9 +57,7 @@ const NewsPage = ({data}) => {
                 <CategoryNav categories={categories} />
                 <PostStrip posts={charterNews} title='Charter News' link='/categories/charter-news' />
                 <PostStrip posts={healthcarePosts} title='Healthcare' link='/categories/healthcare' />
-                {/* <PostStrip posts={researchPosts} title='Research' link='/categories/research' /> */}
               </div>
-
           </div>
         </div>
       </Layout>
@@ -71,118 +69,56 @@ export default NewsPage;
 //Query our post frontmatter to get relative paths for the images they may be referencing
 export const pageQuery = graphql`
   query {
-    recent: allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {}, limit: 5) {
+    recent: allContentfulBlogPost(sort: {order: DESC, fields: [date]}, filter: {}, limit: 5) {
       edges {
         node {
           id
-          excerpt(pruneLength: 250)
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            slug
-            title
-            category
-            featuredImage {
-              relativePath
-              childImageSharp {
-                fluid {
-                  src
-                }
-              }
+          date(formatString: "MMMM DD, YYYY")
+          slug
+          title
+          category
+          image {
+            fluid {
+              src
             }
           }
         }
       }
     }
-    oldest: allMarkdownRemark(sort: {order: ASC, fields: [frontmatter___date]}, filter: {}, limit: 3) {
+    healthcare: allContentfulBlogPost(sort: {order: DESC, fields: [date]}, filter: {category: {eq: "Healthcare"}}, limit: 3) {
       edges {
         node {
           id
-          excerpt(pruneLength: 250)
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            slug
-            title
-            category
-            featuredImage {
-              relativePath
-              childImageSharp {
-                fluid {
-                  src
-                }
-              }
+          date(formatString: "MMMM DD, YYYY")
+          slug
+          title
+          category
+          image {
+            fluid {
+              src
             }
           }
         }
       }
     }
-    healthcare: allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {category: {eq: "Healthcare"}}}, limit: 3) {
+    charterNews: allContentfulBlogPost(sort: {order: DESC, fields: [date]}, filter: {category: {eq: "Charter News"}}, limit: 3) {
       edges {
         node {
           id
-          excerpt(pruneLength: 250)
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            slug
-            title
-            category
-            featuredImage {
-              relativePath
-              childImageSharp {
-                fluid {
-                  src
-                }
-              }
+          date(formatString: "MMMM DD, YYYY")
+          slug
+          title
+          category
+          image {
+            fluid {
+              src
             }
           }
         }
       }
     }
-    research: allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {category: {eq: "Research"}}}, limit: 3) {
-      edges {
-        node {
-          id
-          excerpt(pruneLength: 250)
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            slug
-            title
-            category
-            featuredImage {
-              relativePath
-              childImageSharp {
-                fluid {
-                  src
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    charterNews: allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {category: {eq: "Charter News"}}}, limit: 3) {
-      edges {
-        node {
-          id
-          excerpt(pruneLength: 250)
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            slug
-            title
-            category
-            featuredImage {
-              relativePath
-              childImageSharp {
-                fluid {
-                  src
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    categories: allMarkdownRemark(limit: 2000) {
-      group(field: frontmatter___category) {
+    categories: allContentfulBlogPost(limit: 2000) {
+      group(field: category) {
         fieldValue
         totalCount
       }

@@ -16,7 +16,7 @@ import kebabCase from "lodash/kebabCase"
 
 const TagsPage = ({
   data: {
-    allMarkdownRemark: { group },
+    allContentfulBlogPost: { group },
     site: {
       siteMetadata: { title },
     },
@@ -32,7 +32,7 @@ const TagsPage = ({
             <ul>
                 {group.map(tag => (
                 <li key={tag.fieldValue}>
-                    <Link to={`/tags/${kebabCase(tag.fieldValue)}/`} className='tag'>
+                    <Link to={`/news/tags/${kebabCase(tag.fieldValue)}/`} className='tag'>
                     {tag.fieldValue} ({tag.totalCount})
                     </Link>
                 </li>
@@ -72,8 +72,8 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(limit: 2000) {
-      group(field: frontmatter___tags) {
+    allContentfulBlogPost(limit: 2000) {
+      group(field: tags) {
         fieldValue
         totalCount
       }

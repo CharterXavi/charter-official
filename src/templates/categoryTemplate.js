@@ -15,32 +15,27 @@ import archiveHeader from '../images/headers/archive.png';
 import { graphql } from "gatsby";
 
 const Category = ({ pageContext, data }) => {
-  const { category } = pageContext
-  const { totalCount } = data.allMarkdownRemark
-  const catHeader = `${totalCount} post${
-    totalCount === 1 ? "" : "s"
-  } in the "${category}" category`
+  const { category } = pageContext;
+  const { totalCount } = data.allContentfulBlogPost;
+  const catHeader = `${totalCount} post${totalCount === 1 ? "" : "s"} in the "${category}" category`;
 
-  //Write small algorithm to take the Tag name dynamically and convert it to uppercase first letter
-  //It can then be used for a nice SEO title
+  //Take the Tag name dynamically and convert it to uppercase first letter for SEO title
   let categoryTitle = '';
-  let categoryArray = [];
   for(let i = 0; i < category.length; i++) {
     if(i === 0) {
       let firstLetter = category[0].toUpperCase();
-      categoryArray.push(firstLetter);
+      categoryTitle += firstLetter;
     } else {
-      categoryArray.push(category[i]);
+      categoryTitle += category[i];
     }
   }
-  categoryTitle = categoryArray.join('');
 
-
+  //STATE VALUES
   const [posts, setPosts] = useState([]); //posts state begin as an empty array
   const [clickCount, setClickCount] = useState(1); //click count state begins as a 1
   const [isFinished, setIsFinished] = useState(false); //when posts are all shown, change state to setFinished:true
   const [hideShowMore, setHideShowMore] = useState(false); //when not enough posts, hide showMore button
-  const allPosts = data.allMarkdownRemark.edges; //capture all posts from GraphQL query for showMore program
+  const allPosts = data.allContentfulBlogPost.edges; //capture all posts from GraphQL query for showMore program
   const newPostList = [];
 
 
@@ -126,7 +121,7 @@ const Category = ({ pageContext, data }) => {
           <div className='post-wrapper'>
             {posts.map(post => {
               return (
-                <PostLink to={post.node.frontmatter.slug} key={post.node.frontmatter.title} post={post} />
+                <PostLink to={post.node.slug} key={post.node.title} post={post} />
               )
             })}
           </div>
@@ -168,27 +163,22 @@ export default Category;
 
 export const pageQuery = graphql`
   query($category: String) {
-    allMarkdownRemark(
+    allContentfulBlogPost(
       limit: 2000
-      sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { category: { in: [$category] } } }
+      sort: { fields: [date], order: DESC }
+      filter: {category: { in: [$category] }}
     ) {
       totalCount
       edges {
         node {
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            slug
-            tags
-            category
-            title
-            featuredImage {
-              relativePath
-              childImageSharp {
-                fluid {
-                  src
-                }
-              }
+          date(formatString: "MMMM DD, YYYY")
+          slug
+          tags
+          category
+          title
+          image {
+            fluid {
+              src
             }
           }
         }
