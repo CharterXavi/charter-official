@@ -15,11 +15,13 @@ import SEO from '../components/seo';
 import ShareButtons from '../components/social/share-buttons';
 import _ from 'lodash';
 import archiveHeader from '../images/headers/archive.png';
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
 const BlogTemplate = (props) => {
   const post = props.data.contentfulBlogPost;
   
-  const { title, date, category, tags, slug } = post;
+  const { title, date, category, tags, slug, content } = post;
+  const document = JSON.parse(content.raw);
   const src = post.image.fluid.src;
   const twitterHandle = 'charterhcg';
   const facebookHandle = 'charterhcg';
@@ -66,7 +68,7 @@ const BlogTemplate = (props) => {
               <hr/>
             </div>
             <section className="blog-post-content">
-              {}
+              {documentToReactComponents(document)}
             </section>
             <div data-aos='fade-right' data-aos-duration='1000'>
               <ButtonPrimary content='← Back to News page' link='/news' />
