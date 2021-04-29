@@ -58,7 +58,6 @@ const NewsPage = ({data}) => {
                 <PostStrip posts={charterNews} title='Charter News' link='/categories/charter-news' />
                 <PostStrip posts={healthcarePosts} title='Healthcare' link='/categories/healthcare' />
               </div>
-
           </div>
         </div>
       </Layout>
@@ -70,7 +69,7 @@ export default NewsPage;
 //Query our post frontmatter to get relative paths for the images they may be referencing
 export const pageQuery = graphql`
   query {
-    recent: allContentfulBlogPost(sort: {order: DESC, fields: [date]}, filter: {}, limit: 3) {
+    recent: allContentfulBlogPost(sort: {order: DESC, fields: [date]}, filter: {}, limit: 5) {
       edges {
         node {
           id

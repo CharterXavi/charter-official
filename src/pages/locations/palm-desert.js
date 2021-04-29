@@ -184,23 +184,17 @@ export default PalmDesertPage
 
 export const recentPostsQuery = graphql`
 query {
-  recent: allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {}, limit: 3) {
+  recent: allContentfulBlogPost(sort: {order: DESC, fields: [date]}, filter: {}, limit: 3) {
     edges {
       node {
         id
-        excerpt(pruneLength: 250)
-        frontmatter {
-          date(formatString: "MMMM DD, YYYY")
-          slug
-          title
-          category
-          featuredImage {
-            relativePath
-            childImageSharp {
-              fluid {
-                src
-              }
-            }
+        date(formatString: "MMMM DD, YYYY")
+        slug
+        title
+        category
+        image {
+          fluid {
+            src
           }
         }
       }
