@@ -19,7 +19,7 @@ const RecentGrid = (props) => {
         {
         //the posts from GraphQL Query are 'edges', but we'll call them posts
         props.posts
-            .filter(post => !!post.node.frontmatter.date)
+            .filter(post => !!post.node.date)
             .map(post => 
                 <PostLink key={post.node.id} post={post} />
             )

@@ -47,6 +47,7 @@ query {
   recent: allContentfulBlogPost(sort: {order: DESC, fields: [date]}, filter: {}, limit: 3) {
     edges {
       node {
+        id
         date(formatString: "MMMM DD, YYYY")
         slug
         title

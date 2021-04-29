@@ -10,7 +10,7 @@ const CategoryNav = (props) => {
             <h6>Categories:</h6>
             {
                 props.categories.map(category => {
-                return <Link key={category.fieldValue} to={`/categories/${_.kebabCase(category.fieldValue)}`} className='category-link' >{category.fieldValue}</Link>
+                return <Link key={category.fieldValue} to={`/news/categories/${_.kebabCase(category.fieldValue)}`} className='category-link' >{category.fieldValue}</Link>
                 })
             }
         </div>
