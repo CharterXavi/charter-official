@@ -17,7 +17,6 @@ import { graphql } from 'gatsby';
 const IndexPage = ({ data }) => {
 
   const recentPosts = data.recent.edges;
-  console.log(document);
   
   return (
     <Layout>
