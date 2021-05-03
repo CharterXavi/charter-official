@@ -9,6 +9,7 @@ const Expander = (props) => {
 
   //Upon render or rerender, allow for height calculation to be dynamic based on window size
   const [screenWidth, setScreenWidth] = useState(0);
+
   useEffect(() => {
       //upon render, listen for screen size change and setState to 
       if (typeof window !== 'undefined') {
@@ -19,6 +20,7 @@ const Expander = (props) => {
   useEffect(() => {
     handleResize();
   });
+
   const handleResize = () => {
     setScreenWidth(window.innerWidth);
   } 
@@ -27,8 +29,9 @@ const Expander = (props) => {
   const heightFactor = `${screenWidth < 450 ? 
     ((props.cities.length * 59) + screenWidth/100).toString().concat('px')
     :
-    (props.cities.length * 45).toString().concat('px')
+    (props.cities.length * 40).toString().concat('px')
   }`;
+  
   const handleHover = (id) => {
     props.hoverReveal(id);
   }
