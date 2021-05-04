@@ -48,7 +48,7 @@ module.exports = {
         city: 'Tucson',
         state: 'Arizona',
         phone: {
-          general: '623-256-8098',
+          general: '520-476-3611',
           homeHealth: '',
           hospice: ''
         },
@@ -258,7 +258,7 @@ module.exports = {
           hospice: ''
         },
         address: {
-          general: '12235 Beach Blvd. Ste. 200-B, Stanton, CA 90680',
+          general: '12235 Beach Blvd. Suites 100 & 200E, Stanton, CA 90680',
           homeHealth: '',
           hospice: ''
         },
@@ -358,7 +358,7 @@ module.exports = {
           hospice: ''
         },
         address: {
-          general: '2739 Sunridge Heights Parkway, Ste. 110, Henderson, NV 89044',
+          general: '2739 Sunridge Heights Parkway, Ste. 110, Henderson, NV 89052',
           homeHealth: '',
           hospice: ''
         },
