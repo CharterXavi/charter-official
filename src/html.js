@@ -22,6 +22,18 @@ export default function HTML(props) {
           dangerouslySetInnerHTML={{ __html: props.body }}
         />
         {props.postBodyComponents}
+
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+                lc.src = 'https://widgets.theglobalcdn.com/charterhcg.com/widgets-main.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+              })();
+            `,
+          }}
+        />
       </body>
     </html>
   )
