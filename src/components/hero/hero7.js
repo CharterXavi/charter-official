@@ -41,17 +41,19 @@ const HeroStrip7 = () => {
                     </h6>
                     <div>
                         <div className='play-btn-wrapper' onClick={showVideo} onKeyDown={showVideo} role='button' tabIndex='0'>
-                            {videoState ? <ButtonPrimary content='Hide Video' link='#' /> : <ButtonPrimary content='Watch Video' link='#'/>}
+                            {/* {videoState ? <ButtonPrimary content='Hide Video' link='#' /> : <ButtonPrimary content='Watch Video' link='#'/>} */}
+                            <ButtonPrimary content='Services'/>
+                            <ButtonPrimary content='Our Locations'/>
                         </div>
                     </div>
                 </div>
                 <div className='hero-assets'>
-                    <iframe 
+                    {/* <iframe 
                         className={`video ${videoState ? 'active' : ''}`} 
                         src="https://player.vimeo.com/video/312555365" 
                         title='Charter Healthcare Introduction and Information'
                         width="640" height="360" frameBorder="0" allowFullScreen
-                    />
+                    /> */}
                     <HeroGraphic classProp={`hero-graphic ${videoState ? 'active-graphic' : ''}`} />
                 </div>
             </div>

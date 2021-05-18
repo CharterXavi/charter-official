@@ -146,6 +146,12 @@
     padding: 8px 0 8px 16px;
     margin: 8px 0;
 }
+.Hero7 .play-btn-wrapper {
+    display: flex;
+}
+.Hero7 .play-btn-wrapper a {
+    margin-right: 16px;
+}
 .Hero7 .play-btn-wrapper:focus {
     outline: none;
 }
