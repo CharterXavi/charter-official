@@ -146,6 +146,12 @@
     padding: 8px 0 8px 16px;
     margin: 8px 0;
 }
+.Hero7 .play-btn-wrapper {
+    display: flex;
+}
+.Hero7 .play-btn-wrapper a {
+    margin-right: 16px;
+}
 .Hero7 .play-btn-wrapper:focus {
     outline: none;
 }
@@ -336,6 +342,9 @@
     }
     .Hero7 .hero-content h6 {
         display: none;
+    }
+    .Hero7 .play-btn-wrapper {
+        flex-direction: column;
     }
     /* -- VIDEO -- */
     .Hero7 iframe {

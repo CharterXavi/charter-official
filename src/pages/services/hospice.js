@@ -1,6 +1,7 @@
 import './hospice.css';
 
 import BereavementStrip from "../../components/hospice/bereavement-strip";
+import ButtonPrimaryAlt from '../../components/buttons/button-primary-alt';
 import HeaderStrip2 from "../../components/header-strip/header-strip2";
 import HospiceEligibility from '../../components/hospice/hospice-eligibility';
 import HospiceServices from "../../components/hospice/hospice-services";
@@ -14,7 +15,6 @@ import TestimonialsStrip from "../../components/testimonials/testimonials";
 import hospiceImage from '../../images/headers/hospice.png';
 
 const HospicePage = () => {
-  
   
   return (
     <Layout>
@@ -36,6 +36,7 @@ const HospicePage = () => {
                 and your family need during this time. Our interdisciplinary team works directly with your physician and our hospice medical director to ensure
                 you receive the best hospice care possible.
               </p>
+              <ButtonPrimaryAlt content='See Our locations' link='/locations' />
             </div>
             <div className="right">
               <h6>Our Mission Statement</h6>

@@ -10,3 +10,16 @@
     padding: 64px 0 98px 0;
 }
 
+.AboutStrip .button-wrapper {
+    display: flex;
+}
+
+.AboutStrip .button-wrapper a {
+    margin-right: 16px;
+}
+
+@media only screen and (max-width: 515px) {
+    .AboutStrip .button-wrapper {
+        flex-direction: column;
+    }
+}

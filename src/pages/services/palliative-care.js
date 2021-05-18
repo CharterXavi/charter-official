@@ -1,5 +1,6 @@
 import './palliative-care.css';
 
+import ButtonPrimaryAlt from '../../components/buttons/button-primary-alt';
 import CareApproach from '../../components/palliative/care-approach';
 import HeaderStrip2 from '../../components/header-strip/header-strip2';
 import Layout from "../../components/layout"
@@ -27,6 +28,7 @@ const PalliativeCarePage = () => (
               made of specially-trained doctors, NPs, nurses, and other disciplines- can help you and your loved ones navigate and cope with the difficult experience.
               Our best-in-class palliative care is integral in providing comfort in difficult situations such as extreme or end-of-life illnesses.
             </p>
+            <ButtonPrimaryAlt content='See Our locations' link='/locations' />
           </div>
           <div className="right">
             <h6>Palliative Care vs. Hospice Care</h6>
