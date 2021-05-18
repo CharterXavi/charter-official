@@ -343,6 +343,9 @@
     .Hero7 .hero-content h6 {
         display: none;
     }
+    .Hero7 .play-btn-wrapper {
+        flex-direction: column;
+    }
     /* -- VIDEO -- */
     .Hero7 iframe {
         width: 92%;

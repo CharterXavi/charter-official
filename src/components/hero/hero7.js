@@ -19,13 +19,13 @@ const HeroStrip7 = () => {
         AOS.refresh();
     });
 
-    const [videoState, setVideoState] = useState(false);
-    const [buttonState, setButtonState] = useState(false);
+    // const [videoState, setVideoState] = useState(false);
+    // const [buttonState, setButtonState] = useState(false);
   
-    const showVideo = () => {
-      setVideoState(!videoState);
-      setButtonState(!buttonState);
-    }
+    // const showVideo = () => {
+    //   setVideoState(!videoState);
+    //   setButtonState(!buttonState);
+    // }
 
     return (
         <div className='Hero7'>
@@ -40,10 +40,11 @@ const HeroStrip7 = () => {
                         home and post-acute health care available.
                     </h6>
                     <div>
-                        <div className='play-btn-wrapper' onClick={showVideo} onKeyDown={showVideo} role='button' tabIndex='0'>
+                        <div className='play-btn-wrapper'>
+                            {/* onClick={showVideo} onKeyDown={showVideo} role='button' tabIndex='0' */}
                             {/* {videoState ? <ButtonPrimary content='Hide Video' link='#' /> : <ButtonPrimary content='Watch Video' link='#'/>} */}
-                            <ButtonPrimary content='Services'/>
-                            <ButtonPrimary content='Our Locations'/>
+                            <ButtonPrimary content='Services' link='/services' />
+                            <ButtonPrimary content='Our Locations' link='/locations' />
                         </div>
                     </div>
                 </div>
@@ -54,7 +55,8 @@ const HeroStrip7 = () => {
                         title='Charter Healthcare Introduction and Information'
                         width="640" height="360" frameBorder="0" allowFullScreen
                     /> */}
-                    <HeroGraphic classProp={`hero-graphic ${videoState ? 'active-graphic' : ''}`} />
+                    <HeroGraphic classProp='hero-graphic' />
+                    {/* {`hero-graphic ${videoState ? 'active-graphic' : ''}`} */}
                 </div>
             </div>
 

@@ -1,5 +1,6 @@
 import './acute-care.css';
 
+import ButtonPrimaryAlt from '../../components/buttons/button-primary-alt';
 import HeaderStrip2 from '../../components/header-strip/header-strip2';
 import Layout from "../../components/layout"
 import LocationsStrip from '../../components/locations/locations';
@@ -38,6 +39,7 @@ const AcuteCarePage = () => (
               management that cannot be accomplished in another setting. GIP can be provided in the hospital, 
               Skilled Nursing Facility (SNF) or hospice inpatient facility.
             </p>
+            <ButtonPrimaryAlt content='See Our locations' link='/locations' />
           </div>
           <div className="right">
             <h6>Bundled Payments for Care Improvement (BPCI) Advanced Program</h6>

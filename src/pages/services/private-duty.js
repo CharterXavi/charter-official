@@ -1,5 +1,6 @@
 import './private-duty.css';
 
+import ButtonPrimaryAlt from '../../components/buttons/button-primary-alt';
 import HeaderStrip2 from '../../components/header-strip/header-strip2';
 import Layout from "../../components/layout"
 import LocationsStrip from '../../components/locations/locations';
@@ -36,6 +37,7 @@ const PrivateDutyPage = () => (
               <li>Medication reminders</li>
               <li>And more!</li>
             </ul>
+            <ButtonPrimaryAlt content='See Our locations' link='/locations' />
           </div>
           <div className="right">
             <h6>The Goal</h6>

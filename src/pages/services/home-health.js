@@ -1,6 +1,7 @@
 import './home-health.css';
 
 import Advantages from '../../components/home-health/advantages';
+import ButtonPrimaryAlt from '../../components/buttons/button-primary-alt';
 import HeaderStrip2 from '../../components/header-strip/header-strip2';
 import Layout from "../../components/layout";
 import LocationsStrip from '../../components/locations/locations';
@@ -36,6 +37,7 @@ const HomeHealthPage = () => (
               care available. All the services we offer are designed to help enhance our patients' quality of life, and are conveniently
               covered by Medicare and most private insurances.
             </p>
+            <ButtonPrimaryAlt content='See Our locations' link='/locations' />
           </div>
           <div className="right">
             <h6>Home Health Services</h6>

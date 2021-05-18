@@ -28,7 +28,10 @@ const AboutStrip = () => {
               </p>
           </div>
         </div>
-        <ButtonPrimaryAlt content='Get to know Charter' link='/about' />
+        <div className="button-wrapper">
+          <ButtonPrimaryAlt content='Get to know Charter' link='/about' />
+          <ButtonPrimaryAlt content='See Our locations' link='/locations' />
+        </div>
       </div>
     </div>
   )
