@@ -64,7 +64,6 @@ const TeamCard = (props) => {
                 <SocialButton content='LinkedIn' link={props.linkedIn} />
             </div>
             <div className='content'>
-                <p className='quote detail-text'>{props.quote}</p>
                 <div className={`biography ${props.isClicked ? 'expanded-bio' : ''}`} style={{height: `${props.isClicked ? heightFactor : '0px'}`}}>
                     <hr className={`${props.isClicked ? 'stretch-hr' : ''}`}/>
                     <p>{props.bio}</p>
