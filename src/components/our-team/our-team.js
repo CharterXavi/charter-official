@@ -33,7 +33,7 @@ const OurTeamStrip = (props) => {
                 </Link>
                 <div className='card-info'>
                     <h6>Sabina Del Rosario</h6>
-                    <p>Chief Operating Officer</p>
+                    <p>Chief Culture Officer</p>
                 </div>
             </div>
             <div className='card'>
