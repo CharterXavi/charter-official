@@ -141,7 +141,7 @@ const PrivacyPage = () => (
         <h6>Contact Information</h6>
         <p>
           Charter welcomes your comments regarding this Privacy Policy. If you believe that Charter has not adhered to this Privacy Policy please contact
-          ______________. We will use commercially reasonable efforts to promptly determine and remedy the problem.
+          our office at 909-644-4965. We will use commercially reasonable efforts to promptly determine and remedy the problem.
         </p>
         <br/>
 
