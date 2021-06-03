@@ -167,8 +167,8 @@ const TermsPage = () => (
                         INFORMATION, PLEASE DO NOT PROVIDE THAT PERSONAL INFORMATION.
                       </p>
                       <p>
-                        If you receive any suspicious e-mail which claims or appears to be from Charter, please notify us by calling the Charter’s Hotline
-                        at ________________.
+                        If you receive any suspicious e-mail which claims or appears to be from Charter, please notify us by calling the Charter’s Hotline at
+                        909-954-0666 ext 185.
                       </p>
                     </li>
                   </ul>
