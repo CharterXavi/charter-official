@@ -92,6 +92,56 @@ module.exports = {
         isExpanded: false,
       },
       {
+        name: 'Charter Healthcare of Tucson',
+        path: '/locations/tucson',
+        mapLink: 'https://goo.gl/maps/bPJTJV3wBqTp2c8y7',
+        city: 'Tucson',
+        state: 'Arizona',
+        phone: {
+          general: '520-476-3611',
+          homeHealth: '',
+          hospice: ''
+        },
+        fax: {
+          general: '888-509-0063',
+          homeHealth: '',
+          hospice: ''
+        },
+        address: {
+          general: '6400 E. Grant Rd., Ste. 150 Tucson, AZ 85715',
+          homeHealth: '',
+          hospice: ''
+        },
+        coordinates: { lat: 32.24938, lng: -110.855152 },
+        isClicked: false,
+        isExpanded: false,
+      },
+      {
+        name: 'Generations Hospice Care',
+        path: '/locations/generations-care',
+        mapLink: 'https://goo.gl/maps/L4PqQMKN4xRXWMAL8',
+        city: 'San Antonio',
+        state: 'Texas',
+        phone: {
+          general: '210-979-9933',
+          homeHealth: '',
+          hospice: ''
+        },
+        fax: {
+          general: '760-247-5502',
+          homeHealth: '',
+          hospice: ''
+        },
+        address: {
+          general: '2819 Northwest Loop 410, San Antonio, TX  78230',
+          homeHealth: '',
+          hospice: ''
+        },
+        coordinates: { lat: 29.51126243720625,  lng: -98.53946842998343 },
+        isClicked: false,
+        isExpanded: false,
+      },
+      {
         name: 'Charter Healthcare of San Bernardino',
         path: '/locations/san-bernardino',
         mapLink: 'https://goo.gl/maps/7pNfrqqzGiZFG5PK6',
