@@ -117,6 +117,31 @@ module.exports = {
         isExpanded: false,
       },
       {
+        name: 'Charter Healthcare of San Bernardino',
+        path: '/locations/san-bernardino',
+        mapLink: 'https://goo.gl/maps/7pNfrqqzGiZFG5PK6',
+        city: 'San Bernardino',
+        state: 'California',
+        phone: {
+          general: '909-825-2969',
+          homeHealth: '',
+          hospice: ''
+        },
+        fax: {
+          general: '909-825-8751',
+          homeHealth: '',
+          hospice: ''
+        },
+        address: {
+          general: '1007 E. Cooley Dr. Ste. 100 Colton, CA 92324',
+          homeHealth: '',
+          hospice: ''
+        },
+        coordinates: { lat: 34.05547, lng: -117.310526 },
+        isClicked: false,
+        isExpanded: false,
+      },
+      {
         name: 'Charter Healthcare of San Gabriel Valley',
         path: '/locations/san-gabriel-valley',
         mapLink: 'https://goo.gl/maps/pgsmZruf97YpLHWM7',
