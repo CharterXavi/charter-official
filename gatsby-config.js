@@ -117,56 +117,6 @@ module.exports = {
         isExpanded: false,
       },
       {
-        name: 'Generations Hospice Care',
-        path: '/locations/generations-care',
-        mapLink: 'https://goo.gl/maps/L4PqQMKN4xRXWMAL8',
-        city: 'San Antonio',
-        state: 'Texas',
-        phone: {
-          general: '210-979-9933',
-          homeHealth: '',
-          hospice: ''
-        },
-        fax: {
-          general: '760-247-5502',
-          homeHealth: '',
-          hospice: ''
-        },
-        address: {
-          general: '2819 Northwest Loop 410, San Antonio, TX  78230',
-          homeHealth: '',
-          hospice: ''
-        },
-        coordinates: { lat: 29.51126243720625,  lng: -98.53946842998343 },
-        isClicked: false,
-        isExpanded: false,
-      },
-      {
-        name: 'Charter Healthcare of San Bernardino',
-        path: '/locations/san-bernardino',
-        mapLink: 'https://goo.gl/maps/7pNfrqqzGiZFG5PK6',
-        city: 'San Bernardino',
-        state: 'California',
-        phone: {
-          general: '909-825-2969',
-          homeHealth: '',
-          hospice: ''
-        },
-        fax: {
-          general: '909-825-8751',
-          homeHealth: '',
-          hospice: ''
-        },
-        address: {
-          general: '1007 E. Cooley Dr. Ste. 100 Colton, CA 92324',
-          homeHealth: '',
-          hospice: ''
-        },
-        coordinates: { lat: 34.05547, lng: -117.310526 },
-        isClicked: false,
-        isExpanded: false,
-      },
-      {
         name: 'Charter Healthcare of San Gabriel Valley',
         path: '/locations/san-gabriel-valley',
         mapLink: 'https://goo.gl/maps/pgsmZruf97YpLHWM7',
