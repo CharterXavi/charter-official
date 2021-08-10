@@ -92,31 +92,6 @@ module.exports = {
         isExpanded: false,
       },
       {
-        name: 'Charter Healthcare of Tucson',
-        path: '/locations/tucson',
-        mapLink: 'https://goo.gl/maps/bPJTJV3wBqTp2c8y7',
-        city: 'Tucson',
-        state: 'Arizona',
-        phone: {
-          general: '520-476-3611',
-          homeHealth: '',
-          hospice: ''
-        },
-        fax: {
-          general: '888-509-0063',
-          homeHealth: '',
-          hospice: ''
-        },
-        address: {
-          general: '6400 E. Grant Rd., Ste. 150 Tucson, AZ 85715',
-          homeHealth: '',
-          hospice: ''
-        },
-        coordinates: { lat: 32.24938, lng: -110.855152 },
-        isClicked: false,
-        isExpanded: false,
-      },
-      {
         name: 'Charter Healthcare of San Bernardino',
         path: '/locations/san-bernardino',
         mapLink: 'https://goo.gl/maps/7pNfrqqzGiZFG5PK6',
