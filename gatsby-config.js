@@ -192,7 +192,7 @@ module.exports = {
         isExpanded: false,
       },
       {
-        name: 'Cambridge Hospice of Rancho Cucamonga',
+        name: 'Charter Healthcare of Rancho Cucamonga',
         path: '/locations/rancho-cucamonga',
         mapLink: 'https://goo.gl/maps/dteVihQGcRe4RYsA9',
         city: 'Rancho Cucamonga',
@@ -217,7 +217,7 @@ module.exports = {
         isExpanded: false,
       },
       {
-        name: 'Cambridge Hospice of Riverside',
+        name: 'Charter Healthcare of Riverside',
         path: '/locations/riverside',
         mapLink: 'https://goo.gl/maps/qrBbH7kDsYASQJMj8',
         city: 'Riverside',
@@ -267,7 +267,7 @@ module.exports = {
         isExpanded: false,
       },
       {
-        name: 'Cambridge Hospice of Orange County',
+        name: 'Charter Healthcare of Orange County',
         path: '/locations/orange-county',
         mapLink: 'https://goo.gl/maps/TNcvBzkHQBNwSS4QA',
         city: 'Orange County',
@@ -292,8 +292,8 @@ module.exports = {
         isExpanded: false,
       },
       {
-        name: 'Charter Healthcare of Fort Collins',
-        path: '/locations/fort-collins',
+        name: 'Charter Healthcare of Northern Colorado',
+        path: '/locations/noco',
         mapLink: 'https://goo.gl/maps/EpZx2fVo8BXpkg1r8',
         city: 'Fort Collins',
         state: 'Colorado',
