@@ -17,7 +17,7 @@ import aboutImage from '../../images/about-fort-collins.png'
 import {graphql} from 'gatsby';
 import headerImage from '../../images/headers/fort-collins.png';
 
-const FortCollinsPage = ({ data }) => {
+const NorthernColoradoPage = ({ data }) => {
 
   //Get/organize all the data from the graphQL Queries for posts and correct location data from gatsby.config
   const recentPosts = data.recent.edges;
@@ -35,7 +35,7 @@ const FortCollinsPage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Fort Collins Home Health, Hospice, & Palliative Care" />
+      <SEO title="Northern Colorado Home Health, Hospice, & Palliative Care" />
       <div className='location-page'>
         <HeaderStrip2
             image={headerImage}
@@ -171,7 +171,7 @@ const FortCollinsPage = ({ data }) => {
   )
 }
 
-export default FortCollinsPage;
+export default NorthernColoradoPage;
 
 export const recentPostsQuery = graphql`
 query {
