@@ -36,7 +36,7 @@ const TucsonPage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Tucson Home Health, Hospice, & Palliative Care" />
+      <SEO title="Tucson Hospice" />
       <div className='location-page'>
         <HeaderStrip2
             image={headerImage}

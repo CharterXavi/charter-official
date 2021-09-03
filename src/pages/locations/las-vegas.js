@@ -35,7 +35,7 @@ const LasVegasPage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Las Vegas Home Health, Hospice, & Palliative Care" />
+      <SEO title="Las Vegas Hospice" />
       <div className='location-page'>
         <HeaderStrip2
             image={headerImage}

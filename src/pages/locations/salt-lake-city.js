@@ -35,7 +35,7 @@ const SaltLakeCityPage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Salt Lake City Home Health, Hospice, & Palliative Care" />
+      <SEO title="Salt Lake City Hospice, Home Health, & Post Acute Care" />
       <div className='location-page'>
         <HeaderStrip2
             image={headerImage}

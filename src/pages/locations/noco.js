@@ -35,7 +35,7 @@ const NorthernColoradoPage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Northern Colorado Home Health, Hospice, & Palliative Care" />
+      <SEO title="Northern Colorado Hospice, Home Health, & Post Acute Care" />
       <div className='location-page'>
         <HeaderStrip2
             image={headerImage}

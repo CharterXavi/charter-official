@@ -35,7 +35,7 @@ const SanDiegoPage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="San Diego Home Health, Hospice, & Palliative Care" />
+      <SEO title="San Diego Hospice & Complex Care Management" />
       <div className='location-page'>
         <HeaderStrip2
             image={headerImage}

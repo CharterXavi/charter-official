@@ -35,7 +35,7 @@ const OrangeCountyPage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Orange County Home Health, Hospice, & Palliative Care" />
+      <SEO title="Orange County Hospice & Complex Care Management" />
       <div className='location-page'>
         <HeaderStrip2
             image={headerImage}

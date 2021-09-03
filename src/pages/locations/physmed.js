@@ -35,7 +35,7 @@ const PhysMedPage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Omaha Home Health, Hospice, & Palliative Care" />
+      <SEO title="Omaha Hospice & Home Health" />
       <div className='location-page'>
         <HeaderStrip2
             image={headerImage}
