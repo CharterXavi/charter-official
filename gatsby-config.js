@@ -392,7 +392,7 @@ module.exports = {
         isExpanded: false,
       },
       {
-        name: 'Providence Home Health and Hospice',
+        name: 'Charter Healthcare of Houston',
         path: '/locations/houston',
         mapLink: 'https://goo.gl/maps/238cHwf1KN613AK5A', 
         city: 'Houston',
