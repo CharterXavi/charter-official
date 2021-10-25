@@ -155,7 +155,7 @@ module.exports = {
         fax: {
           general: '',
           homeHealth: '626-915-6050',
-          hospice: '626-331-8311'
+          hospice: '855-647-6360'
         },
         address: {
           general: '',
@@ -174,7 +174,7 @@ module.exports = {
         state: 'California',
         phone: {
           general: '',
-          homeHealth: '760-568-2400',
+          homeHealth: '760-568-2002',
           hospice: '760-568-2002'
         },
         fax: {
@@ -334,6 +334,31 @@ module.exports = {
         },
         address: {
           general: '4905 S 107th Ave, Omaha, NE 68127',
+          homeHealth: '',
+          hospice: ''
+        },
+        coordinates: { lat: 41.210443, lng: -96.0788 },
+        isClicked: false,
+        isExpanded: false,
+      },
+      {
+        name: 'PhysMed Home Health of Lincoln',
+        path: '/locations/phymed-Lincoln',
+        mapLink: 'https://goo.gl/maps/Ws4XjgwtM2r4ymU78',
+        city: 'Lincoln',
+        state: 'Nebraska',
+        phone: {
+          general: '402-926-4088',
+          homeHealth: '',
+          hospice: ''
+        },
+        fax: {
+          general: '402-926-4197',
+          homeHealth: '',
+          hospice: ''
+        },
+        address: {
+          general: '4905 S 107th Ave, Lincoln, NE 68127',
           homeHealth: '',
           hospice: ''
         },
