@@ -29,15 +29,6 @@ const OurTeamStrip = (props) => {
             </div>
             <div className='card'>
                 <Link to='/our-team'>
-                    <img src={sabina} alt="Team Member" width='200' height='200'/>
-                </Link>
-                <div className='card-info'>
-                    <h6>Sabina Del Rosario</h6>
-                    <p>Chief Culture Officer</p>
-                </div>
-            </div>
-            <div className='card'>
-                <Link to='/our-team'>
                     <img src={vince} alt="Team Member" width='200' height='200'/>
                 </Link>
                 <div className='card-info'>
