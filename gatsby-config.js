@@ -167,6 +167,31 @@ module.exports = {
         isExpanded: false,
       },
       {
+        name: 'Genesis Hospice Care',
+        path: '/locations/athens-care',
+        mapLink: 'https://goo.gl/maps/7bCtTnd6C4aGRbgi7',
+        city: 'Athens',
+        state: 'Texas',
+        phone: {
+          general: '',
+          homeHealth: '903-675-4730',
+          hospice: '903-675-4730'
+        },
+        fax: {
+          general: '',
+          homeHealth: '903-675-4730',
+          hospice: '903-675-4730'
+        },
+        address: {
+          general: '',
+          homeHealth: '1317 S Palestine St, Athens, TX 75751',
+          hospice: '1317 S Palestine St, Athens, TX 75751'
+        },
+        coordinates: { lat: 32.176430, lng: -95.846774 },
+        isClicked: false,
+        isExpanded: false,
+      },
+      {
         name: 'Charter Healthcare of Palm Desert',
         path: '/locations/palm-desert',
         mapLink: 'https://goo.gl/maps/J6c31pFG1oehbkCf6',
