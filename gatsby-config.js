@@ -42,31 +42,6 @@ module.exports = {
         isExpanded: false,
       },
       {
-        name: 'Silver Linings Hospice Care',
-        path: '/locations/albuquerque',
-        mapLink: 'https://goo.gl/maps/iMe4rCuJxmFexZWY6',
-        city: 'Albuquerque',
-        state: 'New Mexico',
-        phone: {
-          general: '505-286-4219',
-          homeHealth: '',
-          hospice: ''
-        },
-        fax: {
-          general: '505-286-7735',
-          homeHealth: '',
-          hospice: ''
-        },
-        address: {
-          general: '12126 N. Hwy 14 Suite A, Cedar Crest, NM 87008',
-          homeHealth: '',
-          hospice: ''
-        },
-        coordinates: { lat: 35.117780, lng: -106.371374 },
-        isClicked: false,
-        isExpanded: false,
-      }, 
-      {
         name: 'Charter Healthcare of Tucson',
         path: '/locations/tucson',
         mapLink: 'https://goo.gl/maps/bPJTJV3wBqTp2c8y7',
@@ -117,31 +92,6 @@ module.exports = {
         isExpanded: false,
       },
       {
-        name: 'Generations Hospice Care',
-        path: '/locations/generations-care',
-        mapLink: 'https://goo.gl/maps/L4PqQMKN4xRXWMAL8',
-        city: 'San Antonio',
-        state: 'Texas',
-        phone: {
-          general: '210-979-9933',
-          homeHealth: '',
-          hospice: ''
-        },
-        fax: {
-          general: '760-247-5502',
-          homeHealth: '',
-          hospice: ''
-        },
-        address: {
-          general: '2819 Northwest Loop 410, San Antonio, TX  78230',
-          homeHealth: '',
-          hospice: ''
-        },
-        coordinates: { lat: 29.51126243720625,  lng: -98.53946842998343 },
-        isClicked: false,
-        isExpanded: false,
-      },
-      {
         name: 'Charter Healthcare of San Bernardino',
         path: '/locations/san-bernardino',
         mapLink: 'https://goo.gl/maps/7pNfrqqzGiZFG5PK6',
@@ -188,31 +138,6 @@ module.exports = {
           hospice: '970 S. Village Oaks Dr. Ste. 106, Covina, CA 91724'
         },
         coordinates: { lat: 34.071759, lng: -117.862599 },
-        isClicked: false,
-        isExpanded: false,
-      },
-      {
-        name: 'Genesis Hospice Care',
-        path: '/locations/athens-care',
-        mapLink: 'https://goo.gl/maps/7bCtTnd6C4aGRbgi7',
-        city: 'Athens',
-        state: 'Texas',
-        phone: {
-          general: '',
-          homeHealth: '903-675-4730',
-          hospice: '903-675-4730'
-        },
-        fax: {
-          general: '',
-          homeHealth: '903-675-4730',
-          hospice: '903-675-4730'
-        },
-        address: {
-          general: '',
-          homeHealth: '1317 S Palestine St, Athens, TX 75751',
-          hospice: '1317 S Palestine St, Athens, TX 75751'
-        },
-        coordinates: { lat: 32.176430, lng: -95.846774 },
         isClicked: false,
         isExpanded: false,
       },
@@ -467,6 +392,56 @@ module.exports = {
         isExpanded: false,
       },
       {
+        name: 'Silver Linings Hospice Care',
+        path: '/locations/albuquerque',
+        mapLink: 'https://goo.gl/maps/iMe4rCuJxmFexZWY6',
+        city: 'Albuquerque',
+        state: 'New Mexico',
+        phone: {
+          general: '505-286-4219',
+          homeHealth: '',
+          hospice: ''
+        },
+        fax: {
+          general: '505-286-7735',
+          homeHealth: '',
+          hospice: ''
+        },
+        address: {
+          general: '12126 N. Hwy 14 Suite A, Cedar Crest, NM 87008',
+          homeHealth: '',
+          hospice: ''
+        },
+        coordinates: { lat: 35.117780, lng: -106.371374 },
+        isClicked: false,
+        isExpanded: false,
+      }, 
+      {
+        name: 'Genesis Hospice Care',
+        path: '/locations/athens-care',
+        mapLink: 'https://goo.gl/maps/7bCtTnd6C4aGRbgi7',
+        city: 'Athens',
+        state: 'Texas',
+        phone: {
+          general: '',
+          homeHealth: '903-675-4730',
+          hospice: '903-675-4730'
+        },
+        fax: {
+          general: '',
+          homeHealth: '903-675-4730',
+          hospice: '903-675-4730'
+        },
+        address: {
+          general: '',
+          homeHealth: '1317 S Palestine St, Athens, TX 75751',
+          hospice: '1317 S Palestine St, Athens, TX 75751'
+        },
+        coordinates: { lat: 32.176430, lng: -95.846774 },
+        isClicked: false,
+        isExpanded: false,
+      },
+      {
         name: 'Charter Healthcare of Houston',
         path: '/locations/houston',
         mapLink: 'https://goo.gl/maps/238cHwf1KN613AK5A', 
@@ -488,6 +463,31 @@ module.exports = {
           hospice: ''
         },
         coordinates: { lat: 29.65467157248156, lng: -95.59837821522869 },
+        isClicked: false,
+        isExpanded: false,
+      },
+      {
+        name: 'Generations Hospice Care',
+        path: '/locations/generations-care',
+        mapLink: 'https://goo.gl/maps/L4PqQMKN4xRXWMAL8',
+        city: 'San Antonio',
+        state: 'Texas',
+        phone: {
+          general: '210-979-9933',
+          homeHealth: '',
+          hospice: ''
+        },
+        fax: {
+          general: '760-247-5502',
+          homeHealth: '',
+          hospice: ''
+        },
+        address: {
+          general: '2819 Northwest Loop 410, San Antonio, TX  78230',
+          homeHealth: '',
+          hospice: ''
+        },
+        coordinates: { lat: 29.51126243720625,  lng: -98.53946842998343 },
         isClicked: false,
         isExpanded: false,
       },
