@@ -40,6 +40,31 @@ module.exports = {
         coordinates: { lat: 33.408025, lng: -111.919244 },
         isClicked: false,
         isExpanded: false,
+      },
+      {
+        name: 'Silver Linings Hospice Care',
+        path: '/locations/albuqerque',
+        mapLink: 'https://goo.gl/maps/iMe4rCuJxmFexZWY6',
+        city: 'Albuqerque',
+        state: 'New Mexico',
+        phone: {
+          general: '505-286-4219',
+          homeHealth: '',
+          hospice: ''
+        },
+        fax: {
+          general: '505-286-7735',
+          homeHealth: '',
+          hospice: ''
+        },
+        address: {
+          general: '12126 N. Hwy 14 Suite A, Cedar Crest, NM 87008',
+          homeHealth: '',
+          hospice: ''
+        },
+        coordinates: { lat: 35.117780, lng: -106.371374 },
+        isClicked: false,
+        isExpanded: false,
       }, 
       {
         name: 'Charter Healthcare of Tucson',
@@ -142,7 +167,7 @@ module.exports = {
         isExpanded: false,
       },
       {
-        name: 'Charter Healthcare of San Gabriel Valley',
+        name: 'Charter Home Health of San Gabriel Valley',
         path: '/locations/san-gabriel-valley',
         mapLink: 'https://goo.gl/maps/pgsmZruf97YpLHWM7',
         city: 'San Gabriel Valley',
