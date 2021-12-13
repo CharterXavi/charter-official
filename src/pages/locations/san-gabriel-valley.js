@@ -22,7 +22,7 @@ const SanGabrielValleyPage = ({ data }) => {
   //Get/organize all the data from the graphQL Queries for posts and correct location data from gatsby.config
   const recentPosts = data.recent.edges;
   const locations = data.locations.edges[0].node.siteMetadata.locations;
-  const pageName = 'Charter Healthcare of San Gabriel Valley';
+  const pageName = 'Charter Home Health of San Gabriel Valley';
   let pageLocation = {};
   for(let i = 0; i < locations.length; i++) {
     if(locations[i].name === pageName) {
@@ -30,7 +30,7 @@ const SanGabrielValleyPage = ({ data }) => {
     }
   }
   //Destructure the various properties of this page's location object for ease of use in JSX
-  const { name, address, city, phone, state, fax, coordinates, mapLink } = pageLocation;
+  const { name, address, city, phone, fax, state, coordinates, mapLink } = pageLocation;
 
 
   return (
@@ -120,30 +120,25 @@ const SanGabrielValleyPage = ({ data }) => {
             </div>
             <div className="right">
               <div className='card-wrapper'>
-                <div className='card'>   
+                <div className='card'>  
                     <h6 className='detail-title'>Our Office</h6>
                     <p className='detail-text'>
                       {city}, {state}
                       <br/>
-                      <p>
-                        Home Health: 
-                        <a href={mapLink} target='_blank' rel='noopener noreferrer'>
-                            {address.homeHealth}
-                        </a>
-                      </p>
-                      <p>
-                        Hospice: 
-                        <a href={mapLink} target='_blank' rel='noopener noreferrer'>
-                            {address.hospice}
-                        </a>
-                      </p>
+                      <a href={mapLink} target='_blank' rel='noopener noreferrer'>
+                        {address.general}
+                      </a>
                     </p>
                 </div>
                 <div className='card'>
                     <h6 className='detail-title'>Hours of Operation</h6>
                     <p className='detail-text'>
                       <ul>
-                        <li>M-F: 8:00am - 5:00pm</li>
+                        <li>M: 8:00 am - 5:00 pm</li>
+                        <li>Tu: 8:00 am - 5:00 pm</li>
+                        <li>W: 8:00 am - 5:00 pm</li>
+                        <li>Th: 8:00 am - 5:00 pm</li>
+                        <li>F: 8:00 am - 5:00 pm</li>
                       </ul>
                     </p>
                 </div>
@@ -151,12 +146,8 @@ const SanGabrielValleyPage = ({ data }) => {
                     <h6 className='detail-title'>Contact Information</h6>
                     <p className='detail-text'>
                       <ul>
-                        Home Health
-                        <li>Phone: <a href={`tel: ${phone.homeHealth}`}>{phone.homeHealth}</a></li>
-                        <li>Fax: <a href={`fax: ${fax.homeHealth}`}>{fax.homeHealth}</a></li>
-                        Hospice
-                        <li>Phone: <a href={`tel: ${phone.hospice}`}>{phone.hospice}</a></li>
-                        <li>Fax: <a href={`fax: ${fax.hospice}`}>{fax.hospice}</a></li>
+                        <li>Phone: <a href={`tel: ${phone.general}`}>{phone.general}</a></li>
+                        <li>Fax: <a href={`fax: ${fax.general}`}>{fax.general}</a></li>
                       </ul>
                     </p> 
                 </div>
