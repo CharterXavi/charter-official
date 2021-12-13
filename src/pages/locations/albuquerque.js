@@ -17,7 +17,7 @@ import aboutImage from '../../images/about-orange-county.png'
 import {graphql} from 'gatsby';
 import headerImage from '../../images/headers/orange-county.png';
 
-const AlbuqerquePage = ({ data }) => {
+const AlbuquerquePage = ({ data }) => {
 
   //Get/organize all the data from the graphQL Queries for posts and correct location data from gatsby.config
   const recentPosts = data.recent.edges;
@@ -35,18 +35,18 @@ const AlbuqerquePage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Albuqerque Hospice & Complex Care Management" />
+      <SEO title="Albuquerque Hospice & Complex Care Management" />
       <div className='location-page'>
         <HeaderStrip2
             image={headerImage}
             title={name}
-            headline='The leading home health and hospice care provider in Albuqerque'
+            headline='The leading home health and hospice care provider in Albuquerque'
         />
 
         {/*-------------- TOP TEXT BLOCK -------------- */}
         <div className="two-column">
           <div className="title">
-            <h4>Delivering the highest quality healthcare in the Albuqerque area.</h4>
+            <h4>Delivering the highest quality healthcare in the Albuquerque area.</h4>
             <hr/>
           </div>
           <div className="content">
@@ -171,7 +171,7 @@ const AlbuqerquePage = ({ data }) => {
   )
 }
 
-export default AlbuqerquePage;
+export default AlbuquerquePage;
 
 export const recentPostsQuery = graphql`
 query {

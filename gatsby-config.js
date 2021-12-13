@@ -43,9 +43,9 @@ module.exports = {
       },
       {
         name: 'Silver Linings Hospice Care',
-        path: '/locations/albuqerque',
+        path: '/locations/albuquerque',
         mapLink: 'https://goo.gl/maps/iMe4rCuJxmFexZWY6',
-        city: 'Albuqerque',
+        city: 'Albuquerque',
         state: 'New Mexico',
         phone: {
           general: '505-286-4219',
