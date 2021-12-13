@@ -92,52 +92,27 @@ module.exports = {
         isExpanded: false,
       },
       {
-        name: 'Charter Healthcare of San Bernardino',
-        path: '/locations/san-bernardino',
-        mapLink: 'https://goo.gl/maps/7pNfrqqzGiZFG5PK6',
-        city: 'San Bernardino',
+        name: 'Charter Healthcare of Orange County',
+        path: '/locations/orange-county',
+        mapLink: 'https://goo.gl/maps/TNcvBzkHQBNwSS4QA',
+        city: 'Orange County',
         state: 'California',
         phone: {
-          general: '909-825-2969',
+          general: '714-332-6052',
           homeHealth: '',
           hospice: ''
         },
         fax: {
-          general: '909-825-8751',
+          general: '714-332-6038',
           homeHealth: '',
           hospice: ''
         },
         address: {
-          general: '1007 E. Cooley Dr. Ste. 100 Colton, CA 92324',
+          general: '12235 Beach Blvd. Suites 100 & 200E, Stanton, CA 90680',
           homeHealth: '',
           hospice: ''
         },
-        coordinates: { lat: 34.05547, lng: -117.310526 },
-        isClicked: false,
-        isExpanded: false,
-      },
-      {
-        name: 'Charter Home Health of San Gabriel Valley',
-        path: '/locations/san-gabriel-valley',
-        mapLink: 'https://goo.gl/maps/pgsmZruf97YpLHWM7',
-        city: 'San Gabriel Valley',
-        state: 'California',
-        phone: {
-          general: '',
-          homeHealth: '626-915-7490',
-          hospice: '626-331-8001'
-        },
-        fax: {
-          general: '',
-          homeHealth: '626-915-6050',
-          hospice: '855-647-6360'
-        },
-        address: {
-          general: '',
-          homeHealth: '970 S. Village Oaks Dr. Ste. 102, Covina, CA 91724',
-          hospice: '970 S. Village Oaks Dr. Ste. 106, Covina, CA 91724'
-        },
-        coordinates: { lat: 34.071759, lng: -117.862599 },
+        coordinates: { lat: 33.784430, lng: -117.993590 },
         isClicked: false,
         isExpanded: false,
       },
@@ -217,6 +192,31 @@ module.exports = {
         isExpanded: false,
       },
       {
+        name: 'Charter Healthcare of San Bernardino',
+        path: '/locations/san-bernardino',
+        mapLink: 'https://goo.gl/maps/7pNfrqqzGiZFG5PK6',
+        city: 'San Bernardino',
+        state: 'California',
+        phone: {
+          general: '909-825-2969',
+          homeHealth: '',
+          hospice: ''
+        },
+        fax: {
+          general: '909-825-8751',
+          homeHealth: '',
+          hospice: ''
+        },
+        address: {
+          general: '1007 E. Cooley Dr. Ste. 100 Colton, CA 92324',
+          homeHealth: '',
+          hospice: ''
+        },
+        coordinates: { lat: 34.05547, lng: -117.310526 },
+        isClicked: false,
+        isExpanded: false,
+      },
+      {
         name: 'Charter Healthcare of San Diego',
         path: '/locations/san-diego',
         mapLink: 'https://goo.gl/maps/V3rCjhb33ruM5m2S8',
@@ -242,27 +242,27 @@ module.exports = {
         isExpanded: false,
       },
       {
-        name: 'Charter Healthcare of Orange County',
-        path: '/locations/orange-county',
-        mapLink: 'https://goo.gl/maps/TNcvBzkHQBNwSS4QA',
-        city: 'Orange County',
+        name: 'Charter Home Health of San Gabriel Valley',
+        path: '/locations/san-gabriel-valley',
+        mapLink: 'https://goo.gl/maps/pgsmZruf97YpLHWM7',
+        city: 'San Gabriel Valley',
         state: 'California',
         phone: {
-          general: '714-332-6052',
-          homeHealth: '',
-          hospice: ''
+          general: '',
+          homeHealth: '626-915-7490',
+          hospice: '626-331-8001'
         },
         fax: {
-          general: '714-332-6038',
-          homeHealth: '',
-          hospice: ''
+          general: '',
+          homeHealth: '626-915-6050',
+          hospice: '855-647-6360'
         },
         address: {
-          general: '12235 Beach Blvd. Suites 100 & 200E, Stanton, CA 90680',
-          homeHealth: '',
-          hospice: ''
+          general: '',
+          homeHealth: '970 S. Village Oaks Dr. Ste. 102, Covina, CA 91724',
+          hospice: '970 S. Village Oaks Dr. Ste. 106, Covina, CA 91724'
         },
-        coordinates: { lat: 33.784430, lng: -117.993590 },
+        coordinates: { lat: 34.071759, lng: -117.862599 },
         isClicked: false,
         isExpanded: false,
       },
@@ -292,31 +292,6 @@ module.exports = {
         isExpanded: false,
       },
       {
-        name: 'PhysMed Home Health of Omaha',
-        path: '/locations/physmed',
-        mapLink: 'https://goo.gl/maps/Ws4XjgwtM2r4ymU78',
-        city: 'Omaha',
-        state: 'Nebraska',
-        phone: {
-          general: '402-926-4088',
-          homeHealth: '',
-          hospice: ''
-        },
-        fax: {
-          general: '402-926-4197',
-          homeHealth: '',
-          hospice: ''
-        },
-        address: {
-          general: '4905 S 107th Ave, Omaha, NE 68127',
-          homeHealth: '',
-          hospice: ''
-        },
-        coordinates: { lat: 41.210443, lng: -96.0788 },
-        isClicked: false,
-        isExpanded: false,
-      },
-      {
         name: 'PhysMed Home Health of Lincoln',
         path: '/locations/phymed-Lincoln',
         mapLink: 'https://goo.gl/maps/Ws4XjgwtM2r4ymU78',
@@ -334,6 +309,31 @@ module.exports = {
         },
         address: {
           general: '4905 S 107th Ave, Lincoln, NE 68127',
+          homeHealth: '',
+          hospice: ''
+        },
+        coordinates: { lat: 41.210443, lng: -96.0788 },
+        isClicked: false,
+        isExpanded: false,
+      },
+      {
+        name: 'PhysMed Home Health of Omaha',
+        path: '/locations/physmed',
+        mapLink: 'https://goo.gl/maps/Ws4XjgwtM2r4ymU78',
+        city: 'Omaha',
+        state: 'Nebraska',
+        phone: {
+          general: '402-926-4088',
+          homeHealth: '',
+          hospice: ''
+        },
+        fax: {
+          general: '402-926-4197',
+          homeHealth: '',
+          hospice: ''
+        },
+        address: {
+          general: '4905 S 107th Ave, Omaha, NE 68127',
           homeHealth: '',
           hospice: ''
         },
