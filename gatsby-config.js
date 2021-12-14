@@ -318,7 +318,7 @@ module.exports = {
       },
       {
         name: 'PhysMed Home Health of Lincoln',
-        path: '/locations/phymed-Lincoln',
+        path: '/locations/physmed-lincoln',
         mapLink: 'https://goo.gl/maps/Ws4XjgwtM2r4ymU78',
         city: 'Lincoln',
         state: 'Nebraska',
