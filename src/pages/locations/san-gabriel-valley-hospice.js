@@ -12,17 +12,17 @@ import SEO from "../../components/seo";
 import ServicesStrip2 from '../../components/services/services2';
 import SmallMap from '../../components/locations/small-map';
 import TestimonialsStrip from '../../components/testimonials/testimonials';
-import aboutImage from '../../images/about-san-gabriel-valley.png'
+import aboutImage from '../../images/about-salt-lake-city.png'
 // import businessImage from '../../images/hiring.png';
 import {graphql} from 'gatsby';
-import headerImage from '../../images/headers/salt-lake-city.png';
+import headerImage from '../../images/headers/san-gabriel-valley.png';
 
-const SanGabrielValleyPage = ({ data }) => {
+const SanGabrielValleyHospicePage = ({ data }) => {
 
   //Get/organize all the data from the graphQL Queries for posts and correct location data from gatsby.config
   const recentPosts = data.recent.edges;
   const locations = data.locations.edges[0].node.siteMetadata.locations;
-  const pageName = 'Charter Home Health of San Gabriel Valley';
+  const pageName = 'Charter Hospice of San Gabriel Valley';
   let pageLocation = {};
   for(let i = 0; i < locations.length; i++) {
     if(locations[i].name === pageName) {
@@ -35,25 +35,25 @@ const SanGabrielValleyPage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="San Gabriel Valley Home Health & Palliative Care" />
+      <SEO title="San Gabriel Valley Hospice Care" />
       <div className='location-page'>
         <HeaderStrip2
             image={headerImage}
             title={name}
-            headline='The leading home health provider in San Gabriel Valley'
+            headline='The leading hospice care provider in San Gabriel Valley'
         />
 
         {/*-------------- TOP TEXT BLOCK -------------- */}
         <div className="two-column">
           <div className="title">
-            <h4>Delivering the highest quality healthcare in the San Gabriel Valley area.</h4>
+            <h4>Delivering the highest quality hospice care in the San Gabriel Valley area.</h4>
             <hr/>
           </div>
           <div className="content">
             <div className="left">
               <h6>Compassionate and Experienced Healthcare</h6>
               <p>
-                Charter Healthcare of San Gabriel Valley is dedicated to providing you or your loved ones with the best
+                Charter Hospice of San Gabriel Valley is dedicated to providing you or your loved ones with the best
                 healthcare available. Our caring and compassionate staff have years of experience in providing services
                 that allow our patients to live their best lives every day. We treat each of our clients with the respect
                 and compassion they deserve while administering expert care services in a professional manner at all
@@ -61,10 +61,10 @@ const SanGabrielValleyPage = ({ data }) => {
               </p>
             </div>
             <div className="right">
-              <h6>Quality Healthcare Services</h6>
+              <h6>Quality Hospice Care Services</h6>
               <p>
-                Charter Healthcare of San Gabriel Valley is a premier provider of a variety of healthcare services including
-                skilled home health and palliative care. Our staff is adept in utilizing proven and modern
+                Charter Hospice of San Gabriel Valley is a premier provider of a variety of healthcare services including
+                skilled hospice care and palliative care. Our staff is adept in utilizing proven and modern
                 techniques to best allow our clients to fully live their best lives. If you are searching for the perfect
                 healthcare provider, look no further and contact us today.
               </p>
@@ -156,7 +156,7 @@ const SanGabrielValleyPage = ({ data }) => {
           </div>
           <ButtonPrimaryAlt content='← See all charter locations' link='/locations' />
         </div>
-x
+
         <ServicesStrip2 />
         <DataStrip />
         <TestimonialsStrip />
@@ -171,7 +171,7 @@ x
   )
 }
 
-export default SanGabrielValleyPage
+export default SanGabrielValleyHospicePage
 
 export const recentPostsQuery = graphql`
 query {

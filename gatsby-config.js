@@ -248,19 +248,44 @@ module.exports = {
         city: 'San Gabriel Valley',
         state: 'California',
         phone: {
-          general: '',
-          homeHealth: '626-915-7490',
-          hospice: '626-331-8001'
+          general:  '626-915-7490',
+          homeHealth: '',
+          hospice: ''
         },
         fax: {
-          general: '',
-          homeHealth: '626-915-6050',
-          hospice: '855-647-6360'
+          general: '626-915-6050',
+          homeHealth: '',
+          hospice: ''
         },
         address: {
-          general: '',
-          homeHealth: '970 S. Village Oaks Dr. Ste. 102, Covina, CA 91724',
-          hospice: '970 S. Village Oaks Dr. Ste. 106, Covina, CA 91724'
+          general: '970 S. Village Oaks Dr. Ste. 102, Covina, CA 91724',
+          homeHealth: '',
+          hospice: ''
+        },
+        coordinates: { lat: 34.071759, lng: -117.862599 },
+        isClicked: false,
+        isExpanded: false,
+      },
+      {
+        name: 'Charter Hospice of San Gabriel Valley',
+        path: '/locations/san-gabriel-valley-hospice',
+        mapLink: 'https://goo.gl/maps/pgsmZruf97YpLHWM7',
+        city: 'San Gabriel Valley',
+        state: 'California',
+        phone: {
+          general:  '626-331-8001',
+          homeHealth: '',
+          hospice: ''
+        },
+        fax: {
+          general: '855-647-6360',
+          homeHealth: '',
+          hospice: ''
+        },
+        address: {
+          general: '970 S. Village Oaks Dr. Ste. 106, Covina, CA 91724',
+          homeHealth: '',
+          hospice: ''
         },
         coordinates: { lat: 34.071759, lng: -117.862599 },
         isClicked: false,
