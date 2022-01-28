@@ -35,9 +35,9 @@ const HeroStrip7 = () => {
                     <h1>Post-acute care is complicated.</h1>
                     <h2>Let's navigate your total home health care together.</h2>
                     <h6 className='detail-title'>
-                        With top-tier providers, a wide variety of programs, and a track record of success,
-                        we’re equipped to meet our patients where they’re at and provide them the best total 
-                        home and post-acute health care available.
+                    Charter is committed to enriching lives through delivery of safe, 
+                    compassionate care that improves quality outcomes, reduces costs, 
+                    and creates a better experience for patients and families.
                     </h6>
                     <div>
                         <div className='play-btn-wrapper'>

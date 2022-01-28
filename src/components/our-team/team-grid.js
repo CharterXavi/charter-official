@@ -24,15 +24,6 @@ const TeamGrid = () => {
                 animationTime: 700
             },
             {
-                name: 'Sabina Del Rosario',
-                title: 'Chief Culture Officer',
-                image: sabina,
-                linkedIn: null,
-                bio: 'Sabina is a savvy Operations Leader with an indelible reputation for delivering innovative business strategies and client-focused solutions that improve margins. She’s been recognized for transforming operations systems productively by building strong and solid partnerships with employees and community partners. Sabina wields broad experience building profitable start up healthcare divisions, growth business lines, and streamlined operations. She specializes in creating high performing and innovative culture that consistently achieves goals in competitive markets.',
-                isClicked: false,
-                animationTime: 900
-            },
-            {
                 name: 'Vincent Castaldo',
                 title: 'Chief Financial Officer',
                 image: vince,

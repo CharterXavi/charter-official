@@ -23,8 +23,7 @@ const AboutCharter = () => {
         <div className='about-card' data-aos='fade-up' data-aos-duration='900'>
           <TargetIcon />
           <h6>Our Mission</h6>
-          <p>Charter is committed to delivering high quality services that enhance the post acute care continuum in its communities by providing compassionate, innovative, and accessible healthcare solutions for patients and their families.</p>
-          <p>Above all, we strive to improve patient outcomes and quality of care while reducing ​the total cost of care. ​</p>
+          <p>Charter is committed to enriching lives through delivery of safe, compassionate care that improves quality outcomes, reduces costs, and creates a better experience for patients and families.</p>
         </div>
         <div className='about-card' data-aos='fade-up' data-aos-duration='1300'>
           <BookIcon />
