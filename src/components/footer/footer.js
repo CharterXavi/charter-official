@@ -45,12 +45,12 @@ const Footer = () => {
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.facebook.com/CharterHCG" target='_blank' rel="noopener noreferrer">
+                            <a href="https://www.facebook.com/CharterHC" target='_blank' rel="noopener noreferrer">
                                 <img src={facebook} alt="Facebook" width='100' height='100'/>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.instagram.com/charterhcg/" target='_blank' rel="noopener noreferrer">
+                            <a href="https://www.instagram.com/charterhc/" target='_blank' rel="noopener noreferrer">
                                 <img src={instagram} alt="Instagram" width='100' height='100'/>
                             </a>
                         </li>
