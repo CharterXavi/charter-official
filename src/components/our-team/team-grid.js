@@ -50,24 +50,6 @@ const TeamGrid = () => {
                 isClicked: false,
                 animationTime: 1500
             },
-            {
-                name: 'Meagan De Guzman',
-                title: 'VP of Human Resources',
-                image: meagan,
-                linkedIn: 'https://www.linkedin.com/in/meagan-de-guzman-57325729/',
-                bio: "Meagan De Guzman is the Director of Human Resources for Charter Health Holdings LLC. Meagan has had over 10 years of successful Human Resource Management experience with high growth and high performance in developing business strategies aimed at increasing employment engagement, supporting compliance and legal practices, coordination and administration of Benefits and Payroll, and works closely with senior leadership in development of training system practices. She currently supports over 1000 employees in 14 programs. Meagan's key to sucess has been a strong philosophical view that the Human Resources function must be viewed as an integral partner in shaping, developing, and executing a company's core strategies. Achieving leadership credibility requires close alignment of it's HR policies and practices with the core strategies. Having an HR team with the requisite skills and experience has been a major factor in the sucess of the department. A native of the Southern California area, Meagan graduated with a Bachelor's of Science in Business Administration with an emphasis in Human Resources and Management. She enjoys spending time with her husband and two children.",
-                isClicked: false,
-                animationTime: 1500
-            },
-            {
-                name: 'Carol Lynn',
-                title: 'VP of Communications',
-                image: carol,
-                linkedIn: 'https://www.linkedin.com/in/carol-fite-lynn-3b86377/',
-                bio: "Carol is a high-performing healthcare communication and marketing leader with 11 years in communications and public relations. She possesses a successful record of leading an organization's marketing and public relations efforts, with a strong emphasis on media relations, community relations, and social media. She brings to the table a strong knowledge and understanding of the marketing complexities within the healthcare industry, as well as the challenges and opportunities. Carol loves what she does, and her passion shows in her performance to her clients and team.",
-                isClicked: false,
-                animationTime: 1500
-            }
         ]
     )
     //Method that will be passed down as a prop to handle state management and expand cards / animate clickers
