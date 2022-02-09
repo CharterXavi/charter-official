@@ -33,7 +33,7 @@ module.exports = {
           hospice: ''
         },
         address: {
-          general: '1232 E. Broadway St. Ste. 210, Tempe, AZ 85282',
+          general: '1232 E. Broadway Road Suite 210, Tempe, AZ 85282',
           homeHealth: '',
           hospice: ''
         },
