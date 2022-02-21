@@ -33,7 +33,7 @@ const VolunteeringPage = () => (
               <p>Our student volunteers are the jewels in our program. They have been inspired to become medical professionals because of their exposure to caring for our hospice patients who are nearing the end of life. Student volunteers have remarkable compassion and a caring nature that brings tremendous joy to or patients and their families.</p>
               <h6>Become a Volunteer</h6>
               <p>If you're just as passionate as you are compassionate, you will fit right in with our volunteers in this program. Send us an email by clicking the button below, and we look forward to hearing from you.</p>
-              <ButtonPrimaryAlt content='Send Email' link='mailto: bonniebeck@charterhcg.com'/>
+              <ButtonPrimaryAlt content='Send Email' link='mailto: volunteers@charterhcg.com'/>
             </div>
             <div className="right">
               <BriefcaseIcon />
@@ -45,7 +45,7 @@ const VolunteeringPage = () => (
               <p>Our core values at Charter are compassion, integrity, and innovation. These may sound cliche, but our employees live these ideals out truly and honestly. We're looking for driven new talent, namely those who identify with these core values. We want interns who tackle each day with enthusiasm, and strive to make a positive impact on the patients, teams, etc. they work alongside.</p>
               <h6>Become an intern</h6>
               <p>If you're interested in seeing what positions are available, please send an email to our recruitment department by clicking the button below with your resume attached. We'll respond at our earliest convenience and answer any questions you may have. We can't wait to hear from you!</p>
-              <ButtonPrimaryAlt content='Send Email' link='mailto: edithto@charterhcg.com'/>
+              <ButtonPrimaryAlt content='Send Email' link='mailto: volunteers@charterhcg.com'/>
             </div>
           </div>
         </div>
