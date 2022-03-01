@@ -33,7 +33,7 @@ const VolunteeringPage = () => (
               <p>Our student volunteers are the jewels in our program. They have been inspired to become medical professionals because of their exposure to caring for our hospice patients who are nearing the end of life. Student volunteers have remarkable compassion and a caring nature that brings tremendous joy to or patients and their families.</p>
               <h6>Become a Volunteer</h6>
               <p>If you're just as passionate as you are compassionate, you will fit right in with our volunteers in this program. Send us an email by clicking the button below, and we look forward to hearing from you.</p>
-              <ButtonPrimaryAlt content='Send Email' link='mailto: volunteers@charterhcg.com?subject=Volunteer%20&body=Thank%20you%20for%20your%20interest%20in%20volunteering%20with%20Charter%20Healthcare!%20To%20help%20connect%20you%20with%20the%20appropriate%20location,%20please%20fill%20out%20the%20information%20below%20and%20we%20will%20contact%20you%20directly.%0D%0DFull%20Name:%0D%0D%20Address,%20City,%20State,%20Zip:%20%0D%0D%20Phone%20Number:%0D%0D%20%20%2DThe%20Charter%20Volunteer%20Team '/>
+              <ButtonPrimaryAlt content='Send Email' link='mailto: volunteers@charterhcg.com?subject=Volunteer%20&body=Thank%20you%20for%20your%20interest%20in%20volunteering%20with%20Charter%20Healthcare!%20To%20help%20connect%20you%20with%20the%20appropriate%20location,%20please%20fill%20out%20the%20information%20below%20and%20we%20will%20contact%20you%20directly.%0D%0DFull%20Name:%0D%0D%20Address,%20City,%20State,%20Zip:%20%0D%0D%20Phone%20Number:%0D%0D%0DSincerely,%0D%0D%20%20%2DThe%20Charter%20Volunteer%20Team '/>
             </div>
             <div className="right">
               <BriefcaseIcon />
