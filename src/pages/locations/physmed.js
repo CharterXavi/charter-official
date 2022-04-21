@@ -134,11 +134,11 @@ const PhysMedPage = ({ data }) => {
                     <h6 className='detail-title'>Hours of Operation</h6>
                     <p className='detail-text'>
                       <ul>
-                        <li>M: 8:00 am - 5:00 pm</li>
-                        <li>Tu: 8:00 am - 5:00 pm</li>
-                        <li>W: 8:00 am - 5:00 pm</li>
-                        <li>Th: 8:00 am - 5:00 pm</li>
-                        <li>F: 8:00 am - 5:00 pm</li>
+                        <li>M: 8:30 am - 5:00 pm</li>
+                        <li>Tu: 8:30 am - 5:00 pm</li>
+                        <li>W: 8:30 am - 5:00 pm</li>
+                        <li>Th: 8:30 am - 5:00 pm</li>
+                        <li>F: 8:30 am - 5:00 pm</li>
                       </ul>
                     </p>
                 </div>

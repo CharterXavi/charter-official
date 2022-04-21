@@ -344,7 +344,7 @@ module.exports = {
       {
         name: 'PhysMed Home Health of Omaha',
         path: '/locations/physmed',
-        mapLink: 'https://goo.gl/maps/Ws4XjgwtM2r4ymU78',
+        mapLink: 'https://goo.gl/maps/FPEizGrU4VHAkvCg6',
         city: 'Omaha',
         state: 'Nebraska',
         phone: {
@@ -358,7 +358,7 @@ module.exports = {
           hospice: ''
         },
         address: {
-          general: '4905 S 107th Ave, Omaha, NE 68127',
+          general: '9140 W. Dodge Rd., Suite 285. Omaha, NE 68114',
           homeHealth: '',
           hospice: ''
         },
@@ -367,9 +367,9 @@ module.exports = {
         isExpanded: false,
       },
       {
-        name: 'SereneCare Hospice of Omaha',
-        path: '/locations/serene-care',
-        mapLink: 'https://goo.gl/maps/Ws4XjgwtM2r4ymU78',
+        name: 'Charter Healthcare of Omaha',
+        path: '/locations/Omaha',
+        mapLink: 'https://goo.gl/maps/FPEizGrU4VHAkvCg6',
         city: 'Omaha',
         state: 'Nebraska',
         phone: {
@@ -383,7 +383,7 @@ module.exports = {
           hospice: ''
         },
         address: {
-          general: '10707 O Street, Omaha Nebraska 68127',
+          general: '9140 W. Dodge Rd., Suite 285. Omaha, NE 68114',
           homeHealth: '',
           hospice: ''
         },
