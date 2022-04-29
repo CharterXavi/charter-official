@@ -492,6 +492,31 @@ module.exports = {
         isExpanded: false,
       },
       {
+        name: 'Charter Healthcare of Salt Lake City',
+        path: '/locations/salt-lake-city',
+        mapLink: 'https://goo.gl/maps/y3aa8qjHYBQMzV83A', 
+        city: 'Salt Lake City',
+        state: 'Utah',
+        phone: {
+          general: '801-261-9490',
+          homeHealth: '',
+          hospice: ''
+        },
+        fax: {
+          general: '801-261-5856',
+          homeHealth: '',
+          hospice: ''
+        },
+        address: {
+          general: '6671 S. Redwood Rd. Ste. 101, West Jordan, UT 84084',
+          homeHealth: '',
+          hospice: ''
+        },
+        coordinates: { lat: 40.630240, lng: -111.938240 },
+        isClicked: false,
+        isExpanded: false,
+      },
+      {
         name: 'Generations Hospice Care',
         path: '/locations/generations-care',
         mapLink: 'https://goo.gl/maps/L4PqQMKN4xRXWMAL8',
@@ -517,27 +542,27 @@ module.exports = {
         isExpanded: false,
       },
       {
-        name: 'Charter Healthcare of Salt Lake City',
-        path: '/locations/salt-lake-city',
-        mapLink: 'https://goo.gl/maps/y3aa8qjHYBQMzV83A', 
-        city: 'Salt Lake City',
-        state: 'Utah',
+        name: 'Saints Hospice',
+        path: '/locations/saints',
+        mapLink: 'https://goo.gl/maps/pHrFCUb4ZSWLmsxs5',
+        city: 'Plano',
+        state: 'Texas',
         phone: {
-          general: '801-261-9490',
+          general: '214.501.1239',
           homeHealth: '',
           hospice: ''
         },
         fax: {
-          general: '801-261-5856',
+          general: '214.501.1456',
           homeHealth: '',
           hospice: ''
         },
         address: {
-          general: '6671 S. Redwood Rd. Ste. 101, West Jordan, UT 84084',
-          homeHealth: '',
-          hospice: ''
+          general: '',
+          homeHealth: '1309 West 15th St. Ste. 120, Plano,TX 75075',
+          hospice: '1309 West 15th St. Ste. 120, Plano,TX 75075'
         },
-        coordinates: { lat: 40.630240, lng: -111.938240 },
+        coordinates: { lat: 33.02026242709318, lng: -96.7191932796441 },
         isClicked: false,
         isExpanded: false,
       },
