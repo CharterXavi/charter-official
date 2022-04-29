@@ -543,7 +543,7 @@ module.exports = {
       },
       {
         name: 'Saints Hospice',
-        path: '/locations/saints',
+        path: '/locations/plano',
         mapLink: 'https://goo.gl/maps/pHrFCUb4ZSWLmsxs5',
         city: 'Plano',
         state: 'Texas',
@@ -558,8 +558,8 @@ module.exports = {
           hospice: ''
         },
         address: {
-          general: '',
-          homeHealth: '1309 West 15th St. Ste. 120, Plano,TX 75075',
+          general: '1309 West 15th St. Ste. 120, Plano,TX 75075',
+          homeHealth: '',
           hospice: '1309 West 15th St. Ste. 120, Plano,TX 75075'
         },
         coordinates: { lat: 33.02026242709318, lng: -96.7191932796441 },
