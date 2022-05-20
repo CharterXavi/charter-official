@@ -13,6 +13,8 @@ export default function HTML(props) {
         />
         <script type="text/javascript" src="https://script.crazyegg.com/pages/scripts/0091/3042.js" async="async" data-react-helmet="false" />
         {props.headComponents}
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-4T32E5DNZW"></script>
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
