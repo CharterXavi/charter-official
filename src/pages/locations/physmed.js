@@ -22,7 +22,7 @@ const PhysMedPage = ({ data }) => {
   //Get/organize all the data from the graphQL Queries for posts and correct location data from gatsby.config
   const recentPosts = data.recent.edges;
   const locations = data.locations.edges[0].node.siteMetadata.locations;
-  const pageName = 'PhysMed Home Health of Omaha';
+  const pageName = 'Charter Home Health of Omaha';
   let pageLocation = {};
   for(let i = 0; i < locations.length; i++) {
     if(locations[i].name === pageName) {
@@ -35,12 +35,12 @@ const PhysMedPage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Omaha Hospice & Home Health" />
+      <SEO title="Omaha Home Health" />
       <div className='location-page'>
         <HeaderStrip2
             image={headerImage}
             title={name}
-            headline='The leading home health and hospice care provider in Omaha'
+            headline='The leading home health  care provider in Omaha'
         />
 
         {/*-------------- TOP TEXT BLOCK -------------- */}
@@ -53,7 +53,7 @@ const PhysMedPage = ({ data }) => {
             <div className="left">
               <h6>Compassionate and Experienced Healthcare</h6>
               <p>
-                PhysMed Home Health of Omaha is dedicated to providing you or your loved ones with the best
+                Charter Home Health of Omaha is dedicated to providing you or your loved ones with the best
                 healthcare available. Our caring and compassionate staff have years of experience in providing services
                 that allow our patients to live their best lives every day. We treat each of our clients with the respect
                 and compassion they deserve while administering expert care services in a professional manner at all
@@ -63,7 +63,7 @@ const PhysMedPage = ({ data }) => {
             <div className="right">
               <h6>Quality Healthcare Services</h6>
               <p>
-                PhysMed Home Health of Omaha is a premier provider of a variety of healthcare services including
+                Charter Home Health of Omaha is a premier provider of a variety of healthcare services including
                 skilled home health, hospice care, and palliative care. Our staff is adept in utilizing proven and modern
                 techniques to best allow our clients to fully live their best lives. If you are searching for the perfect
                 healthcare provider, look no further and contact us today.

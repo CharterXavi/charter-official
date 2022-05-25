@@ -79,6 +79,17 @@ const LocationsStrip = (props) => {
                         ]
                     },
                     {
+                        name: 'Orange County',
+                        locations: [
+                            {
+                                name: 'Cambridge Hospice of Orange County',
+                                address: '12235 Beach Blvd. Suite 200-B, Stanton, CA 90680-3939',
+                                coordinates: { lat: 33.784430, lng: -117.993590 },
+                                link: '/locations/orange-county'
+                            }
+                        ]
+                    },
+                    {
                         name: 'Palm Desert',
                         locations: [
                             {
@@ -90,10 +101,10 @@ const LocationsStrip = (props) => {
                         ]
                     },
                     {
-                        name: 'Rancho Cucamonga of Rancho Cucamonga',
+                        name: 'Rancho Cucamonga',
                         locations: [
                             {
-                                name: 'Cambridge Hospice of Rancho Cucamonga',
+                                name: 'Charter Healthcare of Rancho Cucamonga',
                                 address: '9229 Utica Ave. Suite 100, Rancho Cucamonga, CA 91730',
                                 coordinates: { lat: 34.085486, lng: -117.57063 },
                                 link: '/locations/rancho-cucamonga'
@@ -104,7 +115,7 @@ const LocationsStrip = (props) => {
                         name: 'Riverside',
                         locations: [
                             {
-                                name: 'Cambridge Hospice of Riverside',
+                                name: 'Charter Healthcare of Riverside',
                                 address: '6560 Van Buren Blvd. Suite G, Riverside, CA 92503-1542',
                                 coordinates: { lat: 33.949954, lng: -117.454308 },
                                 link: '/locations/riverside'
@@ -123,16 +134,16 @@ const LocationsStrip = (props) => {
                         ]
                     },
                     {
-                        name: 'Stanton',
+                        name: 'San Gabriel Valley',
                         locations: [
                             {
-                                name: 'Cambridge Hospice of Orange County',
-                                address: '12235 Beach Blvd. Suite 200-B, Stanton, CA 90680-3939',
-                                coordinates: { lat: 33.784430, lng: -117.993590 },
-                                link: '/locations/orange-county'
+                                name: 'Charter Hospice of San Gabriel Valley',
+                                address: '970 S. Village Oaks Dr. Ste. 102, Covina, CA 91724',
+                                coordinates: { lat: 34.071759, lng: -117.862599 },
+                                link: '/locations/san-gabriel-valley'
                             }
                         ]
-                    }
+                    },
                   ]
             },
             {
@@ -145,10 +156,10 @@ const LocationsStrip = (props) => {
                       name: 'Loveland',
                       locations: [
                           {
-                              name: 'Charter Healthcare of Fort Collins',
+                              name: 'Charter Healthcare of Northern Colorado',
                               address: '1562 Taurus Ct., Loveland, CO 80537',
                               coordinates: { lat: 40.401090, lng: -105.054930 },
-                              link: '/locations/fort-collins'
+                              link: '/locations/noco'
                           }
                       ]
                     }
@@ -164,7 +175,7 @@ const LocationsStrip = (props) => {
                       name: 'Omaha',
                       locations: [
                           {
-                              name: 'PhysMed Home Health of Omaha',
+                              name: 'Charter Home Health of Omaha',
                               address: '4905 S 107th Ave, Omaha, NE 68127',
                               coordinates: { lat: 41.210443, lng: -96.0788 },
                               link: '/locations/physmed'
@@ -175,10 +186,10 @@ const LocationsStrip = (props) => {
                         name: 'Omaha',
                         locations: [
                             {
-                              name: 'SereneCare Hospice of Omaha',
+                              name: 'Charter Hospice of Omaha',
                               address: '4905 S 107th Ave, Omaha, NE 68127',
                               coordinates: { lat: 41.210443, lng: -96.0788 },
-                              link: '/locations/serene-care'
+                              link: '/locations/omaha'
                           },
                         ]
                     }
@@ -204,22 +215,74 @@ const LocationsStrip = (props) => {
                   ]
             },
             {
+                state: 'New Mexico',
+                animationTime: '1000',
+                isClicked: false,
+                isExpanded: false,
+                cities: [
+                    {
+                      name: 'Albuquerque',
+                      locations: [
+                          {
+                              name: 'Silver Linings Hospice',
+                              address: '12126 N. Hwy 14 Suite A, Cedar Crest, NM 87008',
+                              coordinates:  { lat: 35.117780, lng: -106.371374 },
+                              link: '/locations/albuquerque'
+                          }
+                      ]
+                    }
+                  ]
+            },
+            {
                 state: 'Texas',
                 animationTime: '1100',
                 isClicked: false,
                 isExpanded: false,
                 cities: [
                     {
-                      name: 'Houston',
-                      locations: [
-                          {
-                              name: 'Providence Home Health and Hospice',
-                              address: '11420 Dairy Ashford Rd. Suite 108 Sugar Land, TX 77478',
-                              coordinates: { lat: 29.65467157248156, lng: -95.59837821522869 },
-                              link: '/locations/houston'
-                          }
-                      ]
-                    }
+                        name: 'Houston',
+                        locations: [
+                            {
+                                name: 'Charter Healtchare of Houston',
+                                address: '11420 Dairy Ashford Rd. Suite 108 Sugar Land, TX 77478',
+                                coordinates: { lat: 29.65467157248156, lng: -95.59837821522869 },
+                                link: '/locations/houston'
+                            }
+                        ]
+                      },
+                      {
+                        name: 'San Antonio',
+                        locations: [
+                            {
+                                name: 'Charter Healthcare of San Antonio',
+                                address: '2819 Northwest Loop 410, San Antonio, TX  78230',
+                                coordinates: { lat: 29.51126243720625,  lng: -98.53946842998343 },
+                                link: '/locations/san-antonio'
+                            }
+                        ]
+                      },
+                    {
+                        name: 'Athens',
+                        locations: [
+                            {
+                                name: 'Generations Hospice',
+                                address: '1317 S Palestine St, Athens, TX 75751',
+                                coordinates: { lat: 32.176430, lng: -95.846774 },
+                                link: '/locations/athens-care'
+                            }
+                        ]
+                      },
+                    {
+                        name: 'Plano',
+                        locations: [
+                            {
+                                name: 'Saints Hospice',
+                                address: '1309 West 15th St. Ste. 120, Plano,TX 75075',
+                                coordinates: { lat: 33.02026242709318, lng: -96.7191932796441 },
+                                link: '/locations/plano'
+                            }
+                        ]
+                      },
                   ]
             },
             {

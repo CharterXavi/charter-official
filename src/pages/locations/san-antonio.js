@@ -12,17 +12,17 @@ import SEO from "../../components/seo";
 import ServicesStrip2 from '../../components/services/services2';
 import SmallMap from '../../components/locations/small-map';
 import TestimonialsStrip from '../../components/testimonials/testimonials';
-import aboutImage from '../../images/about-physmed.png'
+import aboutImage from '../../images/about-generations.jpeg'
 // import businessImage from '../../images/hiring.png';
 import {graphql} from 'gatsby';
-import headerImage from '../../images/headers/physmed.png';
+import headerImage from '../../images/headers/san-antonio.jpeg';
 
-const PhysMedLincolnPage = ({ data }) => {
+const SanAntonioPage = ({ data }) => {
 
   //Get/organize all the data from the graphQL Queries for posts and correct location data from gatsby.config
   const recentPosts = data.recent.edges;
   const locations = data.locations.edges[0].node.siteMetadata.locations;
-  const pageName = 'PhysMed Home Health of Lincoln';
+  const pageName = 'Charter Healthcare of San Antonio';
   let pageLocation = {};
   for(let i = 0; i < locations.length; i++) {
     if(locations[i].name === pageName) {
@@ -35,25 +35,25 @@ const PhysMedLincolnPage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Lincoln Hospice & Home Health" />
+      <SEO title="San Antonio Home Health, Hospice, & Palliative Care" />
       <div className='location-page'>
         <HeaderStrip2
             image={headerImage}
             title={name}
-            headline='The leading home health and hospice care provider in Lincoln'
+            headline='The leading home health and hospice care provider in San Antonio'
         />
 
         {/*-------------- TOP TEXT BLOCK -------------- */}
         <div className="two-column">
           <div className="title">
-            <h4>Delivering the highest quality healthcare in the Lincoln area.</h4>
+            <h4>Delivering the highest quality healthcare in the San Antonio area.</h4>
             <hr/>
           </div>
           <div className="content">
             <div className="left">
               <h6>Compassionate and Experienced Healthcare</h6>
               <p>
-                PhysMed Home Health of Lincoln is dedicated to providing you or your loved ones with the best
+                Charter Healthcare of San Antonio is dedicated to providing you or your loved ones with the best
                 healthcare available. Our caring and compassionate staff have years of experience in providing services
                 that allow our patients to live their best lives every day. We treat each of our clients with the respect
                 and compassion they deserve while administering expert care services in a professional manner at all
@@ -63,7 +63,7 @@ const PhysMedLincolnPage = ({ data }) => {
             <div className="right">
               <h6>Quality Healthcare Services</h6>
               <p>
-                PhysMed Home Health of Lincoln is a premier provider of a variety of healthcare services including
+                Charter Healthcare of San Antonio is a premier provider of a variety of healthcare services including
                 skilled home health, hospice care, and palliative care. Our staff is adept in utilizing proven and modern
                 techniques to best allow our clients to fully live their best lives. If you are searching for the perfect
                 healthcare provider, look no further and contact us today.
@@ -171,7 +171,7 @@ const PhysMedLincolnPage = ({ data }) => {
   )
 }
 
-export default PhysMedLincolnPage;
+export default SanAntonioPage;
 
 export const recentPostsQuery = graphql`
 query {
@@ -229,4 +229,4 @@ query {
     }
   }
 }
-`
+` 

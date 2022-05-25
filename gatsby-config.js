@@ -92,7 +92,7 @@ module.exports = {
         isExpanded: false,
       },
       {
-        name: 'Charter Healthcare of Orange County',
+        name: 'Cambridge Hospice of Orange County',
         path: '/locations/orange-county',
         mapLink: 'https://goo.gl/maps/TNcvBzkHQBNwSS4QA',
         city: 'Orange County',
@@ -315,34 +315,9 @@ module.exports = {
         coordinates: { lat: 40.401090, lng: -105.054930 },
         isClicked: false,
         isExpanded: false,
-      },
+      },  
       {
-        name: 'PhysMed Home Health of Lincoln',
-        path: '/locations/physmed-lincoln',
-        mapLink: 'https://goo.gl/maps/Ws4XjgwtM2r4ymU78',
-        city: 'Lincoln',
-        state: 'Nebraska',
-        phone: {
-          general: '402-926-4088',
-          homeHealth: '',
-          hospice: ''
-        },
-        fax: {
-          general: '402-926-4197',
-          homeHealth: '',
-          hospice: ''
-        },
-        address: {
-          general: '4905 S 107th Ave, Lincoln, NE 68127',
-          homeHealth: '',
-          hospice: ''
-        },
-        coordinates: { lat: 41.210443, lng: -96.0788 },
-        isClicked: false,
-        isExpanded: false,
-      },
-      {
-        name: 'PhysMed Home Health of Omaha',
+        name: 'Charter Home Health of Omaha',
         path: '/locations/physmed',
         mapLink: 'https://goo.gl/maps/FPEizGrU4VHAkvCg6',
         city: 'Omaha',
@@ -367,8 +342,8 @@ module.exports = {
         isExpanded: false,
       },
       {
-        name: 'Charter Healthcare of Omaha',
-        path: '/locations/Omaha',
+        name: 'Charter Hospice of Omaha',
+        path: '/locations/omaha',
         mapLink: 'https://goo.gl/maps/FPEizGrU4VHAkvCg6',
         city: 'Omaha',
         state: 'Nebraska',
@@ -517,8 +492,8 @@ module.exports = {
         isExpanded: false,
       },
       {
-        name: 'Generations Hospice Care',
-        path: '/locations/generations-care',
+        name: 'Charter Healthcare of San Antonio',
+        path: '/locations/san-antonio',
         mapLink: 'https://goo.gl/maps/L4PqQMKN4xRXWMAL8',
         city: 'San Antonio',
         state: 'Texas',
@@ -687,9 +662,9 @@ module.exports = {
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: 'i5qxlyyjmn13',
+        spaceId: process.env.CONTENTFUL_SPACE_ID, 
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
-      }
+      },
     }
   ],
 }
