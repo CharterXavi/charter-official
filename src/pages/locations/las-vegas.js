@@ -134,6 +134,8 @@ const LasVegasPage = ({ data }) => {
                     <h6 className='detail-title'>Hours of Operation</h6>
                     <p className='detail-text'>
                       <ul>
+                        <p>Charter Staff available 24/7 by phone.</p>
+                        <br></br>
                         <li>M: 8:00 am - 5:00 pm</li>
                         <li>Tu: 8:00 am - 5:00 pm</li>
                         <li>W: 8:00 am - 5:00 pm</li>

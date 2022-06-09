@@ -15,7 +15,7 @@ import TestimonialsStrip from '../../components/testimonials/testimonials';
 import aboutImage from '../../images/about-generations.jpeg'
 // import businessImage from '../../images/hiring.png';
 import {graphql} from 'gatsby';
-import headerImage from '../../images/headers/san-antonio.jpeg';
+import headerImage from '../../images/headers/tucson.png';
 
 const SanAntonioPage = ({ data }) => {
 

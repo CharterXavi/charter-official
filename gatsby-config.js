@@ -8,7 +8,7 @@ module.exports = {
   siteMetadata: {
     title: `Charter Healthcare Group`,
     description: `Official website for Charter Healthcare Group.`,
-    author: `Branon Eusbio`,
+    author: `Xavier Brown`,
     url: 'https://charterhcg.com/',
     siteUrl: 'https://charterhcg.com/',
     twitterHandle: '@charterhcg',
