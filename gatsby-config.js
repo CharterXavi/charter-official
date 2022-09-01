@@ -423,19 +423,19 @@ module.exports = {
         city: 'Athens',
         state: 'Texas',
         phone: {
-          general: '',
-          homeHealth: '903-675-4730',
-          hospice: '903-675-4730'
+          general: '903-675-4730',
+          homeHealth: '',
+          hospice: ''
         },
         fax: {
-          general: '',
-          homeHealth: '903-675-4730',
-          hospice: '903-675-4730'
+          general: '903-904-5003',
+          homeHealth: '',
+          hospice: ''
         },
         address: {
-          general: '',
-          homeHealth: '1317 S Palestine St, Athens, TX 75751',
-          hospice: '1317 S Palestine St, Athens, TX 75751'
+          general: '1317 S Palestine St, Athens, TX 75751',
+          homeHealth: '',
+          hospice: ''
         },
         coordinates: { lat: 32.176430, lng: -95.846774 },
         isClicked: false,
