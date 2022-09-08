@@ -33,11 +33,11 @@ module.exports = {
           hospice: ''
         },
         address: {
-          general: '1232 E. Broadway Road Suite 210, Tempe, AZ 85282',
+          general: '8701 E Hartford Dr suite 115, Scottsdale, AZ 85255',
           homeHealth: '',
           hospice: ''
         },
-        coordinates: { lat: 33.408025, lng: -111.919244 },
+        coordinates: { lat: 33.641705926073655, lng:  -111.89254724470216 },
         isClicked: false,
         isExpanded: false,
       },
