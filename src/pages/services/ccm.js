@@ -25,11 +25,11 @@ const CCMPage = () => (
             <h6>What is Complex Care Management?</h6>
             <p>Complex Care Management, or CCM, is a collection of programs and initiatives designed for patients with serious medical needs, who are susceptible to more frequent hospitalization. The goal of CCM is to reduce hospitalizations and emergency room visits by bridging gaps in care through in-home provider and nursing visits, connecting members to specialists, identifying social determinants of care, providing medication reconciliation and medication changes as indicated as well as providing 24/7 access to care through our inhouse triage team.</p>
             <p>In short, this program aims to improve communication and coordination for patients' care as they are discharged from hospitals to help avoid readmission.</p>
-            <ButtonPrimaryAlt content='See Our locations' link='/locations' />
           </div>
           <div className="right">
             <h6>Hospital Admission Reduction Program (HARP)</h6>
             <p>Our CCM program accomplishes its goals primarily through our Hospitalization Admission Reduction Program (HARP), consisting of Transitional Care Management (TCM) and Advanced Care Planning (ACP).</p>
+            <p> Contact us at <a href='tel:+909-644-4965'>909-644-4965</a> for more CCM and TCM/HARP related Information.</p>
           </div>
         </div>
       </div>
