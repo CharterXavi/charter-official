@@ -308,11 +308,11 @@ module.exports = {
           hospice: ''
         },
         address: {
-          general: '1562 Taurus Ct., Loveland, CO 80537',
+          general: '3855 Precision Dr. Suite 120, Loveland, CO 80538',
           homeHealth: '',
           hospice: ''
         },
-        coordinates: { lat: 40.401090, lng: -105.054930 },
+        coordinates: { lat: 40.43152774462957, lng:-104.999614 },
         isClicked: false,
         isExpanded: false,
       },  
