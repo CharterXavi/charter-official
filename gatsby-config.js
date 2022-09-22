@@ -242,31 +242,6 @@ module.exports = {
         isExpanded: false,
       },
       {
-        name: 'Charter Home Health of San Gabriel Valley',
-        path: '/locations/san-gabriel-valley',
-        mapLink: 'https://goo.gl/maps/pgsmZruf97YpLHWM7',
-        city: 'San Gabriel Valley',
-        state: 'California',
-        phone: {
-          general:  '626-915-7490',
-          homeHealth: '',
-          hospice: ''
-        },
-        fax: {
-          general: '626-915-6050',
-          homeHealth: '',
-          hospice: ''
-        },
-        address: {
-          general: '970 S. Village Oaks Dr. Ste. 102, Covina, CA 91724',
-          homeHealth: '',
-          hospice: ''
-        },
-        coordinates: { lat: 34.071759, lng: -117.862599 },
-        isClicked: false,
-        isExpanded: false,
-      },
-      {
         name: 'Charter Hospice of San Gabriel Valley',
         path: '/locations/san-gabriel-valley-hospice',
         mapLink: 'https://goo.gl/maps/pgsmZruf97YpLHWM7',
@@ -312,35 +287,10 @@ module.exports = {
           homeHealth: '',
           hospice: ''
         },
-        coordinates: { lat: 40.43152774462957, lng:-104.999614 },
+        coordinates: { lat: 40.431527, lng:-104.999614 },
         isClicked: false,
         isExpanded: false,
       },  
-      {
-        name: 'Charter Home Health of Omaha',
-        path: '/locations/physmed',
-        mapLink: 'https://goo.gl/maps/FPEizGrU4VHAkvCg6',
-        city: 'Omaha',
-        state: 'Nebraska',
-        phone: {
-          general: '402-926-4088',
-          homeHealth: '',
-          hospice: ''
-        },
-        fax: {
-          general: '402-926-4197',
-          homeHealth: '',
-          hospice: ''
-        },
-        address: {
-          general: '9140 W. Dodge Rd., Suite 285. Omaha, NE 68114',
-          homeHealth: '',
-          hospice: ''
-        },
-        coordinates: { lat: 41.210443, lng: -96.0788 },
-        isClicked: false,
-        isExpanded: false,
-      },
       {
         name: 'Charter Hospice of Omaha',
         path: '/locations/omaha',
