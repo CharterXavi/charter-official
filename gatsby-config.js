@@ -283,7 +283,7 @@ module.exports = {
           hospice: ''
         },
         address: {
-          general: '3855 Precision Dr. Suite 120, Loveland, CO 80538',
+          general: '3855 Precision Drive Unit 2, Loveland, CO 80538',
           homeHealth: '',
           hospice: ''
         },
