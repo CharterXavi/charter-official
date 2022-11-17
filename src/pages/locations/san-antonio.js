@@ -113,8 +113,8 @@ const SanAntonioPage = ({ data }) => {
               <SmallMap 
                 name='Charter Home Health'
                 coordinates={coordinates}
-                lat={coordinates.lat}
-                lng={coordinates.lng}
+                lat={coordinates?.lat}
+                lng={coordinates?.lng}
                 link={mapLink}
               />
             </div>
