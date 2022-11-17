@@ -55,7 +55,7 @@ const AllLocations = (props) => {
                         <div className='card'>
                             <h6 className='detail-title'>{location.name}</h6>
                             <p className="detail-text">
-                                {location.address.general}
+                                {location.address?.general}
                                 {location.address.homeHealth}
                             </p>
                             <p className="detail-text"> 

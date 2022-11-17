@@ -22,7 +22,7 @@ const PhysMedPage = ({ data }) => {
   //Get/organize all the data from the graphQL Queries for posts and correct location data from gatsby.config
   const recentPosts = data.recent.edges;
   const locations = data.locations.edges[0].node.siteMetadata.locations;
-  const pageName = 'Charter Home Health of Omaha';
+  const pageName = 'Charter Hospice of Omaha';
   let pageLocation = {};
   for(let i = 0; i < locations.length; i++) {
     if(locations[i].name === pageName) {
@@ -126,7 +126,7 @@ const PhysMedPage = ({ data }) => {
                       {city}, {state}
                       <br/>
                       <a href={mapLink} target='_blank' rel='noopener noreferrer'>
-                        {address.general}
+                        {address?.general}
                       </a>
                     </p>
                 </div>

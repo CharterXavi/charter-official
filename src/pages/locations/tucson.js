@@ -127,7 +127,7 @@ const TucsonPage = ({ data }) => {
                       {city}, {state}
                       <br/>
                       <a href={mapLink} target='_blank' rel='noopener noreferrer'>
-                        {address.general}
+                        {address?.general}
                       </a>
                     </p>
                 </div>
