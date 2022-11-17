@@ -32,7 +32,6 @@ const IndexPage = ({ data }) => {
           {/* <RecentGrid posts={recentPosts} title='The Latest at Charter' link='/' linkContent='Coming Soon! 🎉'/> */}
           <PostStrip posts={recentPosts} title='The Latest at Charter' link='/news' linkContent='Visit our news archive'/>
         </div>
-        <OurTeamStrip />
         <LocationsStrip svg={true} />
       </div>
     </Layout>

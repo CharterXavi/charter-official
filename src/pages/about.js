@@ -37,7 +37,6 @@ const AboutPage = ({data}) => {
         {/* ---- Disabled on home page until more blog posts are available for formatting purposes ---- */}
         {/* <RecentGrid posts={recentPosts} title='The Latest at Charter' link='/' linkContent='Coming Soon! 🎉'/> */}
         <PostStrip posts={recentPosts} title='The Latest at Charter' link='/news' linkContent='Visit our news archive'/>
-        <OurTeamStrip />
         <LocationsStrip svg={true} />
       </div>
     </Layout>

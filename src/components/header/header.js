@@ -86,17 +86,6 @@ const Header = () => {
         ]
       },
       {
-        name: 'Our Team',
-        path: '/our-team',
-        isSubMenuExpanded: false,
-        subMenu: [
-          {
-            name: '',
-            path: ''
-          }
-        ]
-      },
-      {
         name: 'News',
         path: '/news',
         isSubMenuExpanded: false,
