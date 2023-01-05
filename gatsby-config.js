@@ -298,7 +298,7 @@ module.exports = {
         city: 'Omaha',
         state: 'Nebraska',
         phone: {
-          general: '402-597-2585',
+          general: '402-926-4088',
           homeHealth: '',
           hospice: ''
         },
