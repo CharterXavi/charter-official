@@ -25,7 +25,7 @@
     "gatsby-remark-relative-images": "^2.0.2",
     "gatsby-source-contentful": "^5.11.0",
     "gatsby-source-filesystem": "^3.0.0",
-    "gatsby-transformer-remark": "^3.0.0",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^3.0.0",
     "google-map-react": "^2.1.9",
     "postcss": "^8.3.6",
